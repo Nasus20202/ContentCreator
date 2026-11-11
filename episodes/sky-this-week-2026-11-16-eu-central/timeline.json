@@ -1,0 +1,861 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "d2959d8957f222a7",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 5.311,
+      "sentences": [
+        {
+          "text": "Mars and Jupiter almost touch in the sky this week.",
+          "start": 0.15,
+          "end": 2.948,
+          "words": [
+            {
+              "w": "Mars",
+              "start": 0.15,
+              "end": 0.412
+            },
+            {
+              "w": "and",
+              "start": 0.412,
+              "end": 0.631
+            },
+            {
+              "w": "Jupiter",
+              "start": 0.631,
+              "end": 1.024
+            },
+            {
+              "w": "almost",
+              "start": 1.024,
+              "end": 1.374
+            },
+            {
+              "w": "touch",
+              "start": 1.374,
+              "end": 1.68
+            },
+            {
+              "w": "in",
+              "start": 1.68,
+              "end": 1.855
+            },
+            {
+              "w": "the",
+              "start": 1.855,
+              "end": 2.073
+            },
+            {
+              "w": "sky",
+              "start": 2.073,
+              "end": 2.292
+            },
+            {
+              "w": "this",
+              "start": 2.292,
+              "end": 2.554
+            },
+            {
+              "w": "week.",
+              "start": 2.554,
+              "end": 2.948
+            }
+          ]
+        },
+        {
+          "text": "And you won't need a telescope to see it.",
+          "start": 3.228,
+          "end": 5.031,
+          "words": [
+            {
+              "w": "And",
+              "start": 3.228,
+              "end": 3.398
+            },
+            {
+              "w": "you",
+              "start": 3.398,
+              "end": 3.568
+            },
+            {
+              "w": "won't",
+              "start": 3.568,
+              "end": 3.806
+            },
+            {
+              "w": "need",
+              "start": 3.806,
+              "end": 4.01
+            },
+            {
+              "w": "a",
+              "start": 4.01,
+              "end": 4.112
+            },
+            {
+              "w": "telescope",
+              "start": 4.112,
+              "end": 4.487
+            },
+            {
+              "w": "to",
+              "start": 4.487,
+              "end": 4.623
+            },
+            {
+              "w": "see",
+              "start": 4.623,
+              "end": 4.793
+            },
+            {
+              "w": "it.",
+              "start": 4.793,
+              "end": 5.031
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "conjunction",
+      "audioFile": "voice/conjunction.wav",
+      "duration": 13.339,
+      "sentences": [
+        {
+          "text": "Before dawn on Monday, November sixteenth, they're just over one degree apart.",
+          "start": 0.15,
+          "end": 4.545,
+          "words": [
+            {
+              "w": "Before",
+              "start": 0.15,
+              "end": 0.512
+            },
+            {
+              "w": "dawn",
+              "start": 0.512,
+              "end": 0.784
+            },
+            {
+              "w": "on",
+              "start": 0.784,
+              "end": 0.966
+            },
+            {
+              "w": "Monday,",
+              "start": 0.966,
+              "end": 1.464
+            },
+            {
+              "w": "November",
+              "start": 1.464,
+              "end": 1.917
+            },
+            {
+              "w": "sixteenth,",
+              "start": 1.917,
+              "end": 2.551
+            },
+            {
+              "w": "they're",
+              "start": 2.551,
+              "end": 2.959
+            },
+            {
+              "w": "just",
+              "start": 2.959,
+              "end": 3.231
+            },
+            {
+              "w": "over",
+              "start": 3.231,
+              "end": 3.503
+            },
+            {
+              "w": "one",
+              "start": 3.503,
+              "end": 3.73
+            },
+            {
+              "w": "degree",
+              "start": 3.73,
+              "end": 4.092
+            },
+            {
+              "w": "apart.",
+              "start": 4.092,
+              "end": 4.545
+            }
+          ]
+        },
+        {
+          "text": "That's about two full Moons side by side.",
+          "start": 4.825,
+          "end": 6.909,
+          "words": [
+            {
+              "w": "That's",
+              "start": 4.825,
+              "end": 5.146
+            },
+            {
+              "w": "about",
+              "start": 5.146,
+              "end": 5.426
+            },
+            {
+              "w": "two",
+              "start": 5.426,
+              "end": 5.627
+            },
+            {
+              "w": "full",
+              "start": 5.627,
+              "end": 5.867
+            },
+            {
+              "w": "Moons",
+              "start": 5.867,
+              "end": 6.148
+            },
+            {
+              "w": "side",
+              "start": 6.148,
+              "end": 6.388
+            },
+            {
+              "w": "by",
+              "start": 6.388,
+              "end": 6.548
+            },
+            {
+              "w": "side.",
+              "start": 6.548,
+              "end": 6.909
+            }
+          ]
+        },
+        {
+          "text": "Look high in the south-east. Jupiter is the brilliant one. Mars is the orange dot right beside it.",
+          "start": 7.189,
+          "end": 13.059,
+          "words": [
+            {
+              "w": "Look",
+              "start": 7.189,
+              "end": 7.478
+            },
+            {
+              "w": "high",
+              "start": 7.478,
+              "end": 7.767
+            },
+            {
+              "w": "in",
+              "start": 7.767,
+              "end": 7.959
+            },
+            {
+              "w": "the",
+              "start": 7.959,
+              "end": 8.2
+            },
+            {
+              "w": "south-east.",
+              "start": 8.2,
+              "end": 8.873
+            },
+            {
+              "w": "Jupiter",
+              "start": 8.873,
+              "end": 9.306
+            },
+            {
+              "w": "is",
+              "start": 9.306,
+              "end": 9.499
+            },
+            {
+              "w": "the",
+              "start": 9.499,
+              "end": 9.739
+            },
+            {
+              "w": "brilliant",
+              "start": 9.739,
+              "end": 10.268
+            },
+            {
+              "w": "one.",
+              "start": 10.268,
+              "end": 10.653
+            },
+            {
+              "w": "Mars",
+              "start": 10.653,
+              "end": 10.942
+            },
+            {
+              "w": "is",
+              "start": 10.942,
+              "end": 11.134
+            },
+            {
+              "w": "the",
+              "start": 11.134,
+              "end": 11.375
+            },
+            {
+              "w": "orange",
+              "start": 11.375,
+              "end": 11.76
+            },
+            {
+              "w": "dot",
+              "start": 11.76,
+              "end": 12
+            },
+            {
+              "w": "right",
+              "start": 12,
+              "end": 12.337
+            },
+            {
+              "w": "beside",
+              "start": 12.337,
+              "end": 12.722
+            },
+            {
+              "w": "it.",
+              "start": 12.722,
+              "end": 13.059
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "scale",
+      "audioFile": "voice/scale.wav",
+      "duration": 6.842,
+      "sentences": [
+        {
+          "text": "But they only look close.",
+          "start": 0.15,
+          "end": 1.364,
+          "words": [
+            {
+              "w": "But",
+              "start": 0.15,
+              "end": 0.334
+            },
+            {
+              "w": "they",
+              "start": 0.334,
+              "end": 0.555
+            },
+            {
+              "w": "only",
+              "start": 0.555,
+              "end": 0.775
+            },
+            {
+              "w": "look",
+              "start": 0.775,
+              "end": 0.996
+            },
+            {
+              "w": "close.",
+              "start": 0.996,
+              "end": 1.364
+            }
+          ]
+        },
+        {
+          "text": "Mars is about two hundred million kilometers away. Jupiter is four times farther.",
+          "start": 1.644,
+          "end": 6.562,
+          "words": [
+            {
+              "w": "Mars",
+              "start": 1.644,
+              "end": 1.942
+            },
+            {
+              "w": "is",
+              "start": 1.942,
+              "end": 2.141
+            },
+            {
+              "w": "about",
+              "start": 2.141,
+              "end": 2.489
+            },
+            {
+              "w": "two",
+              "start": 2.489,
+              "end": 2.737
+            },
+            {
+              "w": "hundred",
+              "start": 2.737,
+              "end": 3.184
+            },
+            {
+              "w": "million",
+              "start": 3.184,
+              "end": 3.631
+            },
+            {
+              "w": "kilometers",
+              "start": 3.631,
+              "end": 4.227
+            },
+            {
+              "w": "away.",
+              "start": 4.227,
+              "end": 4.674
+            },
+            {
+              "w": "Jupiter",
+              "start": 4.674,
+              "end": 5.121
+            },
+            {
+              "w": "is",
+              "start": 5.121,
+              "end": 5.32
+            },
+            {
+              "w": "four",
+              "start": 5.32,
+              "end": 5.618
+            },
+            {
+              "w": "times",
+              "start": 5.618,
+              "end": 5.966
+            },
+            {
+              "w": "farther.",
+              "start": 5.966,
+              "end": 6.562
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "leonids",
+      "audioFile": "voice/leonids.wav",
+      "duration": 13.567,
+      "sentences": [
+        {
+          "text": "The Leonid meteor shower peaks on Tuesday, the seventeenth.",
+          "start": 0.15,
+          "end": 3.356,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.37
+            },
+            {
+              "w": "Leonid",
+              "start": 0.37,
+              "end": 0.721
+            },
+            {
+              "w": "meteor",
+              "start": 0.721,
+              "end": 1.072
+            },
+            {
+              "w": "shower",
+              "start": 1.072,
+              "end": 1.424
+            },
+            {
+              "w": "peaks",
+              "start": 1.424,
+              "end": 1.731
+            },
+            {
+              "w": "on",
+              "start": 1.731,
+              "end": 1.907
+            },
+            {
+              "w": "Tuesday,",
+              "start": 1.907,
+              "end": 2.434
+            },
+            {
+              "w": "the",
+              "start": 2.434,
+              "end": 2.653
+            },
+            {
+              "w": "seventeenth.",
+              "start": 2.653,
+              "end": 3.356
+            }
+          ]
+        },
+        {
+          "text": "The Moon sets before midnight, so the sky gets properly dark.",
+          "start": 3.636,
+          "end": 6.957,
+          "words": [
+            {
+              "w": "The",
+              "start": 3.636,
+              "end": 3.852
+            },
+            {
+              "w": "Moon",
+              "start": 3.852,
+              "end": 4.11
+            },
+            {
+              "w": "sets",
+              "start": 4.11,
+              "end": 4.369
+            },
+            {
+              "w": "before",
+              "start": 4.369,
+              "end": 4.714
+            },
+            {
+              "w": "midnight,",
+              "start": 4.714,
+              "end": 5.275
+            },
+            {
+              "w": "so",
+              "start": 5.275,
+              "end": 5.447
+            },
+            {
+              "w": "the",
+              "start": 5.447,
+              "end": 5.663
+            },
+            {
+              "w": "sky",
+              "start": 5.663,
+              "end": 5.879
+            },
+            {
+              "w": "gets",
+              "start": 5.879,
+              "end": 6.138
+            },
+            {
+              "w": "properly",
+              "start": 6.138,
+              "end": 6.569
+            },
+            {
+              "w": "dark.",
+              "start": 6.569,
+              "end": 6.957
+            }
+          ]
+        },
+        {
+          "text": "Look up after midnight on the nights around the peak. Under a dark sky, expect up to fifteen meteors an hour.",
+          "start": 7.237,
+          "end": 13.287,
+          "words": [
+            {
+              "w": "Look",
+              "start": 7.237,
+              "end": 7.502
+            },
+            {
+              "w": "up",
+              "start": 7.502,
+              "end": 7.679
+            },
+            {
+              "w": "after",
+              "start": 7.679,
+              "end": 7.988
+            },
+            {
+              "w": "midnight",
+              "start": 7.988,
+              "end": 8.429
+            },
+            {
+              "w": "on",
+              "start": 8.429,
+              "end": 8.606
+            },
+            {
+              "w": "the",
+              "start": 8.606,
+              "end": 8.827
+            },
+            {
+              "w": "nights",
+              "start": 8.827,
+              "end": 9.18
+            },
+            {
+              "w": "around",
+              "start": 9.18,
+              "end": 9.533
+            },
+            {
+              "w": "the",
+              "start": 9.533,
+              "end": 9.754
+            },
+            {
+              "w": "peak.",
+              "start": 9.754,
+              "end": 10.152
+            },
+            {
+              "w": "Under",
+              "start": 10.152,
+              "end": 10.461
+            },
+            {
+              "w": "a",
+              "start": 10.461,
+              "end": 10.593
+            },
+            {
+              "w": "dark",
+              "start": 10.593,
+              "end": 10.858
+            },
+            {
+              "w": "sky,",
+              "start": 10.858,
+              "end": 11.212
+            },
+            {
+              "w": "expect",
+              "start": 11.212,
+              "end": 11.565
+            },
+            {
+              "w": "up",
+              "start": 11.565,
+              "end": 11.741
+            },
+            {
+              "w": "to",
+              "start": 11.741,
+              "end": 11.918
+            },
+            {
+              "w": "fifteen",
+              "start": 11.918,
+              "end": 12.316
+            },
+            {
+              "w": "meteors",
+              "start": 12.316,
+              "end": 12.713
+            },
+            {
+              "w": "an",
+              "start": 12.713,
+              "end": 12.89
+            },
+            {
+              "w": "hour.",
+              "start": 12.89,
+              "end": 13.287
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "moon-saturn",
+      "audioFile": "voice/moon-saturn.wav",
+      "duration": 5.208,
+      "sentences": [
+        {
+          "text": "And on Friday evening, the Moon slides past Saturn, high in the south after dark.",
+          "start": 0.15,
+          "end": 4.928,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.382
+            },
+            {
+              "w": "on",
+              "start": 0.382,
+              "end": 0.567
+            },
+            {
+              "w": "Friday",
+              "start": 0.567,
+              "end": 0.939
+            },
+            {
+              "w": "evening,",
+              "start": 0.939,
+              "end": 1.495
+            },
+            {
+              "w": "the",
+              "start": 1.495,
+              "end": 1.727
+            },
+            {
+              "w": "Moon",
+              "start": 1.727,
+              "end": 2.005
+            },
+            {
+              "w": "slides",
+              "start": 2.005,
+              "end": 2.377
+            },
+            {
+              "w": "past",
+              "start": 2.377,
+              "end": 2.655
+            },
+            {
+              "w": "Saturn,",
+              "start": 2.655,
+              "end": 3.165
+            },
+            {
+              "w": "high",
+              "start": 3.165,
+              "end": 3.443
+            },
+            {
+              "w": "in",
+              "start": 3.443,
+              "end": 3.629
+            },
+            {
+              "w": "the",
+              "start": 3.629,
+              "end": 3.861
+            },
+            {
+              "w": "south",
+              "start": 3.861,
+              "end": 4.186
+            },
+            {
+              "w": "after",
+              "start": 4.186,
+              "end": 4.51
+            },
+            {
+              "w": "dark.",
+              "start": 4.51,
+              "end": 4.928
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 4.949,
+      "sentences": [
+        {
+          "text": "Positions calculated for central Europe.",
+          "start": 0.15,
+          "end": 2.331,
+          "words": [
+            {
+              "w": "Positions",
+              "start": 0.15,
+              "end": 0.65
+            },
+            {
+              "w": "calculated",
+              "start": 0.65,
+              "end": 1.195
+            },
+            {
+              "w": "for",
+              "start": 1.195,
+              "end": 1.422
+            },
+            {
+              "w": "central",
+              "start": 1.422,
+              "end": 1.831
+            },
+            {
+              "w": "Europe.",
+              "start": 1.831,
+              "end": 2.331
+            }
+          ]
+        },
+        {
+          "text": "Follow, so you don't miss next week's sky.",
+          "start": 2.611,
+          "end": 4.669,
+          "words": [
+            {
+              "w": "Follow,",
+              "start": 2.611,
+              "end": 3.022
+            },
+            {
+              "w": "so",
+              "start": 3.022,
+              "end": 3.172
+            },
+            {
+              "w": "you",
+              "start": 3.172,
+              "end": 3.359
+            },
+            {
+              "w": "don't",
+              "start": 3.359,
+              "end": 3.621
+            },
+            {
+              "w": "miss",
+              "start": 3.621,
+              "end": 3.846
+            },
+            {
+              "w": "next",
+              "start": 3.846,
+              "end": 4.07
+            },
+            {
+              "w": "week's",
+              "start": 4.07,
+              "end": 4.37
+            },
+            {
+              "w": "sky.",
+              "start": 4.37,
+              "end": 4.669
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

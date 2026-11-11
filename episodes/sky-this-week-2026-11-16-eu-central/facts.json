@@ -1,0 +1,393 @@
+{
+  "facts": [
+    {
+      "id": "episode-window",
+      "statement": "This episode covers Mon 16 Nov to Sun 22 Nov 2026.",
+      "values": [
+        16,
+        22,
+        2026
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "start": "2026-11-15T23:00:00.000Z",
+          "end": "2026-11-22T23:00:00.000Z"
+        }
+      }
+    },
+    {
+      "id": "episode-location",
+      "statement": "Positions are computed for central Europe (50°N, 15°E).",
+      "values": [
+        50,
+        15
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15
+        }
+      }
+    },
+    {
+      "id": "conj-mars-jupiter-2026-11-16-sep",
+      "statement": "Mars and Jupiter are closest on Mon 16 Nov, 03:03 (central Europe time), 1.19° apart.",
+      "values": [
+        1.194,
+        16
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "a": "Mars",
+          "b": "Jupiter",
+          "minimumUtc": "2026-11-16T02:03:08.432Z"
+        }
+      }
+    },
+    {
+      "id": "conj-mars-jupiter-2026-11-16-moons",
+      "statement": "That separation equals about 2.3 full-Moon diameters (full Moon ≈ 0.52°).",
+      "values": [
+        2.296
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "moonDiameterDeg": 0.52
+        }
+      }
+    },
+    {
+      "id": "conj-mars-jupiter-2026-11-16-dist",
+      "statement": "On that date Mars is 195 million km from Earth and Jupiter is 788 million km; Jupiter is 4× farther.",
+      "values": [
+        195.485,
+        787.885,
+        4.03
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2026-11-16T02:03:08.432Z"
+        }
+      }
+    },
+    {
+      "id": "conj-mars-jupiter-2026-11-16-mag",
+      "statement": "Brightness: Mars magnitude 0.7, Jupiter magnitude -2.1 (lower = brighter).",
+      "values": [
+        0.701,
+        -2.109
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2026-11-16T02:03:08.432Z"
+        }
+      }
+    },
+    {
+      "id": "conj-mars-jupiter-2026-11-16-view",
+      "statement": "Best seen around Mon 16 Nov, 04:03, south-east, 46° above the horizon.",
+      "values": [
+        45.9,
+        131.3
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "a": "Mars",
+          "viewing": {
+            "bestLocal": "Mon 16 Nov, 04:03",
+            "bestUtc": "2026-11-16T03:03:08.432Z",
+            "azimuth": 131.3,
+            "altitude": 45.9,
+            "direction": "south-east"
+          }
+        }
+      }
+    },
+    {
+      "id": "moon-saturn-2026-11-20-sep",
+      "statement": "The Moon passes 5.5° from Saturn on Fri 20 Nov, 19:43 (as seen from central Europe).",
+      "values": [
+        5.496,
+        20
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Saturn",
+          "minimumUtc": "2026-11-20T18:43:28.074Z"
+        }
+      }
+    },
+    {
+      "id": "moon-saturn-2026-11-20-illum",
+      "statement": "The Moon is 81% illuminated then.",
+      "values": [
+        81
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2026-11-20T18:43:28.074Z"
+        }
+      }
+    },
+    {
+      "id": "moon-saturn-2026-11-20-view",
+      "statement": "Best seen around Fri 20 Nov, 20:33, south, 41° up.",
+      "values": [
+        40.9
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "viewing": {
+            "bestLocal": "Fri 20 Nov, 20:33",
+            "bestUtc": "2026-11-20T19:33:28.074Z",
+            "azimuth": 179.4,
+            "altitude": 40.9,
+            "direction": "south"
+          }
+        }
+      }
+    },
+    {
+      "id": "meteors-leonids-2026-11-17-zhr",
+      "statement": "Leonids ZHR ≈ 15 meteors per hour under ideal conditions; parent: comet 55P/Tempel–Tuttle.",
+      "values": [
+        15
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.imo.net/resources/calendar/",
+        "title": "IMO Meteor Shower Calendar / working list of visual meteor showers",
+        "publisher": "International Meteor Organization",
+        "accessed": "2026-11-11"
+      }
+    },
+    {
+      "id": "meteors-leonids-2026-11-17-peak",
+      "statement": "Leonids peak (solar longitude 235.27°) falls on Tue 17 Nov, 15:52 (central Europe time).",
+      "values": [
+        17,
+        18
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "solarLongitude": 235.27,
+          "peakUtc": "2026-11-17T14:52:22.927Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-leonids-2026-11-17-radiant",
+      "statement": "The radiant (in Leo) is highest in darkness around Wed 18 Nov, 05:52, 62° up in the south.",
+      "values": [
+        61.524
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "radiant": {
+            "ra": 152,
+            "dec": 22
+          },
+          "bestUtc": "2026-11-18T04:52:22.927Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-leonids-2026-11-17-moon",
+      "statement": "The Moon is 57% illuminated and below the horizon at that time.",
+      "values": [
+        57
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2026-11-18T04:52:22.927Z",
+          "moonAlt": -48.80831574233409
+        }
+      }
+    },
+    {
+      "id": "meteors-leonids-2026-11-17-moonset",
+      "statement": "Moonset that night: 23:28 local time.",
+      "values": [],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "moonsetUtc": "2026-11-17T22:28:38.864Z"
+        }
+      }
+    },
+    {
+      "id": "phase-first-quarter-2026-11-17",
+      "statement": "First Quarter: Tue 17 Nov, 12:48 (central Europe time).",
+      "values": [
+        17
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "quarter": 1
+        }
+      }
+    },
+    {
+      "id": "elongation-mercury-2026-11-20",
+      "statement": "Mercury is 19.6° from the Sun in the morning sky on Sat 21 Nov, 00:35.",
+      "values": [
+        19.622,
+        21
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mercury"
+        }
+      }
+    },
+    {
+      "id": "visible-venus-2026-11-19",
+      "statement": "Mid-week, Venus (magnitude -4.8) is best seen around 06:20, south-east, 17° up.",
+      "values": [
+        -4.828,
+        17.214
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Venus"
+        }
+      }
+    },
+    {
+      "id": "visible-mars-2026-11-19",
+      "statement": "Mid-week, Mars (magnitude 0.7) is best seen around 04:00, south-east, 46° up.",
+      "values": [
+        0.66,
+        45.95
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mars"
+        }
+      }
+    },
+    {
+      "id": "visible-jupiter-2026-11-19",
+      "statement": "Mid-week, Jupiter (magnitude -2.1) is best seen around 04:00, south-east, 46° up.",
+      "values": [
+        -2.128,
+        45.895
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Jupiter"
+        }
+      }
+    },
+    {
+      "id": "visible-saturn-2026-11-19",
+      "statement": "Mid-week, Saturn (magnitude 0.5) is best seen around 20:40, south, 41° up.",
+      "values": [
+        0.512,
+        40.906
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Saturn"
+        }
+      }
+    }
+  ]
+}

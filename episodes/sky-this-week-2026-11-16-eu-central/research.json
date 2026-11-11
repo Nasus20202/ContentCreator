@@ -1,0 +1,213 @@
+{
+  "kind": "sky-week",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "window": {
+    "start": "2026-11-15T23:00:00.000Z",
+    "end": "2026-11-22T23:00:00.000Z"
+  },
+  "generatedAt": "2026-11-11T21:50:50.412Z",
+  "engine": "astronomy-engine@2",
+  "events": [
+    {
+      "id": "conj-mars-jupiter-2026-11-16",
+      "kind": "conjunction",
+      "title": "Mars–Jupiter conjunction (1.2°)",
+      "time": "2026-11-16T02:03:08.432Z",
+      "score": 84,
+      "bodies": [
+        "Mars",
+        "Jupiter"
+      ],
+      "viewing": {
+        "bestLocal": "Mon 16 Nov, 04:03",
+        "bestUtc": "2026-11-16T03:03:08.432Z",
+        "azimuth": 131.3,
+        "altitude": 45.9,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "conj-mars-jupiter-2026-11-16-sep",
+        "conj-mars-jupiter-2026-11-16-moons",
+        "conj-mars-jupiter-2026-11-16-dist",
+        "conj-mars-jupiter-2026-11-16-mag",
+        "conj-mars-jupiter-2026-11-16-view"
+      ],
+      "notes": []
+    },
+    {
+      "id": "elongation-mercury-2026-11-20",
+      "kind": "elongation",
+      "title": "Mercury at greatest morning elongation (19.6°)",
+      "time": "2026-11-20T23:35:39.724Z",
+      "score": 45,
+      "bodies": [
+        "Mercury"
+      ],
+      "viewing": {
+        "bestLocal": "Sat 21 Nov, 06:25",
+        "bestUtc": "2026-11-21T05:25:39.724Z",
+        "azimuth": 120.3,
+        "altitude": 8.1,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "elongation-mercury-2026-11-20"
+      ],
+      "notes": []
+    },
+    {
+      "id": "moon-saturn-2026-11-20",
+      "kind": "moon-pass",
+      "title": "Moon near Saturn (5.5°)",
+      "time": "2026-11-20T18:43:28.074Z",
+      "score": 42,
+      "bodies": [
+        "Moon",
+        "Saturn"
+      ],
+      "viewing": {
+        "bestLocal": "Fri 20 Nov, 20:33",
+        "bestUtc": "2026-11-20T19:33:28.074Z",
+        "azimuth": 179.4,
+        "altitude": 40.9,
+        "direction": "south"
+      },
+      "factIds": [
+        "moon-saturn-2026-11-20-sep",
+        "moon-saturn-2026-11-20-illum",
+        "moon-saturn-2026-11-20-view"
+      ],
+      "notes": []
+    },
+    {
+      "id": "meteors-leonids-2026-11-17",
+      "kind": "meteor-shower",
+      "title": "Leonids peak (ZHR ~15)",
+      "time": "2026-11-17T14:52:22.927Z",
+      "score": 41,
+      "bodies": [],
+      "viewing": {
+        "bestLocal": "Wed 18 Nov, 05:52",
+        "bestUtc": "2026-11-18T04:52:22.927Z",
+        "azimuth": 167,
+        "altitude": 61.5,
+        "direction": "south"
+      },
+      "factIds": [
+        "meteors-leonids-2026-11-17-zhr",
+        "meteors-leonids-2026-11-17-peak",
+        "meteors-leonids-2026-11-17-radiant",
+        "meteors-leonids-2026-11-17-moon",
+        "meteors-leonids-2026-11-17-moonset"
+      ],
+      "notes": [
+        "radiant RA 152° Dec 22°",
+        "constellation Leo"
+      ]
+    },
+    {
+      "id": "visible-venus-2026-11-19",
+      "kind": "planet-visibility",
+      "title": "Venus visible (mag -4.8)",
+      "time": "2026-11-19T05:20:00.000Z",
+      "score": 39,
+      "bodies": [
+        "Venus"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 19 Nov, 06:20",
+        "bestUtc": "2026-11-19T05:20:00.000Z",
+        "azimuth": 129.7,
+        "altitude": 17.2,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-venus-2026-11-19"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-jupiter-2026-11-19",
+      "kind": "planet-visibility",
+      "title": "Jupiter visible (mag -2.1)",
+      "time": "2026-11-19T03:00:00.000Z",
+      "score": 29,
+      "bodies": [
+        "Jupiter"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 19 Nov, 04:00",
+        "bestUtc": "2026-11-19T03:00:00.000Z",
+        "azimuth": 134.9,
+        "altitude": 45.9,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-jupiter-2026-11-19"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-saturn-2026-11-19",
+      "kind": "planet-visibility",
+      "title": "Saturn visible (mag 0.5)",
+      "time": "2026-11-19T19:40:00.000Z",
+      "score": 18,
+      "bodies": [
+        "Saturn"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 19 Nov, 20:40",
+        "bestUtc": "2026-11-19T19:40:00.000Z",
+        "azimuth": 180.2,
+        "altitude": 40.9,
+        "direction": "south"
+      },
+      "factIds": [
+        "visible-saturn-2026-11-19"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-mars-2026-11-19",
+      "kind": "planet-visibility",
+      "title": "Mars visible (mag 0.7)",
+      "time": "2026-11-19T03:00:00.000Z",
+      "score": 17,
+      "bodies": [
+        "Mars"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 19 Nov, 04:00",
+        "bestUtc": "2026-11-19T03:00:00.000Z",
+        "azimuth": 132.6,
+        "altitude": 45.9,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-mars-2026-11-19"
+      ],
+      "notes": []
+    },
+    {
+      "id": "phase-first-quarter-2026-11-17",
+      "kind": "moon-phase",
+      "title": "First Quarter",
+      "time": "2026-11-17T11:48:27.140Z",
+      "score": 10,
+      "bodies": [
+        "Moon"
+      ],
+      "factIds": [
+        "phase-first-quarter-2026-11-17"
+      ],
+      "notes": []
+    }
+  ]
+}

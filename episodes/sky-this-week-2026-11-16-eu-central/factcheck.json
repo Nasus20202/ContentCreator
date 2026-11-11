@@ -1,0 +1,216 @@
+{
+  "checkedAt": "2026-11-11T22:04:48.663Z",
+  "planHash": "6c3d58eb3f1b48b2",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Sky this week Nov 16 – 22",
+        "number": 16,
+        "raw": "16",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Sky this week Nov 16 – 22",
+        "number": 22,
+        "raw": "22",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "conjunction",
+        "where": "narration[0]",
+        "text": "Before dawn on Monday, November sixteenth, they're just over one degree apart.",
+        "number": 16,
+        "raw": "sixteenth",
+        "matchedFact": "conj-mars-jupiter-2026-11-16-sep"
+      },
+      {
+        "sceneId": "conjunction",
+        "where": "narration[0]",
+        "text": "Before dawn on Monday, November sixteenth, they're just over one degree apart.",
+        "number": 1,
+        "raw": "one",
+        "matchedFact": "conj-mars-jupiter-2026-11-16-sep"
+      },
+      {
+        "sceneId": "conjunction",
+        "where": "narration[1]",
+        "text": "That's about two full Moons side by side.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "conj-mars-jupiter-2026-11-16-moons"
+      },
+      {
+        "sceneId": "conjunction",
+        "where": "chips[0]",
+        "text": "MON NOV 16 · BEFORE DAWN",
+        "number": 16,
+        "raw": "16",
+        "matchedFact": "conj-mars-jupiter-2026-11-16-sep"
+      },
+      {
+        "sceneId": "conjunction",
+        "where": "separation",
+        "text": "1.2°",
+        "number": 1.2,
+        "raw": "1.2°",
+        "matchedFact": "conj-mars-jupiter-2026-11-16-sep"
+      },
+      {
+        "sceneId": "scale",
+        "where": "narration[1]",
+        "text": "Mars is about two hundred million kilometers away. Jupiter is four times farther.",
+        "number": 200000000,
+        "raw": "two hundred million",
+        "matchedFact": "conj-mars-jupiter-2026-11-16-dist"
+      },
+      {
+        "sceneId": "scale",
+        "where": "narration[1]",
+        "text": "Mars is about two hundred million kilometers away. Jupiter is four times farther.",
+        "number": 4,
+        "raw": "four",
+        "matchedFact": "conj-mars-jupiter-2026-11-16-dist"
+      },
+      {
+        "sceneId": "leonids",
+        "where": "narration[0]",
+        "text": "The Leonid meteor shower peaks on Tuesday, the seventeenth.",
+        "number": 17,
+        "raw": "seventeenth",
+        "matchedFact": "meteors-leonids-2026-11-17-peak"
+      },
+      {
+        "sceneId": "leonids",
+        "where": "narration[2]",
+        "text": "Look up after midnight on the nights around the peak. Under a dark sky, expect up to fifteen meteors an hour.",
+        "number": 15,
+        "raw": "fifteen",
+        "matchedFact": "meteors-leonids-2026-11-17-zhr"
+      },
+      {
+        "sceneId": "leonids",
+        "where": "chips[0]",
+        "text": "LEONIDS PEAK · TUE NOV 17",
+        "number": 17,
+        "raw": "17",
+        "matchedFact": "meteors-leonids-2026-11-17-peak"
+      },
+      {
+        "sceneId": "leonids",
+        "where": "chips[1]",
+        "text": "MOONSET 23:28 → DARK SKY",
+        "number": 23,
+        "raw": "23:28",
+        "matchedFact": "meteors-leonids-2026-11-17-moonset"
+      },
+      {
+        "sceneId": "leonids",
+        "where": "chips[1]",
+        "text": "MOONSET 23:28 → DARK SKY",
+        "number": 28,
+        "raw": "23:28",
+        "matchedFact": "meteors-leonids-2026-11-17-moonset"
+      },
+      {
+        "sceneId": "leonids",
+        "where": "chips[2]",
+        "text": "UP TO 15 METEORS / HOUR",
+        "number": 15,
+        "raw": "15",
+        "matchedFact": "meteors-leonids-2026-11-17-zhr"
+      },
+      {
+        "sceneId": "moon-saturn",
+        "where": "chips[0]",
+        "text": "FRI NOV 20 · EVENING",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "moon-saturn-2026-11-20-sep"
+      },
+      {
+        "sceneId": "moon-saturn",
+        "where": "labels[1]",
+        "text": "Saturn 5° from the Moon",
+        "number": 5,
+        "raw": "5°",
+        "matchedFact": "moon-saturn-2026-11-20-sep"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22",
+        "number": 16,
+        "raw": "16",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22",
+        "number": 22,
+        "raw": "22",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 16,
+        "raw": "16",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 1.2,
+        "raw": "1.2°",
+        "matchedFact": "conj-mars-jupiter-2026-11-16-sep"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 17,
+        "raw": "17",
+        "matchedFact": "meteors-leonids-2026-11-17-peak"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 23,
+        "raw": "23:28",
+        "matchedFact": "meteors-leonids-2026-11-17-moonset"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 28,
+        "raw": "23:28",
+        "matchedFact": "meteors-leonids-2026-11-17-moonset"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "moon-saturn-2026-11-20-sep"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-11T22:04:49.356Z",
+    "verdict": "pass",
+    "notes": "Visual-only change (outro camera target). Narration, on-screen text and post copy unchanged from the reviewed version."
+  }
+}

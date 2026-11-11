@@ -1,0 +1,474 @@
+{
+  "episodeId": "sky-this-week-2026-11-16-eu-central",
+  "series": "sky-this-week",
+  "title": "Sky This Week · Nov 16–22, 2026 · central Europe",
+  "badge": "Sky this week · Nov 16–22",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.3
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "skyView",
+      "narration": [
+        "Mars and Jupiter almost touch in the sky this week.",
+        "And you won't need a telescope to see it."
+      ],
+      "factIds": [
+        "episode-window",
+        "conj-mars-jupiter-2026-11-16-sep"
+      ],
+      "title": {
+        "kicker": "Sky this week",
+        "title": "Nov 16 – 22",
+        "from": 0.1,
+        "to": 2.8
+      },
+      "params": {
+        "time": "2026-11-16T03:00:00.000Z",
+        "bodies": [
+          "Mars",
+          "Jupiter",
+          "Venus",
+          "Moon"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "azAlt": [
+                150,
+                22
+              ]
+            },
+            "fov": 105
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "midpoint": [
+                "Mars",
+                "Jupiter"
+              ]
+            },
+            "fov": 34
+          }
+        ],
+        "twilight": 0.3
+      }
+    },
+    {
+      "id": "conjunction",
+      "template": "skyView",
+      "narration": [
+        "Before dawn on Monday, November sixteenth, they're just over one degree apart.",
+        "That's about two full Moons side by side.",
+        "Look high in the south-east. Jupiter is the brilliant one. Mars is the orange dot right beside it."
+      ],
+      "factIds": [
+        "conj-mars-jupiter-2026-11-16-sep",
+        "conj-mars-jupiter-2026-11-16-moons",
+        "conj-mars-jupiter-2026-11-16-view",
+        "conj-mars-jupiter-2026-11-16-mag"
+      ],
+      "chips": [
+        {
+          "text": "MON NOV 16 · BEFORE DAWN",
+          "from": 0.2,
+          "to": {
+            "sentence": 2,
+            "offset": -0.2
+          }
+        },
+        {
+          "text": "HIGH IN THE SOUTH-EAST",
+          "from": {
+            "sentence": 2,
+            "offset": 1.2
+          }
+        }
+      ],
+      "params": {
+        "time": "2026-11-16T03:00:00.000Z",
+        "bodies": [
+          "Mars",
+          "Jupiter",
+          "Venus",
+          "Moon"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "midpoint": [
+                "Mars",
+                "Jupiter"
+              ]
+            },
+            "fov": 34
+          },
+          {
+            "at": {
+              "sentence": 0,
+              "edge": "end",
+              "offset": -0.6
+            },
+            "target": {
+              "midpoint": [
+                "Mars",
+                "Jupiter"
+              ]
+            },
+            "fov": 5.2
+          },
+          {
+            "at": {
+              "sentence": 2
+            },
+            "target": {
+              "midpoint": [
+                "Mars",
+                "Jupiter"
+              ]
+            },
+            "fov": 5.2
+          },
+          {
+            "at": {
+              "sentence": 2,
+              "offset": 2.2
+            },
+            "target": {
+              "azAlt": [
+                140,
+                32
+              ]
+            },
+            "fov": 88
+          },
+          {
+            "at": {
+              "sentence": 2,
+              "edge": "end",
+              "offset": 1
+            },
+            "target": {
+              "azAlt": [
+                142,
+                33
+              ]
+            },
+            "fov": 82
+          }
+        ],
+        "labels": [
+          {
+            "body": "Mars",
+            "text": "Mars",
+            "side": "left",
+            "from": 1.4
+          },
+          {
+            "body": "Jupiter",
+            "text": "Jupiter",
+            "side": "right",
+            "from": 1.4
+          }
+        ],
+        "separation": {
+          "a": "Mars",
+          "b": "Jupiter",
+          "text": "1.2°",
+          "from": {
+            "sentence": 0,
+            "edge": "end",
+            "offset": -0.4
+          },
+          "to": {
+            "sentence": 2
+          }
+        },
+        "moonCompare": {
+          "a": "Mars",
+          "b": "Jupiter",
+          "count": 2,
+          "from": {
+            "sentence": 1
+          },
+          "to": {
+            "sentence": 2
+          }
+        },
+        "twilight": 0.3
+      }
+    },
+    {
+      "id": "scale",
+      "template": "orbit3d",
+      "narration": [
+        "But they only look close.",
+        "Mars is about two hundred million kilometers away. Jupiter is four times farther."
+      ],
+      "factIds": [
+        "conj-mars-jupiter-2026-11-16-dist"
+      ],
+      "params": {
+        "time": "2026-11-16T03:00:00.000Z",
+        "bodies": [
+          "Earth",
+          "Mars",
+          "Jupiter"
+        ],
+        "lineOfSight": {
+          "to": "Jupiter",
+          "through": "Mars"
+        },
+        "revealAt": {
+          "sentence": 0,
+          "edge": "end",
+          "offset": -0.2
+        },
+        "distancesAt": {
+          "sentence": 1
+        }
+      }
+    },
+    {
+      "id": "leonids",
+      "template": "skyView",
+      "narration": [
+        "The Leonid meteor shower peaks on Tuesday, the seventeenth.",
+        "The Moon sets before midnight, so the sky gets properly dark.",
+        "Look up after midnight on the nights around the peak. Under a dark sky, expect up to fifteen meteors an hour."
+      ],
+      "factIds": [
+        "meteors-leonids-2026-11-17-peak",
+        "meteors-leonids-2026-11-17-moonset",
+        "meteors-leonids-2026-11-17-zhr",
+        "meteors-leonids-2026-11-17-radiant",
+        "meteors-leonids-2026-11-17-moon"
+      ],
+      "chips": [
+        {
+          "text": "LEONIDS PEAK · TUE NOV 17",
+          "from": 0.2,
+          "to": {
+            "sentence": 1,
+            "offset": -0.1
+          }
+        },
+        {
+          "text": "MOONSET 23:28 → DARK SKY",
+          "from": {
+            "sentence": 1,
+            "offset": 0.1
+          },
+          "to": {
+            "sentence": 2,
+            "offset": -0.1
+          }
+        },
+        {
+          "text": "UP TO 15 METEORS / HOUR",
+          "from": {
+            "sentence": 2,
+            "offset": 0.1
+          }
+        }
+      ],
+      "params": {
+        "time": "2026-11-18T03:30:00.000Z",
+        "bodies": [
+          "Mars",
+          "Jupiter",
+          "Moon"
+        ],
+        "radiant": {
+          "ra": 152,
+          "dec": 22
+        },
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "radiant": true
+            },
+            "fov": 100,
+            "dAz": -8,
+            "dAlt": -18
+          },
+          {
+            "at": {
+              "sentence": 2,
+              "edge": "end"
+            },
+            "target": {
+              "radiant": true
+            },
+            "fov": 88,
+            "dAz": 6,
+            "dAlt": -14
+          }
+        ],
+        "constellation": {
+          "id": "Leo",
+          "label": "LEO",
+          "from": 0.8
+        },
+        "starLabels": [
+          {
+            "name": "Regulus",
+            "from": 2
+          }
+        ],
+        "meteors": {
+          "perSecond": 1.3,
+          "from": 0
+        },
+        "twilight": 0.15,
+        "constellationLines": 0.07
+      }
+    },
+    {
+      "id": "moon-saturn",
+      "template": "skyView",
+      "narration": [
+        "And on Friday evening, the Moon slides past Saturn, high in the south after dark."
+      ],
+      "factIds": [
+        "moon-saturn-2026-11-20-sep",
+        "moon-saturn-2026-11-20-view"
+      ],
+      "chips": [
+        {
+          "text": "FRI NOV 20 · EVENING",
+          "from": 0.2
+        }
+      ],
+      "params": {
+        "time": "2026-11-20T19:30:00.000Z",
+        "bodies": [
+          "Moon",
+          "Saturn"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "midpoint": [
+                "Moon",
+                "Saturn"
+              ]
+            },
+            "fov": 70,
+            "dAz": 10,
+            "dAlt": -4
+          },
+          {
+            "at": {
+              "sentence": 0,
+              "edge": "end"
+            },
+            "target": {
+              "midpoint": [
+                "Moon",
+                "Saturn"
+              ]
+            },
+            "fov": 26
+          }
+        ],
+        "labels": [
+          {
+            "body": "Moon",
+            "text": "Moon",
+            "side": "right",
+            "from": 1
+          },
+          {
+            "body": "Saturn",
+            "text": "Saturn",
+            "sub": "5° from the Moon",
+            "side": "left",
+            "from": 1.6
+          }
+        ],
+        "twilight": 0.3,
+        "constellationLines": 0.07
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Positions calculated for central Europe.",
+        "Follow, so you don't miss next week's sky."
+      ],
+      "factIds": [
+        "episode-location"
+      ],
+      "params": {
+        "kicker": "Next week's sky",
+        "cta": "Follow\nso you don't\nmiss it",
+        "footnote": "Positions computed for central Europe · 50°N 15°E",
+        "sky": {
+          "time": "2026-11-20T19:30:00.000Z",
+          "bodies": [
+            "Moon",
+            "Saturn"
+          ],
+          "camera": [
+            {
+              "at": 0,
+              "target": {
+                "midpoint": [
+                  "Moon",
+                  "Saturn"
+                ]
+              },
+              "fov": 26
+            },
+            {
+              "at": 2.5,
+              "target": {
+                "azAlt": [
+                  262,
+                  30
+                ]
+              },
+              "fov": 100
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "post": {
+    "title": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22",
+    "description": "Before dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#astronomy",
+      "#stargazing",
+      "#nightsky",
+      "#space",
+      "#leonids",
+      "#jupiter",
+      "#mars"
+    ]
+  }
+}
