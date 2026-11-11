@@ -1,7 +1,8 @@
 import React from 'react';
-import { AbsoluteFill, Composition, registerRoot } from 'remotion';
+import { AbsoluteFill, Composition, registerRoot, Still } from 'remotion';
 import type { RenderProps } from '../src/core/schemas';
 import { totalFrames } from '../src/core/timing';
+import { Banner, Logo } from './brand/Brand';
 import { Episode } from './Episode';
 
 const Empty: React.FC = () => (
@@ -24,19 +25,23 @@ const Empty: React.FC = () => (
 const Component: React.FC<RenderProps> = (props) => (props.plan ? <Episode {...props} /> : <Empty />);
 
 const Root: React.FC = () => (
-  <Composition
-    id="Episode"
-    component={Component}
-    width={1080}
-    height={1920}
-    fps={30}
-    durationInFrames={300}
-    defaultProps={{} as RenderProps}
-    calculateMetadata={({ props }) => ({
-      durationInFrames: props.timeline ? totalFrames(props.timeline, props.fps) : 300,
-      fps: props.fps ?? 30,
-    })}
-  />
+  <>
+    <Composition
+      id="Episode"
+      component={Component}
+      width={1080}
+      height={1920}
+      fps={30}
+      durationInFrames={300}
+      defaultProps={{} as RenderProps}
+      calculateMetadata={({ props }) => ({
+        durationInFrames: props.timeline ? totalFrames(props.timeline, props.fps) : 300,
+        fps: props.fps ?? 30,
+      })}
+    />
+    <Still id="Logo" component={Logo} width={800} height={800} />
+    <Still id="Banner" component={Banner} width={2560} height={1440} />
+  </>
 );
 
 registerRoot(Root);
