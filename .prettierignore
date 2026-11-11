@@ -1,0 +1,9 @@
+node_modules
+coverage
+package-lock.json
+assets/catalog
+# machine-written records and generated reports
+episodes/
+docs/ledger.md
+docs/decisions/
+infra/postiz/dynamicconfig

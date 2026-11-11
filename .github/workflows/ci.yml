@@ -1,0 +1,77 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Format · lint · typecheck · test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - name: Install ffmpeg (QA tests use it)
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm format:check
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm test --coverage
+
+  bundle:
+    name: Remotion bundle compiles
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test:bundle
+
+  records:
+    name: Episode records are valid
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Validate every committed episode and the generated reports are up to date
+        run: pnpm validate:records
+
+  postiz-compose:
+    name: Postiz compose config
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Validate docker compose with example env
+        run: |
+          cp infra/postiz/.env.example infra/postiz/.env
+          sed -i 's/^JWT_SECRET=$/JWT_SECRET=ci/; s/^POSTIZ_DB_PASSWORD=$/POSTIZ_DB_PASSWORD=ci/; s/^TEMPORAL_DB_PASSWORD=$/TEMPORAL_DB_PASSWORD=ci/' infra/postiz/.env
+          infra/postiz/postiz.sh config
+      - name: Shellcheck
+        run: shellcheck infra/postiz/postiz.sh

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>Nasus20202/renovate"],
+  "packageRules": [
+    {
+      "description": "Remotion packages must always share one exact version",
+      "matchPackageNames": ["remotion", "@remotion/**"],
+      "groupName": "remotion"
+    },
+    {
+      "description": "typescript-eslint supports TypeScript < 6.1; TypeScript 7 (native) is not supported by the lint toolchain yet",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<6.1"
+    },
+    {
+      "description": "Lint toolchain moves together",
+      "matchPackageNames": ["eslint", "@eslint/**", "typescript-eslint", "eslint-*", "globals"],
+      "groupName": "eslint"
+    },
+    {
+      "description": "Postiz stack: review manually (DB migrations, Temporal compatibility)",
+      "matchFileNames": ["infra/postiz/**"],
+      "groupName": "postiz stack",
+      "automerge": false
+    },
+    {
+      "description": "Temporal uses ES_VERSION=v7 for its visibility store",
+      "matchPackageNames": ["elasticsearch", "docker.elastic.co/elasticsearch/elasticsearch"],
+      "allowedVersions": "<8"
+    },
+    {
+      "description": "Postgres major upgrades need a dump/restore",
+      "matchFileNames": ["infra/postiz/**"],
+      "matchPackageNames": ["postgres"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    }
+  ]
+}

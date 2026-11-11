@@ -1,0 +1,9 @@
+node_modules/
+episodes/*/build/
+.env
+*.log
+.DS_Store
+.remotion/
+coverage/
+infra/postiz/.env
+infra/postiz/backups/
