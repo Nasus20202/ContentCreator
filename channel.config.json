@@ -52,6 +52,17 @@
       "repo": "Nasus20202/ContentCreator",
       "branch": "videos"
     },
-    "targets": []
+    "targets": [
+      {
+        "platform": "youtube",
+        "channelId": "6af4fe2a62b70b94b0fe97dc",
+        "enabled": true
+      },
+      {
+        "platform": "tiktok",
+        "channelId": "6af4fe6f62b70b94b0fe9d85",
+        "enabled": true
+      }
+    ]
   }
 }
