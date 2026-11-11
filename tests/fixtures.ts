@@ -82,7 +82,7 @@ export const config: ChannelConfig = {
     defaultMode: 'draft',
     aiDisclosure: true,
     provider: 'buffer',
-    mediaHost: { type: 'github-release', repo: 'test/media' },
+    mediaHost: { type: 'git-branch', repo: 'test/media', branch: 'videos' },
     targets: [],
   },
 };

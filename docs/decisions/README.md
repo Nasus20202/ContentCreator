@@ -5,6 +5,33 @@
 
 ## 2026-11-11 · publish · human
 
+**Repository made public. Approved videos are committed to the orphan 'videos' branch of this repo and served from raw.githubusercontent.com for Buffer to fetch (publishing.mediaHost: git-branch).**
+
+Owner accepted that the public repo links the channel to their GitHub identity; in exchange: no extra accounts, direct download URLs, and the fact-check/decision trail is publicly verifiable. Owner preferred a branch over release assets. History scanned for secrets before going public: none (placeholders only; .env files gitignored).
+
+Alternatives considered:
+- GitHub release assets
+- Separate public media repo
+- Litterbox (72h expiry)
+- Cloudflare R2 signed URLs
+- Proton Drive (rejected: encrypted links)
+- Google Drive
+
+## 2026-11-11 · publish · human
+
+**Repository made public; approved videos are hosted as release assets of this repo (publishing.mediaHost.repo = Nasus20202/ContentCreator) for Buffer to fetch.**
+
+Owner accepted that the public repo links the channel to their GitHub identity; in exchange: zero extra accounts, direct download URLs, and the fact-check/decision trail is publicly verifiable (fits the 'computed, not guessed' brand). History scanned for secrets before publishing: none (only placeholders; .env files gitignored).
+
+Alternatives considered:
+- Separate public media repo
+- Litterbox (72h expiry)
+- Cloudflare R2 signed URLs
+- Proton Drive (rejected: encrypted links)
+- Google Drive
+
+## 2026-11-11 · publish · human
+
 **Publishing provider switched from self-hosted Postiz to Buffer (free plan, 3 channels: YouTube + TikTok). Postiz client, infra/postiz stack, operate-postiz skill, CI job and Renovate rules removed (kept in git history). Videos are hosted as release assets of a public GitHub repo because Buffer's API only accepts media by URL.**
 
 With our own Postiz OAuth apps, YouTube and TikTok keep API uploads private until app audits pass (weeks), and TikTok also needs a public HTTPS domain + verified media domain. Buffer's apps are already audited, so posts are public immediately; no domain, no laptop-must-be-on scheduling, no 6-container upkeep. Buffer's GraphQL API (GA July 2026) supports scheduled video posts with YouTube (title, privacy, category, isAiGenerated) and TikTok (isAiGenerated) metadata — verified by schema introspection on 2026-11-12.

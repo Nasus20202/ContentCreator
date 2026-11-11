@@ -48,8 +48,9 @@
     "aiDisclosure": true,
     "provider": "buffer",
     "mediaHost": {
-      "type": "github-release",
-      "repo": "Nasus20202/photonsphere-media"
+      "type": "git-branch",
+      "repo": "Nasus20202/ContentCreator",
+      "branch": "videos"
     },
     "targets": []
   }

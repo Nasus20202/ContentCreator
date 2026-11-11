@@ -206,9 +206,9 @@ describe('pipeline stages', () => {
     const publisher: stages.Publisher = {
       provider: 'buffer',
       endpoint: 'https://buffer.test',
-      hostMedia: (_file, tag) => {
-        hosted.push(tag);
-        return Promise.resolve({ url: `https://media.test/${tag}.mp4` });
+      hostMedia: (_file, name) => {
+        hosted.push(name);
+        return Promise.resolve({ url: `https://media.test/${name}` });
       },
       post: (input) =>
         input.channelId === 'bad' ? Promise.reject(new Error('Queue limit reached')) : Promise.resolve({ id: 'P1' }),
@@ -231,9 +231,9 @@ describe('pipeline stages', () => {
       ['youtube', 'submitted', 'P1'],
       ['tiktok', 'failed', 'Queue limit reached'],
     ]);
-    // hosted once per approved video, tagged with episode id + sha prefix
-    expect(hosted).toEqual([`sky-test-${a.videoSha256.slice(0, 8)}`]);
-    expect(a.media?.url).toBe(`https://media.test/${hosted[0]}.mp4`);
+    // hosted once per approved video, named by episode id + sha prefix
+    expect(hosted).toEqual([`sky-test-${a.videoSha256.slice(0, 8)}.mp4`]);
+    expect(a.media?.url).toBe(`https://media.test/${hosted[0]}`);
     expect(ep.stage).toBe('published');
   });
 

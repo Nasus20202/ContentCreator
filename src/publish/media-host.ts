@@ -1,50 +1,71 @@
 /**
- * Buffer's API only accepts media by public URL, so approved videos are hosted as
- * GitHub release assets in a public media repository (channel.config.json → publishing.mediaHost).
- * The video is public from upload time; that is fine because it is already approved for publishing.
+ * Buffer's API only accepts media by public URL, so approved videos are committed to an orphan branch
+ * (default `videos`) of this public repository and served from raw.githubusercontent.com.
+ * The branch shares no history with main; files are written with git plumbing, so the working tree,
+ * index and current branch are never touched.
  */
 import { execFile } from 'node:child_process';
-import path from 'node:path';
+import fs from 'node:fs';
 import { promisify } from 'node:util';
 import { PipelineError } from '../core/io';
+import { REPO_ROOT } from '../core/paths';
 
 const run = promisify(execFile);
 
 export interface MediaHost {
-  /** Uploads (or reuses) the file and returns its public URL. */
-  host(file: string, tag: string): Promise<{ url: string }>;
+  /** Publishes the file under `name` (or reuses it) and returns its public URL. */
+  host(file: string, name: string): Promise<{ url: string }>;
 }
 
-export type Exec = (cmd: string, args: string[]) => Promise<{ stdout: string }>;
+export type Exec = (cmd: string, args: string[], input?: string) => Promise<{ stdout: string }>;
 
-export const releaseTag = (episodeId: string, sha256: string) => `${episodeId}-${sha256.slice(0, 8)}`;
+const defaultExec: Exec = async (cmd, args, input) => {
+  if (input === undefined) return run(cmd, args, { cwd: REPO_ROOT, maxBuffer: 64 * 1024 * 1024 });
+  return new Promise((resolve, reject) => {
+    const child = execFile(cmd, args, { cwd: REPO_ROOT }, (err, stdout) =>
+      err ? reject(new Error(err.message)) : resolve({ stdout }),
+    );
+    child.stdin?.end(input);
+  });
+};
 
-export class GitHubReleaseHost implements MediaHost {
+/** File name on the media branch: episode id + video hash prefix, so a re-render never overwrites. */
+export const mediaName = (episodeId: string, sha256: string) => `${episodeId}-${sha256.slice(0, 8)}.mp4`;
+
+export class GitBranchHost implements MediaHost {
   constructor(
     readonly repo: string,
-    private readonly exec: Exec = (cmd, args) => run(cmd, args),
+    readonly branch = 'videos',
+    readonly remote = 'origin',
+    private readonly exec: Exec = defaultExec,
   ) {}
 
-  async host(file: string, tag: string): Promise<{ url: string }> {
-    const name = path.basename(file);
-    const url = `https://github.com/${this.repo}/releases/download/${tag}/${name}`;
-    const exists = await this.exec('gh', ['release', 'view', tag, '--repo', this.repo, '--json', 'assets']).then(
-      (r) => (JSON.parse(r.stdout) as { assets: { name: string }[] }).assets.some((a) => a.name === name),
-      () => undefined,
-    );
-    if (exists) return { url };
+  url(name: string): string {
+    return `https://raw.githubusercontent.com/${this.repo}/${this.branch}/${name}`;
+  }
+
+  async host(file: string, name: string): Promise<{ url: string }> {
+    if (!fs.existsSync(file)) throw new PipelineError(`Video not found: ${file}`);
+    const git = (args: string[], input?: string) => this.exec('git', args, input).then((r) => r.stdout.trim());
+    const ref = `refs/remotes/${this.remote}/${this.branch}`;
     try {
-      if (exists === undefined) {
-        await this.exec('gh', ['release', 'create', tag, file, '--repo', this.repo, '--title', tag, '--notes', '']);
-      } else {
-        await this.exec('gh', ['release', 'upload', tag, file, '--repo', this.repo]);
-      }
+      // the remote branch may not exist yet (first upload)
+      await git(['fetch', this.remote, `+refs/heads/${this.branch}:${ref}`]).catch(() => '');
+      const parent = await git(['rev-parse', '--verify', '--quiet', ref]).catch(() => '');
+      const entries = parent ? (await git(['ls-tree', parent])).split('\n').filter(Boolean) : [];
+      if (entries.some((e) => e.endsWith(`\t${name}`))) return { url: this.url(name) };
+
+      const blob = await git(['hash-object', '-w', file]);
+      const tree = await git(['mktree'], [...entries, `100644 blob ${blob}\t${name}`].join('\n') + '\n');
+      const commit = await git(['commit-tree', tree, ...(parent ? ['-p', parent] : []), '-m', `media: ${name}`]);
+      await git(['push', this.remote, `${commit}:refs/heads/${this.branch}`]);
+      await git(['update-ref', ref, commit]);
     } catch (e) {
       throw new PipelineError(
-        `Could not upload ${name} to github.com/${this.repo}: ${e instanceof Error ? e.message : String(e)}`,
-        'Check `gh auth status` and that the media repo exists and is public',
+        `Could not publish ${name} to the ${this.branch} branch: ${e instanceof Error ? e.message : String(e)}`,
+        `Check push access to ${this.remote} (${this.repo})`,
       );
     }
-    return { url };
+    return { url: this.url(name) };
   }
 }

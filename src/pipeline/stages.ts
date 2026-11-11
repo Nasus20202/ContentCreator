@@ -6,7 +6,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { releaseTag } from '../publish/media-host';
+import { mediaName } from '../publish/media-host';
 import { Episode, stageIndex } from '../core/episode';
 import { hashData, nowIso, PipelineError, readJson, sha256File, writeJson } from '../core/io';
 import { paths } from '../core/paths';
@@ -326,7 +326,7 @@ export interface Publisher {
   provider: 'buffer';
   endpoint: string;
   /** Makes the video reachable by the provider (Buffer fetches media by public URL). */
-  hostMedia(file: string, tag: string): Promise<{ url: string }>;
+  hostMedia(file: string, name: string): Promise<{ url: string }>;
   /** Submits one platform post; returns the provider's post id. */
   post(input: Record<string, unknown>): Promise<{ id: string }>;
 }
@@ -374,7 +374,7 @@ export async function publish(
 
   const media = opts.dryRun
     ? { url: 'DRY-RUN' }
-    : await opts.publisher!.hostMedia(ep.paths.video, releaseTag(ep.id, render.videoSha256));
+    : await opts.publisher!.hostMedia(ep.paths.video, mediaName(ep.id, render.videoSha256));
   attempt.media = media;
   // one call per platform so a failure on one does not block the others
   for (const t of opts.targets) {

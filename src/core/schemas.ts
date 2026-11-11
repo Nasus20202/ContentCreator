@@ -426,8 +426,12 @@ export const ChannelConfig = z.object({
     defaultMode: z.enum(['now', 'schedule', 'draft']).default('draft'),
     aiDisclosure: z.boolean().default(true),
     provider: z.literal('buffer').default('buffer'),
-    /** Buffer fetches media by URL: approved videos are hosted as release assets of this public repo. */
-    mediaHost: z.object({ type: z.literal('github-release'), repo: z.string().regex(/^[\w.-]+\/[\w.-]+$/) }),
+    /** Buffer fetches media by URL: approved videos are committed to an orphan branch of this public repo. */
+    mediaHost: z.object({
+      type: z.literal('git-branch'),
+      repo: z.string().regex(/^[\w.-]+\/[\w.-]+$/),
+      branch: z.string().default('videos'),
+    }),
     targets: z.array(z.object({ platform: Platform, channelId: z.string(), enabled: z.boolean().default(true) })),
   }),
 });

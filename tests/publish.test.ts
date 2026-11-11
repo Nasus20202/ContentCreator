@@ -1,6 +1,9 @@
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 import { describe, expect, it, vi } from 'vitest';
 import { BufferClient, BufferError } from '../src/publish/buffer';
-import { GitHubReleaseHost, releaseTag } from '../src/publish/media-host';
+import { GitBranchHost, mediaName } from '../src/publish/media-host';
 import { buildCreatePostInput, caption, platformMetadata, YOUTUBE_CATEGORY_SCIENCE } from '../src/publish/payload';
 import { plan } from './fixtures';
 
@@ -95,25 +98,44 @@ describe('BufferClient', () => {
   });
 });
 
-describe('GitHubReleaseHost', () => {
-  it('creates a release when missing and returns the public download URL', async () => {
+describe('GitBranchHost', () => {
+  const video = path.join(os.tmpdir(), 'cc-media-test.mp4');
+  fs.writeFileSync(video, 'x');
+
+  it('commits the file onto the media branch with plumbing and returns the raw URL', async () => {
     const calls: string[][] = [];
     const exec = (cmd: string, args: string[]) => {
-      calls.push([cmd, ...args]);
-      return args[1] === 'view' ? Promise.reject(new Error('release not found')) : Promise.resolve({ stdout: '' });
+      calls.push(args);
+      const out: Record<string, string> = { 'hash-object': 'BLOB', mktree: 'TREE', 'commit-tree': 'COMMIT' };
+      if (args[0] === 'rev-parse') return Promise.reject(new Error('no branch yet'));
+      return Promise.resolve({ stdout: out[args[0]] ?? '' });
     };
-    const res = await new GitHubReleaseHost('o/media', exec).host('/x/build/video.mp4', 'ep-1234abcd');
-    expect(res.url).toBe('https://github.com/o/media/releases/download/ep-1234abcd/video.mp4');
-    expect(calls[1].slice(0, 4)).toEqual(['gh', 'release', 'create', 'ep-1234abcd']);
+    const res = await new GitBranchHost('o/repo', 'videos', 'origin', exec).host(video, 'ep-1234abcd.mp4');
+    expect(res.url).toBe('https://raw.githubusercontent.com/o/repo/videos/ep-1234abcd.mp4');
+    expect(calls.map((c) => c[0])).toEqual([
+      'fetch',
+      'rev-parse',
+      'hash-object',
+      'mktree',
+      'commit-tree',
+      'push',
+      'update-ref',
+    ]);
+    expect(calls.find((c) => c[0] === 'commit-tree')).not.toContain('-p'); // first upload: orphan root commit
+    expect(calls.find((c) => c[0] === 'push')).toEqual(['push', 'origin', 'COMMIT:refs/heads/videos']);
   });
 
-  it('reuses an existing asset without uploading again', async () => {
-    const exec = vi.fn(() => Promise.resolve({ stdout: JSON.stringify({ assets: [{ name: 'video.mp4' }] }) }));
-    await new GitHubReleaseHost('o/media', exec).host('/x/video.mp4', 't');
-    expect(exec).toHaveBeenCalledTimes(1);
+  it('reuses a file that is already on the branch', async () => {
+    const exec = vi.fn((_cmd: string, args: string[]) =>
+      Promise.resolve({
+        stdout: args[0] === 'rev-parse' ? 'PARENT' : args[0] === 'ls-tree' ? '100644 blob B\tep-1.mp4' : '',
+      }),
+    );
+    await new GitBranchHost('o/repo', 'videos', 'origin', exec).host(video, 'ep-1.mp4');
+    expect(exec.mock.calls.map((c) => c[1][0])).toEqual(['fetch', 'rev-parse', 'ls-tree']);
   });
 
-  it('tags releases by episode and video hash', () => {
-    expect(releaseTag('ep', 'abcdef0123456789')).toBe('ep-abcdef01');
+  it('names media by episode and video hash', () => {
+    expect(mediaName('ep', 'abcdef0123456789')).toBe('ep-abcdef01.mp4');
   });
 });

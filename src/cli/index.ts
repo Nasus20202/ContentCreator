@@ -26,7 +26,7 @@ import {
 } from '../core/schemas';
 import { downloadNasa, lookupNasa, searchNasa } from '../assets/nasa';
 import { BufferClient } from '../publish/buffer';
-import { GitHubReleaseHost } from '../publish/media-host';
+import { GitBranchHost } from '../publish/media-host';
 import { buildCreatePostInput } from '../publish/payload';
 import { FPS } from '../render/prepare';
 import { extractReviewFrames, runAutomatedQa } from '../render/qa';
@@ -359,7 +359,7 @@ program
 
 const pub = program
   .command('publish')
-  .description('publish via Buffer (videos hosted as public GitHub release assets)');
+  .description('publish via Buffer (videos served from the public `videos` branch)');
 
 function bufferClient(): BufferClient | undefined {
   const key = bufferApiKey();
@@ -398,7 +398,7 @@ pub
       const wanted = o.platforms?.split(',').map((p) => Platform.parse(p.trim()));
       const targets = config.publishing.targets.filter((t) => t.enabled && (!wanted || wanted.includes(t.platform)));
       const client = bufferClient();
-      const host = new GitHubReleaseHost(config.publishing.mediaHost.repo);
+      const host = new GitBranchHost(config.publishing.mediaHost.repo, config.publishing.mediaHost.branch);
       const mode = o.mode ?? config.publishing.defaultMode;
       const dryRun = o.dryRun ?? !client;
       if (dryRun && !o.dryRun) say('BUFFER_API_KEY not set → dry run');
@@ -412,7 +412,7 @@ pub
           publisher: client && {
             provider: 'buffer',
             endpoint: client.endpoint,
-            hostMedia: (file, tag) => host.host(file, tag),
+            hostMedia: (file, name) => host.host(file, name),
             post: (input) => client.createPost(input),
           },
           buildPayload: (plan, t, media) =>
