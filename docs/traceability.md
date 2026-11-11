@@ -4,23 +4,23 @@
 
 ## Per episode — `episodes/<id>/`
 
-| File              | Written by               | Contents                                                                                                                                        |
-| ----------------- | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `episode.json`    | every stage              | Manifest: current stage, location, window, **input hashes** each stage signed off (plan, narration, video), approvals (who, when, video sha256) |
-| `log.jsonl`       | every command            | Append-only event log: timestamp, actor (`pipeline` / `claude` / `human`), stage, action, details, git sha                                      |
-| `decisions.jsonl` | `cc decision`            | Editorial decisions: what, why, alternatives considered, inputs used                                                                            |
-| `research.json`   | `cc research sky`        | Detected events with scores and viewing geometry, engine version                                                                                |
-| `facts.json`      | research / `cc fact add` | Every citable fact: statement, values, source (computed method+inputs, or URL+title+publisher+access date)                                      |
-| `plan.json`       | Claude                   | Script, scenes, camera, labels, post copy. Input, not a record — editing it invalidates later stages (hash check)                               |
-| `factcheck.json`  | `cc factcheck`           | Each number → backing fact, problems, and the recorded semantic review                                                                          |
-| `timeline.json`   | `cc voice`               | TTS engine/voice, per-sentence and per-word timings, narration hash                                                                             |
-| `assets.json`     | `cc asset add`           | Image provenance: source URL/page, credit, license, sha256, AI flag                                                                             |
-| `render.json`     | `cc render`              | Video sha256, plan + timeline hashes it was rendered from, duration, render time, Remotion version                                              |
-| `qa.json`         | `cc qa`                  | Automated checks, extracted frames, recorded visual review                                                                                      |
-| `publish.json`    | `cc publish`             | Every attempt: mode, schedule, dry-run flag, Postiz base URL, media id, per-platform status, Postiz post id, error, **full payload**            |
-| `metrics.jsonl`   | `cc metrics add`         | Performance snapshots per platform with source                                                                                                  |
-| `README.md`       | `cc report`              | Generated audit report of all the above                                                                                                         |
-| `build/`          | render stages            | Large artefacts (wav, mp4, frames). **Not committed**; reproducible, and the video is pinned by sha256                                          |
+| File              | Written by               | Contents                                                                                                                                         |
+| ----------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `episode.json`    | every stage              | Manifest: current stage, location, window, **input hashes** each stage signed off (plan, narration, video), approvals (who, when, video sha256)  |
+| `log.jsonl`       | every command            | Append-only event log: timestamp, actor (`pipeline` / `claude` / `human`), stage, action, details, git sha                                       |
+| `decisions.jsonl` | `cc decision`            | Editorial decisions: what, why, alternatives considered, inputs used                                                                             |
+| `research.json`   | `cc research sky`        | Detected events with scores and viewing geometry, engine version                                                                                 |
+| `facts.json`      | research / `cc fact add` | Every citable fact: statement, values, source (computed method+inputs, or URL+title+publisher+access date)                                       |
+| `plan.json`       | Claude                   | Script, scenes, camera, labels, post copy. Input, not a record — editing it invalidates later stages (hash check)                                |
+| `factcheck.json`  | `cc factcheck`           | Each number → backing fact, problems, and the recorded semantic review                                                                           |
+| `timeline.json`   | `cc voice`               | TTS engine/voice, per-sentence and per-word timings, narration hash                                                                              |
+| `assets.json`     | `cc asset add`           | Image provenance: source URL/page, credit, license, sha256, AI flag                                                                              |
+| `render.json`     | `cc render`              | Video sha256, plan + timeline hashes it was rendered from, duration, render time, Remotion version                                               |
+| `qa.json`         | `cc qa`                  | Automated checks, extracted frames, recorded visual review                                                                                       |
+| `publish.json`    | `cc publish`             | Every attempt: mode, schedule, dry-run flag, provider + endpoint, public media URL, per-platform status, Buffer post id, error, **full payload** |
+| `metrics.jsonl`   | `cc metrics add`         | Performance snapshots per platform with source                                                                                                   |
+| `README.md`       | `cc report`              | Generated audit report of all the above                                                                                                          |
+| `build/`          | render stages            | Large artefacts (wav, mp4, frames). **Not committed**; reproducible, and the video is pinned by sha256                                           |
 
 ## Channel level — `docs/`
 

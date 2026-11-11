@@ -1,6 +1,6 @@
 ---
 name: publish-episode
-description: Hand an episode to the human for approval and publish it to YouTube/TikTok/Instagram/Facebook through the self-hosted Postiz instance. Use only when the user asks to publish/schedule, or to set up publishing.
+description: Hand an episode to the human for approval and publish it to YouTube and TikTok through Buffer. Use only when the user asks to publish/schedule, or to set up publishing.
 ---
 
 # Publish an episode
@@ -8,7 +8,7 @@ description: Hand an episode to the human for approval and publish it to YouTube
 ## Preconditions (enforced by the CLI)
 
 - Stage `approved`: a **human** ran `pnpm cc approve <id> --by "<name>"` on the exact video (sha256-pinned). If not, show them the video path and ask; never run approve yourself.
-- `.env` has `POSTIZ_BASE_URL` and `POSTIZ_API_KEY`; `channel.config.json → publishing.targets` lists the Postiz integration ids (get them with `pnpm -s cc publish channels`). Setup details: `docs/publishing.md`.
+- `.env` has `BUFFER_API_KEY` (the human creates it; never ask them to paste it into chat). `channel.config.json → publishing.targets` lists Buffer channel ids (get them with `pnpm -s cc publish channels`). `gh` is logged in with push access to `publishing.mediaHost.repo`. Setup details: `docs/publishing.md`.
 
 ## Steps
 
@@ -16,10 +16,11 @@ description: Hand an episode to the human for approval and publish it to YouTube
    `pnpm -s cc publish <id> --dry-run --mode <draft|schedule|now> [--at <ISO>]`
    (payloads are recorded in `publish.json`).
 2. Only after the user explicitly confirms platforms, mode and time:
-   `pnpm -s cc publish <id> --mode schedule --at 2026-11-12T17:00:00Z --actor claude`
-   - `draft` (default) creates drafts in Postiz for a final manual click.
+   `pnpm -s cc publish <id> --mode schedule --at 2026-11-14T17:00:00Z --actor claude`
+   - This uploads the video as a public GitHub release asset, then creates one Buffer post per platform.
+   - `draft` saves Buffer drafts for a final manual click in Buffer.
    - Partial failures are recorded per platform; retry with `--platforms <failed ones>`.
-3. `pnpm -s cc report <id>` and tell the user what was submitted (and what failed, verbatim).
+3. Check the posts in the Buffer queue (<https://publish.buffer.com>), `pnpm -s cc report <id>`, and tell the user what was submitted (and what failed, verbatim).
 4. Commit the updated records.
 
 ## Later: metrics

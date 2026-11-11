@@ -78,7 +78,13 @@ export const config: ChannelConfig = {
   locations: [EU],
   voice: { id: 'af_heart', speed: 1 },
   autoApprove: false,
-  publishing: { defaultMode: 'draft', aiDisclosure: true, targets: [] },
+  publishing: {
+    defaultMode: 'draft',
+    aiDisclosure: true,
+    provider: 'buffer',
+    mediaHost: { type: 'github-release', repo: 'test/media' },
+    targets: [],
+  },
 };
 
 /** Point the pipeline at a throwaway episodes/docs dir for the duration of a test. */

@@ -11,7 +11,7 @@
    gating: stage order + input hashes · records · logging
       │            │             │            │             │
  planning/     voice/        render/       publish/      report/
- astro events  Kokoro TTS    Remotion +    Postiz        README +
+ astro events  Kokoro TTS    Remotion +    Buffer        README +
  snapshots     timings       ffmpeg + QA   client        ledger
  factcheck                       │
  plan checks                     ▼
@@ -32,7 +32,7 @@
 | `src/planning/validate-plan.ts`                      | Cross-reference checks (facts, bodies, sentence refs, assets, length)                                                                    |                                                                    |
 | `src/voice/`                                         | Kokoro TTS, WAV encoding, silence trimming, word-timing estimation                                                                       | Engine behind `TtsEngine` interface                                |
 | `src/render/`                                        | Props assembly, Remotion bundle/render, ffmpeg (music pad, loudness, probes), QA                                                         | Renderer behind `Renderer` interface                               |
-| `src/publish/`                                       | Postiz client + per-platform payloads                                                                                                    | Publisher behind an interface; dry-run default without credentials |
+| `src/publish/`                                       | Buffer client, media host (GitHub releases), per-platform payloads                                                                       | Publisher behind an interface; dry-run default without credentials |
 | `src/assets/nasa.ts`                                 | NASA Image Library search/download with provenance                                                                                       | Rejects items flagged with third-party copyright                   |
 | `src/report/`                                        | Episode README, ledger, decisions README                                                                                                 | Generated, never hand-edited                                       |
 | `video/`                                             | Remotion composition `Episode` + templates                                                                                               | Pure function of `RenderProps`                                     |

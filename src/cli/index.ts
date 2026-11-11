@@ -8,7 +8,7 @@ import { Command, Option } from 'commander';
 import fs from 'node:fs';
 import path from 'node:path';
 import { recordChannelDecision, channelDecisionsMarkdown } from '../core/channel-log';
-import { loadConfig, postizEnv, resolveLocation } from '../core/config';
+import { bufferApiKey, loadConfig, resolveLocation } from '../core/config';
 import { Episode } from '../core/episode';
 import { appendJsonl, nowIso, PipelineError, readJson, sha256File, writeJson } from '../core/io';
 import { paths } from '../core/paths';
@@ -25,8 +25,9 @@ import {
   type Stage,
 } from '../core/schemas';
 import { downloadNasa, lookupNasa, searchNasa } from '../assets/nasa';
-import { buildPostPayload } from '../publish/payload';
-import { PostizClient } from '../publish/postiz';
+import { BufferClient } from '../publish/buffer';
+import { GitHubReleaseHost } from '../publish/media-host';
+import { buildCreatePostInput } from '../publish/payload';
 import { FPS } from '../render/prepare';
 import { extractReviewFrames, runAutomatedQa } from '../render/qa';
 import { remotionRenderer } from '../render/remotion-renderer';
@@ -356,15 +357,27 @@ program
 
 // ------------------------------------------------------------------ publish
 
-const pub = program.command('publish').description('publish via self-hosted Postiz');
+const pub = program
+  .command('publish')
+  .description('publish via Buffer (videos hosted as public GitHub release assets)');
+
+function bufferClient(): BufferClient | undefined {
+  const key = bufferApiKey();
+  return key ? new BufferClient(key) : undefined;
+}
+
 pub
   .command('channels')
-  .description('list Postiz integrations (to fill channel.config.json → publishing.targets)')
+  .description('list Buffer channels (to fill channel.config.json → publishing.targets)')
   .action(async () => {
-    const env = postizEnv();
-    if (!env) throw new PipelineError('POSTIZ_BASE_URL / POSTIZ_API_KEY not set', 'Copy .env.example to .env');
-    for (const i of await new PostizClient(env.baseUrl, env.apiKey).listIntegrations()) {
-      say(`${i.identifier.padEnd(12)} ${i.id}  ${i.name}${i.disabled ? ' (disabled)' : ''}`);
+    const client = bufferClient();
+    if (!client)
+      throw new PipelineError('BUFFER_API_KEY not set', 'Create one at https://publish.buffer.com/settings/api');
+    for (const org of await client.organizations()) {
+      say(`organization ${org.name} (${org.id})`);
+      for (const c of await client.channels(org.id)) {
+        say(`  ${c.service.padEnd(10)} ${c.id}  ${c.name}${c.isDisconnected ? ' (disconnected)' : ''}`);
+      }
     }
   });
 pub
@@ -373,7 +386,7 @@ pub
   .addOption(new Option('--mode <mode>').choices(['now', 'schedule', 'draft']))
   .option('--at <iso>', 'schedule time (ISO 8601, with --mode schedule)')
   .option('--platforms <list>', 'subset, e.g. youtube,tiktok')
-  .option('--dry-run', 'build and record payloads without calling Postiz')
+  .option('--dry-run', 'build and record payloads without uploading or calling Buffer')
   .addOption(actorOpt())
   .action(
     async (
@@ -384,10 +397,11 @@ pub
       const config = loadConfig();
       const wanted = o.platforms?.split(',').map((p) => Platform.parse(p.trim()));
       const targets = config.publishing.targets.filter((t) => t.enabled && (!wanted || wanted.includes(t.platform)));
-      const env = postizEnv();
-      const client = env && new PostizClient(env.baseUrl, env.apiKey);
+      const client = bufferClient();
+      const host = new GitHubReleaseHost(config.publishing.mediaHost.repo);
       const mode = o.mode ?? config.publishing.defaultMode;
       const dryRun = o.dryRun ?? !client;
+      if (dryRun && !o.dryRun) say('BUFFER_API_KEY not set → dry run');
       const attempt = await stages.publish(
         ep,
         {
@@ -395,17 +409,21 @@ pub
           mode,
           date: o.at,
           dryRun,
-          aiDisclosure: config.publishing.aiDisclosure,
-          publisher: client
-            ? { baseUrl: env.baseUrl, upload: (f) => client.uploadFile(f), post: (p) => client.createPost(p) }
-            : undefined,
+          publisher: client && {
+            provider: 'buffer',
+            endpoint: client.endpoint,
+            hostMedia: (file, tag) => host.host(file, tag),
+            post: (input) => client.createPost(input),
+          },
           buildPayload: (plan, t, media) =>
-            buildPostPayload(plan, t, media, { mode, date: o.at, aiDisclosure: config.publishing.aiDisclosure }),
+            buildCreatePostInput(plan, t, media, { mode, date: o.at, aiDisclosure: config.publishing.aiDisclosure }),
         },
         o.actor,
       );
       refreshReport(id);
-      for (const t of attempt.targets) say(`${t.platform.padEnd(10)} ${t.status}${t.error ? ` — ${t.error}` : ''}`);
+      if (attempt.media && !dryRun) say(`media      ${attempt.media.url}`);
+      for (const t of attempt.targets)
+        say(`${t.platform.padEnd(10)} ${t.status}${t.postId ? ` ${t.postId}` : ''}${t.error ? ` — ${t.error}` : ''}`);
       if (attempt.targets.some((t) => t.status === 'failed')) process.exitCode = 1;
     },
   );

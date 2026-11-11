@@ -372,9 +372,11 @@ export type QaRecord = z.infer<typeof QaRecord>;
 
 export const PublishTarget = z.object({
   platform: Platform,
-  integrationId: z.string(),
+  /** Channel id in the publishing provider (Buffer channel id). */
+  channelId: z.string(),
   status: z.enum(['dry-run', 'submitted', 'failed']),
-  postizPostId: z.string().optional(),
+  /** Post id returned by the provider. */
+  postId: z.string().optional(),
   error: z.string().optional(),
   payload: z.unknown(),
 });
@@ -386,9 +388,11 @@ export const PublishRecord = z.object({
       mode: z.enum(['now', 'schedule', 'draft']),
       scheduledFor: z.iso.datetime().optional(),
       dryRun: z.boolean(),
-      postizBaseUrl: z.string(),
+      provider: z.literal('buffer'),
+      endpoint: z.string(),
       videoSha256: z.string(),
-      media: z.object({ id: z.string(), path: z.string() }).optional(),
+      /** Public URL the provider fetches the video from. */
+      media: z.object({ url: z.string() }).optional(),
       targets: z.array(PublishTarget),
     }),
   ),
@@ -421,7 +425,10 @@ export const ChannelConfig = z.object({
   publishing: z.object({
     defaultMode: z.enum(['now', 'schedule', 'draft']).default('draft'),
     aiDisclosure: z.boolean().default(true),
-    targets: z.array(z.object({ platform: Platform, integrationId: z.string(), enabled: z.boolean().default(true) })),
+    provider: z.literal('buffer').default('buffer'),
+    /** Buffer fetches media by URL: approved videos are hosted as release assets of this public repo. */
+    mediaHost: z.object({ type: z.literal('github-release'), repo: z.string().regex(/^[\w.-]+\/[\w.-]+$/) }),
+    targets: z.array(z.object({ platform: Platform, channelId: z.string(), enabled: z.boolean().default(true) })),
   }),
 });
 export type ChannelConfig = z.infer<typeof ChannelConfig>;

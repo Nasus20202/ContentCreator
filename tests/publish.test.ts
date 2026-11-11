@@ -1,82 +1,119 @@
 import { describe, expect, it, vi } from 'vitest';
-import { buildPostPayload, caption, platformSettings } from '../src/publish/payload';
-import { PostizClient, PostizError } from '../src/publish/postiz';
+import { BufferClient, BufferError } from '../src/publish/buffer';
+import { GitHubReleaseHost, releaseTag } from '../src/publish/media-host';
+import { buildCreatePostInput, caption, platformMetadata, YOUTUBE_CATEGORY_SCIENCE } from '../src/publish/payload';
 import { plan } from './fixtures';
 
-const media = { id: 'm1', path: 'https://postiz.local/uploads/v.mp4' };
+const media = { url: 'https://github.com/o/media/releases/download/ep-1234abcd/video.mp4' };
 
-describe('payloads', () => {
-  it('builds one Postiz post per target with platform settings', () => {
-    const p = buildPostPayload(
-      plan(),
-      [
-        { platform: 'youtube', integrationId: 'yt' },
-        { platform: 'tiktok', integrationId: 'tt' },
-      ],
-      media,
-      { mode: 'draft', aiDisclosure: true },
-    );
-    const posts = p.posts as {
-      integration: { id: string };
-      settings: Record<string, unknown>;
-      value: { image: unknown[] }[];
-    }[];
-    expect(p.type).toBe('draft');
-    expect(posts.map((x) => x.integration.id)).toEqual(['yt', 'tt']);
-    expect(posts[0].settings).toMatchObject({ __type: 'youtube', type: 'public', selfDeclaredMadeForKids: 'no' });
-    expect(posts[1].settings).toMatchObject({
-      __type: 'tiktok',
-      video_made_with_ai: true,
-      content_posting_method: 'DIRECT_POST',
+describe('Buffer createPost inputs', () => {
+  it('builds a scheduled YouTube Short with title, category and AI flag', () => {
+    const input = buildCreatePostInput(plan(), { platform: 'youtube', channelId: 'yt' }, media, {
+      mode: 'schedule',
+      date: '2026-11-14T17:00:00Z',
+      aiDisclosure: true,
     });
-    expect(posts[0].value[0].image).toEqual([media]);
+    expect(input).toMatchObject({
+      channelId: 'yt',
+      schedulingType: 'automatic',
+      mode: 'customScheduled',
+      dueAt: '2026-11-14T17:00:00.000Z',
+      assets: [{ video: { url: media.url } }],
+      metadata: {
+        youtube: {
+          title: 'Mars and Jupiter on Nov 16',
+          privacy: 'public',
+          madeForKids: false,
+          categoryId: YOUTUBE_CATEGORY_SCIENCE,
+          isAiGenerated: true,
+        },
+      },
+    });
   });
 
-  it('requires a date for scheduled posts', () => {
-    expect(() => buildPostPayload(plan(), [], media, { mode: 'schedule', aiDisclosure: true })).toThrow(/date/);
+  it('maps modes to Buffer share modes', () => {
+    const t = { platform: 'tiktok' as const, channelId: 'tt' };
+    expect(buildCreatePostInput(plan(), t, media, { mode: 'now', aiDisclosure: true }).mode).toBe('shareNow');
+    expect(buildCreatePostInput(plan(), t, media, { mode: 'draft', aiDisclosure: true })).toMatchObject({
+      mode: 'addToQueue',
+      saveToDraft: true,
+    });
+    expect(() => buildCreatePostInput(plan(), t, media, { mode: 'schedule', aiDisclosure: true })).toThrow(/date/);
   });
 
   it('keeps the title out of the YouTube caption but leads with it elsewhere', () => {
     expect(caption(plan(), 'youtube').startsWith('Just 1.2°')).toBe(true);
-    expect(caption(plan(), 'instagram').startsWith('Mars and Jupiter')).toBe(true);
+    expect(caption(plan(), 'tiktok').startsWith('Mars and Jupiter')).toBe(true);
     expect(caption(plan(), 'tiktok')).toContain('#astronomy');
   });
 
   it('respects the AI disclosure flag and title limits', () => {
-    expect(platformSettings(plan(), 'tiktok', { mode: 'now', aiDisclosure: false }).video_made_with_ai).toBe(false);
-    const long = plan({ post: { title: 'x'.repeat(90), description: '', hashtags: [] } });
-    expect(
-      String(platformSettings(long, 'youtube', { mode: 'now', aiDisclosure: true }).title).length,
-    ).toBeLessThanOrEqual(100);
+    expect(platformMetadata(plan(), 'tiktok', { mode: 'now', aiDisclosure: false })).toEqual({
+      tiktok: { isAiGenerated: false },
+    });
+    const long = plan({ post: { title: 'x'.repeat(140), description: '', hashtags: [] } });
+    const yt = platformMetadata(long, 'youtube', { mode: 'now', aiDisclosure: true }).youtube as { title: string };
+    expect(yt.title.length).toBeLessThanOrEqual(100);
   });
 });
 
-describe('PostizClient', () => {
-  const ok = (body: unknown) => new Response(JSON.stringify(body), { status: 200 });
+describe('BufferClient', () => {
+  const ok = (data: unknown) => new Response(JSON.stringify({ data }), { status: 200 });
 
-  it('sends the API key and parses integrations', async () => {
-    const fetchImpl = vi.fn().mockResolvedValue(ok([{ id: 'i1', name: 'Chan', identifier: 'youtube' }]));
-    const c = new PostizClient('https://p.local/api/public/v1', 'KEY', fetchImpl);
-    expect(await c.listIntegrations()).toEqual([{ id: 'i1', name: 'Chan', identifier: 'youtube' }]);
-    const [url, init] = fetchImpl.mock.calls[0] as [string, RequestInit];
-    expect(url).toBe('https://p.local/api/public/v1/integrations');
-    expect((init.headers as Record<string, string>).Authorization).toBe('KEY');
+  it('sends the bearer key and returns the created post id', async () => {
+    const fetchImpl = vi.fn(() => Promise.resolve(ok({ createPost: { post: { id: 'P9', dueAt: null } } })));
+    const post = await new BufferClient('KEY', fetchImpl).createPost({ channelId: 'c' });
+    expect(post.id).toBe('P9');
+    const [url, init] = fetchImpl.mock.calls[0] as unknown as [string, RequestInit];
+    expect(url).toBe('https://api.buffer.com');
+    expect((init.headers as Record<string, string>).Authorization).toBe('Bearer KEY');
+    expect((JSON.parse(init.body as string) as { variables: unknown }).variables).toEqual({
+      input: { channelId: 'c' },
+    });
   });
 
-  it('posts JSON with a content type', async () => {
-    const fetchImpl = vi.fn().mockResolvedValue(ok([{ postId: 'p1' }]));
-    await new PostizClient('https://p', 'K', fetchImpl).createPost({ a: 1 });
-    const init = fetchImpl.mock.calls[0][1] as RequestInit;
-    expect(init.method).toBe('POST');
-    expect((init.headers as Record<string, string>)['Content-Type']).toBe('application/json');
-    expect(init.body).toBe('{"a":1}');
+  it('turns MutationError, GraphQL errors and HTTP errors into BufferError', async () => {
+    const mutationErr = new BufferClient('K', () => Promise.resolve(ok({ createPost: { message: 'Queue full' } })));
+    await expect(mutationErr.createPost({})).rejects.toThrow(new BufferError('Queue full'));
+
+    const gqlErr = new BufferClient('K', () =>
+      Promise.resolve(new Response(JSON.stringify({ errors: [{ message: 'bad field' }] }), { status: 200 })),
+    );
+    await expect(gqlErr.organizations()).rejects.toThrow(/bad field/);
+
+    const httpErr = new BufferClient('K', () => Promise.resolve(new Response('nope', { status: 401 })));
+    const err = await httpErr.organizations().catch((e: unknown) => e);
+    expect(err).toBeInstanceOf(BufferError);
+    expect((err as BufferError).status).toBe(401);
   });
 
-  it('surfaces HTTP errors with status and body', async () => {
-    const fetchImpl = vi.fn().mockResolvedValue(new Response('nope', { status: 401 }));
-    const err = await new PostizClient('https://p', 'K', fetchImpl).listIntegrations().catch((e: unknown) => e);
-    expect(err).toBeInstanceOf(PostizError);
-    expect((err as PostizError).status).toBe(401);
-    expect((err as PostizError).body).toBe('nope');
+  it('lists channels of an organization', async () => {
+    const c = new BufferClient('K', () =>
+      Promise.resolve(ok({ channels: [{ id: 'c1', name: 'thephotonsphere', service: 'tiktok' }] })),
+    );
+    expect(await c.channels('org')).toEqual([{ id: 'c1', name: 'thephotonsphere', service: 'tiktok' }]);
+  });
+});
+
+describe('GitHubReleaseHost', () => {
+  it('creates a release when missing and returns the public download URL', async () => {
+    const calls: string[][] = [];
+    const exec = (cmd: string, args: string[]) => {
+      calls.push([cmd, ...args]);
+      return args[1] === 'view' ? Promise.reject(new Error('release not found')) : Promise.resolve({ stdout: '' });
+    };
+    const res = await new GitHubReleaseHost('o/media', exec).host('/x/build/video.mp4', 'ep-1234abcd');
+    expect(res.url).toBe('https://github.com/o/media/releases/download/ep-1234abcd/video.mp4');
+    expect(calls[1].slice(0, 4)).toEqual(['gh', 'release', 'create', 'ep-1234abcd']);
+  });
+
+  it('reuses an existing asset without uploading again', async () => {
+    const exec = vi.fn(() => Promise.resolve({ stdout: JSON.stringify({ assets: [{ name: 'video.mp4' }] }) }));
+    await new GitHubReleaseHost('o/media', exec).host('/x/video.mp4', 't');
+    expect(exec).toHaveBeenCalledTimes(1);
+  });
+
+  it('tags releases by episode and video hash', () => {
+    expect(releaseTag('ep', 'abcdef0123456789')).toBe('ep-abcdef01');
   });
 });

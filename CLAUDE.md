@@ -23,16 +23,15 @@ episode new → research → plan.json (you) → plan → factcheck (+ your revi
 
 ## Skills (in `.claude/skills/`)
 
-| Skill              | Use when                                                                            |
-| ------------------ | ----------------------------------------------------------------------------------- |
-| `produce-episode`  | "make this week's episode", end-to-end run                                          |
-| `plan-episode`     | choosing events and writing `plan.json`                                             |
-| `fact-check`       | semantic review after `cc factcheck` passes                                         |
-| `qa-review`        | inspecting rendered frames before `cc qa --review`                                  |
-| `publish-episode`  | approval hand-off and Postiz publishing                                             |
-| `operate-postiz`   | the self-hosted Postiz stack in `infra/postiz` (up/down, health, backups, upgrades) |
-| `content-strategy` | "what should we make?", metrics review, new series ideas                            |
-| `new-series`       | adding a series or a scene template                                                 |
+| Skill              | Use when                                                 |
+| ------------------ | -------------------------------------------------------- |
+| `produce-episode`  | "make this week's episode", end-to-end run               |
+| `plan-episode`     | choosing events and writing `plan.json`                  |
+| `fact-check`       | semantic review after `cc factcheck` passes              |
+| `qa-review`        | inspecting rendered frames before `cc qa --review`       |
+| `publish-episode`  | approval hand-off and publishing via Buffer              |
+| `content-strategy` | "what should we make?", metrics review, new series ideas |
+| `new-series`       | adding a series or a scene template                      |
 
 ## Engineering conventions
 
@@ -40,5 +39,5 @@ episode new → research → plan.json (you) → plan → factcheck (+ your revi
 - Schemas (zod) are the single source of truth for every file format. Change the schema first.
 - Before committing: `pnpm check` (prettier, eslint, tsc, vitest). Add tests for new logic in `tests/`.
 - Dependencies: Renovate (`renovate.json`, preset `github>Nasus20202/renovate`). Remotion packages share one exact version; TypeScript stays < 6.1 until typescript-eslint supports 7.
-- CI (`.github/workflows/ci.yml`): format, lint, typecheck, tests (+coverage), Remotion bundle, record validation (`cc validate`), compose config.
+- CI (`.github/workflows/ci.yml`): format, lint, typecheck, tests (+coverage), Remotion bundle, record validation (`cc validate`).
 - Commit episode records (everything in `episodes/<id>/` except `build/`). Conventional commit messages.

@@ -1,79 +1,50 @@
-# Publishing via self-hosted Postiz
+# Publishing
 
-The pipeline publishes through the **public API of your own Postiz instance**, which runs from this repo (`infra/postiz/`, docker compose; skill `operate-postiz`). Postiz holds the platform OAuth connections; the pipeline only stores integration ids and never sees platform tokens.
+Approved episodes are published through **[Buffer](https://buffer.com)** (free plan: up to 3 channels) with its
+public GraphQL API (`src/publish/buffer.ts`). Channels: **YouTube** (Photon Sphere, `@thephotonsphere`) and
+**TikTok** (`@thephotonsphere`). Meta is not connected (see `docs/decisions/`).
 
-## 0. Run Postiz
+Why Buffer and not the self-hosted Postiz we started with: Buffer's YouTube and TikTok apps are already audited, so
+posts go out **public** from day one. With our own Postiz app, YouTube and TikTok keep API uploads private until
+their audits pass, and TikTok additionally needs a public HTTPS domain. The Postiz stack was removed (it is in git
+history if we ever need it).
 
-```bash
-pnpm postiz:init    # infra/postiz/.env with generated secrets (gitignored)
-pnpm postiz:up      # postiz + postgres + redis + temporal (+ elasticsearch), waits until healthy
-pnpm postiz:status
+## How a publish works
+
+```
+cc publish <id> --mode schedule --at <ISO>
+  1. checks: stage approved, current video sha256 == approved sha256, targets configured
+  2. hosts the video: GitHub release `<episode>-<sha8>` in the public repo publishing.mediaHost.repo
+     (Buffer only accepts media by public URL; re-runs reuse the asset)
+  3. one Buffer createPost per platform (a failure on one does not block the others)
+  4. records everything in episodes/<id>/publish.json (payloads, media URL, Buffer post ids, errors)
 ```
 
-Open `MAIN_URL` (default http://localhost:4007), register the admin user, create an API key, then set `DISABLE_REGISTRATION=true` and `pnpm postiz:up` again. Platform OAuth callbacks need a public HTTPS URL: put a reverse proxy in front and set `MAIN_URL` / `FRONTEND_URL` / `NEXT_PUBLIC_BACKEND_URL` accordingly, and add provider credentials (`YOUTUBE_CLIENT_ID`, `TIKTOK_CLIENT_ID`, `FACEBOOK_APP_ID`, …) to `infra/postiz/.env`.
+Per-platform input (`src/publish/payload.ts`):
 
-## 1. Configure the repo
+| Platform | Buffer metadata                                                                                                                 |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| YouTube  | `title` (≤100), `privacy: public`, `madeForKids: false`, `categoryId: 28` (Science & Technology), `isAiGenerated` (config flag) |
+| TikTok   | `isAiGenerated`; caption = title + description + hashtags                                                                       |
 
-```bash
-cp .env.example .env
-# POSTIZ_BASE_URL = your instance's public API root, no trailing slash
-# POSTIZ_API_KEY  = Postiz → Settings → Public API
-pnpm cc publish channels          # lists integrations: identifier, id, name
-```
+Modes: `now` → `shareNow`, `schedule` → `customScheduled` + `dueAt`, `draft` → saved as a Buffer draft (nothing is
+published until someone schedules it in Buffer).
 
-Put the ids into `channel.config.json`:
+## Setup (once)
 
-```json
-"publishing": {
-  "defaultMode": "draft",
-  "aiDisclosure": true,
-  "targets": [
-    { "platform": "youtube",   "integrationId": "…", "enabled": true },
-    { "platform": "tiktok",    "integrationId": "…", "enabled": true },
-    { "platform": "instagram", "integrationId": "…", "enabled": true },
-    { "platform": "facebook",  "integrationId": "…", "enabled": false }
-  ]
-}
-```
+1. The human creates the Buffer account and connects the YouTube and TikTok channels in Buffer (OAuth).
+2. The human creates an API key at <https://publish.buffer.com/settings/api> and puts it in `.env` as
+   `BUFFER_API_KEY` (never commit it, never paste it into chat or records).
+3. Media repo: a **public** GitHub repo (default `Nasus20202/photonsphere-media`, set in
+   `channel.config.json → publishing.mediaHost.repo`); `gh` must be logged in with push access.
+4. `pnpm -s cc publish channels` → copy the YouTube and TikTok channel ids into
+   `channel.config.json → publishing.targets` (`{ "platform": "youtube", "channelId": "…" }`).
 
-The public API root is `NEXT_PUBLIC_BACKEND_URL` + `/public/v1` — with the bundled compose: `http://localhost:4007/api/public/v1`.
+## Limits and caveats
 
-## 2. Platform apps (self-hosted = your own developer apps)
-
-Self-hosting means each platform connection uses **your** developer app, configured in `infra/postiz/.env`. Each platform gates video publishing differently:
-
-| Platform      | What you need                                                                                                      | Gotchas                                                                                                                                                 |
-| ------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **YouTube**   | Google Cloud project, YouTube Data API v3, OAuth client (Postiz callback URL)                                      | Unverified apps: uploads may be forced **private** until Google's audit; default quota ≈ 10,000 units/day (an upload costs ~1,600 → ~6 uploads/day)     |
-| **TikTok**    | TikTok for Developers app with **Content Posting API** (Direct Post)                                               | Until the app passes TikTok's audit, posts are restricted to **private (SELF_ONLY)** visibility. `privacy_level: PUBLIC_TO_EVERYONE` fails before audit |
-| **Instagram** | Meta app, Instagram **Business/Creator** account linked to a Facebook Page, `instagram_content_publish` permission | Needs Meta App Review for production; Reels are published as video posts                                                                                |
-| **Facebook**  | Same Meta app, Page permissions (`pages_manage_posts`)                                                             | Posts go to a Page, not a personal profile                                                                                                              |
-
-Until audits pass, use `--mode draft` (default): Postiz creates drafts and you click publish in its UI, or post manually from the rendered file.
-
-## 3. Publishing an episode
-
-```bash
-pnpm cc publish <id> --dry-run                       # always first: builds + records payloads
-pnpm cc publish <id> --mode draft                    # drafts in Postiz
-pnpm cc publish <id> --mode schedule --at 2026-11-12T17:00:00Z
-pnpm cc publish <id> --platforms tiktok --mode now   # retry one platform
-```
-
-What the pipeline sends (see `src/publish/payload.ts`):
-
-- One upload (`POST /upload`) of `build/video.mp4`, then one `POST /posts` **per platform** so a failure on one doesn't block others.
-- YouTube: `title`, `type: public`, `selfDeclaredMadeForKids: no`, tags from hashtags.
-- TikTok: `DIRECT_POST`, public, duet off, stitch on, comments on, `video_made_with_ai` = `aiDisclosure`.
-- Instagram: `post_type: post`. Facebook: defaults.
-- Caption: title (except YouTube) + description + hashtags. Descriptions include the synthetic-voice disclosure line.
-
-Every attempt — including dry runs and the exact payloads — is recorded in `publish.json` and the episode README.
-
-## 4. Metrics
-
-Metrics are currently recorded explicitly (source noted per snapshot). Postiz v2.25 also exposes `GET /public/v1/analytics/post/:postId` — automating `cc metrics` from it is a planned follow-up once real posts exist to validate the response shape.
-
-```bash
-pnpm cc metrics add <id> --platform youtube --views 5400 --likes 310 --avg-view-pct 74 --source "YouTube Studio 7d"
-```
+- Free plan: 3 channels, a limited queue per channel. "Queue limit reached" comes back as a per-platform failure.
+- Videos are public on GitHub from upload time (they are approved for publishing anyway). Keep release assets until
+  the post has gone out: Buffer fetches the URL at publish time.
+- Buffer's API keys have no scopes: a leaked key can publish. Rotate it in Buffer settings if in doubt.
+- Metrics: Buffer exposes post metrics in its API (`Post.metrics`); until that is wired up, record metrics with
+  `cc metrics add`.

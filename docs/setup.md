@@ -7,7 +7,6 @@
 - ~2 GB disk for `node_modules`, the Remotion Chrome download and the Kokoro model (~90 MB, cached on first `cc voice`)
 - Network on first run (Chrome headless shell, Kokoro model from Hugging Face, Google Fonts at render time, NASA API for assets)
 - No GPU needed
-- Docker with Compose v2 for the self-hosted Postiz stack (`infra/postiz`, ~2–3 GB RAM incl. Elasticsearch)
 
 ```bash
 pnpm install
@@ -16,7 +15,7 @@ pnpm cc --help
 pnpm cc status
 ```
 
-Optional: `cp .env.example .env` and fill in the Postiz values (see `publishing.md`).
+Optional: `cp .env.example .env` and set `BUFFER_API_KEY` (see `publishing.md`).
 
 ## Previewing an episode in Remotion Studio
 

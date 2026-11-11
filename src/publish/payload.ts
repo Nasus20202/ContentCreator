@@ -1,71 +1,74 @@
 /**
- * Builds Postiz `POST /posts` payloads per platform from the plan.
- * Platform-specific settings follow the Postiz provider docs (public-api/providers/*).
+ * Builds Buffer `createPost` inputs per platform from the plan.
+ * Field names follow Buffer's GraphQL schema (CreatePostInput, PostInputMetaData).
  */
 import type { Plan, Platform } from '../core/schemas';
-import type { PostizMedia } from './postiz';
 
 export interface PostOptions {
   mode: 'now' | 'schedule' | 'draft';
-  /** Required for mode=schedule. */
+  /** Required for mode=schedule (ISO 8601). */
   date?: string;
   aiDisclosure: boolean;
 }
 
+/** YouTube category "Science & Technology". */
+export const YOUTUBE_CATEGORY_SCIENCE = '28';
+
 export function caption(plan: Plan, platform: Platform): string {
   const tags = plan.post.hashtags.join(' ');
-  // YouTube shows title separately; the others lead with it
+  // YouTube shows the title separately; the others lead with it
   const head = platform === 'youtube' ? '' : `${plan.post.title}\n\n`;
   return `${head}${plan.post.description}\n\n${tags}`.trim();
 }
 
-export function platformSettings(plan: Plan, platform: Platform, opts: PostOptions): Record<string, unknown> {
+export function platformMetadata(plan: Plan, platform: Platform, opts: PostOptions): Record<string, unknown> {
   switch (platform) {
     case 'youtube':
       return {
-        __type: 'youtube',
-        title: plan.post.title.slice(0, 100),
-        type: 'public',
-        selfDeclaredMadeForKids: 'no',
-        tags: plan.post.hashtags.map((h) => ({ value: h.slice(1), label: h.slice(1) })),
+        youtube: {
+          title: plan.post.title.slice(0, 100),
+          privacy: 'public',
+          madeForKids: false,
+          notifySubscribers: true,
+          categoryId: YOUTUBE_CATEGORY_SCIENCE,
+          isAiGenerated: opts.aiDisclosure,
+        },
       };
     case 'tiktok':
-      return {
-        __type: 'tiktok',
-        title: plan.post.title.slice(0, 90),
-        privacy_level: 'PUBLIC_TO_EVERYONE',
-        duet: false,
-        stitch: true,
-        comment: true,
-        autoAddMusic: 'no',
-        brand_content_toggle: false,
-        brand_organic_toggle: false,
-        video_made_with_ai: opts.aiDisclosure,
-        content_posting_method: 'DIRECT_POST',
-      };
+      return { tiktok: { isAiGenerated: opts.aiDisclosure } };
     case 'instagram':
-      return { __type: 'instagram', post_type: 'post' };
+      return { instagram: { type: 'reel', shouldShareToFeed: true, isAiGenerated: opts.aiDisclosure } };
     case 'facebook':
-      return { __type: 'facebook' };
+      return { facebook: { type: 'reel' } };
   }
 }
 
-export function buildPostPayload(
+function modeFields(opts: PostOptions): Record<string, unknown> {
+  switch (opts.mode) {
+    case 'now':
+      return { mode: 'shareNow' };
+    case 'schedule':
+      if (!opts.date) throw new Error('mode=schedule requires a date');
+      return { mode: 'customScheduled', dueAt: new Date(opts.date).toISOString() };
+    case 'draft':
+      return { mode: 'addToQueue', saveToDraft: true };
+  }
+}
+
+export function buildCreatePostInput(
   plan: Plan,
-  targets: { platform: Platform; integrationId: string }[],
-  media: PostizMedia,
+  target: { platform: Platform; channelId: string },
+  media: { url: string },
   opts: PostOptions,
 ): Record<string, unknown> {
-  if (opts.mode === 'schedule' && !opts.date) throw new Error('mode=schedule requires a date');
   return {
-    type: opts.mode,
-    date: opts.date ?? new Date().toISOString(),
-    shortLink: false,
-    tags: [],
-    posts: targets.map((t) => ({
-      integration: { id: t.integrationId },
-      value: [{ content: caption(plan, t.platform), image: [{ id: media.id, path: media.path }] }],
-      settings: platformSettings(plan, t.platform, opts),
-    })),
+    channelId: target.channelId,
+    text: caption(plan, target.platform),
+    schedulingType: 'automatic',
+    ...modeFields(opts),
+    // the script and post copy are written by Claude
+    aiAssisted: true,
+    assets: [{ video: { url: media.url, metadata: { thumbnailOffset: 1000 } } }],
+    metadata: platformMetadata(plan, target.platform, opts),
   };
 }

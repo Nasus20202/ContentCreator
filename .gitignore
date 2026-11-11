@@ -5,5 +5,6 @@ episodes/*/build/
 .DS_Store
 .remotion/
 coverage/
+# local secrets of the retired self-hosted Postiz stack (see docs/decisions)
 infra/postiz/.env
 infra/postiz/backups/

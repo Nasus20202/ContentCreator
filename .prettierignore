@@ -6,4 +6,3 @@ assets/catalog
 episodes/
 docs/ledger.md
 docs/decisions/
-infra/postiz/dynamicconfig

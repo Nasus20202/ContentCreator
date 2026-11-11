@@ -2,17 +2,55 @@
   "name": "Sky This Week",
   "defaultLocation": "eu-central",
   "locations": [
-    { "id": "eu-central", "label": "central Europe", "lat": 50, "lon": 15, "timeZone": "Europe/Warsaw" },
-    { "id": "uk", "label": "the UK", "lat": 52, "lon": -1, "timeZone": "Europe/London" },
-    { "id": "us-east", "label": "the US East Coast", "lat": 40.7, "lon": -74, "timeZone": "America/New_York" },
-    { "id": "us-west", "label": "the US West Coast", "lat": 37.8, "lon": -122.4, "timeZone": "America/Los_Angeles" },
-    { "id": "au-east", "label": "eastern Australia", "lat": -33.9, "lon": 151.2, "timeZone": "Australia/Sydney" }
+    {
+      "id": "eu-central",
+      "label": "central Europe",
+      "lat": 50,
+      "lon": 15,
+      "timeZone": "Europe/Warsaw"
+    },
+    {
+      "id": "uk",
+      "label": "the UK",
+      "lat": 52,
+      "lon": -1,
+      "timeZone": "Europe/London"
+    },
+    {
+      "id": "us-east",
+      "label": "the US East Coast",
+      "lat": 40.7,
+      "lon": -74,
+      "timeZone": "America/New_York"
+    },
+    {
+      "id": "us-west",
+      "label": "the US West Coast",
+      "lat": 37.8,
+      "lon": -122.4,
+      "timeZone": "America/Los_Angeles"
+    },
+    {
+      "id": "au-east",
+      "label": "eastern Australia",
+      "lat": -33.9,
+      "lon": 151.2,
+      "timeZone": "Australia/Sydney"
+    }
   ],
-  "voice": { "id": "af_heart", "speed": 1.05 },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
   "autoApprove": false,
   "publishing": {
     "defaultMode": "draft",
     "aiDisclosure": true,
+    "provider": "buffer",
+    "mediaHost": {
+      "type": "github-release",
+      "repo": "Nasus20202/photonsphere-media"
+    },
     "targets": []
   }
 }

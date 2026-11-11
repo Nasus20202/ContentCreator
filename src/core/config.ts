@@ -18,9 +18,6 @@ export function resolveLocation(config: ChannelConfig, id?: string): Location {
 }
 
 /** Secrets come from the environment (.env), never from committed config. */
-export function postizEnv(): { baseUrl: string; apiKey: string } | undefined {
-  const baseUrl = process.env.POSTIZ_BASE_URL?.replace(/\/+$/, '');
-  const apiKey = process.env.POSTIZ_API_KEY;
-  if (!baseUrl || !apiKey) return undefined;
-  return { baseUrl, apiKey };
+export function bufferApiKey(): string | undefined {
+  return process.env.BUFFER_API_KEY || undefined;
 }

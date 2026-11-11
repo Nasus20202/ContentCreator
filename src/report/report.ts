@@ -199,11 +199,12 @@ export function episodeReport(ep: Episode): string {
     out.push('## Publishing', '');
     for (const a of publish.attempts) {
       out.push(
-        `### ${a.at} · ${a.mode}${a.dryRun ? ' (dry run)' : ''}`,
+        `### ${a.at} · ${a.provider} · ${a.mode}${a.scheduledFor ? ` for ${a.scheduledFor}` : ''}${a.dryRun ? ' (dry run)' : ''}`,
         '',
+        ...(a.media && !a.dryRun ? [`Media: ${a.media.url}`, ''] : []),
         table(
-          ['Platform', 'Status', 'Postiz id', 'Error'],
-          a.targets.map((t) => [t.platform, t.status, t.postizPostId ?? '—', t.error ?? '']),
+          ['Platform', 'Status', 'Post id', 'Error'],
+          a.targets.map((t) => [t.platform, t.status, t.postId ?? '—', t.error ?? '']),
         ),
         '',
       );

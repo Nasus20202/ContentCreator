@@ -10,7 +10,7 @@ import { readJson, writeJson } from '../src/core/io';
 import { localMidnight } from '../src/core/time';
 import { PublishRecord, type Plan } from '../src/core/schemas';
 import * as stages from '../src/pipeline/stages';
-import { buildPostPayload } from '../src/publish/payload';
+import { buildCreatePostInput } from '../src/publish/payload';
 import { episodeReport, ledger } from '../src/report/report';
 import { validateRecords } from '../src/report/validate';
 import { config, EU, tempWorkspace } from './fixtures';
@@ -120,11 +120,10 @@ describe('pipeline stages', () => {
     const attempt = await stages.publish(
       ep,
       {
-        targets: [{ platform: 'youtube', integrationId: 'yt' }],
+        targets: [{ platform: 'youtube', channelId: 'yt' }],
         mode: 'draft',
         dryRun: true,
-        aiDisclosure: true,
-        buildPayload: (p, t, m) => buildPostPayload(p, t, m, { mode: 'draft', aiDisclosure: true }),
+        buildPayload: (p, t, m) => buildCreatePostInput(p, t, m, { mode: 'draft', aiDisclosure: true }),
       },
       'claude',
     );
@@ -190,10 +189,9 @@ describe('pipeline stages', () => {
       stages.publish(
         ep,
         {
-          targets: [{ platform: 'tiktok', integrationId: 't' }],
+          targets: [{ platform: 'tiktok', channelId: 't' }],
           mode: 'now',
           dryRun: true,
-          aiDisclosure: true,
           buildPayload: () => ({}),
         },
         'claude',
@@ -204,33 +202,38 @@ describe('pipeline stages', () => {
   it('records partial publish failures per platform', async () => {
     await toQaPassed();
     stages.approve(ep, 'Tester', 'human', config);
+    const hosted: string[] = [];
     const publisher: stages.Publisher = {
-      baseUrl: 'https://postiz.test',
-      upload: () => Promise.resolve({ id: 'm', path: 'p' }),
-      post: (payload) => {
-        const id = (payload as { posts: { integration: { id: string } }[] }).posts[0].integration.id;
-        return id === 'bad' ? Promise.reject(new Error('quota')) : Promise.resolve([{ postId: 'P1' }]);
+      provider: 'buffer',
+      endpoint: 'https://buffer.test',
+      hostMedia: (_file, tag) => {
+        hosted.push(tag);
+        return Promise.resolve({ url: `https://media.test/${tag}.mp4` });
       },
+      post: (input) =>
+        input.channelId === 'bad' ? Promise.reject(new Error('Queue limit reached')) : Promise.resolve({ id: 'P1' }),
     };
     const a = await stages.publish(
       ep,
       {
         targets: [
-          { platform: 'youtube', integrationId: 'good' },
-          { platform: 'tiktok', integrationId: 'bad' },
+          { platform: 'youtube', channelId: 'good' },
+          { platform: 'tiktok', channelId: 'bad' },
         ],
         mode: 'now',
         dryRun: false,
-        aiDisclosure: true,
         publisher,
-        buildPayload: (p, t, m) => buildPostPayload(p, t, m, { mode: 'now', aiDisclosure: true }),
+        buildPayload: (p, t, m) => buildCreatePostInput(p, t, m, { mode: 'now', aiDisclosure: true }),
       },
       'claude',
     );
-    expect(a.targets.map((t) => [t.platform, t.status, t.postizPostId ?? t.error])).toEqual([
+    expect(a.targets.map((t) => [t.platform, t.status, t.postId ?? t.error])).toEqual([
       ['youtube', 'submitted', 'P1'],
-      ['tiktok', 'failed', 'quota'],
+      ['tiktok', 'failed', 'Queue limit reached'],
     ]);
+    // hosted once per approved video, tagged with episode id + sha prefix
+    expect(hosted).toEqual([`sky-test-${a.videoSha256.slice(0, 8)}`]);
+    expect(a.media?.url).toBe(`https://media.test/${hosted[0]}.mp4`);
     expect(ep.stage).toBe('published');
   });
 

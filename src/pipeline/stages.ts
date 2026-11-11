@@ -6,6 +6,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { releaseTag } from '../publish/media-host';
 import { Episode, stageIndex } from '../core/episode';
 import { hashData, nowIso, PipelineError, readJson, sha256File, writeJson } from '../core/io';
 import { paths } from '../core/paths';
@@ -322,25 +323,28 @@ export function approve(ep: Episode, by: string, actor: Actor, config: ChannelCo
 // ------------------------------------------------------------------ publish
 
 export interface Publisher {
-  baseUrl: string;
-  upload(file: string): Promise<{ id: string; path: string }>;
-  post(payload: unknown): Promise<unknown>;
+  provider: 'buffer';
+  endpoint: string;
+  /** Makes the video reachable by the provider (Buffer fetches media by public URL). */
+  hostMedia(file: string, tag: string): Promise<{ url: string }>;
+  /** Submits one platform post; returns the provider's post id. */
+  post(input: Record<string, unknown>): Promise<{ id: string }>;
+}
+
+export interface PublishTarget {
+  platform: Platform;
+  channelId: string;
 }
 
 export async function publish(
   ep: Episode,
   opts: {
-    targets: { platform: Platform; integrationId: string }[];
+    targets: PublishTarget[];
     mode: 'now' | 'schedule' | 'draft';
     date?: string;
     dryRun: boolean;
-    aiDisclosure: boolean;
     publisher?: Publisher;
-    buildPayload: (
-      plan: Plan,
-      targets: { platform: Platform; integrationId: string }[],
-      media: { id: string; path: string },
-    ) => Record<string, unknown>;
+    buildPayload: (plan: Plan, target: PublishTarget, media: { url: string }) => Record<string, unknown>;
   },
   actor: Actor,
 ): Promise<PublishRecord['attempts'][number]> {
@@ -351,36 +355,37 @@ export async function publish(
   }
   if (!opts.targets.length)
     throw new PipelineError('No publish targets configured', 'Fill channel.config.json → publishing.targets');
+  if (opts.mode === 'schedule' && !opts.date) throw new PipelineError('--mode schedule needs --at <ISO time>');
   if (!opts.dryRun && !opts.publisher)
-    throw new PipelineError('Postiz is not configured', 'Set POSTIZ_BASE_URL and POSTIZ_API_KEY in .env');
+    throw new PipelineError('Buffer is not configured', 'Set BUFFER_API_KEY in .env');
 
   const plan = loadPlan(ep);
   const attempt: PublishRecord['attempts'][number] = {
     at: nowIso(),
     actor,
     mode: opts.mode,
-    scheduledFor: opts.date,
+    scheduledFor: opts.date && new Date(opts.date).toISOString(),
     dryRun: opts.dryRun,
-    postizBaseUrl: opts.publisher?.baseUrl ?? '(dry-run)',
+    provider: 'buffer',
+    endpoint: opts.publisher?.endpoint ?? '(dry-run)',
     videoSha256: render.videoSha256,
     targets: [],
   };
 
-  const media = opts.dryRun ? { id: 'DRY-RUN', path: 'DRY-RUN' } : await opts.publisher!.upload(ep.paths.video);
+  const media = opts.dryRun
+    ? { url: 'DRY-RUN' }
+    : await opts.publisher!.hostMedia(ep.paths.video, releaseTag(ep.id, render.videoSha256));
   attempt.media = media;
-  // one Postiz call per platform so a failure on one does not block the others
+  // one call per platform so a failure on one does not block the others
   for (const t of opts.targets) {
-    const payload = opts.buildPayload(plan, [t], media);
+    const payload = opts.buildPayload(plan, t, media);
     if (opts.dryRun) {
       attempt.targets.push({ ...t, status: 'dry-run', payload });
       continue;
     }
     try {
       const res = await opts.publisher!.post(payload);
-      const id = Array.isArray(res)
-        ? (res[0] as { postId?: string; id?: string } | undefined)
-        : (res as { postId?: string; id?: string });
-      attempt.targets.push({ ...t, status: 'submitted', postizPostId: id?.postId ?? id?.id, payload });
+      attempt.targets.push({ ...t, status: 'submitted', postId: res.id, payload });
     } catch (e) {
       attempt.targets.push({ ...t, status: 'failed', error: e instanceof Error ? e.message : String(e), payload });
     }
@@ -391,6 +396,7 @@ export async function publish(
   writeJson(ep.paths.publish, record);
   ep.log(actor, 'publish', opts.dryRun ? 'publish.dry-run' : 'publish.submit', {
     mode: opts.mode,
+    media: media.url,
     targets: attempt.targets.map((t) => `${t.platform}:${t.status}`),
   });
   if (!opts.dryRun && attempt.targets.some((t) => t.status === 'submitted')) ep.advance('published', actor);

@@ -29,7 +29,8 @@ Commands:
                                  --review, record the visual review
   approve [options] <episode>    human sign-off on the exact rendered video
                                  (sha256-pinned)
-  publish                        publish via self-hosted Postiz
+  publish                        publish via Buffer (videos hosted as public
+                                 GitHub release assets)
   decision [options] [episode]   record a decision with its rationale
                                  (append-only)
   metrics
@@ -207,7 +208,8 @@ Options:
   --mode <mode>       (choices: "now", "schedule", "draft")
   --at <iso>          schedule time (ISO 8601, with --mode schedule)
   --platforms <list>  subset, e.g. youtube,tiktok
-  --dry-run           build and record payloads without calling Postiz
+  --dry-run           build and record payloads without uploading or calling
+                      Buffer
   --actor <actor>     who performs this step (choices: "pipeline", "claude",
                       "human", default: "pipeline")
   -h, --help          display help for command
@@ -218,7 +220,7 @@ Options:
 ```text
 Usage: cc publish channels [options]
 
-list Postiz integrations (to fill channel.config.json → publishing.targets)
+list Buffer channels (to fill channel.config.json → publishing.targets)
 
 Options:
   -h, --help  display help for command
