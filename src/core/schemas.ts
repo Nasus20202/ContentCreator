@@ -193,6 +193,21 @@ export const FactCardParams = z.object({
 });
 export type FactCardParams = z.infer<typeof FactCardParams>;
 
+/**
+ * A vertical distance bar from the top (0) to the bottom (`total`). Markers are placed linearly, so a
+ * tiny distance shows as a point at the start: that is the point of the picture.
+ */
+export const ScaleParams = z.object({
+  total: z.number().positive(),
+  /** Label of the far end, e.g. "4.24 light-years". */
+  totalLabel: z.string().max(40),
+  markers: z
+    .array(z.object({ at: z.number().min(0), label: z.string().max(40) }))
+    .min(1)
+    .max(4),
+});
+export type ScaleParams = z.infer<typeof ScaleParams>;
+
 export const ImageParams = z.object({
   assetId: z.string(),
   zoom: z.tuple([z.number().min(1), z.number().min(1)]).default([1.0, 1.12]),
@@ -226,6 +241,7 @@ export const Scene = z.discriminatedUnion('template', [
   z.object({ ...SceneBase, template: z.literal('skyView'), params: SkyViewParams }),
   z.object({ ...SceneBase, template: z.literal('orbit3d'), params: Orbit3DParams }),
   z.object({ ...SceneBase, template: z.literal('factCard'), params: FactCardParams }),
+  z.object({ ...SceneBase, template: z.literal('scale'), params: ScaleParams }),
   z.object({ ...SceneBase, template: z.literal('image'), params: ImageParams }),
   z.object({ ...SceneBase, template: z.literal('outro'), params: OutroParams }),
 ]);

@@ -61,7 +61,7 @@
     },
     {
       "id": "lorentz-clock",
-      "statement": "The Lorentz factor is 1/sqrt(1-v²/c²). At 99.999999999% of light speed it is about 223,000, so a clock on board runs about 223,000 times slower; a 4.24 light-year trip then takes about 10 minutes of ship time.",
+      "statement": "A Lorentz factor of about 223,000 means a clock on board runs about 223,000 times slower; a 4.24 light-year trip then takes about 10 minutes of ship time.",
       "values": [
         223000,
         10
@@ -71,6 +71,20 @@
         "url": "https://en.wikipedia.org/wiki/Lorentz_factor",
         "title": "Lorentz factor",
         "publisher": "Wikipedia",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "voyager-lightday",
+      "statement": "Voyager 1 reaches a distance of one light-day from Earth in November 2026.",
+      "values": [
+        1
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/voyager/",
+        "title": "Voyager",
+        "publisher": "NASA Science",
         "accessed": "2026-11-12"
       }
     }

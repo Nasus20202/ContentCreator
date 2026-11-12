@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T15:23:06.557Z",
-  "videoSha256": "0620f28a477cdd3180abb369ffa28e659b50303c2fd71ef3b200d381f97ec5d7",
+  "checkedAt": "2026-11-12T15:42:46.675Z",
+  "videoSha256": "3a392a8e63c3bbaacc0c61172c2259b3f9f5d4edc0c4d1587a01ec966c377e1f",
   "automated": [
     {
       "name": "resolution",
@@ -20,17 +20,17 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "44.10 s (limit 60 s)"
+      "detail": "47.10 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 44.10 s vs timeline 44.00 s"
+      "detail": "video 47.10 s vs timeline 47.07 s"
     },
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14.2 LUFS (target -18…-11)"
+      "detail": "-14.1 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
@@ -60,75 +60,90 @@
       "tSec": 5.8
     },
     {
-      "file": "qa/01-voyager-0.jpg",
-      "sceneId": "voyager",
+      "file": "qa/01-scale-0.jpg",
+      "sceneId": "scale",
       "tSec": 6.65
     },
     {
-      "file": "qa/01-voyager-1.jpg",
+      "file": "qa/01-scale-1.jpg",
+      "sceneId": "scale",
+      "tSec": 9.67
+    },
+    {
+      "file": "qa/01-scale-2.jpg",
+      "sceneId": "scale",
+      "tSec": 13
+    },
+    {
+      "file": "qa/02-voyager-0.jpg",
       "sceneId": "voyager",
-      "tSec": 12.17
+      "tSec": 13.85
     },
     {
-      "file": "qa/01-voyager-2.jpg",
+      "file": "qa/02-voyager-1.jpg",
       "sceneId": "voyager",
-      "tSec": 15.27
+      "tSec": 19.37
     },
     {
-      "file": "qa/02-starshot-0.jpg",
+      "file": "qa/02-voyager-2.jpg",
+      "sceneId": "voyager",
+      "tSec": 22.47
+    },
+    {
+      "file": "qa/03-starshot-0.jpg",
       "sceneId": "starshot",
-      "tSec": 16.12
+      "tSec": 23.32
     },
     {
-      "file": "qa/02-starshot-1.jpg",
+      "file": "qa/03-starshot-1.jpg",
       "sceneId": "starshot",
-      "tSec": 20.6
+      "tSec": 27.8
     },
     {
-      "file": "qa/02-starshot-2.jpg",
+      "file": "qa/03-starshot-2.jpg",
       "sceneId": "starshot",
-      "tSec": 22.9
+      "tSec": 30.1
     },
     {
-      "file": "qa/03-ship-clock-0.jpg",
+      "file": "qa/04-ship-clock-0.jpg",
       "sceneId": "ship-clock",
-      "tSec": 23.75
+      "tSec": 30.95
     },
     {
-      "file": "qa/03-ship-clock-1.jpg",
+      "file": "qa/04-ship-clock-1.jpg",
       "sceneId": "ship-clock",
-      "tSec": 26.43
+      "tSec": 33.63
     },
     {
-      "file": "qa/03-ship-clock-2.jpg",
+      "file": "qa/04-ship-clock-2.jpg",
       "sceneId": "ship-clock",
-      "tSec": 38.64
+      "tSec": 41.69
     },
     {
-      "file": "qa/03-ship-clock-3.jpg",
+      "file": "qa/04-ship-clock-3.jpg",
       "sceneId": "ship-clock",
-      "tSec": 40.2
+      "tSec": 43.27
     },
     {
-      "file": "qa/04-outro-0.jpg",
+      "file": "qa/05-outro-0.jpg",
       "sceneId": "outro",
-      "tSec": 41.05
+      "tSec": 44.12
     },
     {
-      "file": "qa/04-outro-1.jpg",
+      "file": "qa/05-outro-1.jpg",
       "sceneId": "outro",
-      "tSec": 43.21
+      "tSec": 46.28
     },
     {
-      "file": "qa/04-outro-2.jpg",
+      "file": "qa/05-outro-2.jpg",
       "sceneId": "outro",
-      "tSec": 43.9
+      "tSec": 46.97
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T15:23:31.199Z",
+    "at": "2026-11-12T15:43:08.367Z",
     "verdict": "pass",
-    "notes": "Reviewed all 16 frames: the number cards (4.24 ly, 89,000+ years, 28 years, 10 min of ship time) and their source lines are inside the safe zone with no overlap; the captions track the narration; the outro CTA is clear. This episode is number cards with no imagery, which is intentional: no truthful picture of a Proxima-bound craft exists. Motion and audio are left to the human watch."
+    "notes": "Reviewed the scale scene frames and the rest: the bar grows from Earth, Voyager 1 is the marker at the top and Proxima at the bottom, and the labels and the 'Earth to Proxima, to scale' line sit apart with no overlap or caption clash. The number cards and outro are unchanged from the earlier review. Motion and audio are left to the human watch."
   }
 }

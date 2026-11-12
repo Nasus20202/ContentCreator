@@ -36,6 +36,10 @@ export function sceneTexts(scene: Scene): { where: string; text: string }[] {
     case 'factCard':
       out.push({ where: 'factCard', text: `${scene.params.value} ${scene.params.label}` });
       break;
+    case 'scale':
+      out.push({ where: 'scale', text: scene.params.totalLabel });
+      scene.params.markers.forEach((m, i) => out.push({ where: `markers[${i}]`, text: m.label }));
+      break;
     case 'outro':
       out.push({
         where: 'outro',

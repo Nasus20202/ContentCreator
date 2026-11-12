@@ -7,6 +7,7 @@ import { Badge, Captions, Chip, TitleOverlay } from './components/overlays';
 import { SceneContext, useSceneTime } from './scene-context';
 import { Orbit3DScene } from './scenes/Orbit3DScene';
 import { FactCardScene, ImageScene, OutroScene } from './scenes/simple-scenes';
+import { ScaleScene } from './scenes/ScaleScene';
 import { SkyViewScene } from './scenes/SkyViewScene';
 import { theme } from './theme';
 import { BED_LIFT, musicDuck, speechWindows } from './duck';
@@ -19,6 +20,8 @@ const Template: React.FC<{ scene: Scene }> = ({ scene }) => {
       return <Orbit3DScene sceneId={scene.id} params={scene.params} />;
     case 'factCard':
       return <FactCardScene sceneId={scene.id} params={scene.params} />;
+    case 'scale':
+      return <ScaleScene params={scene.params} />;
     case 'image':
       return <ImageScene params={scene.params} />;
     case 'outro':

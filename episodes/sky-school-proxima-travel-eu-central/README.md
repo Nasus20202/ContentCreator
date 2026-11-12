@@ -22,6 +22,11 @@ _None recorded yet._
 > Proxima Centauri is the closest star to the Sun.
 > It is 4.24 light-years away.
 
+**scale** (`scale`) — facts: `proxima-distance`, `voyager-lightday`
+
+> Here is that trip on one scale, from Earth to the star.
+> Voyager 1 sits right at the top, about one light-day out.
+
 **voyager** (`factCard`) — facts: `voyager-speed`
 
 > Voyager, our most distant spacecraft, moves at more than three astronomical units a year.
@@ -35,7 +40,7 @@ _None recorded yet._
 **ship-clock** (`factCard`) — facts: `lorentz-clock`
 
 > From inside the ship, the trip could be much shorter.
-> At 99.999999999 percent of light speed, the clock on board runs about 223,000 times slower, so the trip takes ten minutes of ship time.
+> At nearly the speed of light, the clock on board runs about 223,000 times slower, so the trip takes ten minutes of ship time.
 > No ship can reach that speed yet.
 
 **outro** (`outro`) — facts: —
@@ -47,7 +52,7 @@ _None recorded yet._
 
 **How long to Proxima Centauri? It depends on your clock 🚀**
 
-Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at 99.999999999% of light speed, a 4.24 light-year trip takes about 10 minutes of ship time.
+Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.
 
 Sources:
 NASA Science, Sun facts: https://science.nasa.gov/sun/facts/
@@ -67,11 +72,12 @@ Narration uses a synthetic voice.
 | light-year | One light-year is about 9.5 trillion kilometres, the distance light travels in a year. | [NASA Science](https://science.nasa.gov/sun/facts/) |
 | voyager-speed | The twin Voyager spacecraft are moving at more than 3 astronomical units per year. At that pace, 4.24 light-years (about 63,000 AU) takes over 89,000 years. | [NASA Science](https://science.nasa.gov/mission/voyager/) |
 | starshot-speed | Breakthrough Starshot's light-driven probes are designed for speeds up to 100 million miles an hour, about 15% of light speed. At that speed, 4.24 light-years takes about 28 years. | [Breakthrough Initiatives](https://breakthroughinitiatives.org/initiative/3) |
-| lorentz-clock | The Lorentz factor is 1/sqrt(1-v²/c²). At 99.999999999% of light speed it is about 223,000, so a clock on board runs about 223,000 times slower; a 4.24 light-year trip then takes about 10 minutes of ship time. | [Wikipedia](https://en.wikipedia.org/wiki/Lorentz_factor) |
+| lorentz-clock | A Lorentz factor of about 223,000 means a clock on board runs about 223,000 times slower; a 4.24 light-year trip then takes about 10 minutes of ship time. | [Wikipedia](https://en.wikipedia.org/wiki/Lorentz_factor) |
+| voyager-lightday | Voyager 1 reaches a distance of one light-day from Earth in November 2026. | [NASA Science](https://science.nasa.gov/mission/voyager/) |
 
 ## Render
 
-44.1 s, 1080×1920@30, sha256 `0620f28a477cdd31…`, rendered 2026-11-12T15:23:05.916Z in 32 s.
+47.1 s, 1080×1920@30, sha256 `3a392a8e63c3bbaa…`, rendered 2026-11-12T15:42:46.049Z in 33 s.
 
 ## QA
 
@@ -80,13 +86,13 @@ Narration uses a synthetic voice.
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 44.10 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 44.10 s vs timeline 44.00 s |
-| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| duration | ✅ | 47.10 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 47.10 s vs timeline 47.07 s |
+| loudness | ✅ | -14.1 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T15:23:31.199Z): **pass** — Reviewed all 16 frames: the number cards (4.24 ly, 89,000+ years, 28 years, 10 min of ship time) and their source lines are inside the safe zone with no overlap; the captions track the narration; the outro CTA is clear. This episode is number cards with no imagery, which is intentional: no truthful picture of a Proxima-bound craft exists. Motion and audio are left to the human watch.
+Visual review by **claude** (2026-11-12T15:43:08.367Z): **pass** — Reviewed the scale scene frames and the rest: the bar grows from Earth, Voyager 1 is the marker at the top and Proxima at the bottom, and the labels and the 'Earth to Proxima, to scale' line sit apart with no overlap or caption clash. The number cards and outro are unchanged from the earlier review. Motion and audio are left to the human watch.
 
 ## Event log
 
@@ -111,3 +117,21 @@ Visual review by **claude** (2026-11-12T15:23:31.199Z): **pass** — Reviewed al
 | 2026-11-12 15:23:12 | pipeline | qa | qa.automated | bfff8f1 |
 | 2026-11-12 15:23:31 | claude | qa | qa.review | bfff8f1 |
 | 2026-11-12 15:23:31 | claude | qa-passed | stage.advance | bfff8f1 |
+| 2026-11-12 15:40:38 | claude | planned | plan.check | 6f14c95 |
+| 2026-11-12 15:40:38 | claude | planned | stage.regress | 6f14c95 |
+| 2026-11-12 15:40:39 | pipeline | factcheck | factcheck.automated | 6f14c95 |
+| 2026-11-12 15:40:48 | claude | planned | plan.check | 6f14c95 |
+| 2026-11-12 15:40:48 | claude | planned | stage.advance | 6f14c95 |
+| 2026-11-12 15:40:48 | pipeline | factcheck | factcheck.automated | 6f14c95 |
+| 2026-11-12 15:40:49 | claude | factcheck | factcheck.review | 6f14c95 |
+| 2026-11-12 15:40:49 | claude | factchecked | stage.advance | 6f14c95 |
+| 2026-11-12 15:41:18 | pipeline | voiced | stage.advance | 6f14c95 |
+| 2026-11-12 15:41:18 | pipeline | voiced | voice.synthesize | 6f14c95 |
+| 2026-11-12 15:41:52 | pipeline | rendered | stage.advance | 6f14c95 |
+| 2026-11-12 15:41:52 | pipeline | rendered | render.video | 6f14c95 |
+| 2026-11-12 15:41:59 | pipeline | qa | qa.automated | 6f14c95 |
+| 2026-11-12 15:42:46 | pipeline | rendered | stage.advance | 6f14c95 |
+| 2026-11-12 15:42:46 | pipeline | rendered | render.video | 6f14c95 |
+| 2026-11-12 15:42:53 | pipeline | qa | qa.automated | 6f14c95 |
+| 2026-11-12 15:43:08 | claude | qa | qa.review | 6f14c95 |
+| 2026-11-12 15:43:08 | claude | qa-passed | stage.advance | 6f14c95 |

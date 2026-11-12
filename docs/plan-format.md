@@ -21,7 +21,7 @@ Authoritative definition: `Plan` in `src/core/schemas.ts`. Worked example: `epis
 | Field       | Meaning                                                                   |
 | ----------- | ------------------------------------------------------------------------- |
 | `id`        | unique, kebab-case                                                        |
-| `template`  | `skyView` · `orbit3d` · `factCard` · `image` · `outro`                    |
+| `template`  | `skyView` · `orbit3d` · `factCard` · `scale` · `image` · `outro`                    |
 | `narration` | array of sentences (the timing unit)                                      |
 | `factIds`   | facts backing **every** claim in narration + on-screen text of this scene |
 | `chips`     | `[{ text ≤ 48, from, to? }]` accent-coloured info pills under the badge   |
@@ -56,6 +56,10 @@ Authoritative definition: `Plan` in `src/core/schemas.ts`. Worked example: `epis
 ## `factCard`
 
 `{ value ≤ 16 chars, label ≤ 60, sourceLine? ≤ 80 }` — one big number. Must be backed by the scene's facts.
+
+## `scale`
+
+`{ total, totalLabel ≤ 40, markers: [{ at, label ≤ 40 }] (1–4) }` — a vertical distance bar from 0 to `total`, with markers placed linearly. Every marker label and the far-end label must be backed by a fact.
 
 ## `image` — real imagery
 

@@ -1,7 +1,7 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "fc24e2ca030bf409",
+  "narrationHash": "242840c6c1501b5d",
   "timing": "estimated-proportional",
   "scenes": [
     {
@@ -90,6 +90,142 @@
               "w": "away.",
               "start": 4.8,
               "end": 5.351
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "scale",
+      "audioFile": "voice/scale.wav",
+      "duration": 6.939,
+      "sentences": [
+        {
+          "text": "Here is that trip on one scale, from Earth to the star.",
+          "start": 0.15,
+          "end": 2.888,
+          "words": [
+            {
+              "w": "Here",
+              "start": 0.15,
+              "end": 0.378
+            },
+            {
+              "w": "is",
+              "start": 0.378,
+              "end": 0.53
+            },
+            {
+              "w": "that",
+              "start": 0.53,
+              "end": 0.759
+            },
+            {
+              "w": "trip",
+              "start": 0.759,
+              "end": 0.987
+            },
+            {
+              "w": "on",
+              "start": 0.987,
+              "end": 1.139
+            },
+            {
+              "w": "one",
+              "start": 1.139,
+              "end": 1.329
+            },
+            {
+              "w": "scale,",
+              "start": 1.329,
+              "end": 1.709
+            },
+            {
+              "w": "from",
+              "start": 1.709,
+              "end": 1.937
+            },
+            {
+              "w": "Earth",
+              "start": 1.937,
+              "end": 2.204
+            },
+            {
+              "w": "to",
+              "start": 2.204,
+              "end": 2.356
+            },
+            {
+              "w": "the",
+              "start": 2.356,
+              "end": 2.546
+            },
+            {
+              "w": "star.",
+              "start": 2.546,
+              "end": 2.888
+            }
+          ]
+        },
+        {
+          "text": "Voyager 1 sits right at the top, about one light-day out.",
+          "start": 3.168,
+          "end": 6.659,
+          "words": [
+            {
+              "w": "Voyager",
+              "start": 3.168,
+              "end": 3.605
+            },
+            {
+              "w": "1",
+              "start": 3.605,
+              "end": 3.75
+            },
+            {
+              "w": "sits",
+              "start": 3.75,
+              "end": 4.041
+            },
+            {
+              "w": "right",
+              "start": 4.041,
+              "end": 4.38
+            },
+            {
+              "w": "at",
+              "start": 4.38,
+              "end": 4.574
+            },
+            {
+              "w": "the",
+              "start": 4.574,
+              "end": 4.816
+            },
+            {
+              "w": "top,",
+              "start": 4.816,
+              "end": 5.204
+            },
+            {
+              "w": "about",
+              "start": 5.204,
+              "end": 5.544
+            },
+            {
+              "w": "one",
+              "start": 5.544,
+              "end": 5.786
+            },
+            {
+              "w": "light-day",
+              "start": 5.786,
+              "end": 6.271
+            },
+            {
+              "w": "out.",
+              "start": 6.271,
+              "end": 6.659
             }
           ]
         }
@@ -370,7 +506,7 @@
     {
       "sceneId": "ship-clock",
       "audioFile": "voice/ship-clock.wav",
-      "duration": 17.048,
+      "duration": 12.906,
       "sentences": [
         {
           "text": "From inside the ship, the trip could be much shorter.",
@@ -430,171 +566,171 @@
           ]
         },
         {
-          "text": "At 99.999999999 percent of light speed, the clock on board runs about 223,000 times slower, so the trip takes ten minutes of ship time.",
+          "text": "At nearly the speed of light, the clock on board runs about 223,000 times slower, so the trip takes ten minutes of ship time.",
           "start": 2.825,
-          "end": 14.757,
+          "end": 10.614,
           "words": [
             {
               "w": "At",
               "start": 2.825,
-              "end": 3.116
+              "end": 3.026
             },
             {
-              "w": "99.999999999",
-              "start": 3.116,
-              "end": 4.062
-            },
-            {
-              "w": "percent",
-              "start": 4.062,
-              "end": 4.717
-            },
-            {
-              "w": "of",
-              "start": 4.717,
-              "end": 5.008
-            },
-            {
-              "w": "light",
-              "start": 5.008,
-              "end": 5.517
-            },
-            {
-              "w": "speed,",
-              "start": 5.517,
-              "end": 6.245
+              "w": "nearly",
+              "start": 3.026,
+              "end": 3.428
             },
             {
               "w": "the",
-              "start": 6.245,
-              "end": 6.609
+              "start": 3.428,
+              "end": 3.68
+            },
+            {
+              "w": "speed",
+              "start": 3.68,
+              "end": 4.031
+            },
+            {
+              "w": "of",
+              "start": 4.031,
+              "end": 4.232
+            },
+            {
+              "w": "light,",
+              "start": 4.232,
+              "end": 4.735
+            },
+            {
+              "w": "the",
+              "start": 4.735,
+              "end": 4.986
             },
             {
               "w": "clock",
-              "start": 6.609,
-              "end": 7.118
+              "start": 4.986,
+              "end": 5.338
             },
             {
               "w": "on",
-              "start": 7.118,
-              "end": 7.409
+              "start": 5.338,
+              "end": 5.539
             },
             {
               "w": "board",
-              "start": 7.409,
-              "end": 7.918
+              "start": 5.539,
+              "end": 5.891
             },
             {
               "w": "runs",
-              "start": 7.918,
-              "end": 8.355
+              "start": 5.891,
+              "end": 6.192
             },
             {
               "w": "about",
-              "start": 8.355,
-              "end": 8.864
+              "start": 6.192,
+              "end": 6.544
             },
             {
               "w": "223,000",
-              "start": 8.864,
-              "end": 9.446
+              "start": 6.544,
+              "end": 6.946
             },
             {
               "w": "times",
-              "start": 9.446,
-              "end": 9.955
+              "start": 6.946,
+              "end": 7.298
             },
             {
               "w": "slower,",
-              "start": 9.955,
-              "end": 10.755
+              "start": 7.298,
+              "end": 7.85
             },
             {
               "w": "so",
-              "start": 10.755,
-              "end": 11.046
+              "start": 7.85,
+              "end": 8.051
             },
             {
               "w": "the",
-              "start": 11.046,
-              "end": 11.41
+              "start": 8.051,
+              "end": 8.303
             },
             {
               "w": "trip",
-              "start": 11.41,
-              "end": 11.847
+              "start": 8.303,
+              "end": 8.604
             },
             {
               "w": "takes",
-              "start": 11.847,
-              "end": 12.356
+              "start": 8.604,
+              "end": 8.956
             },
             {
               "w": "ten",
-              "start": 12.356,
-              "end": 12.72
+              "start": 8.956,
+              "end": 9.207
             },
             {
               "w": "minutes",
-              "start": 12.72,
-              "end": 13.374
+              "start": 9.207,
+              "end": 9.659
             },
             {
               "w": "of",
-              "start": 13.374,
-              "end": 13.666
+              "start": 9.659,
+              "end": 9.86
             },
             {
               "w": "ship",
-              "start": 13.666,
-              "end": 14.102
+              "start": 9.86,
+              "end": 10.162
             },
             {
               "w": "time.",
-              "start": 14.102,
-              "end": 14.757
+              "start": 10.162,
+              "end": 10.614
             }
           ]
         },
         {
           "text": "No ship can reach that speed yet.",
-          "start": 15.037,
-          "end": 16.768,
+          "start": 10.894,
+          "end": 12.626,
           "words": [
             {
               "w": "No",
-              "start": 15.037,
-              "end": 15.198
+              "start": 10.894,
+              "end": 11.055
             },
             {
               "w": "ship",
-              "start": 15.198,
-              "end": 15.439
+              "start": 11.055,
+              "end": 11.297
             },
             {
               "w": "can",
-              "start": 15.439,
-              "end": 15.641
+              "start": 11.297,
+              "end": 11.498
             },
             {
               "w": "reach",
-              "start": 15.641,
-              "end": 15.923
+              "start": 11.498,
+              "end": 11.78
             },
             {
               "w": "that",
-              "start": 15.923,
-              "end": 16.164
+              "start": 11.78,
+              "end": 12.022
             },
             {
               "w": "speed",
-              "start": 16.164,
-              "end": 16.446
+              "start": 12.022,
+              "end": 12.303
             },
             {
               "w": "yet.",
-              "start": 16.446,
-              "end": 16.768
+              "start": 12.303,
+              "end": 12.626
             }
           ]
         }
