@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-11-12T15:16:40.311Z",
+  "videoSha256": "abce08a65d7f5e955201c7a3c1a505c0952d21f0baf7a953cdb8a8c551717e57",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "35.90 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 35.90 s vs timeline 35.83 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14.2 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.5 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 3.19
+    },
+    {
+      "file": "qa/00-hook-2.jpg",
+      "sceneId": "hook",
+      "tSec": 5.77
+    },
+    {
+      "file": "qa/01-speed-0.jpg",
+      "sceneId": "speed",
+      "tSec": 6.62
+    },
+    {
+      "file": "qa/01-speed-1.jpg",
+      "sceneId": "speed",
+      "tSec": 12.97
+    },
+    {
+      "file": "qa/01-speed-2.jpg",
+      "sceneId": "speed",
+      "tSec": 15.63
+    },
+    {
+      "file": "qa/02-distance-0.jpg",
+      "sceneId": "distance",
+      "tSec": 16.48
+    },
+    {
+      "file": "qa/02-distance-1.jpg",
+      "sceneId": "distance",
+      "tSec": 20.11
+    },
+    {
+      "file": "qa/02-distance-2.jpg",
+      "sceneId": "distance",
+      "tSec": 23.8
+    },
+    {
+      "file": "qa/03-jupiter-0.jpg",
+      "sceneId": "jupiter",
+      "tSec": 24.65
+    },
+    {
+      "file": "qa/03-jupiter-1.jpg",
+      "sceneId": "jupiter",
+      "tSec": 29.21
+    },
+    {
+      "file": "qa/03-jupiter-2.jpg",
+      "sceneId": "jupiter",
+      "tSec": 32.03
+    },
+    {
+      "file": "qa/04-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 32.88
+    },
+    {
+      "file": "qa/04-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 35.05
+    },
+    {
+      "file": "qa/04-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 35.73
+    }
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-12T15:17:00.509Z",
+    "verdict": "pass",
+    "notes": "Reviewed all 15 frames: the Sun image holds the hook with the light-time chip and title clear of the captions; number cards (299,792 / 150 million km / 43 min) and sources read cleanly; the outro CTA sits in the safe zone with no overlap. Motion and audio not judgeable from stills."
+  }
+}

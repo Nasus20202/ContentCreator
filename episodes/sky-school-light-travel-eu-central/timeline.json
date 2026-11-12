@@ -1,0 +1,558 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "6e6ae808010af5a0",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 5.601,
+      "sentences": [
+        {
+          "text": "The Sun you see is about eight minutes old.",
+          "start": 0.15,
+          "end": 2.311,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.346
+            },
+            {
+              "w": "Sun",
+              "start": 0.346,
+              "end": 0.543
+            },
+            {
+              "w": "you",
+              "start": 0.543,
+              "end": 0.739
+            },
+            {
+              "w": "see",
+              "start": 0.739,
+              "end": 0.936
+            },
+            {
+              "w": "is",
+              "start": 0.936,
+              "end": 1.093
+            },
+            {
+              "w": "about",
+              "start": 1.093,
+              "end": 1.368
+            },
+            {
+              "w": "eight",
+              "start": 1.368,
+              "end": 1.643
+            },
+            {
+              "w": "minutes",
+              "start": 1.643,
+              "end": 1.997
+            },
+            {
+              "w": "old.",
+              "start": 1.997,
+              "end": 2.311
+            }
+          ]
+        },
+        {
+          "text": "Its light has been travelling that long to reach your eyes.",
+          "start": 2.591,
+          "end": 5.321,
+          "words": [
+            {
+              "w": "Its",
+              "start": 2.591,
+              "end": 2.778
+            },
+            {
+              "w": "light",
+              "start": 2.778,
+              "end": 3.04
+            },
+            {
+              "w": "has",
+              "start": 3.04,
+              "end": 3.227
+            },
+            {
+              "w": "been",
+              "start": 3.227,
+              "end": 3.451
+            },
+            {
+              "w": "travelling",
+              "start": 3.451,
+              "end": 3.9
+            },
+            {
+              "w": "that",
+              "start": 3.9,
+              "end": 4.124
+            },
+            {
+              "w": "long",
+              "start": 4.124,
+              "end": 4.349
+            },
+            {
+              "w": "to",
+              "start": 4.349,
+              "end": 4.498
+            },
+            {
+              "w": "reach",
+              "start": 4.498,
+              "end": 4.76
+            },
+            {
+              "w": "your",
+              "start": 4.76,
+              "end": 4.984
+            },
+            {
+              "w": "eyes.",
+              "start": 4.984,
+              "end": 5.321
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "speed",
+      "audioFile": "voice/speed.wav",
+      "duration": 9.612,
+      "sentences": [
+        {
+          "text": "Light travels 299,792 kilometres every second in a vacuum.",
+          "start": 0.15,
+          "end": 6.224,
+          "words": [
+            {
+              "w": "Light",
+              "start": 0.15,
+              "end": 0.766
+            },
+            {
+              "w": "travels",
+              "start": 0.766,
+              "end": 1.559
+            },
+            {
+              "w": "299,792",
+              "start": 1.559,
+              "end": 2.263
+            },
+            {
+              "w": "kilometres",
+              "start": 2.263,
+              "end": 3.319
+            },
+            {
+              "w": "every",
+              "start": 3.319,
+              "end": 3.936
+            },
+            {
+              "w": "second",
+              "start": 3.936,
+              "end": 4.64
+            },
+            {
+              "w": "in",
+              "start": 4.64,
+              "end": 4.992
+            },
+            {
+              "w": "a",
+              "start": 4.992,
+              "end": 5.256
+            },
+            {
+              "w": "vacuum.",
+              "start": 5.256,
+              "end": 6.224
+            }
+          ]
+        },
+        {
+          "text": "That sounds instant, but the distances are enormous.",
+          "start": 6.504,
+          "end": 9.332,
+          "words": [
+            {
+              "w": "That",
+              "start": 6.504,
+              "end": 6.765
+            },
+            {
+              "w": "sounds",
+              "start": 6.765,
+              "end": 7.113
+            },
+            {
+              "w": "instant,",
+              "start": 7.113,
+              "end": 7.636
+            },
+            {
+              "w": "but",
+              "start": 7.636,
+              "end": 7.853
+            },
+            {
+              "w": "the",
+              "start": 7.853,
+              "end": 8.071
+            },
+            {
+              "w": "distances",
+              "start": 8.071,
+              "end": 8.549
+            },
+            {
+              "w": "are",
+              "start": 8.549,
+              "end": 8.767
+            },
+            {
+              "w": "enormous.",
+              "start": 8.767,
+              "end": 9.332
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "distance",
+      "audioFile": "voice/distance.wav",
+      "duration": 7.915,
+      "sentences": [
+        {
+          "text": "The Sun is about a hundred and fifty million kilometres away.",
+          "start": 0.15,
+          "end": 3.496,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.373
+            },
+            {
+              "w": "Sun",
+              "start": 0.373,
+              "end": 0.596
+            },
+            {
+              "w": "is",
+              "start": 0.596,
+              "end": 0.775
+            },
+            {
+              "w": "about",
+              "start": 0.775,
+              "end": 1.087
+            },
+            {
+              "w": "a",
+              "start": 1.087,
+              "end": 1.221
+            },
+            {
+              "w": "hundred",
+              "start": 1.221,
+              "end": 1.622
+            },
+            {
+              "w": "and",
+              "start": 1.622,
+              "end": 1.845
+            },
+            {
+              "w": "fifty",
+              "start": 1.845,
+              "end": 2.158
+            },
+            {
+              "w": "million",
+              "start": 2.158,
+              "end": 2.559
+            },
+            {
+              "w": "kilometres",
+              "start": 2.559,
+              "end": 3.094
+            },
+            {
+              "w": "away.",
+              "start": 3.094,
+              "end": 3.496
+            }
+          ]
+        },
+        {
+          "text": "At that speed, its light needs eight minutes and twenty seconds to arrive.",
+          "start": 3.776,
+          "end": 7.635,
+          "words": [
+            {
+              "w": "At",
+              "start": 3.776,
+              "end": 3.944
+            },
+            {
+              "w": "that",
+              "start": 3.944,
+              "end": 4.195
+            },
+            {
+              "w": "speed,",
+              "start": 4.195,
+              "end": 4.615
+            },
+            {
+              "w": "its",
+              "start": 4.615,
+              "end": 4.825
+            },
+            {
+              "w": "light",
+              "start": 4.825,
+              "end": 5.118
+            },
+            {
+              "w": "needs",
+              "start": 5.118,
+              "end": 5.412
+            },
+            {
+              "w": "eight",
+              "start": 5.412,
+              "end": 5.705
+            },
+            {
+              "w": "minutes",
+              "start": 5.705,
+              "end": 6.083
+            },
+            {
+              "w": "and",
+              "start": 6.083,
+              "end": 6.293
+            },
+            {
+              "w": "twenty",
+              "start": 6.293,
+              "end": 6.628
+            },
+            {
+              "w": "seconds",
+              "start": 6.628,
+              "end": 7.006
+            },
+            {
+              "w": "to",
+              "start": 7.006,
+              "end": 7.173
+            },
+            {
+              "w": "arrive.",
+              "start": 7.173,
+              "end": 7.635
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "jupiter",
+      "audioFile": "voice/jupiter.wav",
+      "duration": 7.966,
+      "sentences": [
+        {
+          "text": "Jupiter is about five and a fifth astronomical units away on average.",
+          "start": 0.15,
+          "end": 4.434,
+          "words": [
+            {
+              "w": "Jupiter",
+              "start": 0.15,
+              "end": 0.609
+            },
+            {
+              "w": "is",
+              "start": 0.609,
+              "end": 0.813
+            },
+            {
+              "w": "about",
+              "start": 0.813,
+              "end": 1.17
+            },
+            {
+              "w": "five",
+              "start": 1.17,
+              "end": 1.476
+            },
+            {
+              "w": "and",
+              "start": 1.476,
+              "end": 1.731
+            },
+            {
+              "w": "a",
+              "start": 1.731,
+              "end": 1.884
+            },
+            {
+              "w": "fifth",
+              "start": 1.884,
+              "end": 2.241
+            },
+            {
+              "w": "astronomical",
+              "start": 2.241,
+              "end": 2.955
+            },
+            {
+              "w": "units",
+              "start": 2.955,
+              "end": 3.312
+            },
+            {
+              "w": "away",
+              "start": 3.312,
+              "end": 3.618
+            },
+            {
+              "w": "on",
+              "start": 3.618,
+              "end": 3.822
+            },
+            {
+              "w": "average.",
+              "start": 3.822,
+              "end": 4.434
+            }
+          ]
+        },
+        {
+          "text": "On average, sunlight takes forty-three minutes to reach it.",
+          "start": 4.714,
+          "end": 7.686,
+          "words": [
+            {
+              "w": "On",
+              "start": 4.714,
+              "end": 4.879
+            },
+            {
+              "w": "average,",
+              "start": 4.879,
+              "end": 5.374
+            },
+            {
+              "w": "sunlight",
+              "start": 5.374,
+              "end": 5.787
+            },
+            {
+              "w": "takes",
+              "start": 5.787,
+              "end": 6.076
+            },
+            {
+              "w": "forty-three",
+              "start": 6.076,
+              "end": 6.572
+            },
+            {
+              "w": "minutes",
+              "start": 6.572,
+              "end": 6.943
+            },
+            {
+              "w": "to",
+              "start": 6.943,
+              "end": 7.108
+            },
+            {
+              "w": "reach",
+              "start": 7.108,
+              "end": 7.397
+            },
+            {
+              "w": "it.",
+              "start": 7.397,
+              "end": 7.686
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.421,
+      "sentences": [
+        {
+          "text": "Follow for more sky, explained.",
+          "start": 0.15,
+          "end": 2.033,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.518
+            },
+            {
+              "w": "for",
+              "start": 0.518,
+              "end": 0.747
+            },
+            {
+              "w": "more",
+              "start": 0.747,
+              "end": 1.023
+            },
+            {
+              "w": "sky,",
+              "start": 1.023,
+              "end": 1.39
+            },
+            {
+              "w": "explained.",
+              "start": 1.39,
+              "end": 2.033
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.313,
+          "end": 3.141,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.313,
+              "end": 2.654
+            },
+            {
+              "w": "skies.",
+              "start": 2.654,
+              "end": 3.141
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

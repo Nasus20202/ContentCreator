@@ -1,0 +1,20 @@
+{
+  "id": "sky-school-light-travel-eu-central",
+  "series": "sky-school",
+  "createdAt": "2026-11-12T15:14:58.900Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "d6d7f67fb13863a4",
+    "factcheckedPlan": "d6d7f67fb13863a4",
+    "narration": "6e6ae808010af5a0",
+    "video": "abce08a65d7f5e955201c7a3c1a505c0952d21f0baf7a953cdb8a8c551717e57"
+  },
+  "approvals": []
+}

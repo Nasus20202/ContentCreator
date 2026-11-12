@@ -5,6 +5,7 @@
 | Episode | Series | Stage | Title | Published to | Views (latest) |
 | --- | --- | --- | --- | --- | --- |
 | [sky-school-geminids-radiant-eu-central](../episodes/sky-school-geminids-radiant-eu-central/README.md) | sky-school | qa-passed | Why meteors seem to come from one point in the sky 🌠 | — | — |
+| [sky-school-light-travel-eu-central](../episodes/sky-school-light-travel-eu-central/README.md) | sky-school | qa-passed | The Sun you see is about 8 minutes old ☀️ | — | — |
 | [sky-school-mars-opposition-eu-central](../episodes/sky-school-mars-opposition-eu-central/README.md) | sky-school | qa-passed | Why Mars opposition is the best time to see it 🔴 | — | — |
 | [sky-this-week-2026-11-16-eu-central](../episodes/sky-this-week-2026-11-16-eu-central/README.md) | sky-this-week | qa-passed | Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22 | youtube, tiktok | — |
 | [sky-this-week-2026-11-23-eu-central](../episodes/sky-this-week-2026-11-23-eu-central/README.md) | sky-this-week | qa-passed | Venus is low in the south-east before dawn this week ☕ | — | — |

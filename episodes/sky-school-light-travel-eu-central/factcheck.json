@@ -1,0 +1,160 @@
+{
+  "checkedAt": "2026-11-12T15:15:40.306Z",
+  "planHash": "d6d7f67fb13863a4",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[0]",
+        "text": "The Sun you see is about eight minutes old.",
+        "number": 8,
+        "raw": "eight",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "LIGHT FROM 8 MIN AGO",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Light time The Sun, 8 minutes ago",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "speed",
+        "where": "narration[0]",
+        "text": "Light travels 299,792 kilometres every second in a vacuum.",
+        "number": 299792,
+        "raw": "299792",
+        "matchedFact": "light-speed"
+      },
+      {
+        "sceneId": "speed",
+        "where": "factCard",
+        "text": "299,792 kilometres per second",
+        "number": 299792,
+        "raw": "299792",
+        "matchedFact": "light-speed"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[0]",
+        "text": "The Sun is about a hundred and fifty million kilometres away.",
+        "number": 150000000,
+        "raw": "a hundred and fifty million",
+        "matchedFact": "sun-distance"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[1]",
+        "text": "At that speed, its light needs eight minutes and twenty seconds to arrive.",
+        "number": 8,
+        "raw": "eight",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[1]",
+        "text": "At that speed, its light needs eight minutes and twenty seconds to arrive.",
+        "number": 20,
+        "raw": "twenty",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "distance",
+        "where": "factCard",
+        "text": "150 million km from the Sun to Earth",
+        "number": 150,
+        "raw": "150",
+        "matchedFact": "sun-distance"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "narration[0]",
+        "text": "Jupiter is about five and a fifth astronomical units away on average.",
+        "number": 5,
+        "raw": "five",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "narration[0]",
+        "text": "Jupiter is about five and a fifth astronomical units away on average.",
+        "number": 5,
+        "raw": "fifth",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "narration[1]",
+        "text": "On average, sunlight takes forty-three minutes to reach it.",
+        "number": 43,
+        "raw": "forty three",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "factCard",
+        "text": "43 min sunlight to Jupiter, on average",
+        "number": 43,
+        "raw": "43",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "The Sun you see is about 8 minutes old ☀️",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Sunlight takes about 8 minutes 20 seconds to reach Earth, and about 43 minutes to reach Jupiter on average. Light travels 299,792 km every second, so what we see in the sky is always light that left earlier.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Jupiter facts: https://science.nasa.gov/jupiter/facts/\nNIST, speed of light (CODATA): https://physics.nist.gov/cgi-bin/cuu/Value?c\n\nImage: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narration uses a synthetic voice.",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Sunlight takes about 8 minutes 20 seconds to reach Earth, and about 43 minutes to reach Jupiter on average. Light travels 299,792 km every second, so what we see in the sky is always light that left earlier.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Jupiter facts: https://science.nasa.gov/jupiter/facts/\nNIST, speed of light (CODATA): https://physics.nist.gov/cgi-bin/cuu/Value?c\n\nImage: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narration uses a synthetic voice.",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Sunlight takes about 8 minutes 20 seconds to reach Earth, and about 43 minutes to reach Jupiter on average. Light travels 299,792 km every second, so what we see in the sky is always light that left earlier.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Jupiter facts: https://science.nasa.gov/jupiter/facts/\nNIST, speed of light (CODATA): https://physics.nist.gov/cgi-bin/cuu/Value?c\n\nImage: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narration uses a synthetic voice.",
+        "number": 43,
+        "raw": "43",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Sunlight takes about 8 minutes 20 seconds to reach Earth, and about 43 minutes to reach Jupiter on average. Light travels 299,792 km every second, so what we see in the sky is always light that left earlier.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Jupiter facts: https://science.nasa.gov/jupiter/facts/\nNIST, speed of light (CODATA): https://physics.nist.gov/cgi-bin/cuu/Value?c\n\nImage: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narration uses a synthetic voice.",
+        "number": 299792,
+        "raw": "299792",
+        "matchedFact": "light-speed"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T15:15:40.862Z",
+    "verdict": "pass",
+    "notes": "Semantic review: every number traces to a sourced fact (NIST speed of light; NASA Sun and Jupiter facts). Averages are stated as averages ('about', 'on average'); the Sun's light time is the average 1 AU figure, not the December value (about 8 min 10 s). The Jupiter sentence was corrected to say sunlight takes 43 minutes to reach Jupiter, not that the light we see left it that long ago (reflected light travels back separately). No time of day, direction or position claim."
+  }
+}

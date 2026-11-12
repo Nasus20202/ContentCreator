@@ -1,0 +1,62 @@
+{
+  "facts": [
+    {
+      "id": "light-speed",
+      "statement": "Light travels 299,792 kilometres every second in a vacuum (299,792,458 m/s, exact by definition).",
+      "values": [
+        299792
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://physics.nist.gov/cgi-bin/cuu/Value?c",
+        "title": "CODATA Value: speed of light in vacuum",
+        "publisher": "NIST",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "sun-distance",
+      "statement": "The Sun is about 150 million kilometres (93 million miles) from Earth.",
+      "values": [
+        150
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/sun/facts/",
+        "title": "Sun: Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "sun-light-time",
+      "statement": "Sunlight takes about 8 minutes 20 seconds to reach Earth (150 million km at 299,792 km/s is about 500 seconds).",
+      "values": [
+        8,
+        20
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/sun/facts/",
+        "title": "Sun: Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "jupiter-light-time",
+      "statement": "Jupiter is 5.2 astronomical units from the Sun on average, and sunlight takes 43 minutes to reach it.",
+      "values": [
+        5.2,
+        43
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/jupiter/facts/",
+        "title": "Jupiter Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    }
+  ]
+}

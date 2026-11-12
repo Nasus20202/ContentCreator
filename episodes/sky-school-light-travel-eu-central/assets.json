@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "id": "sun-disk",
+      "kind": "image",
+      "file": "assets/sun-disk.jpg",
+      "sha256": "6480376b8a721d9c2b6a86d1be697585d6ad8d3e2d4d503c04c7b5af5fcfab1d",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA09320/PIA09320~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA09320",
+        "title": "Full Disk Image of the Sun, March 26, 2007",
+        "credit": "NASA / JPL / JPL-Caltech / NRL / GSFC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T15:15:14.424Z"
+    }
+  ]
+}

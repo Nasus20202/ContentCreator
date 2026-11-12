@@ -1,0 +1,137 @@
+{
+  "episodeId": "sky-school-light-travel-eu-central",
+  "series": "sky-school",
+  "title": "Sky School · The light you see is already old",
+  "badge": "Sky School · Light time",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "post": {
+    "title": "The Sun you see is about 8 minutes old ☀️",
+    "description": "Sunlight takes about 8 minutes 20 seconds to reach Earth, and about 43 minutes to reach Jupiter on average. Light travels 299,792 km every second, so what we see in the sky is always light that left earlier.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Jupiter facts: https://science.nasa.gov/jupiter/facts/\nNIST, speed of light (CODATA): https://physics.nist.gov/cgi-bin/cuu/Value?c\n\nImage: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#astronomy",
+      "#science",
+      "#skyschool",
+      "#sun",
+      "#jupiter",
+      "#nightsky"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "image",
+      "narration": [
+        "The Sun you see is about eight minutes old.",
+        "Its light has been travelling that long to reach your eyes."
+      ],
+      "factIds": [
+        "sun-light-time",
+        "sun-distance"
+      ],
+      "chips": [
+        {
+          "text": "LIGHT FROM 8 MIN AGO",
+          "from": 0.2,
+          "to": {
+            "sentence": 1
+          }
+        }
+      ],
+      "title": {
+        "kicker": "Light time",
+        "title": "The Sun, 8 minutes ago",
+        "from": 0.1,
+        "to": 3
+      },
+      "params": {
+        "assetId": "sun-disk",
+        "zoom": [
+          1.0,
+          1.1
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "speed",
+      "template": "factCard",
+      "narration": [
+        "Light travels 299,792 kilometres every second in a vacuum.",
+        "That sounds instant, but the distances are enormous."
+      ],
+      "factIds": [
+        "light-speed"
+      ],
+      "params": {
+        "value": "299,792",
+        "label": "kilometres per second",
+        "sourceLine": "speed of light · NIST (CODATA)"
+      }
+    },
+    {
+      "id": "distance",
+      "template": "factCard",
+      "narration": [
+        "The Sun is about a hundred and fifty million kilometres away.",
+        "At that speed, its light needs eight minutes and twenty seconds to arrive."
+      ],
+      "factIds": [
+        "sun-distance",
+        "sun-light-time"
+      ],
+      "params": {
+        "value": "150 million km",
+        "label": "from the Sun to Earth",
+        "sourceLine": "Sun facts · NASA Science"
+      }
+    },
+    {
+      "id": "jupiter",
+      "template": "factCard",
+      "narration": [
+        "Jupiter is about five and a fifth astronomical units away on average.",
+        "On average, sunlight takes forty-three minutes to reach it."
+      ],
+      "factIds": [
+        "jupiter-light-time"
+      ],
+      "params": {
+        "value": "43 min",
+        "label": "sunlight to Jupiter, on average",
+        "sourceLine": "Jupiter facts · NASA Science"
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Follow for more sky, explained.",
+        "Clear skies."
+      ],
+      "factIds": [],
+      "params": {
+        "kicker": "Next week's sky",
+        "cta": "FOLLOW\nFOR MORE\nSKY, EXPLAINED",
+        "footnote": "Light times: NASA Science · speed of light: NIST"
+      }
+    }
+  ]
+}
