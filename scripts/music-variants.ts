@@ -13,13 +13,13 @@ import path from 'node:path';
 import { Episode } from '../src/core/episode';
 import { ffmpeg, loudness, synthesizePad, type MusicStyle } from '../src/render/media';
 
-const STYLES: MusicStyle[] = ['piano', 'piano-pulse', 'piano-air'];
+const STYLES: MusicStyle[] = ['orbit', 'nebula', 'meteor', 'piano', 'piano-pulse', 'piano-air'];
 
 function arg(name: string, fallback: string): string {
   const i = process.argv.indexOf(`--${name}`);
   return i >= 0 && process.argv[i + 1] ? process.argv[i + 1] : fallback;
 }
-const style = arg('style', 'piano') as MusicStyle;
+const style = arg('style', 'orbit') as MusicStyle;
 const seeds = arg('seeds', '0,1,2').split(',').map(Number);
 const shifts = arg('transpose', '0').split(',').map(Number);
 const seconds = Number(arg('seconds', '20'));

@@ -31,3 +31,27 @@ describe('music bed', () => {
     expect(lufs).toBeLessThan(-16);
   }, 60_000);
 });
+
+describe('arranged score', () => {
+  it('follows the scene cues: the riser and impact land on the first cut, the outro drops the drums', async () => {
+    const out = path.join(dir, 'score.wav');
+    await synthesizePad(out, 16, 'orbit', { cues: [0, 4, 11] });
+    expect(Number((await probe(out)).format.duration)).toBeGreaterThanOrEqual(16);
+    const { lufs } = await loudness(out);
+    expect(lufs).toBeGreaterThan(-19);
+    expect(lufs).toBeLessThan(-16);
+  }, 60_000);
+
+  it('is deterministic and the seed changes it', async () => {
+    const mk = async (name: string, seed: number) => {
+      const out = path.join(dir, `${name}.wav`);
+      await synthesizePad(out, 6, 'nebula', { seed, cues: [0, 3] });
+      return fs.readFileSync(out);
+    };
+    const a = await mk('sa', 1);
+    const b = await mk('sb', 1);
+    const c = await mk('sc', 2);
+    expect(a.equals(b)).toBe(true);
+    expect(a.equals(c)).toBe(false);
+  }, 60_000);
+});

@@ -7,7 +7,7 @@ import { writeJson } from '../core/io';
 import type { Plan, Timeline } from '../core/schemas';
 import type { Renderer } from '../pipeline/stages';
 import { loadAssets } from '../pipeline/stages';
-import { totalFrames } from '../core/timing';
+import { sceneStarts, totalFrames } from '../core/timing';
 import { FPS, buildRenderProps } from './prepare';
 import { bedFor, normalizeLoudness, probe, synthesizePad } from './media';
 import { renderEpisode } from './render';
@@ -31,6 +31,7 @@ export function remotionRenderer(log: (msg: string) => void): Renderer {
         await synthesizePad(path.join(b, musicFile), seconds, plan.music.style ?? bedFor(plan.series), {
           seed: plan.music.seed,
           transpose: plan.music.transpose,
+          cues: sceneStarts(timeline, FPS).map((s) => s.from / FPS),
         });
         // The bed must cover the whole picture, or the last seconds are silent.
         const bed = await probe(path.join(b, musicFile));

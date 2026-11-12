@@ -13,7 +13,7 @@ import path from 'node:path';
 import { Episode } from '../src/core/episode';
 import { ffmpeg, loudness, synthesizePad, type MusicStyle } from '../src/render/media';
 
-const STYLES: MusicStyle[] = ['piano', 'piano-pulse', 'piano-air'];
+const STYLES: MusicStyle[] = ['orbit', 'nebula', 'meteor', 'piano', 'piano-pulse', 'piano-air'];
 const seconds = Number(process.argv[2] ?? 20);
 if (!Number.isFinite(seconds) || seconds < 5) {
   console.error('usage: pnpm tsx scripts/music-ab.ts [seconds >= 5]');

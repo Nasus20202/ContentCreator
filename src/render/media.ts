@@ -5,6 +5,7 @@ import fs from 'node:fs/promises';
 import { promisify } from 'node:util';
 import { z } from 'zod';
 import { ensurePianoSamples, pianoDir } from '../assets/piano';
+import { isScoreStyle, renderScore, scoreNotes, type ScoreStyle } from './score';
 
 const run = promisify(execFile);
 
@@ -66,17 +67,20 @@ export async function extractFrame(file: string, tSec: number, out: string): Pro
   await ffmpeg(['-ss', tSec.toFixed(3), '-i', file, '-frames:v', '1', '-q:v', '3', out]);
 }
 
-/** Beds on the same harmony, chosen per series or per episode in the plan. */
-export type MusicStyle = 'piano' | 'piano-pulse' | 'piano-air';
+/**
+ * Beds, chosen per series or per episode in the plan. The `piano*` beds are the original slow piano
+ * loops (kept so older cuts re-render identically); the arranged beds in `score.ts` follow the scenes.
+ */
+export type MusicStyle = 'piano' | 'piano-pulse' | 'piano-air' | ScoreStyle;
 
 /** The bed a series gets unless its plan pins `music.style`. */
 export const SERIES_BED: Record<string, MusicStyle> = {
-  'sky-this-week': 'piano',
-  'sky-tonight': 'piano-pulse',
-  'sky-school': 'piano-air',
+  'sky-this-week': 'orbit',
+  'sky-tonight': 'meteor',
+  'sky-school': 'nebula',
 };
 
-export const bedFor = (series: string): MusicStyle => SERIES_BED[series] ?? 'piano';
+export const bedFor = (series: string): MusicStyle => SERIES_BED[series] ?? 'orbit';
 
 type Recipe = {
   /** Seconds per chord. */
@@ -107,7 +111,7 @@ type Recipe = {
   echoTime: number;
 };
 
-const RECIPE: Record<MusicStyle, Recipe> = {
+const RECIPE: Record<Exclude<MusicStyle, ScoreStyle>, Recipe> = {
   // Sustained felt-piano chords with one picked-out note per bar: the default house sound.
   piano: {
     bar: 4,
@@ -224,6 +228,8 @@ export interface BedVariant {
   seed?: number;
   /** Transposes the whole bed in semitones (−6..+6). */
   transpose?: number;
+  /** Scene start times in seconds; the arranged beds put their sections and risers on them. */
+  cues?: number[];
 }
 
 /**
@@ -237,6 +243,43 @@ export async function synthesizePad(
   style: MusicStyle = 'piano',
   variant: BedVariant = {},
 ): Promise<void> {
+  const sr = 44100;
+  const n = Math.ceil((seconds + 2) * sr);
+  let left: Float32Array;
+  let right: Float32Array;
+  if (isScoreStyle(style)) {
+    const shift = variant.transpose ?? 0;
+    const roots = pianoRoots();
+    const notes = new Map<number, Decoded & { ratio: number }>();
+    for (const midi of scoreNotes(style, shift)) {
+      const root = roots.reduce((best, r) => (Math.abs(r - midi) < Math.abs(best - midi) ? r : best), roots[0]);
+      notes.set(midi, { ...(await loadPiano(root, 4)), ratio: 2 ** ((midi - root) / 12) });
+    }
+    [left, right] = renderScore({
+      style,
+      seconds,
+      sampleRate: sr,
+      seed: variant.seed ?? 0,
+      transpose: shift,
+      cues: variant.cues ?? [0],
+      piano: (midi) => {
+        const note = notes.get(midi);
+        if (!note) throw new Error(`score asked for an unloaded piano note ${midi}`);
+        return note;
+      },
+    });
+  } else {
+    [left, right] = await pianoLoop(seconds, style, variant);
+  }
+  return writeBed(out, left, right, n, sr);
+}
+
+/** The original piano loops (see RECIPE). */
+async function pianoLoop(
+  seconds: number,
+  style: Exclude<MusicStyle, ScoreStyle>,
+  variant: BedVariant,
+): Promise<[Float32Array, Float32Array]> {
   const recipe = RECIPE[style];
   const seedOffset = (variant.seed ?? 0) * 1009;
   const shift = variant.transpose ?? 0;
@@ -385,6 +428,12 @@ export async function synthesizePad(
   echo(0.093 * recipe.echoTime, recipe.echo[0], false);
   echo(0.157 * recipe.echoTime, recipe.echo[1], true);
   echo(0.241 * recipe.echoTime, recipe.echo[2], false);
+  return [left, right];
+}
+
+/** Fade, peak-normalise, write a 16-bit WAV, then match the bed's loudness (see TARGET_LUFS). */
+async function writeBed(out: string, left: Float32Array, right: Float32Array, n: number, sr: number): Promise<void> {
+  const dur = n / sr;
 
   // Fades, then peak-normalise only for headroom and fix the loudness afterwards: a struck piano
   // has a much higher crest factor than a sine, so equal peak would mean a different loudness.
