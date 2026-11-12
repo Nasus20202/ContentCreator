@@ -1,0 +1,176 @@
+{
+  "checkedAt": "2026-11-12T15:46:48.866Z",
+  "planHash": "f62bee7fe3b4eaaf",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "paradox",
+        "where": "factCard",
+        "text": "13,400 clock-slowdown factor at the midpoint",
+        "number": 13400,
+        "raw": "13400",
+        "matchedFact": "lorentz-peak"
+      },
+      {
+        "sceneId": "centre",
+        "where": "narration[0]",
+        "text": "The centre of the Milky Way, home to a black hole, is about 26,000 light-years away.",
+        "number": 26000,
+        "raw": "26000",
+        "matchedFact": "centre-distance"
+      },
+      {
+        "sceneId": "centre",
+        "where": "narration[1]",
+        "text": "At one g, the trip there takes about twenty years on board.",
+        "number": 20,
+        "raw": "twenty",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "centre",
+        "where": "factCard",
+        "text": "26,000 ly to the galactic centre",
+        "number": 26000,
+        "raw": "26000",
+        "matchedFact": "centre-distance"
+      },
+      {
+        "sceneId": "centre-earth",
+        "where": "narration[0]",
+        "text": "Round trip, you spend about forty years.",
+        "number": 40,
+        "raw": "forty",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "centre-earth",
+        "where": "narration[1]",
+        "text": "On Earth, about fifty-two thousand years pass.",
+        "number": 52000,
+        "raw": "fifty two thousand",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "centre-earth",
+        "where": "factCard",
+        "text": "52,000 yrs on Earth, round trip · you: 40 years",
+        "number": 52000,
+        "raw": "52000",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "centre-earth",
+        "where": "factCard",
+        "text": "52,000 yrs on Earth, round trip · you: 40 years",
+        "number": 40,
+        "raw": "40",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "andromeda",
+        "where": "narration[0]",
+        "text": "Andromeda, our largest galactic neighbour, is about two and a half million light-years away.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "andromeda-distance"
+      },
+      {
+        "sceneId": "andromeda",
+        "where": "narration[1]",
+        "text": "Round trip at one g, you would spend about fifty-seven years on board.",
+        "number": 57,
+        "raw": "fifty seven",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "andromeda",
+        "where": "factCard",
+        "text": "2.5 million ly to Andromeda, our largest galactic neighbour",
+        "number": 2.5,
+        "raw": "2.5",
+        "matchedFact": "andromeda-distance"
+      },
+      {
+        "sceneId": "andromeda-earth",
+        "where": "narration[0]",
+        "text": "On Earth, about five million years go by.",
+        "number": 5000000,
+        "raw": "five million",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "andromeda-earth",
+        "where": "factCard",
+        "text": "5 million yrs on Earth, round trip · you: 57 years",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "andromeda-earth",
+        "where": "factCard",
+        "text": "5 million yrs on Earth, round trip · you: 57 years",
+        "number": 57,
+        "raw": "57",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "At a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "At a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "At a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.",
+        "number": 40,
+        "raw": "40",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "At a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.",
+        "number": 52000,
+        "raw": "52000",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "At a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.",
+        "number": 57,
+        "raw": "57",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "At a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "trip-times"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T15:46:55.219Z",
+    "verdict": "pass",
+    "notes": "Semantic review: every spoken and on-screen number traces to a sourced or computed fact. Distances: NASA (Sagittarius A* at 26,000 light-years; Andromeda at 2.5 million light-years). Trip times: computed with hyperbolic motion for a constant 1 g accelerate-to-midpoint-and-brake profile (ship 19.8 years one way, 39.5 round trip to the centre; Earth 26,002 and 52,004 years; Andromeda round trip 57.2 ship years and 5,000,004 Earth years), so the spoken figures are rounded from those. The 13,400 factor is the Lorentz factor at the midpoint of the centre trip. The paradox line is the standard resolution: the traveller accelerates and turns around, so the traveller is younger (Wikipedia). The profile is idealised, and the scene and footnote say so; no ship can do this yet."
+  }
+}

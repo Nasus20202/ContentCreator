@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "id": "andromeda",
+      "kind": "image",
+      "file": "assets/andromeda.jpg",
+      "sha256": "42ef5fb54a2deba6e79d0e45bb06af0ee72e6ffb1e017a251b478c2d5db057e5",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA04921",
+        "title": "Andromeda Galaxy",
+        "credit": "NASA / JPL / California Institute of Technology",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T15:46:25.505Z"
+    }
+  ]
+}

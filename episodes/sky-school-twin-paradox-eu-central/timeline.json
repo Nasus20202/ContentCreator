@@ -1,0 +1,776 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "3d3131d4c5f4c50a",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 7.663,
+      "sentences": [
+        {
+          "text": "Fly to the galaxy's centre at one g, and back, and you come home younger.",
+          "start": 0.15,
+          "end": 4.289,
+          "words": [
+            {
+              "w": "Fly",
+              "start": 0.15,
+              "end": 0.368
+            },
+            {
+              "w": "to",
+              "start": 0.368,
+              "end": 0.542
+            },
+            {
+              "w": "the",
+              "start": 0.542,
+              "end": 0.76
+            },
+            {
+              "w": "galaxy's",
+              "start": 0.76,
+              "end": 1.196
+            },
+            {
+              "w": "centre",
+              "start": 1.196,
+              "end": 1.544
+            },
+            {
+              "w": "at",
+              "start": 1.544,
+              "end": 1.719
+            },
+            {
+              "w": "one",
+              "start": 1.719,
+              "end": 1.936
+            },
+            {
+              "w": "g,",
+              "start": 1.936,
+              "end": 2.198
+            },
+            {
+              "w": "and",
+              "start": 2.198,
+              "end": 2.416
+            },
+            {
+              "w": "back,",
+              "start": 2.416,
+              "end": 2.808
+            },
+            {
+              "w": "and",
+              "start": 2.808,
+              "end": 3.026
+            },
+            {
+              "w": "you",
+              "start": 3.026,
+              "end": 3.244
+            },
+            {
+              "w": "come",
+              "start": 3.244,
+              "end": 3.505
+            },
+            {
+              "w": "home",
+              "start": 3.505,
+              "end": 3.767
+            },
+            {
+              "w": "younger.",
+              "start": 3.767,
+              "end": 4.289
+            }
+          ]
+        },
+        {
+          "text": "Do the same to Andromeda, and the gap is far bigger.",
+          "start": 4.569,
+          "end": 7.383,
+          "words": [
+            {
+              "w": "Do",
+              "start": 4.569,
+              "end": 4.735
+            },
+            {
+              "w": "the",
+              "start": 4.735,
+              "end": 4.942
+            },
+            {
+              "w": "same",
+              "start": 4.942,
+              "end": 5.19
+            },
+            {
+              "w": "to",
+              "start": 5.19,
+              "end": 5.355
+            },
+            {
+              "w": "Andromeda,",
+              "start": 5.355,
+              "end": 5.935
+            },
+            {
+              "w": "and",
+              "start": 5.935,
+              "end": 6.142
+            },
+            {
+              "w": "the",
+              "start": 6.142,
+              "end": 6.348
+            },
+            {
+              "w": "gap",
+              "start": 6.348,
+              "end": 6.555
+            },
+            {
+              "w": "is",
+              "start": 6.555,
+              "end": 6.721
+            },
+            {
+              "w": "far",
+              "start": 6.721,
+              "end": 6.928
+            },
+            {
+              "w": "bigger.",
+              "start": 6.928,
+              "end": 7.383
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "paradox",
+      "audioFile": "voice/paradox.wav",
+      "duration": 7.152,
+      "sentences": [
+        {
+          "text": "This is the twin paradox.",
+          "start": 0.15,
+          "end": 1.732,
+          "words": [
+            {
+              "w": "This",
+              "start": 0.15,
+              "end": 0.438
+            },
+            {
+              "w": "is",
+              "start": 0.438,
+              "end": 0.629
+            },
+            {
+              "w": "the",
+              "start": 0.629,
+              "end": 0.869
+            },
+            {
+              "w": "twin",
+              "start": 0.869,
+              "end": 1.157
+            },
+            {
+              "w": "paradox.",
+              "start": 1.157,
+              "end": 1.732
+            }
+          ]
+        },
+        {
+          "text": "Only the traveller accelerates and turns around, so only the traveller comes home younger.",
+          "start": 2.012,
+          "end": 6.872,
+          "words": [
+            {
+              "w": "Only",
+              "start": 2.012,
+              "end": 2.28
+            },
+            {
+              "w": "the",
+              "start": 2.28,
+              "end": 2.503
+            },
+            {
+              "w": "traveller",
+              "start": 2.503,
+              "end": 2.993
+            },
+            {
+              "w": "accelerates",
+              "start": 2.993,
+              "end": 3.573
+            },
+            {
+              "w": "and",
+              "start": 3.573,
+              "end": 3.796
+            },
+            {
+              "w": "turns",
+              "start": 3.796,
+              "end": 4.108
+            },
+            {
+              "w": "around,",
+              "start": 4.108,
+              "end": 4.598
+            },
+            {
+              "w": "so",
+              "start": 4.598,
+              "end": 4.777
+            },
+            {
+              "w": "only",
+              "start": 4.777,
+              "end": 5.044
+            },
+            {
+              "w": "the",
+              "start": 5.044,
+              "end": 5.267
+            },
+            {
+              "w": "traveller",
+              "start": 5.267,
+              "end": 5.758
+            },
+            {
+              "w": "comes",
+              "start": 5.758,
+              "end": 6.07
+            },
+            {
+              "w": "home",
+              "start": 6.07,
+              "end": 6.337
+            },
+            {
+              "w": "younger.",
+              "start": 6.337,
+              "end": 6.872
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "centre",
+      "audioFile": "voice/centre.wav",
+      "duration": 8.957,
+      "sentences": [
+        {
+          "text": "The centre of the Milky Way, home to a black hole, is about 26,000 light-years away.",
+          "start": 0.15,
+          "end": 5.337,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.397
+            },
+            {
+              "w": "centre",
+              "start": 0.397,
+              "end": 0.792
+            },
+            {
+              "w": "of",
+              "start": 0.792,
+              "end": 0.99
+            },
+            {
+              "w": "the",
+              "start": 0.99,
+              "end": 1.237
+            },
+            {
+              "w": "Milky",
+              "start": 1.237,
+              "end": 1.583
+            },
+            {
+              "w": "Way,",
+              "start": 1.583,
+              "end": 1.978
+            },
+            {
+              "w": "home",
+              "start": 1.978,
+              "end": 2.274
+            },
+            {
+              "w": "to",
+              "start": 2.274,
+              "end": 2.472
+            },
+            {
+              "w": "a",
+              "start": 2.472,
+              "end": 2.62
+            },
+            {
+              "w": "black",
+              "start": 2.62,
+              "end": 2.966
+            },
+            {
+              "w": "hole,",
+              "start": 2.966,
+              "end": 3.41
+            },
+            {
+              "w": "is",
+              "start": 3.41,
+              "end": 3.608
+            },
+            {
+              "w": "about",
+              "start": 3.608,
+              "end": 3.954
+            },
+            {
+              "w": "26,000",
+              "start": 3.954,
+              "end": 4.299
+            },
+            {
+              "w": "light-years",
+              "start": 4.299,
+              "end": 4.892
+            },
+            {
+              "w": "away.",
+              "start": 4.892,
+              "end": 5.337
+            }
+          ]
+        },
+        {
+          "text": "At one g, the trip there takes about twenty years on board.",
+          "start": 5.617,
+          "end": 8.677,
+          "words": [
+            {
+              "w": "At",
+              "start": 5.617,
+              "end": 5.778
+            },
+            {
+              "w": "one",
+              "start": 5.778,
+              "end": 5.979
+            },
+            {
+              "w": "g,",
+              "start": 5.979,
+              "end": 6.221
+            },
+            {
+              "w": "the",
+              "start": 6.221,
+              "end": 6.422
+            },
+            {
+              "w": "trip",
+              "start": 6.422,
+              "end": 6.664
+            },
+            {
+              "w": "there",
+              "start": 6.664,
+              "end": 6.945
+            },
+            {
+              "w": "takes",
+              "start": 6.945,
+              "end": 7.227
+            },
+            {
+              "w": "about",
+              "start": 7.227,
+              "end": 7.509
+            },
+            {
+              "w": "twenty",
+              "start": 7.509,
+              "end": 7.831
+            },
+            {
+              "w": "years",
+              "start": 7.831,
+              "end": 8.113
+            },
+            {
+              "w": "on",
+              "start": 8.113,
+              "end": 8.274
+            },
+            {
+              "w": "board.",
+              "start": 8.274,
+              "end": 8.677
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "centre-earth",
+      "audioFile": "voice/centre-earth.wav",
+      "duration": 5.262,
+      "sentences": [
+        {
+          "text": "Round trip, you spend about forty years.",
+          "start": 0.15,
+          "end": 2.228,
+          "words": [
+            {
+              "w": "Round",
+              "start": 0.15,
+              "end": 0.43
+            },
+            {
+              "w": "trip,",
+              "start": 0.43,
+              "end": 0.789
+            },
+            {
+              "w": "you",
+              "start": 0.789,
+              "end": 0.989
+            },
+            {
+              "w": "spend",
+              "start": 0.989,
+              "end": 1.269
+            },
+            {
+              "w": "about",
+              "start": 1.269,
+              "end": 1.549
+            },
+            {
+              "w": "forty",
+              "start": 1.549,
+              "end": 1.828
+            },
+            {
+              "w": "years.",
+              "start": 1.828,
+              "end": 2.228
+            }
+          ]
+        },
+        {
+          "text": "On Earth, about fifty-two thousand years pass.",
+          "start": 2.508,
+          "end": 4.982,
+          "words": [
+            {
+              "w": "On",
+              "start": 2.508,
+              "end": 2.681
+            },
+            {
+              "w": "Earth,",
+              "start": 2.681,
+              "end": 3.115
+            },
+            {
+              "w": "about",
+              "start": 3.115,
+              "end": 3.419
+            },
+            {
+              "w": "fifty-two",
+              "start": 3.419,
+              "end": 3.853
+            },
+            {
+              "w": "thousand",
+              "start": 3.853,
+              "end": 4.287
+            },
+            {
+              "w": "years",
+              "start": 4.287,
+              "end": 4.591
+            },
+            {
+              "w": "pass.",
+              "start": 4.591,
+              "end": 4.982
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "andromeda",
+      "audioFile": "voice/andromeda.wav",
+      "duration": 9.462,
+      "sentences": [
+        {
+          "text": "Andromeda, our largest galactic neighbour, is about two and a half million light-years away.",
+          "start": 0.15,
+          "end": 5.141,
+          "words": [
+            {
+              "w": "Andromeda,",
+              "start": 0.15,
+              "end": 0.774
+            },
+            {
+              "w": "our",
+              "start": 0.774,
+              "end": 0.997
+            },
+            {
+              "w": "largest",
+              "start": 0.997,
+              "end": 1.398
+            },
+            {
+              "w": "galactic",
+              "start": 1.398,
+              "end": 1.843
+            },
+            {
+              "w": "neighbour,",
+              "start": 1.843,
+              "end": 2.467
+            },
+            {
+              "w": "is",
+              "start": 2.467,
+              "end": 2.646
+            },
+            {
+              "w": "about",
+              "start": 2.646,
+              "end": 2.957
+            },
+            {
+              "w": "two",
+              "start": 2.957,
+              "end": 3.18
+            },
+            {
+              "w": "and",
+              "start": 3.18,
+              "end": 3.403
+            },
+            {
+              "w": "a",
+              "start": 3.403,
+              "end": 3.537
+            },
+            {
+              "w": "half",
+              "start": 3.537,
+              "end": 3.804
+            },
+            {
+              "w": "million",
+              "start": 3.804,
+              "end": 4.205
+            },
+            {
+              "w": "light-years",
+              "start": 4.205,
+              "end": 4.74
+            },
+            {
+              "w": "away.",
+              "start": 4.74,
+              "end": 5.141
+            }
+          ]
+        },
+        {
+          "text": "Round trip at one g, you would spend about fifty-seven years on board.",
+          "start": 5.421,
+          "end": 9.182,
+          "words": [
+            {
+              "w": "Round",
+              "start": 5.421,
+              "end": 5.724
+            },
+            {
+              "w": "trip",
+              "start": 5.724,
+              "end": 5.983
+            },
+            {
+              "w": "at",
+              "start": 5.983,
+              "end": 6.156
+            },
+            {
+              "w": "one",
+              "start": 6.156,
+              "end": 6.372
+            },
+            {
+              "w": "g,",
+              "start": 6.372,
+              "end": 6.631
+            },
+            {
+              "w": "you",
+              "start": 6.631,
+              "end": 6.848
+            },
+            {
+              "w": "would",
+              "start": 6.848,
+              "end": 7.15
+            },
+            {
+              "w": "spend",
+              "start": 7.15,
+              "end": 7.453
+            },
+            {
+              "w": "about",
+              "start": 7.453,
+              "end": 7.755
+            },
+            {
+              "w": "fifty-seven",
+              "start": 7.755,
+              "end": 8.274
+            },
+            {
+              "w": "years",
+              "start": 8.274,
+              "end": 8.577
+            },
+            {
+              "w": "on",
+              "start": 8.577,
+              "end": 8.749
+            },
+            {
+              "w": "board.",
+              "start": 8.749,
+              "end": 9.182
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "andromeda-earth",
+      "audioFile": "voice/andromeda-earth.wav",
+      "duration": 2.776,
+      "sentences": [
+        {
+          "text": "On Earth, about five million years go by.",
+          "start": 0.15,
+          "end": 2.496,
+          "words": [
+            {
+              "w": "On",
+              "start": 0.15,
+              "end": 0.324
+            },
+            {
+              "w": "Earth,",
+              "start": 0.324,
+              "end": 0.758
+            },
+            {
+              "w": "about",
+              "start": 0.758,
+              "end": 1.062
+            },
+            {
+              "w": "five",
+              "start": 1.062,
+              "end": 1.323
+            },
+            {
+              "w": "million",
+              "start": 1.323,
+              "end": 1.714
+            },
+            {
+              "w": "years",
+              "start": 1.714,
+              "end": 2.018
+            },
+            {
+              "w": "go",
+              "start": 2.018,
+              "end": 2.192
+            },
+            {
+              "w": "by.",
+              "start": 2.192,
+              "end": 2.496
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 2.313,
+      "sentences": [
+        {
+          "text": "Follow for more sky, explained.",
+          "start": 0.15,
+          "end": 2.033,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.518
+            },
+            {
+              "w": "for",
+              "start": 0.518,
+              "end": 0.747
+            },
+            {
+              "w": "more",
+              "start": 0.747,
+              "end": 1.023
+            },
+            {
+              "w": "sky,",
+              "start": 1.023,
+              "end": 1.39
+            },
+            {
+              "w": "explained.",
+              "start": 1.39,
+              "end": 2.033
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

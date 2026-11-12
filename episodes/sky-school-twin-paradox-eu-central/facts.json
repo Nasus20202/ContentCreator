@@ -1,0 +1,91 @@
+{
+  "facts": [
+    {
+      "id": "paradox",
+      "statement": "A twin who travels far at near light speed and comes back is younger than the twin who stayed on Earth; the travelling twin is the one who accelerates and turns around.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://en.wikipedia.org/wiki/Twin_paradox",
+        "title": "Twin paradox",
+        "publisher": "Wikipedia",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "gravity-1g",
+      "statement": "One g is standard gravity, 9.80665 metres per second squared (exact by definition).",
+      "values": [
+        9.80665
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://physics.nist.gov/cgi-bin/cuu/Value?gn",
+        "title": "CODATA Value: standard acceleration of gravity",
+        "publisher": "NIST",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "centre-distance",
+      "statement": "Sagittarius A*, the black hole at the centre of the Milky Way, is about 26,000 light-years from Earth.",
+      "values": [
+        26000
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/",
+        "title": "Supermassive Black Hole Sagittarius A*",
+        "publisher": "NASA",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "andromeda-distance",
+      "statement": "The Andromeda galaxy is about 2.5 million light-years away, our Milky Way's largest galactic neighbour.",
+      "values": [
+        2.5
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/galaxies/andromeda/",
+        "title": "Andromeda",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "trip-times",
+      "statement": "At a constant 1 g, accelerating to the midpoint and braking to a stop, the round trip to the galactic centre takes about 40 years on board and about 52,000 years on Earth; the one-way trip takes about 20 years on board and about 26,000 on Earth. The round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. Computed with hyperbolic motion (constant proper acceleration).",
+      "values": [
+        20,
+        26000,
+        40,
+        52000,
+        57,
+        5000000
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://en.wikipedia.org/wiki/Twin_paradox",
+        "title": "Twin paradox",
+        "publisher": "Wikipedia",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "lorentz-peak",
+      "statement": "At the midpoint of the 1 g trip to the galactic centre, the Lorentz factor is about 13,400: a clock on board runs about 13,400 times slower than one on Earth.",
+      "values": [
+        13400
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://en.wikipedia.org/wiki/Lorentz_factor",
+        "title": "Lorentz factor",
+        "publisher": "Wikipedia",
+        "accessed": "2026-11-12"
+      }
+    }
+  ]
+}
