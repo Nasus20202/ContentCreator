@@ -32,6 +32,8 @@ function timeRefsOf(scene: Scene): TimeRef[] {
     if (p.meteors) refs.push(p.meteors.from, p.meteors.to);
   }
   if (scene.template === 'orbit3d') refs.push(scene.params.revealAt, scene.params.distancesAt);
+  if (scene.template === 'journey' || scene.template === 'laps') refs.push(scene.params.start);
+  if (scene.template === 'image' && scene.params.marker) refs.push(scene.params.marker.from);
   return refs.filter((r): r is TimeRef => r !== undefined);
 }
 
@@ -80,6 +82,18 @@ export function validatePlan(plan: Plan, facts: Fact[], assets: AssetRecord[] = 
       if (!b.has('Earth')) err(s.id, 'orbit3d must include Earth (the viewpoint)');
       if (s.params.lineOfSight && !b.has(s.params.lineOfSight.to)) err(s.id, 'lineOfSight.to not in bodies');
     }
+    if (s.template === 'journey') {
+      s.params.path.forEach((k, j) => {
+        if (k >= s.params.stops.length) err(`${s.id}.path[${j}]`, `stop ${k} does not exist`);
+        if (j > 0 && k === s.params.path[j - 1]) err(`${s.id}.path[${j}]`, 'the path stays on the same stop');
+      });
+      if (s.chips.length) warn(s.id, 'journey scenes draw their clocks where chips go; drop the chips');
+      const bd = s.params.backdrop;
+      if (bd && !assets.some((x) => x.id === bd.assetId))
+        err(s.id, `unknown asset "${bd.assetId}" (add it with: cc asset add)`);
+    }
+    if (s.template === 'laps' && s.params.assetId && !assets.some((x) => x.id === s.params.assetId))
+      err(s.id, `unknown asset "${s.params.assetId}" (add it with: cc asset add)`);
     if (s.template === 'image') {
       const a = assets.find((x) => x.id === s.params.assetId);
       if (!a) err(s.id, `unknown asset "${s.params.assetId}" (add it with: cc asset add)`);

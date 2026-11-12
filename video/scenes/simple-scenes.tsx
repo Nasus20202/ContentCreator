@@ -2,6 +2,7 @@ import React from 'react';
 import { AbsoluteFill, Img, staticFile } from 'remotion';
 import type { FactCardParams, ImageParams, OutroParams } from '../../src/core/schemas';
 import { Credit, Starfield } from '../components/overlays';
+import markPng from '../brand/mark.png';
 import { useAccent } from '../accent';
 import { useSceneTime } from '../scene-context';
 import { ease } from '../sky/projection';
@@ -18,7 +19,7 @@ function countUp(value: string, t: number): string {
   if (!m) return value;
   const target = Number(m[1].replace(/,/g, ''));
   const decimals = (m[1].split('.')[1] ?? '').length;
-  const shown = target * ease(Math.min(1, t / 1.4));
+  const shown = target * ease(Math.min(1, t / 0.9));
   const body = shown.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
   return body + m[2];
 }
@@ -32,28 +33,48 @@ export const FactCardScene: React.FC<{ sceneId: string; params: FactCardParams }
   // Shrink long values ("101,000,000 km") so they stay inside the 960 px column.
   const shown = countUp(params.value, t);
   const size = Math.min(220, Math.floor(980 / (Math.max(4, params.value.length) * 0.6)));
-  // An orbit ring around the figure: it turns slowly and draws in as the card appears.
-  const ring = 420;
-  const spin = t * 18;
+  // An orbit ring around the figure: a fixed, slightly tilted ellipse that draws in with the card,
+  // and a small body travelling along it, so the card keeps moving after the figure has landed.
+  // (A ring that rotated as a whole swung through the text and read as a stray line.)
+  const rx = 470;
+  const ry = 120;
+  const cy = 560 + size * 0.55;
+  const a = t * 0.8 + 0.6;
+  const dot = (
+    <circle
+      cx={540 + rx * Math.cos(a)}
+      cy={cy + ry * Math.sin(a)}
+      r={10}
+      fill={accent.hex}
+      opacity={k}
+      style={{ filter: `drop-shadow(0 0 10px ${accent.hex})` }}
+    />
+  );
+  const ringSvg = (withDot: boolean) => (
+    <svg width={1080} height={1920} style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
+      <g transform={`rotate(-8 540 ${cy})`}>
+        {!withDot && (
+          <ellipse
+            cx={540}
+            cy={cy}
+            rx={rx}
+            ry={ry}
+            fill="none"
+            stroke={accent.hex}
+            strokeWidth={2.5}
+            strokeDasharray={`${2 * Math.PI * rx * k} ${2 * Math.PI * rx}`}
+            opacity={0.35 * k}
+          />
+        )}
+        {withDot && dot}
+      </g>
+    </svg>
+  );
   return (
     <AbsoluteFill>
       <Starfield seed={sceneId} drift={0.02} />
-      <svg width={1080} height={1920} style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
-        <g transform={`rotate(${spin} 540 ${640})`}>
-          <ellipse
-            cx={540}
-            cy={640}
-            rx={ring}
-            ry={ring * 0.34}
-            fill="none"
-            stroke={accent.hex}
-            strokeWidth={3}
-            strokeDasharray={`${Math.PI * ring * 0.7 * k} ${Math.PI * ring}`}
-            opacity={0.55 * k}
-          />
-          <circle cx={540 + ring} cy={640} r={9} fill={accent.hex} opacity={k} />
-        </g>
-      </svg>
+      {ringSvg(false)}
+      {ringSvg(true)}
       <div
         style={{
           position: 'absolute',
@@ -91,7 +112,8 @@ export const FactCardScene: React.FC<{ sceneId: string; params: FactCardParams }
 };
 
 export const ImageScene: React.FC<{ params: ImageParams }> = ({ params }) => {
-  const { t, durationSec, props } = useSceneTime();
+  const accent = useAccent();
+  const { t, at, durationSec, props } = useSceneTime();
   const asset = props.assets[params.assetId];
   if (!asset) throw new Error(`Asset ${params.assetId} missing`);
   const k = ease(Math.min(1, t / Math.max(1, durationSec)));
@@ -136,16 +158,79 @@ export const ImageScene: React.FC<{ params: ImageParams }> = ({ params }) => {
             'linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.6) 100%)',
         }}
       />
+      {params.marker && !band && (
+        <Marker
+          x={params.focus[0] * 1080}
+          y={params.focus[1] * 1920}
+          label={params.marker.label}
+          o={ease(Math.min(1, Math.max(0, (t - at(params.marker.from)) / 0.6)))}
+          t={t}
+          color={accent.hex}
+        />
+      )}
       <Credit text={asset.credit} />
     </AbsoluteFill>
   );
 };
 
+/** A pulsing ring on one point of a photo, with a label beside it. */
+const Marker: React.FC<{ x: number; y: number; label: string; o: number; t: number; color: string }> = ({
+  x,
+  y,
+  label,
+  o,
+  t,
+  color,
+}) => {
+  const r = 70 - 24 * o + 4 * Math.sin(t * 4);
+  const left = x < 620;
+  return (
+    <>
+      <div
+        style={{
+          position: 'absolute',
+          left: x - r,
+          top: y - r,
+          width: 2 * r,
+          height: 2 * r,
+          borderRadius: '50%',
+          border: `4px solid ${color}`,
+          boxShadow: `0 0 24px ${color}, inset 0 0 18px ${color}55`,
+          opacity: o,
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          top: y - 30,
+          ...(left ? { left: x + 70 } : { right: 1080 - x + 70 }),
+          fontFamily: theme.font,
+          fontSize: 48,
+          fontWeight: 700,
+          color,
+          whiteSpace: 'nowrap',
+          textShadow: '0 2px 14px #000, 0 0 30px #000',
+          opacity: o,
+          transform: `translateX(${(left ? 1 : -1) * (1 - o) * 20}px)`,
+        }}
+      >
+        {left ? '← ' : ''}
+        {label}
+        {left ? '' : ' →'}
+      </div>
+    </>
+  );
+};
+
 export const OutroScene: React.FC<{ sceneId: string; params: OutroParams }> = ({ sceneId, params }) => {
   const accent = useAccent();
-  const { win, props } = useSceneTime();
+  const { win, props, t, timeline } = useSceneTime();
   const sky = props.sky[sceneId];
-  const o = win(0.8);
+  const mark = ease(Math.min(1, t / 0.9));
+  const o = win(0.5);
+  // The call to action appears as it is spoken ("Follow…"), not at a fixed time.
+  const follow = timeline.sentences.find((s) => /^follow\b/i.test(s.text.trim()));
+  const cta = win(follow ? Math.max(0.6, follow.start - 0.1) : 1.1);
   return (
     <AbsoluteFill>
       {sky && params.sky ? (
@@ -161,26 +246,72 @@ export const OutroScene: React.FC<{ sceneId: string; params: OutroParams }> = ({
           position: 'absolute',
           inset: 0,
           background:
-            'radial-gradient(ellipse 820px 470px at 50% 810px, rgba(6,10,24,0.74) 0%, rgba(6,10,24,0.52) 48%, rgba(6,10,24,0) 76%)',
+            'radial-gradient(ellipse 860px 700px at 50% 720px, rgba(6,10,24,0.78) 0%, rgba(6,10,24,0.55) 50%, rgba(6,10,24,0) 78%)',
         }}
       />
+      {/* Brand lockup: the channel mark settles in, then the name, then the call to action. */}
       <div
         style={{
           position: 'absolute',
-          top: 640,
-          left: 60,
-          right: 60,
-          textAlign: 'center',
+          top: 300,
+          left: 0,
+          right: 0,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
           fontFamily: theme.font,
           color: theme.text,
-          opacity: o,
           textShadow: '0 4px 30px #000',
         }}
       >
-        <div style={{ fontSize: 44, letterSpacing: 8, color: accent.hex, fontWeight: 600 }}>
+        <Img
+          src={markPng}
+          style={{
+            width: 380,
+            height: 380,
+            opacity: mark,
+            transform: `scale(${0.8 + 0.2 * mark + 0.03 * Math.sin(t * 1.4)})`,
+          }}
+        />
+        <div
+          style={{
+            marginTop: -40,
+            fontSize: 40,
+            fontWeight: 700,
+            letterSpacing: 14,
+            opacity: o,
+          }}
+        >
+          PHOTON SPHERE
+        </div>
+        <div style={{ fontSize: 30, fontWeight: 500, color: theme.muted, marginTop: 6, opacity: o }}>
+          @thephotonsphere
+        </div>
+        <div
+          style={{
+            marginTop: 44,
+            fontSize: 40,
+            letterSpacing: 8,
+            color: accent.hex,
+            fontWeight: 600,
+            opacity: cta,
+          }}
+        >
           {params.kicker.toUpperCase()}
         </div>
-        <div style={{ fontSize: 96, fontWeight: 700, lineHeight: 1.05, marginTop: 14, whiteSpace: 'pre-line' }}>
+        <div
+          style={{
+            fontSize: 80,
+            fontWeight: 700,
+            lineHeight: 1.05,
+            marginTop: 12,
+            padding: '0 60px',
+            textAlign: 'center',
+            whiteSpace: 'pre-line',
+            opacity: cta,
+            transform: `translateY(${(1 - cta) * 24}px)`,
+          }}
+        >
           {params.cta.toUpperCase()}
         </div>
       </div>

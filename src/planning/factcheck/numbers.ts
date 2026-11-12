@@ -110,7 +110,8 @@ export function wordsToNumber(words: string[]): number | undefined {
 }
 
 export function extractNumbers(text: string): NumberMention[] {
-  const tokens = tokenize(text);
+  // Source links are citations, not claims: "https://…/initiative/3" says nothing to check.
+  const tokens = tokenize(text.replace(/\bhttps?:\/\/\S+/g, ' '));
   const out: NumberMention[] = [];
   for (let i = 0; i < tokens.length; i++) {
     const t = tokens[i];

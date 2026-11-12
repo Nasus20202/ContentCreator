@@ -149,8 +149,12 @@ export const Orbit3DScene: React.FC<{ sceneId: string; params: Orbit3DParams }> 
         // label above the disc instead of clamping, so it stays attached to its planet.
         const labelH = 100;
         const below = p.y - 46;
+        // A large near disc can still put the flipped label in the band; then it goes below the band
+        // instead. (Capping it above the band stacked it on the Mars label in QA.)
+        const flipped = Math.max(theme.safeTop, p.y - radiusPx - labelH - 20);
+        const inBand = (y: number) => y + labelH > theme.captionTop - 20 && y < theme.captionTop + 190;
         const top =
-          below + labelH > theme.captionTop - 20 ? Math.max(theme.safeTop, p.y - radiusPx - labelH - 20) : below;
+          below + labelH > theme.captionTop - 20 ? (inBand(flipped) ? theme.captionTop + 200 : flipped) : below;
         return (
           <div
             key={b.name}

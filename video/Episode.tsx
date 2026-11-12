@@ -3,13 +3,15 @@ import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame
 import type { RenderProps, Scene } from '../src/core/schemas';
 import { sceneStarts } from '../src/core/timing';
 import { AccentProvider } from './accent';
-import { Badge, Captions, Chip, TitleOverlay } from './components/overlays';
+import { Badge, Captions, Chip, TitleOverlay, Vignette } from './components/overlays';
 import { SceneContext, useSceneTime } from './scene-context';
 import { Orbit3DScene } from './scenes/Orbit3DScene';
 import { FactCardScene, ImageScene, OutroScene } from './scenes/simple-scenes';
 import { ScaleScene } from './scenes/ScaleScene';
 import { CompareScene } from './scenes/CompareScene';
 import { SkyViewScene } from './scenes/SkyViewScene';
+import { JourneyScene } from './scenes/JourneyScene';
+import { LapsScene } from './scenes/LapsScene';
 import { theme } from './theme';
 import { BED_LIFT, musicDuck, speechWindows } from './duck';
 
@@ -27,6 +29,10 @@ const Template: React.FC<{ scene: Scene }> = ({ scene }) => {
       return <CompareScene params={scene.params} />;
     case 'image':
       return <ImageScene params={scene.params} />;
+    case 'journey':
+      return <JourneyScene params={scene.params} />;
+    case 'laps':
+      return <LapsScene params={scene.params} />;
     case 'outro':
       return <OutroScene sceneId={scene.id} params={scene.params} />;
   }
@@ -69,7 +75,11 @@ const SceneShell: React.FC<{ scene: Scene; props: RenderProps; index: number; fr
           transform: `scale(${interpolate(frame, [0, 14], [1.05, 1], { extrapolateRight: 'clamp' })})`,
         }}
       >
-        <Template scene={scene} />
+        {/* A slow push-in through the whole scene keeps every frame moving, even between animations. */}
+        <AbsoluteFill style={{ transform: `scale(${1 + 0.035 * Math.min(1, frame / Math.max(1, frames))})` }}>
+          <Template scene={scene} />
+        </AbsoluteFill>
+        <Vignette />
         <SceneOverlays scene={scene} />
         <Audio src={staticFile(timeline.audioFile)} />
       </AbsoluteFill>
@@ -92,7 +102,7 @@ export const Episode: React.FC<RenderProps> = (props) => {
           </Sequence>
         ))}
         <Sequence from={Math.max(0, firstEnd - 10)} durationInFrames={Math.max(1, total - firstEnd + 10)} name="badge">
-          <Badge text={plan.badge} />
+          <Badge text={plan.badge} offset={Math.max(0, firstEnd - 10)} total={total} />
         </Sequence>
         {props.musicFile && plan.music.enabled && (
           <Audio

@@ -42,6 +42,16 @@ export const Logo: React.FC = () => (
   </AbsoluteFill>
 );
 
+/**
+ * The mark alone on a transparent background, for use inside episodes (badge, outro). Rendered to
+ * video/brand/mark.png: pnpm exec remotion still video/index.tsx Mark video/brand/mark.png
+ */
+export const Mark: React.FC = () => (
+  <AbsoluteFill>
+    <BlackHoleMark size={512} radius={0.15} />
+  </AbsoluteFill>
+);
+
 const BANNER_TEXT_BOX: [number, number, number, number] = [1000, 590, 2060, 840];
 const HOLE = { x: 760, y: 720, size: 1400 };
 

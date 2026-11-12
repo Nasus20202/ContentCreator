@@ -4,6 +4,7 @@
  * (and recorded), because a regex cannot tell "east" from "west".
  */
 import type { Fact, Plan, Scene } from '../../core/schemas';
+import { formatClock } from '../../core/clock';
 import { extractNumbers, matchesValue, type NumberMention } from './numbers';
 
 export interface ClaimCheck {
@@ -33,6 +34,9 @@ export function sceneTexts(scene: Scene): { where: string; text: string }[] {
       if (p.separation) out.push({ where: 'separation', text: p.separation.text });
       break;
     }
+    case 'image':
+      if (scene.params.marker) out.push({ where: 'marker', text: scene.params.marker.label });
+      break;
     case 'factCard':
       out.push({ where: 'factCard', text: `${scene.params.value} ${scene.params.label}` });
       break;
@@ -44,6 +48,31 @@ export function sceneTexts(scene: Scene): { where: string; text: string }[] {
     case 'scale':
       out.push({ where: 'scale', text: scene.params.totalLabel });
       scene.params.markers.forEach((m, i) => out.push({ where: `markers[${i}]`, text: m.label }));
+      break;
+    case 'journey':
+      scene.params.stops.forEach((st, i) =>
+        out.push({ where: `stops[${i}]`, text: [st.name, st.sub, st.arrive].filter(Boolean).join(' ') }),
+      );
+      // A clock that starts at zero makes no claim; its start reading is only checked when it is not 0.
+      scene.params.clocks.forEach((c, i) =>
+        out.push({
+          where: `clocks[${i}]`,
+          text: [
+            c.label,
+            c.from > 0 ? formatClock(c.from, c.unit, c.decimals) : '',
+            formatClock(c.to, c.unit, c.decimals),
+          ]
+            .filter(Boolean)
+            .join(' '),
+        }),
+      );
+      if (scene.params.backdrop) out.push({ where: 'backdrop', text: scene.params.backdrop.label });
+      break;
+    case 'laps':
+      out.push({
+        where: 'laps',
+        text: [String(scene.params.laps), scene.params.label, scene.params.note].filter(Boolean).join(' '),
+      });
       break;
     case 'outro':
       out.push({

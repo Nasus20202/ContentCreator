@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
-import { interpolate, random, useCurrentFrame, useVideoConfig } from 'remotion';
+import { Img, interpolate, random, useCurrentFrame, useVideoConfig } from 'remotion';
+import markPng from '../brand/mark.png';
 import type { Sentence } from '../../src/core/schemas';
 import { captionChunks } from '../../src/voice/timing';
 import { useAccent } from '../accent';
@@ -98,14 +99,19 @@ export const TitleOverlay: React.FC<{ kicker: string; title: string; opacity: nu
     <div
       style={{
         position: 'absolute',
-        top: 420,
-        left: 40,
-        right: 40,
+        top: 390,
+        left: 20,
+        right: 20,
+        padding: '30px 20px',
         textAlign: 'center',
         opacity,
         fontFamily: theme.font,
         color: theme.text,
-        textShadow: '0 4px 30px #000',
+        // A soft scrim keeps the title readable over bright photos (clouds, the Sun); on a dark sky
+        // it disappears.
+        background:
+          'radial-gradient(ellipse at center, rgba(1,3,10,0.62) 0%, rgba(1,3,10,0.4) 50%, rgba(1,3,10,0) 72%)',
+        textShadow: '0 2px 6px #000, 0 4px 30px #000',
       }}
     >
       <div style={{ fontSize: 46, fontWeight: 600, letterSpacing: 10, color: accent.hex }}>{kicker.toUpperCase()}</div>
@@ -114,7 +120,11 @@ export const TitleOverlay: React.FC<{ kicker: string; title: string; opacity: nu
   );
 };
 
-export const Badge: React.FC<{ text: string }> = ({ text }) => {
+/**
+ * Series badge with the channel mark, so every frame after the hook carries the brand. A hairline
+ * along its bottom edge fills with the episode's progress.
+ */
+export const Badge: React.FC<{ text: string; offset: number; total: number }> = ({ text, offset, total }) => {
   const accent = useAccent();
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
@@ -122,6 +132,7 @@ export const Badge: React.FC<{ text: string }> = ({ text }) => {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
+  const progress = Math.min(1, (frame + offset) / Math.max(1, total));
   return (
     <div
       style={{
@@ -132,24 +143,97 @@ export const Badge: React.FC<{ text: string }> = ({ text }) => {
         display: 'flex',
         justifyContent: 'center',
         opacity: o,
+        transform: `translateY(${(1 - o) * -12}px)`,
       }}
     >
       <div
         style={{
+          position: 'relative',
+          display: 'flex',
+          alignItems: 'center',
+          gap: 14,
           fontFamily: theme.font,
           fontSize: 34,
           fontWeight: 700,
           letterSpacing: 4,
           color: theme.text,
-          background: 'rgba(10,16,36,0.6)',
-          border: `2px solid rgba(${accent.rgb},0.6)`,
-          padding: '10px 26px',
+          background: 'rgba(8,12,30,0.72)',
+          border: `2px solid rgba(${accent.rgb},0.55)`,
+          padding: '8px 30px 8px 12px',
           borderRadius: 999,
+          overflow: 'hidden',
+          boxShadow: `0 6px 30px rgba(0,0,0,0.5), 0 0 24px rgba(${accent.rgb},0.18)`,
         }}
       >
-        ✦ {text.toUpperCase()}
+        <Img src={markPng} style={{ width: 58, height: 58, margin: '-6px -4px' }} />
+        {text.toUpperCase()}
+        <div
+          style={{
+            position: 'absolute',
+            left: 0,
+            bottom: 0,
+            height: 4,
+            width: `${progress * 100}%`,
+            background: accent.hex,
+            boxShadow: `0 0 10px ${accent.hex}`,
+          }}
+        />
       </div>
     </div>
+  );
+};
+
+/** Darkens the frame edges: pulls the eye to the centre and keeps the corners from looking flat. */
+export const Vignette: React.FC = () => (
+  <div
+    style={{
+      position: 'absolute',
+      inset: 0,
+      pointerEvents: 'none',
+      background: 'radial-gradient(ellipse 85% 70% at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.5) 100%)',
+    }}
+  />
+);
+
+/**
+ * Soft colour clouds behind the cards (not over sky views, which show the real sky). Decorative only:
+ * they depict no object, they keep the explainer cards from being flat black.
+ */
+const Nebula: React.FC<{ seed: string }> = ({ seed }) => {
+  const accent = useAccent();
+  const frame = useCurrentFrame();
+  const clouds = useMemo(
+    () =>
+      [
+        { color: `rgba(${accent.rgb},0.20)`, size: 900 },
+        { color: 'rgba(118,82,230,0.22)', size: 1100 },
+        { color: 'rgba(40,140,220,0.16)', size: 1000 },
+      ].map((c, i) => ({
+        ...c,
+        x: 120 + random(`${seed}nx${i}`) * 840,
+        y: 250 + random(`${seed}ny${i}`) * 1250,
+        dx: (random(`${seed}dx${i}`) - 0.5) * 0.5,
+        dy: (random(`${seed}dy${i}`) - 0.5) * 0.4,
+      })),
+    [seed, accent.rgb],
+  );
+  return (
+    <>
+      {clouds.map((c, i) => (
+        <div
+          key={i}
+          style={{
+            position: 'absolute',
+            left: c.x + frame * c.dx - c.size / 2,
+            top: c.y + frame * c.dy - c.size / 2,
+            width: c.size,
+            height: c.size,
+            borderRadius: '50%',
+            background: `radial-gradient(circle, ${c.color} 0%, rgba(0,0,0,0) 65%)`,
+          }}
+        />
+      ))}
+    </>
   );
 };
 
@@ -176,38 +260,40 @@ export const Starfield: React.FC<{ seed: string; drift?: number }> = ({ seed, dr
     [seed, width, height],
   );
   return (
-    <svg
-      width={width}
-      height={height}
-      style={{
-        position: 'absolute',
-        inset: 0,
-        background: `radial-gradient(ellipse at 50% 30%, #0b1633 0%, ${theme.bg} 70%)`,
-      }}
-    >
-      <defs>
-        <linearGradient id={`horizon-${seed}`} x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#1b3a7a" stopOpacity="0" />
-          <stop offset="100%" stopColor="#1b3a7a" stopOpacity="0.45" />
-        </linearGradient>
-      </defs>
-      {layers.map((layer, li) =>
-        layer.stars.map((s, i) => {
-          const twinkle = 0.8 + 0.2 * Math.sin(frame * 0.08 + s.tw);
-          return (
-            <circle
-              key={`${li}-${i}`}
-              cx={s.x}
-              cy={(s.y + frame * drift * 40 * layer.depth) % height}
-              r={s.r}
-              fill="#dfe8ff"
-              opacity={s.a * twinkle}
-            />
-          );
-        }),
-      )}
-      <rect x={0} y={height * 0.72} width={width} height={height * 0.28} fill={`url(#horizon-${seed})`} />
-    </svg>
+    <>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: `radial-gradient(ellipse at 50% 30%, #0b1633 0%, ${theme.bg} 70%)`,
+        }}
+      />
+      <Nebula seed={seed} />
+      <svg width={width} height={height} style={{ position: 'absolute', inset: 0 }}>
+        <defs>
+          <linearGradient id={`horizon-${seed}`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#1b3a7a" stopOpacity="0" />
+            <stop offset="100%" stopColor="#1b3a7a" stopOpacity="0.45" />
+          </linearGradient>
+        </defs>
+        {layers.map((layer, li) =>
+          layer.stars.map((s, i) => {
+            const twinkle = 0.8 + 0.2 * Math.sin(frame * 0.08 + s.tw);
+            return (
+              <circle
+                key={`${li}-${i}`}
+                cx={s.x}
+                cy={(s.y + frame * drift * 40 * layer.depth) % height}
+                r={s.r}
+                fill="#dfe8ff"
+                opacity={s.a * twinkle}
+              />
+            );
+          }),
+        )}
+        <rect x={0} y={height * 0.72} width={width} height={height * 0.28} fill={`url(#horizon-${seed})`} />
+      </svg>
+    </>
   );
 };
 

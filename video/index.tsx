@@ -2,7 +2,7 @@ import React from 'react';
 import { AbsoluteFill, Composition, registerRoot, Still } from 'remotion';
 import type { RenderProps } from '../src/core/schemas';
 import { totalFrames } from '../src/core/timing';
-import { Banner, Logo } from './brand/Brand';
+import { Banner, Logo, Mark } from './brand/Brand';
 import { Episode } from './Episode';
 
 const Empty: React.FC = () => (
@@ -40,6 +40,7 @@ const Root: React.FC = () => (
       })}
     />
     <Still id="Logo" component={Logo} width={800} height={800} />
+    <Still id="Mark" component={Mark} width={512} height={512} />
     <Still id="Banner" component={Banner} width={2560} height={1440} />
   </>
 );

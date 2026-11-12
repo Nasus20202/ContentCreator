@@ -223,12 +223,75 @@ export const CompareParams = z.object({
 });
 export type CompareParams = z.infer<typeof CompareParams>;
 
+/**
+ * A trip drawn to scale: bodies along a track (`at` in one unit, linear), a traveller (light or a
+ * ship) moving along `path` (stop indices, e.g. [0, 1, 0] for there and back) at constant speed for
+ * light, accelerating and braking for a ship, and up to two clocks counting from `from` to `to`
+ * while it travels. Only the start and end readings are claims (fact-checked); readings in between
+ * are animation.
+ */
+export const JourneyStop = z.object({
+  name: z.string().max(30),
+  at: z.number().min(0),
+  kind: z.enum(['sun', 'earth', 'mars', 'jupiter', 'star', 'blackhole', 'galaxy', 'point']),
+  /** Small line under the name, e.g. "1 AU". */
+  sub: z.string().max(30).optional(),
+  /** Shown when the traveller arrives, e.g. "8 min 20 s". */
+  arrive: z.string().max(24).optional(),
+});
+export const JourneyClock = z.object({
+  label: z.string().max(20),
+  from: z.number().min(0).default(0),
+  to: z.number().min(0),
+  unit: z.enum(['min', 's', 'years']),
+  /** Decimal places for years below a million (4.24 light-years at nearly light speed → "4.24 yrs"). */
+  decimals: z.number().int().min(0).max(2).default(0),
+});
+export const JourneyParams = z.object({
+  traveller: z.enum(['light', 'ship']),
+  stops: z.array(JourneyStop).min(2).max(4),
+  path: z.array(z.number().int().min(0)).min(2).max(4),
+  /** When the traveller sets off, and how many seconds of screen time the whole path takes. */
+  start: TimeRef.default(0.6),
+  travel: z.number().positive().max(20).default(3),
+  clocks: z.array(JourneyClock).max(2).default([]),
+  /**
+   * Optional real photo of where the trip goes (a `cc asset`), shown behind the diagram and growing
+   * brighter and closer as the traveller approaches; `label` says what it is, the credit is added.
+   */
+  backdrop: z.object({ assetId: z.string(), label: z.string().max(44) }).optional(),
+});
+export type JourneyParams = z.infer<typeof JourneyParams>;
+
+/** Light (or anything) circling a body in slow motion, with a lap counter: "7.5 times around Earth". */
+export const LapsParams = z.object({
+  body: z.enum(['earth', 'moon']),
+  /** Optional real photo of the body (a centred full disc, e.g. Apollo 17's Blue Marble); credited on screen. */
+  assetId: z.string().optional(),
+  /** Fraction of the image width the disc fills, and the disc centre (0..1), to crop the photo to the disc. */
+  disc: z
+    .object({ size: z.number().min(0.1).max(1), cx: z.number().min(0).max(1), cy: z.number().min(0).max(1) })
+    .default({ size: 0.667, cx: 0.5, cy: 0.508 }),
+  laps: z.number().positive().max(50),
+  label: z.string().max(40),
+  note: z.string().max(50).optional(),
+  start: TimeRef.default(0.3),
+  /** Seconds of screen time the counted laps take (the slow-motion factor follows from it). */
+  over: z.number().positive().max(15).default(4),
+});
+export type LapsParams = z.infer<typeof LapsParams>;
+
 export const ImageParams = z.object({
   assetId: z.string(),
   zoom: z.tuple([z.number().min(1), z.number().min(1)]).default([1.0, 1.12]),
   focus: z.tuple([z.number().min(0).max(1), z.number().min(0).max(1)]).default([0.5, 0.5]),
   /** "cover" fills the frame (crops), "contain" shows the whole image as a centred band. */
   fit: z.enum(['cover', 'contain']).default('cover'),
+  /**
+   * A ring and label on the focus point ("cover" only: the focus pixel stays at the same place on
+   * screen while zooming, so the ring stays on target), e.g. Earth in the Pale Blue Dot.
+   */
+  marker: z.object({ label: z.string().max(30), from: TimeRef.default(0.5) }).optional(),
 });
 export type ImageParams = z.infer<typeof ImageParams>;
 
@@ -259,6 +322,8 @@ export const Scene = z.discriminatedUnion('template', [
   z.object({ ...SceneBase, template: z.literal('scale'), params: ScaleParams }),
   z.object({ ...SceneBase, template: z.literal('compare'), params: CompareParams }),
   z.object({ ...SceneBase, template: z.literal('image'), params: ImageParams }),
+  z.object({ ...SceneBase, template: z.literal('journey'), params: JourneyParams }),
+  z.object({ ...SceneBase, template: z.literal('laps'), params: LapsParams }),
   z.object({ ...SceneBase, template: z.literal('outro'), params: OutroParams }),
 ]);
 export type Scene = z.infer<typeof Scene>;
@@ -283,7 +348,7 @@ export const Plan = z.object({
      * Bed character; see RECIPE in src/render/media.ts. Optional rather than defaulted so adding it
      * does not change the plan hash of episodes that predate it.
      */
-    style: z.enum(['piano', 'piano-pulse', 'piano-air']).optional(),
+    style: z.enum(['piano', 'piano-pulse', 'piano-air', 'orbit', 'nebula', 'meteor']).optional(),
     /** Bed variant: timing/velocity seed and transposition in semitones. Optional, same reason as style. */
     seed: z.number().int().min(0).max(999).optional(),
     transpose: z.number().int().min(-6).max(6).optional(),

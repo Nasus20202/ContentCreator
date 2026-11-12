@@ -14,6 +14,10 @@ describe('wordsToNumber', () => {
 });
 
 describe('extractNumbers', () => {
+  it('ignores numbers inside source URLs', () => {
+    expect(values('Starshot: https://breakthroughinitiatives.org/initiative/3 is 15% of c')).toEqual([15]);
+  });
+
   it('reads spelled-out cardinals with scales', () => {
     expect(values('Mars is about two hundred million kilometers away.')).toEqual([200e6]);
   });

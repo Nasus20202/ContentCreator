@@ -18,15 +18,15 @@ Authoritative definition: `Plan` in `src/core/schemas.ts`. Worked example: `epis
 
 ## Common scene fields
 
-| Field       | Meaning                                                                   |
-| ----------- | ------------------------------------------------------------------------- |
-| `id`        | unique, kebab-case                                                        |
-| `template`  | `skyView` · `orbit3d` · `factCard` · `scale` · `compare` · `image` · `outro`                    |
-| `narration` | array of sentences (the timing unit)                                      |
-| `factIds`   | facts backing **every** claim in narration + on-screen text of this scene |
-| `chips`     | `[{ text ≤ 48, from, to? }]` accent-coloured info pills under the badge   |
-| `title`     | `{ kicker, title, from, to? }` large centred overlay (hook)               |
-| `captions`  | default `true`                                                            |
+| Field       | Meaning                                                                                           |
+| ----------- | ------------------------------------------------------------------------------------------------- |
+| `id`        | unique, kebab-case                                                                                |
+| `template`  | `skyView` · `orbit3d` · `factCard` · `scale` · `compare` · `journey` · `laps` · `image` · `outro` |
+| `narration` | array of sentences (the timing unit)                                                              |
+| `factIds`   | facts backing **every** claim in narration + on-screen text of this scene                         |
+| `chips`     | `[{ text ≤ 48, from, to? }]` accent-coloured info pills under the badge                           |
+| `title`     | `{ kicker, title, from, to? }` large centred overlay (hook)                                       |
+| `captions`  | default `true`                                                                                    |
 
 **TimeRef** (`from`, `to`, `at`, …): seconds from scene start, or `{ "sentence": 1, "edge": "start" | "end", "offset": -0.4 }`.
 
@@ -63,7 +63,15 @@ Authoritative definition: `Plan` in `src/core/schemas.ts`. Worked example: `epis
 
 ## `compare`
 
-`{ heading? ≤ 50, scale: "linear" | "log", bars: [{ label ≤ 40, value ≥ 1, display ≤ 20 }] (2–3), note? ≤ 80 }` — horizontal bars in one unit. `value` sets the length; `display` is the printed number. Each bar's display and label must be backed by a fact. Use `log` when the values differ by orders of magnitude, and say so in `note`.
+`{ heading? ≤ 50, scale: "linear" | "log", bars: [{ label ≤ 40, value ≥ 1, display ≤ 20 }] (2–3), note? ≤ 80 }` — horizontal bars in one unit. `value` sets the length; `display` is the printed number. Each bar's display and label must be backed by a fact. Prefer `linear` even when values differ by orders of magnitude: the short bar becomes a glowing sliver, which is usually the point. Use `log` only when the small values must be compared with each other, and say so in `note`.
+
+## `journey` — a trip with clocks
+
+`{ traveller: "light" | "ship", stops: [{ name ≤ 30, at, kind, sub? ≤ 30, arrive? ≤ 24 }] (2–4), path: [stop indices] (2–4), start: TimeRef, travel: seconds, clocks: [{ label ≤ 20, from, to, unit: "min" | "s" | "years" }] (0–2) }` — stops are drawn to scale along a vertical track (`at` in one unit; kinds: sun, earth, mars, jupiter, star, blackhole, galaxy, point). The traveller follows `path` (e.g. `[0, 1, 0]` there and back): light at constant speed, a ship accelerating and braking. Clocks count from `from` to `to` while it travels and are printed by `src/core/clock.ts` (8.3333 min → "8 min 20 s", 5000000 years → "5 million yrs"). Stop names/subs/arrival badges and the clocks' end readings (and non-zero start readings) are fact-checked; readings in between are animation. No chips (the clocks use that space).
+
+## `laps` — circling a body
+
+`{ body: "earth" | "moon", assetId?, disc: { size, cx, cy }, laps, label ≤ 40, note? ≤ 50, start: TimeRef, over: seconds }` — something circling the body in slow motion with a counter up to `laps` (e.g. light: 7.5 times around Earth every second). With `assetId`, the body is a real photo cropped to its disc (`disc` = disc diameter as a fraction of the image width and its centre) and the credit is printed. Say it is slowed down in `note`.
 
 ## `image` — real imagery
 

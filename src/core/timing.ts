@@ -7,13 +7,19 @@ import type { SceneTimeline, Sentence, TimeRef, Timeline } from './schemas';
 /** Silence kept after each scene's narration before the next scene starts. */
 export const SCENE_TAIL_SEC = 0.25;
 
-export const sceneFrames = (scene: SceneTimeline, fps: number): number =>
-  Math.ceil((scene.duration + SCENE_TAIL_SEC) * fps);
+/**
+ * The last scene holds longer after its final word, so the video ends on the call to action and the
+ * closing chord instead of cutting off mid-breath.
+ */
+export const END_HOLD_SEC = 1.6;
+
+export const sceneFrames = (scene: SceneTimeline, fps: number, last = false): number =>
+  Math.ceil((scene.duration + SCENE_TAIL_SEC + (last ? END_HOLD_SEC : 0)) * fps);
 
 export function sceneStarts(timeline: Timeline, fps: number): { sceneId: string; from: number; frames: number }[] {
   let from = 0;
-  return timeline.scenes.map((s) => {
-    const frames = sceneFrames(s, fps);
+  return timeline.scenes.map((s, i) => {
+    const frames = sceneFrames(s, fps, i === timeline.scenes.length - 1);
     const r = { sceneId: s.sceneId, from, frames };
     from += frames;
     return r;
@@ -21,7 +27,7 @@ export function sceneStarts(timeline: Timeline, fps: number): { sceneId: string;
 }
 
 export const totalFrames = (timeline: Timeline, fps: number): number =>
-  timeline.scenes.reduce((n, s) => n + sceneFrames(s, fps), 0);
+  timeline.scenes.reduce((n, s, i) => n + sceneFrames(s, fps, i === timeline.scenes.length - 1), 0);
 
 /** Resolve a TimeRef to seconds from scene start. Sentence refs past the end clamp to the last sentence. */
 export function resolveTime(ref: TimeRef, sentences: Sentence[]): number {

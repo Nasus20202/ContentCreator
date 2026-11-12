@@ -35,12 +35,13 @@ describe('timing', () => {
     ],
   };
 
-  it('lays scenes out back to back with a tail', () => {
+  it('lays scenes out back to back with a tail, and holds the last scene so the video ends cleanly', () => {
     expect(sceneStarts(timeline, 30)).toEqual([
       { sceneId: 'a', from: 0, frames: 68 },
-      { sceneId: 'b', from: 68, frames: 38 },
+      // 1 s of narration + 0.25 s tail + 1.6 s end hold
+      { sceneId: 'b', from: 68, frames: 86 },
     ]);
-    expect(totalFrames(timeline, 30)).toBe(106);
+    expect(totalFrames(timeline, 30)).toBe(154);
   });
 
   it('resolves sentence-anchored time refs', () => {
