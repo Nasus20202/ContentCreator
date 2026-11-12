@@ -1,0 +1,160 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-12T19:14:12.654Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-14T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "f5302bec38a06b1e1859aeb5383646d0402e78e7e53a4421516a6853db75f656",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Hubble's eXtreme Deep Field: one tiny patch of sky, a small fraction of the width of the full Moon, holds about 5,500 galaxies. Hubble stared at it for a total of 50 days over 10 years, and some of the light set off 13.2 billion years ago.\n\nSource:\nNASA Science, Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe: https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/\n\nImage: NASA / ESA / G. Illingworth, D. Magee, P. Oesch, R. Bouwens and the HUDF09 Team. Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #hubble #galaxies",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-14T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Almost every dot here is a galaxy 🌌",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Almost every dot here is a galaxy 🌌\n\nHubble's eXtreme Deep Field: one tiny patch of sky, a small fraction of the width of the full Moon, holds about 5,500 galaxies. Hubble stared at it for a total of 50 days over 10 years, and some of the light set off 13.2 billion years ago.\n\nSource:\nNASA Science, Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe: https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/\n\nImage: NASA / ESA / G. Illingworth, D. Magee, P. Oesch, R. Bouwens and the HUDF09 Team. Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #hubble #galaxies",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-14T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T19:15:13.612Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-14T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "f5302bec38a06b1e1859aeb5383646d0402e78e7e53a4421516a6853db75f656",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af610510522ffa5bc4b44c3",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Hubble's eXtreme Deep Field: one tiny patch of sky, a small fraction of the width of the full Moon, holds about 5,500 galaxies. Hubble stared at it for a total of 50 days over 10 years, and some of the light set off 13.2 billion years ago.\n\nSource:\nNASA Science, Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe: https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/\n\nImage: NASA / ESA / G. Illingworth, D. Magee, P. Oesch, R. Bouwens and the HUDF09 Team. Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #hubble #galaxies",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-14T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-deep-field-eu-central-f5302bec.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Almost every dot here is a galaxy 🌌",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af61052cfe45b714e4ba2d0",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Almost every dot here is a galaxy 🌌\n\nHubble's eXtreme Deep Field: one tiny patch of sky, a small fraction of the width of the full Moon, holds about 5,500 galaxies. Hubble stared at it for a total of 50 days over 10 years, and some of the light set off 13.2 billion years ago.\n\nSource:\nNASA Science, Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe: https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/\n\nImage: NASA / ESA / G. Illingworth, D. Magee, P. Oesch, R. Bouwens and the HUDF09 Team. Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #hubble #galaxies",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-14T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-deep-field-eu-central-f5302bec.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-deep-field-eu-central-f5302bec.mp4"
+      }
+    }
+  ]
+}

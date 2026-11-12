@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-light-travel-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-12T15:14:58.900Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -107,6 +107,28 @@ Image: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narrati
 
 Visual review by **claude** (2026-11-12T18:53:49.390Z): **pass** — SDO Sun hook, laps around the Apollo 17 Earth (7.5x, 'shown slowed down'), Sun-Earth-Jupiter journey with Blue Marble and Cassini Jupiter backdrops, 8 min 20 s and 43 min badges, compare bars; Sun label fully on screen after the track shift.
 
+## Approvals
+
+- 2026-11-12T19:13:32.924Z — **Krzysztof Nasuta** (human) approved video `8aa6228213aba7dd…`
+
+## Publishing
+
+### 2026-11-12T19:14:15.364Z · buffer · schedule for 2026-11-18T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+
+### 2026-11-12T19:16:16.536Z · buffer · schedule for 2026-11-18T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-light-travel-eu-central-8aa62282.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af6108fd647bbafc5ad4af7 |  |
+| tiktok | submitted | 6af6108f0522ffa5bc4b5d02 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -194,3 +216,7 @@ Visual review by **claude** (2026-11-12T18:53:49.390Z): **pass** — SDO Sun hoo
 | 2026-11-12 18:25:47 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:53:49 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:49 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:32 | human | approved | stage.advance | 37004a9 |
+| 2026-11-12 19:14:15 | claude | publish | publish.dry-run | 37004a9 |
+| 2026-11-12 19:16:32 | claude | publish | publish.submit | 37004a9 |
+| 2026-11-12 19:16:32 | claude | published | stage.advance | 37004a9 |

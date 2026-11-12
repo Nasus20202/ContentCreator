@@ -124,3 +124,7 @@
 {"ts":"2026-11-12T18:33:01.267Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":17},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:51.620Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Geminids peak sky, moonset chip, 150 card, Moon-Saturn, outro CTA synced with 'Follow' line and end hold."},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:51.626Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T19:13:34.942Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:14:17.434Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:17:27.508Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-14-eu-central-aa3ca3bd.mp4","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:17:27.513Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"37004a9"}

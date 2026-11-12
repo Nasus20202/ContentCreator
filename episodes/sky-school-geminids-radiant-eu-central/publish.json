@@ -1,0 +1,160 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-12T19:14:16.742Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-07T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "ac7bb431c7600ce2e554b6ab3eee1745283913a74f96db5f6498ed963069e8a2",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "The Geminids look like they come from a single point in Gemini, the radiant. They do not: the meteors are debris from asteroid 3200 Phaethon, and they all travel on parallel paths. We meet the stream head-on, so those paths seem to fan out from a point ahead of us. At the peak the radiant is 73° up in the south, where the ideal rate is up to 150 meteors an hour.\n\nImage: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#geminids #meteorshower #skyschool #astronomy #science #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-07T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Why meteors seem to come from one point in the sky 🌠",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Why meteors seem to come from one point in the sky 🌠\n\nThe Geminids look like they come from a single point in Gemini, the radiant. They do not: the meteors are debris from asteroid 3200 Phaethon, and they all travel on parallel paths. We meet the stream head-on, so those paths seem to fan out from a point ahead of us. At the peak the radiant is 73° up in the south, where the ideal rate is up to 150 meteors an hour.\n\nImage: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#geminids #meteorshower #skyschool #astronomy #science #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-07T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T19:16:52.932Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-07T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "ac7bb431c7600ce2e554b6ab3eee1745283913a74f96db5f6498ed963069e8a2",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af610b7d647bbafc5ad55f1",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "The Geminids look like they come from a single point in Gemini, the radiant. They do not: the meteors are debris from asteroid 3200 Phaethon, and they all travel on parallel paths. We meet the stream head-on, so those paths seem to fan out from a point ahead of us. At the peak the radiant is 73° up in the south, where the ideal rate is up to 150 meteors an hour.\n\nImage: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#geminids #meteorshower #skyschool #astronomy #science #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-07T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-geminids-radiant-eu-central-ac7bb431.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Why meteors seem to come from one point in the sky 🌠",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af610b711a42cfbe891f454",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Why meteors seem to come from one point in the sky 🌠\n\nThe Geminids look like they come from a single point in Gemini, the radiant. They do not: the meteors are debris from asteroid 3200 Phaethon, and they all travel on parallel paths. We meet the stream head-on, so those paths seem to fan out from a point ahead of us. At the peak the radiant is 73° up in the south, where the ideal rate is up to 150 meteors an hour.\n\nImage: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#geminids #meteorshower #skyschool #astronomy #science #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-07T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-geminids-radiant-eu-central-ac7bb431.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-geminids-radiant-eu-central-ac7bb431.mp4"
+      }
+    }
+  ]
+}

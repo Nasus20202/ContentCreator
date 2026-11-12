@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-this-week-2026-12-21-eu-central |
 | Series | sky-this-week |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-12T10:01:28.022Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-12-20T23:00:00.000Z → 2026-12-27T23:00:00.000Z |
@@ -104,6 +104,10 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narr
 | no-black-gaps | ✅ | none |
 
 Visual review by **claude** (2026-11-12T18:53:53.069Z): **pass** — Christmas Eve closest full Moon card (357,000 km), midnight Moon high in the south, Moon-Jupiter on 27 Dec, outro synced with hold.
+
+## Approvals
+
+- 2026-11-12T19:13:36.241Z — **Krzysztof Nasuta** (human) approved video `7977963a9c3b69fa…`
 
 ## Event log
 
@@ -231,3 +235,4 @@ Visual review by **claude** (2026-11-12T18:53:53.069Z): **pass** — Christmas E
 | 2026-11-12 18:37:52 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:53:53 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:53 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:36 | human | approved | stage.advance | 37004a9 |

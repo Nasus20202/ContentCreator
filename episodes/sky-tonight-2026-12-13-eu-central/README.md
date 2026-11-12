@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-tonight-2026-12-13-eu-central |
 | Series | sky-tonight |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-12T10:11:35.666Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-12-12T23:00:00.000Z → 2026-12-19T23:00:00.000Z |
@@ -97,6 +97,10 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 
 Visual review by **claude** (2026-11-12T18:53:52.358Z): **pass** — Tonight short: radiant, moonless chip, south after midnight, outro 'Follow so you don't miss the next one' synced; 24 s.
 
+## Approvals
+
+- 2026-11-12T19:13:35.585Z — **Krzysztof Nasuta** (human) approved video `68bb1ea1bdb6b641…`
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -185,3 +189,4 @@ Visual review by **claude** (2026-11-12T18:53:52.358Z): **pass** — Tonight sho
 | 2026-11-12 18:35:13 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:53:52 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:52 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:35 | human | approved | stage.advance | 37004a9 |

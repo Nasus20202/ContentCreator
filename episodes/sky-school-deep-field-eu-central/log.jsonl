@@ -19,3 +19,7 @@
 {"ts":"2026-11-12T18:54:41.838Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":15},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:55:13.455Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"XDF hook with title, zoomed patch with 5,500 chip, 50-day card (count-up from 49 is the animation), 13.2-billion-year light journey over the XDF backdrop, outro synced. Credits visible."},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:55:13.463Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T19:13:30.191Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:14:12.654Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:15:30.544Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-deep-field-eu-central-f5302bec.mp4","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:15:30.549Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"37004a9"}

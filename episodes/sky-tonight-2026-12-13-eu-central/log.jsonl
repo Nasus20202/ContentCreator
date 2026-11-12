@@ -82,3 +82,4 @@
 {"ts":"2026-11-12T18:35:13.654Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":10},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:52.358Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Tonight short: radiant, moonless chip, south after midnight, outro 'Follow so you don't miss the next one' synced; 24 s."},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:52.364Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T19:13:35.585Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}

@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-pale-blue-dot-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-12T18:43:07.822Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -101,6 +101,28 @@ Images: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC 
 
 Visual review by **claude** (2026-11-12T18:55:12.277Z): **pass** — Ring and arrow label sit on Earth's pixel through both push-ins; journey Earth to Voyager 1 (6 billion km) over the launch photo with the 'Feb 1990: look back!' badge; 34-min card; outro synced with hold. Credits visible.
 
+## Approvals
+
+- 2026-11-12T19:13:29.540Z — **Krzysztof Nasuta** (human) approved video `6771d54ab9f9adaa…`
+
+## Publishing
+
+### 2026-11-12T19:14:11.981Z · buffer · schedule for 2026-11-13T19:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+
+### 2026-11-12T19:14:59.948Z · buffer · schedule for 2026-11-13T19:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af6103f11a42cfbe891c004 |  |
+| tiktok | submitted | 6af61040cfe45b714e4b954e |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -138,3 +160,7 @@ Visual review by **claude** (2026-11-12T18:55:12.277Z): **pass** — Ring and ar
 | 2026-11-12 18:53:46 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:55:12 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:55:12 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:29 | human | approved | stage.advance | 37004a9 |
+| 2026-11-12 19:14:11 | claude | publish | publish.dry-run | 37004a9 |
+| 2026-11-12 19:15:12 | claude | publish | publish.submit | 37004a9 |
+| 2026-11-12 19:15:12 | claude | published | stage.advance | 37004a9 |

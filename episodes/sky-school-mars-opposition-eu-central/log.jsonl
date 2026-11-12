@@ -74,3 +74,4 @@
 {"ts":"2026-11-12T18:43:34.417Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":17},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:54.467Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Mars rising and high at midnight with magnitude, orbit reveal with 101 million km, distance card, outro synced with hold."},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:54.473Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T19:13:37.562Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}

@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-mars-opposition-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-12T10:05:44.636Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2027-02-14T23:00:00.000Z → 2027-02-21T23:00:00.000Z |
@@ -108,6 +108,10 @@ Orbits computed for 19 February 2027 with astronomy-engine (not to scale). Posit
 
 Visual review by **claude** (2026-11-12T18:53:54.466Z): **pass** — Mars rising and high at midnight with magnitude, orbit reveal with 101 million km, distance card, outro synced with hold.
 
+## Approvals
+
+- 2026-11-12T19:13:37.561Z — **Krzysztof Nasuta** (human) approved video `9fb6efed38893799…`
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -188,3 +192,4 @@ Visual review by **claude** (2026-11-12T18:53:54.466Z): **pass** — Mars rising
 | 2026-11-12 18:43:34 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:53:54 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:54 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:37 | human | approved | stage.advance | 37004a9 |

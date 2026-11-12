@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-proxima-travel-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-12T15:21:33.081Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -146,6 +146,28 @@ Narration uses a synthetic voice.
 
 Visual review by **claude** (2026-11-12T18:53:48.661Z): **pass** — Journeys over the Hubble Alpha Centauri A&B backdrop (labelled as Proxima's neighbours, credited), Voyager clock 75,000 yrs, Starshot 28 yrs, ship 10 min vs 4.24 yrs; Voyager launch photo with chips; to-scale compare; outro CTA in sync. Labels clear of the caption band.
 
+## Approvals
+
+- 2026-11-12T19:13:32.177Z — **Krzysztof Nasuta** (human) approved video `cc07ba4e5f222879…`
+
+## Publishing
+
+### 2026-11-12T19:14:14.680Z · buffer · schedule for 2026-11-17T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+
+### 2026-11-12T19:16:01.199Z · buffer · schedule for 2026-11-17T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-proxima-travel-eu-central-cc07ba4e.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af6107fcfe45b714e4bb407 |  |
+| tiktok | submitted | 6af6107fd647bbafc5ad4571 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -268,3 +290,7 @@ Visual review by **claude** (2026-11-12T18:53:48.661Z): **pass** — Journeys ov
 | 2026-11-12 18:24:42 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:53:48 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:48 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:32 | human | approved | stage.advance | 37004a9 |
+| 2026-11-12 19:14:14 | claude | publish | publish.dry-run | 37004a9 |
+| 2026-11-12 19:16:15 | claude | publish | publish.submit | 37004a9 |
+| 2026-11-12 19:16:15 | claude | published | stage.advance | 37004a9 |

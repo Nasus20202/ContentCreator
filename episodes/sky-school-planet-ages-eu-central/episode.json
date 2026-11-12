@@ -2,7 +2,7 @@
   "id": "sky-school-planet-ages-eu-central",
   "series": "sky-school",
   "createdAt": "2026-11-12T18:43:10.971Z",
-  "stage": "qa-passed",
+  "stage": "published",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -16,5 +16,12 @@
     "narration": "8aeb1d04295785dd",
     "video": "68b56dc6b5150bb9282db4e4a62d63f1cdc436e8f659df4d4ef3a29b4cd34288"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-12T19:13:31.507Z",
+      "videoSha256": "68b56dc6b5150bb9282db4e4a62d63f1cdc436e8f659df4d4ef3a29b4cd34288"
+    }
+  ]
 }

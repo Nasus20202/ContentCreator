@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-twin-paradox-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-12T15:46:20.789Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -136,6 +136,28 @@ Image: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.
 
 Visual review by **claude** (2026-11-12T18:53:50.130Z): **pass** — Andromeda hook, Lorentz factor card, ship journeys over Spitzer galactic centre and GALEX Andromeda backdrops with on-board/on-Earth clocks ending at 40/52,000 and 57/5 million, compare bars, outro in sync.
 
+## Approvals
+
+- 2026-11-12T19:13:33.611Z — **Krzysztof Nasuta** (human) approved video `2bae828c24849022…`
+
+## Publishing
+
+### 2026-11-12T19:14:16.046Z · buffer · schedule for 2026-11-19T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+
+### 2026-11-12T19:16:32.884Z · buffer · schedule for 2026-11-19T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-twin-paradox-eu-central-2bae828c.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af610a3d647bbafc5ad4fe1 |  |
+| tiktok | submitted | 6af610a4d647bbafc5ad5021 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -238,3 +260,7 @@ Visual review by **claude** (2026-11-12T18:53:50.130Z): **pass** — Andromeda h
 | 2026-11-12 18:27:04 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:53:50 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:50 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:33 | human | approved | stage.advance | 37004a9 |
+| 2026-11-12 19:14:16 | claude | publish | publish.dry-run | 37004a9 |
+| 2026-11-12 19:16:52 | claude | publish | publish.submit | 37004a9 |
+| 2026-11-12 19:16:52 | claude | published | stage.advance | 37004a9 |

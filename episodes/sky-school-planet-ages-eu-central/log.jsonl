@@ -32,3 +32,7 @@
 {"ts":"2026-11-12T18:56:48.379Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":19},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:58:31.405Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Saturn band hook with title and chip, year-length bars 1/29.4/164, Mercury labelled enhanced colour then 124 chip, Mars 16, age bars 124/30/16, Neptune 164 chip, outro synced. Chips sequenced, no overlaps."},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:58:31.411Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T19:13:31.508Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:14:14.006Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:16:00.517Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-planet-ages-eu-central-68b56dc6.mp4","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:16:00.522Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"37004a9"}

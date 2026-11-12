@@ -1,0 +1,160 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-12T19:14:14.680Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-17T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "cc07ba4e5f222879137198c4cb505c006cb0386d4328c8a52359b77e5a889b7a",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.\n\n#astronomy #science #skyschool #relativity #proxima #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-17T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "How long to Proxima Centauri? It depends on your clock 🚀",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "How long to Proxima Centauri? It depends on your clock 🚀\n\nProxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.\n\n#astronomy #science #skyschool #relativity #proxima #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-17T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T19:16:01.199Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-17T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "cc07ba4e5f222879137198c4cb505c006cb0386d4328c8a52359b77e5a889b7a",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af6107fcfe45b714e4bb407",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.\n\n#astronomy #science #skyschool #relativity #proxima #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-17T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-proxima-travel-eu-central-cc07ba4e.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "How long to Proxima Centauri? It depends on your clock 🚀",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af6107fd647bbafc5ad4571",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "How long to Proxima Centauri? It depends on your clock 🚀\n\nProxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.\n\n#astronomy #science #skyschool #relativity #proxima #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-17T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-proxima-travel-eu-central-cc07ba4e.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-proxima-travel-eu-central-cc07ba4e.mp4"
+      }
+    }
+  ]
+}

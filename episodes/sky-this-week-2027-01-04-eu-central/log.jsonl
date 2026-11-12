@@ -95,3 +95,4 @@
 {"ts":"2026-11-12T18:40:58.045Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":13},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:53.768Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Quadrantids: Bootes radiant, east before dawn, 12% Moon, 80 ZHR card, outro synced. The radiant label touches the hook title for a moment before the title fades; acceptable."},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:53.775Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T19:13:36.903Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}

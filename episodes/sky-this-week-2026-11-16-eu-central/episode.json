@@ -2,7 +2,7 @@
   "id": "sky-this-week-2026-11-16-eu-central",
   "series": "sky-this-week",
   "createdAt": "2026-11-11T21:50:49.527Z",
-  "stage": "qa-passed",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -21,5 +21,12 @@
     "narration": "ca8d075eb36b81f1",
     "video": "b75585e66213f4923055139523dd5e701e597e0092934ccdf9a2e7e4a5c1a8aa"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-12T19:13:28.873Z",
+      "videoSha256": "b75585e66213f4923055139523dd5e701e597e0092934ccdf9a2e7e4a5c1a8aa"
+    }
+  ]
 }

@@ -1,0 +1,160 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-12T19:14:15.364Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-18T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "8aa6228213aba7dd72d30990d496a0b1c01c1d4888c313afd63ad3fec8851e6e",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Sunlight takes about 8 minutes 20 seconds to reach Earth, and about 43 minutes to reach Jupiter on average. Light travels 299,792 km every second, so what we see in the sky is always light that left earlier.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Jupiter facts: https://science.nasa.gov/jupiter/facts/\nNIST, speed of light (CODATA): https://physics.nist.gov/cgi-bin/cuu/Value?c\n\nImage: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narration uses a synthetic voice.\n\n#astronomy #science #skyschool #sun #jupiter #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The Sun you see is about 8 minutes old ☀️",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The Sun you see is about 8 minutes old ☀️\n\nSunlight takes about 8 minutes 20 seconds to reach Earth, and about 43 minutes to reach Jupiter on average. Light travels 299,792 km every second, so what we see in the sky is always light that left earlier.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Jupiter facts: https://science.nasa.gov/jupiter/facts/\nNIST, speed of light (CODATA): https://physics.nist.gov/cgi-bin/cuu/Value?c\n\nImage: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narration uses a synthetic voice.\n\n#astronomy #science #skyschool #sun #jupiter #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T19:16:16.536Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-18T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "8aa6228213aba7dd72d30990d496a0b1c01c1d4888c313afd63ad3fec8851e6e",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af6108fd647bbafc5ad4af7",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Sunlight takes about 8 minutes 20 seconds to reach Earth, and about 43 minutes to reach Jupiter on average. Light travels 299,792 km every second, so what we see in the sky is always light that left earlier.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Jupiter facts: https://science.nasa.gov/jupiter/facts/\nNIST, speed of light (CODATA): https://physics.nist.gov/cgi-bin/cuu/Value?c\n\nImage: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narration uses a synthetic voice.\n\n#astronomy #science #skyschool #sun #jupiter #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-light-travel-eu-central-8aa62282.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The Sun you see is about 8 minutes old ☀️",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af6108f0522ffa5bc4b5d02",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The Sun you see is about 8 minutes old ☀️\n\nSunlight takes about 8 minutes 20 seconds to reach Earth, and about 43 minutes to reach Jupiter on average. Light travels 299,792 km every second, so what we see in the sky is always light that left earlier.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Jupiter facts: https://science.nasa.gov/jupiter/facts/\nNIST, speed of light (CODATA): https://physics.nist.gov/cgi-bin/cuu/Value?c\n\nImage: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narration uses a synthetic voice.\n\n#astronomy #science #skyschool #sun #jupiter #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-light-travel-eu-central-8aa62282.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-light-travel-eu-central-8aa62282.mp4"
+      }
+    }
+  ]
+}

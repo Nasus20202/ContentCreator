@@ -2,7 +2,7 @@
   "id": "sky-school-mars-opposition-eu-central",
   "series": "sky-school",
   "createdAt": "2026-11-12T10:05:44.636Z",
-  "stage": "qa-passed",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -21,5 +21,12 @@
     "narration": "9bc7355e0fb1709a",
     "video": "9fb6efed388937992453f37a1bef2d732a75fa6712421b9022ab7873d2be0445"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-12T19:13:37.561Z",
+      "videoSha256": "9fb6efed388937992453f37a1bef2d732a75fa6712421b9022ab7873d2be0445"
+    }
+  ]
 }

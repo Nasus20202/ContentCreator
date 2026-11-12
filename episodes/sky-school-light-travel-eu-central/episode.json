@@ -2,7 +2,7 @@
   "id": "sky-school-light-travel-eu-central",
   "series": "sky-school",
   "createdAt": "2026-11-12T15:14:58.900Z",
-  "stage": "qa-passed",
+  "stage": "published",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -16,5 +16,12 @@
     "narration": "bc3a227f582f2b3a",
     "video": "8aa6228213aba7dd72d30990d496a0b1c01c1d4888c313afd63ad3fec8851e6e"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-12T19:13:32.924Z",
+      "videoSha256": "8aa6228213aba7dd72d30990d496a0b1c01c1d4888c313afd63ad3fec8851e6e"
+    }
+  ]
 }

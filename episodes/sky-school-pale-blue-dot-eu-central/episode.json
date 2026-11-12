@@ -2,7 +2,7 @@
   "id": "sky-school-pale-blue-dot-eu-central",
   "series": "sky-school",
   "createdAt": "2026-11-12T18:43:07.822Z",
-  "stage": "qa-passed",
+  "stage": "published",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -16,5 +16,12 @@
     "narration": "eed5cad5dd9fe382",
     "video": "6771d54ab9f9adaa9b958366dd3011ede0cced71926c1f12c279a9eed6c2d808"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-12T19:13:29.540Z",
+      "videoSha256": "6771d54ab9f9adaa9b958366dd3011ede0cced71926c1f12c279a9eed6c2d808"
+    }
+  ]
 }

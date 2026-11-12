@@ -1,0 +1,160 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-12T19:14:16.046Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-19T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "2bae828c2484902221d1a18785e9441d736e8918be555ef1b0816f18d611d1a8",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "At a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.\n\n#astronomy #science #skyschool #relativity #andromeda #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-19T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The twin paradox, and how long a ride to the galaxy takes 🚀",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The twin paradox, and how long a ride to the galaxy takes 🚀\n\nAt a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.\n\n#astronomy #science #skyschool #relativity #andromeda #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-19T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T19:16:32.884Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-19T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "2bae828c2484902221d1a18785e9441d736e8918be555ef1b0816f18d611d1a8",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af610a3d647bbafc5ad4fe1",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "At a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.\n\n#astronomy #science #skyschool #relativity #andromeda #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-19T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-twin-paradox-eu-central-2bae828c.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The twin paradox, and how long a ride to the galaxy takes 🚀",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af610a4d647bbafc5ad5021",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The twin paradox, and how long a ride to the galaxy takes 🚀\n\nAt a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.\n\n#astronomy #science #skyschool #relativity #andromeda #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-19T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-twin-paradox-eu-central-2bae828c.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-twin-paradox-eu-central-2bae828c.mp4"
+      }
+    }
+  ]
+}

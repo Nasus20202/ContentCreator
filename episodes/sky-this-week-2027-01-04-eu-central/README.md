@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-this-week-2027-01-04-eu-central |
 | Series | sky-this-week |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-12T10:01:29.231Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2027-01-03T23:00:00.000Z → 2027-01-10T23:00:00.000Z |
@@ -106,6 +106,10 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 | no-black-gaps | ✅ | none |
 
 Visual review by **claude** (2026-11-12T18:53:53.768Z): **pass** — Quadrantids: Bootes radiant, east before dawn, 12% Moon, 80 ZHR card, outro synced. The radiant label touches the hook title for a moment before the title fades; acceptable.
+
+## Approvals
+
+- 2026-11-12T19:13:36.902Z — **Krzysztof Nasuta** (human) approved video `8e064f4b7f2ba59e…`
 
 ## Event log
 
@@ -208,3 +212,4 @@ Visual review by **claude** (2026-11-12T18:53:53.768Z): **pass** — Quadrantids
 | 2026-11-12 18:40:58 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:53:53 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:53 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:36 | human | approved | stage.advance | 37004a9 |

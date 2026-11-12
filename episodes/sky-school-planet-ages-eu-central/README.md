@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-planet-ages-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-12T18:43:10.971Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -117,6 +117,28 @@ Images: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / 
 
 Visual review by **claude** (2026-11-12T18:58:31.404Z): **pass** — Saturn band hook with title and chip, year-length bars 1/29.4/164, Mercury labelled enhanced colour then 124 chip, Mars 16, age bars 124/30/16, Neptune 164 chip, outro synced. Chips sequenced, no overlaps.
 
+## Approvals
+
+- 2026-11-12T19:13:31.507Z — **Krzysztof Nasuta** (human) approved video `68b56dc6b5150bb9…`
+
+## Publishing
+
+### 2026-11-12T19:14:14.005Z · buffer · schedule for 2026-11-16T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+
+### 2026-11-12T19:15:47.648Z · buffer · schedule for 2026-11-16T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-planet-ages-eu-central-68b56dc6.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af6106f0522ffa5bc4b510d |  |
+| tiktok | submitted | 6af610700522ffa5bc4b515d |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -155,3 +177,7 @@ Visual review by **claude** (2026-11-12T18:58:31.404Z): **pass** — Saturn band
 | 2026-11-12 18:56:48 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:58:31 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:58:31 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:31 | human | approved | stage.advance | 37004a9 |
+| 2026-11-12 19:14:14 | claude | publish | publish.dry-run | 37004a9 |
+| 2026-11-12 19:16:00 | claude | publish | publish.submit | 37004a9 |
+| 2026-11-12 19:16:00 | claude | published | stage.advance | 37004a9 |

@@ -80,3 +80,7 @@
 {"ts":"2026-11-12T18:30:23.309Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":18},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:50.889Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Radiant sky with meteors, Phaethon radar band with credit, 150 ZHR card, outro; push-in does not clip the radar band."},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:50.896Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T19:13:34.289Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:14:16.742Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:17:11.992Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-geminids-radiant-eu-central-ac7bb431.mp4","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:17:11.998Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"37004a9"}

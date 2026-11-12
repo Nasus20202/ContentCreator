@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-this-week-2026-12-14-eu-central |
 | Series | sky-this-week |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-12T10:01:27.102Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-12-13T23:00:00.000Z → 2026-12-20T23:00:00.000Z |
@@ -109,6 +109,28 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 | no-black-gaps | ✅ | none |
 
 Visual review by **claude** (2026-11-12T18:53:51.620Z): **pass** — Geminids peak sky, moonset chip, 150 card, Moon-Saturn, outro CTA synced with 'Follow' line and end hold.
+
+## Approvals
+
+- 2026-11-12T19:13:34.941Z — **Krzysztof Nasuta** (human) approved video `aa3ca3bd7f05a4d6…`
+
+## Publishing
+
+### 2026-11-12T19:14:17.433Z · buffer · schedule for 2026-12-11T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+
+### 2026-11-12T19:17:12.673Z · buffer · schedule for 2026-12-11T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-14-eu-central-aa3ca3bd.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af610c6d647bbafc5ad5cd9 |  |
+| tiktok | submitted | 6af610c72ef1f0c84e5cd371 |  |
 
 ## Event log
 
@@ -240,3 +262,7 @@ Visual review by **claude** (2026-11-12T18:53:51.620Z): **pass** — Geminids pe
 | 2026-11-12 18:33:01 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:53:51 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:51 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:34 | human | approved | stage.advance | 37004a9 |
+| 2026-11-12 19:14:17 | claude | publish | publish.dry-run | 37004a9 |
+| 2026-11-12 19:17:27 | claude | publish | publish.submit | 37004a9 |
+| 2026-11-12 19:17:27 | claude | published | stage.advance | 37004a9 |

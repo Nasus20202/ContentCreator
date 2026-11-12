@@ -2,7 +2,7 @@
   "id": "sky-school-how-fast-eu-central",
   "series": "sky-school",
   "createdAt": "2026-11-12T18:43:09.956Z",
-  "stage": "qa-passed",
+  "stage": "published",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -16,5 +16,12 @@
     "narration": "ddef2ed6dbb37ad9",
     "video": "acbd9ea1b1c6e4f8712d42a500425c4610f8bf59e5dffc1c00d59bae6fccc420"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-12T19:13:30.857Z",
+      "videoSha256": "acbd9ea1b1c6e4f8712d42a500425c4610f8bf59e5dffc1c00d59bae6fccc420"
+    }
+  ]
 }

@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-deep-field-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-12T18:43:08.996Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -96,6 +96,28 @@ Image: NASA / ESA / G. Illingworth, D. Magee, P. Oesch, R. Bouwens and the HUDF0
 
 Visual review by **claude** (2026-11-12T18:55:13.455Z): **pass** — XDF hook with title, zoomed patch with 5,500 chip, 50-day card (count-up from 49 is the animation), 13.2-billion-year light journey over the XDF backdrop, outro synced. Credits visible.
 
+## Approvals
+
+- 2026-11-12T19:13:30.191Z — **Krzysztof Nasuta** (human) approved video `f5302bec38a06b1e…`
+
+## Publishing
+
+### 2026-11-12T19:14:12.654Z · buffer · schedule for 2026-11-14T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+
+### 2026-11-12T19:15:13.612Z · buffer · schedule for 2026-11-14T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-deep-field-eu-central-f5302bec.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af610510522ffa5bc4b44c3 |  |
+| tiktok | submitted | 6af61052cfe45b714e4ba2d0 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -121,3 +143,7 @@ Visual review by **claude** (2026-11-12T18:55:13.455Z): **pass** — XDF hook wi
 | 2026-11-12 18:54:41 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:55:13 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:55:13 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:30 | human | approved | stage.advance | 37004a9 |
+| 2026-11-12 19:14:12 | claude | publish | publish.dry-run | 37004a9 |
+| 2026-11-12 19:15:30 | claude | publish | publish.submit | 37004a9 |
+| 2026-11-12 19:15:30 | claude | published | stage.advance | 37004a9 |

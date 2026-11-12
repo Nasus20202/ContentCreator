@@ -31,3 +31,7 @@
 {"ts":"2026-11-12T18:53:46.751Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":15},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:55:12.278Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Ring and arrow label sit on Earth's pixel through both push-ins; journey Earth to Voyager 1 (6 billion km) over the launch photo with the 'Feb 1990: look back!' badge; 34-min card; outro synced with hold. Credits visible."},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:55:12.292Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T19:13:29.540Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:14:11.981Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:15:12.906Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:15:12.911Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"37004a9"}

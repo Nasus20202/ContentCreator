@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-geminids-radiant-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-12T10:01:31.500Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-12-13T23:00:00.000Z → 2026-12-20T23:00:00.000Z |
@@ -114,6 +114,28 @@ Image: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions co
 
 Visual review by **claude** (2026-11-12T18:53:50.889Z): **pass** — Radiant sky with meteors, Phaethon radar band with credit, 150 ZHR card, outro; push-in does not clip the radar band.
 
+## Approvals
+
+- 2026-11-12T19:13:34.288Z — **Krzysztof Nasuta** (human) approved video `ac7bb431c7600ce2…`
+
+## Publishing
+
+### 2026-11-12T19:14:16.742Z · buffer · schedule for 2026-12-07T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+
+### 2026-11-12T19:16:52.932Z · buffer · schedule for 2026-12-07T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-geminids-radiant-eu-central-ac7bb431.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af610b7d647bbafc5ad55f1 |  |
+| tiktok | submitted | 6af610b711a42cfbe891f454 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -200,3 +222,7 @@ Visual review by **claude** (2026-11-12T18:53:50.889Z): **pass** — Radiant sky
 | 2026-11-12 18:30:23 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:53:50 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:50 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:34 | human | approved | stage.advance | 37004a9 |
+| 2026-11-12 19:14:16 | claude | publish | publish.dry-run | 37004a9 |
+| 2026-11-12 19:17:11 | claude | publish | publish.submit | 37004a9 |
+| 2026-11-12 19:17:11 | claude | published | stage.advance | 37004a9 |

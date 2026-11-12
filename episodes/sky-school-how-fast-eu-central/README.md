@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-how-fast-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-12T18:43:09.956Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -104,6 +104,28 @@ Images: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a
 
 Visual review by **claude** (2026-11-12T18:58:30.673Z): **pass** — Hook title now has a soft scrim and reads over the Blue Marble clouds; 1,076 km/h card (count-up animation), two-bar and three-bar to-scale charts with the 'relative to a different centre' note clear of the captions, Spitzer galactic centre with 720,000 km/h then 230-million-year chips, outro synced.
 
+## Approvals
+
+- 2026-11-12T19:13:30.857Z — **Krzysztof Nasuta** (human) approved video `acbd9ea1b1c6e4f8…`
+
+## Publishing
+
+### 2026-11-12T19:14:13.332Z · buffer · schedule for 2026-11-15T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+
+### 2026-11-12T19:15:31.268Z · buffer · schedule for 2026-11-15T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-how-fast-eu-central-acbd9ea1.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af6106111a42cfbe891d437 |  |
+| tiktok | submitted | 6af610622ef1f0c84e5cad6a |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -135,3 +157,7 @@ Visual review by **claude** (2026-11-12T18:58:30.673Z): **pass** — Hook title 
 | 2026-11-12 18:58:24 | pipeline | qa | qa.automated | 56e31e5 |
 | 2026-11-12 18:58:30 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:58:30 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 19:13:30 | human | approved | stage.advance | 37004a9 |
+| 2026-11-12 19:14:13 | claude | publish | publish.dry-run | 37004a9 |
+| 2026-11-12 19:15:46 | claude | publish | publish.submit | 37004a9 |
+| 2026-11-12 19:15:46 | claude | published | stage.advance | 37004a9 |

@@ -96,3 +96,7 @@
 {"ts":"2026-11-12T18:27:04.642Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":23},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:50.130Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Andromeda hook, Lorentz factor card, ship journeys over Spitzer galactic centre and GALEX Andromeda backdrops with on-board/on-Earth clocks ending at 40/52,000 and 57/5 million, compare bars, outro in sync."},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:50.149Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T19:13:33.611Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:14:16.046Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:16:52.213Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-twin-paradox-eu-central-2bae828c.mp4","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:16:52.218Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"37004a9"}
