@@ -35,3 +35,4 @@
 {"ts":"2026-11-12T19:14:11.981Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run"]},"gitSha":"37004a9"}
 {"ts":"2026-11-12T19:15:12.906Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"37004a9"}
 {"ts":"2026-11-12T19:15:12.911Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"37004a9"}
+{"ts":"2026-11-12T19:41:19.394Z","actor":"claude","stage":"publish","action":"publish.reschedule","details":{"from":"2026-11-13T19:00:00.000Z","to":"2026-11-12T20:30:00.000Z","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"8cd89a4"}

@@ -85,11 +85,13 @@
       "provider": "buffer",
       "endpoint": "https://api.buffer.com",
       "videoSha256": "6771d54ab9f9adaa9b958366dd3011ede0cced71926c1f12c279a9eed6c2d808",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4"
+      },
       "targets": [
         {
           "platform": "youtube",
           "channelId": "6af4fe2a62b70b94b0fe97dc",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af6103f11a42cfbe891c004",
           "payload": {
@@ -124,7 +126,6 @@
         {
           "platform": "tiktok",
           "channelId": "6af4fe6f62b70b94b0fe9d85",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af61040cfe45b714e4b954e",
           "payload": {
@@ -151,10 +152,85 @@
             }
           }
         }
-      ],
+      ]
+    },
+    {
+      "at": "2026-11-12T19:41:18.609Z",
+      "actor": "claude",
+      "mode": "reschedule",
+      "scheduledFor": "2026-11-12T20:30:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "6771d54ab9f9adaa9b958366dd3011ede0cced71926c1f12c279a9eed6c2d808",
       "media": {
         "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4"
-      }
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6af6103f11a42cfbe891c004",
+          "payload": {
+            "text": "On 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #voyager #palebluedot",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-12T20:30:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "This speck of light is Earth 🌍",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af6103f11a42cfbe891c004"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6af61040cfe45b714e4b954e",
+          "payload": {
+            "text": "This speck of light is Earth 🌍\n\nOn 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #voyager #palebluedot",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-12T20:30:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af61040cfe45b714e4b954e"
+          }
+        }
+      ]
     }
   ]
 }

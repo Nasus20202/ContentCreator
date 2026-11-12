@@ -5,6 +5,15 @@
 
 ## 2026-11-12 · publish · human
 
+**Pale Blue Dot moved to tonight, Thu 12 Nov 20:30 UTC; episode 1 stays Fri 13 Nov 17:00 UTC**
+
+User's call: one video today and one tomorrow, so the profile already has a video when the weekly lands
+
+Alternatives considered:
+- both on Fri 13 Nov
+
+## 2026-11-12 · publish · human
+
 **Launch pace: weekly + Pale Blue Dot on Fri 13 Nov, then one Sky School short a day at 17:00 UTC through 19 Nov; Geminids radiant 7 Dec, weekly Dec 14-20 on 11 Dec. Remaining approved episodes (Sky Tonight 13 Dec, weeklies 18 and 31 Dec, Mars Feb 2027) wait for free Buffer slots (10 scheduled posts max).**
 
 Each short is a separate test of the hook; daily during launch while each topic is distinct and checked; review retention after 8 published per the KPI rule
