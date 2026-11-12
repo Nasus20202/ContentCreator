@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-this-week-2026-11-16-eu-central |
 | Series | sky-this-week |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-11T21:50:49.527Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-11-15T23:00:00.000Z → 2026-11-22T23:00:00.000Z |
@@ -157,6 +157,28 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 
 Visual review by **claude** (2026-11-11T22:09:30.353Z): **pass** — Third render reviewed (19 frames). Fixed: compass letters no longer in caption band; outro footnote above captions; CTA clear of the Moon. Verified: title card 'Nov 16 – 22'; Mars (orange, left/higher) and Jupiter labels; 1.2° bracket and 2 Moon discs during sentence 1; chips match sentences; orbit reveal shows Earth→Mars→Jupiter line with 195/788 million km; Leo + radiant + Regulus with meteor streaks; Moon (gibbous) and Saturn labelled '5° from the Moon'; outro CTA + footnote legible. Nit accepted: part of the Moon disc at the far-left edge in the last outro frame. Not judgeable from stills: motion smoothness and audio mix — flagged for the human reviewer.
 
+## Approvals
+
+- 2026-11-12T00:07:59.028Z — **Krzysztof** (human) approved video `b50d874a9179e8ca…`: Approved by the owner in chat ('I approve'); command run by Claude on their behalf
+
+## Publishing
+
+### 2026-11-12T00:07:59.663Z · buffer · schedule for 2026-11-14T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+
+### 2026-11-12T00:08:20.164Z · buffer · schedule for 2026-11-14T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af5037d8a1a2f52b50f9fd3 |  |
+| tiktok | submitted | 6af5037e3d8c751bfd026031 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -209,3 +231,7 @@ Visual review by **claude** (2026-11-11T22:09:30.353Z): **pass** — Third rende
 | 2026-11-11 22:09:21 | pipeline | qa | qa.automated |  |
 | 2026-11-11 22:09:30 | claude | qa | qa.review |  |
 | 2026-11-11 22:09:30 | claude | qa-passed | stage.advance |  |
+| 2026-11-12 00:07:59 | human | approved | stage.advance | a72a0fa |
+| 2026-11-12 00:07:59 | claude | publish | publish.dry-run | a72a0fa |
+| 2026-11-12 00:08:30 | claude | publish | publish.submit | a72a0fa |
+| 2026-11-12 00:08:30 | claude | published | stage.advance | a72a0fa |

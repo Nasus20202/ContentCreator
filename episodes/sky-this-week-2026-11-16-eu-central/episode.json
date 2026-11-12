@@ -2,7 +2,7 @@
   "id": "sky-this-week-2026-11-16-eu-central",
   "series": "sky-this-week",
   "createdAt": "2026-11-11T21:50:49.527Z",
-  "stage": "qa-passed",
+  "stage": "published",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -21,5 +21,13 @@
     "narration": "d2959d8957f222a7",
     "video": "b50d874a9179e8ca2c44bacdc92f08ffabaa5433861921d28a8011829ad8f6ea"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof",
+      "actor": "human",
+      "at": "2026-11-12T00:07:59.028Z",
+      "videoSha256": "b50d874a9179e8ca2c44bacdc92f08ffabaa5433861921d28a8011829ad8f6ea",
+      "note": "Approved by the owner in chat ('I approve'); command run by Claude on their behalf"
+    }
+  ]
 }

@@ -4,4 +4,4 @@
 
 | Episode | Series | Stage | Title | Published to | Views (latest) |
 | --- | --- | --- | --- | --- | --- |
-| [sky-this-week-2026-11-16-eu-central](../episodes/sky-this-week-2026-11-16-eu-central/README.md) | sky-this-week | qa-passed | Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22 | — | — |
+| [sky-this-week-2026-11-16-eu-central](../episodes/sky-this-week-2026-11-16-eu-central/README.md) | sky-this-week | published | Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22 | youtube, tiktok | — |

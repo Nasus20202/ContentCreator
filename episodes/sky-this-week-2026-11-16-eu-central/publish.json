@@ -1,0 +1,160 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-12T00:07:59.663Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-14T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "b50d874a9179e8ca2c44bacdc92f08ffabaa5433861921d28a8011829ad8f6ea",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Before dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #leonids #jupiter #mars",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-14T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": true
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22\n\nBefore dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #leonids #jupiter #mars",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-14T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": true
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T00:08:20.164Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-14T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "b50d874a9179e8ca2c44bacdc92f08ffabaa5433861921d28a8011829ad8f6ea",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af5037d8a1a2f52b50f9fd3",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Before dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #leonids #jupiter #mars",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-14T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af5037e3d8c751bfd026031",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22\n\nBefore dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #leonids #jupiter #mars",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-14T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4"
+      }
+    }
+  ]
+}

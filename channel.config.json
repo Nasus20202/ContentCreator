@@ -45,7 +45,7 @@
   "autoApprove": false,
   "publishing": {
     "defaultMode": "draft",
-    "aiDisclosure": true,
+    "aiDisclosure": false,
     "provider": "buffer",
     "mediaHost": {
       "type": "git-branch",
