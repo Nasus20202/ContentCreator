@@ -17,7 +17,7 @@ description: Hand an episode to the human for approval and publish it to YouTube
    (payloads are recorded in `publish.json`).
 2. Only after the user explicitly confirms platforms, mode and time:
    `pnpm -s cc publish <id> --mode schedule --at 2026-11-14T17:00:00Z --actor claude`
-   - This uploads the video as a public GitHub release asset, then creates one Buffer post per platform.
+   - This commits the video to the public `videos` branch, then creates one Buffer post per platform.
    - `draft` saves Buffer drafts for a final manual click in Buffer.
    - Partial failures are recorded per platform; retry with `--platforms <failed ones>`.
    - To move scheduled posts: `pnpm -s cc publish reschedule <id> --at <ISO> --actor claude` (recorded as a `reschedule` attempt).
