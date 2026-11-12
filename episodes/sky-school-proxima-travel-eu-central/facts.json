@@ -1,0 +1,78 @@
+{
+  "facts": [
+    {
+      "id": "proxima-distance",
+      "statement": "Proxima Centauri, a red dwarf, is 4.24 light-years away, the closest star to the Sun.",
+      "values": [
+        4.24
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/sun/facts/",
+        "title": "Sun: Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "light-year",
+      "statement": "One light-year is about 9.5 trillion kilometres, the distance light travels in a year.",
+      "values": [
+        9.5
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/sun/facts/",
+        "title": "Sun: Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "voyager-speed",
+      "statement": "The twin Voyager spacecraft are moving at more than 3 astronomical units per year. At that pace, 4.24 light-years (about 63,000 AU) takes over 89,000 years.",
+      "values": [
+        3,
+        89000
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/voyager/",
+        "title": "Voyager",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "starshot-speed",
+      "statement": "Breakthrough Starshot's light-driven probes are designed for speeds up to 100 million miles an hour, about 15% of light speed. At that speed, 4.24 light-years takes about 28 years.",
+      "values": [
+        100,
+        15,
+        28
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://breakthroughinitiatives.org/initiative/3",
+        "title": "Starshot",
+        "publisher": "Breakthrough Initiatives",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "lorentz-clock",
+      "statement": "The Lorentz factor is 1/sqrt(1-v²/c²). At 99.999999999% of light speed it is about 223,000, so a clock on board runs about 223,000 times slower; a 4.24 light-year trip then takes about 10 minutes of ship time.",
+      "values": [
+        223000,
+        10
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://en.wikipedia.org/wiki/Lorentz_factor",
+        "title": "Lorentz factor",
+        "publisher": "Wikipedia",
+        "accessed": "2026-11-12"
+      }
+    }
+  ]
+}

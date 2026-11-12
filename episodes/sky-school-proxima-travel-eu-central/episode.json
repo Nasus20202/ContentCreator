@@ -1,0 +1,20 @@
+{
+  "id": "sky-school-proxima-travel-eu-central",
+  "series": "sky-school",
+  "createdAt": "2026-11-12T15:21:33.081Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "207b442863efe537",
+    "factcheckedPlan": "207b442863efe537",
+    "narration": "fc24e2ca030bf409",
+    "video": "0620f28a477cdd3180abb369ffa28e659b50303c2fd71ef3b200d381f97ec5d7"
+  },
+  "approvals": []
+}

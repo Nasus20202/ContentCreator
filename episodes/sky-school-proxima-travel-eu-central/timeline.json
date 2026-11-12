@@ -1,0 +1,660 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "fc24e2ca030bf409",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 5.631,
+      "sentences": [
+        {
+          "text": "Proxima Centauri is the closest star to the Sun.",
+          "start": 0.15,
+          "end": 2.989,
+          "words": [
+            {
+              "w": "Proxima",
+              "start": 0.15,
+              "end": 0.576
+            },
+            {
+              "w": "Centauri",
+              "start": 0.576,
+              "end": 1.049
+            },
+            {
+              "w": "is",
+              "start": 1.049,
+              "end": 1.238
+            },
+            {
+              "w": "the",
+              "start": 1.238,
+              "end": 1.475
+            },
+            {
+              "w": "closest",
+              "start": 1.475,
+              "end": 1.901
+            },
+            {
+              "w": "star",
+              "start": 1.901,
+              "end": 2.185
+            },
+            {
+              "w": "to",
+              "start": 2.185,
+              "end": 2.374
+            },
+            {
+              "w": "the",
+              "start": 2.374,
+              "end": 2.611
+            },
+            {
+              "w": "Sun.",
+              "start": 2.611,
+              "end": 2.989
+            }
+          ]
+        },
+        {
+          "text": "It is 4.24 light-years away.",
+          "start": 3.269,
+          "end": 5.351,
+          "words": [
+            {
+              "w": "It",
+              "start": 3.269,
+              "end": 3.514
+            },
+            {
+              "w": "is",
+              "start": 3.514,
+              "end": 3.759
+            },
+            {
+              "w": "4.24",
+              "start": 3.759,
+              "end": 4.065
+            },
+            {
+              "w": "light-years",
+              "start": 4.065,
+              "end": 4.8
+            },
+            {
+              "w": "away.",
+              "start": 4.8,
+              "end": 5.351
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "voyager",
+      "audioFile": "voice/voyager.wav",
+      "duration": 9.215,
+      "sentences": [
+        {
+          "text": "Voyager, our most distant spacecraft, moves at more than three astronomical units a year.",
+          "start": 0.15,
+          "end": 5.389,
+          "words": [
+            {
+              "w": "Voyager,",
+              "start": 0.15,
+              "end": 0.721
+            },
+            {
+              "w": "our",
+              "start": 0.721,
+              "end": 0.96
+            },
+            {
+              "w": "most",
+              "start": 0.96,
+              "end": 1.245
+            },
+            {
+              "w": "distant",
+              "start": 1.245,
+              "end": 1.674
+            },
+            {
+              "w": "spacecraft,",
+              "start": 1.674,
+              "end": 2.388
+            },
+            {
+              "w": "moves",
+              "start": 2.388,
+              "end": 2.722
+            },
+            {
+              "w": "at",
+              "start": 2.722,
+              "end": 2.912
+            },
+            {
+              "w": "more",
+              "start": 2.912,
+              "end": 3.198
+            },
+            {
+              "w": "than",
+              "start": 3.198,
+              "end": 3.484
+            },
+            {
+              "w": "three",
+              "start": 3.484,
+              "end": 3.817
+            },
+            {
+              "w": "astronomical",
+              "start": 3.817,
+              "end": 4.484
+            },
+            {
+              "w": "units",
+              "start": 4.484,
+              "end": 4.817
+            },
+            {
+              "w": "a",
+              "start": 4.817,
+              "end": 4.96
+            },
+            {
+              "w": "year.",
+              "start": 4.96,
+              "end": 5.389
+            }
+          ]
+        },
+        {
+          "text": "At that pace, the trip would take over eighty-nine thousand years.",
+          "start": 5.669,
+          "end": 8.935,
+          "words": [
+            {
+              "w": "At",
+              "start": 5.669,
+              "end": 5.83
+            },
+            {
+              "w": "that",
+              "start": 5.83,
+              "end": 6.072
+            },
+            {
+              "w": "pace,",
+              "start": 6.072,
+              "end": 6.435
+            },
+            {
+              "w": "the",
+              "start": 6.435,
+              "end": 6.636
+            },
+            {
+              "w": "trip",
+              "start": 6.636,
+              "end": 6.878
+            },
+            {
+              "w": "would",
+              "start": 6.878,
+              "end": 7.161
+            },
+            {
+              "w": "take",
+              "start": 7.161,
+              "end": 7.403
+            },
+            {
+              "w": "over",
+              "start": 7.403,
+              "end": 7.645
+            },
+            {
+              "w": "eighty-nine",
+              "start": 7.645,
+              "end": 8.128
+            },
+            {
+              "w": "thousand",
+              "start": 8.128,
+              "end": 8.532
+            },
+            {
+              "w": "years.",
+              "start": 8.532,
+              "end": 8.935
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "starshot",
+      "audioFile": "voice/starshot.wav",
+      "duration": 7.367,
+      "sentences": [
+        {
+          "text": "Breakthrough Starshot aims for probes at about fifteen percent of light speed.",
+          "start": 0.15,
+          "end": 4.354,
+          "words": [
+            {
+              "w": "Breakthrough",
+              "start": 0.15,
+              "end": 0.783
+            },
+            {
+              "w": "Starshot",
+              "start": 0.783,
+              "end": 1.235
+            },
+            {
+              "w": "aims",
+              "start": 1.235,
+              "end": 1.506
+            },
+            {
+              "w": "for",
+              "start": 1.506,
+              "end": 1.732
+            },
+            {
+              "w": "probes",
+              "start": 1.732,
+              "end": 2.094
+            },
+            {
+              "w": "at",
+              "start": 2.094,
+              "end": 2.275
+            },
+            {
+              "w": "about",
+              "start": 2.275,
+              "end": 2.591
+            },
+            {
+              "w": "fifteen",
+              "start": 2.591,
+              "end": 2.998
+            },
+            {
+              "w": "percent",
+              "start": 2.998,
+              "end": 3.405
+            },
+            {
+              "w": "of",
+              "start": 3.405,
+              "end": 3.586
+            },
+            {
+              "w": "light",
+              "start": 3.586,
+              "end": 3.902
+            },
+            {
+              "w": "speed.",
+              "start": 3.902,
+              "end": 4.354
+            }
+          ]
+        },
+        {
+          "text": "At that speed, the trip takes about twenty-eight years.",
+          "start": 4.634,
+          "end": 7.087,
+          "words": [
+            {
+              "w": "At",
+              "start": 4.634,
+              "end": 4.779
+            },
+            {
+              "w": "that",
+              "start": 4.779,
+              "end": 4.995
+            },
+            {
+              "w": "speed,",
+              "start": 4.995,
+              "end": 5.356
+            },
+            {
+              "w": "the",
+              "start": 5.356,
+              "end": 5.536
+            },
+            {
+              "w": "trip",
+              "start": 5.536,
+              "end": 5.752
+            },
+            {
+              "w": "takes",
+              "start": 5.752,
+              "end": 6.005
+            },
+            {
+              "w": "about",
+              "start": 6.005,
+              "end": 6.257
+            },
+            {
+              "w": "twenty-eight",
+              "start": 6.257,
+              "end": 6.726
+            },
+            {
+              "w": "years.",
+              "start": 6.726,
+              "end": 7.087
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "ship-clock",
+      "audioFile": "voice/ship-clock.wav",
+      "duration": 17.048,
+      "sentences": [
+        {
+          "text": "From inside the ship, the trip could be much shorter.",
+          "start": 0.15,
+          "end": 2.545,
+          "words": [
+            {
+              "w": "From",
+              "start": 0.15,
+              "end": 0.361
+            },
+            {
+              "w": "inside",
+              "start": 0.361,
+              "end": 0.643
+            },
+            {
+              "w": "the",
+              "start": 0.643,
+              "end": 0.819
+            },
+            {
+              "w": "ship,",
+              "start": 0.819,
+              "end": 1.136
+            },
+            {
+              "w": "the",
+              "start": 1.136,
+              "end": 1.312
+            },
+            {
+              "w": "trip",
+              "start": 1.312,
+              "end": 1.524
+            },
+            {
+              "w": "could",
+              "start": 1.524,
+              "end": 1.77
+            },
+            {
+              "w": "be",
+              "start": 1.77,
+              "end": 1.911
+            },
+            {
+              "w": "much",
+              "start": 1.911,
+              "end": 2.123
+            },
+            {
+              "w": "shorter.",
+              "start": 2.123,
+              "end": 2.545
+            }
+          ]
+        },
+        {
+          "text": "At 99.999999999 percent of light speed, the clock on board runs about 223,000 times slower, so the trip takes ten minutes of ship time.",
+          "start": 2.825,
+          "end": 14.757,
+          "words": [
+            {
+              "w": "At",
+              "start": 2.825,
+              "end": 3.116
+            },
+            {
+              "w": "99.999999999",
+              "start": 3.116,
+              "end": 4.062
+            },
+            {
+              "w": "percent",
+              "start": 4.062,
+              "end": 4.717
+            },
+            {
+              "w": "of",
+              "start": 4.717,
+              "end": 5.008
+            },
+            {
+              "w": "light",
+              "start": 5.008,
+              "end": 5.517
+            },
+            {
+              "w": "speed,",
+              "start": 5.517,
+              "end": 6.245
+            },
+            {
+              "w": "the",
+              "start": 6.245,
+              "end": 6.609
+            },
+            {
+              "w": "clock",
+              "start": 6.609,
+              "end": 7.118
+            },
+            {
+              "w": "on",
+              "start": 7.118,
+              "end": 7.409
+            },
+            {
+              "w": "board",
+              "start": 7.409,
+              "end": 7.918
+            },
+            {
+              "w": "runs",
+              "start": 7.918,
+              "end": 8.355
+            },
+            {
+              "w": "about",
+              "start": 8.355,
+              "end": 8.864
+            },
+            {
+              "w": "223,000",
+              "start": 8.864,
+              "end": 9.446
+            },
+            {
+              "w": "times",
+              "start": 9.446,
+              "end": 9.955
+            },
+            {
+              "w": "slower,",
+              "start": 9.955,
+              "end": 10.755
+            },
+            {
+              "w": "so",
+              "start": 10.755,
+              "end": 11.046
+            },
+            {
+              "w": "the",
+              "start": 11.046,
+              "end": 11.41
+            },
+            {
+              "w": "trip",
+              "start": 11.41,
+              "end": 11.847
+            },
+            {
+              "w": "takes",
+              "start": 11.847,
+              "end": 12.356
+            },
+            {
+              "w": "ten",
+              "start": 12.356,
+              "end": 12.72
+            },
+            {
+              "w": "minutes",
+              "start": 12.72,
+              "end": 13.374
+            },
+            {
+              "w": "of",
+              "start": 13.374,
+              "end": 13.666
+            },
+            {
+              "w": "ship",
+              "start": 13.666,
+              "end": 14.102
+            },
+            {
+              "w": "time.",
+              "start": 14.102,
+              "end": 14.757
+            }
+          ]
+        },
+        {
+          "text": "No ship can reach that speed yet.",
+          "start": 15.037,
+          "end": 16.768,
+          "words": [
+            {
+              "w": "No",
+              "start": 15.037,
+              "end": 15.198
+            },
+            {
+              "w": "ship",
+              "start": 15.198,
+              "end": 15.439
+            },
+            {
+              "w": "can",
+              "start": 15.439,
+              "end": 15.641
+            },
+            {
+              "w": "reach",
+              "start": 15.641,
+              "end": 15.923
+            },
+            {
+              "w": "that",
+              "start": 15.923,
+              "end": 16.164
+            },
+            {
+              "w": "speed",
+              "start": 16.164,
+              "end": 16.446
+            },
+            {
+              "w": "yet.",
+              "start": 16.446,
+              "end": 16.768
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.421,
+      "sentences": [
+        {
+          "text": "Follow for more sky, explained.",
+          "start": 0.15,
+          "end": 2.033,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.518
+            },
+            {
+              "w": "for",
+              "start": 0.518,
+              "end": 0.747
+            },
+            {
+              "w": "more",
+              "start": 0.747,
+              "end": 1.023
+            },
+            {
+              "w": "sky,",
+              "start": 1.023,
+              "end": 1.39
+            },
+            {
+              "w": "explained.",
+              "start": 1.39,
+              "end": 2.033
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.313,
+          "end": 3.141,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.313,
+              "end": 2.654
+            },
+            {
+              "w": "skies.",
+              "start": 2.654,
+              "end": 3.141
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

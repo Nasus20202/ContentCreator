@@ -1,0 +1,115 @@
+{
+  "episodeId": "sky-school-proxima-travel-eu-central",
+  "series": "sky-school",
+  "title": "Sky School · How long to Proxima Centauri?",
+  "badge": "Sky School · Interstellar",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "post": {
+    "title": "How long to Proxima Centauri? It depends on your clock 🚀",
+    "description": "Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at 99.999999999% of light speed, a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager: https://science.nasa.gov/mission/voyager/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+    "hashtags": [
+      "#astronomy",
+      "#science",
+      "#skyschool",
+      "#relativity",
+      "#proxima",
+      "#space"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "factCard",
+      "narration": [
+        "Proxima Centauri is the closest star to the Sun.",
+        "It is 4.24 light-years away."
+      ],
+      "factIds": [
+        "proxima-distance",
+        "light-year"
+      ],
+      "params": {
+        "value": "4.24 ly",
+        "label": "to Proxima Centauri",
+        "sourceLine": "Sun facts · NASA Science"
+      }
+    },
+    {
+      "id": "voyager",
+      "template": "factCard",
+      "narration": [
+        "Voyager, our most distant spacecraft, moves at more than three astronomical units a year.",
+        "At that pace, the trip would take over eighty-nine thousand years."
+      ],
+      "factIds": [
+        "voyager-speed"
+      ],
+      "params": {
+        "value": "89,000+ years",
+        "label": "at Voyager's speed",
+        "sourceLine": "Voyager · NASA Science"
+      }
+    },
+    {
+      "id": "starshot",
+      "template": "factCard",
+      "narration": [
+        "Breakthrough Starshot aims for probes at about fifteen percent of light speed.",
+        "At that speed, the trip takes about twenty-eight years."
+      ],
+      "factIds": [
+        "starshot-speed"
+      ],
+      "params": {
+        "value": "28 years",
+        "label": "at 15% of light speed",
+        "sourceLine": "Starshot target speed · Breakthrough Initiatives"
+      }
+    },
+    {
+      "id": "ship-clock",
+      "template": "factCard",
+      "narration": [
+        "From inside the ship, the trip could be much shorter.",
+        "At 99.999999999 percent of light speed, the clock on board runs about 223,000 times slower, so the trip takes ten minutes of ship time.",
+        "No ship can reach that speed yet."
+      ],
+      "factIds": [
+        "lorentz-clock"
+      ],
+      "params": {
+        "value": "10 min",
+        "label": "of ship time, at 99.999999999% of light speed",
+        "sourceLine": "Lorentz factor · Wikipedia"
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Follow for more sky, explained.",
+        "Clear skies."
+      ],
+      "factIds": [],
+      "params": {
+        "kicker": "Next week's sky",
+        "cta": "FOLLOW\nFOR MORE\nSKY, EXPLAINED",
+        "footnote": "Speeds and times: NASA Science · Breakthrough Initiatives · Wikipedia"
+      }
+    }
+  ]
+}
