@@ -68,6 +68,22 @@ export class BufferClient {
     return data.channels.map((c) => BufferChannel.parse(c));
   }
 
+  /** Replaces a post (Buffer's editPost needs the full post: text, assets, metadata, mode, dueAt). */
+  async editPost(input: Record<string, unknown>): Promise<{ id: string; dueAt?: string | null }> {
+    const data = (await this.gql(
+      `mutation($input: EditPostInput!) {
+        editPost(input: $input) {
+          ... on PostActionSuccess { post { id dueAt status } }
+          ... on MutationError { message }
+        }
+      }`,
+      { input },
+    )) as { editPost: unknown };
+    const result = CreatePostResult.parse(data.editPost);
+    if ('message' in result) throw new BufferError(result.message);
+    return result.post;
+  }
+
   /** Returns the Buffer post id; throws BufferError with Buffer's message on a MutationError. */
   async createPost(input: Record<string, unknown>): Promise<{ id: string; dueAt?: string | null }> {
     const data = (await this.gql(

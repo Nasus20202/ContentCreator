@@ -385,7 +385,8 @@ export const PublishRecord = z.object({
     z.object({
       at: z.iso.datetime(),
       actor: Actor,
-      mode: z.enum(['now', 'schedule', 'draft']),
+      /** `reschedule` moves the posts of the previous submission (payload = { postId, dueAt }). */
+      mode: z.enum(['now', 'schedule', 'draft', 'reschedule']),
       scheduledFor: z.iso.datetime().optional(),
       dryRun: z.boolean(),
       provider: z.literal('buffer'),

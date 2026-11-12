@@ -29,8 +29,8 @@ Commands:
                                  --review, record the visual review
   approve [options] <episode>    human sign-off on the exact rendered video
                                  (sha256-pinned)
-  publish                        publish via Buffer (videos hosted as public
-                                 GitHub release assets)
+  publish                        publish via Buffer (videos served from the
+                                 public `videos` branch)
   decision [options] [episode]   record a decision with its rationale
                                  (append-only)
   metrics
@@ -213,6 +213,20 @@ Options:
   --actor <actor>     who performs this step (choices: "pipeline", "claude",
                       "human", default: "pipeline")
   -h, --help          display help for command
+```
+
+## cc publish reschedule
+
+```text
+Usage: cc publish reschedule [options] <episode>
+
+move the scheduled Buffer posts of the latest submission to a new time
+
+Options:
+  --at <iso>       new time (ISO 8601)
+  --actor <actor>  who performs this step (choices: "pipeline", "claude",
+                   "human", default: "pipeline")
+  -h, --help       display help for command
 ```
 
 ## cc publish channels

@@ -179,6 +179,24 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-th
 | youtube | submitted | 6af5037d8a1a2f52b50f9fd3 |  |
 | tiktok | submitted | 6af5037e3d8c751bfd026031 |  |
 
+### 2026-11-12T00:19:02.365Z · buffer · reschedule for 2026-11-13T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | failed | 6af5037d8a1a2f52b50f9fd3 | Invalid post: Post must have either text or media., YouTube posts require a video., YouTube posts require a title., YouTube posts require a category. |
+| tiktok | failed | 6af5037e3d8c751bfd026031 | Invalid post: Post must have either text or media., TikTok posts require at least one image or video. |
+
+### 2026-11-12T00:19:42.009Z · buffer · reschedule for 2026-11-13T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af5037d8a1a2f52b50f9fd3 |  |
+| tiktok | submitted | 6af5037e3d8c751bfd026031 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -235,3 +253,5 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-th
 | 2026-11-12 00:07:59 | claude | publish | publish.dry-run | a72a0fa |
 | 2026-11-12 00:08:30 | claude | publish | publish.submit | a72a0fa |
 | 2026-11-12 00:08:30 | claude | published | stage.advance | a72a0fa |
+| 2026-11-12 00:19:02 | claude | publish | publish.reschedule | 0e270bf |
+| 2026-11-12 00:19:42 | claude | publish | publish.reschedule | 0e270bf |

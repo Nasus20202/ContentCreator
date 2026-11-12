@@ -20,6 +20,7 @@ description: Hand an episode to the human for approval and publish it to YouTube
    - This uploads the video as a public GitHub release asset, then creates one Buffer post per platform.
    - `draft` saves Buffer drafts for a final manual click in Buffer.
    - Partial failures are recorded per platform; retry with `--platforms <failed ones>`.
+   - To move scheduled posts: `pnpm -s cc publish reschedule <id> --at <ISO> --actor claude` (recorded as a `reschedule` attempt).
 3. Check the posts in the Buffer queue (<https://publish.buffer.com>), `pnpm -s cc report <id>`, and tell the user what was submitted (and what failed, verbatim).
 4. Commit the updated records.
 

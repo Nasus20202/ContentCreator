@@ -336,6 +336,65 @@ export interface PublishTarget {
   channelId: string;
 }
 
+/** Moves the scheduled posts of the latest real submission to a new time; recorded as a `reschedule` attempt. */
+export async function reschedule(
+  ep: Episode,
+  opts: { date: string; endpoint: string; edit: (input: Record<string, unknown>) => Promise<unknown> },
+  actor: Actor,
+): Promise<PublishRecord['attempts'][number]> {
+  if (!fs.existsSync(ep.paths.publish)) throw new PipelineError('Nothing published yet');
+  const record = readJson(ep.paths.publish, PublishRecord);
+  const last = record.attempts.findLast((a) => !a.dryRun && a.targets.some((t) => t.status === 'submitted'));
+  if (!last) throw new PipelineError('No submitted posts to reschedule');
+  const dueAt = new Date(opts.date).toISOString();
+  if (new Date(dueAt).getTime() <= Date.now()) throw new PipelineError('--at must be in the future');
+  const attempt: PublishRecord['attempts'][number] = {
+    at: nowIso(),
+    actor,
+    mode: 'reschedule',
+    scheduledFor: dueAt,
+    dryRun: false,
+    provider: 'buffer',
+    endpoint: opts.endpoint,
+    videoSha256: last.videoSha256,
+    media: last.media,
+    targets: [],
+  };
+  for (const t of last.targets.filter((x) => x.status === 'submitted' && x.postId)) {
+    // editPost replaces the whole post: resend the original input with the new time
+    const { channelId: _channel, ...original } = t.payload as Record<string, unknown>;
+    const payload = { ...original, id: t.postId, mode: 'customScheduled', dueAt };
+    try {
+      await opts.edit(payload);
+      attempt.targets.push({
+        platform: t.platform,
+        channelId: t.channelId,
+        status: 'submitted',
+        postId: t.postId,
+        payload,
+      });
+    } catch (e) {
+      const error = e instanceof Error ? e.message : String(e);
+      attempt.targets.push({
+        platform: t.platform,
+        channelId: t.channelId,
+        status: 'failed',
+        postId: t.postId,
+        error,
+        payload,
+      });
+    }
+  }
+  record.attempts.push(attempt);
+  writeJson(ep.paths.publish, record);
+  ep.log(actor, 'publish', 'publish.reschedule', {
+    from: last.scheduledFor,
+    to: dueAt,
+    targets: attempt.targets.map((t) => `${t.platform}:${t.status}`),
+  });
+  return attempt;
+}
+
 export async function publish(
   ep: Episode,
   opts: {

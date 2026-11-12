@@ -237,6 +237,49 @@ describe('pipeline stages', () => {
     expect(ep.stage).toBe('published');
   });
 
+  it('reschedules submitted posts and records the move', async () => {
+    await toQaPassed();
+    stages.approve(ep, 'Tester', 'human', config);
+    await stages.publish(
+      ep,
+      {
+        targets: [{ platform: 'youtube', channelId: 'yt' }],
+        mode: 'schedule',
+        date: '2099-01-02T17:00:00Z',
+        dryRun: false,
+        publisher: {
+          provider: 'buffer',
+          endpoint: 'https://buffer.test',
+          hostMedia: () => Promise.resolve({ url: 'https://media.test/v.mp4' }),
+          post: () => Promise.resolve({ id: 'P1' }),
+        },
+        buildPayload: (p, t, m) =>
+          buildCreatePostInput(p, t, m, { mode: 'schedule', date: '2099-01-02T17:00:00Z', aiDisclosure: false }),
+      },
+      'claude',
+    );
+    const moved: string[] = [];
+    const r = await stages.reschedule(
+      ep,
+      {
+        date: '2099-01-01T17:00:00Z',
+        endpoint: 'https://buffer.test',
+        edit: (input) => (
+          moved.push(`${String(input.id)}@${String(input.dueAt)}:${String(input.text).length > 0}`),
+          Promise.resolve()
+        ),
+      },
+      'claude',
+    );
+    expect(moved).toEqual(['P1@2099-01-01T17:00:00.000Z:true']); // full post resent, not just the time
+    expect(r.mode).toBe('reschedule');
+    expect(readJson(ep.paths.publish, PublishRecord).attempts.map((x) => x.mode)).toEqual(['schedule', 'reschedule']);
+    expect(ep.logs().at(-1)?.action).toBe('publish.reschedule');
+    await expect(
+      stages.reschedule(ep, { date: '2000-01-01T00:00:00Z', endpoint: 'x', edit: () => Promise.resolve() }, 'claude'),
+    ).rejects.toThrow(/future/);
+  });
+
   it('validateRecords flags hand-edited plans and stale reports', async () => {
     await toQaPassed();
     fs.writeFileSync(ep.paths.readme, episodeReport(ep));

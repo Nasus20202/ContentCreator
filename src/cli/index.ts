@@ -381,6 +381,27 @@ pub
     }
   });
 pub
+  .command('reschedule')
+  .description('move the scheduled Buffer posts of the latest submission to a new time')
+  .argument('<episode>')
+  .requiredOption('--at <iso>', 'new time (ISO 8601)')
+  .addOption(actorOpt())
+  .action(async (id: string, o: { at: string; actor: Actor }) => {
+    const client = bufferClient();
+    if (!client)
+      throw new PipelineError('BUFFER_API_KEY not set', 'Create one at https://publish.buffer.com/settings/api');
+    const ep = Episode.load(id);
+    const attempt = await stages.reschedule(
+      ep,
+      { date: o.at, endpoint: client.endpoint, edit: (input) => client.editPost(input) },
+      o.actor,
+    );
+    refreshReport(id);
+    for (const t of attempt.targets)
+      say(`${t.platform.padEnd(10)} ${t.status} → ${attempt.scheduledFor}${t.error ? ` — ${t.error}` : ''}`);
+    if (attempt.targets.some((t) => t.status === 'failed')) process.exitCode = 1;
+  });
+pub
   .command('episode', { isDefault: true })
   .argument('<episode>')
   .addOption(new Option('--mode <mode>').choices(['now', 'schedule', 'draft']))

@@ -85,11 +85,13 @@
       "provider": "buffer",
       "endpoint": "https://api.buffer.com",
       "videoSha256": "b50d874a9179e8ca2c44bacdc92f08ffabaa5433861921d28a8011829ad8f6ea",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4"
+      },
       "targets": [
         {
           "platform": "youtube",
           "channelId": "6af4fe2a62b70b94b0fe97dc",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af5037d8a1a2f52b50f9fd3",
           "payload": {
@@ -124,7 +126,6 @@
         {
           "platform": "tiktok",
           "channelId": "6af4fe6f62b70b94b0fe9d85",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af5037e3d8c751bfd026031",
           "payload": {
@@ -151,10 +152,122 @@
             }
           }
         }
-      ],
+      ]
+    },
+    {
+      "at": "2026-11-12T00:19:02.365Z",
+      "actor": "claude",
+      "mode": "reschedule",
+      "scheduledFor": "2026-11-13T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "b50d874a9179e8ca2c44bacdc92f08ffabaa5433861921d28a8011829ad8f6ea",
       "media": {
         "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4"
-      }
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "failed",
+          "postId": "6af5037d8a1a2f52b50f9fd3",
+          "error": "Invalid post: Post must have either text or media., YouTube posts require a video., YouTube posts require a title., YouTube posts require a category.",
+          "payload": {
+            "postId": "6af5037d8a1a2f52b50f9fd3",
+            "dueAt": "2026-11-13T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "failed",
+          "postId": "6af5037e3d8c751bfd026031",
+          "error": "Invalid post: Post must have either text or media., TikTok posts require at least one image or video.",
+          "payload": {
+            "postId": "6af5037e3d8c751bfd026031",
+            "dueAt": "2026-11-13T17:00:00.000Z"
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-12T00:19:42.009Z",
+      "actor": "claude",
+      "mode": "reschedule",
+      "scheduledFor": "2026-11-13T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "b50d874a9179e8ca2c44bacdc92f08ffabaa5433861921d28a8011829ad8f6ea",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6af5037d8a1a2f52b50f9fd3",
+          "payload": {
+            "text": "Before dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #leonids #jupiter #mars",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-13T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af5037d8a1a2f52b50f9fd3"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6af5037e3d8c751bfd026031",
+          "payload": {
+            "text": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22\n\nBefore dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #leonids #jupiter #mars",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-13T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b50d874a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af5037e3d8c751bfd026031"
+          }
+        }
+      ]
     }
   ]
 }
