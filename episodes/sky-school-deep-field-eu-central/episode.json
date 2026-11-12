@@ -1,0 +1,20 @@
+{
+  "id": "sky-school-deep-field-eu-central",
+  "series": "sky-school",
+  "createdAt": "2026-11-12T18:43:08.996Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "c3d1f266e7601db5",
+    "factcheckedPlan": "c3d1f266e7601db5",
+    "narration": "7b0e156b6c4fd6d5",
+    "video": "f5302bec38a06b1e1859aeb5383646d0402e78e7e53a4421516a6853db75f656"
+  },
+  "approvals": []
+}

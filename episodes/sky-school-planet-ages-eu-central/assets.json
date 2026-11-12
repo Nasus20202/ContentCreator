@@ -1,0 +1,84 @@
+{
+  "assets": [
+    {
+      "id": "saturn-cassini",
+      "kind": "image",
+      "file": "assets/saturn-cassini.jpg",
+      "sha256": "a38113c9393b9f07a2afbf311498dec051c8d1f9fec33f7459c34215f0e8018c",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA06193/PIA06193~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA06193",
+        "title": "The Greatest Saturn Portrait ...Yet",
+        "credit": "NASA / JPL / Space Science Institute",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:43:42.203Z"
+    },
+    {
+      "id": "mercury-messenger",
+      "kind": "image",
+      "file": "assets/mercury-messenger.jpg",
+      "sha256": "399b4c13da5265f45a264635d0576383e8cf1e291c5e3a07ef0e3a382372b4ab",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA12842/PIA12842~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA12842",
+        "title": "Spectacular Color . . . with Better Yet to Come",
+        "credit": "NASA / JPL / Johns Hopkins University Applied Physics Laboratory / Carnegie Institution of Washington",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:43:44.096Z"
+    },
+    {
+      "id": "mars-viking",
+      "kind": "image",
+      "file": "assets/mars-viking.jpg",
+      "sha256": "2157c6b84b29ffa392508ae67e0499d00f0bf89c694ca4d7b745bd1ca619cd5f",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA00003/PIA00003~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA00003",
+        "title": "Valles Marineris Hemisphere",
+        "credit": "NASA / JPL / USGS",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:43:45.977Z"
+    },
+    {
+      "id": "neptune-voyager2",
+      "kind": "image",
+      "file": "assets/neptune-voyager2.jpg",
+      "sha256": "a1cac100aa0b367b9f223809b9a3006a307fb4dedf034a56b3167aecc5c48ee5",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA00046/PIA00046~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA00046",
+        "title": "Neptune Full Disk",
+        "credit": "NASA / JPL",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:43:47.796Z"
+    },
+    {
+      "id": "voyager1-launch",
+      "kind": "image",
+      "file": "assets/voyager1-launch.jpg",
+      "sha256": "082817d2c2efdf01e7229a308668fd6482730612aace78d583c832839330812d",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA21747/PIA21747~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA21747",
+        "title": "Voyager 1 Launch",
+        "credit": "NASA / JPL / JPL-Caltech / KSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:46:21.648Z"
+    }
+  ]
+}

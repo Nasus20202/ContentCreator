@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T14:30:28.623Z",
-  "videoSha256": "61ade36669189e4dda19f0b0bd726e1aa061ff5acda6ab267edaec29d51dffb0",
+  "checkedAt": "2026-11-12T18:23:19.613Z",
+  "videoSha256": "b75585e66213f4923055139523dd5e701e597e0092934ccdf9a2e7e4a5c1a8aa",
   "automated": [
     {
       "name": "resolution",
@@ -20,12 +20,12 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "49.60 s (limit 60 s)"
+      "detail": "53.60 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 49.60 s vs timeline 49.57 s"
+      "detail": "video 53.60 s vs timeline 53.50 s"
     },
     {
       "name": "loudness",
@@ -137,13 +137,18 @@
     {
       "file": "qa/05-outro-2.jpg",
       "sceneId": "outro",
-      "tSec": 49.47
+      "tSec": 51.12
+    },
+    {
+      "file": "qa/05-outro-3.jpg",
+      "sceneId": "outro",
+      "tSec": 53.4
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T14:41:31.415Z",
+    "at": "2026-11-12T18:53:47.943Z",
     "verdict": "pass",
-    "notes": "Reviewed the opening and closing frames of all eight cuts: hook framing holds (Moon/Jupiter/Venus/Mars subjects stay in frame after the 20% tighter opening field), outro shows the CTA and the new '50°N 15°E' footnote without overlap. Fact-card push-in checked on the 21 Dec card; the other cards use the same code. Motion smoothness and audio mix are not judgeable from stills and are left to the human watch."
+    "notes": "Final cut: slow push-in on every scene; Mars-Jupiter 1.2 deg with 2 full Moons, orbit reveal with distances, Leonids radiant and moonset chip, Moon-Saturn; outro voice now says 'Follow, so you don't miss next week's sky' and the FOLLOW CTA appears with it, 1.6 s hold on the logo at the end. No clipped labels."
   }
 }

@@ -1,9 +1,25 @@
 {
-  "checkedAt": "2026-11-12T15:55:38.816Z",
-  "planHash": "347726ed9ace7ae7",
+  "checkedAt": "2026-11-12T18:12:53.808Z",
+  "planHash": "42137ab49b2ed8d5",
   "automated": {
     "ok": true,
     "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[0]",
+        "text": "Fly to the centre of our galaxy and back, and you age forty years.",
+        "number": 40,
+        "raw": "forty",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "hook",
+        "where": "narration[1]",
+        "text": "Earth ages fifty-two thousand.",
+        "number": 52000,
+        "raw": "fifty two thousand",
+        "matchedFact": "trip-times"
+      },
       {
         "sceneId": "paradox",
         "where": "factCard",
@@ -30,8 +46,24 @@
       },
       {
         "sceneId": "centre",
-        "where": "factCard",
-        "text": "26,000 ly to the galactic centre",
+        "where": "stops[1]",
+        "text": "Galactic centre 26,000 light-years",
+        "number": 26000,
+        "raw": "26000",
+        "matchedFact": "centre-distance"
+      },
+      {
+        "sceneId": "centre",
+        "where": "clocks[0]",
+        "text": "On board 20 yrs",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "centre",
+        "where": "clocks[1]",
+        "text": "On Earth 26,000 yrs",
         "number": 26000,
         "raw": "26000",
         "matchedFact": "centre-distance"
@@ -54,18 +86,42 @@
       },
       {
         "sceneId": "centre-earth",
-        "where": "factCard",
-        "text": "52,000 yrs on Earth, round trip · you: 40 years",
-        "number": 52000,
-        "raw": "52000",
+        "where": "stops[1]",
+        "text": "Galactic centre 26,000 light-years",
+        "number": 26000,
+        "raw": "26000",
         "matchedFact": "trip-times"
       },
       {
         "sceneId": "centre-earth",
-        "where": "factCard",
-        "text": "52,000 yrs on Earth, round trip · you: 40 years",
+        "where": "clocks[0]",
+        "text": "On board 20 yrs 40 yrs",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "centre-earth",
+        "where": "clocks[0]",
+        "text": "On board 20 yrs 40 yrs",
         "number": 40,
         "raw": "40",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "centre-earth",
+        "where": "clocks[1]",
+        "text": "On Earth 26,000 yrs 52,000 yrs",
+        "number": 26000,
+        "raw": "26000",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "centre-earth",
+        "where": "clocks[1]",
+        "text": "On Earth 26,000 yrs 52,000 yrs",
+        "number": 52000,
+        "raw": "52000",
         "matchedFact": "trip-times"
       },
       {
@@ -102,11 +158,27 @@
       },
       {
         "sceneId": "andromeda",
-        "where": "factCard",
-        "text": "2.5 million ly to Andromeda, our largest galactic neighbour",
+        "where": "stops[1]",
+        "text": "Andromeda 2.5 million light-years",
         "number": 2.5,
         "raw": "2.5",
         "matchedFact": "andromeda-distance"
+      },
+      {
+        "sceneId": "andromeda",
+        "where": "clocks[0]",
+        "text": "On board 57 yrs",
+        "number": 57,
+        "raw": "57",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "andromeda",
+        "where": "clocks[1]",
+        "text": "On Earth 5 million yrs",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "trip-times"
       },
       {
         "sceneId": "andromeda-earth",
@@ -185,8 +257,8 @@
   },
   "review": {
     "actor": "claude",
-    "at": "2026-11-12T15:55:45.880Z",
+    "at": "2026-11-12T18:13:12.815Z",
     "verdict": "pass",
-    "notes": "Semantic review after adding a bar-comparison scene: the bars reuse facts already in this episode's record. Times are the same as the cards (twin paradox 40 and 52,000 years round trip; Proxima 89,000 and 28 years; light 8 min 20 s and 43 min). The 'thousands of times longer' line is 89,000 divided by 28, about 3,200. The 'about five times longer' line is 43 divided by 8.3, about 5.2. The log-scale bars are labelled as log scale on screen; the light bars are drawn to scale. No new claims."
+    "notes": "Backdrops: Spitzer infrared image of the Milky Way centre for the centre trips, GALEX ultraviolet Andromeda for the Andromeda trip; labels name the instrument and waveband. Narration re-read: 40 yrs on board vs 52,000 on Earth for the centre round trip, 57 yrs vs 5 million for Andromeda, 26,000 ly and 2.5 million ly all match trip-times."
   }
 }

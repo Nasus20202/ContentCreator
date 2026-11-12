@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T14:59:52.640Z",
-  "videoSha256": "13ac71a9409f7f9bd80a3e125254551a0c90e5a721062c6e6e05192152392565",
+  "checkedAt": "2026-11-12T18:43:26.646Z",
+  "videoSha256": "9fb6efed388937992453f37a1bef2d732a75fa6712421b9022ab7873d2be0445",
   "automated": [
     {
       "name": "resolution",
@@ -20,12 +20,12 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "48.30 s (limit 60 s)"
+      "detail": "49.90 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 48.30 s vs timeline 48.23 s"
+      "detail": "video 49.90 s vs timeline 49.83 s"
     },
     {
       "name": "loudness",
@@ -35,7 +35,7 @@
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.5 dBFS"
+      "detail": "-1.4 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -127,13 +127,13 @@
     {
       "file": "qa/04-outro-2.jpg",
       "sceneId": "outro",
-      "tSec": 48.13
+      "tSec": 49.73
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T15:04:39.666Z",
+    "at": "2026-11-12T18:53:54.466Z",
     "verdict": "pass",
-    "notes": "Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch."
+    "notes": "Mars rising and high at midnight with magnitude, orbit reveal with 101 million km, distance card, outro synced with hold."
   }
 }

@@ -13,35 +13,76 @@
 
 ## Decisions
 
-_None recorded yet._
+### 2026-11-12 17:13 · visuals · claude
+
+**Comparison bars drawn to scale (linear) instead of log; narration and note say 'drawn to scale'.**
+
+On a log scale 28 vs 75,000 (or 40 vs 52,000) looked like a 1:3 difference, which hides the point of the episode. Linear shows the short trip as a glowing sliver, which is the true picture.
+
+Alternatives considered:
+- Keep log scale with a note (rejected: viewers read bar length, not the note)
+
+### 2026-11-12 17:13 · factcheck · claude
+
+**Corrected the Voyager travel time: about 75,000 years at Voyager 1's 17.0 km/s (NASA), replacing 'over 89,000 years at more than 3 AU a year'. Hook now leads with 'Seventy-five thousand years.'**
+
+The old fact mis-stated 4.24 ly as ~63,000 AU (it is ~268,000 AU) and its wording ran backwards (a speed above 3 AU/yr gives under 89,000 years). The number is also the strongest hook in the episode; the old first line was a definition.
+
+Alternatives considered:
+- Keep 3 AU/yr and say 'under 89,000' (rejected: NASA gives 17.0 km/s ≈ 3.6 AU/yr directly)
+
+### 2026-11-12 17:35 · visuals · claude
+
+**Hook card shows 75,000 years (what the hook says) instead of 4.24 ly; Voyager card shows 17 km/s.**
+
+QA: the spoken hook and the card disagreed for the first 3 s; 4.24 ly is shown on the scale scene anyway.
+
+### 2026-11-12 17:56 · visuals · claude
+
+**Proxima rebuilt around what can be seen: hook, Starshot and ship-clock are journey scenes (clocks to 75,000 yrs, 28 yrs, 10 min vs 4.24 yrs), the Voyager scene is the real Voyager 1 launch photo with speed chips.**
+
+Owner: 'I still miss visualisation… something to SEE, not only the numbers.' The episode was 5 number cards. No NASA-library image of Proxima itself exists (Hubble's Alpha Centauri A/B shows its companions, which would mislead under a Proxima label), so the star is drawn as a diagram body.
+
+Alternatives considered:
+- Hubble Alpha Centauri A/B as the hook (rejected: not Proxima)
+- NASA artist concepts of Voyager (rejected: the launch photo is real)
+
+### 2026-11-12 18:19 · visuals · claude
+
+**Destination photos as journey backdrops (NASA library, credited on screen)**
+
+Gives every trip a real place to arrive at; Proxima has no NASA photo, so Hubble's Alpha Centauri A and B is labelled as Proxima's neighbours
+
+Alternatives considered:
+- keep the plain starfield
 
 ## Script
 
-**hook** (`factCard`) — facts: `proxima-distance`, `light-year`
+**hook** (`journey`) — facts: `voyager1-speed-nasa`, `proxima-distance`, `light-year`
 
-> Proxima Centauri is the closest star to the Sun.
-> It is 4.24 light-years away.
+> Seventy-five thousand years.
+> That is how long Voyager 1 would need to reach the nearest star, Proxima Centauri, 4.24 light-years away.
 
 **scale** (`scale`) — facts: `proxima-distance`, `voyager-lightday`
 
 > Here is that trip on one scale, from Earth to the star.
 > Voyager 1 sits right at the top, about one light-day out.
 
-**voyager** (`factCard`) — facts: `voyager-speed`
+**voyager** (`image`) — facts: `voyager1-speed-nasa`
 
-> Voyager, our most distant spacecraft, moves at more than three astronomical units a year.
-> At that pace, the trip would take over eighty-nine thousand years.
+> Voyager 1 moves at about seventeen kilometres every second.
+> Even so, the trip would take about seventy-five thousand years.
 
-**starshot** (`factCard`) — facts: `starshot-speed`
+**starshot** (`journey`) — facts: `starshot-speed`
 
 > Breakthrough Starshot aims for probes at about fifteen percent of light speed.
 > At that speed, the trip takes about twenty-eight years.
 
-**compare** (`compare`) — facts: `voyager-speed`, `starshot-speed`
+**compare** (`compare`) — facts: `voyager1-speed-nasa`, `starshot-speed`
 
-> Side by side, Voyager's speed would take thousands of times longer.
+> Drawn to scale, Starshot's trip is barely a sliver next to Voyager's.
 
-**ship-clock** (`factCard`) — facts: `lorentz-clock`
+**ship-clock** (`journey`) — facts: `light-year`, `lorentz-clock`, `proxima-distance`
 
 > From inside the ship, the trip could be much shorter.
 > At nearly the speed of light, the clock on board runs about 223,000 times slower, so the trip takes ten minutes of ship time.
@@ -56,11 +97,11 @@ _None recorded yet._
 
 **How long to Proxima Centauri? It depends on your clock 🚀**
 
-Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.
+Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.
 
 Sources:
 NASA Science, Sun facts: https://science.nasa.gov/sun/facts/
-NASA Science, Voyager: https://science.nasa.gov/mission/voyager/
+NASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/
 Breakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3
 Lorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor
 
@@ -74,14 +115,21 @@ Narration uses a synthetic voice.
 | --- | --- | --- |
 | proxima-distance | Proxima Centauri, a red dwarf, is 4.24 light-years away, the closest star to the Sun. | [NASA Science](https://science.nasa.gov/sun/facts/) |
 | light-year | One light-year is about 9.5 trillion kilometres, the distance light travels in a year. | [NASA Science](https://science.nasa.gov/sun/facts/) |
-| voyager-speed | The twin Voyager spacecraft are moving at more than 3 astronomical units per year. At that pace, 4.24 light-years (about 63,000 AU) takes over 89,000 years. | [NASA Science](https://science.nasa.gov/mission/voyager/) |
 | starshot-speed | Breakthrough Starshot's light-driven probes are designed for speeds up to 100 million miles an hour, about 15% of light speed. At that speed, 4.24 light-years takes about 28 years. | [Breakthrough Initiatives](https://breakthroughinitiatives.org/initiative/3) |
 | lorentz-clock | A Lorentz factor of about 223,000 means a clock on board runs about 223,000 times slower; a 4.24 light-year trip then takes about 10 minutes of ship time. | [Wikipedia](https://en.wikipedia.org/wiki/Lorentz_factor) |
 | voyager-lightday | Voyager 1 reaches a distance of one light-day from Earth in November 2026. | [NASA Science](https://science.nasa.gov/mission/voyager/) |
+| voyager1-speed-nasa | Voyager 1 moves at about 17.0 km/s relative to the Sun (NASA, Nov 2024). At that speed, 4.24 light-years (about 40 trillion km) takes about 75,000 years (4.24 × 9.461e12 km ÷ 17.0 km/s ≈ 74,800 years). | [NASA Science](https://science.nasa.gov/mission/voyager/voyager-1/) |
+
+## Assets
+
+| Asset | Source | Credit | License | AI |
+| --- | --- | --- | --- | --- |
+| voyager1-launch | [Voyager 1 Launch](https://images.nasa.gov/details/PIA21747) | NASA / JPL / JPL-Caltech / KSC | NASA media usage guidelines (not copyrighted unless noted) | no |
+| alpha-centauri-hubble | [Hubble's Best Image of Alpha Centauri A and B](https://images.nasa.gov/details/GSFC_20171208_Archive_e000214) | NASA / GSFC | NASA media usage guidelines (not copyrighted unless noted) | no |
 
 ## Render
 
-51.7 s, 1080×1920@30, sha256 `21387edc1ce6459d…`, rendered 2026-11-12T16:03:39.326Z in 38 s.
+55.6 s, 1080×1920@30, sha256 `cc07ba4e5f222879…`, rendered 2026-11-12T18:24:32.704Z in 64 s.
 
 ## QA
 
@@ -90,13 +138,13 @@ Narration uses a synthetic voice.
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 51.70 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 51.70 s vs timeline 51.67 s |
-| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| duration | ✅ | 55.60 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 55.60 s vs timeline 55.57 s |
+| loudness | ✅ | -14.3 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T16:04:43.442Z): **pass** — Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch.
+Visual review by **claude** (2026-11-12T18:53:48.661Z): **pass** — Journeys over the Hubble Alpha Centauri A&B backdrop (labelled as Proxima's neighbours, credited), Voyager clock 75,000 yrs, Starshot 28 yrs, ship 10 min vs 4.24 yrs; Voyager launch photo with chips; to-scale compare; outro CTA in sync. Labels clear of the caption band.
 
 ## Event log
 
@@ -157,3 +205,66 @@ Visual review by **claude** (2026-11-12T16:04:43.442Z): **pass** — Reviewed th
 | 2026-11-12 16:03:46 | pipeline | qa | qa.automated | d707811 |
 | 2026-11-12 16:04:43 | claude | qa | qa.review | d707811 |
 | 2026-11-12 16:04:43 | claude | qa-passed | stage.advance | d707811 |
+| 2026-11-12 17:11:01 | claude | researched | fact.add | 56e31e5 |
+| 2026-11-12 17:11:09 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:11:09 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:11:10 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:11:31 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:11:31 | claude | planned | stage.advance | 56e31e5 |
+| 2026-11-12 17:11:32 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:12:02 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:12:02 | claude | planned | stage.advance | 56e31e5 |
+| 2026-11-12 17:12:03 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:12:24 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:12:24 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 17:13:03 | claude | visuals | decision.record | 56e31e5 |
+| 2026-11-12 17:13:04 | claude | factcheck | decision.record | 56e31e5 |
+| 2026-11-12 17:17:36 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 17:17:36 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 17:18:28 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:18:28 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:18:37 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:35:23 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:35:23 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:35:24 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:35:25 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:35:25 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 17:35:26 | claude | visuals | decision.record | 56e31e5 |
+| 2026-11-12 17:42:37 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 17:42:37 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 17:43:32 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:43:32 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:43:41 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:49:10 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 17:49:10 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 17:55:39 | claude | qa-passed | asset.add | 56e31e5 |
+| 2026-11-12 17:55:57 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:55:57 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:55:58 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:56:08 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:56:08 | claude | planned | stage.advance | 56e31e5 |
+| 2026-11-12 17:56:09 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:56:46 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:56:46 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 17:56:47 | claude | visuals | decision.record | 56e31e5 |
+| 2026-11-12 18:01:42 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:01:42 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:02:42 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:02:42 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:02:51 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:12:25 | claude | rendered | asset.add | 56e31e5 |
+| 2026-11-12 18:12:51 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 18:12:51 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 18:12:52 | pipeline | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 18:13:11 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 18:13:11 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 18:13:18 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:13:18 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:19:06 | claude | visuals | decision.record | 56e31e5 |
+| 2026-11-12 18:23:28 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:23:28 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:24:32 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:24:32 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:24:42 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:53:48 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 18:53:48 | claude | qa-passed | stage.advance | 56e31e5 |

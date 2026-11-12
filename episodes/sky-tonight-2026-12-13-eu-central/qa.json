@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T15:04:09.187Z",
-  "videoSha256": "ffd2700254aa22a913e9d2a432867a84d4eb07eccaf8415fecf370f8595ceddd",
+  "checkedAt": "2026-11-12T18:35:09.379Z",
+  "videoSha256": "68bb1ea1bdb6b641ba1ee8f1a0db95d7708b400a244f8ef19340767b8fd43c42",
   "automated": [
     {
       "name": "resolution",
@@ -20,12 +20,12 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "20.70 s (limit 60 s)"
+      "detail": "24.30 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 20.70 s vs timeline 20.63 s"
+      "detail": "video 24.30 s vs timeline 24.23 s"
     },
     {
       "name": "loudness",
@@ -87,13 +87,18 @@
     {
       "file": "qa/02-outro-2.jpg",
       "sceneId": "outro",
-      "tSec": 20.53
+      "tSec": 21.87
+    },
+    {
+      "file": "qa/02-outro-3.jpg",
+      "sceneId": "outro",
+      "tSec": 24.13
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T15:04:40.809Z",
+    "at": "2026-11-12T18:53:52.358Z",
     "verdict": "pass",
-    "notes": "Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch."
+    "notes": "Tonight short: radiant, moonless chip, south after midnight, outro 'Follow so you don't miss the next one' synced; 24 s."
   }
 }

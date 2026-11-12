@@ -1,155 +1,177 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "03b79a242568b670",
+  "narrationHash": "395e603b5cd29e11",
   "timing": "estimated-proportional",
   "scenes": [
     {
       "sceneId": "hook",
       "audioFile": "voice/hook.wav",
-      "duration": 7.663,
+      "duration": 9.208,
       "sentences": [
         {
-          "text": "Fly to the galaxy's centre at one g, and back, and you come home younger.",
+          "text": "Fly to the centre of our galaxy and back, and you age forty years.",
           "start": 0.15,
-          "end": 4.289,
+          "end": 3.802,
           "words": [
             {
               "w": "Fly",
               "start": 0.15,
-              "end": 0.368
+              "end": 0.365
             },
             {
               "w": "to",
-              "start": 0.368,
-              "end": 0.542
+              "start": 0.365,
+              "end": 0.537
             },
             {
               "w": "the",
-              "start": 0.542,
-              "end": 0.76
-            },
-            {
-              "w": "galaxy's",
-              "start": 0.76,
-              "end": 1.196
+              "start": 0.537,
+              "end": 0.752
             },
             {
               "w": "centre",
-              "start": 1.196,
-              "end": 1.544
+              "start": 0.752,
+              "end": 1.095
             },
             {
-              "w": "at",
-              "start": 1.544,
-              "end": 1.719
+              "w": "of",
+              "start": 1.095,
+              "end": 1.267
             },
             {
-              "w": "one",
-              "start": 1.719,
-              "end": 1.936
+              "w": "our",
+              "start": 1.267,
+              "end": 1.482
             },
             {
-              "w": "g,",
-              "start": 1.936,
-              "end": 2.198
+              "w": "galaxy",
+              "start": 1.482,
+              "end": 1.826
             },
             {
               "w": "and",
-              "start": 2.198,
-              "end": 2.416
+              "start": 1.826,
+              "end": 2.041
             },
             {
               "w": "back,",
-              "start": 2.416,
-              "end": 2.808
+              "start": 2.041,
+              "end": 2.427
             },
             {
               "w": "and",
-              "start": 2.808,
-              "end": 3.026
+              "start": 2.427,
+              "end": 2.642
             },
             {
               "w": "you",
-              "start": 3.026,
-              "end": 3.244
+              "start": 2.642,
+              "end": 2.857
             },
             {
-              "w": "come",
-              "start": 3.244,
-              "end": 3.505
+              "w": "age",
+              "start": 2.857,
+              "end": 3.072
             },
             {
-              "w": "home",
-              "start": 3.505,
-              "end": 3.767
+              "w": "forty",
+              "start": 3.072,
+              "end": 3.373
             },
             {
-              "w": "younger.",
-              "start": 3.767,
-              "end": 4.289
+              "w": "years.",
+              "start": 3.373,
+              "end": 3.802
+            }
+          ]
+        },
+        {
+          "text": "Earth ages fifty-two thousand.",
+          "start": 4.083,
+          "end": 5.835,
+          "words": [
+            {
+              "w": "Earth",
+              "start": 4.083,
+              "end": 4.423
+            },
+            {
+              "w": "ages",
+              "start": 4.423,
+              "end": 4.715
+            },
+            {
+              "w": "fifty-two",
+              "start": 4.715,
+              "end": 5.202
+            },
+            {
+              "w": "thousand.",
+              "start": 5.202,
+              "end": 5.835
             }
           ]
         },
         {
           "text": "Do the same to Andromeda, and the gap is far bigger.",
-          "start": 4.569,
-          "end": 7.383,
+          "start": 6.115,
+          "end": 8.928,
           "words": [
             {
               "w": "Do",
-              "start": 4.569,
-              "end": 4.735
+              "start": 6.115,
+              "end": 6.28
             },
             {
               "w": "the",
-              "start": 4.735,
-              "end": 4.942
+              "start": 6.28,
+              "end": 6.487
             },
             {
               "w": "same",
-              "start": 4.942,
-              "end": 5.19
+              "start": 6.487,
+              "end": 6.735
             },
             {
               "w": "to",
-              "start": 5.19,
-              "end": 5.355
+              "start": 6.735,
+              "end": 6.901
             },
             {
               "w": "Andromeda,",
-              "start": 5.355,
-              "end": 5.935
+              "start": 6.901,
+              "end": 7.48
             },
             {
               "w": "and",
-              "start": 5.935,
-              "end": 6.142
+              "start": 7.48,
+              "end": 7.687
             },
             {
               "w": "the",
-              "start": 6.142,
-              "end": 6.348
+              "start": 7.687,
+              "end": 7.893
             },
             {
               "w": "gap",
-              "start": 6.348,
-              "end": 6.555
+              "start": 7.893,
+              "end": 8.1
             },
             {
               "w": "is",
-              "start": 6.555,
-              "end": 6.721
+              "start": 8.1,
+              "end": 8.266
             },
             {
               "w": "far",
-              "start": 6.721,
-              "end": 6.928
+              "start": 8.266,
+              "end": 8.473
             },
             {
               "w": "bigger.",
-              "start": 6.928,
-              "end": 7.383
+              "start": 8.473,
+              "end": 8.928
             }
           ]
         }
@@ -526,67 +548,62 @@
     {
       "sceneId": "centre-compare",
       "audioFile": "voice/centre-compare.wav",
-      "duration": 3.697,
+      "duration": 3.065,
       "sentences": [
         {
-          "text": "Here are both clocks for the centre, on a logarithmic scale.",
+          "text": "Here are both clocks for the centre, drawn to scale.",
           "start": 0.15,
-          "end": 3.417,
+          "end": 2.785,
           "words": [
             {
               "w": "Here",
               "start": 0.15,
-              "end": 0.408
+              "end": 0.386
             },
             {
               "w": "are",
-              "start": 0.408,
-              "end": 0.623
+              "start": 0.386,
+              "end": 0.583
             },
             {
               "w": "both",
-              "start": 0.623,
-              "end": 0.881
+              "start": 0.583,
+              "end": 0.818
             },
             {
               "w": "clocks",
-              "start": 0.881,
-              "end": 1.225
+              "start": 0.818,
+              "end": 1.133
             },
             {
               "w": "for",
-              "start": 1.225,
-              "end": 1.44
+              "start": 1.133,
+              "end": 1.33
             },
             {
               "w": "the",
-              "start": 1.44,
-              "end": 1.655
+              "start": 1.33,
+              "end": 1.526
             },
             {
               "w": "centre,",
-              "start": 1.655,
-              "end": 2.128
+              "start": 1.526,
+              "end": 1.959
             },
             {
-              "w": "on",
-              "start": 2.128,
-              "end": 2.3
+              "w": "drawn",
+              "start": 1.959,
+              "end": 2.234
             },
             {
-              "w": "a",
-              "start": 2.3,
-              "end": 2.428
-            },
-            {
-              "w": "logarithmic",
-              "start": 2.428,
-              "end": 2.987
+              "w": "to",
+              "start": 2.234,
+              "end": 2.391
             },
             {
               "w": "scale.",
-              "start": 2.987,
-              "end": 3.417
+              "start": 2.391,
+              "end": 2.785
             }
           ]
         }
@@ -805,7 +822,7 @@
     {
       "sceneId": "outro",
       "audioFile": "voice/outro.wav",
-      "duration": 2.313,
+      "duration": 3.421,
       "sentences": [
         {
           "text": "Follow for more sky, explained.",
@@ -836,6 +853,23 @@
               "w": "explained.",
               "start": 1.39,
               "end": 2.033
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.313,
+          "end": 3.141,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.313,
+              "end": 2.654
+            },
+            {
+              "w": "skies.",
+              "start": 2.654,
+              "end": 3.141
             }
           ]
         }

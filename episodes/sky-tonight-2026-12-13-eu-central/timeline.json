@@ -1,7 +1,7 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "51acf502bab95ee9",
+  "narrationHash": "109907dab7e33ad0",
   "timing": "estimated-proportional",
   "scenes": [
     {
@@ -309,7 +309,7 @@
     {
       "sceneId": "outro",
       "audioFile": "voice/outro.wav",
-      "duration": 3.718,
+      "duration": 5.749,
       "sentences": [
         {
           "text": "Positions calculated for central Europe.",
@@ -344,19 +344,66 @@
           ]
         },
         {
-          "text": "Clear skies.",
+          "text": "Follow, so you don't miss the next one.",
           "start": 2.611,
-          "end": 3.438,
+          "end": 4.361,
+          "words": [
+            {
+              "w": "Follow,",
+              "start": 2.611,
+              "end": 2.981
+            },
+            {
+              "w": "so",
+              "start": 2.981,
+              "end": 3.116
+            },
+            {
+              "w": "you",
+              "start": 3.116,
+              "end": 3.284
+            },
+            {
+              "w": "don't",
+              "start": 3.284,
+              "end": 3.52
+            },
+            {
+              "w": "miss",
+              "start": 3.52,
+              "end": 3.722
+            },
+            {
+              "w": "the",
+              "start": 3.722,
+              "end": 3.89
+            },
+            {
+              "w": "next",
+              "start": 3.89,
+              "end": 4.092
+            },
+            {
+              "w": "one.",
+              "start": 4.092,
+              "end": 4.361
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 4.641,
+          "end": 5.469,
           "words": [
             {
               "w": "Clear",
-              "start": 2.611,
-              "end": 2.951
+              "start": 4.641,
+              "end": 4.982
             },
             {
               "w": "skies.",
-              "start": 2.951,
-              "end": 3.438
+              "start": 4.982,
+              "end": 5.469
             }
           ]
         }

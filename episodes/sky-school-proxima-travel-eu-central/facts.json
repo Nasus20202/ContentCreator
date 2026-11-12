@@ -87,6 +87,22 @@
         "publisher": "NASA Science",
         "accessed": "2026-11-12"
       }
+    },
+    {
+      "id": "voyager1-speed-nasa",
+      "statement": "Voyager 1 moves at about 17.0 km/s relative to the Sun (NASA, Nov 2024). At that speed, 4.24 light-years (about 40 trillion km) takes about 75,000 years (4.24 × 9.461e12 km ÷ 17.0 km/s ≈ 74,800 years).",
+      "values": [
+        17,
+        75000,
+        4.24
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/voyager/voyager-1/",
+        "title": "Voyager 1: The Farthest Spacecraft",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
     }
   ]
 }

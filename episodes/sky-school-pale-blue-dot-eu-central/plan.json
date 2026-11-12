@@ -1,0 +1,185 @@
+{
+  "episodeId": "sky-school-pale-blue-dot-eu-central",
+  "series": "sky-school",
+  "title": "Sky School · The Pale Blue Dot",
+  "badge": "Sky School · Pale Blue Dot",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "post": {
+    "title": "This speck of light is Earth 🌍",
+    "description": "On 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#astronomy",
+      "#space",
+      "#science",
+      "#skyschool",
+      "#voyager",
+      "#palebluedot"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "image",
+      "narration": [
+        "That speck of light is Earth.",
+        "Every person you have ever known lives on it."
+      ],
+      "factIds": [
+        "pbd-pixel",
+        "pbd-distance",
+        "pbd-date"
+      ],
+      "chips": [
+        {
+          "text": "SEEN FROM 6 BILLION KM",
+          "from": {
+            "sentence": 1
+          }
+        }
+      ],
+      "title": {
+        "kicker": "Voyager 1 · 1990",
+        "title": "This is Earth",
+        "from": 0.1,
+        "to": 2.4
+      },
+      "params": {
+        "assetId": "pale-blue-dot",
+        "zoom": [
+          1.0,
+          1.3
+        ],
+        "focus": [
+          0.594,
+          0.519
+        ],
+        "fit": "cover",
+        "marker": {
+          "label": "Earth",
+          "from": 0.6
+        }
+      }
+    },
+    {
+      "id": "where",
+      "template": "journey",
+      "narration": [
+        "Voyager 1 took this photo on Valentine's Day, 1990, about six billion kilometres from home.",
+        "That is forty times farther than the Sun."
+      ],
+      "factIds": [
+        "pbd-distance",
+        "pbd-date",
+        "pbd-ratio",
+        "sun-distance"
+      ],
+      "chips": [],
+      "params": {
+        "traveller": "ship",
+        "stops": [
+          {
+            "name": "Earth",
+            "at": 0,
+            "kind": "earth",
+            "sub": "home"
+          },
+          {
+            "name": "Voyager 1",
+            "at": 6,
+            "kind": "point",
+            "sub": "6 billion km away",
+            "arrive": "Feb 1990: look back!"
+          }
+        ],
+        "path": [
+          0,
+          1
+        ],
+        "start": 0.5,
+        "travel": 4.5,
+        "clocks": [],
+        "backdrop": {
+          "assetId": "voyager1-launch",
+          "label": "Voyager 1 at launch"
+        }
+      }
+    },
+    {
+      "id": "pixel",
+      "template": "image",
+      "narration": [
+        "In the picture, Earth is smaller than a single pixel.",
+        "It just happens to sit inside a ray of sunlight scattered in the camera."
+      ],
+      "factIds": [
+        "pbd-pixel"
+      ],
+      "chips": [
+        {
+          "text": "LESS THAN 1 PIXEL",
+          "from": 0.4
+        }
+      ],
+      "params": {
+        "assetId": "pale-blue-dot",
+        "zoom": [
+          1.3,
+          2.8
+        ],
+        "focus": [
+          0.594,
+          0.519
+        ],
+        "fit": "cover",
+        "marker": {
+          "label": "You are here",
+          "from": 0.3
+        }
+      }
+    },
+    {
+      "id": "last",
+      "template": "factCard",
+      "narration": [
+        "Thirty-four minutes later, Voyager 1 switched off its cameras forever.",
+        "This was one of the last pictures it ever took."
+      ],
+      "factIds": [
+        "pbd-date"
+      ],
+      "params": {
+        "value": "34 min",
+        "label": "later, Voyager 1's cameras went dark for good",
+        "sourceLine": "NASA / JPL"
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Follow for more sky, explained.",
+        "Clear skies."
+      ],
+      "factIds": [],
+      "params": {
+        "kicker": "Sky School",
+        "cta": "FOLLOW\nFOR MORE\nSKY, EXPLAINED",
+        "footnote": "Pale Blue Dot: NASA / JPL-Caltech · distances: NASA"
+      }
+    }
+  ]
+}

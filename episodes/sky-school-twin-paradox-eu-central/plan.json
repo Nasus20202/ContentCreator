@@ -35,7 +35,8 @@
       "id": "hook",
       "template": "image",
       "narration": [
-        "Fly to the galaxy's centre at one g, and back, and you come home younger.",
+        "Fly to the centre of our galaxy and back, and you age forty years.",
+        "Earth ages fifty-two thousand.",
         "Do the same to Andromeda, and the gap is far bigger."
       ],
       "factIds": [
@@ -45,7 +46,7 @@
       ],
       "title": {
         "kicker": "Twin paradox",
-        "title": "A ride to the galaxy",
+        "title": "Your clock vs Earth's",
         "from": 0.1,
         "to": 3
       },
@@ -81,7 +82,7 @@
     },
     {
       "id": "centre",
-      "template": "factCard",
+      "template": "journey",
       "narration": [
         "The centre of the Milky Way, home to a black hole, is about 26,000 light-years away.",
         "At one g, the trip there takes about twenty years on board."
@@ -91,14 +92,52 @@
         "trip-times"
       ],
       "params": {
-        "value": "26,000 ly",
-        "label": "to the galactic centre",
-        "sourceLine": "Sagittarius A* · NASA"
+        "traveller": "ship",
+        "stops": [
+          {
+            "name": "Earth",
+            "at": 0,
+            "kind": "earth",
+            "sub": "home"
+          },
+          {
+            "name": "Galactic centre",
+            "at": 26000,
+            "kind": "blackhole",
+            "sub": "26,000 light-years"
+          }
+        ],
+        "path": [
+          0,
+          1
+        ],
+        "start": {
+          "sentence": 1
+        },
+        "travel": 3.6,
+        "clocks": [
+          {
+            "label": "On board",
+            "from": 0,
+            "to": 20,
+            "unit": "years"
+          },
+          {
+            "label": "On Earth",
+            "from": 0,
+            "to": 26000,
+            "unit": "years"
+          }
+        ],
+        "backdrop": {
+          "assetId": "galactic-centre-spitzer",
+          "label": "Milky Way centre in infrared (Spitzer)"
+        }
       }
     },
     {
       "id": "centre-earth",
-      "template": "factCard",
+      "template": "journey",
       "narration": [
         "Round trip, you spend about forty years.",
         "On Earth, about fifty-two thousand years pass."
@@ -107,23 +146,59 @@
         "trip-times"
       ],
       "params": {
-        "value": "52,000 yrs",
-        "label": "on Earth, round trip · you: 40 years",
-        "sourceLine": "1 g, accelerate and brake · computed"
+        "traveller": "ship",
+        "stops": [
+          {
+            "name": "Earth",
+            "at": 0,
+            "kind": "earth",
+            "sub": "home"
+          },
+          {
+            "name": "Galactic centre",
+            "at": 26000,
+            "kind": "blackhole",
+            "sub": "26,000 light-years"
+          }
+        ],
+        "path": [
+          1,
+          0
+        ],
+        "start": 0.3,
+        "travel": 3.8,
+        "clocks": [
+          {
+            "label": "On board",
+            "from": 20,
+            "to": 40,
+            "unit": "years"
+          },
+          {
+            "label": "On Earth",
+            "from": 26000,
+            "to": 52000,
+            "unit": "years"
+          }
+        ],
+        "backdrop": {
+          "assetId": "galactic-centre-spitzer",
+          "label": "Milky Way centre in infrared (Spitzer)"
+        }
       }
     },
     {
       "id": "centre-compare",
       "template": "compare",
       "narration": [
-        "Here are both clocks for the centre, on a logarithmic scale."
+        "Here are both clocks for the centre, drawn to scale."
       ],
       "factIds": [
         "trip-times"
       ],
       "params": {
         "heading": "Round trip to the centre",
-        "scale": "log",
+        "scale": "linear",
         "bars": [
           {
             "label": "You, on board",
@@ -136,12 +211,12 @@
             "display": "52,000 years"
           }
         ],
-        "note": "Logarithmic scale: bar length follows the log of the time."
+        "note": "Drawn to scale."
       }
     },
     {
       "id": "andromeda",
-      "template": "factCard",
+      "template": "journey",
       "narration": [
         "Andromeda, our largest galactic neighbour, is about two and a half million light-years away.",
         "Round trip at one g, you would spend about fifty-seven years on board."
@@ -151,9 +226,48 @@
         "trip-times"
       ],
       "params": {
-        "value": "2.5 million ly",
-        "label": "to Andromeda, our largest galactic neighbour",
-        "sourceLine": "Andromeda · NASA Science"
+        "traveller": "ship",
+        "stops": [
+          {
+            "name": "Earth",
+            "at": 0,
+            "kind": "earth",
+            "sub": "home"
+          },
+          {
+            "name": "Andromeda",
+            "at": 2.5,
+            "kind": "galaxy",
+            "sub": "2.5 million light-years"
+          }
+        ],
+        "path": [
+          0,
+          1,
+          0
+        ],
+        "start": {
+          "sentence": 1
+        },
+        "travel": 4.2,
+        "clocks": [
+          {
+            "label": "On board",
+            "from": 0,
+            "to": 57,
+            "unit": "years"
+          },
+          {
+            "label": "On Earth",
+            "from": 0,
+            "to": 5000000,
+            "unit": "years"
+          }
+        ],
+        "backdrop": {
+          "assetId": "andromeda-galex",
+          "label": "Andromeda galaxy in ultraviolet (GALEX)"
+        }
       }
     },
     {
@@ -175,11 +289,12 @@
       "id": "outro",
       "template": "outro",
       "narration": [
-        "Follow for more sky, explained."
+        "Follow for more sky, explained.",
+        "Clear skies."
       ],
       "factIds": [],
       "params": {
-        "kicker": "Next week's sky",
+        "kicker": "Sky School",
         "cta": "FOLLOW\nFOR MORE\nSKY, EXPLAINED",
         "footnote": "Constant-gravity profile · not yet achievable"
       }

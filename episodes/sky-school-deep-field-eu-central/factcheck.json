@@ -1,0 +1,128 @@
+{
+  "checkedAt": "2026-11-12T18:47:27.500Z",
+  "planHash": "c3d1f266e7601db5",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "patch",
+        "where": "narration[1]",
+        "text": "In that tiny patch, there are about 5,500 galaxies.",
+        "number": 5500,
+        "raw": "5500",
+        "matchedFact": "xdf-galaxies"
+      },
+      {
+        "sceneId": "patch",
+        "where": "chips[0]",
+        "text": "ABOUT 5,500 GALAXIES",
+        "number": 5500,
+        "raw": "5500",
+        "matchedFact": "xdf-galaxies"
+      },
+      {
+        "sceneId": "stare",
+        "where": "narration[0]",
+        "text": "To catch them, Hubble stared at this one spot for a total of fifty days, spread over ten years.",
+        "number": 50,
+        "raw": "fifty",
+        "matchedFact": "xdf-time"
+      },
+      {
+        "sceneId": "stare",
+        "where": "narration[0]",
+        "text": "To catch them, Hubble stared at this one spot for a total of fifty days, spread over ten years.",
+        "number": 10,
+        "raw": "ten",
+        "matchedFact": "xdf-time"
+      },
+      {
+        "sceneId": "stare",
+        "where": "narration[1]",
+        "text": "More than 2,000 images, stacked into one.",
+        "number": 2000,
+        "raw": "2000",
+        "matchedFact": "xdf-time"
+      },
+      {
+        "sceneId": "stare",
+        "where": "factCard",
+        "text": "50 days of staring at one spot, over 10 years",
+        "number": 50,
+        "raw": "50",
+        "matchedFact": "xdf-time"
+      },
+      {
+        "sceneId": "stare",
+        "where": "factCard",
+        "text": "50 days of staring at one spot, over 10 years",
+        "number": 10,
+        "raw": "10",
+        "matchedFact": "xdf-time"
+      },
+      {
+        "sceneId": "time",
+        "where": "narration[0]",
+        "text": "The light from the faintest ones set off about 13.2 billion years ago.",
+        "number": 13.2,
+        "raw": "13.2",
+        "matchedFact": "xdf-age"
+      },
+      {
+        "sceneId": "time",
+        "where": "stops[1]",
+        "text": "Faintest galaxies 13.2 billion years ago",
+        "number": 13.2,
+        "raw": "13.2",
+        "matchedFact": "xdf-age"
+      },
+      {
+        "sceneId": "time",
+        "where": "clocks[0]",
+        "text": "Light's journey 13.2 billion yrs",
+        "number": 13.2,
+        "raw": "13.2",
+        "matchedFact": "xdf-age"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Hubble's eXtreme Deep Field: one tiny patch of sky, a small fraction of the width of the full Moon, holds about 5,500 galaxies. Hubble stared at it for a total of 50 days over 10 years, and some of the light set off 13.2 billion years ago.\n\nSource:\nNASA Science, Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe: https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/\n\nImage: NASA / ESA / G. Illingworth, D. Magee, P. Oesch, R. Bouwens and the HUDF09 Team. Narration uses a synthetic voice.",
+        "number": 5500,
+        "raw": "5500",
+        "matchedFact": "xdf-galaxies"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Hubble's eXtreme Deep Field: one tiny patch of sky, a small fraction of the width of the full Moon, holds about 5,500 galaxies. Hubble stared at it for a total of 50 days over 10 years, and some of the light set off 13.2 billion years ago.\n\nSource:\nNASA Science, Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe: https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/\n\nImage: NASA / ESA / G. Illingworth, D. Magee, P. Oesch, R. Bouwens and the HUDF09 Team. Narration uses a synthetic voice.",
+        "number": 50,
+        "raw": "50",
+        "matchedFact": "xdf-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Hubble's eXtreme Deep Field: one tiny patch of sky, a small fraction of the width of the full Moon, holds about 5,500 galaxies. Hubble stared at it for a total of 50 days over 10 years, and some of the light set off 13.2 billion years ago.\n\nSource:\nNASA Science, Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe: https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/\n\nImage: NASA / ESA / G. Illingworth, D. Magee, P. Oesch, R. Bouwens and the HUDF09 Team. Narration uses a synthetic voice.",
+        "number": 10,
+        "raw": "10",
+        "matchedFact": "xdf-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Hubble's eXtreme Deep Field: one tiny patch of sky, a small fraction of the width of the full Moon, holds about 5,500 galaxies. Hubble stared at it for a total of 50 days over 10 years, and some of the light set off 13.2 billion years ago.\n\nSource:\nNASA Science, Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe: https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/\n\nImage: NASA / ESA / G. Illingworth, D. Magee, P. Oesch, R. Bouwens and the HUDF09 Team. Narration uses a synthetic voice.",
+        "number": 13.2,
+        "raw": "13.2",
+        "matchedFact": "xdf-age"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T18:47:53.082Z",
+    "verdict": "pass",
+    "notes": "Checked against NASA's XDF release: ~5,500 galaxies, patch a small fraction of the full Moon's width, 50 days over 10 years, 2,000+ images, galaxies back 13.2 billion years. 'Almost every dot' hedges for the few foreground stars. Avoided the release's dated 13.7-billion-year universe age."
+  }
+}

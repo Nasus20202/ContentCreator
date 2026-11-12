@@ -5,6 +5,83 @@
 
 ## 2026-11-12 · strategy · human
 
+**Launch slate: publish episode 1 plus four evergreen Sky School shorts on launch day (Fri 13 Nov 2026): Pale Blue Dot, Every dot is a galaxy (Hubble eXtreme Deep Field), How fast are you moving (computed for eu-central), Your age on other planets**
+
+User wants a big-bang start; a profile with several strong evergreen shorts converts visitors into followers better than one weekly episode; all four use real NASA imagery or computed numbers, our edge over AI-art space channels
+
+Alternatives considered:
+- delay launch until the shorts are ready
+- drip the shorts into empty weeks (Nov 23-29)
+- launch with episode 1 alone
+
+Inputs: `docs/content-strategy.md`, `NASA PIA00452`, `NASA PIA23645`, `NASA GSFC_20171208_Archive_e001651`
+
+## 2026-11-12 · visuals · claude
+
+**Journey scenes get a real NASA photo of the destination as a backdrop that grows and brightens as the traveller approaches; bodies and labels drawn larger; every scene has a slow 3.5% push-in**
+
+User feedback: shorts need something to SEE, not just numbers on a dark field; still frames between animations felt static on a phone
+
+Alternatives considered:
+- AI-generated star art (rejected: real imagery only)
+- static photo scenes between diagrams (rejected: splits the trip from the picture)
+- no push-in (frames sit still between animations)
+
+Inputs: `video/scenes/JourneyScene.tsx`, `video/Episode.tsx`
+
+## 2026-11-12 · visuals · claude
+
+**Every episode holds 1.6 s after the last word (END_HOLD_SEC), the outro CTA appears when 'Follow…' is spoken, and weekly/Sky Tonight outros now say the follow line.**
+
+Owner: the ending showed 'Follow so you don't miss it' while the voice said 'Clear skies', and the video cut off instead of ending.
+
+Alternatives considered:
+- Remove the CTA text (rejected: the CTA is the outro's job)
+
+## 2026-11-12 · visuals · claude
+
+**New templates: 'journey' (bodies to scale along a track, a photon or ship travelling with up to two running clocks; arrival badges) and 'laps' (light circling a body in slow motion with a lap counter, optionally on a real NASA photo of the body). Light travel and twin paradox rebuilt on them.**
+
+Owner: the light-travel video needed more visualisation. Its middle was three number cards in a row, and the twin paradox was all cards; the insight in both is a trip and a clock, which the journey template shows directly. Earth in 'laps' is Apollo 17's Blue Marble (NASA, credited), not a drawing.
+
+Alternatives considered:
+- More factCard animation (rejected: still a number on a background)
+- 3D orbit scene for the light trip (rejected: orbit3d is for heliocentric positions at a date, not a trip)
+
+## 2026-11-12 · visuals · claude
+
+**In-video branding and polish: Photon Sphere mark inside the series badge with a progress hairline; outro brand lockup (mark, name, @thephotonsphere, CTA); vignette; drifting colour nebula on card backgrounds (not on sky views); fact-card orbit ring fixed (static tilted ellipse with an orbiting dot); compare scene rebuilt with full-width tracks and visible slivers; scale scene rebuilt with ruler ticks, a travelling spark and boxed labels; Orbit3D labels capped above the caption band.**
+
+Owner asked for logos in the videos and a more appealing look. The rotating ring from the WIP commit cut through the numbers; compare bars were small and left-hanging; the scale was a thin left-aligned line with wrapping labels; the Mars orbit 'Earth' label sat under the captions. The mark is the existing procedural logo (no AI imagery), rendered as video/brand/mark.png from the 'Mark' still. Nebula is decorative and kept off computed sky views so the sky stays real.
+
+Alternatives considered:
+- Corner watermark through the whole video incl. the hook (rejected: clutters the 3 s hook)
+- Animated logo sting intro (rejected: delays the hook)
+
+## 2026-11-12 · visuals · claude
+
+**Arranged music beds replace the piano loops: 'orbit' (Sky This Week, 92 bpm), 'nebula' (Sky School, 78 bpm), 'meteor' (Sky Tonight, 104 bpm). Each has a seeded chord progression, piano arpeggio, motif, soft kick + shaker with sidechain, sub bass and reverb, and follows the scenes: lighter hook, full body, risers into scene cuts, a soft impact after the hook, drums out for the outro and a final home chord. Old piano styles stay selectable.**
+
+Owner asked for more interesting music. The old bed was one slow Am-F-C-G loop for every episode and read as static under a 50 s short. Still fully synthesised/CC0-sampled (no licensing), deterministic, loudness-matched at -17.8 LUFS and ducked under narration as before.
+
+Alternatives considered:
+- Licensed stock music (rejected: licensing/Content ID claims)
+- AI-generated music (rejected: policy)
+- Keep the piano loop with more variants (rejected: still a loop)
+
+## 2026-11-12 · strategy · claude
+
+**Dropped five draft episodes: sky-this-week 2026-11-23, 2026-11-30, 2026-12-07, 2026-12-28 (eu-central) and 2026-12-14 us-east. Their weeks are filled with Sky School explainers (Proxima 18 Nov, light travel 25 Nov, Geminids radiant 2 Dec, twin paradox 23 Dec).**
+
+Owner asked to drop drafts that are not good enough. The four weeklies were 16-21 s with one or two loose events and no hook (11-23 opened on 'Venus is low in the south-east' and repeated it; 11-30 said 'low in the south-east, halfway up the sky', a contradiction; 12-07 was a new Moon note; 12-28 two unrelated facts). The quality bar says thin weeks get a different format or are skipped, and series/sky-school.md exists for exactly those weeks. 12-14 us-east is a near-duplicate of the eu-central cut for the same single channel (no templated near-duplicates). Proxima lands on 18 Nov, the day Voyager 1 reaches one light-day, which the episode mentions.
+
+Alternatives considered:
+- Rewrite the thin weeklies (rejected: the sky has nothing worth a guide those weeks)
+- Keep us-east as a separate upload (rejected: duplicate on one channel)
+- Drop Sky Tonight Geminids too (kept: same-day reminder is that series' job)
+
+## 2026-11-12 · strategy · human
+
 **Sky Tonight test: a reminder the day before a big night event, then a next-day recap with real imagery of that night. The recap uses footage the owner films, or credited NASA imagery if no footage exists; computed graphics alone are not presented as footage.**
 
 Reminder/follow-up pairs give date-urgent posts a second moment of return. Computed graphics cannot be passed off as the night's real sky, so the recap has to carry real imagery with provenance. First test: Geminids, reminder 13 Dec, recap 14 Dec. Stop rule from docs/content-strategy.md: if views are under 1.5x the median weekly episode after three tries, drop the format.

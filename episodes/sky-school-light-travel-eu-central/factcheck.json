@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T15:55:41.009Z",
-  "planHash": "b045deee77b94621",
+  "checkedAt": "2026-11-12T18:12:59.511Z",
+  "planHash": "a3b81750046d46f1",
   "automated": {
     "ok": true,
     "claims": [
@@ -31,22 +31,30 @@
       {
         "sceneId": "speed",
         "where": "narration[0]",
-        "text": "Light travels 299,792 kilometres every second in a vacuum.",
+        "text": "Light travels 299,792 kilometres every second.",
         "number": 299792,
         "raw": "299792",
         "matchedFact": "light-speed"
       },
       {
         "sceneId": "speed",
-        "where": "factCard",
-        "text": "299,792 kilometres per second",
-        "number": 299792,
-        "raw": "299792",
-        "matchedFact": "light-speed"
+        "where": "narration[1]",
+        "text": "That is about seven and a half times around the Earth, every second.",
+        "number": 7,
+        "raw": "seven",
+        "matchedFact": "earth-laps"
+      },
+      {
+        "sceneId": "speed",
+        "where": "laps",
+        "text": "7.5 around Earth, every second Shown slowed down",
+        "number": 7.5,
+        "raw": "7.5",
+        "matchedFact": "earth-laps"
       },
       {
         "sceneId": "distance",
-        "where": "narration[0]",
+        "where": "narration[1]",
         "text": "The Sun is about a hundred and fifty million kilometres away.",
         "number": 150000000,
         "raw": "a hundred and fifty million",
@@ -54,31 +62,79 @@
       },
       {
         "sceneId": "distance",
-        "where": "narration[1]",
-        "text": "At that speed, its light needs eight minutes and twenty seconds to arrive.",
+        "where": "narration[2]",
+        "text": "At that speed, its light needs eight minutes and twenty seconds to reach us.",
         "number": 8,
         "raw": "eight",
         "matchedFact": "sun-light-time"
       },
       {
         "sceneId": "distance",
-        "where": "narration[1]",
-        "text": "At that speed, its light needs eight minutes and twenty seconds to arrive.",
+        "where": "narration[2]",
+        "text": "At that speed, its light needs eight minutes and twenty seconds to reach us.",
         "number": 20,
         "raw": "twenty",
         "matchedFact": "sun-light-time"
       },
       {
         "sceneId": "distance",
-        "where": "factCard",
-        "text": "150 million km from the Sun to Earth",
+        "where": "stops[1]",
+        "text": "Earth 150 million km 8 min 20 s",
         "number": 150,
         "raw": "150",
         "matchedFact": "sun-distance"
       },
       {
+        "sceneId": "distance",
+        "where": "stops[1]",
+        "text": "Earth 150 million km 8 min 20 s",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "distance",
+        "where": "stops[1]",
+        "text": "Earth 150 million km 8 min 20 s",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "distance",
+        "where": "stops[2]",
+        "text": "Jupiter 5.2 AU on average 43 min",
+        "number": 5.2,
+        "raw": "5.2",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
+        "sceneId": "distance",
+        "where": "stops[2]",
+        "text": "Jupiter 5.2 AU on average 43 min",
+        "number": 43,
+        "raw": "43",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
+        "sceneId": "distance",
+        "where": "clocks[0]",
+        "text": "Light travel time 8 min 20 s",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "distance",
+        "where": "clocks[0]",
+        "text": "Light travel time 8 min 20 s",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "sun-light-time"
+      },
+      {
         "sceneId": "jupiter",
-        "where": "narration[0]",
+        "where": "narration[1]",
         "text": "Jupiter is about five and a fifth astronomical units away on average.",
         "number": 5,
         "raw": "five",
@@ -86,7 +142,7 @@
       },
       {
         "sceneId": "jupiter",
-        "where": "narration[0]",
+        "where": "narration[1]",
         "text": "Jupiter is about five and a fifth astronomical units away on average.",
         "number": 5,
         "raw": "fifth",
@@ -94,16 +150,72 @@
       },
       {
         "sceneId": "jupiter",
-        "where": "narration[1]",
-        "text": "On average, sunlight takes forty-three minutes to reach it.",
+        "where": "narration[2]",
+        "text": "Sunlight takes forty-three minutes to reach it.",
         "number": 43,
         "raw": "forty three",
         "matchedFact": "jupiter-light-time"
       },
       {
         "sceneId": "jupiter",
-        "where": "factCard",
-        "text": "43 min sunlight to Jupiter, on average",
+        "where": "stops[1]",
+        "text": "Earth 150 million km 8 min 20 s",
+        "number": 150,
+        "raw": "150",
+        "matchedFact": "sun-distance"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "stops[1]",
+        "text": "Earth 150 million km 8 min 20 s",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "stops[1]",
+        "text": "Earth 150 million km 8 min 20 s",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "stops[2]",
+        "text": "Jupiter 5.2 AU on average 43 min",
+        "number": 5.2,
+        "raw": "5.2",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "stops[2]",
+        "text": "Jupiter 5.2 AU on average 43 min",
+        "number": 43,
+        "raw": "43",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "clocks[0]",
+        "text": "Light travel time 8 min 20 s 43 min",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "clocks[0]",
+        "text": "Light travel time 8 min 20 s 43 min",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "clocks[0]",
+        "text": "Light travel time 8 min 20 s 43 min",
         "number": 43,
         "raw": "43",
         "matchedFact": "jupiter-light-time"
@@ -185,8 +297,8 @@
   },
   "review": {
     "actor": "claude",
-    "at": "2026-11-12T15:58:28.756Z",
+    "at": "2026-11-12T18:13:13.896Z",
     "verdict": "pass",
-    "notes": "Semantic review after adding a bar-comparison scene: the bars reuse facts already in this episode's record. Times are the same as the cards (twin paradox 40 and 52,000 years round trip; Proxima 89,000 and 28 years; light 8 min 20 s and 43 min). The 'thousands of times longer' line is 89,000 divided by 28, about 3,200. The 'about five times longer' line is 43 divided by 8.3, about 5.2. The log-scale bars are labelled as log scale on screen; the light bars are drawn to scale. No new claims."
+    "notes": "Backdrops: Apollo 17 Blue Marble for the Sun-to-Earth trip and the Cassini Jupiter portrait for the Jupiter leg; labels avoid unbacked numbers. Narration re-read: 299,792 km/s, 7.5 laps of Earth per second, 8 min 20 s to Earth, 43 min to Jupiter at 5.2 AU all match facts."
   }
 }

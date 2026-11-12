@@ -26,6 +26,12 @@ Alternatives considered:
 
 Inputs: `episodes/sky-this-week-2027-01-04-eu-central/research.json`, `series/sky-this-week.md`
 
+### 2026-11-12 17:13 · script · claude
+
+**Hook rewritten to 'The year's first big meteor shower peaks this weekend.' followed by the before-dawn-Monday advice.**
+
+The old first sentence was 15 words and opened on a negative (radiant barely above the horizon); the first line must land the promise in ~3 s.
+
 ## Research — detected events
 
 | Score | Event | When (UTC) | Best view |
@@ -42,8 +48,8 @@ Inputs: `episodes/sky-this-week-2027-01-04-eu-central/research.json`, `series/sk
 
 **hook** (`skyView`) — facts: `meteors-quadrantids-2027-01-03-peak`, `meteors-quadrantids-2027-01-03-radiant`, `episode-window`
 
-> The Quadrantids peak on Sunday evening, with the radiant barely above the northern horizon.
-> The real chance from Europe is the hours before dawn on Monday, when it climbs high in the east.
+> The year's first big meteor shower peaks this weekend.
+> From Europe, the best chance is the hours before dawn on Monday, when the radiant climbs high in the east.
 
 **when** (`skyView`) — facts: `meteors-quadrantids-2027-01-03-radiant`, `meteors-quadrantids-2027-01-03-moon`
 
@@ -58,6 +64,7 @@ Inputs: `episodes/sky-this-week-2027-01-04-eu-central/research.json`, `series/sk
 **outro** (`outro`) — facts: `episode-location`, `episode-window`
 
 > Positions calculated for central Europe.
+> Follow, so you don't miss next week's sky.
 > Clear skies.
 
 ### Post copy
@@ -83,7 +90,7 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 
 ## Render
 
-35.4 s, 1080×1920@30, sha256 `42457e11bb6e7769…`, rendered 2026-11-12T14:40:57.845Z in 130 s.
+37.6 s, 1080×1920@30, sha256 `8e064f4b7f2ba59e…`, rendered 2026-11-12T18:40:51.376Z in 177 s.
 
 ## QA
 
@@ -92,13 +99,13 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 35.40 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 35.40 s vs timeline 35.33 s |
-| loudness | ✅ | -14.1 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.5 dBFS |
+| duration | ✅ | 37.60 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 37.60 s vs timeline 37.53 s |
+| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T14:41:35.297Z): **pass** — Reviewed the opening and closing frames of all eight cuts: hook framing holds (Moon/Jupiter/Venus/Mars subjects stay in frame after the 20% tighter opening field), outro shows the CTA and the new '50°N 15°E' footnote without overlap. Fact-card push-in checked on the 21 Dec card; the other cards use the same code. Motion smoothness and audio mix are not judgeable from stills and are left to the human watch.
+Visual review by **claude** (2026-11-12T18:53:53.768Z): **pass** — Quadrantids: Bootes radiant, east before dawn, 12% Moon, 80 ZHR card, outro synced. The radiant label touches the hook title for a moment before the title fades; acceptable.
 
 ## Event log
 
@@ -174,3 +181,30 @@ Visual review by **claude** (2026-11-12T14:41:35.297Z): **pass** — Reviewed th
 | 2026-11-12 14:41:03 | pipeline | qa | qa.automated | 395ad8b |
 | 2026-11-12 14:41:35 | claude | qa | qa.review | 395ad8b |
 | 2026-11-12 14:41:35 | claude | qa-passed | stage.advance | 395ad8b |
+| 2026-11-12 17:12:05 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:12:05 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:12:05 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:12:25 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:12:25 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 17:13:05 | claude | script | decision.record | 56e31e5 |
+| 2026-11-12 17:33:49 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 17:33:49 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 17:36:12 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:36:12 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:36:18 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:54:10 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:54:10 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 17:54:32 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:54:32 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:54:33 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:54:34 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:54:34 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 18:16:53 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:16:53 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 18:37:53 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:37:53 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:40:51 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:40:51 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:40:58 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:53:53 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 18:53:53 | claude | qa-passed | stage.advance | 56e31e5 |

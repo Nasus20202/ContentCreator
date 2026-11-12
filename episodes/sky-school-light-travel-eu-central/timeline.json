@@ -1,7 +1,7 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "fd6c15194cef7345",
+  "narrationHash": "bc3a227f582f2b3a",
   "timing": "estimated-proportional",
   "scenes": [
     {
@@ -128,104 +128,114 @@
     {
       "sceneId": "speed",
       "audioFile": "voice/speed.wav",
-      "duration": 9.612,
+      "duration": 9.427,
       "sentences": [
         {
-          "text": "Light travels 299,792 kilometres every second in a vacuum.",
+          "text": "Light travels 299,792 kilometres every second.",
           "start": 0.15,
-          "end": 6.224,
+          "end": 5.431,
           "words": [
             {
               "w": "Light",
               "start": 0.15,
-              "end": 0.766
+              "end": 0.835
             },
             {
               "w": "travels",
-              "start": 0.766,
-              "end": 1.559
+              "start": 0.835,
+              "end": 1.715
             },
             {
               "w": "299,792",
-              "start": 1.559,
-              "end": 2.263
+              "start": 1.715,
+              "end": 2.497
             },
             {
               "w": "kilometres",
-              "start": 2.263,
-              "end": 3.319
+              "start": 2.497,
+              "end": 3.671
             },
             {
               "w": "every",
-              "start": 3.319,
-              "end": 3.936
+              "start": 3.671,
+              "end": 4.355
             },
             {
-              "w": "second",
-              "start": 3.936,
-              "end": 4.64
-            },
-            {
-              "w": "in",
-              "start": 4.64,
-              "end": 4.992
-            },
-            {
-              "w": "a",
-              "start": 4.992,
-              "end": 5.256
-            },
-            {
-              "w": "vacuum.",
-              "start": 5.256,
-              "end": 6.224
+              "w": "second.",
+              "start": 4.355,
+              "end": 5.431
             }
           ]
         },
         {
-          "text": "That sounds instant, but the distances are enormous.",
-          "start": 6.504,
-          "end": 9.332,
+          "text": "That is about seven and a half times around the Earth, every second.",
+          "start": 5.711,
+          "end": 9.147,
           "words": [
             {
               "w": "That",
-              "start": 6.504,
-              "end": 6.765
+              "start": 5.711,
+              "end": 5.951
             },
             {
-              "w": "sounds",
-              "start": 6.765,
-              "end": 7.113
+              "w": "is",
+              "start": 5.951,
+              "end": 6.111
             },
             {
-              "w": "instant,",
-              "start": 7.113,
-              "end": 7.636
+              "w": "about",
+              "start": 6.111,
+              "end": 6.39
             },
             {
-              "w": "but",
-              "start": 7.636,
-              "end": 7.853
+              "w": "seven",
+              "start": 6.39,
+              "end": 6.67
+            },
+            {
+              "w": "and",
+              "start": 6.67,
+              "end": 6.87
+            },
+            {
+              "w": "a",
+              "start": 6.87,
+              "end": 6.99
+            },
+            {
+              "w": "half",
+              "start": 6.99,
+              "end": 7.229
+            },
+            {
+              "w": "times",
+              "start": 7.229,
+              "end": 7.509
+            },
+            {
+              "w": "around",
+              "start": 7.509,
+              "end": 7.829
             },
             {
               "w": "the",
-              "start": 7.853,
-              "end": 8.071
+              "start": 7.829,
+              "end": 8.028
             },
             {
-              "w": "distances",
-              "start": 8.071,
-              "end": 8.549
+              "w": "Earth,",
+              "start": 8.028,
+              "end": 8.428
             },
             {
-              "w": "are",
-              "start": 8.549,
-              "end": 8.767
+              "w": "every",
+              "start": 8.428,
+              "end": 8.708
             },
             {
-              "w": "enormous.",
-              "start": 8.767,
-              "end": 9.332
+              "w": "second.",
+              "start": 8.708,
+              "end": 9.147
             }
           ]
         }
@@ -234,139 +244,171 @@
     {
       "sceneId": "distance",
       "audioFile": "voice/distance.wav",
-      "duration": 7.915,
+      "duration": 9.495,
       "sentences": [
         {
-          "text": "The Sun is about a hundred and fifty million kilometres away.",
+          "text": "But space is enormous.",
           "start": 0.15,
-          "end": 3.496,
+          "end": 1.401,
           "words": [
             {
-              "w": "The",
+              "w": "But",
               "start": 0.15,
-              "end": 0.373
+              "end": 0.366
             },
             {
-              "w": "Sun",
-              "start": 0.373,
-              "end": 0.596
+              "w": "space",
+              "start": 0.366,
+              "end": 0.668
             },
             {
               "w": "is",
-              "start": 0.596,
-              "end": 0.775
+              "start": 0.668,
+              "end": 0.84
             },
             {
-              "w": "about",
-              "start": 0.775,
-              "end": 1.087
-            },
-            {
-              "w": "a",
-              "start": 1.087,
-              "end": 1.221
-            },
-            {
-              "w": "hundred",
-              "start": 1.221,
-              "end": 1.622
-            },
-            {
-              "w": "and",
-              "start": 1.622,
-              "end": 1.845
-            },
-            {
-              "w": "fifty",
-              "start": 1.845,
-              "end": 2.158
-            },
-            {
-              "w": "million",
-              "start": 2.158,
-              "end": 2.559
-            },
-            {
-              "w": "kilometres",
-              "start": 2.559,
-              "end": 3.094
-            },
-            {
-              "w": "away.",
-              "start": 3.094,
-              "end": 3.496
+              "w": "enormous.",
+              "start": 0.84,
+              "end": 1.401
             }
           ]
         },
         {
-          "text": "At that speed, its light needs eight minutes and twenty seconds to arrive.",
-          "start": 3.776,
-          "end": 7.635,
+          "text": "The Sun is about a hundred and fifty million kilometres away.",
+          "start": 1.681,
+          "end": 5.027,
           "words": [
             {
-              "w": "At",
-              "start": 3.776,
-              "end": 3.944
+              "w": "The",
+              "start": 1.681,
+              "end": 1.904
             },
             {
-              "w": "that",
-              "start": 3.944,
-              "end": 4.195
+              "w": "Sun",
+              "start": 1.904,
+              "end": 2.127
             },
             {
-              "w": "speed,",
-              "start": 4.195,
-              "end": 4.615
+              "w": "is",
+              "start": 2.127,
+              "end": 2.306
             },
             {
-              "w": "its",
-              "start": 4.615,
-              "end": 4.825
+              "w": "about",
+              "start": 2.306,
+              "end": 2.618
             },
             {
-              "w": "light",
-              "start": 4.825,
-              "end": 5.118
+              "w": "a",
+              "start": 2.618,
+              "end": 2.752
             },
             {
-              "w": "needs",
-              "start": 5.118,
-              "end": 5.412
-            },
-            {
-              "w": "eight",
-              "start": 5.412,
-              "end": 5.705
-            },
-            {
-              "w": "minutes",
-              "start": 5.705,
-              "end": 6.083
+              "w": "hundred",
+              "start": 2.752,
+              "end": 3.153
             },
             {
               "w": "and",
-              "start": 6.083,
-              "end": 6.293
+              "start": 3.153,
+              "end": 3.376
+            },
+            {
+              "w": "fifty",
+              "start": 3.376,
+              "end": 3.689
+            },
+            {
+              "w": "million",
+              "start": 3.689,
+              "end": 4.09
+            },
+            {
+              "w": "kilometres",
+              "start": 4.09,
+              "end": 4.626
+            },
+            {
+              "w": "away.",
+              "start": 4.626,
+              "end": 5.027
+            }
+          ]
+        },
+        {
+          "text": "At that speed, its light needs eight minutes and twenty seconds to reach us.",
+          "start": 5.307,
+          "end": 9.215,
+          "words": [
+            {
+              "w": "At",
+              "start": 5.307,
+              "end": 5.472
+            },
+            {
+              "w": "that",
+              "start": 5.472,
+              "end": 5.718
+            },
+            {
+              "w": "speed,",
+              "start": 5.718,
+              "end": 6.13
+            },
+            {
+              "w": "its",
+              "start": 6.13,
+              "end": 6.335
+            },
+            {
+              "w": "light",
+              "start": 6.335,
+              "end": 6.623
+            },
+            {
+              "w": "needs",
+              "start": 6.623,
+              "end": 6.911
+            },
+            {
+              "w": "eight",
+              "start": 6.911,
+              "end": 7.199
+            },
+            {
+              "w": "minutes",
+              "start": 7.199,
+              "end": 7.57
+            },
+            {
+              "w": "and",
+              "start": 7.57,
+              "end": 7.775
             },
             {
               "w": "twenty",
-              "start": 6.293,
-              "end": 6.628
+              "start": 7.775,
+              "end": 8.104
             },
             {
               "w": "seconds",
-              "start": 6.628,
-              "end": 7.006
+              "start": 8.104,
+              "end": 8.474
             },
             {
               "w": "to",
-              "start": 7.006,
-              "end": 7.173
+              "start": 8.474,
+              "end": 8.639
             },
             {
-              "w": "arrive.",
-              "start": 7.173,
-              "end": 7.635
+              "w": "reach",
+              "start": 8.639,
+              "end": 8.927
+            },
+            {
+              "w": "us.",
+              "start": 8.927,
+              "end": 9.215
             }
           ]
         }
@@ -375,124 +417,146 @@
     {
       "sceneId": "jupiter",
       "audioFile": "voice/jupiter.wav",
-      "duration": 7.966,
+      "duration": 8.806,
       "sentences": [
         {
-          "text": "Jupiter is about five and a fifth astronomical units away on average.",
+          "text": "The same light keeps going.",
           "start": 0.15,
-          "end": 4.434,
+          "end": 1.539,
           "words": [
             {
-              "w": "Jupiter",
+              "w": "The",
               "start": 0.15,
-              "end": 0.609
+              "end": 0.348
             },
             {
-              "w": "is",
-              "start": 0.609,
-              "end": 0.813
+              "w": "same",
+              "start": 0.348,
+              "end": 0.587
             },
             {
-              "w": "about",
-              "start": 0.813,
-              "end": 1.17
+              "w": "light",
+              "start": 0.587,
+              "end": 0.864
             },
             {
-              "w": "five",
-              "start": 1.17,
-              "end": 1.476
+              "w": "keeps",
+              "start": 0.864,
+              "end": 1.142
             },
             {
-              "w": "and",
-              "start": 1.476,
-              "end": 1.731
-            },
-            {
-              "w": "a",
-              "start": 1.731,
-              "end": 1.884
-            },
-            {
-              "w": "fifth",
-              "start": 1.884,
-              "end": 2.241
-            },
-            {
-              "w": "astronomical",
-              "start": 2.241,
-              "end": 2.955
-            },
-            {
-              "w": "units",
-              "start": 2.955,
-              "end": 3.312
-            },
-            {
-              "w": "away",
-              "start": 3.312,
-              "end": 3.618
-            },
-            {
-              "w": "on",
-              "start": 3.618,
-              "end": 3.822
-            },
-            {
-              "w": "average.",
-              "start": 3.822,
-              "end": 4.434
+              "w": "going.",
+              "start": 1.142,
+              "end": 1.539
             }
           ]
         },
         {
-          "text": "On average, sunlight takes forty-three minutes to reach it.",
-          "start": 4.714,
-          "end": 7.686,
+          "text": "Jupiter is about five and a fifth astronomical units away on average.",
+          "start": 1.819,
+          "end": 6.103,
           "words": [
             {
-              "w": "On",
-              "start": 4.714,
-              "end": 4.879
+              "w": "Jupiter",
+              "start": 1.819,
+              "end": 2.278
             },
             {
-              "w": "average,",
-              "start": 4.879,
-              "end": 5.374
+              "w": "is",
+              "start": 2.278,
+              "end": 2.482
             },
             {
-              "w": "sunlight",
-              "start": 5.374,
-              "end": 5.787
+              "w": "about",
+              "start": 2.482,
+              "end": 2.839
+            },
+            {
+              "w": "five",
+              "start": 2.839,
+              "end": 3.145
+            },
+            {
+              "w": "and",
+              "start": 3.145,
+              "end": 3.4
+            },
+            {
+              "w": "a",
+              "start": 3.4,
+              "end": 3.553
+            },
+            {
+              "w": "fifth",
+              "start": 3.553,
+              "end": 3.91
+            },
+            {
+              "w": "astronomical",
+              "start": 3.91,
+              "end": 4.624
+            },
+            {
+              "w": "units",
+              "start": 4.624,
+              "end": 4.981
+            },
+            {
+              "w": "away",
+              "start": 4.981,
+              "end": 5.287
+            },
+            {
+              "w": "on",
+              "start": 5.287,
+              "end": 5.491
+            },
+            {
+              "w": "average.",
+              "start": 5.491,
+              "end": 6.103
+            }
+          ]
+        },
+        {
+          "text": "Sunlight takes forty-three minutes to reach it.",
+          "start": 6.383,
+          "end": 8.526,
+          "words": [
+            {
+              "w": "Sunlight",
+              "start": 6.383,
+              "end": 6.766
             },
             {
               "w": "takes",
-              "start": 5.787,
-              "end": 6.076
+              "start": 6.766,
+              "end": 7.034
             },
             {
               "w": "forty-three",
-              "start": 6.076,
-              "end": 6.572
+              "start": 7.034,
+              "end": 7.493
             },
             {
               "w": "minutes",
-              "start": 6.572,
-              "end": 6.943
+              "start": 7.493,
+              "end": 7.837
             },
             {
               "w": "to",
-              "start": 6.943,
-              "end": 7.108
+              "start": 7.837,
+              "end": 7.99
             },
             {
               "w": "reach",
-              "start": 7.108,
-              "end": 7.397
+              "start": 7.99,
+              "end": 8.258
             },
             {
               "w": "it.",
-              "start": 7.397,
-              "end": 7.686
+              "start": 8.258,
+              "end": 8.526
             }
           ]
         }

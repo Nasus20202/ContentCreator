@@ -1,24 +1,48 @@
 {
-  "checkedAt": "2026-11-12T15:55:39.914Z",
-  "planHash": "6be5fad350770483",
+  "checkedAt": "2026-11-12T18:12:52.422Z",
+  "planHash": "987b9afc92002d27",
   "automated": {
     "ok": true,
     "claims": [
       {
         "sceneId": "hook",
-        "where": "narration[1]",
-        "text": "It is 4.24 light-years away.",
-        "number": 4.24,
-        "raw": "4.24",
-        "matchedFact": "proxima-distance"
+        "where": "narration[0]",
+        "text": "Seventy-five thousand years.",
+        "number": 75000,
+        "raw": "seventy five thousand",
+        "matchedFact": "voyager1-speed-nasa"
       },
       {
         "sceneId": "hook",
-        "where": "factCard",
-        "text": "4.24 ly to Proxima Centauri",
+        "where": "narration[1]",
+        "text": "That is how long Voyager 1 would need to reach the nearest star, Proxima Centauri, 4.24 light-years away.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "voyager1-speed-nasa"
+      },
+      {
+        "sceneId": "hook",
+        "where": "narration[1]",
+        "text": "That is how long Voyager 1 would need to reach the nearest star, Proxima Centauri, 4.24 light-years away.",
         "number": 4.24,
         "raw": "4.24",
-        "matchedFact": "proxima-distance"
+        "matchedFact": "voyager1-speed-nasa"
+      },
+      {
+        "sceneId": "hook",
+        "where": "stops[1]",
+        "text": "Proxima Centauri 4.24 light-years",
+        "number": 4.24,
+        "raw": "4.24",
+        "matchedFact": "voyager1-speed-nasa"
+      },
+      {
+        "sceneId": "hook",
+        "where": "clocks[0]",
+        "text": "At Voyager's speed 75,000 yrs",
+        "number": 75000,
+        "raw": "75000",
+        "matchedFact": "voyager1-speed-nasa"
       },
       {
         "sceneId": "scale",
@@ -63,26 +87,50 @@
       {
         "sceneId": "voyager",
         "where": "narration[0]",
-        "text": "Voyager, our most distant spacecraft, moves at more than three astronomical units a year.",
-        "number": 3,
-        "raw": "three",
-        "matchedFact": "voyager-speed"
+        "text": "Voyager 1 moves at about seventeen kilometres every second.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "voyager1-speed-nasa"
+      },
+      {
+        "sceneId": "voyager",
+        "where": "narration[0]",
+        "text": "Voyager 1 moves at about seventeen kilometres every second.",
+        "number": 17,
+        "raw": "seventeen",
+        "matchedFact": "voyager1-speed-nasa"
       },
       {
         "sceneId": "voyager",
         "where": "narration[1]",
-        "text": "At that pace, the trip would take over eighty-nine thousand years.",
-        "number": 89000,
-        "raw": "eighty nine thousand",
-        "matchedFact": "voyager-speed"
+        "text": "Even so, the trip would take about seventy-five thousand years.",
+        "number": 75000,
+        "raw": "seventy five thousand",
+        "matchedFact": "voyager1-speed-nasa"
       },
       {
         "sceneId": "voyager",
-        "where": "factCard",
-        "text": "89,000+ years at Voyager's speed",
-        "number": 89000,
-        "raw": "89000",
-        "matchedFact": "voyager-speed"
+        "where": "chips[0]",
+        "text": "VOYAGER 1 · 17 KM/S",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "voyager1-speed-nasa"
+      },
+      {
+        "sceneId": "voyager",
+        "where": "chips[0]",
+        "text": "VOYAGER 1 · 17 KM/S",
+        "number": 17,
+        "raw": "17",
+        "matchedFact": "voyager1-speed-nasa"
+      },
+      {
+        "sceneId": "voyager",
+        "where": "chips[1]",
+        "text": "STILL 75,000 YEARS TO PROXIMA",
+        "number": 75000,
+        "raw": "75000",
+        "matchedFact": "voyager1-speed-nasa"
       },
       {
         "sceneId": "starshot",
@@ -102,35 +150,51 @@
       },
       {
         "sceneId": "starshot",
-        "where": "factCard",
-        "text": "28 years at 15% of light speed",
-        "number": 28,
-        "raw": "28",
+        "where": "stops[1]",
+        "text": "Proxima Centauri 4.24 light-years",
+        "number": 4.24,
+        "raw": "4.24",
         "matchedFact": "starshot-speed"
       },
       {
         "sceneId": "starshot",
-        "where": "factCard",
-        "text": "28 years at 15% of light speed",
+        "where": "clocks[0]",
+        "text": "Starshot, 15% of c 28 yrs",
         "number": 15,
         "raw": "15%",
         "matchedFact": "starshot-speed"
       },
       {
-        "sceneId": "compare",
-        "where": "bars[0]",
-        "text": "89,000 years Voyager, at 3 AU a year",
-        "number": 89000,
-        "raw": "89000",
-        "matchedFact": "voyager-speed"
+        "sceneId": "starshot",
+        "where": "clocks[0]",
+        "text": "Starshot, 15% of c 28 yrs",
+        "number": 28,
+        "raw": "28",
+        "matchedFact": "starshot-speed"
       },
       {
         "sceneId": "compare",
         "where": "bars[0]",
-        "text": "89,000 years Voyager, at 3 AU a year",
-        "number": 3,
-        "raw": "3",
-        "matchedFact": "voyager-speed"
+        "text": "75,000 years Voyager 1, at 17 km/s",
+        "number": 75000,
+        "raw": "75000",
+        "matchedFact": "voyager1-speed-nasa"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[0]",
+        "text": "75,000 years Voyager 1, at 17 km/s",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "voyager1-speed-nasa"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[0]",
+        "text": "75,000 years Voyager 1, at 17 km/s",
+        "number": 17,
+        "raw": "17",
+        "matchedFact": "voyager1-speed-nasa"
       },
       {
         "sceneId": "compare",
@@ -166,16 +230,24 @@
       },
       {
         "sceneId": "ship-clock",
-        "where": "factCard",
-        "text": "10 min of ship time, at nearly light speed",
+        "where": "stops[1]",
+        "text": "Proxima Centauri 4.24 light-years",
+        "number": 4.24,
+        "raw": "4.24",
+        "matchedFact": "proxima-distance"
+      },
+      {
+        "sceneId": "ship-clock",
+        "where": "clocks[0]",
+        "text": "On board 10 min",
         "number": 10,
         "raw": "10",
         "matchedFact": "lorentz-clock"
       },
       {
-        "sceneId": "post",
-        "where": "description",
-        "text": "Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager: https://science.nasa.gov/mission/voyager/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "sceneId": "ship-clock",
+        "where": "clocks[1]",
+        "text": "On Earth 4.24 yrs",
         "number": 4.24,
         "raw": "4.24",
         "matchedFact": "proxima-distance"
@@ -183,23 +255,39 @@
       {
         "sceneId": "post",
         "where": "description",
-        "text": "Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager: https://science.nasa.gov/mission/voyager/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
-        "number": 3,
-        "raw": "3",
-        "matchedFact": "voyager-speed"
+        "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "number": 4.24,
+        "raw": "4.24",
+        "matchedFact": "voyager1-speed-nasa"
       },
       {
         "sceneId": "post",
         "where": "description",
-        "text": "Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager: https://science.nasa.gov/mission/voyager/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
-        "number": 89000,
-        "raw": "89000",
-        "matchedFact": "voyager-speed"
+        "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "voyager-lightday"
       },
       {
         "sceneId": "post",
         "where": "description",
-        "text": "Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager: https://science.nasa.gov/mission/voyager/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "number": 17,
+        "raw": "17",
+        "matchedFact": "voyager1-speed-nasa"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "number": 75000,
+        "raw": "75000",
+        "matchedFact": "voyager1-speed-nasa"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
         "number": 15,
         "raw": "15%",
         "matchedFact": "starshot-speed"
@@ -207,7 +295,7 @@
       {
         "sceneId": "post",
         "where": "description",
-        "text": "Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager: https://science.nasa.gov/mission/voyager/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
         "number": 28,
         "raw": "28",
         "matchedFact": "starshot-speed"
@@ -215,7 +303,7 @@
       {
         "sceneId": "post",
         "where": "description",
-        "text": "Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager: https://science.nasa.gov/mission/voyager/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
         "number": 223000,
         "raw": "223000",
         "matchedFact": "lorentz-clock"
@@ -223,15 +311,15 @@
       {
         "sceneId": "post",
         "where": "description",
-        "text": "Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager: https://science.nasa.gov/mission/voyager/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
         "number": 4.24,
         "raw": "4.24",
-        "matchedFact": "proxima-distance"
+        "matchedFact": "voyager1-speed-nasa"
       },
       {
         "sceneId": "post",
         "where": "description",
-        "text": "Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager: https://science.nasa.gov/mission/voyager/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
         "number": 10,
         "raw": "10",
         "matchedFact": "lorentz-clock"
@@ -239,18 +327,18 @@
       {
         "sceneId": "post",
         "where": "description",
-        "text": "Proxima Centauri is 4.24 light-years away. Voyager, moving at more than 3 AU a year, would need about 89,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager: https://science.nasa.gov/mission/voyager/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
-        "number": 3,
-        "raw": "3",
-        "matchedFact": "voyager-speed"
+        "text": "Proxima Centauri is 4.24 light-years away. Voyager 1, moving at about 17 km/s, would need about 75,000 years. Breakthrough Starshot's probes are designed for about 15% of light speed: about 28 years. For the crew, the clock on board runs slower: at nearly the speed of light (a Lorentz factor of about 223,000), a 4.24 light-year trip takes about 10 minutes of ship time.\n\nSources:\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\nNASA Science, Voyager 1: https://science.nasa.gov/mission/voyager/voyager-1/\nBreakthrough Initiatives, Starshot: https://breakthroughinitiatives.org/initiative/3\nLorentz factor (time dilation): https://en.wikipedia.org/wiki/Lorentz_factor\n\nNarration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "voyager-lightday"
       }
     ],
     "problems": []
   },
   "review": {
     "actor": "claude",
-    "at": "2026-11-12T15:57:06.785Z",
+    "at": "2026-11-12T18:13:11.745Z",
     "verdict": "pass",
-    "notes": "Semantic review after adding a bar-comparison scene: the bars reuse facts already in this episode's record. Times are the same as the cards (twin paradox 40 and 52,000 years round trip; Proxima 89,000 and 28 years; light 8 min 20 s and 43 min). The 'thousands of times longer' line is 89,000 divided by 28, about 3,200. The 'about five times longer' line is 43 divided by 8.3, about 5.2. The log-scale bars are labelled as log scale on screen; the light bars are drawn to scale. No new claims."
+    "notes": "Only change: journey backdrops use the Hubble photo of Alpha Centauri A and B, labelled as Proxima's neighbours (not as Proxima itself, of which NASA's library has no photo). Narration and numbers unchanged and still match the facts."
   }
 }

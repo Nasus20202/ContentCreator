@@ -6,20 +6,46 @@
 | --- | --- |
 | Episode | sky-school-twin-paradox-eu-central |
 | Series | sky-school |
-| Stage | **rendered** |
+| Stage | **qa-passed** |
 | Created | 2026-11-12T15:46:20.789Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
 
 ## Decisions
 
-_None recorded yet._
+### 2026-11-12 17:13 · visuals · claude
+
+**Comparison bars drawn to scale (linear) instead of log; narration and note say 'drawn to scale'.**
+
+On a log scale 28 vs 75,000 (or 40 vs 52,000) looked like a 1:3 difference, which hides the point of the episode. Linear shows the short trip as a glowing sliver, which is the true picture.
+
+Alternatives considered:
+- Keep log scale with a note (rejected: viewers read bar length, not the note)
+
+### 2026-11-12 17:13 · script · claude
+
+**Hook leads with the payoff: 'Fly to the centre of our galaxy and back, and you age forty years. Earth ages fifty-two thousand.'**
+
+The old hook ('…at one g, and back, and you come home younger') promised a result without the number; the two clocks are the episode's insight.
+
+Alternatives considered:
+- Lead with Andromeda's 5 million years (rejected: the centre comes first in the script)
+
+### 2026-11-12 18:19 · visuals · claude
+
+**Destination photos as journey backdrops (NASA library, credited on screen)**
+
+Gives every trip a real place to arrive at; Proxima has no NASA photo, so Hubble's Alpha Centauri A and B is labelled as Proxima's neighbours
+
+Alternatives considered:
+- keep the plain starfield
 
 ## Script
 
 **hook** (`image`) — facts: `paradox`, `gravity-1g`, `trip-times`
 
-> Fly to the galaxy's centre at one g, and back, and you come home younger.
+> Fly to the centre of our galaxy and back, and you age forty years.
+> Earth ages fifty-two thousand.
 > Do the same to Andromeda, and the gap is far bigger.
 
 **paradox** (`factCard`) — facts: `paradox`, `lorentz-peak`
@@ -27,21 +53,21 @@ _None recorded yet._
 > This is the twin paradox.
 > Only the traveller accelerates and turns around, so only the traveller comes home younger.
 
-**centre** (`factCard`) — facts: `centre-distance`, `trip-times`
+**centre** (`journey`) — facts: `centre-distance`, `trip-times`
 
 > The centre of the Milky Way, home to a black hole, is about 26,000 light-years away.
 > At one g, the trip there takes about twenty years on board.
 
-**centre-earth** (`factCard`) — facts: `trip-times`
+**centre-earth** (`journey`) — facts: `trip-times`
 
 > Round trip, you spend about forty years.
 > On Earth, about fifty-two thousand years pass.
 
 **centre-compare** (`compare`) — facts: `trip-times`
 
-> Here are both clocks for the centre, on a logarithmic scale.
+> Here are both clocks for the centre, drawn to scale.
 
-**andromeda** (`factCard`) — facts: `andromeda-distance`, `trip-times`
+**andromeda** (`journey`) — facts: `andromeda-distance`, `trip-times`
 
 > Andromeda, our largest galactic neighbour, is about two and a half million light-years away.
 > Round trip at one g, you would spend about fifty-seven years on board.
@@ -53,6 +79,7 @@ _None recorded yet._
 **outro** (`outro`) — facts: —
 
 > Follow for more sky, explained.
+> Clear skies.
 
 ### Post copy
 
@@ -87,10 +114,12 @@ Image: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.
 | Asset | Source | Credit | License | AI |
 | --- | --- | --- | --- | --- |
 | andromeda | [Andromeda Galaxy](https://images.nasa.gov/details/PIA04921) | NASA / JPL / California Institute of Technology | NASA media usage guidelines (not copyrighted unless noted) | no |
+| galactic-centre-spitzer | [The Milky Way Center Aglow with Dust](https://images.nasa.gov/details/PIA03653) | NASA / JPL / JPL-Caltech | NASA media usage guidelines (not copyrighted unless noted) | no |
+| andromeda-galex | [Andromeda Galaxy](https://images.nasa.gov/details/PIA04921) | NASA / JPL / California Institute of Technology | NASA media usage guidelines (not copyrighted unless noted) | no |
 
 ## Render
 
-49.5 s, 1080×1920@30, sha256 `c5427805efea6a62…`, rendered 2026-11-12T16:10:11.805Z in 42 s.
+53.1 s, 1080×1920@30, sha256 `2bae828c24849022…`, rendered 2026-11-12T18:26:53.321Z in 64 s.
 
 ## QA
 
@@ -99,13 +128,13 @@ Image: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 49.50 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 49.50 s vs timeline 49.43 s |
-| loudness | ✅ | -14.1 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.5 dBFS |
+| duration | ✅ | 53.10 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 53.10 s vs timeline 53.07 s |
+| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T16:04:42.883Z): **pass** — Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch.
+Visual review by **claude** (2026-11-12T18:53:50.130Z): **pass** — Andromeda hook, Lorentz factor card, ship journeys over Spitzer galactic centre and GALEX Andromeda backdrops with on-board/on-Earth clocks ending at 40/52,000 and 57/5 million, compare bars, outro in sync.
 
 ## Event log
 
@@ -158,3 +187,54 @@ Visual review by **claude** (2026-11-12T16:04:42.883Z): **pass** — Reviewed th
 | 2026-11-12 16:04:42 | claude | qa-passed | stage.advance | d707811 |
 | 2026-11-12 16:10:11 | pipeline | rendered | stage.regress | 8a1640d |
 | 2026-11-12 16:10:11 | pipeline | rendered | render.video | 8a1640d |
+| 2026-11-12 17:12:03 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:12:03 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:12:04 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:12:23 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:12:23 | claude | planned | stage.advance | 56e31e5 |
+| 2026-11-12 17:12:24 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:12:25 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:12:25 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 17:13:03 | claude | visuals | decision.record | 56e31e5 |
+| 2026-11-12 17:13:05 | claude | script | decision.record | 56e31e5 |
+| 2026-11-12 17:32:11 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 17:32:11 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 17:33:03 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:33:03 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:33:13 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:36:11 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:36:11 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:36:12 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:36:16 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:36:22 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:36:22 | claude | planned | stage.advance | 56e31e5 |
+| 2026-11-12 17:36:23 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:36:23 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:36:23 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 17:46:49 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:46:49 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:46:50 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:47:35 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:47:35 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 17:53:08 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 17:53:08 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 17:54:00 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:54:00 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:54:09 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:12:27 | claude | rendered | asset.add | 56e31e5 |
+| 2026-11-12 18:12:29 | claude | rendered | asset.add | 56e31e5 |
+| 2026-11-12 18:12:53 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 18:12:53 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 18:12:53 | pipeline | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 18:13:12 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 18:13:12 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 18:13:19 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:13:19 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:19:07 | claude | visuals | decision.record | 56e31e5 |
+| 2026-11-12 18:25:48 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:25:48 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:26:53 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:26:53 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:27:04 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:53:50 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 18:53:50 | claude | qa-passed | stage.advance | 56e31e5 |

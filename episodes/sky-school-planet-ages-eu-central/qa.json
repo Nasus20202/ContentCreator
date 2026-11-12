@@ -1,0 +1,149 @@
+{
+  "checkedAt": "2026-11-12T18:56:40.224Z",
+  "videoSha256": "68b56dc6b5150bb9282db4e4a62d63f1cdc436e8f659df4d4ef3a29b4cd34288",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "42.20 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 42.20 s vs timeline 42.17 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14.2 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.4 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 3.83
+    },
+    {
+      "file": "qa/00-hook-2.jpg",
+      "sceneId": "hook",
+      "tSec": 6.27
+    },
+    {
+      "file": "qa/01-why-0.jpg",
+      "sceneId": "why",
+      "tSec": 7.12
+    },
+    {
+      "file": "qa/01-why-1.jpg",
+      "sceneId": "why",
+      "tSec": 9.15
+    },
+    {
+      "file": "qa/01-why-2.jpg",
+      "sceneId": "why",
+      "tSec": 13.3
+    },
+    {
+      "file": "qa/02-mercury-0.jpg",
+      "sceneId": "mercury",
+      "tSec": 14.15
+    },
+    {
+      "file": "qa/02-mercury-1.jpg",
+      "sceneId": "mercury",
+      "tSec": 16.91
+    },
+    {
+      "file": "qa/02-mercury-2.jpg",
+      "sceneId": "mercury",
+      "tSec": 18.8
+    },
+    {
+      "file": "qa/03-mars-0.jpg",
+      "sceneId": "mars",
+      "tSec": 19.65
+    },
+    {
+      "file": "qa/03-mars-1.jpg",
+      "sceneId": "mars",
+      "tSec": 23.63
+    },
+    {
+      "file": "qa/04-compare-0.jpg",
+      "sceneId": "compare",
+      "tSec": 24.48
+    },
+    {
+      "file": "qa/04-compare-1.jpg",
+      "sceneId": "compare",
+      "tSec": 28.33
+    },
+    {
+      "file": "qa/05-neptune-0.jpg",
+      "sceneId": "neptune",
+      "tSec": 29.18
+    },
+    {
+      "file": "qa/05-neptune-1.jpg",
+      "sceneId": "neptune",
+      "tSec": 33.27
+    },
+    {
+      "file": "qa/05-neptune-2.jpg",
+      "sceneId": "neptune",
+      "tSec": 36.77
+    },
+    {
+      "file": "qa/06-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 37.62
+    },
+    {
+      "file": "qa/06-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 39.78
+    },
+    {
+      "file": "qa/06-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 42.07
+    }
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-12T18:58:31.404Z",
+    "verdict": "pass",
+    "notes": "Saturn band hook with title and chip, year-length bars 1/29.4/164, Mercury labelled enhanced colour then 124 chip, Mars 16, age bars 124/30/16, Neptune 164 chip, outro synced. Chips sequenced, no overlaps."
+  }
+}

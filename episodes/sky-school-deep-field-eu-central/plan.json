@@ -1,0 +1,173 @@
+{
+  "episodeId": "sky-school-deep-field-eu-central",
+  "series": "sky-school",
+  "title": "Sky School · Every dot is a galaxy",
+  "badge": "Sky School · Deep field",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "post": {
+    "title": "Almost every dot here is a galaxy 🌌",
+    "description": "Hubble's eXtreme Deep Field: one tiny patch of sky, a small fraction of the width of the full Moon, holds about 5,500 galaxies. Hubble stared at it for a total of 50 days over 10 years, and some of the light set off 13.2 billion years ago.\n\nSource:\nNASA Science, Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe: https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/\n\nImage: NASA / ESA / G. Illingworth, D. Magee, P. Oesch, R. Bouwens and the HUDF09 Team. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#astronomy",
+      "#space",
+      "#science",
+      "#skyschool",
+      "#hubble",
+      "#galaxies"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "image",
+      "narration": [
+        "Almost every dot in this picture is a galaxy.",
+        "Not a star. A whole galaxy."
+      ],
+      "factIds": [
+        "xdf-galaxies"
+      ],
+      "chips": [],
+      "title": {
+        "kicker": "Hubble eXtreme Deep Field",
+        "title": "Every dot, a galaxy",
+        "from": 0.1,
+        "to": 2.6
+      },
+      "params": {
+        "assetId": "xdf",
+        "zoom": [
+          1.0,
+          1.18
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "patch",
+      "template": "image",
+      "narration": [
+        "Hubble took it of a patch of sky far smaller than the full Moon.",
+        "In that tiny patch, there are about 5,500 galaxies."
+      ],
+      "factIds": [
+        "xdf-galaxies"
+      ],
+      "chips": [
+        {
+          "text": "ABOUT 5,500 GALAXIES",
+          "from": {
+            "sentence": 1
+          }
+        }
+      ],
+      "params": {
+        "assetId": "xdf",
+        "zoom": [
+          1.2,
+          2.2
+        ],
+        "focus": [
+          0.36,
+          0.42
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "stare",
+      "template": "factCard",
+      "narration": [
+        "To catch them, Hubble stared at this one spot for a total of fifty days, spread over ten years.",
+        "More than 2,000 images, stacked into one."
+      ],
+      "factIds": [
+        "xdf-time"
+      ],
+      "params": {
+        "value": "50 days",
+        "label": "of staring at one spot, over 10 years",
+        "sourceLine": "2,000+ images stacked · NASA"
+      }
+    },
+    {
+      "id": "time",
+      "template": "journey",
+      "narration": [
+        "The light from the faintest ones set off about 13.2 billion years ago.",
+        "So we see them as they were when the universe was young."
+      ],
+      "factIds": [
+        "xdf-age"
+      ],
+      "params": {
+        "traveller": "light",
+        "stops": [
+          {
+            "name": "You",
+            "at": 0,
+            "kind": "earth",
+            "sub": "today",
+            "arrive": "Arrived!"
+          },
+          {
+            "name": "Faintest galaxies",
+            "at": 13.2,
+            "kind": "galaxy",
+            "sub": "13.2 billion years ago"
+          }
+        ],
+        "path": [
+          1,
+          0
+        ],
+        "start": 0.4,
+        "travel": 5.5,
+        "clocks": [
+          {
+            "label": "Light's journey",
+            "from": 0,
+            "to": 13200000000,
+            "unit": "years"
+          }
+        ],
+        "backdrop": {
+          "assetId": "xdf",
+          "label": "Hubble eXtreme Deep Field"
+        }
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Follow for more sky, explained.",
+        "Clear skies."
+      ],
+      "factIds": [],
+      "params": {
+        "kicker": "Sky School",
+        "cta": "FOLLOW\nFOR MORE\nSKY, EXPLAINED",
+        "footnote": "Hubble XDF: NASA / ESA / HUDF09 Team"
+      }
+    }
+  ]
+}

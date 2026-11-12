@@ -1,0 +1,593 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "7b0e156b6c4fd6d5",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 5.128,
+      "sentences": [
+        {
+          "text": "Almost every dot in this picture is a galaxy.",
+          "start": 0.15,
+          "end": 2.82,
+          "words": [
+            {
+              "w": "Almost",
+              "start": 0.15,
+              "end": 0.525
+            },
+            {
+              "w": "every",
+              "start": 0.525,
+              "end": 0.853
+            },
+            {
+              "w": "dot",
+              "start": 0.853,
+              "end": 1.087
+            },
+            {
+              "w": "in",
+              "start": 1.087,
+              "end": 1.274
+            },
+            {
+              "w": "this",
+              "start": 1.274,
+              "end": 1.555
+            },
+            {
+              "w": "picture",
+              "start": 1.555,
+              "end": 1.977
+            },
+            {
+              "w": "is",
+              "start": 1.977,
+              "end": 2.164
+            },
+            {
+              "w": "a",
+              "start": 2.164,
+              "end": 2.305
+            },
+            {
+              "w": "galaxy.",
+              "start": 2.305,
+              "end": 2.82
+            }
+          ]
+        },
+        {
+          "text": "Not a star. A whole galaxy.",
+          "start": 3.1,
+          "end": 4.848,
+          "words": [
+            {
+              "w": "Not",
+              "start": 3.1,
+              "end": 3.33
+            },
+            {
+              "w": "a",
+              "start": 3.33,
+              "end": 3.468
+            },
+            {
+              "w": "star.",
+              "start": 3.468,
+              "end": 3.882
+            },
+            {
+              "w": "A",
+              "start": 3.882,
+              "end": 4.02
+            },
+            {
+              "w": "whole",
+              "start": 4.02,
+              "end": 4.342
+            },
+            {
+              "w": "galaxy.",
+              "start": 4.342,
+              "end": 4.848
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "patch",
+      "audioFile": "voice/patch.wav",
+      "duration": 7.912,
+      "sentences": [
+        {
+          "text": "Hubble took it of a patch of sky far smaller than the full Moon.",
+          "start": 0.15,
+          "end": 3.53,
+          "words": [
+            {
+              "w": "Hubble",
+              "start": 0.15,
+              "end": 0.484
+            },
+            {
+              "w": "took",
+              "start": 0.484,
+              "end": 0.734
+            },
+            {
+              "w": "it",
+              "start": 0.734,
+              "end": 0.901
+            },
+            {
+              "w": "of",
+              "start": 0.901,
+              "end": 1.068
+            },
+            {
+              "w": "a",
+              "start": 1.068,
+              "end": 1.193
+            },
+            {
+              "w": "patch",
+              "start": 1.193,
+              "end": 1.485
+            },
+            {
+              "w": "of",
+              "start": 1.485,
+              "end": 1.652
+            },
+            {
+              "w": "sky",
+              "start": 1.652,
+              "end": 1.861
+            },
+            {
+              "w": "far",
+              "start": 1.861,
+              "end": 2.069
+            },
+            {
+              "w": "smaller",
+              "start": 2.069,
+              "end": 2.445
+            },
+            {
+              "w": "than",
+              "start": 2.445,
+              "end": 2.695
+            },
+            {
+              "w": "the",
+              "start": 2.695,
+              "end": 2.904
+            },
+            {
+              "w": "full",
+              "start": 2.904,
+              "end": 3.154
+            },
+            {
+              "w": "Moon.",
+              "start": 3.154,
+              "end": 3.53
+            }
+          ]
+        },
+        {
+          "text": "In that tiny patch, there are about 5,500 galaxies.",
+          "start": 3.81,
+          "end": 7.632,
+          "words": [
+            {
+              "w": "In",
+              "start": 3.81,
+              "end": 4.049
+            },
+            {
+              "w": "that",
+              "start": 4.049,
+              "end": 4.407
+            },
+            {
+              "w": "tiny",
+              "start": 4.407,
+              "end": 4.765
+            },
+            {
+              "w": "patch,",
+              "start": 4.765,
+              "end": 5.362
+            },
+            {
+              "w": "there",
+              "start": 5.362,
+              "end": 5.781
+            },
+            {
+              "w": "are",
+              "start": 5.781,
+              "end": 6.079
+            },
+            {
+              "w": "about",
+              "start": 6.079,
+              "end": 6.497
+            },
+            {
+              "w": "5,500",
+              "start": 6.497,
+              "end": 6.856
+            },
+            {
+              "w": "galaxies.",
+              "start": 6.856,
+              "end": 7.632
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "stare",
+      "audioFile": "voice/stare.wav",
+      "duration": 8.681,
+      "sentences": [
+        {
+          "text": "To catch them, Hubble stared at this one spot for a total of fifty days, spread over ten years.",
+          "start": 0.15,
+          "end": 5.515,
+          "words": [
+            {
+              "w": "To",
+              "start": 0.15,
+              "end": 0.327
+            },
+            {
+              "w": "catch",
+              "start": 0.327,
+              "end": 0.638
+            },
+            {
+              "w": "them,",
+              "start": 0.638,
+              "end": 1.037
+            },
+            {
+              "w": "Hubble",
+              "start": 1.037,
+              "end": 1.391
+            },
+            {
+              "w": "stared",
+              "start": 1.391,
+              "end": 1.746
+            },
+            {
+              "w": "at",
+              "start": 1.746,
+              "end": 1.923
+            },
+            {
+              "w": "this",
+              "start": 1.923,
+              "end": 2.189
+            },
+            {
+              "w": "one",
+              "start": 2.189,
+              "end": 2.411
+            },
+            {
+              "w": "spot",
+              "start": 2.411,
+              "end": 2.677
+            },
+            {
+              "w": "for",
+              "start": 2.677,
+              "end": 2.899
+            },
+            {
+              "w": "a",
+              "start": 2.899,
+              "end": 3.032
+            },
+            {
+              "w": "total",
+              "start": 3.032,
+              "end": 3.342
+            },
+            {
+              "w": "of",
+              "start": 3.342,
+              "end": 3.52
+            },
+            {
+              "w": "fifty",
+              "start": 3.52,
+              "end": 3.83
+            },
+            {
+              "w": "days,",
+              "start": 3.83,
+              "end": 4.229
+            },
+            {
+              "w": "spread",
+              "start": 4.229,
+              "end": 4.584
+            },
+            {
+              "w": "over",
+              "start": 4.584,
+              "end": 4.85
+            },
+            {
+              "w": "ten",
+              "start": 4.85,
+              "end": 5.071
+            },
+            {
+              "w": "years.",
+              "start": 5.071,
+              "end": 5.515
+            }
+          ]
+        },
+        {
+          "text": "More than 2,000 images, stacked into one.",
+          "start": 5.795,
+          "end": 8.401,
+          "words": [
+            {
+              "w": "More",
+              "start": 5.795,
+              "end": 6.095
+            },
+            {
+              "w": "than",
+              "start": 6.095,
+              "end": 6.396
+            },
+            {
+              "w": "2,000",
+              "start": 6.396,
+              "end": 6.697
+            },
+            {
+              "w": "images,",
+              "start": 6.697,
+              "end": 7.248
+            },
+            {
+              "w": "stacked",
+              "start": 7.248,
+              "end": 7.699
+            },
+            {
+              "w": "into",
+              "start": 7.699,
+              "end": 8
+            },
+            {
+              "w": "one.",
+              "start": 8,
+              "end": 8.401
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "time",
+      "audioFile": "voice/time.wav",
+      "duration": 7.812,
+      "sentences": [
+        {
+          "text": "The light from the faintest ones set off about 13.2 billion years ago.",
+          "start": 0.15,
+          "end": 4.511,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.407
+            },
+            {
+              "w": "light",
+              "start": 0.407,
+              "end": 0.766
+            },
+            {
+              "w": "from",
+              "start": 0.766,
+              "end": 1.074
+            },
+            {
+              "w": "the",
+              "start": 1.074,
+              "end": 1.33
+            },
+            {
+              "w": "faintest",
+              "start": 1.33,
+              "end": 1.843
+            },
+            {
+              "w": "ones",
+              "start": 1.843,
+              "end": 2.151
+            },
+            {
+              "w": "set",
+              "start": 2.151,
+              "end": 2.408
+            },
+            {
+              "w": "off",
+              "start": 2.408,
+              "end": 2.664
+            },
+            {
+              "w": "about",
+              "start": 2.664,
+              "end": 3.023
+            },
+            {
+              "w": "13.2",
+              "start": 3.023,
+              "end": 3.28
+            },
+            {
+              "w": "billion",
+              "start": 3.28,
+              "end": 3.742
+            },
+            {
+              "w": "years",
+              "start": 3.742,
+              "end": 4.101
+            },
+            {
+              "w": "ago.",
+              "start": 4.101,
+              "end": 4.511
+            }
+          ]
+        },
+        {
+          "text": "So we see them as they were when the universe was young.",
+          "start": 4.791,
+          "end": 7.532,
+          "words": [
+            {
+              "w": "So",
+              "start": 4.791,
+              "end": 4.946
+            },
+            {
+              "w": "we",
+              "start": 4.946,
+              "end": 5.1
+            },
+            {
+              "w": "see",
+              "start": 5.1,
+              "end": 5.293
+            },
+            {
+              "w": "them",
+              "start": 5.293,
+              "end": 5.525
+            },
+            {
+              "w": "as",
+              "start": 5.525,
+              "end": 5.679
+            },
+            {
+              "w": "they",
+              "start": 5.679,
+              "end": 5.911
+            },
+            {
+              "w": "were",
+              "start": 5.911,
+              "end": 6.142
+            },
+            {
+              "w": "when",
+              "start": 6.142,
+              "end": 6.374
+            },
+            {
+              "w": "the",
+              "start": 6.374,
+              "end": 6.567
+            },
+            {
+              "w": "universe",
+              "start": 6.567,
+              "end": 6.953
+            },
+            {
+              "w": "was",
+              "start": 6.953,
+              "end": 7.146
+            },
+            {
+              "w": "young.",
+              "start": 7.146,
+              "end": 7.532
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.421,
+      "sentences": [
+        {
+          "text": "Follow for more sky, explained.",
+          "start": 0.15,
+          "end": 2.033,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.518
+            },
+            {
+              "w": "for",
+              "start": 0.518,
+              "end": 0.747
+            },
+            {
+              "w": "more",
+              "start": 0.747,
+              "end": 1.023
+            },
+            {
+              "w": "sky,",
+              "start": 1.023,
+              "end": 1.39
+            },
+            {
+              "w": "explained.",
+              "start": 1.39,
+              "end": 2.033
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.313,
+          "end": 3.141,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.313,
+              "end": 2.654
+            },
+            {
+              "w": "skies.",
+              "start": 2.654,
+              "end": 3.141
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

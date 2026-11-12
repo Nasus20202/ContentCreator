@@ -1,0 +1,662 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "ddef2ed6dbb37ad9",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 6.181,
+      "sentences": [
+        {
+          "text": "Even sitting perfectly still, you are flying through space.",
+          "start": 0.15,
+          "end": 3.268,
+          "words": [
+            {
+              "w": "Even",
+              "start": 0.15,
+              "end": 0.406
+            },
+            {
+              "w": "sitting",
+              "start": 0.406,
+              "end": 0.791
+            },
+            {
+              "w": "perfectly",
+              "start": 0.791,
+              "end": 1.261
+            },
+            {
+              "w": "still,",
+              "start": 1.261,
+              "end": 1.688
+            },
+            {
+              "w": "you",
+              "start": 1.688,
+              "end": 1.901
+            },
+            {
+              "w": "are",
+              "start": 1.901,
+              "end": 2.115
+            },
+            {
+              "w": "flying",
+              "start": 2.115,
+              "end": 2.457
+            },
+            {
+              "w": "through",
+              "start": 2.457,
+              "end": 2.841
+            },
+            {
+              "w": "space.",
+              "start": 2.841,
+              "end": 3.268
+            }
+          ]
+        },
+        {
+          "text": "Right now, you are moving in several ways at once.",
+          "start": 3.548,
+          "end": 5.901,
+          "words": [
+            {
+              "w": "Right",
+              "start": 3.548,
+              "end": 3.802
+            },
+            {
+              "w": "now,",
+              "start": 3.802,
+              "end": 4.091
+            },
+            {
+              "w": "you",
+              "start": 4.091,
+              "end": 4.272
+            },
+            {
+              "w": "are",
+              "start": 4.272,
+              "end": 4.453
+            },
+            {
+              "w": "moving",
+              "start": 4.453,
+              "end": 4.743
+            },
+            {
+              "w": "in",
+              "start": 4.743,
+              "end": 4.887
+            },
+            {
+              "w": "several",
+              "start": 4.887,
+              "end": 5.213
+            },
+            {
+              "w": "ways",
+              "start": 5.213,
+              "end": 5.43
+            },
+            {
+              "w": "at",
+              "start": 5.43,
+              "end": 5.575
+            },
+            {
+              "w": "once.",
+              "start": 5.575,
+              "end": 5.901
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "spin",
+      "audioFile": "voice/spin.wav",
+      "duration": 6.91,
+      "sentences": [
+        {
+          "text": "First, Earth spins.",
+          "start": 0.15,
+          "end": 1.306,
+          "words": [
+            {
+              "w": "First,",
+              "start": 0.15,
+              "end": 0.578
+            },
+            {
+              "w": "Earth",
+              "start": 0.578,
+              "end": 0.878
+            },
+            {
+              "w": "spins.",
+              "start": 0.878,
+              "end": 1.306
+            }
+          ]
+        },
+        {
+          "text": "In central Europe, that carries you east at about 1,076 kilometres an hour.",
+          "start": 1.586,
+          "end": 6.63,
+          "words": [
+            {
+              "w": "In",
+              "start": 1.586,
+              "end": 1.805
+            },
+            {
+              "w": "central",
+              "start": 1.805,
+              "end": 2.298
+            },
+            {
+              "w": "Europe,",
+              "start": 2.298,
+              "end": 2.901
+            },
+            {
+              "w": "that",
+              "start": 2.901,
+              "end": 3.23
+            },
+            {
+              "w": "carries",
+              "start": 3.23,
+              "end": 3.724
+            },
+            {
+              "w": "you",
+              "start": 3.724,
+              "end": 3.998
+            },
+            {
+              "w": "east",
+              "start": 3.998,
+              "end": 4.327
+            },
+            {
+              "w": "at",
+              "start": 4.327,
+              "end": 4.546
+            },
+            {
+              "w": "about",
+              "start": 4.546,
+              "end": 4.93
+            },
+            {
+              "w": "1,076",
+              "start": 4.93,
+              "end": 5.259
+            },
+            {
+              "w": "kilometres",
+              "start": 5.259,
+              "end": 5.917
+            },
+            {
+              "w": "an",
+              "start": 5.917,
+              "end": 6.136
+            },
+            {
+              "w": "hour.",
+              "start": 6.136,
+              "end": 6.63
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "orbit",
+      "audioFile": "voice/orbit.wav",
+      "duration": 9.73,
+      "sentences": [
+        {
+          "text": "Second, Earth circles the Sun at 29.8 kilometres every second.",
+          "start": 0.15,
+          "end": 4.615,
+          "words": [
+            {
+              "w": "Second,",
+              "start": 0.15,
+              "end": 0.796
+            },
+            {
+              "w": "Earth",
+              "start": 0.796,
+              "end": 1.207
+            },
+            {
+              "w": "circles",
+              "start": 1.207,
+              "end": 1.736
+            },
+            {
+              "w": "the",
+              "start": 1.736,
+              "end": 2.03
+            },
+            {
+              "w": "Sun",
+              "start": 2.03,
+              "end": 2.324
+            },
+            {
+              "w": "at",
+              "start": 2.324,
+              "end": 2.559
+            },
+            {
+              "w": "29.8",
+              "start": 2.559,
+              "end": 2.852
+            },
+            {
+              "w": "kilometres",
+              "start": 2.852,
+              "end": 3.557
+            },
+            {
+              "w": "every",
+              "start": 3.557,
+              "end": 3.969
+            },
+            {
+              "w": "second.",
+              "start": 3.969,
+              "end": 4.615
+            }
+          ]
+        },
+        {
+          "text": "That is about 107,000 kilometres an hour, a hundred times faster.",
+          "start": 4.895,
+          "end": 9.45,
+          "words": [
+            {
+              "w": "That",
+              "start": 4.895,
+              "end": 5.237
+            },
+            {
+              "w": "is",
+              "start": 5.237,
+              "end": 5.464
+            },
+            {
+              "w": "about",
+              "start": 5.464,
+              "end": 5.863
+            },
+            {
+              "w": "107,000",
+              "start": 5.863,
+              "end": 6.318
+            },
+            {
+              "w": "kilometres",
+              "start": 6.318,
+              "end": 7.002
+            },
+            {
+              "w": "an",
+              "start": 7.002,
+              "end": 7.229
+            },
+            {
+              "w": "hour,",
+              "start": 7.229,
+              "end": 7.742
+            },
+            {
+              "w": "a",
+              "start": 7.742,
+              "end": 7.913
+            },
+            {
+              "w": "hundred",
+              "start": 7.913,
+              "end": 8.425
+            },
+            {
+              "w": "times",
+              "start": 8.425,
+              "end": 8.824
+            },
+            {
+              "w": "faster.",
+              "start": 8.824,
+              "end": 9.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "galaxy",
+      "audioFile": "voice/galaxy.wav",
+      "duration": 11.063,
+      "sentences": [
+        {
+          "text": "Third, the Sun carries all of us around the centre of the Milky Way, at about 720,000 kilometres an hour.",
+          "start": 0.15,
+          "end": 7.114,
+          "words": [
+            {
+              "w": "Third,",
+              "start": 0.15,
+              "end": 0.682
+            },
+            {
+              "w": "the",
+              "start": 0.682,
+              "end": 0.947
+            },
+            {
+              "w": "Sun",
+              "start": 0.947,
+              "end": 1.213
+            },
+            {
+              "w": "carries",
+              "start": 1.213,
+              "end": 1.692
+            },
+            {
+              "w": "all",
+              "start": 1.692,
+              "end": 1.957
+            },
+            {
+              "w": "of",
+              "start": 1.957,
+              "end": 2.17
+            },
+            {
+              "w": "us",
+              "start": 2.17,
+              "end": 2.383
+            },
+            {
+              "w": "around",
+              "start": 2.383,
+              "end": 2.808
+            },
+            {
+              "w": "the",
+              "start": 2.808,
+              "end": 3.074
+            },
+            {
+              "w": "centre",
+              "start": 3.074,
+              "end": 3.499
+            },
+            {
+              "w": "of",
+              "start": 3.499,
+              "end": 3.711
+            },
+            {
+              "w": "the",
+              "start": 3.711,
+              "end": 3.977
+            },
+            {
+              "w": "Milky",
+              "start": 3.977,
+              "end": 4.349
+            },
+            {
+              "w": "Way,",
+              "start": 4.349,
+              "end": 4.775
+            },
+            {
+              "w": "at",
+              "start": 4.775,
+              "end": 4.987
+            },
+            {
+              "w": "about",
+              "start": 4.987,
+              "end": 5.359
+            },
+            {
+              "w": "720,000",
+              "start": 5.359,
+              "end": 5.785
+            },
+            {
+              "w": "kilometres",
+              "start": 5.785,
+              "end": 6.422
+            },
+            {
+              "w": "an",
+              "start": 6.422,
+              "end": 6.635
+            },
+            {
+              "w": "hour.",
+              "start": 6.635,
+              "end": 7.114
+            }
+          ]
+        },
+        {
+          "text": "Even so, one lap takes about 230 million years.",
+          "start": 7.394,
+          "end": 10.783,
+          "words": [
+            {
+              "w": "Even",
+              "start": 7.394,
+              "end": 7.727
+            },
+            {
+              "w": "so,",
+              "start": 7.727,
+              "end": 8.116
+            },
+            {
+              "w": "one",
+              "start": 8.116,
+              "end": 8.394
+            },
+            {
+              "w": "lap",
+              "start": 8.394,
+              "end": 8.671
+            },
+            {
+              "w": "takes",
+              "start": 8.671,
+              "end": 9.06
+            },
+            {
+              "w": "about",
+              "start": 9.06,
+              "end": 9.449
+            },
+            {
+              "w": "230",
+              "start": 9.449,
+              "end": 9.727
+            },
+            {
+              "w": "million",
+              "start": 9.727,
+              "end": 10.227
+            },
+            {
+              "w": "years.",
+              "start": 10.227,
+              "end": 10.783
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "all",
+      "audioFile": "voice/all.wav",
+      "duration": 4.425,
+      "sentences": [
+        {
+          "text": "Side by side, the spin that gives us day and night is barely a sliver.",
+          "start": 0.15,
+          "end": 4.145,
+          "words": [
+            {
+              "w": "Side",
+              "start": 0.15,
+              "end": 0.416
+            },
+            {
+              "w": "by",
+              "start": 0.416,
+              "end": 0.594
+            },
+            {
+              "w": "side,",
+              "start": 0.594,
+              "end": 0.993
+            },
+            {
+              "w": "the",
+              "start": 0.993,
+              "end": 1.215
+            },
+            {
+              "w": "spin",
+              "start": 1.215,
+              "end": 1.482
+            },
+            {
+              "w": "that",
+              "start": 1.482,
+              "end": 1.748
+            },
+            {
+              "w": "gives",
+              "start": 1.748,
+              "end": 2.059
+            },
+            {
+              "w": "us",
+              "start": 2.059,
+              "end": 2.236
+            },
+            {
+              "w": "day",
+              "start": 2.236,
+              "end": 2.458
+            },
+            {
+              "w": "and",
+              "start": 2.458,
+              "end": 2.68
+            },
+            {
+              "w": "night",
+              "start": 2.68,
+              "end": 2.991
+            },
+            {
+              "w": "is",
+              "start": 2.991,
+              "end": 3.169
+            },
+            {
+              "w": "barely",
+              "start": 3.169,
+              "end": 3.524
+            },
+            {
+              "w": "a",
+              "start": 3.524,
+              "end": 3.657
+            },
+            {
+              "w": "sliver.",
+              "start": 3.657,
+              "end": 4.145
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.421,
+      "sentences": [
+        {
+          "text": "Follow for more sky, explained.",
+          "start": 0.15,
+          "end": 2.033,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.518
+            },
+            {
+              "w": "for",
+              "start": 0.518,
+              "end": 0.747
+            },
+            {
+              "w": "more",
+              "start": 0.747,
+              "end": 1.023
+            },
+            {
+              "w": "sky,",
+              "start": 1.023,
+              "end": 1.39
+            },
+            {
+              "w": "explained.",
+              "start": 1.39,
+              "end": 2.033
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.313,
+          "end": 3.141,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.313,
+              "end": 2.654
+            },
+            {
+              "w": "skies.",
+              "start": 2.654,
+              "end": 3.141
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

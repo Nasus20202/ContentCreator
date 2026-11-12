@@ -1,0 +1,129 @@
+{
+  "checkedAt": "2026-11-12T18:53:40.543Z",
+  "videoSha256": "6771d54ab9f9adaa9b958366dd3011ede0cced71926c1f12c279a9eed6c2d808",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "33.70 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 33.70 s vs timeline 33.67 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14.4 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.4 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 2.42
+    },
+    {
+      "file": "qa/00-hook-2.jpg",
+      "sceneId": "hook",
+      "tSec": 4.43
+    },
+    {
+      "file": "qa/01-where-0.jpg",
+      "sceneId": "where",
+      "tSec": 5.28
+    },
+    {
+      "file": "qa/01-where-1.jpg",
+      "sceneId": "where",
+      "tSec": 12.13
+    },
+    {
+      "file": "qa/01-where-2.jpg",
+      "sceneId": "where",
+      "tSec": 13.83
+    },
+    {
+      "file": "qa/02-pixel-0.jpg",
+      "sceneId": "pixel",
+      "tSec": 14.68
+    },
+    {
+      "file": "qa/02-pixel-1.jpg",
+      "sceneId": "pixel",
+      "tSec": 17.79
+    },
+    {
+      "file": "qa/02-pixel-2.jpg",
+      "sceneId": "pixel",
+      "tSec": 21.2
+    },
+    {
+      "file": "qa/03-last-0.jpg",
+      "sceneId": "last",
+      "tSec": 22.05
+    },
+    {
+      "file": "qa/03-last-1.jpg",
+      "sceneId": "last",
+      "tSec": 26.11
+    },
+    {
+      "file": "qa/03-last-2.jpg",
+      "sceneId": "last",
+      "tSec": 28.27
+    },
+    {
+      "file": "qa/04-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 29.12
+    },
+    {
+      "file": "qa/04-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 31.28
+    },
+    {
+      "file": "qa/04-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 33.57
+    }
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-12T18:55:12.277Z",
+    "verdict": "pass",
+    "notes": "Ring and arrow label sit on Earth's pixel through both push-ins; journey Earth to Voyager 1 (6 billion km) over the launch photo with the 'Feb 1990: look back!' badge; 34-min card; outro synced with hold. Credits visible."
+  }
+}

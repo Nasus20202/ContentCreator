@@ -23,8 +23,8 @@
       "id": "hook",
       "template": "skyView",
       "narration": [
-        "The Quadrantids peak on Sunday evening, with the radiant barely above the northern horizon.",
-        "The real chance from Europe is the hours before dawn on Monday, when it climbs high in the east."
+        "The year's first big meteor shower peaks this weekend.",
+        "From Europe, the best chance is the hours before dawn on Monday, when the radiant climbs high in the east."
       ],
       "factIds": [
         "meteors-quadrantids-2027-01-03-peak",
@@ -180,6 +180,7 @@
       "template": "outro",
       "narration": [
         "Positions calculated for central Europe.",
+        "Follow, so you don't miss next week's sky.",
         "Clear skies."
       ],
       "factIds": [

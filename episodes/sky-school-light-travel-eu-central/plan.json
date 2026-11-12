@@ -72,51 +72,145 @@
     },
     {
       "id": "speed",
-      "template": "factCard",
+      "template": "laps",
       "narration": [
-        "Light travels 299,792 kilometres every second in a vacuum.",
-        "That sounds instant, but the distances are enormous."
+        "Light travels 299,792 kilometres every second.",
+        "That is about seven and a half times around the Earth, every second."
       ],
       "factIds": [
-        "light-speed"
+        "light-speed",
+        "earth-laps"
       ],
       "params": {
-        "value": "299,792",
-        "label": "kilometres per second",
-        "sourceLine": "speed of light · NIST (CODATA)"
+        "body": "earth",
+        "laps": 7.5,
+        "label": "around Earth, every second",
+        "note": "Shown slowed down",
+        "start": {
+          "sentence": 1
+        },
+        "over": 3.2,
+        "assetId": "earth-apollo17"
       }
     },
     {
       "id": "distance",
-      "template": "factCard",
+      "template": "journey",
       "narration": [
+        "But space is enormous.",
         "The Sun is about a hundred and fifty million kilometres away.",
-        "At that speed, its light needs eight minutes and twenty seconds to arrive."
+        "At that speed, its light needs eight minutes and twenty seconds to reach us."
       ],
       "factIds": [
         "sun-distance",
-        "sun-light-time"
+        "sun-light-time",
+        "jupiter-light-time"
       ],
       "params": {
-        "value": "150 million km",
-        "label": "from the Sun to Earth",
-        "sourceLine": "Sun facts · NASA Science"
+        "traveller": "light",
+        "stops": [
+          {
+            "name": "Sun",
+            "at": 0,
+            "kind": "sun",
+            "sub": "light sets off"
+          },
+          {
+            "name": "Earth",
+            "at": 1,
+            "kind": "earth",
+            "sub": "150 million km",
+            "arrive": "8 min 20 s"
+          },
+          {
+            "name": "Jupiter",
+            "at": 5.2,
+            "kind": "jupiter",
+            "sub": "5.2 AU on average",
+            "arrive": "43 min"
+          }
+        ],
+        "path": [
+          0,
+          1
+        ],
+        "start": {
+          "sentence": 1,
+          "offset": 0.3
+        },
+        "travel": 4.2,
+        "clocks": [
+          {
+            "label": "Light travel time",
+            "from": 0,
+            "to": 8.3333,
+            "unit": "min"
+          }
+        ],
+        "backdrop": {
+          "assetId": "earth-apollo17",
+          "label": "Earth, the Blue Marble photo (NASA)"
+        }
       }
     },
     {
       "id": "jupiter",
-      "template": "factCard",
+      "template": "journey",
       "narration": [
+        "The same light keeps going.",
         "Jupiter is about five and a fifth astronomical units away on average.",
-        "On average, sunlight takes forty-three minutes to reach it."
+        "Sunlight takes forty-three minutes to reach it."
       ],
       "factIds": [
-        "jupiter-light-time"
+        "sun-light-time",
+        "jupiter-light-time",
+        "sun-distance"
       ],
       "params": {
-        "value": "43 min",
-        "label": "sunlight to Jupiter, on average",
-        "sourceLine": "Jupiter facts · NASA Science"
+        "traveller": "light",
+        "stops": [
+          {
+            "name": "Sun",
+            "at": 0,
+            "kind": "sun",
+            "sub": "light sets off"
+          },
+          {
+            "name": "Earth",
+            "at": 1,
+            "kind": "earth",
+            "sub": "150 million km",
+            "arrive": "8 min 20 s"
+          },
+          {
+            "name": "Jupiter",
+            "at": 5.2,
+            "kind": "jupiter",
+            "sub": "5.2 AU on average",
+            "arrive": "43 min"
+          }
+        ],
+        "path": [
+          1,
+          2
+        ],
+        "start": {
+          "sentence": 0,
+          "offset": 0.4
+        },
+        "travel": 6.5,
+        "clocks": [
+          {
+            "label": "Light travel time",
+            "from": 8.3333,
+            "to": 43,
+            "unit": "min"
+          }
+        ],
+        "backdrop": {
+          "assetId": "jupiter-cassini",
+          "label": "Jupiter, photographed by Cassini"
+        }
       }
     },
     {
@@ -156,7 +250,7 @@
       ],
       "factIds": [],
       "params": {
-        "kicker": "Next week's sky",
+        "kicker": "Sky School",
         "cta": "FOLLOW\nFOR MORE\nSKY, EXPLAINED",
         "footnote": "Light times: NASA Science · speed of light: NIST"
       }

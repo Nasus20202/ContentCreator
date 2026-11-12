@@ -62,3 +62,15 @@
 {"ts":"2026-11-12T14:59:59.211Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":17},"gitSha":"ca37d95"}
 {"ts":"2026-11-12T15:04:39.667Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch."},"gitSha":"ca37d95"}
 {"ts":"2026-11-12T15:04:39.672Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"ca37d95"}
+{"ts":"2026-11-12T17:37:12.896Z","actor":"pipeline","stage":"voiced","action":"stage.regress","details":{"from":"qa-passed","to":"voiced","hashes":{"narration":"9bc7355e0fb1709a"}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T17:37:12.908Z","actor":"pipeline","stage":"voiced","action":"voice.synthesize","details":{"engine":"kokoro-82M-v1.0-onnx-q8","voice":"af_heart","seconds":46.9},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T17:39:06.771Z","actor":"pipeline","stage":"rendered","action":"stage.advance","details":{"from":"voiced","to":"rendered","hashes":{"video":"3c6a5a6e7ab340965ea7be01d782a4b10f0316874f72b55a31e3fe91f91c3b4c"}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T17:39:06.777Z","actor":"pipeline","stage":"rendered","action":"render.video","details":{"sha256":"3c6a5a6e7ab340965ea7be01d782a4b10f0316874f72b55a31e3fe91f91c3b4c","seconds":48.3,"renderSeconds":113.089},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T17:39:14.083Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":17},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T18:40:58.692Z","actor":"pipeline","stage":"voiced","action":"stage.regress","details":{"from":"rendered","to":"voiced","hashes":{"narration":"9bc7355e0fb1709a"}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T18:40:58.698Z","actor":"pipeline","stage":"voiced","action":"voice.reuse","details":{"reason":"narration unchanged","narrationHash":"9bc7355e0fb1709a"},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T18:43:25.974Z","actor":"pipeline","stage":"rendered","action":"stage.advance","details":{"from":"voiced","to":"rendered","hashes":{"video":"9fb6efed388937992453f37a1bef2d732a75fa6712421b9022ab7873d2be0445"}},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T18:43:25.979Z","actor":"pipeline","stage":"rendered","action":"render.video","details":{"sha256":"9fb6efed388937992453f37a1bef2d732a75fa6712421b9022ab7873d2be0445","seconds":49.9,"renderSeconds":146.638},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T18:43:34.417Z","actor":"pipeline","stage":"qa","action":"qa.automated","details":{"failed":[],"frames":17},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T18:53:54.467Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Mars rising and high at midnight with magnitude, orbit reveal with 101 million km, distance card, outro synced with hold."},"gitSha":"56e31e5"}
+{"ts":"2026-11-12T18:53:54.473Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}

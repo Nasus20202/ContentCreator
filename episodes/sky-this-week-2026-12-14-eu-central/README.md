@@ -64,6 +64,7 @@ Inputs: `episodes/sky-this-week-2026-12-14-eu-central/research.json`, `series/sk
 **outro** (`outro`) — facts: `episode-location`, `episode-window`
 
 > Positions calculated for central Europe.
+> Follow, so you don't miss next week's sky.
 > Clear skies.
 
 ### Post copy
@@ -92,7 +93,7 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 
 ## Render
 
-35.2 s, 1080×1920@30, sha256 `48faa04a7f1b49d5…`, rendered 2026-11-12T14:36:00.997Z in 110 s.
+39.2 s, 1080×1920@30, sha256 `aa3ca3bd7f05a4d6…`, rendered 2026-11-12T18:32:53.964Z in 149 s.
 
 ## QA
 
@@ -101,13 +102,13 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 35.20 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 35.20 s vs timeline 35.17 s |
-| loudness | ✅ | -14.1 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.4 dBFS |
+| duration | ✅ | 39.20 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 39.20 s vs timeline 39.10 s |
+| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.3 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T14:41:33.637Z): **pass** — Reviewed the opening and closing frames of all eight cuts: hook framing holds (Moon/Jupiter/Venus/Mars subjects stay in frame after the 20% tighter opening field), outro shows the CTA and the new '50°N 15°E' footnote without overlap. Fact-card push-in checked on the 21 Dec card; the other cards use the same code. Motion smoothness and audio mix are not judgeable from stills and are left to the human watch.
+Visual review by **claude** (2026-11-12T18:53:51.620Z): **pass** — Geminids peak sky, moonset chip, 150 card, Moon-Saturn, outro CTA synced with 'Follow' line and end hold.
 
 ## Event log
 
@@ -212,3 +213,30 @@ Visual review by **claude** (2026-11-12T14:41:33.637Z): **pass** — Reviewed th
 | 2026-11-12 14:36:07 | pipeline | qa | qa.automated | 395ad8b |
 | 2026-11-12 14:41:33 | claude | qa | qa.review | 395ad8b |
 | 2026-11-12 14:41:33 | claude | qa-passed | stage.advance | 395ad8b |
+| 2026-11-12 17:24:35 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:24:35 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 17:26:32 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:26:32 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:26:38 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:47:27 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:47:27 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 17:49:28 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:49:28 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:49:35 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:54:26 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:54:26 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:54:27 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:54:28 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:54:28 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 18:06:57 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:06:57 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 18:09:25 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:09:25 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:09:33 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:30:23 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 18:30:23 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:32:53 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:32:53 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:33:01 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:53:51 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 18:53:51 | claude | qa-passed | stage.advance | 56e31e5 |

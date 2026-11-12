@@ -13,7 +13,14 @@
 
 ## Decisions
 
-_None recorded yet._
+### 2026-11-12 18:19 · visuals · claude
+
+**Destination photos as journey backdrops (NASA library, credited on screen)**
+
+Gives every trip a real place to arrive at; Proxima has no NASA photo, so Hubble's Alpha Centauri A and B is labelled as Proxima's neighbours
+
+Alternatives considered:
+- keep the plain starfield
 
 ## Script
 
@@ -22,20 +29,22 @@ _None recorded yet._
 > The Sun you see is about eight minutes old.
 > Its light has been travelling that long to reach your eyes.
 
-**speed** (`factCard`) — facts: `light-speed`
+**speed** (`laps`) — facts: `light-speed`, `earth-laps`
 
-> Light travels 299,792 kilometres every second in a vacuum.
-> That sounds instant, but the distances are enormous.
+> Light travels 299,792 kilometres every second.
+> That is about seven and a half times around the Earth, every second.
 
-**distance** (`factCard`) — facts: `sun-distance`, `sun-light-time`
+**distance** (`journey`) — facts: `sun-distance`, `sun-light-time`, `jupiter-light-time`
 
+> But space is enormous.
 > The Sun is about a hundred and fifty million kilometres away.
-> At that speed, its light needs eight minutes and twenty seconds to arrive.
+> At that speed, its light needs eight minutes and twenty seconds to reach us.
 
-**jupiter** (`factCard`) — facts: `jupiter-light-time`
+**jupiter** (`journey`) — facts: `sun-light-time`, `jupiter-light-time`, `sun-distance`
 
+> The same light keeps going.
 > Jupiter is about five and a fifth astronomical units away on average.
-> On average, sunlight takes forty-three minutes to reach it.
+> Sunlight takes forty-three minutes to reach it.
 
 **compare** (`compare`) — facts: `sun-light-time`, `jupiter-light-time`
 
@@ -69,16 +78,19 @@ Image: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narrati
 | sun-distance | The Sun is about 150 million kilometres (93 million miles) from Earth. | [NASA Science](https://science.nasa.gov/sun/facts/) |
 | sun-light-time | Sunlight takes about 8 minutes 20 seconds to reach Earth (150 million km at 299,792 km/s is about 500 seconds). | [NASA Science](https://science.nasa.gov/sun/facts/) |
 | jupiter-light-time | Jupiter is 5.2 astronomical units from the Sun on average, and sunlight takes 43 minutes to reach it. | [NASA Science](https://science.nasa.gov/jupiter/facts/) |
+| earth-laps | Earth's equatorial radius is 6,378.137 km (NASA Earth Fact Sheet), so its equatorial circumference is about 40,075 km. Light (299,792 km/s) covers that about 7.48 times every second: about seven and a half laps. | [NASA Goddard Space Flight Center (NSSDCA)](https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html) |
 
 ## Assets
 
 | Asset | Source | Credit | License | AI |
 | --- | --- | --- | --- | --- |
 | sun-disk | [Full Disk Image of the Sun, March 26, 2007](https://images.nasa.gov/details/PIA09320) | NASA / JPL / JPL-Caltech / NRL / GSFC | NASA media usage guidelines (not copyrighted unless noted) | no |
+| earth-apollo17 | [View of the Earth seen by the Apollo 17 crew traveling toward the moon](https://images.nasa.gov/details/as17-148-22727) | NASA / JSC | NASA media usage guidelines (not copyrighted unless noted) | no |
+| jupiter-cassini | [Cassini Jupiter Portrait](https://images.nasa.gov/details/PIA04866) | NASA / JPL / Space Science Institute | NASA media usage guidelines (not copyrighted unless noted) | no |
 
 ## Render
 
-42.0 s, 1080×1920@30, sha256 `368aef1c7e916a7c…`, rendered 2026-11-12T16:04:27.975Z in 41 s.
+45.9 s, 1080×1920@30, sha256 `8aa6228213aba7dd…`, rendered 2026-11-12T18:25:38.546Z in 54 s.
 
 ## QA
 
@@ -87,13 +99,13 @@ Image: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narrati
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 42.00 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 42.00 s vs timeline 41.97 s |
-| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| duration | ✅ | 45.90 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 45.90 s vs timeline 45.83 s |
+| loudness | ✅ | -14.4 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T16:04:44.006Z): **pass** — Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch.
+Visual review by **claude** (2026-11-12T18:53:49.390Z): **pass** — SDO Sun hook, laps around the Apollo 17 Earth (7.5x, 'shown slowed down'), Sun-Earth-Jupiter journey with Blue Marble and Cassini Jupiter backdrops, 8 min 20 s and 43 min badges, compare bars; Sun label fully on screen after the track shift.
 
 ## Event log
 
@@ -139,3 +151,46 @@ Visual review by **claude** (2026-11-12T16:04:44.006Z): **pass** — Reviewed th
 | 2026-11-12 16:04:36 | pipeline | qa | qa.automated | d707811 |
 | 2026-11-12 16:04:44 | claude | qa | qa.review | d707811 |
 | 2026-11-12 16:04:44 | claude | qa-passed | stage.advance | d707811 |
+| 2026-11-12 17:12:01 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:12:01 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:12:02 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:12:26 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:12:26 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 17:19:23 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 17:19:23 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 17:20:07 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:20:07 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:20:15 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:43:39 | claude | researched | fact.add | 56e31e5 |
+| 2026-11-12 17:43:42 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:43:42 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 17:43:53 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:43:53 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:43:54 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:44:28 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:44:28 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:44:47 | claude | rendered | asset.add | 56e31e5 |
+| 2026-11-12 17:45:44 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:45:44 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:45:45 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:47:34 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:47:34 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 18:12:31 | claude | factchecked | asset.add | 56e31e5 |
+| 2026-11-12 18:12:54 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 18:12:54 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 18:12:55 | pipeline | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 18:12:58 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 18:12:58 | claude | planned | stage.advance | 56e31e5 |
+| 2026-11-12 18:12:59 | pipeline | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 18:13:13 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 18:13:13 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 18:14:37 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:14:37 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 18:19:08 | claude | visuals | decision.record | 56e31e5 |
+| 2026-11-12 18:24:43 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:24:43 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:25:38 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:25:38 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:25:47 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:53:49 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 18:53:49 | claude | qa-passed | stage.advance | 56e31e5 |

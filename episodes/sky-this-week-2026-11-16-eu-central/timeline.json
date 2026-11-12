@@ -1,7 +1,7 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "bb778886b060b7d5",
+  "narrationHash": "ca8d075eb36b81f1",
   "timing": "estimated-proportional",
   "scenes": [
     {
@@ -774,7 +774,7 @@
     {
       "sceneId": "outro",
       "audioFile": "voice/outro.wav",
-      "duration": 3.718,
+      "duration": 6.056,
       "sentences": [
         {
           "text": "Positions calculated for central Europe.",
@@ -809,19 +809,66 @@
           ]
         },
         {
-          "text": "Clear skies.",
+          "text": "Follow, so you don't miss next week's sky.",
           "start": 2.611,
-          "end": 3.438,
+          "end": 4.669,
+          "words": [
+            {
+              "w": "Follow,",
+              "start": 2.611,
+              "end": 3.022
+            },
+            {
+              "w": "so",
+              "start": 3.022,
+              "end": 3.172
+            },
+            {
+              "w": "you",
+              "start": 3.172,
+              "end": 3.359
+            },
+            {
+              "w": "don't",
+              "start": 3.359,
+              "end": 3.621
+            },
+            {
+              "w": "miss",
+              "start": 3.621,
+              "end": 3.846
+            },
+            {
+              "w": "next",
+              "start": 3.846,
+              "end": 4.07
+            },
+            {
+              "w": "week's",
+              "start": 4.07,
+              "end": 4.37
+            },
+            {
+              "w": "sky.",
+              "start": 4.37,
+              "end": 4.669
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 4.949,
+          "end": 5.776,
           "words": [
             {
               "w": "Clear",
-              "start": 2.611,
-              "end": 2.951
+              "start": 4.949,
+              "end": 5.29
             },
             {
               "w": "skies.",
-              "start": 2.951,
-              "end": 3.438
+              "start": 5.29,
+              "end": 5.776
             }
           ]
         }

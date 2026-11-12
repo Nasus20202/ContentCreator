@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T16:03:39.962Z",
-  "videoSha256": "21387edc1ce6459d8bbf2672eb6dc1860ad96868a3a8fb12ad249caa72e334c4",
+  "checkedAt": "2026-11-12T18:24:33.413Z",
+  "videoSha256": "cc07ba4e5f222879137198c4cb505c006cb0386d4328c8a52359b77e5a889b7a",
   "automated": [
     {
       "name": "resolution",
@@ -20,17 +20,17 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "51.70 s (limit 60 s)"
+      "detail": "55.60 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 51.70 s vs timeline 51.67 s"
+      "detail": "video 55.60 s vs timeline 55.57 s"
     },
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14.2 LUFS (target -18…-11)"
+      "detail": "-14.3 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
@@ -52,108 +52,108 @@
     {
       "file": "qa/00-hook-1.jpg",
       "sceneId": "hook",
-      "tSec": 3.87
+      "tSec": 2.54
     },
     {
       "file": "qa/00-hook-2.jpg",
       "sceneId": "hook",
-      "tSec": 5.8
+      "tSec": 9.33
     },
     {
       "file": "qa/01-scale-0.jpg",
       "sceneId": "scale",
-      "tSec": 6.65
+      "tSec": 10.18
     },
     {
       "file": "qa/01-scale-1.jpg",
       "sceneId": "scale",
-      "tSec": 9.67
+      "tSec": 13.2
     },
     {
       "file": "qa/01-scale-2.jpg",
       "sceneId": "scale",
-      "tSec": 13
+      "tSec": 16.53
     },
     {
       "file": "qa/02-voyager-0.jpg",
       "sceneId": "voyager",
-      "tSec": 13.85
+      "tSec": 17.38
     },
     {
       "file": "qa/02-voyager-1.jpg",
       "sceneId": "voyager",
-      "tSec": 19.37
+      "tSec": 21.39
     },
     {
       "file": "qa/02-voyager-2.jpg",
       "sceneId": "voyager",
-      "tSec": 22.47
+      "tSec": 24.73
     },
     {
       "file": "qa/03-starshot-0.jpg",
       "sceneId": "starshot",
-      "tSec": 23.32
+      "tSec": 25.58
     },
     {
       "file": "qa/03-starshot-1.jpg",
       "sceneId": "starshot",
-      "tSec": 27.8
+      "tSec": 30.07
     },
     {
       "file": "qa/03-starshot-2.jpg",
       "sceneId": "starshot",
-      "tSec": 30.1
+      "tSec": 32.37
     },
     {
       "file": "qa/04-compare-0.jpg",
       "sceneId": "compare",
-      "tSec": 30.95
+      "tSec": 33.22
     },
     {
       "file": "qa/04-compare-1.jpg",
       "sceneId": "compare",
-      "tSec": 34.7
+      "tSec": 37
     },
     {
       "file": "qa/05-ship-clock-0.jpg",
       "sceneId": "ship-clock",
-      "tSec": 35.55
+      "tSec": 37.85
     },
     {
       "file": "qa/05-ship-clock-1.jpg",
       "sceneId": "ship-clock",
-      "tSec": 38.22
+      "tSec": 40.53
     },
     {
       "file": "qa/05-ship-clock-2.jpg",
       "sceneId": "ship-clock",
-      "tSec": 46.29
+      "tSec": 48.59
     },
     {
       "file": "qa/05-ship-clock-3.jpg",
       "sceneId": "ship-clock",
-      "tSec": 47.87
+      "tSec": 50.17
     },
     {
       "file": "qa/06-outro-0.jpg",
       "sceneId": "outro",
-      "tSec": 48.72
+      "tSec": 51.02
     },
     {
       "file": "qa/06-outro-1.jpg",
       "sceneId": "outro",
-      "tSec": 50.88
+      "tSec": 53.18
     },
     {
       "file": "qa/06-outro-2.jpg",
       "sceneId": "outro",
-      "tSec": 51.57
+      "tSec": 55.47
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T16:04:43.442Z",
+    "at": "2026-11-12T18:53:48.661Z",
     "verdict": "pass",
-    "notes": "Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch."
+    "notes": "Journeys over the Hubble Alpha Centauri A&B backdrop (labelled as Proxima's neighbours, credited), Voyager clock 75,000 yrs, Starshot 28 yrs, ship 10 min vs 4.24 yrs; Voyager launch photo with chips; to-scale compare; outro CTA in sync. Labels clear of the caption band."
   }
 }

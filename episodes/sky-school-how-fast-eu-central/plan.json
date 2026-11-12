@@ -1,0 +1,195 @@
+{
+  "episodeId": "sky-school-how-fast-eu-central",
+  "series": "sky-school",
+  "title": "Sky School · How fast are you moving?",
+  "badge": "Sky School · Your speed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "post": {
+    "title": "You are not sitting still 🚀",
+    "description": "Even sitting still in central Europe, Earth's spin carries you at about 1,076 km/h, Earth's orbit at about 107,000 km/h (29.8 km/s), and the Sun carries us around the Milky Way at about 720,000 km/h. Each speed is measured relative to a different centre.\n\nSources:\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\n\nImages: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#astronomy",
+      "#space",
+      "#science",
+      "#skyschool",
+      "#earth",
+      "#milkyway"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "image",
+      "narration": [
+        "Even sitting perfectly still, you are flying through space.",
+        "Right now, you are moving in several ways at once."
+      ],
+      "factIds": [],
+      "chips": [],
+      "title": {
+        "kicker": "Sky School",
+        "title": "You are not sitting still",
+        "from": 0.1,
+        "to": 2.8
+      },
+      "params": {
+        "assetId": "earth-apollo17",
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "spin",
+      "template": "factCard",
+      "narration": [
+        "First, Earth spins.",
+        "In central Europe, that carries you east at about 1,076 kilometres an hour."
+      ],
+      "factIds": [
+        "earth-spin"
+      ],
+      "params": {
+        "value": "1,076 km/h",
+        "label": "Earth's spin, in central Europe (50° N)",
+        "sourceLine": "Computed from NASA's Earth fact sheet"
+      }
+    },
+    {
+      "id": "orbit",
+      "template": "compare",
+      "narration": [
+        "Second, Earth circles the Sun at 29.8 kilometres every second.",
+        "That is about 107,000 kilometres an hour, a hundred times faster."
+      ],
+      "factIds": [
+        "earth-orbit-speed",
+        "earth-orbit-kmh",
+        "earth-spin"
+      ],
+      "params": {
+        "heading": "Your speed, in km/h",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "Earth's spin (50° N)",
+            "value": 1076,
+            "display": "1,076"
+          },
+          {
+            "label": "Earth around the Sun",
+            "value": 107000,
+            "display": "107,000"
+          }
+        ],
+        "note": "Drawn to scale."
+      }
+    },
+    {
+      "id": "galaxy",
+      "template": "image",
+      "narration": [
+        "Third, the Sun carries all of us around the centre of the Milky Way, at about 720,000 kilometres an hour.",
+        "Even so, one lap takes about 230 million years."
+      ],
+      "factIds": [
+        "sun-galaxy"
+      ],
+      "chips": [
+        {
+          "text": "720,000 KM/H",
+          "from": 0.4,
+          "to": {
+            "sentence": 1
+          }
+        },
+        {
+          "text": "ONE LAP: 230 MILLION YEARS",
+          "from": {
+            "sentence": 1
+          }
+        }
+      ],
+      "params": {
+        "assetId": "galactic-centre-spitzer",
+        "zoom": [
+          1.0,
+          1.25
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "all",
+      "template": "compare",
+      "narration": [
+        "Side by side, the spin that gives us day and night is barely a sliver."
+      ],
+      "factIds": [
+        "earth-spin",
+        "earth-orbit-kmh",
+        "sun-galaxy"
+      ],
+      "params": {
+        "heading": "Side by side, in km/h",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "Earth's spin (50° N)",
+            "value": 1076,
+            "display": "1,076"
+          },
+          {
+            "label": "Earth around the Sun",
+            "value": 107000,
+            "display": "107,000"
+          },
+          {
+            "label": "Sun around the galaxy",
+            "value": 720000,
+            "display": "720,000"
+          }
+        ],
+        "note": "To scale. Each speed is relative to a different centre."
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Follow for more sky, explained.",
+        "Clear skies."
+      ],
+      "factIds": [],
+      "params": {
+        "kicker": "Sky School",
+        "cta": "FOLLOW\nFOR MORE\nSKY, EXPLAINED",
+        "footnote": "Speeds: NASA fact sheets, computed for central Europe"
+      }
+    }
+  ]
+}

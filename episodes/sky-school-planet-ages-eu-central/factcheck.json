@@ -1,0 +1,264 @@
+{
+  "checkedAt": "2026-11-12T18:52:30.335Z",
+  "planHash": "1061cc4d306b09f9",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[0]",
+        "text": "If you are thirty, on Saturn you would have just turned one.",
+        "number": 30,
+        "raw": "thirty",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "hook",
+        "where": "narration[1]",
+        "text": "A year there lasts about twenty-nine and a half of ours.",
+        "number": 29,
+        "raw": "twenty nine",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "AGE 30 ON EARTH = 1 ON SATURN",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "AGE 30 ON EARTH = 1 ON SATURN",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "why",
+        "where": "heading",
+        "text": "One year, in Earth years",
+        "number": 1,
+        "raw": "one",
+        "matchedFact": "year-lengths"
+      },
+      {
+        "sceneId": "why",
+        "where": "bars[0]",
+        "text": "1 Earth",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "year-lengths"
+      },
+      {
+        "sceneId": "why",
+        "where": "bars[1]",
+        "text": "29.4 Saturn",
+        "number": 29.4,
+        "raw": "29.4",
+        "matchedFact": "year-lengths"
+      },
+      {
+        "sceneId": "why",
+        "where": "bars[2]",
+        "text": "164 Neptune",
+        "number": 164,
+        "raw": "164",
+        "matchedFact": "year-lengths"
+      },
+      {
+        "sceneId": "mercury",
+        "where": "narration[0]",
+        "text": "On Mercury, a year is just eighty-eight days.",
+        "number": 88,
+        "raw": "eighty eight",
+        "matchedFact": "orbital-periods"
+      },
+      {
+        "sceneId": "mercury",
+        "where": "narration[1]",
+        "text": "You would be about a hundred and twenty-four.",
+        "number": 124,
+        "raw": "a hundred and twenty four",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "mercury",
+        "where": "chips[1]",
+        "text": "AGE 30 → 124 ON MERCURY",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "mercury",
+        "where": "chips[1]",
+        "text": "AGE 30 → 124 ON MERCURY",
+        "number": 124,
+        "raw": "124",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "mars",
+        "where": "narration[0]",
+        "text": "On Mars, with its 687-day year, you would be about sixteen.",
+        "number": 16,
+        "raw": "sixteen",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "mars",
+        "where": "chips[0]",
+        "text": "AGE 30 → 16 ON MARS",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "mars",
+        "where": "chips[0]",
+        "text": "AGE 30 → 16 ON MARS",
+        "number": 16,
+        "raw": "16",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "compare",
+        "where": "heading",
+        "text": "Age 30, in local years",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[0]",
+        "text": "124 Mercury",
+        "number": 124,
+        "raw": "124",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[1]",
+        "text": "30 Earth",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[2]",
+        "text": "16 Mars",
+        "number": 16,
+        "raw": "16",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "neptune",
+        "where": "narration[0]",
+        "text": "And on Neptune, one year lasts about a hundred and sixty-four of ours.",
+        "number": 1,
+        "raw": "one",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "neptune",
+        "where": "narration[0]",
+        "text": "And on Neptune, one year lasts about a hundred and sixty-four of ours.",
+        "number": 164,
+        "raw": "a hundred and sixty four",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "neptune",
+        "where": "narration[1]",
+        "text": "You would only celebrate your first birthday at a hundred and sixty-four.",
+        "number": 164,
+        "raw": "a hundred and sixty four",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "neptune",
+        "where": "chips[0]",
+        "text": "1 NEPTUNE YEAR = 164 EARTH YEARS",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "neptune",
+        "where": "chips[0]",
+        "text": "1 NEPTUNE YEAR = 164 EARTH YEARS",
+        "number": 164,
+        "raw": "164",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "30 on Earth, barely 1 on Saturn 🪐",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "30 on Earth, barely 1 on Saturn 🪐",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "A year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods): https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "A year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods): https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.",
+        "number": 124,
+        "raw": "124",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "A year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods): https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.",
+        "number": 16,
+        "raw": "16",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "A year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods): https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "ages-at-30"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "A year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods): https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.",
+        "number": 164,
+        "raw": "164",
+        "matchedFact": "ages-at-30"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T18:52:45.527Z",
+    "verdict": "pass",
+    "notes": "Re-review: the 'why' scene is now a to-scale bar chart of year lengths (Earth 1, Saturn 29.4, Neptune 164 Earth years) from 10,747 and 59,800 days / 365.2 on NASA's planetary fact sheet; the orbit3d view was dropped because Saturn fell outside the frame. Ages 124/16/1 and the 164 birthday re-verified."
+  }
+}

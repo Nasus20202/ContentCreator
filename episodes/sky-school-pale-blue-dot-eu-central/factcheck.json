@@ -1,0 +1,200 @@
+{
+  "checkedAt": "2026-11-12T18:52:28.925Z",
+  "planHash": "c65947efe8868759",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "SEEN FROM 6 BILLION KM",
+        "number": 6,
+        "raw": "6",
+        "matchedFact": "pbd-distance"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Voyager 1 · 1990 This is Earth",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "pbd-pixel"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Voyager 1 · 1990 This is Earth",
+        "number": 1990,
+        "raw": "1990",
+        "matchedFact": "pbd-date"
+      },
+      {
+        "sceneId": "where",
+        "where": "narration[0]",
+        "text": "Voyager 1 took this photo on Valentine's Day, 1990, about six billion kilometres from home.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "pbd-distance"
+      },
+      {
+        "sceneId": "where",
+        "where": "narration[0]",
+        "text": "Voyager 1 took this photo on Valentine's Day, 1990, about six billion kilometres from home.",
+        "number": 1990,
+        "raw": "1990",
+        "matchedFact": "pbd-date"
+      },
+      {
+        "sceneId": "where",
+        "where": "narration[0]",
+        "text": "Voyager 1 took this photo on Valentine's Day, 1990, about six billion kilometres from home.",
+        "number": 6000000000,
+        "raw": "six billion",
+        "matchedFact": "pbd-distance"
+      },
+      {
+        "sceneId": "where",
+        "where": "narration[1]",
+        "text": "That is forty times farther than the Sun.",
+        "number": 40,
+        "raw": "forty",
+        "matchedFact": "pbd-ratio"
+      },
+      {
+        "sceneId": "where",
+        "where": "stops[1]",
+        "text": "Voyager 1 6 billion km away Feb 1990: look back!",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "pbd-distance"
+      },
+      {
+        "sceneId": "where",
+        "where": "stops[1]",
+        "text": "Voyager 1 6 billion km away Feb 1990: look back!",
+        "number": 6,
+        "raw": "6",
+        "matchedFact": "pbd-distance"
+      },
+      {
+        "sceneId": "where",
+        "where": "stops[1]",
+        "text": "Voyager 1 6 billion km away Feb 1990: look back!",
+        "number": 1990,
+        "raw": "1990",
+        "matchedFact": "pbd-date"
+      },
+      {
+        "sceneId": "where",
+        "where": "backdrop",
+        "text": "Voyager 1 at launch",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "pbd-distance"
+      },
+      {
+        "sceneId": "pixel",
+        "where": "chips[0]",
+        "text": "LESS THAN 1 PIXEL",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "pbd-pixel"
+      },
+      {
+        "sceneId": "last",
+        "where": "narration[0]",
+        "text": "Thirty-four minutes later, Voyager 1 switched off its cameras forever.",
+        "number": 34,
+        "raw": "thirty four",
+        "matchedFact": "pbd-date"
+      },
+      {
+        "sceneId": "last",
+        "where": "narration[0]",
+        "text": "Thirty-four minutes later, Voyager 1 switched off its cameras forever.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "pbd-date"
+      },
+      {
+        "sceneId": "last",
+        "where": "factCard",
+        "text": "34 min later, Voyager 1's cameras went dark for good",
+        "number": 34,
+        "raw": "34",
+        "matchedFact": "pbd-date"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 14,
+        "raw": "14",
+        "matchedFact": "pbd-date"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1990,
+        "raw": "1990",
+        "matchedFact": "pbd-date"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "pbd-pixel"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 6,
+        "raw": "6",
+        "matchedFact": "pbd-distance"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 34,
+        "raw": "34",
+        "matchedFact": "pbd-date"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "pbd-pixel"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 2020,
+        "raw": "2020",
+        "matchedFact": "pbd-date"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited: https://science.nasa.gov/photojournal/pale-blue-dot-revisited/\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "pbd-pixel"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T18:52:44.863Z",
+    "verdict": "pass",
+    "notes": "Re-review after layout change: the journey now runs Earth (home) to Voyager 1 at 6 billion km, with the arrival badge 'Feb 1990: look back!'; the 40x-the-Sun claim stays in narration, backed by pbd-ratio. Other claims unchanged and verified against NASA's Pale Blue Dot Revisited page."
+  }
+}

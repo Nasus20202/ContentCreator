@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T16:04:28.905Z",
-  "videoSha256": "368aef1c7e916a7c7d5522a57c92cb844327218a2bb05f70dda42e830de3a6be",
+  "checkedAt": "2026-11-12T18:25:39.229Z",
+  "videoSha256": "8aa6228213aba7dd72d30990d496a0b1c01c1d4888c313afd63ad3fec8851e6e",
   "automated": [
     {
       "name": "resolution",
@@ -20,17 +20,17 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "42.00 s (limit 60 s)"
+      "detail": "45.90 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 42.00 s vs timeline 41.97 s"
+      "detail": "video 45.90 s vs timeline 45.83 s"
     },
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14.2 LUFS (target -18…-11)"
+      "detail": "-14.4 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
@@ -67,73 +67,83 @@
     {
       "file": "qa/01-speed-1.jpg",
       "sceneId": "speed",
-      "tSec": 12.97
+      "tSec": 12.18
     },
     {
       "file": "qa/01-speed-2.jpg",
       "sceneId": "speed",
-      "tSec": 15.63
+      "tSec": 15.47
     },
     {
       "file": "qa/02-distance-0.jpg",
       "sceneId": "distance",
-      "tSec": 16.48
+      "tSec": 16.32
     },
     {
       "file": "qa/02-distance-1.jpg",
       "sceneId": "distance",
-      "tSec": 20.11
+      "tSec": 17.85
     },
     {
       "file": "qa/02-distance-2.jpg",
       "sceneId": "distance",
-      "tSec": 23.8
+      "tSec": 21.47
+    },
+    {
+      "file": "qa/02-distance-3.jpg",
+      "sceneId": "distance",
+      "tSec": 25.23
     },
     {
       "file": "qa/03-jupiter-0.jpg",
       "sceneId": "jupiter",
-      "tSec": 24.65
+      "tSec": 26.08
     },
     {
       "file": "qa/03-jupiter-1.jpg",
       "sceneId": "jupiter",
-      "tSec": 29.21
+      "tSec": 27.75
     },
     {
       "file": "qa/03-jupiter-2.jpg",
       "sceneId": "jupiter",
-      "tSec": 32.03
+      "tSec": 32.32
+    },
+    {
+      "file": "qa/03-jupiter-3.jpg",
+      "sceneId": "jupiter",
+      "tSec": 34.3
     },
     {
       "file": "qa/04-compare-0.jpg",
       "sceneId": "compare",
-      "tSec": 32.88
+      "tSec": 35.15
     },
     {
       "file": "qa/04-compare-1.jpg",
       "sceneId": "compare",
-      "tSec": 38.17
+      "tSec": 40.43
     },
     {
       "file": "qa/05-outro-0.jpg",
       "sceneId": "outro",
-      "tSec": 39.02
+      "tSec": 41.28
     },
     {
       "file": "qa/05-outro-1.jpg",
       "sceneId": "outro",
-      "tSec": 41.18
+      "tSec": 43.45
     },
     {
       "file": "qa/05-outro-2.jpg",
       "sceneId": "outro",
-      "tSec": 41.87
+      "tSec": 45.73
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T16:04:44.006Z",
+    "at": "2026-11-12T18:53:49.390Z",
     "verdict": "pass",
-    "notes": "Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch."
+    "notes": "SDO Sun hook, laps around the Apollo 17 Earth (7.5x, 'shown slowed down'), Sun-Earth-Jupiter journey with Blue Marble and Cassini Jupiter backdrops, 8 min 20 s and 43 min badges, compare bars; Sun label fully on screen after the track shift."
   }
 }

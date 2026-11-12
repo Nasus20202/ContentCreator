@@ -1,0 +1,731 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "8aeb1d04295785dd",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 6.106,
+      "sentences": [
+        {
+          "text": "If you are thirty, on Saturn you would have just turned one.",
+          "start": 0.15,
+          "end": 2.949,
+          "words": [
+            {
+              "w": "If",
+              "start": 0.15,
+              "end": 0.295
+            },
+            {
+              "w": "you",
+              "start": 0.295,
+              "end": 0.477
+            },
+            {
+              "w": "are",
+              "start": 0.477,
+              "end": 0.659
+            },
+            {
+              "w": "thirty,",
+              "start": 0.659,
+              "end": 1.059
+            },
+            {
+              "w": "on",
+              "start": 1.059,
+              "end": 1.204
+            },
+            {
+              "w": "Saturn",
+              "start": 1.204,
+              "end": 1.495
+            },
+            {
+              "w": "you",
+              "start": 1.495,
+              "end": 1.677
+            },
+            {
+              "w": "would",
+              "start": 1.677,
+              "end": 1.931
+            },
+            {
+              "w": "have",
+              "start": 1.931,
+              "end": 2.149
+            },
+            {
+              "w": "just",
+              "start": 2.149,
+              "end": 2.367
+            },
+            {
+              "w": "turned",
+              "start": 2.367,
+              "end": 2.658
+            },
+            {
+              "w": "one.",
+              "start": 2.658,
+              "end": 2.949
+            }
+          ]
+        },
+        {
+          "text": "A year there lasts about twenty-nine and a half of ours.",
+          "start": 3.229,
+          "end": 5.826,
+          "words": [
+            {
+              "w": "A",
+              "start": 3.229,
+              "end": 3.342
+            },
+            {
+              "w": "year",
+              "start": 3.342,
+              "end": 3.568
+            },
+            {
+              "w": "there",
+              "start": 3.568,
+              "end": 3.831
+            },
+            {
+              "w": "lasts",
+              "start": 3.831,
+              "end": 4.095
+            },
+            {
+              "w": "about",
+              "start": 4.095,
+              "end": 4.358
+            },
+            {
+              "w": "twenty-nine",
+              "start": 4.358,
+              "end": 4.81
+            },
+            {
+              "w": "and",
+              "start": 4.81,
+              "end": 4.998
+            },
+            {
+              "w": "a",
+              "start": 4.998,
+              "end": 5.111
+            },
+            {
+              "w": "half",
+              "start": 5.111,
+              "end": 5.337
+            },
+            {
+              "w": "of",
+              "start": 5.337,
+              "end": 5.487
+            },
+            {
+              "w": "ours.",
+              "start": 5.487,
+              "end": 5.826
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "why",
+      "audioFile": "voice/why.wav",
+      "duration": 6.783,
+      "sentences": [
+        {
+          "text": "A year is one trip around the Sun.",
+          "start": 0.15,
+          "end": 1.899,
+          "words": [
+            {
+              "w": "A",
+              "start": 0.15,
+              "end": 0.267
+            },
+            {
+              "w": "year",
+              "start": 0.267,
+              "end": 0.5
+            },
+            {
+              "w": "is",
+              "start": 0.5,
+              "end": 0.655
+            },
+            {
+              "w": "one",
+              "start": 0.655,
+              "end": 0.85
+            },
+            {
+              "w": "trip",
+              "start": 0.85,
+              "end": 1.083
+            },
+            {
+              "w": "around",
+              "start": 1.083,
+              "end": 1.394
+            },
+            {
+              "w": "the",
+              "start": 1.394,
+              "end": 1.588
+            },
+            {
+              "w": "Sun.",
+              "start": 1.588,
+              "end": 1.899
+            }
+          ]
+        },
+        {
+          "text": "The farther out a planet is, the longer its path, and the slower it moves along it.",
+          "start": 2.179,
+          "end": 6.503,
+          "words": [
+            {
+              "w": "The",
+              "start": 2.179,
+              "end": 2.381
+            },
+            {
+              "w": "farther",
+              "start": 2.381,
+              "end": 2.745
+            },
+            {
+              "w": "out",
+              "start": 2.745,
+              "end": 2.947
+            },
+            {
+              "w": "a",
+              "start": 2.947,
+              "end": 3.068
+            },
+            {
+              "w": "planet",
+              "start": 3.068,
+              "end": 3.391
+            },
+            {
+              "w": "is,",
+              "start": 3.391,
+              "end": 3.674
+            },
+            {
+              "w": "the",
+              "start": 3.674,
+              "end": 3.876
+            },
+            {
+              "w": "longer",
+              "start": 3.876,
+              "end": 4.199
+            },
+            {
+              "w": "its",
+              "start": 4.199,
+              "end": 4.401
+            },
+            {
+              "w": "path,",
+              "start": 4.401,
+              "end": 4.765
+            },
+            {
+              "w": "and",
+              "start": 4.765,
+              "end": 4.967
+            },
+            {
+              "w": "the",
+              "start": 4.967,
+              "end": 5.169
+            },
+            {
+              "w": "slower",
+              "start": 5.169,
+              "end": 5.492
+            },
+            {
+              "w": "it",
+              "start": 5.492,
+              "end": 5.654
+            },
+            {
+              "w": "moves",
+              "start": 5.654,
+              "end": 5.937
+            },
+            {
+              "w": "along",
+              "start": 5.937,
+              "end": 6.22
+            },
+            {
+              "w": "it.",
+              "start": 6.22,
+              "end": 6.503
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "mercury",
+      "audioFile": "voice/mercury.wav",
+      "duration": 5.236,
+      "sentences": [
+        {
+          "text": "On Mercury, a year is just eighty-eight days.",
+          "start": 0.15,
+          "end": 2.631,
+          "words": [
+            {
+              "w": "On",
+              "start": 0.15,
+              "end": 0.324
+            },
+            {
+              "w": "Mercury,",
+              "start": 0.324,
+              "end": 0.846
+            },
+            {
+              "w": "a",
+              "start": 0.846,
+              "end": 0.977
+            },
+            {
+              "w": "year",
+              "start": 0.977,
+              "end": 1.238
+            },
+            {
+              "w": "is",
+              "start": 1.238,
+              "end": 1.412
+            },
+            {
+              "w": "just",
+              "start": 1.412,
+              "end": 1.673
+            },
+            {
+              "w": "eighty-eight",
+              "start": 1.673,
+              "end": 2.239
+            },
+            {
+              "w": "days.",
+              "start": 2.239,
+              "end": 2.631
+            }
+          ]
+        },
+        {
+          "text": "You would be about a hundred and twenty-four.",
+          "start": 2.911,
+          "end": 4.956,
+          "words": [
+            {
+              "w": "You",
+              "start": 2.911,
+              "end": 3.096
+            },
+            {
+              "w": "would",
+              "start": 3.096,
+              "end": 3.357
+            },
+            {
+              "w": "be",
+              "start": 3.357,
+              "end": 3.505
+            },
+            {
+              "w": "about",
+              "start": 3.505,
+              "end": 3.766
+            },
+            {
+              "w": "a",
+              "start": 3.766,
+              "end": 3.877
+            },
+            {
+              "w": "hundred",
+              "start": 3.877,
+              "end": 4.212
+            },
+            {
+              "w": "and",
+              "start": 4.212,
+              "end": 4.398
+            },
+            {
+              "w": "twenty-four.",
+              "start": 4.398,
+              "end": 4.956
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "mars",
+      "audioFile": "voice/mars.wav",
+      "duration": 4.56,
+      "sentences": [
+        {
+          "text": "On Mars, with its 687-day year, you would be about sixteen.",
+          "start": 0.15,
+          "end": 4.28,
+          "words": [
+            {
+              "w": "On",
+              "start": 0.15,
+              "end": 0.367
+            },
+            {
+              "w": "Mars,",
+              "start": 0.367,
+              "end": 0.856
+            },
+            {
+              "w": "with",
+              "start": 0.856,
+              "end": 1.182
+            },
+            {
+              "w": "its",
+              "start": 1.182,
+              "end": 1.454
+            },
+            {
+              "w": "687-day",
+              "start": 1.454,
+              "end": 1.889
+            },
+            {
+              "w": "year,",
+              "start": 1.889,
+              "end": 2.378
+            },
+            {
+              "w": "you",
+              "start": 2.378,
+              "end": 2.65
+            },
+            {
+              "w": "would",
+              "start": 2.65,
+              "end": 3.03
+            },
+            {
+              "w": "be",
+              "start": 3.03,
+              "end": 3.247
+            },
+            {
+              "w": "about",
+              "start": 3.247,
+              "end": 3.628
+            },
+            {
+              "w": "sixteen.",
+              "start": 3.628,
+              "end": 4.28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "compare",
+      "audioFile": "voice/compare.wav",
+      "duration": 4.431,
+      "sentences": [
+        {
+          "text": "Same life, very different birthday counts, just because the orbits differ.",
+          "start": 0.15,
+          "end": 4.151,
+          "words": [
+            {
+              "w": "Same",
+              "start": 0.15,
+              "end": 0.411
+            },
+            {
+              "w": "life,",
+              "start": 0.411,
+              "end": 0.802
+            },
+            {
+              "w": "very",
+              "start": 0.802,
+              "end": 1.063
+            },
+            {
+              "w": "different",
+              "start": 1.063,
+              "end": 1.542
+            },
+            {
+              "w": "birthday",
+              "start": 1.542,
+              "end": 1.976
+            },
+            {
+              "w": "counts,",
+              "start": 1.976,
+              "end": 2.455
+            },
+            {
+              "w": "just",
+              "start": 2.455,
+              "end": 2.716
+            },
+            {
+              "w": "because",
+              "start": 2.716,
+              "end": 3.107
+            },
+            {
+              "w": "the",
+              "start": 3.107,
+              "end": 3.324
+            },
+            {
+              "w": "orbits",
+              "start": 3.324,
+              "end": 3.672
+            },
+            {
+              "w": "differ.",
+              "start": 3.672,
+              "end": 4.151
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "neptune",
+      "audioFile": "voice/neptune.wav",
+      "duration": 8.17,
+      "sentences": [
+        {
+          "text": "And on Neptune, one year lasts about a hundred and sixty-four of ours.",
+          "start": 0.15,
+          "end": 3.959,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.369
+            },
+            {
+              "w": "on",
+              "start": 0.369,
+              "end": 0.544
+            },
+            {
+              "w": "Neptune,",
+              "start": 0.544,
+              "end": 1.069
+            },
+            {
+              "w": "one",
+              "start": 1.069,
+              "end": 1.288
+            },
+            {
+              "w": "year",
+              "start": 1.288,
+              "end": 1.551
+            },
+            {
+              "w": "lasts",
+              "start": 1.551,
+              "end": 1.857
+            },
+            {
+              "w": "about",
+              "start": 1.857,
+              "end": 2.164
+            },
+            {
+              "w": "a",
+              "start": 2.164,
+              "end": 2.295
+            },
+            {
+              "w": "hundred",
+              "start": 2.295,
+              "end": 2.689
+            },
+            {
+              "w": "and",
+              "start": 2.689,
+              "end": 2.908
+            },
+            {
+              "w": "sixty-four",
+              "start": 2.908,
+              "end": 3.39
+            },
+            {
+              "w": "of",
+              "start": 3.39,
+              "end": 3.565
+            },
+            {
+              "w": "ours.",
+              "start": 3.565,
+              "end": 3.959
+            }
+          ]
+        },
+        {
+          "text": "You would only celebrate your first birthday at a hundred and sixty-four.",
+          "start": 4.239,
+          "end": 7.89,
+          "words": [
+            {
+              "w": "You",
+              "start": 4.239,
+              "end": 4.449
+            },
+            {
+              "w": "would",
+              "start": 4.449,
+              "end": 4.742
+            },
+            {
+              "w": "only",
+              "start": 4.742,
+              "end": 4.994
+            },
+            {
+              "w": "celebrate",
+              "start": 4.994,
+              "end": 5.456
+            },
+            {
+              "w": "your",
+              "start": 5.456,
+              "end": 5.708
+            },
+            {
+              "w": "first",
+              "start": 5.708,
+              "end": 6.001
+            },
+            {
+              "w": "birthday",
+              "start": 6.001,
+              "end": 6.421
+            },
+            {
+              "w": "at",
+              "start": 6.421,
+              "end": 6.589
+            },
+            {
+              "w": "a",
+              "start": 6.589,
+              "end": 6.715
+            },
+            {
+              "w": "hundred",
+              "start": 6.715,
+              "end": 7.093
+            },
+            {
+              "w": "and",
+              "start": 7.093,
+              "end": 7.303
+            },
+            {
+              "w": "sixty-four.",
+              "start": 7.303,
+              "end": 7.89
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.421,
+      "sentences": [
+        {
+          "text": "Follow for more sky, explained.",
+          "start": 0.15,
+          "end": 2.033,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.518
+            },
+            {
+              "w": "for",
+              "start": 0.518,
+              "end": 0.747
+            },
+            {
+              "w": "more",
+              "start": 0.747,
+              "end": 1.023
+            },
+            {
+              "w": "sky,",
+              "start": 1.023,
+              "end": 1.39
+            },
+            {
+              "w": "explained.",
+              "start": 1.39,
+              "end": 2.033
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.313,
+          "end": 3.141,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.313,
+              "end": 2.654
+            },
+            {
+              "w": "skies.",
+              "start": 2.654,
+              "end": 3.141
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

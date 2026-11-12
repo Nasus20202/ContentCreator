@@ -57,6 +57,24 @@
         "publisher": "NASA Science",
         "accessed": "2026-11-12"
       }
+    },
+    {
+      "id": "earth-laps",
+      "statement": "Earth's equatorial radius is 6,378.137 km (NASA Earth Fact Sheet), so its equatorial circumference is about 40,075 km. Light (299,792 km/s) covers that about 7.48 times every second: about seven and a half laps.",
+      "values": [
+        6378.137,
+        40075,
+        7.48,
+        7.5,
+        7
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+        "title": "Earth Fact Sheet",
+        "publisher": "NASA Goddard Space Flight Center (NSSDCA)",
+        "accessed": "2026-11-12"
+      }
     }
   ]
 }

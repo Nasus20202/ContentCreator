@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "id": "xdf",
+      "kind": "image",
+      "file": "assets/xdf.jpg",
+      "sha256": "6b0491babae261e27d703ea5c4c8eb34e2ddd2a2f1fcceda9c25e23973dfa60e",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001651/GSFC_20171208_Archive_e001651~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001651",
+        "title": "Hubble Goes to the eXtreme to Assemble Farthest-Ever View of the Universe",
+        "credit": "NASA / GSFC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:43:54.638Z"
+    }
+  ]
+}

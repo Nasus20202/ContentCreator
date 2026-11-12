@@ -91,7 +91,7 @@ Orbits computed for 19 February 2027 with astronomy-engine (not to scale). Posit
 
 ## Render
 
-48.3 s, 1080×1920@30, sha256 `13ac71a9409f7f9b…`, rendered 2026-11-12T14:59:51.910Z in 105 s.
+49.9 s, 1080×1920@30, sha256 `9fb6efed38893799…`, rendered 2026-11-12T18:43:25.965Z in 147 s.
 
 ## QA
 
@@ -100,13 +100,13 @@ Orbits computed for 19 February 2027 with astronomy-engine (not to scale). Posit
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 48.30 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 48.30 s vs timeline 48.23 s |
+| duration | ✅ | 49.90 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 49.90 s vs timeline 49.83 s |
 | loudness | ✅ | -14.3 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.5 dBFS |
+| true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T15:04:39.666Z): **pass** — Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch.
+Visual review by **claude** (2026-11-12T18:53:54.466Z): **pass** — Mars rising and high at midnight with magnitude, orbit reveal with 101 million km, distance card, outro synced with hold.
 
 ## Event log
 
@@ -176,3 +176,15 @@ Visual review by **claude** (2026-11-12T15:04:39.666Z): **pass** — Reviewed th
 | 2026-11-12 14:59:59 | pipeline | qa | qa.automated | ca37d95 |
 | 2026-11-12 15:04:39 | claude | qa | qa.review | ca37d95 |
 | 2026-11-12 15:04:39 | claude | qa-passed | stage.advance | ca37d95 |
+| 2026-11-12 17:37:12 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:37:12 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 17:39:06 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:39:06 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:39:14 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:40:58 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 18:40:58 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:43:25 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:43:25 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:43:34 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:53:54 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 18:53:54 | claude | qa-passed | stage.advance | 56e31e5 |

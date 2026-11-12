@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T16:02:53.263Z",
-  "videoSha256": "f787191207640dc37ede103b6e9515b0746266442c138e8a9d80988e7323fabc",
+  "checkedAt": "2026-11-12T18:26:54.088Z",
+  "videoSha256": "2bae828c2484902221d1a18785e9441d736e8918be555ef1b0816f18d611d1a8",
   "automated": [
     {
       "name": "resolution",
@@ -20,22 +20,22 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "49.50 s (limit 60 s)"
+      "detail": "53.10 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 49.50 s vs timeline 49.43 s"
+      "detail": "video 53.10 s vs timeline 53.07 s"
     },
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14.1 LUFS (target -18…-11)"
+      "detail": "-14.2 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.5 dBFS"
+      "detail": "-1.4 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -52,108 +52,118 @@
     {
       "file": "qa/00-hook-1.jpg",
       "sceneId": "hook",
-      "tSec": 5.17
+      "tSec": 4.68
     },
     {
       "file": "qa/00-hook-2.jpg",
       "sceneId": "hook",
-      "tSec": 7.83
+      "tSec": 6.72
+    },
+    {
+      "file": "qa/00-hook-3.jpg",
+      "sceneId": "hook",
+      "tSec": 9.37
     },
     {
       "file": "qa/01-paradox-0.jpg",
       "sceneId": "paradox",
-      "tSec": 8.68
+      "tSec": 10.22
     },
     {
       "file": "qa/01-paradox-1.jpg",
       "sceneId": "paradox",
-      "tSec": 10.55
+      "tSec": 12.08
     },
     {
       "file": "qa/01-paradox-2.jpg",
       "sceneId": "paradox",
-      "tSec": 15.27
+      "tSec": 16.8
     },
     {
       "file": "qa/02-centre-0.jpg",
       "sceneId": "centre",
-      "tSec": 16.12
+      "tSec": 17.65
     },
     {
       "file": "qa/02-centre-1.jpg",
       "sceneId": "centre",
-      "tSec": 21.58
+      "tSec": 23.12
     },
     {
       "file": "qa/02-centre-2.jpg",
       "sceneId": "centre",
-      "tSec": 24.5
+      "tSec": 26.03
     },
     {
       "file": "qa/03-centre-earth-0.jpg",
       "sceneId": "centre-earth",
-      "tSec": 25.35
+      "tSec": 26.88
     },
     {
       "file": "qa/03-centre-earth-1.jpg",
       "sceneId": "centre-earth",
-      "tSec": 27.71
+      "tSec": 29.24
     },
     {
       "file": "qa/03-centre-earth-2.jpg",
       "sceneId": "centre-earth",
-      "tSec": 30.03
+      "tSec": 31.57
     },
     {
       "file": "qa/04-centre-compare-0.jpg",
       "sceneId": "centre-compare",
-      "tSec": 30.88
+      "tSec": 32.42
     },
     {
       "file": "qa/04-centre-compare-1.jpg",
       "sceneId": "centre-compare",
-      "tSec": 34
+      "tSec": 34.9
     },
     {
       "file": "qa/05-andromeda-0.jpg",
       "sceneId": "andromeda",
-      "tSec": 34.85
+      "tSec": 35.75
     },
     {
       "file": "qa/05-andromeda-1.jpg",
       "sceneId": "andromeda",
-      "tSec": 40.12
+      "tSec": 41.02
     },
     {
       "file": "qa/05-andromeda-2.jpg",
       "sceneId": "andromeda",
-      "tSec": 43.73
+      "tSec": 44.63
     },
     {
       "file": "qa/06-andromeda-earth-0.jpg",
       "sceneId": "andromeda-earth",
-      "tSec": 44.58
+      "tSec": 45.48
     },
     {
       "file": "qa/06-andromeda-earth-1.jpg",
       "sceneId": "andromeda-earth",
-      "tSec": 46.77
+      "tSec": 47.67
     },
     {
       "file": "qa/07-outro-0.jpg",
       "sceneId": "outro",
-      "tSec": 47.62
+      "tSec": 48.52
     },
     {
       "file": "qa/07-outro-1.jpg",
       "sceneId": "outro",
-      "tSec": 49.33
+      "tSec": 50.68
+    },
+    {
+      "file": "qa/07-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 52.97
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T16:04:42.883Z",
+    "at": "2026-11-12T18:53:50.130Z",
     "verdict": "pass",
-    "notes": "Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch."
+    "notes": "Andromeda hook, Lorentz factor card, ship journeys over Spitzer galactic centre and GALEX Andromeda backdrops with on-board/on-Earth clocks ending at 40/52,000 and 57/5 million, compare bars, outro in sync."
   }
 }

@@ -15,6 +15,38 @@
       },
       "aiGenerated": false,
       "addedAt": "2026-11-12T15:46:25.505Z"
+    },
+    {
+      "id": "galactic-centre-spitzer",
+      "kind": "image",
+      "file": "assets/galactic-centre-spitzer.jpg",
+      "sha256": "3388c4143ea34aba364c1bc7daf81eeaae84374a4e9a059cf024fc47b7c916ff",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA03653/PIA03653~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA03653",
+        "title": "The Milky Way Center Aglow with Dust",
+        "credit": "NASA / JPL / JPL-Caltech",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:12:27.866Z"
+    },
+    {
+      "id": "andromeda-galex",
+      "kind": "image",
+      "file": "assets/andromeda-galex.jpg",
+      "sha256": "42ef5fb54a2deba6e79d0e45bb06af0ee72e6ffb1e017a251b478c2d5db057e5",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA04921/PIA04921~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA04921",
+        "title": "Andromeda Galaxy",
+        "credit": "NASA / JPL / California Institute of Technology",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:12:29.753Z"
     }
   ]
 }

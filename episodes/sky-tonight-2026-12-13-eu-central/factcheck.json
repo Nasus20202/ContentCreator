@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T11:02:10.163Z",
-  "planHash": "789fbe6971c9a1a1",
+  "checkedAt": "2026-11-12T17:54:36.213Z",
+  "planHash": "eb5d67325dcb628d",
   "automated": {
     "ok": true,
     "claims": [
@@ -97,8 +97,8 @@
   },
   "review": {
     "actor": "claude",
-    "at": "2026-11-12T11:02:10.696Z",
+    "at": "2026-11-12T17:54:37.196Z",
     "verdict": "pass",
-    "notes": "Re-plan only: new synthesised music bed. No factual change: Geminids peak Mon 14 Dec 05:52 CET, radiant 73 deg in the south at 01:52, Moon 21% and setting 20:04, ZHR 150 - unchanged."
+    "notes": "Outro narration only: added the spoken call to action ('Follow, so you don't miss next week's sky' / '…the next one') so the voice matches the on-screen CTA (owner: the screen said 'Follow so you don't…' while the voice said 'Clear skies'). No claims; location line unchanged."
   }
 }

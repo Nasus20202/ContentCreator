@@ -1,95 +1,130 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "394f2090eae830b8",
+  "narrationHash": "f78ac64bfdc61550",
   "timing": "estimated-proportional",
   "scenes": [
     {
       "sceneId": "hook",
       "audioFile": "voice/hook.wav",
-      "duration": 5.631,
+      "duration": 9.167,
       "sentences": [
         {
-          "text": "Proxima Centauri is the closest star to the Sun.",
+          "text": "Seventy-five thousand years.",
           "start": 0.15,
-          "end": 2.989,
+          "end": 1.664,
           "words": [
             {
-              "w": "Proxima",
+              "w": "Seventy-five",
               "start": 0.15,
-              "end": 0.576
+              "end": 0.746
             },
             {
-              "w": "Centauri",
-              "start": 0.576,
-              "end": 1.049
+              "w": "thousand",
+              "start": 0.746,
+              "end": 1.205
             },
             {
-              "w": "is",
-              "start": 1.049,
-              "end": 1.238
-            },
-            {
-              "w": "the",
-              "start": 1.238,
-              "end": 1.475
-            },
-            {
-              "w": "closest",
-              "start": 1.475,
-              "end": 1.901
-            },
-            {
-              "w": "star",
-              "start": 1.901,
-              "end": 2.185
-            },
-            {
-              "w": "to",
-              "start": 2.185,
-              "end": 2.374
-            },
-            {
-              "w": "the",
-              "start": 2.374,
-              "end": 2.611
-            },
-            {
-              "w": "Sun.",
-              "start": 2.611,
-              "end": 2.989
+              "w": "years.",
+              "start": 1.205,
+              "end": 1.664
             }
           ]
         },
         {
-          "text": "It is 4.24 light-years away.",
-          "start": 3.269,
-          "end": 5.351,
+          "text": "That is how long Voyager 1 would need to reach the nearest star, Proxima Centauri, 4.24 light-years away.",
+          "start": 1.944,
+          "end": 8.887,
           "words": [
             {
-              "w": "It",
-              "start": 3.269,
-              "end": 3.514
+              "w": "That",
+              "start": 1.944,
+              "end": 2.269
             },
             {
               "w": "is",
-              "start": 3.514,
-              "end": 3.759
+              "start": 2.269,
+              "end": 2.486
+            },
+            {
+              "w": "how",
+              "start": 2.486,
+              "end": 2.757
+            },
+            {
+              "w": "long",
+              "start": 2.757,
+              "end": 3.083
+            },
+            {
+              "w": "Voyager",
+              "start": 3.083,
+              "end": 3.571
+            },
+            {
+              "w": "1",
+              "start": 3.571,
+              "end": 3.734
+            },
+            {
+              "w": "would",
+              "start": 3.734,
+              "end": 4.114
+            },
+            {
+              "w": "need",
+              "start": 4.114,
+              "end": 4.439
+            },
+            {
+              "w": "to",
+              "start": 4.439,
+              "end": 4.656
+            },
+            {
+              "w": "reach",
+              "start": 4.656,
+              "end": 5.036
+            },
+            {
+              "w": "the",
+              "start": 5.036,
+              "end": 5.307
+            },
+            {
+              "w": "nearest",
+              "start": 5.307,
+              "end": 5.795
+            },
+            {
+              "w": "star,",
+              "start": 5.795,
+              "end": 6.284
+            },
+            {
+              "w": "Proxima",
+              "start": 6.284,
+              "end": 6.772
+            },
+            {
+              "w": "Centauri,",
+              "start": 6.772,
+              "end": 7.477
             },
             {
               "w": "4.24",
-              "start": 3.759,
-              "end": 4.065
+              "start": 7.477,
+              "end": 7.748
             },
             {
               "w": "light-years",
-              "start": 4.065,
-              "end": 4.8
+              "start": 7.748,
+              "end": 8.399
             },
             {
               "w": "away.",
-              "start": 4.8,
-              "end": 5.351
+              "start": 8.399,
+              "end": 8.887
             }
           ]
         }
@@ -234,144 +269,114 @@
     {
       "sceneId": "voyager",
       "audioFile": "voice/voyager.wav",
-      "duration": 9.215,
+      "duration": 7.928,
       "sentences": [
         {
-          "text": "Voyager, our most distant spacecraft, moves at more than three astronomical units a year.",
+          "text": "Voyager 1 moves at about seventeen kilometres every second.",
           "start": 0.15,
-          "end": 5.389,
+          "end": 3.872,
           "words": [
             {
-              "w": "Voyager,",
+              "w": "Voyager",
               "start": 0.15,
-              "end": 0.721
+              "end": 0.622
             },
             {
-              "w": "our",
-              "start": 0.721,
-              "end": 0.96
-            },
-            {
-              "w": "most",
-              "start": 0.96,
-              "end": 1.245
-            },
-            {
-              "w": "distant",
-              "start": 1.245,
-              "end": 1.674
-            },
-            {
-              "w": "spacecraft,",
-              "start": 1.674,
-              "end": 2.388
+              "w": "1",
+              "start": 0.622,
+              "end": 0.779
             },
             {
               "w": "moves",
-              "start": 2.388,
-              "end": 2.722
+              "start": 0.779,
+              "end": 1.146
             },
             {
               "w": "at",
-              "start": 2.722,
-              "end": 2.912
+              "start": 1.146,
+              "end": 1.356
             },
             {
-              "w": "more",
-              "start": 2.912,
-              "end": 3.198
+              "w": "about",
+              "start": 1.356,
+              "end": 1.723
             },
             {
-              "w": "than",
-              "start": 3.198,
-              "end": 3.484
+              "w": "seventeen",
+              "start": 1.723,
+              "end": 2.299
             },
             {
-              "w": "three",
-              "start": 3.484,
-              "end": 3.817
+              "w": "kilometres",
+              "start": 2.299,
+              "end": 2.929
             },
             {
-              "w": "astronomical",
-              "start": 3.817,
-              "end": 4.484
+              "w": "every",
+              "start": 2.929,
+              "end": 3.295
             },
             {
-              "w": "units",
-              "start": 4.484,
-              "end": 4.817
-            },
-            {
-              "w": "a",
-              "start": 4.817,
-              "end": 4.96
-            },
-            {
-              "w": "year.",
-              "start": 4.96,
-              "end": 5.389
+              "w": "second.",
+              "start": 3.295,
+              "end": 3.872
             }
           ]
         },
         {
-          "text": "At that pace, the trip would take over eighty-nine thousand years.",
-          "start": 5.669,
-          "end": 8.935,
+          "text": "Even so, the trip would take about seventy-five thousand years.",
+          "start": 4.152,
+          "end": 7.648,
           "words": [
             {
-              "w": "At",
-              "start": 5.669,
-              "end": 5.83
+              "w": "Even",
+              "start": 4.152,
+              "end": 4.425
             },
             {
-              "w": "that",
-              "start": 5.83,
-              "end": 6.072
-            },
-            {
-              "w": "pace,",
-              "start": 6.072,
-              "end": 6.435
+              "w": "so,",
+              "start": 4.425,
+              "end": 4.742
             },
             {
               "w": "the",
-              "start": 6.435,
-              "end": 6.636
+              "start": 4.742,
+              "end": 4.969
             },
             {
               "w": "trip",
-              "start": 6.636,
-              "end": 6.878
+              "start": 4.969,
+              "end": 5.242
             },
             {
               "w": "would",
-              "start": 6.878,
-              "end": 7.161
+              "start": 5.242,
+              "end": 5.56
             },
             {
               "w": "take",
-              "start": 7.161,
-              "end": 7.403
+              "start": 5.56,
+              "end": 5.832
             },
             {
-              "w": "over",
-              "start": 7.403,
-              "end": 7.645
+              "w": "about",
+              "start": 5.832,
+              "end": 6.15
             },
             {
-              "w": "eighty-nine",
-              "start": 7.645,
-              "end": 8.128
+              "w": "seventy-five",
+              "start": 6.15,
+              "end": 6.74
             },
             {
               "w": "thousand",
-              "start": 8.128,
-              "end": 8.532
+              "start": 6.74,
+              "end": 7.194
             },
             {
               "w": "years.",
-              "start": 8.532,
-              "end": 8.935
+              "start": 7.194,
+              "end": 7.648
             }
           ]
         }
@@ -506,67 +511,72 @@
     {
       "sceneId": "compare",
       "audioFile": "voice/compare.wav",
-      "duration": 4.326,
+      "duration": 4.381,
       "sentences": [
         {
-          "text": "Side by side, Voyager's speed would take thousands of times longer.",
+          "text": "Drawn to scale, Starshot's trip is barely a sliver next to Voyager's.",
           "start": 0.15,
-          "end": 4.046,
+          "end": 4.101,
           "words": [
             {
-              "w": "Side",
+              "w": "Drawn",
               "start": 0.15,
-              "end": 0.432
+              "end": 0.472
             },
             {
-              "w": "by",
-              "start": 0.432,
-              "end": 0.619
+              "w": "to",
+              "start": 0.472,
+              "end": 0.655
             },
             {
-              "w": "side,",
-              "start": 0.619,
-              "end": 1.042
+              "w": "scale,",
+              "start": 0.655,
+              "end": 1.115
             },
             {
-              "w": "Voyager's",
-              "start": 1.042,
-              "end": 1.558
+              "w": "Starshot's",
+              "start": 1.115,
+              "end": 1.666
             },
             {
-              "w": "speed",
-              "start": 1.558,
-              "end": 1.887
+              "w": "trip",
+              "start": 1.666,
+              "end": 1.942
             },
             {
-              "w": "would",
-              "start": 1.887,
-              "end": 2.215
+              "w": "is",
+              "start": 1.942,
+              "end": 2.126
             },
             {
-              "w": "take",
-              "start": 2.215,
-              "end": 2.497
+              "w": "barely",
+              "start": 2.126,
+              "end": 2.493
             },
             {
-              "w": "thousands",
-              "start": 2.497,
-              "end": 3.013
+              "w": "a",
+              "start": 2.493,
+              "end": 2.631
             },
             {
-              "w": "of",
-              "start": 3.013,
-              "end": 3.201
+              "w": "sliver",
+              "start": 2.631,
+              "end": 2.998
             },
             {
-              "w": "times",
-              "start": 3.201,
-              "end": 3.53
+              "w": "next",
+              "start": 2.998,
+              "end": 3.274
             },
             {
-              "w": "longer.",
-              "start": 3.53,
-              "end": 4.046
+              "w": "to",
+              "start": 3.274,
+              "end": 3.458
+            },
+            {
+              "w": "Voyager's.",
+              "start": 3.458,
+              "end": 4.101
             }
           ]
         }

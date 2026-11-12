@@ -62,6 +62,7 @@ Inputs: `episodes/sky-this-week-2026-12-21-eu-central/research.json`, `series/sk
 **outro** (`outro`) — facts: `episode-location`, `episode-window`
 
 > Positions calculated for central Europe.
+> Follow, so you don't miss next week's sky.
 > Clear skies.
 
 ### Post copy
@@ -87,7 +88,7 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narr
 
 ## Render
 
-30.6 s, 1080×1920@30, sha256 `dcaf793c77a92de7…`, rendered 2026-11-12T14:37:45.090Z in 97 s.
+34.6 s, 1080×1920@30, sha256 `7977963a9c3b69fa…`, rendered 2026-11-12T18:37:45.469Z in 150 s.
 
 ## QA
 
@@ -96,13 +97,13 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narr
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 30.60 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 30.60 s vs timeline 30.57 s |
+| duration | ✅ | 34.60 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 34.60 s vs timeline 34.50 s |
 | loudness | ✅ | -14.3 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.5 dBFS |
+| true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T14:41:34.191Z): **pass** — Reviewed the opening and closing frames of all eight cuts: hook framing holds (Moon/Jupiter/Venus/Mars subjects stay in frame after the 20% tighter opening field), outro shows the CTA and the new '50°N 15°E' footnote without overlap. Fact-card push-in checked on the 21 Dec card; the other cards use the same code. Motion smoothness and audio mix are not judgeable from stills and are left to the human watch.
+Visual review by **claude** (2026-11-12T18:53:53.069Z): **pass** — Christmas Eve closest full Moon card (357,000 km), midnight Moon high in the south, Moon-Jupiter on 27 Dec, outro synced with hold.
 
 ## Event log
 
@@ -203,3 +204,30 @@ Visual review by **claude** (2026-11-12T14:41:34.191Z): **pass** — Reviewed th
 | 2026-11-12 14:37:51 | pipeline | qa | qa.automated | 395ad8b |
 | 2026-11-12 14:41:34 | claude | qa | qa.review | 395ad8b |
 | 2026-11-12 14:41:34 | claude | qa-passed | stage.advance | 395ad8b |
+| 2026-11-12 17:29:20 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:29:20 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 17:31:08 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:31:08 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:31:14 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:51:19 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:51:19 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 17:53:01 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:53:01 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:53:07 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:54:29 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:54:29 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:54:30 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:54:31 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:54:31 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 18:12:52 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:12:52 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 18:15:58 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:15:58 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:16:06 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:35:14 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 18:35:14 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:37:45 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:37:45 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:37:52 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:53:53 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 18:53:53 | claude | qa-passed | stage.advance | 56e31e5 |

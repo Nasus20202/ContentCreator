@@ -1,0 +1,71 @@
+{
+  "facts": [
+    {
+      "id": "orbital-periods",
+      "statement": "Orbital periods in days: Mercury 88.0, Venus 224.7, Earth 365.2, Mars 687.0, Jupiter 4331, Saturn 10,747, Neptune 59,800. Orbital velocity: Earth 29.8 km/s, Saturn 9.7 km/s.",
+      "values": [
+        88,
+        224.7,
+        365.2,
+        687,
+        4331,
+        10747,
+        59800,
+        29.8,
+        9.7
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+        "title": "Planetary Fact Sheet - Metric",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "ages-at-30",
+      "statement": "Someone 30 Earth years old is about 124 Mercury years, 16 Mars years, 1 Saturn year and 0.18 Neptune years old; a Saturn year is about 29.4 Earth years (29 and a half) and a Neptune year about 164.",
+      "values": [
+        30,
+        124,
+        16,
+        1,
+        29.5,
+        164
+      ],
+      "source": {
+        "type": "computed",
+        "method": "age x 365.2 / orbital period (days)",
+        "inputs": {
+          "ageEarthYears": 30,
+          "mercury": 124.5,
+          "mars": 15.95,
+          "saturn": 1.02,
+          "neptune": 0.18,
+          "saturnYearInEarthYears": 29.43,
+          "neptuneYearInEarthYears": 163.7
+        }
+      }
+    },
+    {
+      "id": "year-lengths",
+      "statement": "One year on Saturn lasts about 29.4 Earth years and one year on Neptune about 164 Earth years (Earth: 1).",
+      "values": [
+        1,
+        29.4,
+        164
+      ],
+      "source": {
+        "type": "computed",
+        "method": "orbital period (days) / 365.2",
+        "inputs": {
+          "saturnDays": 10747,
+          "neptuneDays": 59800,
+          "earthDays": 365.2,
+          "saturnYears": 29.43,
+          "neptuneYears": 163.7
+        }
+      }
+    }
+  ]
+}

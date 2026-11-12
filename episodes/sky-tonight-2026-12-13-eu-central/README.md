@@ -53,6 +53,7 @@ Inputs: `episodes/sky-tonight-2026-12-13-eu-central/research.json`, `series/sky-
 **outro** (`outro`) — facts: `episode-location`, `episode-window`
 
 > Positions calculated for central Europe.
+> Follow, so you don't miss the next one.
 > Clear skies.
 
 ### Post copy
@@ -79,7 +80,7 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 
 ## Render
 
-20.7 s, 1080×1920@30, sha256 `ffd2700254aa22a9…`, rendered 2026-11-12T15:04:08.575Z in 98 s.
+24.3 s, 1080×1920@30, sha256 `68bb1ea1bdb6b641…`, rendered 2026-11-12T18:35:08.686Z in 126 s.
 
 ## QA
 
@@ -88,13 +89,13 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 20.70 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 20.70 s vs timeline 20.63 s |
+| duration | ✅ | 24.30 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 24.30 s vs timeline 24.23 s |
 | loudness | ✅ | -14.3 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T15:04:40.809Z): **pass** — Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch.
+Visual review by **claude** (2026-11-12T18:53:52.358Z): **pass** — Tonight short: radiant, moonless chip, south after midnight, outro 'Follow so you don't miss the next one' synced; 24 s.
 
 ## Event log
 
@@ -157,3 +158,30 @@ Visual review by **claude** (2026-11-12T15:04:40.809Z): **pass** — Reviewed th
 | 2026-11-12 15:04:12 | pipeline | qa | qa.automated | ca37d95 |
 | 2026-11-12 15:04:40 | claude | qa | qa.review | ca37d95 |
 | 2026-11-12 15:04:40 | claude | qa-passed | stage.advance | ca37d95 |
+| 2026-11-12 17:27:02 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:27:02 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 17:28:42 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:28:42 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:28:46 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:49:35 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:49:35 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 17:51:14 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:51:14 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:51:18 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:54:35 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:54:35 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:54:36 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:54:37 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:54:37 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 18:10:01 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 18:10:01 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 18:12:06 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:12:06 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:12:11 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:33:01 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 18:33:01 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:35:08 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:35:08 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:35:13 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:53:52 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 18:53:52 | claude | qa-passed | stage.advance | 56e31e5 |

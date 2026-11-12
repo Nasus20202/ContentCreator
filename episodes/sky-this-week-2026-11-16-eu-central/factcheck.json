@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T14:27:01.563Z",
-  "planHash": "88842961a1846b9d",
+  "checkedAt": "2026-11-12T17:54:24.733Z",
+  "planHash": "a17d8b8b41c2c6cf",
   "automated": {
     "ok": true,
     "claims": [
@@ -209,8 +209,8 @@
   },
   "review": {
     "actor": "claude",
-    "at": "2026-11-12T14:27:26.308Z",
+    "at": "2026-11-12T17:54:25.608Z",
     "verdict": "pass",
-    "notes": "Re-reviewed after visual-only edits: outro footnote now reads '50°N 15°E' (matches location lat 50, lon 15; the spoken sign-off is unchanged), hook opening camera field of view tightened by 20% (framing only), fact card gets a slow push-in (motion only). No narration, number, date, direction or fact id changed; all earlier verification still applies."
+    "notes": "Outro narration only: added the spoken call to action ('Follow, so you don't miss next week's sky' / '…the next one') so the voice matches the on-screen CTA (owner: the screen said 'Follow so you don't…' while the voice said 'Clear skies'). No claims; location line unchanged."
   }
 }

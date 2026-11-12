@@ -97,7 +97,7 @@ Image: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions co
 
 ## Render
 
-50.6 s, 1080×1920@30, sha256 `df760f71ce5c87b1…`, rendered 2026-11-12T14:57:58.556Z in 159 s.
+52.2 s, 1080×1920@30, sha256 `ac7bb431c7600ce2…`, rendered 2026-11-12T18:30:14.443Z in 188 s.
 
 ## QA
 
@@ -106,13 +106,13 @@ Image: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions co
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 50.60 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 50.60 s vs timeline 50.57 s |
-| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| duration | ✅ | 52.20 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 52.20 s vs timeline 52.17 s |
+| loudness | ✅ | -14.4 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T15:04:39.105Z): **pass** — Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch.
+Visual review by **claude** (2026-11-12T18:53:50.889Z): **pass** — Radiant sky with meteors, Phaethon radar band with credit, 150 ZHR card, outro; push-in does not clip the radar band.
 
 ## Event log
 
@@ -176,3 +176,27 @@ Visual review by **claude** (2026-11-12T15:04:39.105Z): **pass** — Reviewed th
 | 2026-11-12 14:58:06 | pipeline | qa | qa.automated | ca37d95 |
 | 2026-11-12 15:04:39 | claude | qa | qa.review | ca37d95 |
 | 2026-11-12 15:04:39 | claude | qa-passed | stage.advance | ca37d95 |
+| 2026-11-12 17:21:09 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:21:09 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 17:23:48 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:23:48 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:23:56 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:44:29 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:44:29 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 17:47:18 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:47:18 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:47:26 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:49:11 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 17:49:11 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 18:02:55 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 18:02:55 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:06:00 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:06:00 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:06:09 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:27:05 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 18:27:05 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:30:14 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:30:14 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:30:23 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:53:50 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 18:53:50 | claude | qa-passed | stage.advance | 56e31e5 |

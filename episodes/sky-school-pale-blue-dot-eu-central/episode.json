@@ -1,0 +1,20 @@
+{
+  "id": "sky-school-pale-blue-dot-eu-central",
+  "series": "sky-school",
+  "createdAt": "2026-11-12T18:43:07.822Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "c65947efe8868759",
+    "factcheckedPlan": "c65947efe8868759",
+    "narration": "eed5cad5dd9fe382",
+    "video": "6771d54ab9f9adaa9b958366dd3011ede0cced71926c1f12c279a9eed6c2d808"
+  },
+  "approvals": []
+}

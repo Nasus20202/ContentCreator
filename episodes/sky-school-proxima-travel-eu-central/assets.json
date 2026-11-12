@@ -1,0 +1,36 @@
+{
+  "assets": [
+    {
+      "id": "voyager1-launch",
+      "kind": "image",
+      "file": "assets/voyager1-launch.jpg",
+      "sha256": "082817d2c2efdf01e7229a308668fd6482730612aace78d583c832839330812d",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA21747/PIA21747~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA21747",
+        "title": "Voyager 1 Launch",
+        "credit": "NASA / JPL / JPL-Caltech / KSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T17:55:39.773Z"
+    },
+    {
+      "id": "alpha-centauri-hubble",
+      "kind": "image",
+      "file": "assets/alpha-centauri-hubble.jpg",
+      "sha256": "8d3cda622bd552609dba831f2a15096b35edc27184904fa62fd4315d22326d7d",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000214/GSFC_20171208_Archive_e000214~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/GSFC_20171208_Archive_e000214",
+        "title": "Hubble's Best Image of Alpha Centauri A and B",
+        "credit": "NASA / GSFC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:12:25.328Z"
+    }
+  ]
+}

@@ -107,6 +107,7 @@ Inputs: `build/qa/05-outro-0.jpg`, `build/qa/05-outro-1.jpg`
 **outro** (`outro`) — facts: `episode-location`
 
 > Positions calculated for central Europe.
+> Follow, so you don't miss next week's sky.
 > Clear skies.
 
 ### Post copy
@@ -140,7 +141,7 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 
 ## Render
 
-49.6 s, 1080×1920@30, sha256 `61ade36669189e4d…`, rendered 2026-11-12T14:30:27.888Z in 164 s.
+53.6 s, 1080×1920@30, sha256 `b75585e66213f492…`, rendered 2026-11-12T18:23:18.882Z in 238 s.
 
 ## QA
 
@@ -149,13 +150,13 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 49.60 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 49.60 s vs timeline 49.57 s |
+| duration | ✅ | 53.60 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 53.60 s vs timeline 53.50 s |
 | loudness | ✅ | -14 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T14:41:31.415Z): **pass** — Reviewed the opening and closing frames of all eight cuts: hook framing holds (Moon/Jupiter/Venus/Mars subjects stay in frame after the 20% tighter opening field), outro shows the CTA and the new '50°N 15°E' footnote without overlap. Fact-card push-in checked on the 21 Dec card; the other cards use the same code. Motion smoothness and audio mix are not judgeable from stills and are left to the human watch.
+Visual review by **claude** (2026-11-12T18:53:47.943Z): **pass** — Final cut: slow push-in on every scene; Mars-Jupiter 1.2 deg with 2 full Moons, orbit reveal with distances, Leonids radiant and moonset chip, Moon-Saturn; outro voice now says 'Follow, so you don't miss next week's sky' and the FOLLOW CTA appears with it, 1.6 s hold on the logo at the end. No clipped labels.
 
 ## Publishing
 
@@ -296,3 +297,32 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-th
 | 2026-11-12 14:30:36 | pipeline | qa | qa.automated | 395ad8b |
 | 2026-11-12 14:41:31 | claude | qa | qa.review | 395ad8b |
 | 2026-11-12 14:41:31 | claude | qa-passed | stage.advance | 395ad8b |
+| 2026-11-12 17:13:13 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:13:13 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 17:16:28 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:16:28 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:16:36 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:39:17 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 17:39:17 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 17:42:28 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 17:42:28 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 17:42:36 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 17:49:09 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 17:49:09 | claude | qa-passed | stage.advance | 56e31e5 |
+| 2026-11-12 17:54:23 | claude | planned | plan.check | 56e31e5 |
+| 2026-11-12 17:54:23 | claude | planned | stage.regress | 56e31e5 |
+| 2026-11-12 17:54:24 | claude | factcheck | factcheck.automated | 56e31e5 |
+| 2026-11-12 17:54:25 | claude | factcheck | factcheck.review | 56e31e5 |
+| 2026-11-12 17:54:25 | claude | factchecked | stage.advance | 56e31e5 |
+| 2026-11-12 17:57:58 | pipeline | voiced | stage.advance | 56e31e5 |
+| 2026-11-12 17:57:58 | pipeline | voiced | voice.synthesize | 56e31e5 |
+| 2026-11-12 18:01:33 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:01:33 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:01:42 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:19:19 | pipeline | voiced | stage.regress | 56e31e5 |
+| 2026-11-12 18:19:19 | pipeline | voiced | voice.reuse | 56e31e5 |
+| 2026-11-12 18:23:18 | pipeline | rendered | stage.advance | 56e31e5 |
+| 2026-11-12 18:23:18 | pipeline | rendered | render.video | 56e31e5 |
+| 2026-11-12 18:23:27 | pipeline | qa | qa.automated | 56e31e5 |
+| 2026-11-12 18:53:47 | claude | qa | qa.review | 56e31e5 |
+| 2026-11-12 18:53:47 | claude | qa-passed | stage.advance | 56e31e5 |

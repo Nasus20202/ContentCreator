@@ -1,0 +1,80 @@
+{
+  "facts": [
+    {
+      "id": "pbd-distance",
+      "statement": "Voyager 1 took the Pale Blue Dot image from approximately 6 billion kilometres (3.8 billion miles) from Earth.",
+      "values": [
+        6,
+        3.8
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/photojournal/pale-blue-dot-revisited/",
+        "title": "Pale Blue Dot Revisited",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "pbd-date",
+      "statement": "The images were taken on 14 February 1990 (Valentine's Day), just 34 minutes before Voyager 1 powered off its cameras forever.",
+      "values": [
+        14,
+        1990,
+        34
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/photojournal/pale-blue-dot-revisited/",
+        "title": "Pale Blue Dot Revisited",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "pbd-pixel",
+      "statement": "Earth occupies less than a single pixel in the image; it sits in one of the rays of sunlight scattered within the camera optics.",
+      "values": [
+        1
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/photojournal/pale-blue-dot-revisited/",
+        "title": "Pale Blue Dot Revisited",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "sun-distance",
+      "statement": "Earth's mean distance from the Sun is 149.6 million km (about 150 million km).",
+      "values": [
+        149.6,
+        150
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+        "title": "Planetary Fact Sheet - Metric",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "pbd-ratio",
+      "statement": "Voyager 1 was about 40 times farther from Earth than the Sun is (6 billion km vs 149.6 million km).",
+      "values": [
+        40
+      ],
+      "source": {
+        "type": "computed",
+        "method": "6e9 km / 149.6e6 km",
+        "inputs": {
+          "voyagerKm": 6000000000,
+          "sunEarthKm": 149600000,
+          "ratio": 40.1
+        }
+      }
+    }
+  ]
+}

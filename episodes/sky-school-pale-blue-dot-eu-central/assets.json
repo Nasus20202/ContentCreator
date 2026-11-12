@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "id": "pale-blue-dot",
+      "kind": "image",
+      "file": "assets/pale-blue-dot.jpg",
+      "sha256": "f2537cc7935a093a032518450cf04a76b05d105a58c10f34c8eb03e6e85264e9",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA23645/PIA23645~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA23645",
+        "title": "Pale Blue Dot Revisited",
+        "credit": "NASA / JPL / JPL-Caltech",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:43:49.714Z"
+    },
+    {
+      "id": "pale-blue-dot-1990",
+      "kind": "image",
+      "file": "assets/pale-blue-dot-1990.jpg",
+      "sha256": "b42e6a362b0fbc526b22a159c98fcdc5e2f7a7d6bfc99568ced886f8e79530b9",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA00452/PIA00452~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA00452",
+        "title": "Solar System Portrait - Earth as Pale Blue Dot",
+        "credit": "NASA / JPL",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:43:51.478Z"
+    },
+    {
+      "id": "voyager1-launch",
+      "kind": "image",
+      "file": "assets/voyager1-launch.jpg",
+      "sha256": "082817d2c2efdf01e7229a308668fd6482730612aace78d583c832839330812d",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA21747/PIA21747~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA21747",
+        "title": "Voyager 1 Launch",
+        "credit": "NASA / JPL / JPL-Caltech / KSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T18:43:53.023Z"
+    }
+  ]
+}

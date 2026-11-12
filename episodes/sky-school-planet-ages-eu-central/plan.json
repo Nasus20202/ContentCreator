@@ -1,0 +1,251 @@
+{
+  "episodeId": "sky-school-planet-ages-eu-central",
+  "series": "sky-school",
+  "title": "Sky School · Your age on other planets",
+  "badge": "Sky School · Planet years",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "post": {
+    "title": "30 on Earth, barely 1 on Saturn 🪐",
+    "description": "A year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods): https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#astronomy",
+      "#space",
+      "#science",
+      "#skyschool",
+      "#planets",
+      "#saturn"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "image",
+      "narration": [
+        "If you are thirty, on Saturn you would have just turned one.",
+        "A year there lasts about twenty-nine and a half of ours."
+      ],
+      "factIds": [
+        "ages-at-30",
+        "orbital-periods"
+      ],
+      "chips": [
+        {
+          "text": "AGE 30 ON EARTH = 1 ON SATURN",
+          "from": {
+            "sentence": 1
+          }
+        }
+      ],
+      "title": {
+        "kicker": "Sky School",
+        "title": "Your age on other planets",
+        "from": 0.1,
+        "to": 2.8
+      },
+      "params": {
+        "assetId": "saturn-cassini",
+        "zoom": [
+          1.0,
+          1.05
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "why",
+      "template": "compare",
+      "narration": [
+        "A year is one trip around the Sun.",
+        "The farther out a planet is, the longer its path, and the slower it moves along it."
+      ],
+      "factIds": [
+        "orbital-periods",
+        "year-lengths"
+      ],
+      "params": {
+        "heading": "One year, in Earth years",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "Earth",
+            "value": 1,
+            "display": "1"
+          },
+          {
+            "label": "Saturn",
+            "value": 29.4,
+            "display": "29.4"
+          },
+          {
+            "label": "Neptune",
+            "value": 164,
+            "display": "164"
+          }
+        ],
+        "note": "Drawn to scale."
+      }
+    },
+    {
+      "id": "mercury",
+      "template": "image",
+      "narration": [
+        "On Mercury, a year is just eighty-eight days.",
+        "You would be about a hundred and twenty-four."
+      ],
+      "factIds": [
+        "orbital-periods",
+        "ages-at-30"
+      ],
+      "chips": [
+        {
+          "text": "ENHANCED-COLOUR VIEW, MESSENGER",
+          "from": 0.2,
+          "to": {
+            "sentence": 1
+          }
+        },
+        {
+          "text": "AGE 30 → 124 ON MERCURY",
+          "from": {
+            "sentence": 1
+          }
+        }
+      ],
+      "params": {
+        "assetId": "mercury-messenger",
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "mars",
+      "template": "image",
+      "narration": [
+        "On Mars, with its 687-day year, you would be about sixteen."
+      ],
+      "factIds": [
+        "orbital-periods",
+        "ages-at-30"
+      ],
+      "chips": [
+        {
+          "text": "AGE 30 → 16 ON MARS",
+          "from": 0.6
+        }
+      ],
+      "params": {
+        "assetId": "mars-viking",
+        "zoom": [
+          1.05,
+          1.2
+        ],
+        "focus": [
+          0.45,
+          0.45
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "compare",
+      "template": "compare",
+      "narration": [
+        "Same life, very different birthday counts, just because the orbits differ."
+      ],
+      "factIds": [
+        "ages-at-30"
+      ],
+      "params": {
+        "heading": "Age 30, in local years",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "Mercury",
+            "value": 124,
+            "display": "124"
+          },
+          {
+            "label": "Earth",
+            "value": 30,
+            "display": "30"
+          },
+          {
+            "label": "Mars",
+            "value": 16,
+            "display": "16"
+          }
+        ],
+        "note": "Drawn to scale."
+      }
+    },
+    {
+      "id": "neptune",
+      "template": "image",
+      "narration": [
+        "And on Neptune, one year lasts about a hundred and sixty-four of ours.",
+        "You would only celebrate your first birthday at a hundred and sixty-four."
+      ],
+      "factIds": [
+        "orbital-periods",
+        "ages-at-30"
+      ],
+      "chips": [
+        {
+          "text": "1 NEPTUNE YEAR = 164 EARTH YEARS",
+          "from": 0.5
+        }
+      ],
+      "params": {
+        "assetId": "neptune-voyager2",
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Follow for more sky, explained.",
+        "Clear skies."
+      ],
+      "factIds": [],
+      "params": {
+        "kicker": "Sky School",
+        "cta": "FOLLOW\nFOR MORE\nSKY, EXPLAINED",
+        "footnote": "Orbital periods: NASA planetary fact sheet"
+      }
+    }
+  ]
+}

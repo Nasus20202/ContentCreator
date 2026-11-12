@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T14:36:01.655Z",
-  "videoSha256": "48faa04a7f1b49d58fda063c7ea6150226947a2d7edd451dba7e454690d2b336",
+  "checkedAt": "2026-11-12T18:32:54.652Z",
+  "videoSha256": "aa3ca3bd7f05a4d68ac2f1a6cc2c50321ce62043af5ed5171604070fe348e4e1",
   "automated": [
     {
       "name": "resolution",
@@ -20,22 +20,22 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "35.20 s (limit 60 s)"
+      "detail": "39.20 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 35.20 s vs timeline 35.17 s"
+      "detail": "video 39.20 s vs timeline 39.10 s"
     },
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14.1 LUFS (target -18…-11)"
+      "detail": "-14.2 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.4 dBFS"
+      "detail": "-1.3 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -122,13 +122,18 @@
     {
       "file": "qa/04-outro-2.jpg",
       "sceneId": "outro",
-      "tSec": 35.07
+      "tSec": 36.72
+    },
+    {
+      "file": "qa/04-outro-3.jpg",
+      "sceneId": "outro",
+      "tSec": 39
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T14:41:33.637Z",
+    "at": "2026-11-12T18:53:51.620Z",
     "verdict": "pass",
-    "notes": "Reviewed the opening and closing frames of all eight cuts: hook framing holds (Moon/Jupiter/Venus/Mars subjects stay in frame after the 20% tighter opening field), outro shows the CTA and the new '50°N 15°E' footnote without overlap. Fact-card push-in checked on the 21 Dec card; the other cards use the same code. Motion smoothness and audio mix are not judgeable from stills and are left to the human watch."
+    "notes": "Geminids peak sky, moonset chip, 150 card, Moon-Saturn, outro CTA synced with 'Follow' line and end hold."
   }
 }

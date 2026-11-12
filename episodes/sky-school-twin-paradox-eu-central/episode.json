@@ -2,7 +2,7 @@
   "id": "sky-school-twin-paradox-eu-central",
   "series": "sky-school",
   "createdAt": "2026-11-12T15:46:20.789Z",
-  "stage": "rendered",
+  "stage": "qa-passed",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -11,10 +11,10 @@
     "timeZone": "Europe/Warsaw"
   },
   "hashes": {
-    "plan": "347726ed9ace7ae7",
-    "factcheckedPlan": "347726ed9ace7ae7",
-    "narration": "03b79a242568b670",
-    "video": "c5427805efea6a62936945d8aa54fff1cd538a309f79ff05fb470d5865ea0ab5"
+    "plan": "42137ab49b2ed8d5",
+    "factcheckedPlan": "42137ab49b2ed8d5",
+    "narration": "395e603b5cd29e11",
+    "video": "2bae828c2484902221d1a18785e9441d736e8918be555ef1b0816f18d611d1a8"
   },
   "approvals": []
 }

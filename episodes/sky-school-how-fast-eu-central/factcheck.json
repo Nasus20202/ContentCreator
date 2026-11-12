@@ -1,0 +1,184 @@
+{
+  "checkedAt": "2026-11-12T18:47:28.824Z",
+  "planHash": "1f0d61eb6ab341b3",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "spin",
+        "where": "narration[1]",
+        "text": "In central Europe, that carries you east at about 1,076 kilometres an hour.",
+        "number": 1076,
+        "raw": "1076",
+        "matchedFact": "earth-spin"
+      },
+      {
+        "sceneId": "spin",
+        "where": "factCard",
+        "text": "1,076 km/h Earth's spin, in central Europe (50° N)",
+        "number": 1076,
+        "raw": "1076",
+        "matchedFact": "earth-spin"
+      },
+      {
+        "sceneId": "spin",
+        "where": "factCard",
+        "text": "1,076 km/h Earth's spin, in central Europe (50° N)",
+        "number": 50,
+        "raw": "50°",
+        "matchedFact": "earth-spin"
+      },
+      {
+        "sceneId": "orbit",
+        "where": "narration[0]",
+        "text": "Second, Earth circles the Sun at 29.8 kilometres every second.",
+        "number": 29.8,
+        "raw": "29.8",
+        "matchedFact": "earth-orbit-speed"
+      },
+      {
+        "sceneId": "orbit",
+        "where": "narration[1]",
+        "text": "That is about 107,000 kilometres an hour, a hundred times faster.",
+        "number": 107000,
+        "raw": "107000",
+        "matchedFact": "earth-orbit-kmh"
+      },
+      {
+        "sceneId": "orbit",
+        "where": "narration[1]",
+        "text": "That is about 107,000 kilometres an hour, a hundred times faster.",
+        "number": 100,
+        "raw": "a hundred",
+        "matchedFact": "earth-orbit-kmh"
+      },
+      {
+        "sceneId": "orbit",
+        "where": "bars[0]",
+        "text": "1,076 Earth's spin (50° N)",
+        "number": 1076,
+        "raw": "1076",
+        "matchedFact": "earth-spin"
+      },
+      {
+        "sceneId": "orbit",
+        "where": "bars[0]",
+        "text": "1,076 Earth's spin (50° N)",
+        "number": 50,
+        "raw": "50°",
+        "matchedFact": "earth-spin"
+      },
+      {
+        "sceneId": "orbit",
+        "where": "bars[1]",
+        "text": "107,000 Earth around the Sun",
+        "number": 107000,
+        "raw": "107000",
+        "matchedFact": "earth-orbit-kmh"
+      },
+      {
+        "sceneId": "galaxy",
+        "where": "narration[0]",
+        "text": "Third, the Sun carries all of us around the centre of the Milky Way, at about 720,000 kilometres an hour.",
+        "number": 720000,
+        "raw": "720000",
+        "matchedFact": "sun-galaxy"
+      },
+      {
+        "sceneId": "galaxy",
+        "where": "narration[1]",
+        "text": "Even so, one lap takes about 230 million years.",
+        "number": 230,
+        "raw": "230",
+        "matchedFact": "sun-galaxy"
+      },
+      {
+        "sceneId": "galaxy",
+        "where": "chips[0]",
+        "text": "720,000 KM/H",
+        "number": 720000,
+        "raw": "720000",
+        "matchedFact": "sun-galaxy"
+      },
+      {
+        "sceneId": "galaxy",
+        "where": "chips[1]",
+        "text": "ONE LAP: 230 MILLION YEARS",
+        "number": 230,
+        "raw": "230",
+        "matchedFact": "sun-galaxy"
+      },
+      {
+        "sceneId": "all",
+        "where": "bars[0]",
+        "text": "1,076 Earth's spin (50° N)",
+        "number": 1076,
+        "raw": "1076",
+        "matchedFact": "earth-spin"
+      },
+      {
+        "sceneId": "all",
+        "where": "bars[0]",
+        "text": "1,076 Earth's spin (50° N)",
+        "number": 50,
+        "raw": "50°",
+        "matchedFact": "earth-spin"
+      },
+      {
+        "sceneId": "all",
+        "where": "bars[1]",
+        "text": "107,000 Earth around the Sun",
+        "number": 107000,
+        "raw": "107000",
+        "matchedFact": "earth-orbit-kmh"
+      },
+      {
+        "sceneId": "all",
+        "where": "bars[2]",
+        "text": "720,000 Sun around the galaxy",
+        "number": 720000,
+        "raw": "720000",
+        "matchedFact": "sun-galaxy"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Even sitting still in central Europe, Earth's spin carries you at about 1,076 km/h, Earth's orbit at about 107,000 km/h (29.8 km/s), and the Sun carries us around the Milky Way at about 720,000 km/h. Each speed is measured relative to a different centre.\n\nSources:\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\n\nImages: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a synthetic voice.",
+        "number": 1076,
+        "raw": "1076",
+        "matchedFact": "earth-spin"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Even sitting still in central Europe, Earth's spin carries you at about 1,076 km/h, Earth's orbit at about 107,000 km/h (29.8 km/s), and the Sun carries us around the Milky Way at about 720,000 km/h. Each speed is measured relative to a different centre.\n\nSources:\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\n\nImages: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a synthetic voice.",
+        "number": 107000,
+        "raw": "107000",
+        "matchedFact": "earth-orbit-kmh"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Even sitting still in central Europe, Earth's spin carries you at about 1,076 km/h, Earth's orbit at about 107,000 km/h (29.8 km/s), and the Sun carries us around the Milky Way at about 720,000 km/h. Each speed is measured relative to a different centre.\n\nSources:\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\n\nImages: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a synthetic voice.",
+        "number": 29.8,
+        "raw": "29.8",
+        "matchedFact": "earth-orbit-speed"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Even sitting still in central Europe, Earth's spin carries you at about 1,076 km/h, Earth's orbit at about 107,000 km/h (29.8 km/s), and the Sun carries us around the Milky Way at about 720,000 km/h. Each speed is measured relative to a different centre.\n\nSources:\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\n\nImages: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a synthetic voice.",
+        "number": 720000,
+        "raw": "720000",
+        "matchedFact": "sun-galaxy"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T18:47:53.730Z",
+    "verdict": "pass",
+    "notes": "Spin 1,076 km/h at 50 N computed from 40,075 km / 23.9345 h x cos 50 (equator 1,674); orbit 29.8 km/s from the planetary fact sheet = ~107,000 km/h, ~100x the spin; Sun 720,000 km/h and 230 million years per lap from NASA Sun facts. The compare note says each speed is relative to a different centre, so no one adds them up."
+  }
+}

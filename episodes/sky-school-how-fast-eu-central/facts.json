@@ -1,0 +1,73 @@
+{
+  "facts": [
+    {
+      "id": "earth-spin",
+      "statement": "Earth's rotation carries a point at 50 degrees north east at about 1,076 km/h; at the equator about 1,674 km/h.",
+      "values": [
+        1076,
+        1674,
+        50
+      ],
+      "source": {
+        "type": "computed",
+        "method": "v = 40,075 km / 23.9345 h x cos(latitude)",
+        "inputs": {
+          "equatorialCircumferenceKm": 40075,
+          "siderealDayH": 23.9345,
+          "latDeg": 50,
+          "equatorKmh": 1674.4,
+          "lat50Kmh": 1076.3,
+          "source": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"
+        }
+      }
+    },
+    {
+      "id": "earth-orbit-speed",
+      "statement": "Earth's mean orbital velocity around the Sun is 29.8 km/s.",
+      "values": [
+        29.8
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/",
+        "title": "Planetary Fact Sheet - Metric",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "earth-orbit-kmh",
+      "statement": "29.8 km/s is about 107,000 km/h, about 100 times the spin speed at 50 degrees north.",
+      "values": [
+        107000,
+        100
+      ],
+      "source": {
+        "type": "computed",
+        "method": "29.8 km/s x 3600; ratio to 1,076 km/h",
+        "inputs": {
+          "kms": 29.8,
+          "kmh": 107280,
+          "spin50Kmh": 1076.3,
+          "ratio": 99.7
+        }
+      }
+    },
+    {
+      "id": "sun-galaxy",
+      "statement": "The solar system orbits the centre of the Milky Way at an average 720,000 km/h (450,000 mph); one complete trip takes about 230 million years.",
+      "values": [
+        720000,
+        450000,
+        230
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/sun/facts/",
+        "title": "Sun: Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    }
+  ]
+}

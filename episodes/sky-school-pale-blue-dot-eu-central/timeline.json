@@ -1,0 +1,558 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "eed5cad5dd9fe382",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 4.283,
+      "sentences": [
+        {
+          "text": "That speck of light is Earth.",
+          "start": 0.15,
+          "end": 1.542,
+          "words": [
+            {
+              "w": "That",
+              "start": 0.15,
+              "end": 0.37
+            },
+            {
+              "w": "speck",
+              "start": 0.37,
+              "end": 0.626
+            },
+            {
+              "w": "of",
+              "start": 0.626,
+              "end": 0.773
+            },
+            {
+              "w": "light",
+              "start": 0.773,
+              "end": 1.029
+            },
+            {
+              "w": "is",
+              "start": 1.029,
+              "end": 1.175
+            },
+            {
+              "w": "Earth.",
+              "start": 1.175,
+              "end": 1.542
+            }
+          ]
+        },
+        {
+          "text": "Every person you have ever known lives on it.",
+          "start": 1.822,
+          "end": 4.003,
+          "words": [
+            {
+              "w": "Every",
+              "start": 1.822,
+              "end": 2.09
+            },
+            {
+              "w": "person",
+              "start": 2.09,
+              "end": 2.396
+            },
+            {
+              "w": "you",
+              "start": 2.396,
+              "end": 2.587
+            },
+            {
+              "w": "have",
+              "start": 2.587,
+              "end": 2.817
+            },
+            {
+              "w": "ever",
+              "start": 2.817,
+              "end": 3.046
+            },
+            {
+              "w": "known",
+              "start": 3.046,
+              "end": 3.314
+            },
+            {
+              "w": "lives",
+              "start": 3.314,
+              "end": 3.582
+            },
+            {
+              "w": "on",
+              "start": 3.582,
+              "end": 3.735
+            },
+            {
+              "w": "it.",
+              "start": 3.735,
+              "end": 4.003
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "where",
+      "audioFile": "voice/where.wav",
+      "duration": 9.131,
+      "sentences": [
+        {
+          "text": "Voyager 1 took this photo on Valentine's Day, 1990, about six billion kilometres from home.",
+          "start": 0.15,
+          "end": 6.72,
+          "words": [
+            {
+              "w": "Voyager",
+              "start": 0.15,
+              "end": 0.673
+            },
+            {
+              "w": "1",
+              "start": 0.673,
+              "end": 0.848
+            },
+            {
+              "w": "took",
+              "start": 0.848,
+              "end": 1.197
+            },
+            {
+              "w": "this",
+              "start": 1.197,
+              "end": 1.545
+            },
+            {
+              "w": "photo",
+              "start": 1.545,
+              "end": 1.952
+            },
+            {
+              "w": "on",
+              "start": 1.952,
+              "end": 2.185
+            },
+            {
+              "w": "Valentine's",
+              "start": 2.185,
+              "end": 2.941
+            },
+            {
+              "w": "Day,",
+              "start": 2.941,
+              "end": 3.406
+            },
+            {
+              "w": "1990,",
+              "start": 3.406,
+              "end": 3.929
+            },
+            {
+              "w": "about",
+              "start": 3.929,
+              "end": 4.336
+            },
+            {
+              "w": "six",
+              "start": 4.336,
+              "end": 4.627
+            },
+            {
+              "w": "billion",
+              "start": 4.627,
+              "end": 5.15
+            },
+            {
+              "w": "kilometres",
+              "start": 5.15,
+              "end": 5.848
+            },
+            {
+              "w": "from",
+              "start": 5.848,
+              "end": 6.197
+            },
+            {
+              "w": "home.",
+              "start": 6.197,
+              "end": 6.72
+            }
+          ]
+        },
+        {
+          "text": "That is forty times farther than the Sun.",
+          "start": 7,
+          "end": 8.851,
+          "words": [
+            {
+              "w": "That",
+              "start": 7,
+              "end": 7.213
+            },
+            {
+              "w": "is",
+              "start": 7.213,
+              "end": 7.356
+            },
+            {
+              "w": "forty",
+              "start": 7.356,
+              "end": 7.605
+            },
+            {
+              "w": "times",
+              "start": 7.605,
+              "end": 7.854
+            },
+            {
+              "w": "farther",
+              "start": 7.854,
+              "end": 8.175
+            },
+            {
+              "w": "than",
+              "start": 8.175,
+              "end": 8.388
+            },
+            {
+              "w": "the",
+              "start": 8.388,
+              "end": 8.566
+            },
+            {
+              "w": "Sun.",
+              "start": 8.566,
+              "end": 8.851
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "pixel",
+      "audioFile": "voice/pixel.wav",
+      "duration": 7.092,
+      "sentences": [
+        {
+          "text": "In the picture, Earth is smaller than a single pixel.",
+          "start": 0.15,
+          "end": 2.975,
+          "words": [
+            {
+              "w": "In",
+              "start": 0.15,
+              "end": 0.316
+            },
+            {
+              "w": "the",
+              "start": 0.316,
+              "end": 0.524
+            },
+            {
+              "w": "picture,",
+              "start": 0.524,
+              "end": 1.023
+            },
+            {
+              "w": "Earth",
+              "start": 1.023,
+              "end": 1.313
+            },
+            {
+              "w": "is",
+              "start": 1.313,
+              "end": 1.48
+            },
+            {
+              "w": "smaller",
+              "start": 1.48,
+              "end": 1.854
+            },
+            {
+              "w": "than",
+              "start": 1.854,
+              "end": 2.103
+            },
+            {
+              "w": "a",
+              "start": 2.103,
+              "end": 2.227
+            },
+            {
+              "w": "single",
+              "start": 2.227,
+              "end": 2.56
+            },
+            {
+              "w": "pixel.",
+              "start": 2.56,
+              "end": 2.975
+            }
+          ]
+        },
+        {
+          "text": "It just happens to sit inside a ray of sunlight scattered in the camera.",
+          "start": 3.255,
+          "end": 6.812,
+          "words": [
+            {
+              "w": "It",
+              "start": 3.255,
+              "end": 3.415
+            },
+            {
+              "w": "just",
+              "start": 3.415,
+              "end": 3.655
+            },
+            {
+              "w": "happens",
+              "start": 3.655,
+              "end": 4.015
+            },
+            {
+              "w": "to",
+              "start": 4.015,
+              "end": 4.175
+            },
+            {
+              "w": "sit",
+              "start": 4.175,
+              "end": 4.374
+            },
+            {
+              "w": "inside",
+              "start": 4.374,
+              "end": 4.694
+            },
+            {
+              "w": "a",
+              "start": 4.694,
+              "end": 4.814
+            },
+            {
+              "w": "ray",
+              "start": 4.814,
+              "end": 5.014
+            },
+            {
+              "w": "of",
+              "start": 5.014,
+              "end": 5.174
+            },
+            {
+              "w": "sunlight",
+              "start": 5.174,
+              "end": 5.573
+            },
+            {
+              "w": "scattered",
+              "start": 5.573,
+              "end": 6.013
+            },
+            {
+              "w": "in",
+              "start": 6.013,
+              "end": 6.173
+            },
+            {
+              "w": "the",
+              "start": 6.173,
+              "end": 6.373
+            },
+            {
+              "w": "camera.",
+              "start": 6.373,
+              "end": 6.812
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "last",
+      "audioFile": "voice/last.wav",
+      "duration": 6.798,
+      "sentences": [
+        {
+          "text": "Thirty-four minutes later, Voyager 1 switched off its cameras forever.",
+          "start": 0.15,
+          "end": 3.927,
+          "words": [
+            {
+              "w": "Thirty-four",
+              "start": 0.15,
+              "end": 0.69
+            },
+            {
+              "w": "minutes",
+              "start": 0.69,
+              "end": 1.094
+            },
+            {
+              "w": "later,",
+              "start": 1.094,
+              "end": 1.544
+            },
+            {
+              "w": "Voyager",
+              "start": 1.544,
+              "end": 1.948
+            },
+            {
+              "w": "1",
+              "start": 1.948,
+              "end": 2.083
+            },
+            {
+              "w": "switched",
+              "start": 2.083,
+              "end": 2.533
+            },
+            {
+              "w": "off",
+              "start": 2.533,
+              "end": 2.758
+            },
+            {
+              "w": "its",
+              "start": 2.758,
+              "end": 2.983
+            },
+            {
+              "w": "cameras",
+              "start": 2.983,
+              "end": 3.387
+            },
+            {
+              "w": "forever.",
+              "start": 3.387,
+              "end": 3.927
+            }
+          ]
+        },
+        {
+          "text": "This was one of the last pictures it ever took.",
+          "start": 4.207,
+          "end": 6.518,
+          "words": [
+            {
+              "w": "This",
+              "start": 4.207,
+              "end": 4.438
+            },
+            {
+              "w": "was",
+              "start": 4.438,
+              "end": 4.631
+            },
+            {
+              "w": "one",
+              "start": 4.631,
+              "end": 4.823
+            },
+            {
+              "w": "of",
+              "start": 4.823,
+              "end": 4.977
+            },
+            {
+              "w": "the",
+              "start": 4.977,
+              "end": 5.17
+            },
+            {
+              "w": "last",
+              "start": 5.17,
+              "end": 5.401
+            },
+            {
+              "w": "pictures",
+              "start": 5.401,
+              "end": 5.786
+            },
+            {
+              "w": "it",
+              "start": 5.786,
+              "end": 5.94
+            },
+            {
+              "w": "ever",
+              "start": 5.94,
+              "end": 6.172
+            },
+            {
+              "w": "took.",
+              "start": 6.172,
+              "end": 6.518
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.421,
+      "sentences": [
+        {
+          "text": "Follow for more sky, explained.",
+          "start": 0.15,
+          "end": 2.033,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.518
+            },
+            {
+              "w": "for",
+              "start": 0.518,
+              "end": 0.747
+            },
+            {
+              "w": "more",
+              "start": 0.747,
+              "end": 1.023
+            },
+            {
+              "w": "sky,",
+              "start": 1.023,
+              "end": 1.39
+            },
+            {
+              "w": "explained.",
+              "start": 1.39,
+              "end": 2.033
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.313,
+          "end": 3.141,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.313,
+              "end": 2.654
+            },
+            {
+              "w": "skies.",
+              "start": 2.654,
+              "end": 3.141
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

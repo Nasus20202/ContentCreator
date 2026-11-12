@@ -1,190 +1,170 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "69737edee0d55324",
+  "narrationHash": "48feee17a24de668",
   "timing": "estimated-proportional",
   "scenes": [
     {
       "sceneId": "hook",
       "audioFile": "voice/hook.wav",
-      "duration": 10.911,
+      "duration": 9.166,
       "sentences": [
         {
-          "text": "The Quadrantids peak on Sunday evening, with the radiant barely above the northern horizon.",
+          "text": "The year's first big meteor shower peaks this weekend.",
           "start": 0.15,
-          "end": 5.193,
+          "end": 2.896,
           "words": [
             {
               "w": "The",
               "start": 0.15,
-              "end": 0.379
+              "end": 0.358
             },
             {
-              "w": "Quadrantids",
-              "start": 0.379,
-              "end": 0.975
+              "w": "year's",
+              "start": 0.358,
+              "end": 0.691
             },
             {
-              "w": "peak",
-              "start": 0.975,
-              "end": 1.25
+              "w": "first",
+              "start": 0.691,
+              "end": 0.982
             },
             {
-              "w": "on",
-              "start": 1.25,
-              "end": 1.434
+              "w": "big",
+              "start": 0.982,
+              "end": 1.19
             },
             {
-              "w": "Sunday",
-              "start": 1.434,
-              "end": 1.8
+              "w": "meteor",
+              "start": 1.19,
+              "end": 1.523
             },
             {
-              "w": "evening,",
-              "start": 1.8,
-              "end": 2.35
+              "w": "shower",
+              "start": 1.523,
+              "end": 1.856
             },
             {
-              "w": "with",
-              "start": 2.35,
-              "end": 2.625
+              "w": "peaks",
+              "start": 1.856,
+              "end": 2.147
             },
             {
-              "w": "the",
-              "start": 2.625,
-              "end": 2.855
+              "w": "this",
+              "start": 2.147,
+              "end": 2.397
             },
             {
-              "w": "radiant",
-              "start": 2.855,
-              "end": 3.267
-            },
-            {
-              "w": "barely",
-              "start": 3.267,
-              "end": 3.634
-            },
-            {
-              "w": "above",
-              "start": 3.634,
-              "end": 3.955
-            },
-            {
-              "w": "the",
-              "start": 3.955,
-              "end": 4.184
-            },
-            {
-              "w": "northern",
-              "start": 4.184,
-              "end": 4.642
-            },
-            {
-              "w": "horizon.",
-              "start": 4.642,
-              "end": 5.193
+              "w": "weekend.",
+              "start": 2.397,
+              "end": 2.896
             }
           ]
         },
         {
-          "text": "The real chance from Europe is the hours before dawn on Monday, when it climbs high in the east.",
-          "start": 5.473,
-          "end": 10.631,
+          "text": "From Europe, the best chance is the hours before dawn on Monday, when the radiant climbs high in the east.",
+          "start": 3.176,
+          "end": 8.886,
           "words": [
             {
-              "w": "The",
-              "start": 5.473,
-              "end": 5.687
+              "w": "From",
+              "start": 3.176,
+              "end": 3.434
             },
             {
-              "w": "real",
-              "start": 5.687,
-              "end": 5.945
+              "w": "Europe,",
+              "start": 3.434,
+              "end": 3.906
+            },
+            {
+              "w": "the",
+              "start": 3.906,
+              "end": 4.121
+            },
+            {
+              "w": "best",
+              "start": 4.121,
+              "end": 4.378
             },
             {
               "w": "chance",
-              "start": 5.945,
-              "end": 6.289
-            },
-            {
-              "w": "from",
-              "start": 6.289,
-              "end": 6.547
-            },
-            {
-              "w": "Europe",
-              "start": 6.547,
-              "end": 6.891
+              "start": 4.378,
+              "end": 4.722
             },
             {
               "w": "is",
-              "start": 6.891,
-              "end": 7.063
+              "start": 4.722,
+              "end": 4.894
             },
             {
               "w": "the",
-              "start": 7.063,
-              "end": 7.278
+              "start": 4.894,
+              "end": 5.108
             },
             {
               "w": "hours",
-              "start": 7.278,
-              "end": 7.579
+              "start": 5.108,
+              "end": 5.409
             },
             {
               "w": "before",
-              "start": 7.579,
-              "end": 7.923
+              "start": 5.409,
+              "end": 5.752
             },
             {
               "w": "dawn",
-              "start": 7.923,
-              "end": 8.181
+              "start": 5.752,
+              "end": 6.01
             },
             {
               "w": "on",
-              "start": 8.181,
-              "end": 8.352
+              "start": 6.01,
+              "end": 6.182
             },
             {
               "w": "Monday,",
-              "start": 8.352,
-              "end": 8.825
+              "start": 6.182,
+              "end": 6.654
             },
             {
               "w": "when",
-              "start": 8.825,
-              "end": 9.083
-            },
-            {
-              "w": "it",
-              "start": 9.083,
-              "end": 9.255
-            },
-            {
-              "w": "climbs",
-              "start": 9.255,
-              "end": 9.599
-            },
-            {
-              "w": "high",
-              "start": 9.599,
-              "end": 9.857
-            },
-            {
-              "w": "in",
-              "start": 9.857,
-              "end": 10.029
+              "start": 6.654,
+              "end": 6.911
             },
             {
               "w": "the",
-              "start": 10.029,
-              "end": 10.244
+              "start": 6.911,
+              "end": 7.126
+            },
+            {
+              "w": "radiant",
+              "start": 7.126,
+              "end": 7.513
+            },
+            {
+              "w": "climbs",
+              "start": 7.513,
+              "end": 7.856
+            },
+            {
+              "w": "high",
+              "start": 7.856,
+              "end": 8.114
+            },
+            {
+              "w": "in",
+              "start": 8.114,
+              "end": 8.285
+            },
+            {
+              "w": "the",
+              "start": 8.285,
+              "end": 8.5
             },
             {
               "w": "east.",
-              "start": 10.244,
-              "end": 10.631
+              "start": 8.5,
+              "end": 8.886
             }
           ]
         }
@@ -560,7 +540,7 @@
     {
       "sceneId": "outro",
       "audioFile": "voice/outro.wav",
-      "duration": 3.718,
+      "duration": 6.056,
       "sentences": [
         {
           "text": "Positions calculated for central Europe.",
@@ -595,19 +575,66 @@
           ]
         },
         {
-          "text": "Clear skies.",
+          "text": "Follow, so you don't miss next week's sky.",
           "start": 2.611,
-          "end": 3.438,
+          "end": 4.669,
+          "words": [
+            {
+              "w": "Follow,",
+              "start": 2.611,
+              "end": 3.022
+            },
+            {
+              "w": "so",
+              "start": 3.022,
+              "end": 3.172
+            },
+            {
+              "w": "you",
+              "start": 3.172,
+              "end": 3.359
+            },
+            {
+              "w": "don't",
+              "start": 3.359,
+              "end": 3.621
+            },
+            {
+              "w": "miss",
+              "start": 3.621,
+              "end": 3.846
+            },
+            {
+              "w": "next",
+              "start": 3.846,
+              "end": 4.07
+            },
+            {
+              "w": "week's",
+              "start": 4.07,
+              "end": 4.37
+            },
+            {
+              "w": "sky.",
+              "start": 4.37,
+              "end": 4.669
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 4.949,
+          "end": 5.776,
           "words": [
             {
               "w": "Clear",
-              "start": 2.611,
-              "end": 2.951
+              "start": 4.949,
+              "end": 5.29
             },
             {
               "w": "skies.",
-              "start": 2.951,
-              "end": 3.438
+              "start": 5.29,
+              "end": 5.776
             }
           ]
         }

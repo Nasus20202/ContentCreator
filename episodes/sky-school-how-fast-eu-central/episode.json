@@ -1,0 +1,20 @@
+{
+  "id": "sky-school-how-fast-eu-central",
+  "series": "sky-school",
+  "createdAt": "2026-11-12T18:43:09.956Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "1f0d61eb6ab341b3",
+    "factcheckedPlan": "1f0d61eb6ab341b3",
+    "narration": "ddef2ed6dbb37ad9",
+    "video": "acbd9ea1b1c6e4f8712d42a500425c4610f8bf59e5dffc1c00d59bae6fccc420"
+  },
+  "approvals": []
+}

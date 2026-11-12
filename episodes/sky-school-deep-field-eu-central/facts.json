@@ -1,0 +1,49 @@
+{
+  "facts": [
+    {
+      "id": "xdf-galaxies",
+      "statement": "The XDF contains about 5,500 galaxies, in a patch of sky that is a small fraction of the angular diameter of the full Moon.",
+      "values": [
+        5500
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/",
+        "title": "Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "xdf-time",
+      "statement": "Hubble pointed at the patch in repeat visits over 10 years for a total of 50 days (2 million seconds of exposure); more than 2,000 images were combined into the XDF.",
+      "values": [
+        10,
+        50,
+        2,
+        2000
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/",
+        "title": "Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "xdf-age",
+      "statement": "The XDF reveals galaxies that span back 13.2 billion years in time; most are seen when they were young, small and growing.",
+      "values": [
+        13.2
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/missions/hubble/hubble-goes-to-the-extreme-to-assemble-farthest-ever-view-of-the-universe/",
+        "title": "Hubble Goes to the eXtreme to Assemble Farthest Ever View of the Universe",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    }
+  ]
+}
