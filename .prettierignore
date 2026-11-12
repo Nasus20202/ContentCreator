@@ -6,3 +6,5 @@ assets/catalog
 episodes/
 docs/ledger.md
 docs/decisions/
+pnpm-lock.yaml
+
