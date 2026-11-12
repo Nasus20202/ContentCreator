@@ -51,7 +51,7 @@ function makePlan(ep: Episode): Plan {
     badge: 'b',
     location: EU,
     voice: { id: 'af_heart', speed: 1 },
-    music: { enabled: false, volume: 0.3 },
+    music: { enabled: false, volume: 0.3, style: 'piano' },
     scenes: [
       {
         id: 'a',
@@ -294,7 +294,7 @@ describe('pipeline stages', () => {
 
   it('keeps sourced facts when research is re-run', () => {
     stages.researchSky(ep, 'pipeline');
-    stages.addSourcedFact(
+    stages.addFact(
       ep,
       {
         id: 'src',

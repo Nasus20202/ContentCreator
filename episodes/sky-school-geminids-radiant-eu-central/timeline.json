@@ -1,0 +1,894 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "309af929ba7cc710",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 7.838,
+      "sentences": [
+        {
+          "text": "Every December, meteors seem to pour out of one point in Gemini.",
+          "start": 0.15,
+          "end": 3.646,
+          "words": [
+            {
+              "w": "Every",
+              "start": 0.15,
+              "end": 0.452
+            },
+            {
+              "w": "December,",
+              "start": 0.452,
+              "end": 1.013
+            },
+            {
+              "w": "meteors",
+              "start": 1.013,
+              "end": 1.402
+            },
+            {
+              "w": "seem",
+              "start": 1.402,
+              "end": 1.661
+            },
+            {
+              "w": "to",
+              "start": 1.661,
+              "end": 1.833
+            },
+            {
+              "w": "pour",
+              "start": 1.833,
+              "end": 2.092
+            },
+            {
+              "w": "out",
+              "start": 2.092,
+              "end": 2.308
+            },
+            {
+              "w": "of",
+              "start": 2.308,
+              "end": 2.481
+            },
+            {
+              "w": "one",
+              "start": 2.481,
+              "end": 2.696
+            },
+            {
+              "w": "point",
+              "start": 2.696,
+              "end": 2.999
+            },
+            {
+              "w": "in",
+              "start": 2.999,
+              "end": 3.171
+            },
+            {
+              "w": "Gemini.",
+              "start": 3.171,
+              "end": 3.646
+            }
+          ]
+        },
+        {
+          "text": "That point is called the radiant — but the meteors do not come from there.",
+          "start": 3.926,
+          "end": 7.558,
+          "words": [
+            {
+              "w": "That",
+              "start": 3.926,
+              "end": 4.165
+            },
+            {
+              "w": "point",
+              "start": 4.165,
+              "end": 4.445
+            },
+            {
+              "w": "is",
+              "start": 4.445,
+              "end": 4.604
+            },
+            {
+              "w": "called",
+              "start": 4.604,
+              "end": 4.924
+            },
+            {
+              "w": "the",
+              "start": 4.924,
+              "end": 5.123
+            },
+            {
+              "w": "radiant",
+              "start": 5.123,
+              "end": 5.483
+            },
+            {
+              "w": "—",
+              "start": 5.483,
+              "end": 5.562
+            },
+            {
+              "w": "but",
+              "start": 5.562,
+              "end": 5.762
+            },
+            {
+              "w": "the",
+              "start": 5.762,
+              "end": 5.961
+            },
+            {
+              "w": "meteors",
+              "start": 5.961,
+              "end": 6.321
+            },
+            {
+              "w": "do",
+              "start": 6.321,
+              "end": 6.48
+            },
+            {
+              "w": "not",
+              "start": 6.48,
+              "end": 6.68
+            },
+            {
+              "w": "come",
+              "start": 6.68,
+              "end": 6.919
+            },
+            {
+              "w": "from",
+              "start": 6.919,
+              "end": 7.159
+            },
+            {
+              "w": "there.",
+              "start": 7.159,
+              "end": 7.558
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "phaethon",
+      "audioFile": "voice/phaethon.wav",
+      "duration": 8.649,
+      "sentences": [
+        {
+          "text": "The Geminids are debris from an asteroid called Phaethon, not a comet.",
+          "start": 0.15,
+          "end": 4.045,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.374
+            },
+            {
+              "w": "Geminids",
+              "start": 0.374,
+              "end": 0.822
+            },
+            {
+              "w": "are",
+              "start": 0.822,
+              "end": 1.045
+            },
+            {
+              "w": "debris",
+              "start": 1.045,
+              "end": 1.404
+            },
+            {
+              "w": "from",
+              "start": 1.404,
+              "end": 1.672
+            },
+            {
+              "w": "an",
+              "start": 1.672,
+              "end": 1.851
+            },
+            {
+              "w": "asteroid",
+              "start": 1.851,
+              "end": 2.299
+            },
+            {
+              "w": "called",
+              "start": 2.299,
+              "end": 2.657
+            },
+            {
+              "w": "Phaethon,",
+              "start": 2.657,
+              "end": 3.239
+            },
+            {
+              "w": "not",
+              "start": 3.239,
+              "end": 3.463
+            },
+            {
+              "w": "a",
+              "start": 3.463,
+              "end": 3.597
+            },
+            {
+              "w": "comet.",
+              "start": 3.597,
+              "end": 4.045
+            }
+          ]
+        },
+        {
+          "text": "Earth runs into that stream, and the grains burn up high in the atmosphere.",
+          "start": 4.325,
+          "end": 8.369,
+          "words": [
+            {
+              "w": "Earth",
+              "start": 4.325,
+              "end": 4.626
+            },
+            {
+              "w": "runs",
+              "start": 4.626,
+              "end": 4.884
+            },
+            {
+              "w": "into",
+              "start": 4.884,
+              "end": 5.143
+            },
+            {
+              "w": "that",
+              "start": 5.143,
+              "end": 5.401
+            },
+            {
+              "w": "stream,",
+              "start": 5.401,
+              "end": 5.874
+            },
+            {
+              "w": "and",
+              "start": 5.874,
+              "end": 6.089
+            },
+            {
+              "w": "the",
+              "start": 6.089,
+              "end": 6.304
+            },
+            {
+              "w": "grains",
+              "start": 6.304,
+              "end": 6.648
+            },
+            {
+              "w": "burn",
+              "start": 6.648,
+              "end": 6.906
+            },
+            {
+              "w": "up",
+              "start": 6.906,
+              "end": 7.079
+            },
+            {
+              "w": "high",
+              "start": 7.079,
+              "end": 7.337
+            },
+            {
+              "w": "in",
+              "start": 7.337,
+              "end": 7.509
+            },
+            {
+              "w": "the",
+              "start": 7.509,
+              "end": 7.724
+            },
+            {
+              "w": "atmosphere.",
+              "start": 7.724,
+              "end": 8.369
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "parallel",
+      "audioFile": "voice/parallel.wav",
+      "duration": 15.291,
+      "sentences": [
+        {
+          "text": "The debris travels on parallel paths.",
+          "start": 0.15,
+          "end": 2.181,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.371
+            },
+            {
+              "w": "debris",
+              "start": 0.371,
+              "end": 0.724
+            },
+            {
+              "w": "travels",
+              "start": 0.724,
+              "end": 1.121
+            },
+            {
+              "w": "on",
+              "start": 1.121,
+              "end": 1.298
+            },
+            {
+              "w": "parallel",
+              "start": 1.298,
+              "end": 1.739
+            },
+            {
+              "w": "paths.",
+              "start": 1.739,
+              "end": 2.181
+            }
+          ]
+        },
+        {
+          "text": "We meet the stream head-on, so those paths seem to fan out from a point ahead of us.",
+          "start": 2.461,
+          "end": 6.572,
+          "words": [
+            {
+              "w": "We",
+              "start": 2.461,
+              "end": 2.616
+            },
+            {
+              "w": "meet",
+              "start": 2.616,
+              "end": 2.848
+            },
+            {
+              "w": "the",
+              "start": 2.848,
+              "end": 3.042
+            },
+            {
+              "w": "stream",
+              "start": 3.042,
+              "end": 3.353
+            },
+            {
+              "w": "head-on,",
+              "start": 3.353,
+              "end": 3.779
+            },
+            {
+              "w": "so",
+              "start": 3.779,
+              "end": 3.935
+            },
+            {
+              "w": "those",
+              "start": 3.935,
+              "end": 4.206
+            },
+            {
+              "w": "paths",
+              "start": 4.206,
+              "end": 4.478
+            },
+            {
+              "w": "seem",
+              "start": 4.478,
+              "end": 4.71
+            },
+            {
+              "w": "to",
+              "start": 4.71,
+              "end": 4.866
+            },
+            {
+              "w": "fan",
+              "start": 4.866,
+              "end": 5.06
+            },
+            {
+              "w": "out",
+              "start": 5.06,
+              "end": 5.254
+            },
+            {
+              "w": "from",
+              "start": 5.254,
+              "end": 5.486
+            },
+            {
+              "w": "a",
+              "start": 5.486,
+              "end": 5.603
+            },
+            {
+              "w": "point",
+              "start": 5.603,
+              "end": 5.874
+            },
+            {
+              "w": "ahead",
+              "start": 5.874,
+              "end": 6.146
+            },
+            {
+              "w": "of",
+              "start": 6.146,
+              "end": 6.301
+            },
+            {
+              "w": "us.",
+              "start": 6.301,
+              "end": 6.572
+            }
+          ]
+        },
+        {
+          "text": "It is the same illusion as driving into falling snow.",
+          "start": 6.852,
+          "end": 9.88,
+          "words": [
+            {
+              "w": "It",
+              "start": 6.852,
+              "end": 7.036
+            },
+            {
+              "w": "is",
+              "start": 7.036,
+              "end": 7.219
+            },
+            {
+              "w": "the",
+              "start": 7.219,
+              "end": 7.449
+            },
+            {
+              "w": "same",
+              "start": 7.449,
+              "end": 7.724
+            },
+            {
+              "w": "illusion",
+              "start": 7.724,
+              "end": 8.183
+            },
+            {
+              "w": "as",
+              "start": 8.183,
+              "end": 8.366
+            },
+            {
+              "w": "driving",
+              "start": 8.366,
+              "end": 8.779
+            },
+            {
+              "w": "into",
+              "start": 8.779,
+              "end": 9.054
+            },
+            {
+              "w": "falling",
+              "start": 9.054,
+              "end": 9.467
+            },
+            {
+              "w": "snow.",
+              "start": 9.467,
+              "end": 9.88
+            }
+          ]
+        },
+        {
+          "text": "That is also why the shower is named after the constellation the radiant sits in.",
+          "start": 10.16,
+          "end": 15.011,
+          "words": [
+            {
+              "w": "That",
+              "start": 10.16,
+              "end": 10.454
+            },
+            {
+              "w": "is",
+              "start": 10.454,
+              "end": 10.65
+            },
+            {
+              "w": "also",
+              "start": 10.65,
+              "end": 10.944
+            },
+            {
+              "w": "why",
+              "start": 10.944,
+              "end": 11.189
+            },
+            {
+              "w": "the",
+              "start": 11.189,
+              "end": 11.434
+            },
+            {
+              "w": "shower",
+              "start": 11.434,
+              "end": 11.826
+            },
+            {
+              "w": "is",
+              "start": 11.826,
+              "end": 12.022
+            },
+            {
+              "w": "named",
+              "start": 12.022,
+              "end": 12.365
+            },
+            {
+              "w": "after",
+              "start": 12.365,
+              "end": 12.708
+            },
+            {
+              "w": "the",
+              "start": 12.708,
+              "end": 12.953
+            },
+            {
+              "w": "constellation",
+              "start": 12.953,
+              "end": 13.688
+            },
+            {
+              "w": "the",
+              "start": 13.688,
+              "end": 13.933
+            },
+            {
+              "w": "radiant",
+              "start": 13.933,
+              "end": 14.374
+            },
+            {
+              "w": "sits",
+              "start": 14.374,
+              "end": 14.668
+            },
+            {
+              "w": "in.",
+              "start": 14.668,
+              "end": 15.011
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "peak",
+      "audioFile": "voice/peak.wav",
+      "duration": 13.737,
+      "sentences": [
+        {
+          "text": "At the peak, the radiant in Gemini is seventy-three degrees up in the south.",
+          "start": 0.15,
+          "end": 4.424,
+          "words": [
+            {
+              "w": "At",
+              "start": 0.15,
+              "end": 0.332
+            },
+            {
+              "w": "the",
+              "start": 0.332,
+              "end": 0.559
+            },
+            {
+              "w": "peak,",
+              "start": 0.559,
+              "end": 0.968
+            },
+            {
+              "w": "the",
+              "start": 0.968,
+              "end": 1.196
+            },
+            {
+              "w": "radiant",
+              "start": 1.196,
+              "end": 1.605
+            },
+            {
+              "w": "in",
+              "start": 1.605,
+              "end": 1.787
+            },
+            {
+              "w": "Gemini",
+              "start": 1.787,
+              "end": 2.151
+            },
+            {
+              "w": "is",
+              "start": 2.151,
+              "end": 2.333
+            },
+            {
+              "w": "seventy-three",
+              "start": 2.333,
+              "end": 2.969
+            },
+            {
+              "w": "degrees",
+              "start": 2.969,
+              "end": 3.378
+            },
+            {
+              "w": "up",
+              "start": 3.378,
+              "end": 3.56
+            },
+            {
+              "w": "in",
+              "start": 3.56,
+              "end": 3.742
+            },
+            {
+              "w": "the",
+              "start": 3.742,
+              "end": 3.97
+            },
+            {
+              "w": "south.",
+              "start": 3.97,
+              "end": 4.424
+            }
+          ]
+        },
+        {
+          "text": "Under a perfect sky, that is up to a hundred and fifty meteors an hour.",
+          "start": 4.704,
+          "end": 8.482,
+          "words": [
+            {
+              "w": "Under",
+              "start": 4.704,
+              "end": 4.995
+            },
+            {
+              "w": "a",
+              "start": 4.995,
+              "end": 5.119
+            },
+            {
+              "w": "perfect",
+              "start": 5.119,
+              "end": 5.493
+            },
+            {
+              "w": "sky,",
+              "start": 5.493,
+              "end": 5.825
+            },
+            {
+              "w": "that",
+              "start": 5.825,
+              "end": 6.074
+            },
+            {
+              "w": "is",
+              "start": 6.074,
+              "end": 6.24
+            },
+            {
+              "w": "up",
+              "start": 6.24,
+              "end": 6.406
+            },
+            {
+              "w": "to",
+              "start": 6.406,
+              "end": 6.572
+            },
+            {
+              "w": "a",
+              "start": 6.572,
+              "end": 6.697
+            },
+            {
+              "w": "hundred",
+              "start": 6.697,
+              "end": 7.07
+            },
+            {
+              "w": "and",
+              "start": 7.07,
+              "end": 7.278
+            },
+            {
+              "w": "fifty",
+              "start": 7.278,
+              "end": 7.568
+            },
+            {
+              "w": "meteors",
+              "start": 7.568,
+              "end": 7.942
+            },
+            {
+              "w": "an",
+              "start": 7.942,
+              "end": 8.108
+            },
+            {
+              "w": "hour.",
+              "start": 8.108,
+              "end": 8.482
+            }
+          ]
+        },
+        {
+          "text": "So the best time is when Gemini is highest, not necessarily the exact peak.",
+          "start": 8.762,
+          "end": 13.457,
+          "words": [
+            {
+              "w": "So",
+              "start": 8.762,
+              "end": 8.961
+            },
+            {
+              "w": "the",
+              "start": 8.961,
+              "end": 9.211
+            },
+            {
+              "w": "best",
+              "start": 9.211,
+              "end": 9.511
+            },
+            {
+              "w": "time",
+              "start": 9.511,
+              "end": 9.81
+            },
+            {
+              "w": "is",
+              "start": 9.81,
+              "end": 10.01
+            },
+            {
+              "w": "when",
+              "start": 10.01,
+              "end": 10.31
+            },
+            {
+              "w": "Gemini",
+              "start": 10.31,
+              "end": 10.71
+            },
+            {
+              "w": "is",
+              "start": 10.71,
+              "end": 10.909
+            },
+            {
+              "w": "highest,",
+              "start": 10.909,
+              "end": 11.509
+            },
+            {
+              "w": "not",
+              "start": 11.509,
+              "end": 11.759
+            },
+            {
+              "w": "necessarily",
+              "start": 11.759,
+              "end": 12.408
+            },
+            {
+              "w": "the",
+              "start": 12.408,
+              "end": 12.658
+            },
+            {
+              "w": "exact",
+              "start": 12.658,
+              "end": 13.007
+            },
+            {
+              "w": "peak.",
+              "start": 13.007,
+              "end": 13.457
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.718,
+      "sentences": [
+        {
+          "text": "Positions calculated for central Europe.",
+          "start": 0.15,
+          "end": 2.331,
+          "words": [
+            {
+              "w": "Positions",
+              "start": 0.15,
+              "end": 0.65
+            },
+            {
+              "w": "calculated",
+              "start": 0.65,
+              "end": 1.195
+            },
+            {
+              "w": "for",
+              "start": 1.195,
+              "end": 1.422
+            },
+            {
+              "w": "central",
+              "start": 1.422,
+              "end": 1.831
+            },
+            {
+              "w": "Europe.",
+              "start": 1.831,
+              "end": 2.331
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.611,
+          "end": 3.438,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.611,
+              "end": 2.951
+            },
+            {
+              "w": "skies.",
+              "start": 2.951,
+              "end": 3.438
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

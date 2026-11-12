@@ -1,0 +1,182 @@
+{
+  "episodeId": "sky-this-week-2026-12-28-eu-central",
+  "series": "sky-this-week",
+  "title": "Sky This Week · Dec 28–Jan 3 · central Europe",
+  "badge": "Sky this week · Dec 28–Jan 3",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "skyView",
+      "narration": [
+        "On Monday, the Moon passes within six degrees of Mars.",
+        "Look low in the south-east, in the small hours."
+      ],
+      "factIds": [
+        "moon-mars-2026-12-28-sep",
+        "moon-mars-2026-12-28-view"
+      ],
+      "params": {
+        "time": "2026-12-28T01:42:00.000Z",
+        "bodies": [
+          "Moon",
+          "Mars"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "midpoint": [
+                "Moon",
+                "Mars"
+              ]
+            },
+            "fov": 72,
+            "dAz": 8,
+            "dAlt": -4
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "midpoint": [
+                "Moon",
+                "Mars"
+              ]
+            },
+            "fov": 50
+          }
+        ],
+        "twilight": 0.05,
+        "constellationLines": 0.06,
+        "labels": [
+          {
+            "body": "Moon",
+            "text": "Moon",
+            "side": "right",
+            "from": 1.2
+          },
+          {
+            "body": "Mars",
+            "text": "Mars",
+            "side": "left",
+            "from": 0.8
+          }
+        ]
+      },
+      "chips": [
+        {
+          "text": "MON 28 DEC · 02:42 · SOUTH-EAST",
+          "from": 0.2
+        }
+      ],
+      "title": {
+        "kicker": "Moon and Mars",
+        "title": "Dec 28",
+        "from": 0.1,
+        "to": 3
+      }
+    },
+    {
+      "id": "lit",
+      "template": "factCard",
+      "narration": [
+        "The Moon is about seventy-three per cent lit that morning."
+      ],
+      "factIds": [
+        "moon-mars-2026-12-28-illum"
+      ],
+      "params": {
+        "value": "73%",
+        "label": "of the Moon lit, Monday",
+        "sourceLine": "computed from ephemerides · astronomy-engine"
+      }
+    },
+    {
+      "id": "venus",
+      "template": "factCard",
+      "narration": [
+        "On Sunday 3 January, Venus is 47 degrees from the Sun in the morning sky."
+      ],
+      "factIds": [
+        "elongation-venus-2027-01-03"
+      ],
+      "params": {
+        "value": "47°",
+        "label": "Venus from the Sun, 3 Jan morning",
+        "sourceLine": "computed from ephemerides · astronomy-engine"
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Positions calculated for central Europe.",
+        "Clear skies."
+      ],
+      "factIds": [
+        "episode-location",
+        "episode-window"
+      ],
+      "params": {
+        "kicker": "Next week's sky",
+        "cta": "Follow\nso you don't\nmiss it",
+        "footnote": "50°N 15°E",
+        "sky": {
+          "time": "2026-12-28T01:42:00.000Z",
+          "bodies": [],
+          "camera": [
+            {
+              "at": 0,
+              "target": {
+                "azAlt": [
+                  180,
+                  40
+                ]
+              },
+              "fov": 100
+            },
+            {
+              "at": 2.5,
+              "target": {
+                "azAlt": [
+                  190,
+                  46
+                ]
+              },
+              "fov": 112
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "post": {
+    "title": "The Moon passes within six degrees of Mars on Monday 🌑",
+    "description": "On Monday 28 December the Moon passes within six degrees of Mars. Best seen around 02:42 local time, low in the south-east. The Moon is about 73 per cent lit. On Sunday 3 January Venus is 47 degrees from the Sun in the morning sky. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#astronomy",
+      "#stargazing",
+      "#nightsky",
+      "#space",
+      "#mars",
+      "#moon"
+    ]
+  }
+}

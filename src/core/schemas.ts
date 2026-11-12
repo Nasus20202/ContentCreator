@@ -197,6 +197,8 @@ export const ImageParams = z.object({
   assetId: z.string(),
   zoom: z.tuple([z.number().min(1), z.number().min(1)]).default([1.0, 1.12]),
   focus: z.tuple([z.number().min(0).max(1), z.number().min(0).max(1)]).default([0.5, 0.5]),
+  /** "cover" fills the frame (crops), "contain" shows the whole image as a centred band. */
+  fit: z.enum(['cover', 'contain']).default('cover'),
 });
 export type ImageParams = z.infer<typeof ImageParams>;
 
@@ -241,7 +243,19 @@ export const Plan = z.object({
   badge: z.string().max(40),
   location: Location.optional(),
   voice: z.object({ id: z.string(), speed: z.number().min(0.7).max(1.4).default(1.05) }),
-  music: z.object({ enabled: z.boolean().default(true), volume: z.number().min(0).max(1).default(0.3) }),
+  music: z.object({
+    enabled: z.boolean().default(true),
+    /** Multiplier on the synthesised bed. 0.14-0.15 sits ~11 LU under the voice. */
+    volume: z.number().min(0).max(1).default(0.15),
+    /**
+     * Bed character; see RECIPE in src/render/media.ts. Optional rather than defaulted so adding it
+     * does not change the plan hash of episodes that predate it.
+     */
+    style: z.enum(['piano', 'piano-pulse', 'piano-air']).optional(),
+    /** Bed variant: timing/velocity seed and transposition in semitones. Optional, same reason as style. */
+    seed: z.number().int().min(0).max(999).optional(),
+    transpose: z.number().int().min(-6).max(6).optional(),
+  }),
   scenes: z.array(Scene).min(2),
   post: z.object({
     /** Platform-facing title (YouTube title, TikTok title). */
@@ -476,6 +490,8 @@ export const RenderProps = z.object({
   orbits: z.record(z.string(), OrbitSnapshot),
   assets: z.record(z.string(), z.object({ file: z.string(), credit: z.string() })),
   musicFile: z.string().optional(),
+  /** Series accent, so every template draws the same colour without importing the theme map. */
+  accent: z.object({ hex: z.string(), rgb: z.string() }),
   fps: z.number(),
 });
 export type RenderProps = z.infer<typeof RenderProps>;

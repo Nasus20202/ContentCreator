@@ -1,0 +1,234 @@
+{
+  "episodeId": "sky-this-week-2027-01-04-eu-central",
+  "series": "sky-this-week",
+  "title": "Sky This Week · Jan 4–10, 2027 · central Europe",
+  "badge": "Sky this week · Jan 4–10",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "skyView",
+      "narration": [
+        "The Quadrantids peak on Sunday evening, with the radiant barely above the northern horizon.",
+        "The real chance from Europe is the hours before dawn on Monday, when it climbs high in the east."
+      ],
+      "factIds": [
+        "meteors-quadrantids-2027-01-03-peak",
+        "meteors-quadrantids-2027-01-03-radiant",
+        "episode-window"
+      ],
+      "title": {
+        "kicker": "Quadrantids",
+        "title": "Jan 3 – 4",
+        "from": 0.1,
+        "to": 3
+      },
+      "chips": [
+        {
+          "text": "BEST BEFORE DAWN · MON 4 JAN",
+          "from": {
+            "sentence": 1,
+            "offset": 0.2
+          }
+        }
+      ],
+      "params": {
+        "time": "2027-01-04T05:22:00.000Z",
+        "bodies": [],
+        "radiant": {
+          "ra": 230,
+          "dec": 49
+        },
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "radiant": true
+            },
+            "fov": 83,
+            "dAz": -2,
+            "dAlt": -28
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "radiant": true
+            },
+            "fov": 86,
+            "dAz": 3,
+            "dAlt": -20
+          }
+        ],
+        "constellation": {
+          "id": "Boo",
+          "label": "BOÖTES",
+          "from": 0.8
+        },
+        "meteors": {
+          "perSecond": 0.7,
+          "from": 0
+        },
+        "twilight": 0.18,
+        "constellationLines": 0.07
+      }
+    },
+    {
+      "id": "when",
+      "template": "skyView",
+      "narration": [
+        "Look east before dawn, when the radiant in Boötes is high and the sky is still dark.",
+        "The Moon is a thin crescent, twelve percent lit, low in the east — it barely interferes."
+      ],
+      "factIds": [
+        "meteors-quadrantids-2027-01-03-radiant",
+        "meteors-quadrantids-2027-01-03-moon"
+      ],
+      "chips": [
+        {
+          "text": "EAST · BEFORE DAWN"
+        }
+      ],
+      "params": {
+        "time": "2027-01-04T05:22:00.000Z",
+        "bodies": [
+          "Moon"
+        ],
+        "radiant": {
+          "ra": 230,
+          "dec": 49
+        },
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "azAlt": [
+                124,
+                34
+              ]
+            },
+            "fov": 112,
+            "dAz": 0,
+            "dAlt": -10
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "azAlt": [
+                120,
+                32
+              ]
+            },
+            "fov": 106,
+            "dAz": 0,
+            "dAlt": -6
+          }
+        ],
+        "labels": [
+          {
+            "body": "Moon",
+            "text": "12% Moon",
+            "side": "left",
+            "from": 1.2
+          }
+        ],
+        "meteors": {
+          "perSecond": 0.6,
+          "from": 0
+        },
+        "twilight": 0.3,
+        "constellationLines": 0.06
+      }
+    },
+    {
+      "id": "reality",
+      "template": "factCard",
+      "narration": [
+        "Eighty meteors an hour is the rate at the peak itself.",
+        "By the time the radiant rises here, expect a fraction of that — but the bright ones are worth it."
+      ],
+      "factIds": [
+        "meteors-quadrantids-2027-01-03-zhr"
+      ],
+      "params": {
+        "value": "80",
+        "label": "meteors an hour at the peak",
+        "sourceLine": "Quadrantids ZHR · International Meteor Organization"
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Positions calculated for central Europe.",
+        "Clear skies."
+      ],
+      "factIds": [
+        "episode-location",
+        "episode-window"
+      ],
+      "params": {
+        "kicker": "Next week's sky",
+        "cta": "Follow\nso you don't\nmiss it",
+        "footnote": "50°N 15°E",
+        "sky": {
+          "time": "2027-01-04T05:22:00.000Z",
+          "bodies": [],
+          "camera": [
+            {
+              "at": 0,
+              "target": {
+                "azAlt": [
+                  110,
+                  40
+                ]
+              },
+              "fov": 110
+            },
+            {
+              "at": 2.5,
+              "target": {
+                "azAlt": [
+                  180,
+                  50
+                ]
+              },
+              "fov": 100
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "post": {
+    "title": "The Quadrantids peak this weekend — but timing matters 🌠",
+    "description": "The Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#quadrantids",
+      "#meteorshower",
+      "#astronomy",
+      "#stargazing",
+      "#nightsky",
+      "#space"
+    ]
+  }
+}

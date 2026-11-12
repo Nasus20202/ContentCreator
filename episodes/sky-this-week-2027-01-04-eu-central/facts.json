@@ -1,0 +1,253 @@
+{
+  "facts": [
+    {
+      "id": "episode-window",
+      "statement": "This episode covers Mon 4 Jan, to Sun 10 Jan 2027.",
+      "values": [
+        4,
+        10,
+        2027
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "start": "2027-01-03T23:00:00.000Z",
+          "end": "2027-01-10T23:00:00.000Z"
+        }
+      }
+    },
+    {
+      "id": "episode-location",
+      "statement": "Positions are computed for central Europe (50°N, 15°E).",
+      "values": [
+        50,
+        15
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15
+        }
+      }
+    },
+    {
+      "id": "moon-mercury-2027-01-08-sep",
+      "statement": "The Moon passes 1.1° from Mercury on Fri 8 Jan, 04:58 (as seen from central Europe).",
+      "values": [
+        1.139,
+        8
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mercury",
+          "minimumUtc": "2027-01-08T03:58:41.738Z"
+        }
+      }
+    },
+    {
+      "id": "moon-mercury-2027-01-08-illum",
+      "statement": "The Moon is 0% illuminated then.",
+      "values": [
+        0
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2027-01-08T03:58:41.738Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-quadrantids-2027-01-03-zhr",
+      "statement": "Quadrantids ZHR ≈ 80 meteors per hour under ideal conditions; parent: asteroid 2003 EH1.",
+      "values": [
+        80
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.imo.net/resources/calendar/",
+        "title": "IMO Meteor Shower Calendar / working list of visual meteor showers",
+        "publisher": "International Meteor Organization",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "meteors-quadrantids-2027-01-03-peak",
+      "statement": "Quadrantids peak (solar longitude 283.15°) falls on Sun 3 Jan, 19:37 (central Europe time).",
+      "values": [
+        3,
+        4
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "solarLongitude": 283.15,
+          "peakUtc": "2027-01-03T18:37:17.337Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-quadrantids-2027-01-03-radiant",
+      "statement": "The radiant (in Boo) is highest in darkness around Mon 4 Jan, 06:22, 70° up in the east.",
+      "values": [
+        70.104
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "radiant": {
+            "ra": 230,
+            "dec": 49
+          },
+          "bestUtc": "2027-01-04T05:22:17.337Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-quadrantids-2027-01-03-moon",
+      "statement": "The Moon is 12% illuminated and 5° up at that time.",
+      "values": [
+        12
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2027-01-04T05:22:17.337Z",
+          "moonAlt": 4.6869612418384605
+        }
+      }
+    },
+    {
+      "id": "meteors-quadrantids-2027-01-03-moonset",
+      "statement": "Moonset that night: 12:57 local time.",
+      "values": [],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "moonsetUtc": "2027-01-04T11:57:30.789Z"
+        }
+      }
+    },
+    {
+      "id": "phase-new-moon-2027-01-07",
+      "statement": "New Moon: Thu 7 Jan, 21:25 (central Europe time).",
+      "values": [
+        7
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "quarter": 0
+        }
+      }
+    },
+    {
+      "id": "visible-venus-2027-01-07",
+      "statement": "Mid-week, Venus (magnitude -4.5) is best seen around 06:30, south-east, 17° up.",
+      "values": [
+        -4.53,
+        16.682
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Venus"
+        }
+      }
+    },
+    {
+      "id": "visible-mars-2027-01-07",
+      "statement": "Mid-week, Mars (magnitude -0.3) is best seen around 02:00, south-east, 45° up.",
+      "values": [
+        -0.281,
+        45.106
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mars"
+        }
+      }
+    },
+    {
+      "id": "visible-jupiter-2027-01-07",
+      "statement": "Mid-week, Jupiter (magnitude -2.4) is best seen around 00:40, south-east, 45° up.",
+      "values": [
+        -2.443,
+        45.238
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Jupiter"
+        }
+      }
+    },
+    {
+      "id": "visible-saturn-2027-01-07",
+      "statement": "Mid-week, Saturn (magnitude 0.7) is best seen around 19:00, south-west, 37° up.",
+      "values": [
+        0.737,
+        37.363
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Saturn"
+        }
+      }
+    }
+  ]
+}

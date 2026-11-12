@@ -16,7 +16,7 @@
   },
   "music": {
     "enabled": true,
-    "volume": 0.3
+    "volume": 0.14
   },
   "scenes": [
     {
@@ -53,7 +53,7 @@
                 22
               ]
             },
-            "fov": 105
+            "fov": 84
           },
           {
             "at": {
@@ -417,7 +417,7 @@
       "template": "outro",
       "narration": [
         "Positions calculated for central Europe.",
-        "Follow, so you don't miss next week's sky."
+        "Clear skies."
       ],
       "factIds": [
         "episode-location"
@@ -425,26 +425,13 @@
       "params": {
         "kicker": "Next week's sky",
         "cta": "Follow\nso you don't\nmiss it",
-        "footnote": "Positions computed for central Europe · 50°N 15°E",
+        "footnote": "50°N 15°E",
         "sky": {
           "time": "2026-11-20T19:30:00.000Z",
-          "bodies": [
-            "Moon",
-            "Saturn"
-          ],
+          "bodies": [],
           "camera": [
             {
               "at": 0,
-              "target": {
-                "midpoint": [
-                  "Moon",
-                  "Saturn"
-                ]
-              },
-              "fov": 26
-            },
-            {
-              "at": 2.5,
               "target": {
                 "azAlt": [
                   262,
@@ -452,6 +439,16 @@
                 ]
               },
               "fov": 100
+            },
+            {
+              "at": 2.5,
+              "target": {
+                "azAlt": [
+                  252,
+                  38
+                ]
+              },
+              "fov": 112
             }
           ]
         }

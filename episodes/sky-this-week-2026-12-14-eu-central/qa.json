@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-11-12T14:36:01.655Z",
+  "videoSha256": "48faa04a7f1b49d58fda063c7ea6150226947a2d7edd451dba7e454690d2b336",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "35.20 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 35.20 s vs timeline 35.17 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14.1 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.4 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 2.73
+    },
+    {
+      "file": "qa/00-hook-2.jpg",
+      "sceneId": "hook",
+      "tSec": 4.63
+    },
+    {
+      "file": "qa/01-when-0.jpg",
+      "sceneId": "when",
+      "tSec": 5.48
+    },
+    {
+      "file": "qa/01-when-1.jpg",
+      "sceneId": "when",
+      "tSec": 9.26
+    },
+    {
+      "file": "qa/01-when-2.jpg",
+      "sceneId": "when",
+      "tSec": 12.39
+    },
+    {
+      "file": "qa/01-when-3.jpg",
+      "sceneId": "when",
+      "tSec": 16.67
+    },
+    {
+      "file": "qa/02-reality-0.jpg",
+      "sceneId": "reality",
+      "tSec": 17.52
+    },
+    {
+      "file": "qa/02-reality-1.jpg",
+      "sceneId": "reality",
+      "tSec": 19.43
+    },
+    {
+      "file": "qa/02-reality-2.jpg",
+      "sceneId": "reality",
+      "tSec": 23.79
+    },
+    {
+      "file": "qa/02-reality-3.jpg",
+      "sceneId": "reality",
+      "tSec": 26.73
+    },
+    {
+      "file": "qa/03-moon-saturn-0.jpg",
+      "sceneId": "moon-saturn",
+      "tSec": 27.58
+    },
+    {
+      "file": "qa/03-moon-saturn-1.jpg",
+      "sceneId": "moon-saturn",
+      "tSec": 31.07
+    },
+    {
+      "file": "qa/04-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 31.92
+    },
+    {
+      "file": "qa/04-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 34.38
+    },
+    {
+      "file": "qa/04-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 35.07
+    }
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-12T14:41:33.637Z",
+    "verdict": "pass",
+    "notes": "Reviewed the opening and closing frames of all eight cuts: hook framing holds (Moon/Jupiter/Venus/Mars subjects stay in frame after the 20% tighter opening field), outro shows the CTA and the new '50°N 15°E' footnote without overlap. Fact-card push-in checked on the 21 Dec card; the other cards use the same code. Motion smoothness and audio mix are not judgeable from stills and are left to the human watch."
+  }
+}

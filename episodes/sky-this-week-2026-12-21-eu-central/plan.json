@@ -1,0 +1,278 @@
+{
+  "episodeId": "sky-this-week-2026-12-21-eu-central",
+  "series": "sky-this-week",
+  "title": "Sky This Week · Dec 21–27, 2026 · central Europe",
+  "badge": "Sky this week · Dec 21–27",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "skyView",
+      "narration": [
+        "This Christmas Eve, the full Moon is the closest of the year.",
+        "It is almost fourteen percent wider than the year's farthest full Moon."
+      ],
+      "factIds": [
+        "phase-full-moon-2026-12-24",
+        "phase-full-moon-2026-12-24-distance"
+      ],
+      "title": {
+        "kicker": "Full Moon",
+        "title": "Dec 24",
+        "from": 0.1,
+        "to": 3
+      },
+      "chips": [
+        {
+          "text": "CLOSEST FULL MOON OF 2026",
+          "from": 0.2,
+          "to": {
+            "sentence": 1
+          }
+        }
+      ],
+      "params": {
+        "time": "2026-12-24T23:00:00.000Z",
+        "bodies": [
+          "Moon"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "azAlt": [
+                150,
+                48
+              ]
+            },
+            "fov": 77,
+            "dAz": 6,
+            "dAlt": -6
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "body": "Moon"
+            },
+            "fov": 44
+          }
+        ],
+        "twilight": 0.05,
+        "constellationLines": 0.05
+      }
+    },
+    {
+      "id": "distance",
+      "template": "factCard",
+      "narration": [
+        "Three hundred and fifty-seven thousand kilometres separate the Moon from Earth tonight.",
+        "That is the closest full Moon of 2026."
+      ],
+      "factIds": [
+        "phase-full-moon-2026-12-24-distance"
+      ],
+      "params": {
+        "value": "357,000 km",
+        "label": "closest full Moon of 2026",
+        "sourceLine": "computed from ephemerides · astronomy-engine"
+      }
+    },
+    {
+      "id": "where",
+      "template": "skyView",
+      "narration": [
+        "Around midnight it is high in the south.",
+        "It is bright enough to wash out all but the brightest stars."
+      ],
+      "factIds": [
+        "phase-full-moon-2026-12-24",
+        "phase-full-moon-2026-12-24-distance"
+      ],
+      "chips": [
+        {
+          "text": "MIDNIGHT · HIGH IN THE SOUTH",
+          "from": 0.2
+        }
+      ],
+      "params": {
+        "time": "2026-12-24T23:00:00.000Z",
+        "bodies": [
+          "Moon",
+          "Jupiter"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "body": "Moon"
+            },
+            "fov": 88,
+            "dAz": 10,
+            "dAlt": -12
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "body": "Moon"
+            },
+            "fov": 72,
+            "dAz": 16,
+            "dAlt": -18
+          }
+        ],
+        "labels": [
+          {
+            "body": "Moon",
+            "text": "Full Moon",
+            "side": "right",
+            "from": 1
+          }
+        ],
+        "twilight": 0.05,
+        "constellationLines": 0.07
+      }
+    },
+    {
+      "id": "moon-jupiter",
+      "template": "skyView",
+      "narration": [
+        "On the twenty-seventh, the Moon passes Jupiter, high in the south before dawn."
+      ],
+      "factIds": [
+        "moon-jupiter-2026-12-27-sep",
+        "moon-jupiter-2026-12-27-view"
+      ],
+      "chips": [
+        {
+          "text": "SUN 27 DEC · BEFORE DAWN",
+          "from": 0.2
+        }
+      ],
+      "params": {
+        "time": "2026-12-27T01:51:00.000Z",
+        "bodies": [
+          "Moon",
+          "Jupiter"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "midpoint": [
+                "Moon",
+                "Jupiter"
+              ]
+            },
+            "fov": 60,
+            "dAz": 8,
+            "dAlt": -4
+          },
+          {
+            "at": {
+              "sentence": 0,
+              "edge": "end"
+            },
+            "target": {
+              "midpoint": [
+                "Moon",
+                "Jupiter"
+              ]
+            },
+            "fov": 34
+          }
+        ],
+        "labels": [
+          {
+            "body": "Jupiter",
+            "text": "Jupiter",
+            "side": "left",
+            "from": 0.8
+          },
+          {
+            "body": "Moon",
+            "text": "Moon",
+            "side": "right",
+            "from": 1.2
+          }
+        ],
+        "twilight": 0.1,
+        "constellationLines": 0.07
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Positions calculated for central Europe.",
+        "Clear skies."
+      ],
+      "factIds": [
+        "episode-location",
+        "episode-window"
+      ],
+      "params": {
+        "kicker": "Next week's sky",
+        "cta": "Follow\nso you don't\nmiss it",
+        "footnote": "50°N 15°E",
+        "sky": {
+          "time": "2026-12-24T23:00:00.000Z",
+          "bodies": [],
+          "camera": [
+            {
+              "at": 0,
+              "target": {
+                "azAlt": [
+                  180,
+                  40
+                ]
+              },
+              "fov": 100
+            },
+            {
+              "at": 2.5,
+              "target": {
+                "azAlt": [
+                  190,
+                  46
+                ]
+              },
+              "fov": 112
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "post": {
+    "title": "The closest full Moon of 2026 rises on Christmas Eve 🌕",
+    "description": "The full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#fullmoon",
+      "#christmas",
+      "#astronomy",
+      "#stargazing",
+      "#nightsky",
+      "#space"
+    ]
+  }
+}

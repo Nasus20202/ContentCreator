@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "id": "phaethon-radar",
+      "kind": "image",
+      "file": "assets/phaethon-radar.jpg",
+      "sha256": "81e2cbac5368b7e6c58ff64cc64ffe71750d808a67ad578cea31e01de2b5246c",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA22185/PIA22185~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA22185",
+        "title": "Arecibo Observatory Radar Imagery of Phaethon Asteroid",
+        "credit": "NASA / JPL / Arecibo Observatory/NASA/NSF",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-12T10:20:53.717Z"
+    }
+  ]
+}

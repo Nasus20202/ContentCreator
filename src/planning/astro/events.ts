@@ -251,9 +251,12 @@ function meteorShowers(loc: Location, start: Date, end: Date, fb: FactBook): Sky
     ];
     if (moonset)
       ids.push(
-        fb.add(`${id}-moonset`, `Moonset that night: ${formatLocalTime(moonset, loc.timeZone)} local time.`, [], {
-          moonsetUtc: moonset.toISOString(),
-        }),
+        fb.add(
+          `${id}-moonset`,
+          `Moonset that night: ${formatLocalTime(moonset, loc.timeZone)} local time.`,
+          formatLocalTime(moonset, loc.timeZone).split(':').map(Number),
+          { moonsetUtc: moonset.toISOString() },
+        ),
       );
     const moonPenalty = moonAlt > 0 ? (illum / 100) * 35 : 0;
     out.push({
@@ -277,12 +280,60 @@ function meteorShowers(loc: Location, start: Date, end: Date, fb: FactBook): Sky
   return out;
 }
 
+const MOON_RADIUS_KM = 1737.4;
+
+/** All full moons of a calendar year with their geocentric distance, for "closest/farthest of the year" claims. */
+function fullMoonsOfYear(year: number): { date: Date; km: number }[] {
+  const out: { date: Date; km: number }[] = [];
+  const end = Date.UTC(year + 1, 0, 1);
+  let q = A.SearchMoonQuarter(new Date(Date.UTC(year, 0, 1)));
+  while (q.time.date.getTime() < end) {
+    if (q.quarter === 2) out.push({ date: q.time.date, km: distanceKm('Moon', q.time.date) });
+    q = A.NextMoonQuarter(q);
+  }
+  return out;
+}
+
 function moonPhases(loc: Location, start: Date, end: Date, fb: FactBook): SkyEvent[] {
   const names = ['New Moon', 'First Quarter', 'Full Moon', 'Last Quarter'];
   const out: SkyEvent[] = [];
   let q = A.SearchMoonQuarter(start);
   while (q.time.date <= end) {
     const id = `phase-${slug(names[q.quarter])}-${isoDay(q.time.date)}`;
+    const factIds = [
+      fb.add(
+        id,
+        `${names[q.quarter]}: ${formatLocal(q.time.date, loc.timeZone)} (${loc.label} time).`,
+        [localDay(q.time.date, loc.timeZone)],
+        { quarter: q.quarter },
+      ),
+    ];
+    if (q.quarter === 2) {
+      // A full Moon is only worth an episode when it is unusually close; record the numbers that decide that.
+      const km = distanceKm('Moon', q.time.date);
+      const arcmin = 2 * Math.atan(MOON_RADIUS_KM / km) * (180 / Math.PI) * 60;
+      const year = q.time.date.getUTCFullYear();
+      const moons = fullMoonsOfYear(year);
+      const closest = moons.reduce((a, b) => (a.km < b.km ? a : b));
+      const farthest = moons.reduce((a, b) => (a.km > b.km ? a : b));
+      const isClosest = Math.abs(closest.date.getTime() - q.time.date.getTime()) < 2 * HOUR;
+      const detail = isClosest
+        ? ` It is the closest full Moon of ${year}: the farthest, on ${formatLocal(farthest.date, loc.timeZone)}, is ${Math.round(farthest.km)} km away, so this one looks ${round((farthest.km / km - 1) * 100, 1)}% wider.`
+        : '';
+      factIds.push(
+        fb.add(
+          `${id}-distance`,
+          `The full Moon on ${formatLocal(q.time.date, loc.timeZone)} is ${Math.round(km)} km away (centre to centre) and ${round(arcmin, 1)} arcminutes across.${detail}`,
+          [
+            Math.round(km),
+            round(arcmin, 1),
+            year,
+            ...(isClosest ? [Math.round(farthest.km), round((farthest.km / km - 1) * 100, 1)] : []),
+          ],
+          { body: 'Moon', distanceKm: Math.round(km), angularArcmin: round(arcmin, 1), year },
+        ),
+      );
+    }
     out.push({
       id,
       kind: 'moon-phase',
@@ -290,14 +341,7 @@ function moonPhases(loc: Location, start: Date, end: Date, fb: FactBook): SkyEve
       time: q.time.date.toISOString(),
       score: q.quarter === 0 ? 20 : 10,
       bodies: ['Moon'],
-      factIds: [
-        fb.add(
-          id,
-          `${names[q.quarter]}: ${formatLocal(q.time.date, loc.timeZone)} (${loc.label} time).`,
-          [localDay(q.time.date, loc.timeZone)],
-          { quarter: q.quarter },
-        ),
-      ],
+      factIds,
       notes: [],
     });
     q = A.NextMoonQuarter(q);

@@ -1,0 +1,168 @@
+{
+  "checkedAt": "2026-11-12T14:27:08.363Z",
+  "planHash": "7613c6adf8f3a90c",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[0]",
+        "text": "On Monday, the Moon passes within six degrees of Mars.",
+        "number": 6,
+        "raw": "six",
+        "matchedFact": "moon-mars-2026-12-28-sep"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "MON 28 DEC · 02:42 · SOUTH-EAST",
+        "number": 28,
+        "raw": "28",
+        "matchedFact": "moon-mars-2026-12-28-sep"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "MON 28 DEC · 02:42 · SOUTH-EAST",
+        "number": 2,
+        "raw": "02:42",
+        "matchedFact": "moon-mars-2026-12-28-sep"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "MON 28 DEC · 02:42 · SOUTH-EAST",
+        "number": 42,
+        "raw": "02:42",
+        "matchedFact": "moon-mars-2026-12-28-view"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Moon and Mars Dec 28",
+        "number": 28,
+        "raw": "28",
+        "matchedFact": "moon-mars-2026-12-28-sep"
+      },
+      {
+        "sceneId": "lit",
+        "where": "narration[0]",
+        "text": "The Moon is about seventy-three per cent lit that morning.",
+        "number": 73,
+        "raw": "seventy three",
+        "matchedFact": "moon-mars-2026-12-28-illum"
+      },
+      {
+        "sceneId": "lit",
+        "where": "factCard",
+        "text": "73% of the Moon lit, Monday",
+        "number": 73,
+        "raw": "73%",
+        "matchedFact": "moon-mars-2026-12-28-illum"
+      },
+      {
+        "sceneId": "venus",
+        "where": "narration[0]",
+        "text": "On Sunday 3 January, Venus is 47 degrees from the Sun in the morning sky.",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "elongation-venus-2027-01-03"
+      },
+      {
+        "sceneId": "venus",
+        "where": "narration[0]",
+        "text": "On Sunday 3 January, Venus is 47 degrees from the Sun in the morning sky.",
+        "number": 47,
+        "raw": "47",
+        "matchedFact": "elongation-venus-2027-01-03"
+      },
+      {
+        "sceneId": "venus",
+        "where": "factCard",
+        "text": "47° Venus from the Sun, 3 Jan morning",
+        "number": 47,
+        "raw": "47°",
+        "matchedFact": "elongation-venus-2027-01-03"
+      },
+      {
+        "sceneId": "venus",
+        "where": "factCard",
+        "text": "47° Venus from the Sun, 3 Jan morning",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "elongation-venus-2027-01-03"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "The Moon passes within six degrees of Mars on Monday 🌑",
+        "number": 6,
+        "raw": "six",
+        "matchedFact": "moon-mars-2026-12-28-sep"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On Monday 28 December the Moon passes within six degrees of Mars. Best seen around 02:42 local time, low in the south-east. The Moon is about 73 per cent lit. On Sunday 3 January Venus is 47 degrees from the Sun in the morning sky. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 28,
+        "raw": "28",
+        "matchedFact": "moon-mars-2026-12-28-sep"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On Monday 28 December the Moon passes within six degrees of Mars. Best seen around 02:42 local time, low in the south-east. The Moon is about 73 per cent lit. On Sunday 3 January Venus is 47 degrees from the Sun in the morning sky. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 6,
+        "raw": "six",
+        "matchedFact": "moon-mars-2026-12-28-sep"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On Monday 28 December the Moon passes within six degrees of Mars. Best seen around 02:42 local time, low in the south-east. The Moon is about 73 per cent lit. On Sunday 3 January Venus is 47 degrees from the Sun in the morning sky. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 2,
+        "raw": "02:42",
+        "matchedFact": "moon-mars-2026-12-28-sep"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On Monday 28 December the Moon passes within six degrees of Mars. Best seen around 02:42 local time, low in the south-east. The Moon is about 73 per cent lit. On Sunday 3 January Venus is 47 degrees from the Sun in the morning sky. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 42,
+        "raw": "02:42",
+        "matchedFact": "moon-mars-2026-12-28-view"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On Monday 28 December the Moon passes within six degrees of Mars. Best seen around 02:42 local time, low in the south-east. The Moon is about 73 per cent lit. On Sunday 3 January Venus is 47 degrees from the Sun in the morning sky. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 73,
+        "raw": "73",
+        "matchedFact": "moon-mars-2026-12-28-illum"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On Monday 28 December the Moon passes within six degrees of Mars. Best seen around 02:42 local time, low in the south-east. The Moon is about 73 per cent lit. On Sunday 3 January Venus is 47 degrees from the Sun in the morning sky. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "elongation-venus-2027-01-03"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On Monday 28 December the Moon passes within six degrees of Mars. Best seen around 02:42 local time, low in the south-east. The Moon is about 73 per cent lit. On Sunday 3 January Venus is 47 degrees from the Sun in the morning sky. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 47,
+        "raw": "47",
+        "matchedFact": "elongation-venus-2027-01-03"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T14:27:33.293Z",
+    "verdict": "pass",
+    "notes": "Re-reviewed after visual-only edits: outro footnote now reads '50°N 15°E' (matches location lat 50, lon 15; the spoken sign-off is unchanged), hook opening camera field of view tightened by 20% (framing only), fact card gets a slow push-in (motion only). No narration, number, date, direction or fact id changed; all earlier verification still applies."
+  }
+}

@@ -1,0 +1,617 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "69737edee0d55324",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 10.911,
+      "sentences": [
+        {
+          "text": "The Quadrantids peak on Sunday evening, with the radiant barely above the northern horizon.",
+          "start": 0.15,
+          "end": 5.193,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.379
+            },
+            {
+              "w": "Quadrantids",
+              "start": 0.379,
+              "end": 0.975
+            },
+            {
+              "w": "peak",
+              "start": 0.975,
+              "end": 1.25
+            },
+            {
+              "w": "on",
+              "start": 1.25,
+              "end": 1.434
+            },
+            {
+              "w": "Sunday",
+              "start": 1.434,
+              "end": 1.8
+            },
+            {
+              "w": "evening,",
+              "start": 1.8,
+              "end": 2.35
+            },
+            {
+              "w": "with",
+              "start": 2.35,
+              "end": 2.625
+            },
+            {
+              "w": "the",
+              "start": 2.625,
+              "end": 2.855
+            },
+            {
+              "w": "radiant",
+              "start": 2.855,
+              "end": 3.267
+            },
+            {
+              "w": "barely",
+              "start": 3.267,
+              "end": 3.634
+            },
+            {
+              "w": "above",
+              "start": 3.634,
+              "end": 3.955
+            },
+            {
+              "w": "the",
+              "start": 3.955,
+              "end": 4.184
+            },
+            {
+              "w": "northern",
+              "start": 4.184,
+              "end": 4.642
+            },
+            {
+              "w": "horizon.",
+              "start": 4.642,
+              "end": 5.193
+            }
+          ]
+        },
+        {
+          "text": "The real chance from Europe is the hours before dawn on Monday, when it climbs high in the east.",
+          "start": 5.473,
+          "end": 10.631,
+          "words": [
+            {
+              "w": "The",
+              "start": 5.473,
+              "end": 5.687
+            },
+            {
+              "w": "real",
+              "start": 5.687,
+              "end": 5.945
+            },
+            {
+              "w": "chance",
+              "start": 5.945,
+              "end": 6.289
+            },
+            {
+              "w": "from",
+              "start": 6.289,
+              "end": 6.547
+            },
+            {
+              "w": "Europe",
+              "start": 6.547,
+              "end": 6.891
+            },
+            {
+              "w": "is",
+              "start": 6.891,
+              "end": 7.063
+            },
+            {
+              "w": "the",
+              "start": 7.063,
+              "end": 7.278
+            },
+            {
+              "w": "hours",
+              "start": 7.278,
+              "end": 7.579
+            },
+            {
+              "w": "before",
+              "start": 7.579,
+              "end": 7.923
+            },
+            {
+              "w": "dawn",
+              "start": 7.923,
+              "end": 8.181
+            },
+            {
+              "w": "on",
+              "start": 8.181,
+              "end": 8.352
+            },
+            {
+              "w": "Monday,",
+              "start": 8.352,
+              "end": 8.825
+            },
+            {
+              "w": "when",
+              "start": 8.825,
+              "end": 9.083
+            },
+            {
+              "w": "it",
+              "start": 9.083,
+              "end": 9.255
+            },
+            {
+              "w": "climbs",
+              "start": 9.255,
+              "end": 9.599
+            },
+            {
+              "w": "high",
+              "start": 9.599,
+              "end": 9.857
+            },
+            {
+              "w": "in",
+              "start": 9.857,
+              "end": 10.029
+            },
+            {
+              "w": "the",
+              "start": 10.029,
+              "end": 10.244
+            },
+            {
+              "w": "east.",
+              "start": 10.244,
+              "end": 10.631
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "when",
+      "audioFile": "voice/when.wav",
+      "duration": 10.7,
+      "sentences": [
+        {
+          "text": "Look east before dawn, when the radiant in Boötes is high and the sky is still dark.",
+          "start": 0.15,
+          "end": 5.266,
+          "words": [
+            {
+              "w": "Look",
+              "start": 0.15,
+              "end": 0.44
+            },
+            {
+              "w": "east",
+              "start": 0.44,
+              "end": 0.729
+            },
+            {
+              "w": "before",
+              "start": 0.729,
+              "end": 1.115
+            },
+            {
+              "w": "dawn,",
+              "start": 1.115,
+              "end": 1.55
+            },
+            {
+              "w": "when",
+              "start": 1.55,
+              "end": 1.839
+            },
+            {
+              "w": "the",
+              "start": 1.839,
+              "end": 2.081
+            },
+            {
+              "w": "radiant",
+              "start": 2.081,
+              "end": 2.515
+            },
+            {
+              "w": "in",
+              "start": 2.515,
+              "end": 2.708
+            },
+            {
+              "w": "Boötes",
+              "start": 2.708,
+              "end": 3.094
+            },
+            {
+              "w": "is",
+              "start": 3.094,
+              "end": 3.287
+            },
+            {
+              "w": "high",
+              "start": 3.287,
+              "end": 3.577
+            },
+            {
+              "w": "and",
+              "start": 3.577,
+              "end": 3.818
+            },
+            {
+              "w": "the",
+              "start": 3.818,
+              "end": 4.059
+            },
+            {
+              "w": "sky",
+              "start": 4.059,
+              "end": 4.301
+            },
+            {
+              "w": "is",
+              "start": 4.301,
+              "end": 4.494
+            },
+            {
+              "w": "still",
+              "start": 4.494,
+              "end": 4.832
+            },
+            {
+              "w": "dark.",
+              "start": 4.832,
+              "end": 5.266
+            }
+          ]
+        },
+        {
+          "text": "The Moon is a thin crescent, twelve percent lit, low in the east — it barely interferes.",
+          "start": 5.546,
+          "end": 10.42,
+          "words": [
+            {
+              "w": "The",
+              "start": 5.546,
+              "end": 5.765
+            },
+            {
+              "w": "Moon",
+              "start": 5.765,
+              "end": 6.029
+            },
+            {
+              "w": "is",
+              "start": 6.029,
+              "end": 6.204
+            },
+            {
+              "w": "a",
+              "start": 6.204,
+              "end": 6.336
+            },
+            {
+              "w": "thin",
+              "start": 6.336,
+              "end": 6.6
+            },
+            {
+              "w": "crescent,",
+              "start": 6.6,
+              "end": 7.17
+            },
+            {
+              "w": "twelve",
+              "start": 7.17,
+              "end": 7.522
+            },
+            {
+              "w": "percent",
+              "start": 7.522,
+              "end": 7.917
+            },
+            {
+              "w": "lit,",
+              "start": 7.917,
+              "end": 8.268
+            },
+            {
+              "w": "low",
+              "start": 8.268,
+              "end": 8.488
+            },
+            {
+              "w": "in",
+              "start": 8.488,
+              "end": 8.663
+            },
+            {
+              "w": "the",
+              "start": 8.663,
+              "end": 8.883
+            },
+            {
+              "w": "east",
+              "start": 8.883,
+              "end": 9.146
+            },
+            {
+              "w": "—",
+              "start": 9.146,
+              "end": 9.234
+            },
+            {
+              "w": "it",
+              "start": 9.234,
+              "end": 9.41
+            },
+            {
+              "w": "barely",
+              "start": 9.41,
+              "end": 9.761
+            },
+            {
+              "w": "interferes.",
+              "start": 9.761,
+              "end": 10.42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "reality",
+      "audioFile": "voice/reality.wav",
+      "duration": 8.918,
+      "sentences": [
+        {
+          "text": "Eighty meteors an hour is the rate at the peak itself.",
+          "start": 0.15,
+          "end": 3.03,
+          "words": [
+            {
+              "w": "Eighty",
+              "start": 0.15,
+              "end": 0.489
+            },
+            {
+              "w": "meteors",
+              "start": 0.489,
+              "end": 0.87
+            },
+            {
+              "w": "an",
+              "start": 0.87,
+              "end": 1.04
+            },
+            {
+              "w": "hour",
+              "start": 1.04,
+              "end": 1.294
+            },
+            {
+              "w": "is",
+              "start": 1.294,
+              "end": 1.463
+            },
+            {
+              "w": "the",
+              "start": 1.463,
+              "end": 1.675
+            },
+            {
+              "w": "rate",
+              "start": 1.675,
+              "end": 1.929
+            },
+            {
+              "w": "at",
+              "start": 1.929,
+              "end": 2.098
+            },
+            {
+              "w": "the",
+              "start": 2.098,
+              "end": 2.31
+            },
+            {
+              "w": "peak",
+              "start": 2.31,
+              "end": 2.564
+            },
+            {
+              "w": "itself.",
+              "start": 2.564,
+              "end": 3.03
+            }
+          ]
+        },
+        {
+          "text": "By the time the radiant rises here, expect a fraction of that — but the bright ones are worth it.",
+          "start": 3.31,
+          "end": 8.638,
+          "words": [
+            {
+              "w": "By",
+              "start": 3.31,
+              "end": 3.486
+            },
+            {
+              "w": "the",
+              "start": 3.486,
+              "end": 3.707
+            },
+            {
+              "w": "time",
+              "start": 3.707,
+              "end": 3.971
+            },
+            {
+              "w": "the",
+              "start": 3.971,
+              "end": 4.191
+            },
+            {
+              "w": "radiant",
+              "start": 4.191,
+              "end": 4.587
+            },
+            {
+              "w": "rises",
+              "start": 4.587,
+              "end": 4.895
+            },
+            {
+              "w": "here,",
+              "start": 4.895,
+              "end": 5.292
+            },
+            {
+              "w": "expect",
+              "start": 5.292,
+              "end": 5.644
+            },
+            {
+              "w": "a",
+              "start": 5.644,
+              "end": 5.776
+            },
+            {
+              "w": "fraction",
+              "start": 5.776,
+              "end": 6.216
+            },
+            {
+              "w": "of",
+              "start": 6.216,
+              "end": 6.392
+            },
+            {
+              "w": "that",
+              "start": 6.392,
+              "end": 6.657
+            },
+            {
+              "w": "—",
+              "start": 6.657,
+              "end": 6.745
+            },
+            {
+              "w": "but",
+              "start": 6.745,
+              "end": 6.965
+            },
+            {
+              "w": "the",
+              "start": 6.965,
+              "end": 7.185
+            },
+            {
+              "w": "bright",
+              "start": 7.185,
+              "end": 7.537
+            },
+            {
+              "w": "ones",
+              "start": 7.537,
+              "end": 7.801
+            },
+            {
+              "w": "are",
+              "start": 7.801,
+              "end": 8.022
+            },
+            {
+              "w": "worth",
+              "start": 8.022,
+              "end": 8.33
+            },
+            {
+              "w": "it.",
+              "start": 8.33,
+              "end": 8.638
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.718,
+      "sentences": [
+        {
+          "text": "Positions calculated for central Europe.",
+          "start": 0.15,
+          "end": 2.331,
+          "words": [
+            {
+              "w": "Positions",
+              "start": 0.15,
+              "end": 0.65
+            },
+            {
+              "w": "calculated",
+              "start": 0.65,
+              "end": 1.195
+            },
+            {
+              "w": "for",
+              "start": 1.195,
+              "end": 1.422
+            },
+            {
+              "w": "central",
+              "start": 1.422,
+              "end": 1.831
+            },
+            {
+              "w": "Europe.",
+              "start": 1.831,
+              "end": 2.331
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.611,
+          "end": 3.438,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.611,
+              "end": 2.951
+            },
+            {
+              "w": "skies.",
+              "start": 2.951,
+              "end": 3.438
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-11-12T14:27:07.232Z",
+  "planHash": "be727b52a8962ca8",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[1]",
+        "text": "It is almost fourteen percent wider than the year's farthest full Moon.",
+        "number": 14,
+        "raw": "fourteen",
+        "matchedFact": "phase-full-moon-2026-12-24-distance"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "CLOSEST FULL MOON OF 2026",
+        "number": 2026,
+        "raw": "2026",
+        "matchedFact": "phase-full-moon-2026-12-24-distance"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Full Moon Dec 24",
+        "number": 24,
+        "raw": "24",
+        "matchedFact": "phase-full-moon-2026-12-24"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[0]",
+        "text": "Three hundred and fifty-seven thousand kilometres separate the Moon from Earth tonight.",
+        "number": 357000,
+        "raw": "three hundred and fifty seven thousand",
+        "matchedFact": "phase-full-moon-2026-12-24-distance"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[1]",
+        "text": "That is the closest full Moon of 2026.",
+        "number": 2026,
+        "raw": "2026",
+        "matchedFact": "phase-full-moon-2026-12-24-distance"
+      },
+      {
+        "sceneId": "distance",
+        "where": "factCard",
+        "text": "357,000 km closest full Moon of 2026",
+        "number": 357000,
+        "raw": "357000",
+        "matchedFact": "phase-full-moon-2026-12-24-distance"
+      },
+      {
+        "sceneId": "distance",
+        "where": "factCard",
+        "text": "357,000 km closest full Moon of 2026",
+        "number": 2026,
+        "raw": "2026",
+        "matchedFact": "phase-full-moon-2026-12-24-distance"
+      },
+      {
+        "sceneId": "moon-jupiter",
+        "where": "narration[0]",
+        "text": "On the twenty-seventh, the Moon passes Jupiter, high in the south before dawn.",
+        "number": 27,
+        "raw": "twenty-seventh",
+        "matchedFact": "moon-jupiter-2026-12-27-sep"
+      },
+      {
+        "sceneId": "moon-jupiter",
+        "where": "chips[0]",
+        "text": "SUN 27 DEC · BEFORE DAWN",
+        "number": 27,
+        "raw": "27",
+        "matchedFact": "moon-jupiter-2026-12-27-sep"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "The closest full Moon of 2026 rises on Christmas Eve 🌕",
+        "number": 2026,
+        "raw": "2026",
+        "matchedFact": "phase-full-moon-2026-12-24-distance"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 24,
+        "raw": "24",
+        "matchedFact": "phase-full-moon-2026-12-24"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 2026,
+        "raw": "2026",
+        "matchedFact": "phase-full-moon-2026-12-24-distance"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 356729,
+        "raw": "356729",
+        "matchedFact": "phase-full-moon-2026-12-24-distance"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 13.8,
+        "raw": "13.8%",
+        "matchedFact": "phase-full-moon-2026-12-24-distance"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 27,
+        "raw": "27",
+        "matchedFact": "moon-jupiter-2026-12-27-sep"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 2.1,
+        "raw": "2.1°",
+        "matchedFact": "moon-jupiter-2026-12-27-sep"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T14:27:37.574Z",
+    "verdict": "pass",
+    "notes": "Re-reviewed after visual-only edits: outro footnote now reads '50°N 15°E' (matches location lat 50, lon 15; the spoken sign-off is unchanged), hook opening camera field of view tightened by 20% (framing only), fact card gets a slow push-in (motion only). No narration, number, date, direction or fact id changed; all earlier verification still applies."
+  }
+}

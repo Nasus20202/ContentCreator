@@ -1,0 +1,365 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "394633ea21cc9626",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 6.514,
+      "sentences": [
+        {
+          "text": "Before dawn on Thursday, Venus is low in the south-east.",
+          "start": 0.15,
+          "end": 3.364,
+          "words": [
+            {
+              "w": "Before",
+              "start": 0.15,
+              "end": 0.517
+            },
+            {
+              "w": "dawn",
+              "start": 0.517,
+              "end": 0.793
+            },
+            {
+              "w": "on",
+              "start": 0.793,
+              "end": 0.976
+            },
+            {
+              "w": "Thursday,",
+              "start": 0.976,
+              "end": 1.573
+            },
+            {
+              "w": "Venus",
+              "start": 1.573,
+              "end": 1.895
+            },
+            {
+              "w": "is",
+              "start": 1.895,
+              "end": 2.078
+            },
+            {
+              "w": "low",
+              "start": 2.078,
+              "end": 2.308
+            },
+            {
+              "w": "in",
+              "start": 2.308,
+              "end": 2.492
+            },
+            {
+              "w": "the",
+              "start": 2.492,
+              "end": 2.721
+            },
+            {
+              "w": "south-east.",
+              "start": 2.721,
+              "end": 3.364
+            }
+          ]
+        },
+        {
+          "text": "About 21 degrees up, in the south-east sky.",
+          "start": 3.644,
+          "end": 6.234,
+          "words": [
+            {
+              "w": "About",
+              "start": 3.644,
+              "end": 3.974
+            },
+            {
+              "w": "21",
+              "start": 3.974,
+              "end": 4.162
+            },
+            {
+              "w": "degrees",
+              "start": 4.162,
+              "end": 4.586
+            },
+            {
+              "w": "up,",
+              "start": 4.586,
+              "end": 4.915
+            },
+            {
+              "w": "in",
+              "start": 4.915,
+              "end": 5.104
+            },
+            {
+              "w": "the",
+              "start": 5.104,
+              "end": 5.339
+            },
+            {
+              "w": "south-east",
+              "start": 5.339,
+              "end": 5.857
+            },
+            {
+              "w": "sky.",
+              "start": 5.857,
+              "end": 6.234
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "jupiter",
+      "audioFile": "voice/jupiter.wav",
+      "duration": 4.528,
+      "sentences": [
+        {
+          "text": "Earlier that night, Jupiter is up in the south-east, about halfway up the sky.",
+          "start": 0.15,
+          "end": 4.248,
+          "words": [
+            {
+              "w": "Earlier",
+              "start": 0.15,
+              "end": 0.526
+            },
+            {
+              "w": "that",
+              "start": 0.526,
+              "end": 0.777
+            },
+            {
+              "w": "night,",
+              "start": 0.777,
+              "end": 1.195
+            },
+            {
+              "w": "Jupiter",
+              "start": 1.195,
+              "end": 1.572
+            },
+            {
+              "w": "is",
+              "start": 1.572,
+              "end": 1.739
+            },
+            {
+              "w": "up",
+              "start": 1.739,
+              "end": 1.906
+            },
+            {
+              "w": "in",
+              "start": 1.906,
+              "end": 2.073
+            },
+            {
+              "w": "the",
+              "start": 2.073,
+              "end": 2.282
+            },
+            {
+              "w": "south-east,",
+              "start": 2.282,
+              "end": 2.868
+            },
+            {
+              "w": "about",
+              "start": 2.868,
+              "end": 3.16
+            },
+            {
+              "w": "halfway",
+              "start": 3.16,
+              "end": 3.537
+            },
+            {
+              "w": "up",
+              "start": 3.537,
+              "end": 3.704
+            },
+            {
+              "w": "the",
+              "start": 3.704,
+              "end": 3.913
+            },
+            {
+              "w": "sky.",
+              "start": 3.913,
+              "end": 4.248
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "uranus",
+      "audioFile": "voice/uranus.wav",
+      "duration": 6.688,
+      "sentences": [
+        {
+          "text": "On Wednesday evening, Uranus reaches opposition, the point opposite the Sun.",
+          "start": 0.15,
+          "end": 4.604,
+          "words": [
+            {
+              "w": "On",
+              "start": 0.15,
+              "end": 0.34
+            },
+            {
+              "w": "Wednesday",
+              "start": 0.34,
+              "end": 0.861
+            },
+            {
+              "w": "evening,",
+              "start": 0.861,
+              "end": 1.429
+            },
+            {
+              "w": "Uranus",
+              "start": 1.429,
+              "end": 1.808
+            },
+            {
+              "w": "reaches",
+              "start": 1.808,
+              "end": 2.235
+            },
+            {
+              "w": "opposition,",
+              "start": 2.235,
+              "end": 2.946
+            },
+            {
+              "w": "the",
+              "start": 2.946,
+              "end": 3.183
+            },
+            {
+              "w": "point",
+              "start": 3.183,
+              "end": 3.514
+            },
+            {
+              "w": "opposite",
+              "start": 3.514,
+              "end": 3.988
+            },
+            {
+              "w": "the",
+              "start": 3.988,
+              "end": 4.225
+            },
+            {
+              "w": "Sun.",
+              "start": 4.225,
+              "end": 4.604
+            }
+          ]
+        },
+        {
+          "text": "You need binoculars to see it.",
+          "start": 4.884,
+          "end": 6.408,
+          "words": [
+            {
+              "w": "You",
+              "start": 4.884,
+              "end": 5.08
+            },
+            {
+              "w": "need",
+              "start": 5.08,
+              "end": 5.314
+            },
+            {
+              "w": "binoculars",
+              "start": 5.314,
+              "end": 5.783
+            },
+            {
+              "w": "to",
+              "start": 5.783,
+              "end": 5.939
+            },
+            {
+              "w": "see",
+              "start": 5.939,
+              "end": 6.135
+            },
+            {
+              "w": "it.",
+              "start": 6.135,
+              "end": 6.408
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.718,
+      "sentences": [
+        {
+          "text": "Positions calculated for central Europe.",
+          "start": 0.15,
+          "end": 2.331,
+          "words": [
+            {
+              "w": "Positions",
+              "start": 0.15,
+              "end": 0.65
+            },
+            {
+              "w": "calculated",
+              "start": 0.65,
+              "end": 1.195
+            },
+            {
+              "w": "for",
+              "start": 1.195,
+              "end": 1.422
+            },
+            {
+              "w": "central",
+              "start": 1.422,
+              "end": 1.831
+            },
+            {
+              "w": "Europe.",
+              "start": 1.831,
+              "end": 2.331
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.611,
+          "end": 3.438,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.611,
+              "end": 2.951
+            },
+            {
+              "w": "skies.",
+              "start": 2.951,
+              "end": 3.438
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

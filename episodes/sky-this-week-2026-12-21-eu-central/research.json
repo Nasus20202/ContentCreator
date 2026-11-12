@@ -1,0 +1,167 @@
+{
+  "kind": "sky-week",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "window": {
+    "start": "2026-12-20T23:00:00.000Z",
+    "end": "2026-12-27T23:00:00.000Z"
+  },
+  "generatedAt": "2026-11-12T10:03:01.195Z",
+  "engine": "astronomy-engine@2",
+  "events": [
+    {
+      "id": "moon-jupiter-2026-12-27",
+      "kind": "moon-pass",
+      "title": "Moon near Jupiter (2.1°)",
+      "time": "2026-12-27T15:51:05.218Z",
+      "score": 56,
+      "bodies": [
+        "Moon",
+        "Jupiter"
+      ],
+      "viewing": {
+        "bestLocal": "Sun 27 Dec, 02:51",
+        "bestUtc": "2026-12-27T01:51:05.218Z",
+        "azimuth": 162.5,
+        "altitude": 52.4,
+        "direction": "south"
+      },
+      "factIds": [
+        "moon-jupiter-2026-12-27-sep",
+        "moon-jupiter-2026-12-27-illum",
+        "moon-jupiter-2026-12-27-view"
+      ],
+      "notes": []
+    },
+    {
+      "id": "meteors-ursids-2026-12-22",
+      "kind": "meteor-shower",
+      "title": "Ursids peak (ZHR ~10)",
+      "time": "2026-12-22T13:20:29.450Z",
+      "score": 39,
+      "bodies": [],
+      "viewing": {
+        "bestLocal": "Tue 22 Dec, 06:20",
+        "bestUtc": "2026-12-22T05:20:29.450Z",
+        "azimuth": 15,
+        "altitude": 61.2,
+        "direction": "north"
+      },
+      "factIds": [
+        "meteors-ursids-2026-12-22-zhr",
+        "meteors-ursids-2026-12-22-peak",
+        "meteors-ursids-2026-12-22-radiant",
+        "meteors-ursids-2026-12-22-moon",
+        "meteors-ursids-2026-12-22-moonset"
+      ],
+      "notes": [
+        "radiant RA 217° Dec 76°",
+        "constellation UMi"
+      ]
+    },
+    {
+      "id": "visible-venus-2026-12-24",
+      "kind": "planet-visibility",
+      "title": "Venus visible (mag -4.7)",
+      "time": "2026-12-24T05:40:00.000Z",
+      "score": 39,
+      "bodies": [
+        "Venus"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 24 Dec, 06:40",
+        "bestUtc": "2026-12-24T05:40:00.000Z",
+        "azimuth": 146.9,
+        "altitude": 20.7,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-venus-2026-12-24"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-jupiter-2026-12-24",
+      "kind": "planet-visibility",
+      "title": "Jupiter visible (mag -2.4)",
+      "time": "2026-12-24T00:40:00.000Z",
+      "score": 29,
+      "bodies": [
+        "Jupiter"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 24 Dec, 01:40",
+        "bestUtc": "2026-12-24T00:40:00.000Z",
+        "azimuth": 133.4,
+        "altitude": 45.2,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-jupiter-2026-12-24"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-mars-2026-12-24",
+      "kind": "planet-visibility",
+      "title": "Mars visible (mag 0)",
+      "time": "2026-12-24T01:50:00.000Z",
+      "score": 20,
+      "bodies": [
+        "Mars"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 24 Dec, 02:50",
+        "bestUtc": "2026-12-24T01:50:00.000Z",
+        "azimuth": 141.7,
+        "altitude": 45.5,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-mars-2026-12-24"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-saturn-2026-12-24",
+      "kind": "planet-visibility",
+      "title": "Saturn visible (mag 0.7)",
+      "time": "2026-12-24T17:50:00.000Z",
+      "score": 17,
+      "bodies": [
+        "Saturn"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 24 Dec, 18:50",
+        "bestUtc": "2026-12-24T17:50:00.000Z",
+        "azimuth": 189.7,
+        "altitude": 40.5,
+        "direction": "south"
+      },
+      "factIds": [
+        "visible-saturn-2026-12-24"
+      ],
+      "notes": []
+    },
+    {
+      "id": "phase-full-moon-2026-12-24",
+      "kind": "moon-phase",
+      "title": "Full Moon",
+      "time": "2026-12-24T01:28:45.040Z",
+      "score": 10,
+      "bodies": [
+        "Moon"
+      ],
+      "factIds": [
+        "phase-full-moon-2026-12-24",
+        "phase-full-moon-2026-12-24-distance"
+      ],
+      "notes": []
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "kind": "sky-week",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "window": {
+    "start": "2027-01-03T23:00:00.000Z",
+    "end": "2027-01-10T23:00:00.000Z"
+  },
+  "generatedAt": "2026-11-12T10:01:36.613Z",
+  "engine": "astronomy-engine@2",
+  "events": [
+    {
+      "id": "meteors-quadrantids-2027-01-03",
+      "kind": "meteor-shower",
+      "title": "Quadrantids peak (ZHR ~80)",
+      "time": "2027-01-03T18:37:17.337Z",
+      "score": 63,
+      "bodies": [],
+      "viewing": {
+        "bestLocal": "Mon 4 Jan, 06:22",
+        "bestUtc": "2027-01-04T05:22:17.337Z",
+        "azimuth": 81,
+        "altitude": 70.1,
+        "direction": "east"
+      },
+      "factIds": [
+        "meteors-quadrantids-2027-01-03-zhr",
+        "meteors-quadrantids-2027-01-03-peak",
+        "meteors-quadrantids-2027-01-03-radiant",
+        "meteors-quadrantids-2027-01-03-moon",
+        "meteors-quadrantids-2027-01-03-moonset"
+      ],
+      "notes": [
+        "radiant RA 230° Dec 49°",
+        "constellation Boo"
+      ]
+    },
+    {
+      "id": "visible-venus-2027-01-07",
+      "kind": "planet-visibility",
+      "title": "Venus visible (mag -4.5)",
+      "time": "2027-01-07T05:30:00.000Z",
+      "score": 38,
+      "bodies": [
+        "Venus"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 7 Jan, 06:30",
+        "bestUtc": "2027-01-07T05:30:00.000Z",
+        "azimuth": 145.7,
+        "altitude": 16.7,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-venus-2027-01-07"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-jupiter-2027-01-07",
+      "kind": "planet-visibility",
+      "title": "Jupiter visible (mag -2.4)",
+      "time": "2027-01-06T23:40:00.000Z",
+      "score": 30,
+      "bodies": [
+        "Jupiter"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 7 Jan, 00:40",
+        "bestUtc": "2027-01-06T23:40:00.000Z",
+        "azimuth": 132.6,
+        "altitude": 45.2,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-jupiter-2027-01-07"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-mars-2027-01-07",
+      "kind": "planet-visibility",
+      "title": "Mars visible (mag -0.3)",
+      "time": "2027-01-07T01:00:00.000Z",
+      "score": 21,
+      "bodies": [
+        "Mars"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 7 Jan, 02:00",
+        "bestUtc": "2027-01-07T01:00:00.000Z",
+        "azimuth": 141.1,
+        "altitude": 45.1,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-mars-2027-01-07"
+      ],
+      "notes": []
+    },
+    {
+      "id": "phase-new-moon-2027-01-07",
+      "kind": "moon-phase",
+      "title": "New Moon",
+      "time": "2027-01-07T20:25:05.910Z",
+      "score": 20,
+      "bodies": [
+        "Moon"
+      ],
+      "factIds": [
+        "phase-new-moon-2027-01-07"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-saturn-2027-01-07",
+      "kind": "planet-visibility",
+      "title": "Saturn visible (mag 0.7)",
+      "time": "2027-01-07T18:00:00.000Z",
+      "score": 17,
+      "bodies": [
+        "Saturn"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 7 Jan, 19:00",
+        "bestUtc": "2027-01-07T18:00:00.000Z",
+        "azimuth": 209.7,
+        "altitude": 37.4,
+        "direction": "south-west"
+      },
+      "factIds": [
+        "visible-saturn-2027-01-07"
+      ],
+      "notes": []
+    },
+    {
+      "id": "moon-mercury-2027-01-08",
+      "kind": "moon-pass",
+      "title": "Moon near Mercury (1.1°)",
+      "time": "2027-01-08T03:58:41.738Z",
+      "score": 10,
+      "bodies": [
+        "Moon",
+        "Mercury"
+      ],
+      "factIds": [
+        "moon-mercury-2027-01-08-sep",
+        "moon-mercury-2027-01-08-illum"
+      ],
+      "notes": []
+    }
+  ]
+}

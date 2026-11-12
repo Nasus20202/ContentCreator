@@ -1,0 +1,80 @@
+{
+  "checkedAt": "2026-11-12T14:27:02.789Z",
+  "planHash": "9e67c5a6dae8d7d4",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[1]",
+        "text": "About 21 degrees up, in the south-east sky.",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "visible-venus-2026-11-26"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "THURSDAY · 06:30 · SOUTH-EAST",
+        "number": 6,
+        "raw": "06:30",
+        "matchedFact": "visible-venus-2026-11-26"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "THURSDAY · 06:30 · SOUTH-EAST",
+        "number": 30,
+        "raw": "06:30",
+        "matchedFact": "visible-venus-2026-11-26"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "chips[0]",
+        "text": "THURSDAY · 03:30 · SOUTH-EAST",
+        "number": 3,
+        "raw": "03:30",
+        "matchedFact": "visible-jupiter-2026-11-26"
+      },
+      {
+        "sceneId": "jupiter",
+        "where": "chips[0]",
+        "text": "THURSDAY · 03:30 · SOUTH-EAST",
+        "number": 30,
+        "raw": "03:30",
+        "matchedFact": "visible-jupiter-2026-11-26"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Venus is low in the south-east before dawn on Thursday, about 21° up at 06:30 local time. Jupiter is up in the south-east in the small hours of the same day. On Wednesday evening Uranus reaches opposition and is visible in binoculars. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 21,
+        "raw": "21°",
+        "matchedFact": "visible-venus-2026-11-26"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Venus is low in the south-east before dawn on Thursday, about 21° up at 06:30 local time. Jupiter is up in the south-east in the small hours of the same day. On Wednesday evening Uranus reaches opposition and is visible in binoculars. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 6,
+        "raw": "06:30",
+        "matchedFact": "visible-venus-2026-11-26"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Venus is low in the south-east before dawn on Thursday, about 21° up at 06:30 local time. Jupiter is up in the south-east in the small hours of the same day. On Wednesday evening Uranus reaches opposition and is visible in binoculars. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 30,
+        "raw": "06:30",
+        "matchedFact": "visible-venus-2026-11-26"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T14:27:27.396Z",
+    "verdict": "pass",
+    "notes": "Re-reviewed after visual-only edits: outro footnote now reads '50°N 15°E' (matches location lat 50, lon 15; the spoken sign-off is unchanged), hook opening camera field of view tightened by 20% (framing only), fact card gets a slow push-in (motion only). No narration, number, date, direction or fact id changed; all earlier verification still applies."
+  }
+}

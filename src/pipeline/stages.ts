@@ -7,6 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { mediaName } from '../publish/media-host';
+import { replaceVideoUrl } from '../publish/payload';
 import { Episode, stageIndex } from '../core/episode';
 import { hashData, nowIso, PipelineError, readJson, sha256File, writeJson } from '../core/io';
 import { paths } from '../core/paths';
@@ -44,6 +45,34 @@ export function loadFacts(ep: Episode): Fact[] {
 }
 export function loadAssets(ep: Episode): AssetRecord[] {
   return fs.existsSync(ep.paths.assets) ? readJson(ep.paths.assets, AssetsFile).assets : [];
+}
+
+export interface AssetRestore {
+  id: string;
+  status: 'present' | 'fetched' | 'mismatch';
+}
+
+/**
+ * Make every recorded asset available under build/ before rendering. A fresh clone has the records
+ * (assets.json) but not the binaries, which are gitignored; they are re-downloaded from the URL
+ * recorded at add time and checked against the recorded sha256. A mismatch is never silently used.
+ */
+export async function restoreAssets(ep: Episode, fetchImpl: typeof fetch = fetch): Promise<AssetRestore[]> {
+  const out: AssetRestore[] = [];
+  for (const a of loadAssets(ep)) {
+    const file = path.join(ep.paths.build, a.file);
+    let status: AssetRestore['status'] = 'present';
+    if (!fs.existsSync(file)) {
+      const res = await fetchImpl(a.source.url);
+      if (!res.ok) throw new PipelineError(`asset ${a.id}: download failed, HTTP ${res.status} from ${a.source.url}`);
+      fs.mkdirSync(path.dirname(file), { recursive: true });
+      fs.writeFileSync(file, Buffer.from(await res.arrayBuffer()));
+      status = 'fetched';
+    }
+    if (sha256File(file) !== a.sha256) status = 'mismatch';
+    out.push({ id: a.id, status });
+  }
+  return out;
 }
 
 /** Guard: the plan on disk must be exactly the one an earlier stage signed off. */
@@ -101,13 +130,16 @@ export function researchSky(ep: Episode, actor: Actor): ResearchFile {
   return research;
 }
 
-export function addSourcedFact(ep: Episode, fact: Fact, actor: Actor): void {
-  if (fact.source.type !== 'url') throw new PipelineError('Manually added facts must cite a URL');
+export function addFact(ep: Episode, fact: Fact, actor: Actor): void {
   const facts = loadFacts(ep);
   if (facts.some((f) => f.id === fact.id)) throw new PipelineError(`Fact "${fact.id}" already exists`);
   writeJson(ep.paths.facts, FactsFile.parse({ facts: [...facts, fact] }));
   if (ep.stage === 'created') ep.advance('researched', actor);
-  ep.log(actor, 'researched', 'fact.add', { id: fact.id, url: fact.source.url });
+  ep.log(actor, 'researched', 'fact.add', {
+    id: fact.id,
+    source: fact.source.type,
+    ...(fact.source.type === 'url' ? { url: fact.source.url } : { method: fact.source.method }),
+  });
 }
 
 // ------------------------------------------------------------------ plan
@@ -339,7 +371,13 @@ export interface PublishTarget {
 /** Moves the scheduled posts of the latest real submission to a new time; recorded as a `reschedule` attempt. */
 export async function reschedule(
   ep: Episode,
-  opts: { date: string; endpoint: string; edit: (input: Record<string, unknown>) => Promise<unknown> },
+  opts: {
+    date: string;
+    endpoint: string;
+    edit: (input: Record<string, unknown>) => Promise<unknown>;
+    /** Point the existing posts at another hosted video (e.g. a re-render of the same cut). */
+    mediaUrl?: string;
+  },
   actor: Actor,
 ): Promise<PublishRecord['attempts'][number]> {
   if (!fs.existsSync(ep.paths.publish)) throw new PipelineError('Nothing published yet');
@@ -348,6 +386,13 @@ export async function reschedule(
   if (!last) throw new PipelineError('No submitted posts to reschedule');
   const dueAt = new Date(opts.date).toISOString();
   if (new Date(dueAt).getTime() <= Date.now()) throw new PipelineError('--at must be in the future');
+  // Swapping the media means the post no longer matches the approved file, so require a QA-passed
+  // render and record its hash rather than the old one.
+  const swapped = opts.mediaUrl !== undefined;
+  if (swapped) {
+    ep.requireStage('qa-passed');
+    requireFreshRender(ep);
+  }
   const attempt: PublishRecord['attempts'][number] = {
     at: nowIso(),
     actor,
@@ -356,14 +401,15 @@ export async function reschedule(
     dryRun: false,
     provider: 'buffer',
     endpoint: opts.endpoint,
-    videoSha256: last.videoSha256,
-    media: last.media,
+    videoSha256: swapped ? (ep.manifest.hashes.video ?? last.videoSha256) : last.videoSha256,
+    media: swapped ? { url: opts.mediaUrl! } : last.media,
     targets: [],
   };
   for (const t of last.targets.filter((x) => x.status === 'submitted' && x.postId)) {
     // editPost replaces the whole post: resend the original input with the new time
     const { channelId: _channel, ...original } = t.payload as Record<string, unknown>;
-    const payload = { ...original, id: t.postId, mode: 'customScheduled', dueAt };
+    const withMedia = swapped ? replaceVideoUrl(original, opts.mediaUrl!) : original;
+    const payload = { ...withMedia, id: t.postId, mode: 'customScheduled', dueAt };
     try {
       await opts.edit(payload);
       attempt.targets.push({

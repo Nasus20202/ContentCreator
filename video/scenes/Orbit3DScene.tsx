@@ -4,6 +4,7 @@ import { ThreeCanvas } from '@remotion/three';
 import { useThree } from '@react-three/fiber';
 import * as THREE from 'three';
 import type { Orbit3DParams } from '../../src/core/schemas';
+import { useAccent } from '../accent';
 import { useSceneTime } from '../scene-context';
 import { ease } from '../sky/projection';
 import { theme } from '../theme';
@@ -35,13 +36,14 @@ const Ring: React.FC<{ r: number; color: string }> = ({ r, color }) => {
     });
     return new THREE.Line(
       new THREE.BufferGeometry().setFromPoints(pts),
-      new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.6 }),
+      new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.85 }),
     );
   }, [r, color]);
   return <primitive object={line} />;
 };
 
 export const Orbit3DScene: React.FC<{ sceneId: string; params: Orbit3DParams }> = ({ sceneId, params }) => {
+  const accent = useAccent();
   const { t, at, win, props } = useSceneTime();
   const { width, height } = useVideoConfig();
   const snap = props.orbits[sceneId];
@@ -59,20 +61,18 @@ export const Orbit3DScene: React.FC<{ sceneId: string; params: Orbit3DParams }> 
     .add(dir.clone().multiplyScalar(0.12))
     .add(new THREE.Vector3(0, 0.03, 0));
   const maxR = Math.max(...snap.bodies.map((b) => b.r));
-  const centre = snap.bodies
-    .reduce((c, b) => c.add(pos[b.name]), new THREE.Vector3())
-    .multiplyScalar(1 / snap.bodies.length)
-    .multiplyScalar(0.6);
-  const endPos = centre.clone().add(new THREE.Vector3(maxR * 0.5, maxR * 1.45, maxR * 0.6));
+  // Pull back far enough that the Sun sits in the middle of the frame instead of being cropped in a
+  // corner (found in QA): the reveal has to read as "Earth laps Mars around the Sun".
+  const endPos = new THREE.Vector3(0.5, 1.45, 0.6).normalize().multiplyScalar(maxR * 2.55);
   const k = ease(Math.max(0, Math.min(1, (t - at(params.revealAt)) / 2.4)));
   const camPos = startPos.clone().lerp(endPos, k);
-  const look = target.clone().lerp(centre, k);
+  const look = target.clone().lerp(new THREE.Vector3(0, 0, 0), k);
 
   const sightLine = useMemo(
     () =>
       new THREE.Line(
         new THREE.BufferGeometry(),
-        new THREE.LineBasicMaterial({ color: theme.accent, transparent: true, opacity: 0.9 }),
+        new THREE.LineBasicMaterial({ color: accent.hex, transparent: true, opacity: 0.9 }),
       ),
     [],
   );
@@ -120,10 +120,6 @@ export const Orbit3DScene: React.FC<{ sceneId: string; params: Orbit3DParams }> 
           <sphereGeometry args={[0.22, 48, 48]} />
           <meshBasicMaterial color="#ffd27a" />
         </mesh>
-        <mesh>
-          <sphereGeometry args={[0.38, 32, 32]} />
-          <meshBasicMaterial color="#ffb347" transparent opacity={0.18} />
-        </mesh>
         {snap.bodies.map((b) => {
           const s = STYLE[b.name] ?? STYLE.Mars;
           return (
@@ -143,17 +139,29 @@ export const Orbit3DScene: React.FC<{ sceneId: string; params: Orbit3DParams }> 
         const isEarth = b.name === 'Earth';
         const o = isEarth ? 1 : distO;
         if (!p.ok || o <= 0) return null;
+        // Labels used to sit on top of the disc, where a grey sub-line is unreadable on Jupiter or
+        // Mars (found in QA). Project the disc edge and start the text outside it.
+        const right = new THREE.Vector3().setFromMatrixColumn(twin.matrixWorld, 0);
+        const edge = screen(pos[b.name].clone().addScaledVector(right, STYLE[b.name]?.radius ?? 0.05));
+        const radiusPx = Math.hypot(edge.x - p.x, edge.y - p.y) || 40;
+        // When a planet swings into the lower third (the pull-back at the end of the reveal), a
+        // right-hand label lands in the caption band and the caption runs through it. Flip the
+        // label above the disc instead of clamping, so it stays attached to its planet.
+        const labelH = 100;
+        const below = p.y - 46;
+        const top =
+          below + labelH > theme.captionTop - 20 ? Math.max(theme.safeTop, p.y - radiusPx - labelH - 20) : below;
         return (
           <div
             key={b.name}
             style={{
               position: 'absolute',
-              left: p.x + 34,
-              top: p.y - 40,
+              left: Math.min(p.x + radiusPx + 30, width - 260),
+              top,
               opacity: o,
               fontFamily: theme.font,
               color: STYLE[b.name]?.label ?? '#fff',
-              textShadow: '0 2px 12px #000',
+              textShadow: '0 2px 12px #000, 0 0 24px rgba(0,0,0,0.75)',
             }}
           >
             <div style={{ fontSize: 50, fontWeight: 700 }}>{b.name}</div>

@@ -2,12 +2,14 @@ import React from 'react';
 import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import type { RenderProps, Scene } from '../src/core/schemas';
 import { sceneStarts } from '../src/core/timing';
+import { AccentProvider } from './accent';
 import { Badge, Captions, Chip, TitleOverlay } from './components/overlays';
 import { SceneContext, useSceneTime } from './scene-context';
 import { Orbit3DScene } from './scenes/Orbit3DScene';
 import { FactCardScene, ImageScene, OutroScene } from './scenes/simple-scenes';
 import { SkyViewScene } from './scenes/SkyViewScene';
 import { theme } from './theme';
+import { BED_LIFT, musicDuck, speechWindows } from './duck';
 
 const Template: React.FC<{ scene: Scene }> = ({ scene }) => {
   switch (scene.template) {
@@ -67,23 +69,29 @@ export const Episode: React.FC<RenderProps> = (props) => {
   const { plan, timeline, fps } = props;
   const starts = sceneStarts(timeline, fps);
   const total = starts.reduce((n, s) => n + s.frames, 0);
+  const speech = speechWindows(timeline, fps);
   const firstEnd = starts[0]?.frames ?? 0;
   return (
-    <AbsoluteFill style={{ background: theme.bg }}>
-      {plan.scenes.map((scene, i) => (
-        <Sequence key={scene.id} from={starts[i].from} durationInFrames={starts[i].frames} name={scene.id}>
-          <SceneShell scene={scene} props={props} index={i} frames={starts[i].frames} fps={fps} />
+    <AccentProvider accent={props.accent}>
+      <AbsoluteFill style={{ background: theme.bg }}>
+        {plan.scenes.map((scene, i) => (
+          <Sequence key={scene.id} from={starts[i].from} durationInFrames={starts[i].frames} name={scene.id}>
+            <SceneShell scene={scene} props={props} index={i} frames={starts[i].frames} fps={fps} />
+          </Sequence>
+        ))}
+        <Sequence from={Math.max(0, firstEnd - 10)} durationInFrames={Math.max(1, total - firstEnd + 10)} name="badge">
+          <Badge text={plan.badge} />
         </Sequence>
-      ))}
-      <Sequence from={Math.max(0, firstEnd - 10)} durationInFrames={Math.max(1, total - firstEnd + 10)} name="badge">
-        <Badge text={plan.badge} />
-      </Sequence>
-      {props.musicFile && plan.music.enabled && (
-        <Audio
-          src={staticFile(props.musicFile)}
-          volume={(f) => interpolate(f, [0, 30], [0, plan.music.volume], { extrapolateRight: 'clamp' })}
-        />
-      )}
-    </AbsoluteFill>
+        {props.musicFile && plan.music.enabled && (
+          <Audio
+            src={staticFile(props.musicFile)}
+            volume={(f) =>
+              interpolate(f, [0, 30], [0, plan.music.volume * BED_LIFT], { extrapolateRight: 'clamp' }) *
+              musicDuck(f, speech, fps)
+            }
+          />
+        )}
+      </AbsoluteFill>
+    </AccentProvider>
   );
 };

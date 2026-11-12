@@ -58,12 +58,27 @@ async function search(params: Record<string, string>, limit: number, fetchImpl: 
   return data.collection.items.slice(0, limit).map((it) => {
     const d = it.data[0];
     const description = d.description ?? '';
+    // Metadata often repeats the agency across fields ("Arecibo Observatory/NASA/NSF"), so split on
+    // slashes and drop repeats — the credit line has to fit two lines on screen.
+    const seen = new Set<string>();
+    const credit = ['NASA', d.center, d.photographer ?? d.secondary_creator]
+      .filter(Boolean)
+      .flatMap((part) => (part as string).split('/'))
+      .map((part) => part.trim())
+      .filter((part) => {
+        if (!part) return false;
+        const key = part.toLowerCase();
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      })
+      .join(' / ');
     return {
       nasaId: d.nasa_id,
       title: d.title,
       date: d.date_created?.slice(0, 10),
       center: d.center,
-      credit: ['NASA', d.center, d.photographer ?? d.secondary_creator].filter(Boolean).join(' / '),
+      credit,
       preview: it.links?.[0]?.href,
       copyrightFlag: COPYRIGHT.test(description) || COPYRIGHT.test(d.photographer ?? ''),
       description: description.slice(0, 300),

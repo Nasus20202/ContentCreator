@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { useCurrentFrame, useVideoConfig } from 'remotion';
 import type { SkySnapshot, Vec3 } from '../../src/core/schemas';
+import { useAccent } from '../accent';
 import { theme } from '../theme';
 import { type Cam, azAlt, fromAzAlt, makeProjector } from './projection';
 
@@ -50,6 +51,7 @@ const hill = (az: number): number =>
 const FONT = theme.font;
 
 export const SkyCanvas: React.FC<{ sky: SkySnapshot; cam: Cam; overlay: SkyOverlay }> = ({ sky, cam, overlay }) => {
+  const accent = useAccent();
   const ref = useRef<HTMLCanvasElement>(null);
   const frame = useCurrentFrame();
   const { width: W, height: H, fps } = useVideoConfig();
@@ -182,7 +184,7 @@ export const SkyCanvas: React.FC<{ sky: SkySnapshot; cam: Cam; overlay: SkyOverl
       const nx = -(by - ay) / L,
         ny = (bx - ax) / L,
         off = 70;
-      ctx.strokeStyle = `rgba(${theme.accentRgb},${sep.opacity})`;
+      ctx.strokeStyle = `rgba(${accent.rgb},${sep.opacity})`;
       ctx.lineWidth = 4;
       ctx.beginPath();
       ctx.moveTo(ax + nx * (off - 18), ay + ny * (off - 18));
@@ -190,7 +192,7 @@ export const SkyCanvas: React.FC<{ sky: SkySnapshot; cam: Cam; overlay: SkyOverl
       ctx.lineTo(bx + nx * off, by + ny * off);
       ctx.lineTo(bx + nx * (off - 18), by + ny * (off - 18));
       ctx.stroke();
-      ctx.fillStyle = `rgba(${theme.accentRgb},${sep.opacity})`;
+      ctx.fillStyle = `rgba(${accent.rgb},${sep.opacity})`;
       ctx.font = `700 54px ${FONT}`;
       ctx.textAlign = 'center';
       ctx.fillText(sep.text, (ax + bx) / 2 + nx * (off + 50), (ay + by) / 2 + ny * (off + 50) + 18);
@@ -236,12 +238,12 @@ export const SkyCanvas: React.FC<{ sky: SkySnapshot; cam: Cam; overlay: SkyOverl
       const [rx, ry, ok] = project(sky.radiant);
       if (ok) {
         const o = overlay.showRadiant;
-        ctx.strokeStyle = `rgba(${theme.accentRgb},${o})`;
+        ctx.strokeStyle = `rgba(${accent.rgb},${o})`;
         ctx.lineWidth = 3;
         ctx.beginPath();
         ctx.arc(rx, ry, 34 + 6 * Math.sin(frame / 6), 0, 6.283);
         ctx.stroke();
-        ctx.fillStyle = `rgba(${theme.accentRgb},${o})`;
+        ctx.fillStyle = `rgba(${accent.rgb},${o})`;
         ctx.font = `700 40px ${FONT}`;
         ctx.textAlign = 'right';
         ctx.fillText('RADIANT', rx - 50, ry + 14);
@@ -324,7 +326,7 @@ export const SkyCanvas: React.FC<{ sky: SkySnapshot; cam: Cam; overlay: SkyOverl
         ctx.fillText(hc.label, mx, my - 40);
       }
     }
-  }, [frame, cam, sky, overlay, W, H, fps]);
+  }, [frame, cam, sky, overlay, W, H, fps, accent.rgb]);
 
   return <canvas ref={ref} width={W} height={H} style={{ position: 'absolute', inset: 0 }} />;
 };

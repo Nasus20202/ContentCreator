@@ -1,0 +1,303 @@
+{
+  "facts": [
+    {
+      "id": "episode-window",
+      "statement": "This episode covers Mon 14 Dec to Sun 20 Dec 2026.",
+      "values": [
+        14,
+        20,
+        2026
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "start": "2026-12-13T23:00:00.000Z",
+          "end": "2026-12-20T23:00:00.000Z"
+        }
+      }
+    },
+    {
+      "id": "episode-location",
+      "statement": "Positions are computed for central Europe (50°N, 15°E).",
+      "values": [
+        50,
+        15
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15
+        }
+      }
+    },
+    {
+      "id": "moon-saturn-2026-12-18-sep",
+      "statement": "The Moon passes 5.5° from Saturn on Fri 18 Dec, 07:09 (as seen from central Europe).",
+      "values": [
+        5.462,
+        18
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Saturn",
+          "minimumUtc": "2026-12-18T06:09:39.502Z"
+        }
+      }
+    },
+    {
+      "id": "moon-saturn-2026-12-18-illum",
+      "statement": "The Moon is 61% illuminated then.",
+      "values": [
+        61
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2026-12-18T06:09:39.502Z"
+        }
+      }
+    },
+    {
+      "id": "moon-saturn-2026-12-18-view",
+      "statement": "Best seen around Thu 17 Dec, 18:49, south, 41° up.",
+      "values": [
+        40.9
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "viewing": {
+            "bestLocal": "Thu 17 Dec, 18:49",
+            "bestUtc": "2026-12-17T17:49:39.502Z",
+            "azimuth": 180.6,
+            "altitude": 40.9,
+            "direction": "south"
+          }
+        }
+      }
+    },
+    {
+      "id": "meteors-geminids-2026-12-14-zhr",
+      "statement": "Geminids ZHR ≈ 150 meteors per hour under ideal conditions; parent: asteroid 3200 Phaethon.",
+      "values": [
+        150
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.imo.net/resources/calendar/",
+        "title": "IMO Meteor Shower Calendar / working list of visual meteor showers",
+        "publisher": "International Meteor Organization",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "meteors-geminids-2026-12-14-peak",
+      "statement": "Geminids peak (solar longitude 262.2°) falls on Mon 14 Dec, 05:52 (central Europe time).",
+      "values": [
+        14,
+        14
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "solarLongitude": 262.2,
+          "peakUtc": "2026-12-14T04:52:37.220Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-geminids-2026-12-14-radiant",
+      "statement": "The radiant (in Gem) is highest in darkness around Mon 14 Dec, 01:52, 73° up in the south.",
+      "values": [
+        72.985
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "radiant": {
+            "ra": 112,
+            "dec": 33
+          },
+          "bestUtc": "2026-12-14T00:52:37.220Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-geminids-2026-12-14-moon",
+      "statement": "The Moon is 21% illuminated and below the horizon at that time.",
+      "values": [
+        21
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2026-12-14T00:52:37.220Z",
+          "moonAlt": -49.946497080777846
+        }
+      }
+    },
+    {
+      "id": "meteors-geminids-2026-12-14-moonset",
+      "statement": "Moonset that night: 20:04 local time.",
+      "values": [
+        20,
+        4
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "moonsetUtc": "2026-12-13T19:04:39.523Z"
+        }
+      }
+    },
+    {
+      "id": "phase-first-quarter-2026-12-17",
+      "statement": "First Quarter: Thu 17 Dec, 06:43 (central Europe time).",
+      "values": [
+        17
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "quarter": 1
+        }
+      }
+    },
+    {
+      "id": "visible-venus-2026-12-17",
+      "statement": "Mid-week, Venus (magnitude -4.7) is best seen around 06:40, south-east, 22° up.",
+      "values": [
+        -4.743,
+        21.925
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Venus"
+        }
+      }
+    },
+    {
+      "id": "visible-mars-2026-12-17",
+      "statement": "Mid-week, Mars (magnitude 0.2) is best seen around 03:10, south-east, 46° up.",
+      "values": [
+        0.188,
+        45.746
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mars"
+        }
+      }
+    },
+    {
+      "id": "visible-jupiter-2026-12-17",
+      "statement": "Mid-week, Jupiter (magnitude -2.3) is best seen around 02:10, south-east, 45° up.",
+      "values": [
+        -2.314,
+        45.323
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Jupiter"
+        }
+      }
+    },
+    {
+      "id": "visible-saturn-2026-12-17",
+      "statement": "Mid-week, Saturn (magnitude 0.7) is best seen around 18:50, south, 41° up.",
+      "values": [
+        0.67,
+        40.867
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Saturn"
+        }
+      }
+    },
+    {
+      "id": "meteor-shower-mechanism",
+      "statement": "Meteor showers happen when Earth passes through debris left behind by a comet or asteroid; the meteors are that debris burning up in the atmosphere.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/solar-system/meteors-meteorites/meteor-showers/",
+        "title": "Meteor Showers",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "meteor-radiant-perspective",
+      "statement": "Shower meteors appear to come from one point in the sky (the radiant) because they travel on parallel paths.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/solar-system/meteors-meteorites/meteor-showers/",
+        "title": "Meteor Showers",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    }
+  ]
+}

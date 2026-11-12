@@ -72,3 +72,19 @@ export function buildCreatePostInput(
     metadata: platformMetadata(plan, target.platform, opts),
   };
 }
+
+/**
+ * Repoint an existing Buffer post at a different hosted video. `editPost` replaces the whole post,
+ * so the caller must resend the original payload with only the media URL changed.
+ */
+export function replaceVideoUrl(payload: Record<string, unknown>, url: string): Record<string, unknown> {
+  const assets = Array.isArray(payload.assets) ? (payload.assets as unknown[]) : [];
+  return {
+    ...payload,
+    assets: assets.map((a) => {
+      const item = (a ?? {}) as Record<string, unknown>;
+      const video = item.video as Record<string, unknown> | undefined;
+      return video ? { ...item, video: { ...video, url } } : item;
+    }),
+  };
+}

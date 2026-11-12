@@ -34,7 +34,7 @@ export function plan(overrides: Partial<Plan> = {}): Plan {
     badge: 'Sky this week',
     location: EU,
     voice: { id: 'af_heart', speed: 1 },
-    music: { enabled: false, volume: 0.3 },
+    music: { enabled: false, volume: 0.3, style: 'piano' },
     scenes: [
       {
         id: 'conj',

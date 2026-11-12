@@ -1,0 +1,128 @@
+{
+  "checkedAt": "2026-11-12T14:27:09.461Z",
+  "planHash": "534da110c9177d82",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "BEST BEFORE DAWN · MON 4 JAN",
+        "number": 4,
+        "raw": "4",
+        "matchedFact": "meteors-quadrantids-2027-01-03-peak"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Quadrantids Jan 3 – 4",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "meteors-quadrantids-2027-01-03-peak"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Quadrantids Jan 3 – 4",
+        "number": 4,
+        "raw": "4",
+        "matchedFact": "meteors-quadrantids-2027-01-03-peak"
+      },
+      {
+        "sceneId": "when",
+        "where": "narration[1]",
+        "text": "The Moon is a thin crescent, twelve percent lit, low in the east — it barely interferes.",
+        "number": 12,
+        "raw": "twelve",
+        "matchedFact": "meteors-quadrantids-2027-01-03-moon"
+      },
+      {
+        "sceneId": "when",
+        "where": "labels[0]",
+        "text": "12% Moon",
+        "number": 12,
+        "raw": "12%",
+        "matchedFact": "meteors-quadrantids-2027-01-03-moon"
+      },
+      {
+        "sceneId": "reality",
+        "where": "narration[0]",
+        "text": "Eighty meteors an hour is the rate at the peak itself.",
+        "number": 80,
+        "raw": "eighty",
+        "matchedFact": "meteors-quadrantids-2027-01-03-zhr"
+      },
+      {
+        "sceneId": "reality",
+        "where": "factCard",
+        "text": "80 meteors an hour at the peak",
+        "number": 80,
+        "raw": "80",
+        "matchedFact": "meteors-quadrantids-2027-01-03-zhr"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 19,
+        "raw": "19:37",
+        "matchedFact": "meteors-quadrantids-2027-01-03-peak"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 37,
+        "raw": "19:37",
+        "matchedFact": "meteors-quadrantids-2027-01-03-peak"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "meteors-quadrantids-2027-01-03-peak"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 2027,
+        "raw": "2027",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 4,
+        "raw": "4",
+        "matchedFact": "meteors-quadrantids-2027-01-03-peak"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 80,
+        "raw": "80",
+        "matchedFact": "meteors-quadrantids-2027-01-03-zhr"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 12,
+        "raw": "12%",
+        "matchedFact": "meteors-quadrantids-2027-01-03-moon"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T14:27:34.489Z",
+    "verdict": "pass",
+    "notes": "Re-reviewed after visual-only edits: outro footnote now reads '50°N 15°E' (matches location lat 50, lon 15; the spoken sign-off is unchanged), hook opening camera field of view tightened by 20% (framing only), fact card gets a slow push-in (motion only). No narration, number, date, direction or fact id changed; all earlier verification still applies."
+  }
+}

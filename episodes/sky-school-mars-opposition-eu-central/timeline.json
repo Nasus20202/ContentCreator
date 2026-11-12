@@ -1,0 +1,872 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "9bc7355e0fb1709a",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 6.377,
+      "sentences": [
+        {
+          "text": "On the nineteenth of February, Mars is opposite the Sun.",
+          "start": 0.15,
+          "end": 3.147,
+          "words": [
+            {
+              "w": "On",
+              "start": 0.15,
+              "end": 0.319
+            },
+            {
+              "w": "the",
+              "start": 0.319,
+              "end": 0.53
+            },
+            {
+              "w": "nineteenth",
+              "start": 0.53,
+              "end": 1.037
+            },
+            {
+              "w": "of",
+              "start": 1.037,
+              "end": 1.205
+            },
+            {
+              "w": "February,",
+              "start": 1.205,
+              "end": 1.754
+            },
+            {
+              "w": "Mars",
+              "start": 1.754,
+              "end": 2.008
+            },
+            {
+              "w": "is",
+              "start": 2.008,
+              "end": 2.176
+            },
+            {
+              "w": "opposite",
+              "start": 2.176,
+              "end": 2.599
+            },
+            {
+              "w": "the",
+              "start": 2.599,
+              "end": 2.81
+            },
+            {
+              "w": "Sun.",
+              "start": 2.81,
+              "end": 3.147
+            }
+          ]
+        },
+        {
+          "text": "It rises as the Sun sets, and stays up all night.",
+          "start": 3.427,
+          "end": 6.097,
+          "words": [
+            {
+              "w": "It",
+              "start": 3.427,
+              "end": 3.592
+            },
+            {
+              "w": "rises",
+              "start": 3.592,
+              "end": 3.879
+            },
+            {
+              "w": "as",
+              "start": 3.879,
+              "end": 4.043
+            },
+            {
+              "w": "the",
+              "start": 4.043,
+              "end": 4.249
+            },
+            {
+              "w": "Sun",
+              "start": 4.249,
+              "end": 4.454
+            },
+            {
+              "w": "sets,",
+              "start": 4.454,
+              "end": 4.824
+            },
+            {
+              "w": "and",
+              "start": 4.824,
+              "end": 5.029
+            },
+            {
+              "w": "stays",
+              "start": 5.029,
+              "end": 5.317
+            },
+            {
+              "w": "up",
+              "start": 5.317,
+              "end": 5.481
+            },
+            {
+              "w": "all",
+              "start": 5.481,
+              "end": 5.686
+            },
+            {
+              "w": "night.",
+              "start": 5.686,
+              "end": 6.097
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "find",
+      "audioFile": "voice/find.wav",
+      "duration": 11.336,
+      "sentences": [
+        {
+          "text": "Around midnight it is high in the south.",
+          "start": 0.15,
+          "end": 2.161,
+          "words": [
+            {
+              "w": "Around",
+              "start": 0.15,
+              "end": 0.465
+            },
+            {
+              "w": "midnight",
+              "start": 0.465,
+              "end": 0.86
+            },
+            {
+              "w": "it",
+              "start": 0.86,
+              "end": 1.017
+            },
+            {
+              "w": "is",
+              "start": 1.017,
+              "end": 1.175
+            },
+            {
+              "w": "high",
+              "start": 1.175,
+              "end": 1.412
+            },
+            {
+              "w": "in",
+              "start": 1.412,
+              "end": 1.569
+            },
+            {
+              "w": "the",
+              "start": 1.569,
+              "end": 1.767
+            },
+            {
+              "w": "south.",
+              "start": 1.767,
+              "end": 2.161
+            }
+          ]
+        },
+        {
+          "text": "It looks like a steady orange point — it does not twinkle the way stars do.",
+          "start": 2.441,
+          "end": 6.317,
+          "words": [
+            {
+              "w": "It",
+              "start": 2.441,
+              "end": 2.608
+            },
+            {
+              "w": "looks",
+              "start": 2.608,
+              "end": 2.899
+            },
+            {
+              "w": "like",
+              "start": 2.899,
+              "end": 3.149
+            },
+            {
+              "w": "a",
+              "start": 3.149,
+              "end": 3.274
+            },
+            {
+              "w": "steady",
+              "start": 3.274,
+              "end": 3.608
+            },
+            {
+              "w": "orange",
+              "start": 3.608,
+              "end": 3.941
+            },
+            {
+              "w": "point",
+              "start": 3.941,
+              "end": 4.233
+            },
+            {
+              "w": "—",
+              "start": 4.233,
+              "end": 4.316
+            },
+            {
+              "w": "it",
+              "start": 4.316,
+              "end": 4.483
+            },
+            {
+              "w": "does",
+              "start": 4.483,
+              "end": 4.733
+            },
+            {
+              "w": "not",
+              "start": 4.733,
+              "end": 4.942
+            },
+            {
+              "w": "twinkle",
+              "start": 4.942,
+              "end": 5.317
+            },
+            {
+              "w": "the",
+              "start": 5.317,
+              "end": 5.525
+            },
+            {
+              "w": "way",
+              "start": 5.525,
+              "end": 5.734
+            },
+            {
+              "w": "stars",
+              "start": 5.734,
+              "end": 6.025
+            },
+            {
+              "w": "do.",
+              "start": 6.025,
+              "end": 6.317
+            }
+          ]
+        },
+        {
+          "text": "Even at its closest it stays a point of light — you need a telescope to see a disc.",
+          "start": 6.597,
+          "end": 11.056,
+          "words": [
+            {
+              "w": "Even",
+              "start": 6.597,
+              "end": 6.854
+            },
+            {
+              "w": "at",
+              "start": 6.854,
+              "end": 7.026
+            },
+            {
+              "w": "its",
+              "start": 7.026,
+              "end": 7.24
+            },
+            {
+              "w": "closest",
+              "start": 7.24,
+              "end": 7.626
+            },
+            {
+              "w": "it",
+              "start": 7.626,
+              "end": 7.798
+            },
+            {
+              "w": "stays",
+              "start": 7.798,
+              "end": 8.098
+            },
+            {
+              "w": "a",
+              "start": 8.098,
+              "end": 8.226
+            },
+            {
+              "w": "point",
+              "start": 8.226,
+              "end": 8.526
+            },
+            {
+              "w": "of",
+              "start": 8.526,
+              "end": 8.698
+            },
+            {
+              "w": "light",
+              "start": 8.698,
+              "end": 8.998
+            },
+            {
+              "w": "—",
+              "start": 8.998,
+              "end": 9.084
+            },
+            {
+              "w": "you",
+              "start": 9.084,
+              "end": 9.298
+            },
+            {
+              "w": "need",
+              "start": 9.298,
+              "end": 9.555
+            },
+            {
+              "w": "a",
+              "start": 9.555,
+              "end": 9.684
+            },
+            {
+              "w": "telescope",
+              "start": 9.684,
+              "end": 10.156
+            },
+            {
+              "w": "to",
+              "start": 10.156,
+              "end": 10.327
+            },
+            {
+              "w": "see",
+              "start": 10.327,
+              "end": 10.541
+            },
+            {
+              "w": "a",
+              "start": 10.541,
+              "end": 10.67
+            },
+            {
+              "w": "disc.",
+              "start": 10.67,
+              "end": 11.056
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "geometry",
+      "audioFile": "voice/geometry.wav",
+      "duration": 8.943,
+      "sentences": [
+        {
+          "text": "Opposition happens because Earth, on the inside track, laps Mars.",
+          "start": 0.15,
+          "end": 3.946,
+          "words": [
+            {
+              "w": "Opposition",
+              "start": 0.15,
+              "end": 0.705
+            },
+            {
+              "w": "happens",
+              "start": 0.705,
+              "end": 1.122
+            },
+            {
+              "w": "because",
+              "start": 1.122,
+              "end": 1.539
+            },
+            {
+              "w": "Earth,",
+              "start": 1.539,
+              "end": 2.002
+            },
+            {
+              "w": "on",
+              "start": 2.002,
+              "end": 2.187
+            },
+            {
+              "w": "the",
+              "start": 2.187,
+              "end": 2.418
+            },
+            {
+              "w": "inside",
+              "start": 2.418,
+              "end": 2.788
+            },
+            {
+              "w": "track,",
+              "start": 2.788,
+              "end": 3.251
+            },
+            {
+              "w": "laps",
+              "start": 3.251,
+              "end": 3.529
+            },
+            {
+              "w": "Mars.",
+              "start": 3.529,
+              "end": 3.946
+            }
+          ]
+        },
+        {
+          "text": "We pass it on the inside, so for a few weeks it is as close and as bright as it gets.",
+          "start": 4.226,
+          "end": 8.663,
+          "words": [
+            {
+              "w": "We",
+              "start": 4.226,
+              "end": 4.386
+            },
+            {
+              "w": "pass",
+              "start": 4.386,
+              "end": 4.625
+            },
+            {
+              "w": "it",
+              "start": 4.625,
+              "end": 4.785
+            },
+            {
+              "w": "on",
+              "start": 4.785,
+              "end": 4.945
+            },
+            {
+              "w": "the",
+              "start": 4.945,
+              "end": 5.145
+            },
+            {
+              "w": "inside,",
+              "start": 5.145,
+              "end": 5.585
+            },
+            {
+              "w": "so",
+              "start": 5.585,
+              "end": 5.745
+            },
+            {
+              "w": "for",
+              "start": 5.745,
+              "end": 5.945
+            },
+            {
+              "w": "a",
+              "start": 5.945,
+              "end": 6.065
+            },
+            {
+              "w": "few",
+              "start": 6.065,
+              "end": 6.265
+            },
+            {
+              "w": "weeks",
+              "start": 6.265,
+              "end": 6.544
+            },
+            {
+              "w": "it",
+              "start": 6.544,
+              "end": 6.704
+            },
+            {
+              "w": "is",
+              "start": 6.704,
+              "end": 6.864
+            },
+            {
+              "w": "as",
+              "start": 6.864,
+              "end": 7.024
+            },
+            {
+              "w": "close",
+              "start": 7.024,
+              "end": 7.304
+            },
+            {
+              "w": "and",
+              "start": 7.304,
+              "end": 7.504
+            },
+            {
+              "w": "as",
+              "start": 7.504,
+              "end": 7.664
+            },
+            {
+              "w": "bright",
+              "start": 7.664,
+              "end": 7.984
+            },
+            {
+              "w": "as",
+              "start": 7.984,
+              "end": 8.144
+            },
+            {
+              "w": "it",
+              "start": 8.144,
+              "end": 8.304
+            },
+            {
+              "w": "gets.",
+              "start": 8.304,
+              "end": 8.663
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "distance",
+      "audioFile": "voice/distance.wav",
+      "duration": 16.531,
+      "sentences": [
+        {
+          "text": "A hundred and one million kilometres is the gap at opposition.",
+          "start": 0.15,
+          "end": 3.77,
+          "words": [
+            {
+              "w": "A",
+              "start": 0.15,
+              "end": 0.293
+            },
+            {
+              "w": "hundred",
+              "start": 0.293,
+              "end": 0.722
+            },
+            {
+              "w": "and",
+              "start": 0.722,
+              "end": 0.96
+            },
+            {
+              "w": "one",
+              "start": 0.96,
+              "end": 1.198
+            },
+            {
+              "w": "million",
+              "start": 1.198,
+              "end": 1.627
+            },
+            {
+              "w": "kilometres",
+              "start": 1.627,
+              "end": 2.198
+            },
+            {
+              "w": "is",
+              "start": 2.198,
+              "end": 2.389
+            },
+            {
+              "w": "the",
+              "start": 2.389,
+              "end": 2.627
+            },
+            {
+              "w": "gap",
+              "start": 2.627,
+              "end": 2.865
+            },
+            {
+              "w": "at",
+              "start": 2.865,
+              "end": 3.056
+            },
+            {
+              "w": "opposition.",
+              "start": 3.056,
+              "end": 3.77
+            }
+          ]
+        },
+        {
+          "text": "Mars ranges from about fifty-six million kilometres at its closest, back in 2003, to four hundred and one million at its farthest.",
+          "start": 4.05,
+          "end": 12.255,
+          "words": [
+            {
+              "w": "Mars",
+              "start": 4.05,
+              "end": 4.362
+            },
+            {
+              "w": "ranges",
+              "start": 4.362,
+              "end": 4.777
+            },
+            {
+              "w": "from",
+              "start": 4.777,
+              "end": 5.089
+            },
+            {
+              "w": "about",
+              "start": 5.089,
+              "end": 5.452
+            },
+            {
+              "w": "fifty-six",
+              "start": 5.452,
+              "end": 5.972
+            },
+            {
+              "w": "million",
+              "start": 5.972,
+              "end": 6.439
+            },
+            {
+              "w": "kilometres",
+              "start": 6.439,
+              "end": 7.062
+            },
+            {
+              "w": "at",
+              "start": 7.062,
+              "end": 7.27
+            },
+            {
+              "w": "its",
+              "start": 7.27,
+              "end": 7.53
+            },
+            {
+              "w": "closest,",
+              "start": 7.53,
+              "end": 8.153
+            },
+            {
+              "w": "back",
+              "start": 8.153,
+              "end": 8.464
+            },
+            {
+              "w": "in",
+              "start": 8.464,
+              "end": 8.672
+            },
+            {
+              "w": "2003,",
+              "start": 8.672,
+              "end": 9.139
+            },
+            {
+              "w": "to",
+              "start": 9.139,
+              "end": 9.347
+            },
+            {
+              "w": "four",
+              "start": 9.347,
+              "end": 9.659
+            },
+            {
+              "w": "hundred",
+              "start": 9.659,
+              "end": 10.126
+            },
+            {
+              "w": "and",
+              "start": 10.126,
+              "end": 10.386
+            },
+            {
+              "w": "one",
+              "start": 10.386,
+              "end": 10.645
+            },
+            {
+              "w": "million",
+              "start": 10.645,
+              "end": 11.113
+            },
+            {
+              "w": "at",
+              "start": 11.113,
+              "end": 11.32
+            },
+            {
+              "w": "its",
+              "start": 11.32,
+              "end": 11.58
+            },
+            {
+              "w": "farthest.",
+              "start": 11.58,
+              "end": 12.255
+            }
+          ]
+        },
+        {
+          "text": "Opposition is simply the moment we are on the same side of the Sun.",
+          "start": 12.535,
+          "end": 16.251,
+          "words": [
+            {
+              "w": "Opposition",
+              "start": 12.535,
+              "end": 13.066
+            },
+            {
+              "w": "is",
+              "start": 13.066,
+              "end": 13.243
+            },
+            {
+              "w": "simply",
+              "start": 13.243,
+              "end": 13.597
+            },
+            {
+              "w": "the",
+              "start": 13.597,
+              "end": 13.818
+            },
+            {
+              "w": "moment",
+              "start": 13.818,
+              "end": 14.172
+            },
+            {
+              "w": "we",
+              "start": 14.172,
+              "end": 14.349
+            },
+            {
+              "w": "are",
+              "start": 14.349,
+              "end": 14.57
+            },
+            {
+              "w": "on",
+              "start": 14.57,
+              "end": 14.747
+            },
+            {
+              "w": "the",
+              "start": 14.747,
+              "end": 14.968
+            },
+            {
+              "w": "same",
+              "start": 14.968,
+              "end": 15.233
+            },
+            {
+              "w": "side",
+              "start": 15.233,
+              "end": 15.499
+            },
+            {
+              "w": "of",
+              "start": 15.499,
+              "end": 15.676
+            },
+            {
+              "w": "the",
+              "start": 15.676,
+              "end": 15.897
+            },
+            {
+              "w": "Sun.",
+              "start": 15.897,
+              "end": 16.251
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.718,
+      "sentences": [
+        {
+          "text": "Positions calculated for central Europe.",
+          "start": 0.15,
+          "end": 2.331,
+          "words": [
+            {
+              "w": "Positions",
+              "start": 0.15,
+              "end": 0.65
+            },
+            {
+              "w": "calculated",
+              "start": 0.65,
+              "end": 1.195
+            },
+            {
+              "w": "for",
+              "start": 1.195,
+              "end": 1.422
+            },
+            {
+              "w": "central",
+              "start": 1.422,
+              "end": 1.831
+            },
+            {
+              "w": "Europe.",
+              "start": 1.831,
+              "end": 2.331
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.611,
+          "end": 3.438,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.611,
+              "end": 2.951
+            },
+            {
+              "w": "skies.",
+              "start": 2.951,
+              "end": 3.438
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

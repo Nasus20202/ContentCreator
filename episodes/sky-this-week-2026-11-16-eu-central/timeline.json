@@ -1,7 +1,7 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "d2959d8957f222a7",
+  "narrationHash": "bb778886b060b7d5",
   "timing": "estimated-proportional",
   "scenes": [
     {
@@ -774,7 +774,7 @@
     {
       "sceneId": "outro",
       "audioFile": "voice/outro.wav",
-      "duration": 4.949,
+      "duration": 3.718,
       "sentences": [
         {
           "text": "Positions calculated for central Europe.",
@@ -809,49 +809,19 @@
           ]
         },
         {
-          "text": "Follow, so you don't miss next week's sky.",
+          "text": "Clear skies.",
           "start": 2.611,
-          "end": 4.669,
+          "end": 3.438,
           "words": [
             {
-              "w": "Follow,",
+              "w": "Clear",
               "start": 2.611,
-              "end": 3.022
+              "end": 2.951
             },
             {
-              "w": "so",
-              "start": 3.022,
-              "end": 3.172
-            },
-            {
-              "w": "you",
-              "start": 3.172,
-              "end": 3.359
-            },
-            {
-              "w": "don't",
-              "start": 3.359,
-              "end": 3.621
-            },
-            {
-              "w": "miss",
-              "start": 3.621,
-              "end": 3.846
-            },
-            {
-              "w": "next",
-              "start": 3.846,
-              "end": 4.07
-            },
-            {
-              "w": "week's",
-              "start": 4.07,
-              "end": 4.37
-            },
-            {
-              "w": "sky.",
-              "start": 4.37,
-              "end": 4.669
+              "w": "skies.",
+              "start": 2.951,
+              "end": 3.438
             }
           ]
         }

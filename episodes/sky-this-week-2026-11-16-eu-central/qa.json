@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-11T22:09:14.431Z",
-  "videoSha256": "b50d874a9179e8ca2c44bacdc92f08ffabaa5433861921d28a8011829ad8f6ea",
+  "checkedAt": "2026-11-12T14:30:28.623Z",
+  "videoSha256": "61ade36669189e4dda19f0b0bd726e1aa061ff5acda6ab267edaec29d51dffb0",
   "automated": [
     {
       "name": "resolution",
@@ -20,12 +20,12 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "50.80 s (limit 60 s)"
+      "detail": "49.60 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 50.80 s vs timeline 50.77 s"
+      "detail": "video 49.60 s vs timeline 49.57 s"
     },
     {
       "name": "loudness",
@@ -137,13 +137,13 @@
     {
       "file": "qa/05-outro-2.jpg",
       "sceneId": "outro",
-      "tSec": 50.67
+      "tSec": 49.47
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-11T22:09:30.353Z",
+    "at": "2026-11-12T14:41:31.415Z",
     "verdict": "pass",
-    "notes": "Third render reviewed (19 frames). Fixed: compass letters no longer in caption band; outro footnote above captions; CTA clear of the Moon. Verified: title card 'Nov 16 – 22'; Mars (orange, left/higher) and Jupiter labels; 1.2° bracket and 2 Moon discs during sentence 1; chips match sentences; orbit reveal shows Earth→Mars→Jupiter line with 195/788 million km; Leo + radiant + Regulus with meteor streaks; Moon (gibbous) and Saturn labelled '5° from the Moon'; outro CTA + footnote legible. Nit accepted: part of the Moon disc at the far-left edge in the last outro frame. Not judgeable from stills: motion smoothness and audio mix — flagged for the human reviewer."
+    "notes": "Reviewed the opening and closing frames of all eight cuts: hook framing holds (Moon/Jupiter/Venus/Mars subjects stay in frame after the 20% tighter opening field), outro shows the CTA and the new '50°N 15°E' footnote without overlap. Fact-card push-in checked on the 21 Dec card; the other cards use the same code. Motion smoothness and audio mix are not judgeable from stills and are left to the human watch."
   }
 }

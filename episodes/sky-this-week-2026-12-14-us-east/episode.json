@@ -1,0 +1,25 @@
+{
+  "id": "sky-this-week-2026-12-14-us-east",
+  "series": "sky-this-week",
+  "createdAt": "2026-11-12T10:17:22.648Z",
+  "stage": "rendered",
+  "location": {
+    "id": "us-east",
+    "label": "the US East Coast",
+    "lat": 40.7,
+    "lon": -74,
+    "timeZone": "America/New_York"
+  },
+  "window": {
+    "start": "2026-12-13T05:00:00.000Z",
+    "end": "2026-12-20T05:00:00.000Z"
+  },
+  "hashes": {
+    "research": "8109cb2ee7dae2b6",
+    "plan": "a97356e4f90f2617",
+    "factcheckedPlan": "a97356e4f90f2617",
+    "narration": "afaefa7c5ddc8df1",
+    "video": "214a8d36843f4d390663ea4f6983838ee85480ba41ea6f2690b6d66f3e0e5d41"
+  },
+  "approvals": []
+}

@@ -1,0 +1,128 @@
+{
+  "checkedAt": "2026-11-12T12:27:52.716Z",
+  "videoSha256": "214a8d36843f4d390663ea4f6983838ee85480ba41ea6f2690b6d66f3e0e5d41",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "35.90 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 35.90 s vs timeline 35.80 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.4 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 2.97
+    },
+    {
+      "file": "qa/00-hook-2.jpg",
+      "sceneId": "hook",
+      "tSec": 4.87
+    },
+    {
+      "file": "qa/01-when-0.jpg",
+      "sceneId": "when",
+      "tSec": 5.72
+    },
+    {
+      "file": "qa/01-when-1.jpg",
+      "sceneId": "when",
+      "tSec": 9.5
+    },
+    {
+      "file": "qa/01-when-2.jpg",
+      "sceneId": "when",
+      "tSec": 12.62
+    },
+    {
+      "file": "qa/01-when-3.jpg",
+      "sceneId": "when",
+      "tSec": 16.9
+    },
+    {
+      "file": "qa/02-reality-0.jpg",
+      "sceneId": "reality",
+      "tSec": 17.75
+    },
+    {
+      "file": "qa/02-reality-1.jpg",
+      "sceneId": "reality",
+      "tSec": 19.67
+    },
+    {
+      "file": "qa/02-reality-2.jpg",
+      "sceneId": "reality",
+      "tSec": 24.03
+    },
+    {
+      "file": "qa/02-reality-3.jpg",
+      "sceneId": "reality",
+      "tSec": 26.97
+    },
+    {
+      "file": "qa/03-moon-saturn-0.jpg",
+      "sceneId": "moon-saturn",
+      "tSec": 27.82
+    },
+    {
+      "file": "qa/03-moon-saturn-1.jpg",
+      "sceneId": "moon-saturn",
+      "tSec": 31.3
+    },
+    {
+      "file": "qa/04-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 32.15
+    },
+    {
+      "file": "qa/04-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 35.04
+    },
+    {
+      "file": "qa/04-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 35.7
+    }
+  ]
+}

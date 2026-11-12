@@ -1,0 +1,241 @@
+{
+  "episodeId": "sky-school-mars-opposition-eu-central",
+  "series": "sky-school",
+  "title": "Sky School · Why Mars opposition matters",
+  "badge": "Sky School · Mars at opposition",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "skyView",
+      "narration": [
+        "On the nineteenth of February, Mars is opposite the Sun.",
+        "It rises as the Sun sets, and stays up all night."
+      ],
+      "factIds": [
+        "opposition-mars-2027-02-19",
+        "episode-window"
+      ],
+      "title": {
+        "kicker": "19 February 2027",
+        "title": "Mars at opposition",
+        "from": 0.1,
+        "to": 3
+      },
+      "params": {
+        "time": "2027-02-19T01:44:00.000Z",
+        "bodies": [
+          "Mars"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "body": "Mars"
+            },
+            "fov": 74,
+            "dAz": -4,
+            "dAlt": -14
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "body": "Mars"
+            },
+            "fov": 52,
+            "dAz": 2,
+            "dAlt": -8
+          }
+        ],
+        "labels": [
+          {
+            "body": "Mars",
+            "text": "Mars",
+            "side": "right",
+            "from": 0.8
+          }
+        ],
+        "twilight": 0.08,
+        "constellationLines": 0.07
+      }
+    },
+    {
+      "id": "find",
+      "template": "skyView",
+      "narration": [
+        "Around midnight it is high in the south.",
+        "It looks like a steady orange point — it does not twinkle the way stars do.",
+        "Even at its closest it stays a point of light — you need a telescope to see a disc."
+      ],
+      "factIds": [
+        "visible-mars-2027-02-18",
+        "opposition-mars-2027-02-19"
+      ],
+      "chips": [
+        {
+          "text": "HIGH IN THE SOUTH · AROUND MIDNIGHT"
+        }
+      ],
+      "params": {
+        "time": "2027-02-18T23:00:00.000Z",
+        "bodies": [
+          "Mars"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "body": "Mars"
+            },
+            "fov": 86,
+            "dAz": 6,
+            "dAlt": -22
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "body": "Mars"
+            },
+            "fov": 64,
+            "dAz": 10,
+            "dAlt": -16
+          }
+        ],
+        "labels": [
+          {
+            "body": "Mars",
+            "text": "Mars",
+            "sub": "-1.2 magnitude",
+            "side": "right",
+            "from": 1
+          }
+        ],
+        "twilight": 0.06,
+        "constellationLines": 0.08
+      }
+    },
+    {
+      "id": "geometry",
+      "template": "orbit3d",
+      "narration": [
+        "Opposition happens because Earth, on the inside track, laps Mars.",
+        "We pass it on the inside, so for a few weeks it is as close and as bright as it gets."
+      ],
+      "factIds": [
+        "opposition-mars-2027-02-19",
+        "mars-distance-opposition"
+      ],
+      "params": {
+        "time": "2027-02-19T15:44:00.000Z",
+        "bodies": [
+          "Earth",
+          "Mars"
+        ],
+        "lineOfSight": {
+          "to": "Mars"
+        },
+        "revealAt": {
+          "sentence": 0,
+          "edge": "end",
+          "offset": -0.2
+        },
+        "distancesAt": {
+          "sentence": 1
+        }
+      }
+    },
+    {
+      "id": "distance",
+      "template": "factCard",
+      "narration": [
+        "A hundred and one million kilometres is the gap at opposition.",
+        "Mars ranges from about fifty-six million kilometres at its closest, back in 2003, to four hundred and one million at its farthest.",
+        "Opposition is simply the moment we are on the same side of the Sun."
+      ],
+      "factIds": [
+        "mars-distance-opposition",
+        "mars-closest",
+        "mars-farthest"
+      ],
+      "params": {
+        "value": "101,000,000 km",
+        "label": "Earth to Mars at opposition",
+        "sourceLine": "computed from ephemerides · astronomy-engine"
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Positions calculated for central Europe.",
+        "Clear skies."
+      ],
+      "factIds": [
+        "episode-location",
+        "episode-window"
+      ],
+      "params": {
+        "kicker": "Sky School",
+        "cta": "Follow\nfor more\nsky, explained",
+        "footnote": "Positions computed for central Europe · 50°N 15°E",
+        "sky": {
+          "time": "2027-02-19T01:44:00.000Z",
+          "bodies": [
+            "Mars"
+          ],
+          "camera": [
+            {
+              "at": 0,
+              "target": {
+                "body": "Mars"
+              },
+              "fov": 90
+            },
+            {
+              "at": 2.5,
+              "target": {
+                "azAlt": [
+                  220,
+                  35
+                ]
+              },
+              "fov": 100
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "post": {
+    "title": "Why Mars opposition is the best time to see it 🔴",
+    "description": "Mars reaches opposition on 19 February 2027: opposite the Sun, up all night, and 101 million km from Earth. Opposition happens because Earth, on the inside track, laps Mars. For scale, Mars ranges from about 55.8 million km at its closest (2003) to about 401 million km at its farthest.\n\nOrbits computed for 19 February 2027 with astronomy-engine (not to scale). Positions computed for central Europe (50°N, 15°E). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#mars",
+      "#opposition",
+      "#skyschool",
+      "#astronomy",
+      "#science",
+      "#nightsky"
+    ]
+  }
+}

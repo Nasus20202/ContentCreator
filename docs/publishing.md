@@ -31,6 +31,23 @@ Per-platform input (`src/publish/payload.ts`):
 Modes: `now` → `shareNow`, `schedule` → `customScheduled` + `dueAt`, `draft` → saved as a Buffer draft (nothing is
 published until someone schedules it in Buffer).
 
+### Replacing the video of a scheduled post
+
+If a cut is re-rendered before it goes out (Buffer fetches the media URL at publish time, not at creation), keep the
+same slot and repoint the posts:
+
+```
+cc publish reschedule <id> --at <same ISO> --replace-video
+```
+
+`--replace-video` requires a QA-passed render, hosts `build/video.mp4` as `<id>-<sha8>.mp4` on the `videos` branch,
+then sends each post's original payload with only `assets[0].video.url` replaced (`replaceVideoUrl`); the attempt
+records the new video hash and media URL. Without the flag it only moves the time. Both paths write a `reschedule`
+attempt to `publish.json`, and a failure on one platform does not block the others.
+
+Note that `reschedule` re-sends the payload of the previous submission, so the caption, title and AI-disclosure flag
+of the already-created posts are kept. If the copy changed too, delete the posts in Buffer and publish again.
+
 ## Setup (once)
 
 1. The human creates the Buffer account and connects the YouTube and TikTok channels in Buffer (OAuth).

@@ -1,0 +1,130 @@
+{
+  "facts": [
+    {
+      "id": "episode-window",
+      "statement": "This episode covers Mon 7 Dec, to Sun 13 Dec 2026.",
+      "values": [
+        7,
+        13,
+        2026
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "start": "2026-12-06T23:00:00.000Z",
+          "end": "2026-12-13T23:00:00.000Z"
+        }
+      }
+    },
+    {
+      "id": "episode-location",
+      "statement": "Positions are computed for central Europe (50°N, 15°E).",
+      "values": [
+        50,
+        15
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15
+        }
+      }
+    },
+    {
+      "id": "phase-new-moon-2026-12-09",
+      "statement": "New Moon: Wed 9 Dec, 01:52 (central Europe time).",
+      "values": [
+        9
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "quarter": 0
+        }
+      }
+    },
+    {
+      "id": "visible-venus-2026-12-10",
+      "statement": "Mid-week, Venus (magnitude -4.8) is best seen around 06:50, south-east, 24° up.",
+      "values": [
+        -4.804,
+        23.605
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Venus"
+        }
+      }
+    },
+    {
+      "id": "visible-mars-2026-12-10",
+      "statement": "Mid-week, Mars (magnitude 0.3) is best seen around 03:20, south-east, 45° up.",
+      "values": [
+        0.322,
+        45.223
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mars"
+        }
+      }
+    },
+    {
+      "id": "visible-jupiter-2026-12-10",
+      "statement": "Mid-week, Jupiter (magnitude -2.3) is best seen around 02:40, south-east, 46° up.",
+      "values": [
+        -2.268,
+        45.58
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Jupiter"
+        }
+      }
+    },
+    {
+      "id": "visible-saturn-2026-12-10",
+      "statement": "Mid-week, Saturn (magnitude 0.6) is best seen around 19:20, south, 41° up.",
+      "values": [
+        0.637,
+        40.814
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Saturn"
+        }
+      }
+    }
+  ]
+}

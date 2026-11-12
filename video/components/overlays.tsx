@@ -2,10 +2,12 @@ import React, { useMemo } from 'react';
 import { interpolate, random, useCurrentFrame, useVideoConfig } from 'remotion';
 import type { Sentence } from '../../src/core/schemas';
 import { captionChunks } from '../../src/voice/timing';
+import { useAccent } from '../accent';
 import { theme } from '../theme';
 
 /** Short-form captions: ≤4 words per chunk, the word being spoken in accent colour. */
 export const Captions: React.FC<{ sentences: Sentence[] }> = ({ sentences }) => {
+  const accent = useAccent();
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
@@ -39,7 +41,7 @@ export const Captions: React.FC<{ sentences: Sentence[] }> = ({ sentences }) => 
             fontSize: 84,
             lineHeight: 1.1,
             letterSpacing: -1,
-            color: t >= w.start && t < w.end + 0.05 ? theme.accent : theme.text,
+            color: t >= w.start && t < w.end + 0.05 ? accent.hex : theme.text,
             textShadow: '0 4px 0 rgba(0,0,0,0.55), 0 0 30px rgba(0,0,0,0.8)',
             WebkitTextStroke: '2px rgba(0,0,0,0.35)',
           }}
@@ -51,8 +53,10 @@ export const Captions: React.FC<{ sentences: Sentence[] }> = ({ sentences }) => 
   );
 };
 
-export const Chip: React.FC<{ text: string; opacity: number; top?: number }> = ({ text, opacity, top = 300 }) =>
-  opacity <= 0 ? null : (
+export const Chip: React.FC<{ text: string; opacity: number; top?: number }> = ({ text, opacity, top = 300 }) => {
+  const accent = useAccent();
+  if (opacity <= 0) return null;
+  return (
     <div
       style={{
         position: 'absolute',
@@ -71,7 +75,7 @@ export const Chip: React.FC<{ text: string; opacity: number; top?: number }> = (
           fontWeight: 700,
           fontSize: 42,
           color: theme.chipText,
-          background: theme.accent,
+          background: accent.hex,
           padding: '14px 30px',
           borderRadius: 14,
           letterSpacing: 1,
@@ -81,13 +85,16 @@ export const Chip: React.FC<{ text: string; opacity: number; top?: number }> = (
       </div>
     </div>
   );
+};
 
 export const TitleOverlay: React.FC<{ kicker: string; title: string; opacity: number }> = ({
   kicker,
   title,
   opacity,
-}) =>
-  opacity <= 0 ? null : (
+}) => {
+  const accent = useAccent();
+  if (opacity <= 0) return null;
+  return (
     <div
       style={{
         position: 'absolute',
@@ -101,14 +108,14 @@ export const TitleOverlay: React.FC<{ kicker: string; title: string; opacity: nu
         textShadow: '0 4px 30px #000',
       }}
     >
-      <div style={{ fontSize: 46, fontWeight: 600, letterSpacing: 10, color: theme.accent }}>
-        {kicker.toUpperCase()}
-      </div>
+      <div style={{ fontSize: 46, fontWeight: 600, letterSpacing: 10, color: accent.hex }}>{kicker.toUpperCase()}</div>
       <div style={{ fontSize: 110, fontWeight: 700, letterSpacing: -2, marginTop: 6, lineHeight: 1 }}>{title}</div>
     </div>
   );
+};
 
 export const Badge: React.FC<{ text: string }> = ({ text }) => {
+  const accent = useAccent();
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const o = interpolate(frame, [0, 10, durationInFrames - 20, durationInFrames - 5], [0, 1, 1, 0], {
@@ -135,7 +142,7 @@ export const Badge: React.FC<{ text: string }> = ({ text }) => {
           letterSpacing: 4,
           color: theme.text,
           background: 'rgba(10,16,36,0.6)',
-          border: `2px solid rgba(${theme.accentRgb},0.6)`,
+          border: `2px solid rgba(${accent.rgb},0.6)`,
           padding: '10px 26px',
           borderRadius: 999,
         }}
@@ -181,13 +188,19 @@ export const Credit: React.FC<{ text: string }> = ({ text }) => (
   <div
     style={{
       position: 'absolute',
-      bottom: 440,
-      right: 40,
-      left: 40,
-      textAlign: 'right',
+      // Inside the image band (470..1170) and clear of both the caption band (1290) and the inset
+      // labels that sit in the bottom-right of press images: a full-width line at 1185 wrapped onto
+      // the radar's own caption in QA, so the credit now lives on a small scrim at the lower left.
+      top: 1082,
+      left: 44,
+      maxWidth: 640,
       fontFamily: theme.font,
-      fontSize: 26,
-      color: 'rgba(220,225,240,0.75)',
+      fontSize: 22,
+      lineHeight: 1.3,
+      color: 'rgba(232,238,250,0.92)',
+      background: 'rgba(0,0,0,0.55)',
+      padding: '8px 14px',
+      borderRadius: 10,
       textShadow: '0 2px 8px #000',
     }}
   >

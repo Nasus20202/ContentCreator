@@ -1,0 +1,187 @@
+{
+  "kind": "sky-week",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "window": {
+    "start": "2026-12-27T23:00:00.000Z",
+    "end": "2027-01-03T23:00:00.000Z"
+  },
+  "generatedAt": "2026-11-12T12:33:18.204Z",
+  "engine": "astronomy-engine@2",
+  "events": [
+    {
+      "id": "meteors-quadrantids-2027-01-03",
+      "kind": "meteor-shower",
+      "title": "Quadrantids peak (ZHR ~80)",
+      "time": "2027-01-03T18:37:17.337Z",
+      "score": 63,
+      "bodies": [],
+      "viewing": {
+        "bestLocal": "Mon 4 Jan, 06:22",
+        "bestUtc": "2027-01-04T05:22:17.337Z",
+        "azimuth": 81,
+        "altitude": 70.1,
+        "direction": "east"
+      },
+      "factIds": [
+        "meteors-quadrantids-2027-01-03-zhr",
+        "meteors-quadrantids-2027-01-03-peak",
+        "meteors-quadrantids-2027-01-03-radiant",
+        "meteors-quadrantids-2027-01-03-moon",
+        "meteors-quadrantids-2027-01-03-moonset"
+      ],
+      "notes": [
+        "radiant RA 230° Dec 49°",
+        "constellation Boo"
+      ]
+    },
+    {
+      "id": "moon-mars-2026-12-28",
+      "kind": "moon-pass",
+      "title": "Moon near Mars (5.6°)",
+      "time": "2026-12-28T14:02:52.982Z",
+      "score": 42,
+      "bodies": [
+        "Moon",
+        "Mars"
+      ],
+      "viewing": {
+        "bestLocal": "Mon 28 Dec, 02:42",
+        "bestUtc": "2026-12-28T01:42:52.982Z",
+        "azimuth": 143.6,
+        "altitude": 45.9,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "moon-mars-2026-12-28-sep",
+        "moon-mars-2026-12-28-illum",
+        "moon-mars-2026-12-28-view"
+      ],
+      "notes": []
+    },
+    {
+      "id": "elongation-venus-2027-01-03",
+      "kind": "elongation",
+      "title": "Venus at greatest morning elongation (47°)",
+      "time": "2027-01-03T17:56:03.410Z",
+      "score": 40,
+      "bodies": [
+        "Venus"
+      ],
+      "viewing": {
+        "bestLocal": "Sun 3 Jan, 06:26",
+        "bestUtc": "2027-01-03T05:26:03.410Z",
+        "azimuth": 144.6,
+        "altitude": 17.3,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "elongation-venus-2027-01-03"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-venus-2026-12-31",
+      "kind": "planet-visibility",
+      "title": "Venus visible (mag -4.6)",
+      "time": "2026-12-31T05:30:00.000Z",
+      "score": 38,
+      "bodies": [
+        "Venus"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 31 Dec, 06:30",
+        "bestUtc": "2026-12-31T05:30:00.000Z",
+        "azimuth": 145.3,
+        "altitude": 18.3,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-venus-2026-12-31"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-jupiter-2026-12-31",
+      "kind": "planet-visibility",
+      "title": "Jupiter visible (mag -2.4)",
+      "time": "2026-12-31T00:10:00.000Z",
+      "score": 30,
+      "bodies": [
+        "Jupiter"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 31 Dec, 01:10",
+        "bestUtc": "2026-12-31T00:10:00.000Z",
+        "azimuth": 132.9,
+        "altitude": 45.2,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-jupiter-2026-12-31"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-mars-2026-12-31",
+      "kind": "planet-visibility",
+      "title": "Mars visible (mag -0.1)",
+      "time": "2026-12-31T01:30:00.000Z",
+      "score": 20,
+      "bodies": [
+        "Mars"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 31 Dec, 02:30",
+        "bestUtc": "2026-12-31T01:30:00.000Z",
+        "azimuth": 142.8,
+        "altitude": 45.6,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-mars-2026-12-31"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-saturn-2026-12-31",
+      "kind": "planet-visibility",
+      "title": "Saturn visible (mag 0.7)",
+      "time": "2026-12-31T17:50:00.000Z",
+      "score": 17,
+      "bodies": [
+        "Saturn"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 31 Dec, 18:50",
+        "bestUtc": "2026-12-31T17:50:00.000Z",
+        "azimuth": 198.4,
+        "altitude": 39.6,
+        "direction": "south"
+      },
+      "factIds": [
+        "visible-saturn-2026-12-31"
+      ],
+      "notes": []
+    },
+    {
+      "id": "phase-last-quarter-2026-12-30",
+      "kind": "moon-phase",
+      "title": "Last Quarter",
+      "time": "2026-12-30T19:00:07.341Z",
+      "score": 10,
+      "bodies": [
+        "Moon"
+      ],
+      "factIds": [
+        "phase-last-quarter-2026-12-30"
+      ],
+      "notes": []
+    }
+  ]
+}

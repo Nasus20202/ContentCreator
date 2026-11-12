@@ -9,7 +9,7 @@ import type { Renderer } from '../pipeline/stages';
 import { loadAssets } from '../pipeline/stages';
 import { totalFrames } from '../core/timing';
 import { FPS, buildRenderProps } from './prepare';
-import { normalizeLoudness, probe, synthesizePad } from './media';
+import { bedFor, normalizeLoudness, probe, synthesizePad } from './media';
 import { renderEpisode } from './render';
 
 const remotionVersion = (): string => {
@@ -27,7 +27,16 @@ export function remotionRenderer(log: (msg: string) => void): Renderer {
       let musicFile: string | undefined;
       if (plan.music.enabled) {
         musicFile = 'music.wav';
-        await synthesizePad(path.join(b, musicFile), totalFrames(timeline, FPS) / FPS);
+        const seconds = totalFrames(timeline, FPS) / FPS;
+        await synthesizePad(path.join(b, musicFile), seconds, plan.music.style ?? bedFor(plan.series), {
+          seed: plan.music.seed,
+          transpose: plan.music.transpose,
+        });
+        // The bed must cover the whole picture, or the last seconds are silent.
+        const bed = await probe(path.join(b, musicFile));
+        if (Number(bed.format.duration) < seconds) {
+          throw new Error(`music bed ${bed.format.duration}s is shorter than the ${seconds.toFixed(2)}s video`);
+        }
       }
       const props = buildRenderProps(plan, timeline, ep.manifest.location, loadAssets(ep), musicFile);
       writeJson(ep.paths.renderProps, props);

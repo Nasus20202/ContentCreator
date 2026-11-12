@@ -26,7 +26,7 @@ import {
 } from '../core/schemas';
 import { downloadNasa, lookupNasa, searchNasa } from '../assets/nasa';
 import { BufferClient } from '../publish/buffer';
-import { GitBranchHost } from '../publish/media-host';
+import { GitBranchHost, mediaName } from '../publish/media-host';
 import { buildCreatePostInput } from '../publish/payload';
 import { FPS } from '../render/prepare';
 import { extractReviewFrames, runAutomatedQa } from '../render/qa';
@@ -132,9 +132,12 @@ fact
   .argument('<episode>')
   .requiredOption('--id <id>')
   .requiredOption('--statement <text>')
-  .requiredOption('--url <url>')
-  .requiredOption('--title <title>', 'source page title')
+  .option('--url <url>', 'primary source URL (sourced fact)')
+  .option('--title <title>', 'source page title (sourced fact)')
   .option('--publisher <name>')
+  .option('--computed', 'computed fact: record method + inputs instead of a URL')
+  .option('--method <method>', 'computation method, e.g. astronomy-engine@2')
+  .option('--inputs <json>', 'JSON object of inputs the computation used')
   .option('--values <list>', 'comma-separated numbers the narration may quote', '')
   .addOption(actorOpt().default('claude'))
   .action(
@@ -143,21 +146,45 @@ fact
       o: {
         id: string;
         statement: string;
-        url: string;
-        title: string;
+        url?: string;
+        title?: string;
         publisher?: string;
+        computed?: boolean;
+        method?: string;
+        inputs?: string;
         values: string;
         actor: Actor;
       },
     ) => {
       const ep = Episode.load(id);
+      if (o.computed) {
+        if (!o.method || !o.inputs) throw new PipelineError('--computed needs --method and --inputs');
+        let inputs: Record<string, unknown>;
+        try {
+          inputs = JSON.parse(o.inputs) as Record<string, unknown>;
+        } catch {
+          throw new PipelineError('--inputs is not valid JSON');
+        }
+        if (typeof inputs !== 'object' || inputs === null || Array.isArray(inputs))
+          throw new PipelineError('--inputs must be a JSON object');
+        const f = Fact.parse({
+          id: o.id,
+          statement: o.statement,
+          values: o.values ? o.values.split(',').map(Number) : [],
+          source: { type: 'computed', method: o.method, inputs },
+        });
+        stages.addFact(ep, f, o.actor);
+        refreshReport(id);
+        return say(`added computed fact ${f.id}`);
+      }
+      if (!o.url || !o.title) throw new PipelineError('sourced facts need --url and --title (or use --computed)');
       const f = Fact.parse({
         id: o.id,
         statement: o.statement,
         values: o.values ? o.values.split(',').map(Number) : [],
         source: { type: 'url', url: o.url, title: o.title, publisher: o.publisher, accessed: nowIso().slice(0, 10) },
       });
-      stages.addSourcedFact(ep, f, o.actor);
+      stages.addFact(ep, f, o.actor);
       refreshReport(id);
       say(`added fact ${f.id}`);
     },
@@ -211,16 +238,9 @@ asset
   .description('re-download recorded assets into build/ (fresh clone) and verify their hashes')
   .action(async (id: string) => {
     const ep = Episode.load(id);
-    for (const a of stages.loadAssets(ep)) {
-      const file = path.join(ep.paths.build, a.file);
-      if (!fs.existsSync(file)) {
-        const res = await fetch(a.source.url);
-        fs.mkdirSync(path.dirname(file), { recursive: true });
-        fs.writeFileSync(file, Buffer.from(await res.arrayBuffer()));
-      }
-      const ok = sha256File(file) === a.sha256;
-      say(`${ok ? 'ok ' : 'MISMATCH'} ${a.id}`);
-      if (!ok) process.exitCode = 1;
+    for (const r of await stages.restoreAssets(ep)) {
+      say(`${r.status === 'mismatch' ? 'MISMATCH' : 'ok'} ${r.id}  (${r.status})`);
+      if (r.status === 'mismatch') process.exitCode = 1;
     }
   });
 
@@ -298,6 +318,11 @@ program
   .description('render build/video.mp4 with Remotion (CPU) and normalise loudness')
   .action(async (id: string, o: { actor: Actor }) => {
     const ep = Episode.load(id);
+    const restored = await stages.restoreAssets(ep);
+    const bad = restored.filter((r) => r.status === 'mismatch');
+    if (bad.length) throw new Error(`asset hash mismatch, refusing to render: ${bad.map((b) => b.id).join(', ')}`);
+    if (restored.some((r) => r.status === 'fetched'))
+      say(`restored ${restored.filter((r) => r.status === 'fetched').length} asset(s)`);
     const r = await stages.runRender(
       ep,
       remotionRenderer((m) => say(m)),
@@ -385,15 +410,24 @@ pub
   .description('move the scheduled Buffer posts of the latest submission to a new time')
   .argument('<episode>')
   .requiredOption('--at <iso>', 'new time (ISO 8601)')
+  .option('--replace-video', 'host the current QA-passed render and repoint the posts at it')
   .addOption(actorOpt())
-  .action(async (id: string, o: { at: string; actor: Actor }) => {
+  .action(async (id: string, o: { at: string; replaceVideo?: boolean; actor: Actor }) => {
     const client = bufferClient();
     if (!client)
       throw new PipelineError('BUFFER_API_KEY not set', 'Create one at https://publish.buffer.com/settings/api');
     const ep = Episode.load(id);
+    let mediaUrl: string | undefined;
+    if (o.replaceVideo) {
+      ep.requireStage('qa-passed');
+      const config = loadConfig();
+      const host = new GitBranchHost(config.publishing.mediaHost.repo, config.publishing.mediaHost.branch);
+      mediaUrl = (await host.host(ep.paths.video, mediaName(id, sha256File(ep.paths.video)))).url;
+      say(`media      ${mediaUrl}`);
+    }
     const attempt = await stages.reschedule(
       ep,
-      { date: o.at, endpoint: client.endpoint, edit: (input) => client.editPost(input) },
+      { date: o.at, endpoint: client.endpoint, edit: (input) => client.editPost(input), mediaUrl },
       o.actor,
     );
     refreshReport(id);

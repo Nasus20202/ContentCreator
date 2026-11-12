@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-this-week-2026-11-16-eu-central |
 | Series | sky-this-week |
-| Stage | **published** |
+| Stage | **qa-passed** |
 | Created | 2026-11-11T21:50:49.527Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-11-15T23:00:00.000Z → 2026-11-22T23:00:00.000Z |
@@ -107,7 +107,7 @@ Inputs: `build/qa/05-outro-0.jpg`, `build/qa/05-outro-1.jpg`
 **outro** (`outro`) — facts: `episode-location`
 
 > Positions calculated for central Europe.
-> Follow, so you don't miss next week's sky.
+> Clear skies.
 
 ### Post copy
 
@@ -140,7 +140,7 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 
 ## Render
 
-50.8 s, 1080×1920@30, sha256 `b50d874a9179e8ca…`, rendered 2026-11-11T22:08:51.589Z in 192 s.
+49.6 s, 1080×1920@30, sha256 `61ade36669189e4d…`, rendered 2026-11-12T14:30:27.888Z in 164 s.
 
 ## QA
 
@@ -149,17 +149,13 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 50.80 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 50.80 s vs timeline 50.77 s |
+| duration | ✅ | 49.60 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 49.60 s vs timeline 49.57 s |
 | loudness | ✅ | -14 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-11T22:09:30.353Z): **pass** — Third render reviewed (19 frames). Fixed: compass letters no longer in caption band; outro footnote above captions; CTA clear of the Moon. Verified: title card 'Nov 16 – 22'; Mars (orange, left/higher) and Jupiter labels; 1.2° bracket and 2 Moon discs during sentence 1; chips match sentences; orbit reveal shows Earth→Mars→Jupiter line with 195/788 million km; Leo + radiant + Regulus with meteor streaks; Moon (gibbous) and Saturn labelled '5° from the Moon'; outro CTA + footnote legible. Nit accepted: part of the Moon disc at the far-left edge in the last outro frame. Not judgeable from stills: motion smoothness and audio mix — flagged for the human reviewer.
-
-## Approvals
-
-- 2026-11-12T00:07:59.028Z — **Krzysztof** (human) approved video `b50d874a9179e8ca…`: Approved by the owner in chat ('I approve'); command run by Claude on their behalf
+Visual review by **claude** (2026-11-12T14:41:31.415Z): **pass** — Reviewed the opening and closing frames of all eight cuts: hook framing holds (Moon/Jupiter/Venus/Mars subjects stay in frame after the 20% tighter opening field), outro shows the CTA and the new '50°N 15°E' footnote without overlap. Fact-card push-in checked on the 21 Dec card; the other cards use the same code. Motion smoothness and audio mix are not judgeable from stills and are left to the human watch.
 
 ## Publishing
 
@@ -255,3 +251,48 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-th
 | 2026-11-12 00:08:30 | claude | published | stage.advance | a72a0fa |
 | 2026-11-12 00:19:02 | claude | publish | publish.reschedule | 0e270bf |
 | 2026-11-12 00:19:42 | claude | publish | publish.reschedule | 0e270bf |
+| 2026-11-12 11:36:36 | claude | planned | plan.check | 395ad8b |
+| 2026-11-12 11:36:36 | claude | planned | stage.regress | 395ad8b |
+| 2026-11-12 11:36:37 | pipeline | factcheck | factcheck.automated | 395ad8b |
+| 2026-11-12 11:36:40 | claude | factcheck | factcheck.review | 395ad8b |
+| 2026-11-12 11:36:40 | claude | factchecked | stage.advance | 395ad8b |
+| 2026-11-12 11:37:39 | pipeline | voiced | stage.advance | 395ad8b |
+| 2026-11-12 11:37:39 | pipeline | voiced | voice.synthesize | 395ad8b |
+| 2026-11-12 11:40:19 | pipeline | rendered | stage.advance | 395ad8b |
+| 2026-11-12 11:40:19 | pipeline | rendered | render.video | 395ad8b |
+| 2026-11-12 11:48:26 | pipeline | qa | qa.automated | 395ad8b |
+| 2026-11-12 11:56:42 | pipeline | rendered | stage.advance | 395ad8b |
+| 2026-11-12 11:56:42 | pipeline | rendered | render.video | 395ad8b |
+| 2026-11-12 11:56:49 | pipeline | qa | qa.automated | 395ad8b |
+| 2026-11-12 11:58:08 | claude | planned | plan.check | 395ad8b |
+| 2026-11-12 11:58:08 | claude | planned | stage.regress | 395ad8b |
+| 2026-11-12 11:58:09 | pipeline | factcheck | factcheck.automated | 395ad8b |
+| 2026-11-12 11:58:20 | claude | factcheck | factcheck.review | 395ad8b |
+| 2026-11-12 11:58:20 | claude | factchecked | stage.advance | 395ad8b |
+| 2026-11-12 11:58:42 | pipeline | voiced | stage.advance | 395ad8b |
+| 2026-11-12 11:58:42 | pipeline | voiced | voice.reuse | 395ad8b |
+| 2026-11-12 12:01:26 | pipeline | rendered | stage.advance | 395ad8b |
+| 2026-11-12 12:01:26 | pipeline | rendered | render.video | 395ad8b |
+| 2026-11-12 12:01:33 | pipeline | qa | qa.automated | 395ad8b |
+| 2026-11-12 12:05:20 | claude | planned | plan.check | 395ad8b |
+| 2026-11-12 12:05:20 | claude | planned | stage.regress | 395ad8b |
+| 2026-11-12 12:05:21 | pipeline | factcheck | factcheck.automated | 395ad8b |
+| 2026-11-12 12:05:28 | claude | factcheck | factcheck.review | 395ad8b |
+| 2026-11-12 12:05:28 | claude | factchecked | stage.advance | 395ad8b |
+| 2026-11-12 12:06:39 | pipeline | voiced | stage.advance | 395ad8b |
+| 2026-11-12 12:06:39 | pipeline | voiced | voice.synthesize | 395ad8b |
+| 2026-11-12 12:23:15 | pipeline | rendered | stage.advance | 395ad8b |
+| 2026-11-12 12:23:15 | pipeline | rendered | render.video | 395ad8b |
+| 2026-11-12 12:23:23 | pipeline | qa | qa.automated | 395ad8b |
+| 2026-11-12 14:27:01 | claude | planned | plan.check | 395ad8b |
+| 2026-11-12 14:27:01 | claude | planned | stage.regress | 395ad8b |
+| 2026-11-12 14:27:01 | pipeline | factcheck | factcheck.automated | 395ad8b |
+| 2026-11-12 14:27:26 | claude | factcheck | factcheck.review | 395ad8b |
+| 2026-11-12 14:27:26 | claude | factchecked | stage.advance | 395ad8b |
+| 2026-11-12 14:27:26 | pipeline | voiced | stage.advance | 395ad8b |
+| 2026-11-12 14:27:26 | pipeline | voiced | voice.reuse | 395ad8b |
+| 2026-11-12 14:30:27 | pipeline | rendered | stage.advance | 395ad8b |
+| 2026-11-12 14:30:27 | pipeline | rendered | render.video | 395ad8b |
+| 2026-11-12 14:30:36 | pipeline | qa | qa.automated | 395ad8b |
+| 2026-11-12 14:41:31 | claude | qa | qa.review | 395ad8b |
+| 2026-11-12 14:41:31 | claude | qa-passed | stage.advance | 395ad8b |

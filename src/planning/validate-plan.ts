@@ -47,6 +47,13 @@ export function validatePlan(plan: Plan, facts: Fact[], assets: AssetRecord[] = 
     ids.add(s.id);
 
     for (const f of s.factIds) if (!factIds.has(f)) err(s.id, `unknown fact "${f}"`);
+    s.chips.forEach((c, i) => {
+      if (i < s.chips.length - 1 && c.to === undefined)
+        err(
+          s.id,
+          `chips[${i}] has no \`to\`, so it stays on screen for the rest of the scene and collides with chips[${i + 1}]`,
+        );
+    });
     for (const r of timeRefsOf(s).flatMap(sentenceRefs)) {
       if (r >= s.narration.length)
         err(s.id, `time reference to sentence ${r}, but scene has ${s.narration.length} sentences`);

@@ -1,0 +1,179 @@
+{
+  "kind": "sky-week",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "window": {
+    "start": "2027-02-14T23:00:00.000Z",
+    "end": "2027-02-21T23:00:00.000Z"
+  },
+  "generatedAt": "2026-11-12T10:05:45.612Z",
+  "engine": "astronomy-engine@2",
+  "events": [
+    {
+      "id": "opposition-mars-2027-02-19",
+      "kind": "opposition",
+      "title": "Mars at opposition",
+      "time": "2027-02-19T15:44:17.503Z",
+      "score": 80,
+      "bodies": [
+        "Mars"
+      ],
+      "viewing": {
+        "bestLocal": "Fri 19 Feb, 02:44",
+        "bestUtc": "2027-02-19T01:44:17.503Z",
+        "azimuth": 232,
+        "altitude": 45.1,
+        "direction": "south-west"
+      },
+      "factIds": [
+        "opposition-mars-2027-02-19"
+      ],
+      "notes": []
+    },
+    {
+      "id": "lunar-eclipse-2027-02-20",
+      "kind": "lunar-eclipse",
+      "title": "penumbral lunar eclipse",
+      "time": "2027-02-20T23:12:44.142Z",
+      "score": 75,
+      "bodies": [
+        "Moon"
+      ],
+      "factIds": [
+        "lunar-eclipse-2027-02-20"
+      ],
+      "notes": []
+    },
+    {
+      "id": "moon-jupiter-2027-02-20",
+      "kind": "moon-pass",
+      "title": "Moon near Jupiter (2.1°)",
+      "time": "2027-02-20T05:16:59.564Z",
+      "score": 56,
+      "bodies": [
+        "Moon",
+        "Jupiter"
+      ],
+      "viewing": {
+        "bestLocal": "Fri 19 Feb, 21:16",
+        "bestUtc": "2027-02-19T20:16:59.564Z",
+        "azimuth": 128.2,
+        "altitude": 45.5,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "moon-jupiter-2027-02-20-sep",
+        "moon-jupiter-2027-02-20-illum",
+        "moon-jupiter-2027-02-20-view"
+      ],
+      "notes": []
+    },
+    {
+      "id": "moon-mars-2027-02-20",
+      "kind": "moon-pass",
+      "title": "Moon near Mars (5.7°)",
+      "time": "2027-02-20T18:23:01.987Z",
+      "score": 41,
+      "bodies": [
+        "Moon",
+        "Mars"
+      ],
+      "viewing": {
+        "bestLocal": "Sat 20 Feb, 21:53",
+        "bestUtc": "2027-02-20T20:53:01.987Z",
+        "azimuth": 127.8,
+        "altitude": 45.4,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "moon-mars-2027-02-20-sep",
+        "moon-mars-2027-02-20-illum",
+        "moon-mars-2027-02-20-view"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-jupiter-2027-02-18",
+      "kind": "planet-visibility",
+      "title": "Jupiter visible (mag -2.5)",
+      "time": "2027-02-17T23:00:00.000Z",
+      "score": 30,
+      "bodies": [
+        "Jupiter"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 18 Feb, 00:00",
+        "bestUtc": "2027-02-17T23:00:00.000Z",
+        "azimuth": 186.5,
+        "altitude": 55.3,
+        "direction": "south"
+      },
+      "factIds": [
+        "visible-jupiter-2027-02-18"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-mars-2027-02-18",
+      "kind": "planet-visibility",
+      "title": "Mars visible (mag -1.2)",
+      "time": "2027-02-17T23:00:00.000Z",
+      "score": 25,
+      "bodies": [
+        "Mars"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 18 Feb, 00:00",
+        "bestUtc": "2027-02-17T23:00:00.000Z",
+        "azimuth": 167.6,
+        "altitude": 54.6,
+        "direction": "south"
+      },
+      "factIds": [
+        "visible-mars-2027-02-18"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-saturn-2027-02-18",
+      "kind": "planet-visibility",
+      "title": "Saturn visible (mag 0.7)",
+      "time": "2027-02-18T17:20:00.000Z",
+      "score": 17,
+      "bodies": [
+        "Saturn"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 18 Feb, 18:20",
+        "bestUtc": "2027-02-18T17:20:00.000Z",
+        "azimuth": 240.3,
+        "altitude": 25.8,
+        "direction": "south-west"
+      },
+      "factIds": [
+        "visible-saturn-2027-02-18"
+      ],
+      "notes": []
+    },
+    {
+      "id": "phase-full-moon-2027-02-20",
+      "kind": "moon-phase",
+      "title": "Full Moon",
+      "time": "2027-02-20T23:24:07.298Z",
+      "score": 10,
+      "bodies": [
+        "Moon"
+      ],
+      "factIds": [
+        "phase-full-moon-2027-02-20",
+        "phase-full-moon-2027-02-20-distance"
+      ],
+      "notes": []
+    }
+  ]
+}

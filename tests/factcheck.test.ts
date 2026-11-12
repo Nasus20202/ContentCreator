@@ -103,7 +103,7 @@ describe('validatePlan', () => {
       factIds: [],
       chips: [],
       captions: true,
-      params: { assetId: 'x', zoom: [1, 1.1], focus: [0.5, 0.5] },
+      params: { assetId: 'x', zoom: [1, 1.1], focus: [0.5, 0.5], fit: 'cover' },
     });
     const msgs = validatePlan(p, facts).map((i) => i.message);
     expect(msgs).toContain('orbit3d must include Earth (the viewpoint)');

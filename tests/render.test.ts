@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import type { Timeline } from '../src/core/schemas';
+import type { Plan, Timeline } from '../src/core/schemas';
 import { totalFrames } from '../src/core/timing';
 import { ffmpeg } from '../src/render/media';
 import { buildRenderProps, FPS } from '../src/render/prepare';
@@ -51,6 +51,26 @@ describe('buildRenderProps', () => {
 
   it('requires a location for sky scenes', () => {
     expect(() => buildRenderProps(plan(), timeline, undefined, [])).toThrow(/location/);
+  });
+
+  it('rejects chips whose windows overlap (they share one row)', () => {
+    const p = plan();
+    const chips: Plan['scenes'][number]['chips'] = [
+      { text: 'AFTER MIDNIGHT', from: 0.2, to: { sentence: 1, edge: 'start', offset: 0 } },
+      { text: 'MOONSET 20:04', from: { sentence: 0, edge: 'start', offset: 0.5 } },
+    ];
+    const scenes = p.scenes.map((s, i) => (i === 0 ? { ...s, chips } : s));
+    expect(() => buildRenderProps({ ...p, scenes }, timeline, EU, [])).toThrow(/Chips overlap in scene "conj"/);
+  });
+
+  it('accepts chips handed over at a sentence boundary', () => {
+    const p = plan();
+    const chips: Plan['scenes'][number]['chips'] = [
+      { text: 'AFTER MIDNIGHT', from: 0.2, to: { sentence: 1, edge: 'start', offset: 0 } },
+      { text: 'MOONSET 20:04', from: { sentence: 1, edge: 'start', offset: 0 } },
+    ];
+    const scenes = p.scenes.map((s, i) => (i === 0 ? { ...s, chips } : s));
+    expect(() => buildRenderProps({ ...p, scenes }, timeline, EU, [])).not.toThrow();
   });
 });
 

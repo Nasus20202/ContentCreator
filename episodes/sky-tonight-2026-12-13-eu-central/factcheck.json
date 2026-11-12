@@ -1,0 +1,104 @@
+{
+  "checkedAt": "2026-11-12T11:02:10.163Z",
+  "planHash": "789fbe6971c9a1a1",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[1]",
+        "text": "Up to a hundred and fifty an hour in a perfect sky, and the Moon sets before the show starts.",
+        "number": 150,
+        "raw": "a hundred and fifty",
+        "matchedFact": "meteors-geminids-2026-12-14-zhr"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "MOONLESS FROM 20:04",
+        "number": 20,
+        "raw": "20:04",
+        "matchedFact": "meteors-geminids-2026-12-14-moonset"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "MOONLESS FROM 20:04",
+        "number": 4,
+        "raw": "20:04",
+        "matchedFact": "meteors-geminids-2026-12-14-moonset"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Geminids 13 – 14 Dec",
+        "number": 13,
+        "raw": "13",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Geminids 13 – 14 Dec",
+        "number": 14,
+        "raw": "14",
+        "matchedFact": "meteors-geminids-2026-12-14-peak"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 13,
+        "raw": "13",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 14,
+        "raw": "14",
+        "matchedFact": "meteors-geminids-2026-12-14-peak"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 2026,
+        "raw": "2026",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 20,
+        "raw": "20:04",
+        "matchedFact": "meteors-geminids-2026-12-14-moonset"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 4,
+        "raw": "20:04",
+        "matchedFact": "meteors-geminids-2026-12-14-moonset"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+        "number": 150,
+        "raw": "150",
+        "matchedFact": "meteors-geminids-2026-12-14-zhr"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T11:02:10.696Z",
+    "verdict": "pass",
+    "notes": "Re-plan only: new synthesised music bed. No factual change: Geminids peak Mon 14 Dec 05:52 CET, radiant 73 deg in the south at 01:52, Moon 21% and setting 20:04, ZHR 150 - unchanged."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-11-12T10:56:34.846Z",
+  "planHash": "f3f17b6c79b9114e",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[0]",
+        "text": "On the nineteenth of February, Mars is opposite the Sun.",
+        "number": 19,
+        "raw": "nineteenth",
+        "matchedFact": "opposition-mars-2027-02-19"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "19 February 2027 Mars at opposition",
+        "number": 19,
+        "raw": "19",
+        "matchedFact": "opposition-mars-2027-02-19"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "19 February 2027 Mars at opposition",
+        "number": 2027,
+        "raw": "2027",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "find",
+        "where": "labels[0]",
+        "text": "Mars -1.2 magnitude",
+        "number": 1.2,
+        "raw": "-1.2",
+        "matchedFact": "visible-mars-2027-02-18"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[0]",
+        "text": "A hundred and one million kilometres is the gap at opposition.",
+        "number": 101000000,
+        "raw": "a hundred and one million",
+        "matchedFact": "mars-distance-opposition"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[1]",
+        "text": "Mars ranges from about fifty-six million kilometres at its closest, back in 2003, to four hundred and one million at its farthest.",
+        "number": 56000000,
+        "raw": "fifty six million",
+        "matchedFact": "mars-closest"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[1]",
+        "text": "Mars ranges from about fifty-six million kilometres at its closest, back in 2003, to four hundred and one million at its farthest.",
+        "number": 2003,
+        "raw": "2003",
+        "matchedFact": "mars-closest"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[1]",
+        "text": "Mars ranges from about fifty-six million kilometres at its closest, back in 2003, to four hundred and one million at its farthest.",
+        "number": 401000000,
+        "raw": "four hundred and one million",
+        "matchedFact": "mars-farthest"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Mars reaches opposition on 19 February 2027: opposite the Sun, up all night, and 101 million km from Earth. Opposition happens because Earth, on the inside track, laps Mars. For scale, Mars ranges from about 55.8 million km at its closest (2003) to about 401 million km at its farthest.\n\nOrbits computed for 19 February 2027 with astronomy-engine (not to scale). Positions computed for central Europe (50°N, 15°E). Narration uses a synthetic voice.",
+        "number": 19,
+        "raw": "19",
+        "matchedFact": "opposition-mars-2027-02-19"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Mars reaches opposition on 19 February 2027: opposite the Sun, up all night, and 101 million km from Earth. Opposition happens because Earth, on the inside track, laps Mars. For scale, Mars ranges from about 55.8 million km at its closest (2003) to about 401 million km at its farthest.\n\nOrbits computed for 19 February 2027 with astronomy-engine (not to scale). Positions computed for central Europe (50°N, 15°E). Narration uses a synthetic voice.",
+        "number": 2027,
+        "raw": "2027",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Mars reaches opposition on 19 February 2027: opposite the Sun, up all night, and 101 million km from Earth. Opposition happens because Earth, on the inside track, laps Mars. For scale, Mars ranges from about 55.8 million km at its closest (2003) to about 401 million km at its farthest.\n\nOrbits computed for 19 February 2027 with astronomy-engine (not to scale). Positions computed for central Europe (50°N, 15°E). Narration uses a synthetic voice.",
+        "number": 101,
+        "raw": "101",
+        "matchedFact": "mars-distance-opposition"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Mars reaches opposition on 19 February 2027: opposite the Sun, up all night, and 101 million km from Earth. Opposition happens because Earth, on the inside track, laps Mars. For scale, Mars ranges from about 55.8 million km at its closest (2003) to about 401 million km at its farthest.\n\nOrbits computed for 19 February 2027 with astronomy-engine (not to scale). Positions computed for central Europe (50°N, 15°E). Narration uses a synthetic voice.",
+        "number": 55.8,
+        "raw": "55.8",
+        "matchedFact": "mars-closest"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Mars reaches opposition on 19 February 2027: opposite the Sun, up all night, and 101 million km from Earth. Opposition happens because Earth, on the inside track, laps Mars. For scale, Mars ranges from about 55.8 million km at its closest (2003) to about 401 million km at its farthest.\n\nOrbits computed for 19 February 2027 with astronomy-engine (not to scale). Positions computed for central Europe (50°N, 15°E). Narration uses a synthetic voice.",
+        "number": 2003,
+        "raw": "2003",
+        "matchedFact": "mars-closest"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Mars reaches opposition on 19 February 2027: opposite the Sun, up all night, and 101 million km from Earth. Opposition happens because Earth, on the inside track, laps Mars. For scale, Mars ranges from about 55.8 million km at its closest (2003) to about 401 million km at its farthest.\n\nOrbits computed for 19 February 2027 with astronomy-engine (not to scale). Positions computed for central Europe (50°N, 15°E). Narration uses a synthetic voice.",
+        "number": 401,
+        "raw": "401",
+        "matchedFact": "mars-farthest"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Mars reaches opposition on 19 February 2027: opposite the Sun, up all night, and 101 million km from Earth. Opposition happens because Earth, on the inside track, laps Mars. For scale, Mars ranges from about 55.8 million km at its closest (2003) to about 401 million km at its farthest.\n\nOrbits computed for 19 February 2027 with astronomy-engine (not to scale). Positions computed for central Europe (50°N, 15°E). Narration uses a synthetic voice.",
+        "number": 19,
+        "raw": "19",
+        "matchedFact": "opposition-mars-2027-02-19"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Mars reaches opposition on 19 February 2027: opposite the Sun, up all night, and 101 million km from Earth. Opposition happens because Earth, on the inside track, laps Mars. For scale, Mars ranges from about 55.8 million km at its closest (2003) to about 401 million km at its farthest.\n\nOrbits computed for 19 February 2027 with astronomy-engine (not to scale). Positions computed for central Europe (50°N, 15°E). Narration uses a synthetic voice.",
+        "number": 2027,
+        "raw": "2027",
+        "matchedFact": "episode-window"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-12T10:56:35.365Z",
+    "verdict": "pass",
+    "notes": "Re-plan only: the fact card's long value ('101,000,000 km') overflowed the 960 px text column and was clipped at both edges, so the template now scales the number to fit; music bed re-synthesised (Am-F-C-G pad, sub, bell arpeggio). No factual change: opposition 19 Feb 2027 16:44 CET, -1.2 mag, 101.4 million km, Mars range 55.8-401 million km from NASA, all unchanged and re-verified."
+  }
+}

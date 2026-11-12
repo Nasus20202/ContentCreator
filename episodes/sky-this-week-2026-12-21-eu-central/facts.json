@@ -1,0 +1,300 @@
+{
+  "facts": [
+    {
+      "id": "episode-window",
+      "statement": "This episode covers Mon 21 Dec to Sun 27 Dec 2026.",
+      "values": [
+        21,
+        27,
+        2026
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "start": "2026-12-20T23:00:00.000Z",
+          "end": "2026-12-27T23:00:00.000Z"
+        }
+      }
+    },
+    {
+      "id": "episode-location",
+      "statement": "Positions are computed for central Europe (50°N, 15°E).",
+      "values": [
+        50,
+        15
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15
+        }
+      }
+    },
+    {
+      "id": "moon-jupiter-2026-12-27-sep",
+      "statement": "The Moon passes 2.1° from Jupiter on Sun 27 Dec, 16:51 (as seen from central Europe).",
+      "values": [
+        2.081,
+        27
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Jupiter",
+          "minimumUtc": "2026-12-27T15:51:05.218Z"
+        }
+      }
+    },
+    {
+      "id": "moon-jupiter-2026-12-27-illum",
+      "statement": "The Moon is 82% illuminated then.",
+      "values": [
+        82
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2026-12-27T15:51:05.218Z"
+        }
+      }
+    },
+    {
+      "id": "moon-jupiter-2026-12-27-view",
+      "statement": "Best seen around Sun 27 Dec, 02:51, south, 52° up.",
+      "values": [
+        52.4
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "viewing": {
+            "bestLocal": "Sun 27 Dec, 02:51",
+            "bestUtc": "2026-12-27T01:51:05.218Z",
+            "azimuth": 162.5,
+            "altitude": 52.4,
+            "direction": "south"
+          }
+        }
+      }
+    },
+    {
+      "id": "meteors-ursids-2026-12-22-zhr",
+      "statement": "Ursids ZHR ≈ 10 meteors per hour under ideal conditions; parent: comet 8P/Tuttle.",
+      "values": [
+        10
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.imo.net/resources/calendar/",
+        "title": "IMO Meteor Shower Calendar / working list of visual meteor showers",
+        "publisher": "International Meteor Organization",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "meteors-ursids-2026-12-22-peak",
+      "statement": "Ursids peak (solar longitude 270.7°) falls on Tue 22 Dec, 14:20 (central Europe time).",
+      "values": [
+        22,
+        22
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "solarLongitude": 270.7,
+          "peakUtc": "2026-12-22T13:20:29.450Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-ursids-2026-12-22-radiant",
+      "statement": "The radiant (in UMi) is highest in darkness around Tue 22 Dec, 06:20, 61° up in the north.",
+      "values": [
+        61.227
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "radiant": {
+            "ra": 217,
+            "dec": 76
+          },
+          "bestUtc": "2026-12-22T05:20:29.450Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-ursids-2026-12-22-moon",
+      "statement": "The Moon is 95% illuminated and below the horizon at that time.",
+      "values": [
+        95
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2026-12-22T05:20:29.450Z",
+          "moonAlt": -0.07416712485091637
+        }
+      }
+    },
+    {
+      "id": "meteors-ursids-2026-12-22-moonset",
+      "statement": "Moonset that night: 06:22 local time.",
+      "values": [],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "moonsetUtc": "2026-12-22T05:22:05.387Z"
+        }
+      }
+    },
+    {
+      "id": "phase-full-moon-2026-12-24",
+      "statement": "Full Moon: Thu 24 Dec, 02:28 (central Europe time).",
+      "values": [
+        24
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "quarter": 2
+        }
+      }
+    },
+    {
+      "id": "phase-full-moon-2026-12-24-distance",
+      "statement": "The full Moon on Thu 24 Dec, 02:28 is 356729 km away (centre to centre) and 33.5 arcminutes across. It is the closest full Moon of 2026: the farthest, on Sun 31 May, 10:45, is 406126 km away, so this one looks 13.8% wider.",
+      "values": [
+        356729,
+        33.5,
+        2026,
+        406126,
+        13.8
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Moon",
+          "distanceKm": 356729,
+          "angularArcmin": 33.5,
+          "year": 2026
+        }
+      }
+    },
+    {
+      "id": "visible-venus-2026-12-24",
+      "statement": "Mid-week, Venus (magnitude -4.7) is best seen around 06:40, south-east, 21° up.",
+      "values": [
+        -4.674,
+        20.702
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Venus"
+        }
+      }
+    },
+    {
+      "id": "visible-mars-2026-12-24",
+      "statement": "Mid-week, Mars (magnitude 0) is best seen around 02:50, south-east, 46° up.",
+      "values": [
+        0.042,
+        45.512
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mars"
+        }
+      }
+    },
+    {
+      "id": "visible-jupiter-2026-12-24",
+      "statement": "Mid-week, Jupiter (magnitude -2.4) is best seen around 01:40, south-east, 45° up.",
+      "values": [
+        -2.36,
+        45.181
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Jupiter"
+        }
+      }
+    },
+    {
+      "id": "visible-saturn-2026-12-24",
+      "statement": "Mid-week, Saturn (magnitude 0.7) is best seen around 18:50, south, 41° up.",
+      "values": [
+        0.698,
+        40.549
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Saturn"
+        }
+      }
+    }
+  ]
+}

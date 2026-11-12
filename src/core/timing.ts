@@ -28,7 +28,9 @@ export function resolveTime(ref: TimeRef, sentences: Sentence[]): number {
   if (typeof ref === 'number') return ref;
   const s = sentences[Math.min(ref.sentence, sentences.length - 1)];
   if (!s) return 0;
-  return Math.max(0, (ref.edge === 'end' ? s.end : s.start) + ref.offset);
+  const edge = ref.edge ?? 'start';
+  const offset = ref.offset ?? 0;
+  return Math.max(0, (edge === 'end' ? s.end : s.start) + offset);
 }
 
 /** Visibility 0..1 of an element shown from `from` until `to`, with short fades. */

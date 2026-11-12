@@ -1,0 +1,25 @@
+{
+  "id": "sky-school-mars-opposition-eu-central",
+  "series": "sky-school",
+  "createdAt": "2026-11-12T10:05:44.636Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "window": {
+    "start": "2027-02-14T23:00:00.000Z",
+    "end": "2027-02-21T23:00:00.000Z"
+  },
+  "hashes": {
+    "research": "1682447859fd99be",
+    "plan": "f3f17b6c79b9114e",
+    "factcheckedPlan": "f3f17b6c79b9114e",
+    "narration": "9bc7355e0fb1709a",
+    "video": "5393aef834c11ea342984f48619ab1dbe01a94d75dbc247b0071223b615a74ba"
+  },
+  "approvals": []
+}

@@ -4,7 +4,13 @@ import path from 'node:path';
 import { describe, expect, it, vi } from 'vitest';
 import { BufferClient, BufferError } from '../src/publish/buffer';
 import { GitBranchHost, mediaName } from '../src/publish/media-host';
-import { buildCreatePostInput, caption, platformMetadata, YOUTUBE_CATEGORY_SCIENCE } from '../src/publish/payload';
+import {
+  buildCreatePostInput,
+  caption,
+  platformMetadata,
+  replaceVideoUrl,
+  YOUTUBE_CATEGORY_SCIENCE,
+} from '../src/publish/payload';
 import { plan } from './fixtures';
 
 const media = { url: 'https://github.com/o/media/releases/download/ep-1234abcd/video.mp4' };
@@ -137,5 +143,27 @@ describe('GitBranchHost', () => {
 
   it('names media by episode and video hash', () => {
     expect(mediaName('ep', 'abcdef0123456789')).toBe('ep-abcdef01.mp4');
+  });
+});
+
+describe('replaceVideoUrl', () => {
+  it('repoints the video asset and leaves the rest of the payload alone', () => {
+    const payload = buildCreatePostInput(plan(), { platform: 'youtube', channelId: 'yt' }, media, {
+      mode: 'schedule',
+      date: '2026-11-14T17:00:00Z',
+      aiDisclosure: true,
+    });
+    const next = replaceVideoUrl(payload, 'https://example.test/new.mp4');
+    expect(next.assets).toEqual([
+      { video: { url: 'https://example.test/new.mp4', metadata: { thumbnailOffset: 1000 } } },
+    ]);
+    expect(next.text).toBe(payload.text);
+    expect(next.metadata).toEqual(payload.metadata);
+  });
+
+  it('keeps assets without a video untouched', () => {
+    expect(replaceVideoUrl({ assets: [{ image: { url: 'a.jpg' } }] }, 'x.mp4').assets).toEqual([
+      { image: { url: 'a.jpg' } },
+    ]);
   });
 });

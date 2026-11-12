@@ -1,0 +1,25 @@
+{
+  "id": "sky-tonight-2026-12-13-eu-central",
+  "series": "sky-tonight",
+  "createdAt": "2026-11-12T10:11:35.666Z",
+  "stage": "rendered",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "window": {
+    "start": "2026-12-12T23:00:00.000Z",
+    "end": "2026-12-19T23:00:00.000Z"
+  },
+  "hashes": {
+    "research": "2f52b02b343c0d5f",
+    "plan": "789fbe6971c9a1a1",
+    "factcheckedPlan": "789fbe6971c9a1a1",
+    "narration": "51acf502bab95ee9",
+    "video": "4806ceb3614df2d151fc07df96f00adddadbec054c16572a08d628149a79d49b"
+  },
+  "approvals": []
+}

@@ -4,4 +4,15 @@
 
 | Episode | Series | Stage | Title | Published to | Views (latest) |
 | --- | --- | --- | --- | --- | --- |
-| [sky-this-week-2026-11-16-eu-central](../episodes/sky-this-week-2026-11-16-eu-central/README.md) | sky-this-week | published | Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22 | youtube, tiktok | — |
+| [sky-school-geminids-radiant-eu-central](../episodes/sky-school-geminids-radiant-eu-central/README.md) | sky-school | rendered | Why meteors seem to come from one point in the sky 🌠 | — | — |
+| [sky-school-mars-opposition-eu-central](../episodes/sky-school-mars-opposition-eu-central/README.md) | sky-school | qa-passed | Why Mars opposition is the best time to see it 🔴 | — | — |
+| [sky-this-week-2026-11-16-eu-central](../episodes/sky-this-week-2026-11-16-eu-central/README.md) | sky-this-week | qa-passed | Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22 | youtube, tiktok | — |
+| [sky-this-week-2026-11-23-eu-central](../episodes/sky-this-week-2026-11-23-eu-central/README.md) | sky-this-week | qa-passed | Venus is low in the south-east before dawn this week ☕ | — | — |
+| [sky-this-week-2026-11-30-eu-central](../episodes/sky-this-week-2026-11-30-eu-central/README.md) | sky-this-week | qa-passed | The Moon passes Jupiter before dawn on Monday 🌕 | — | — |
+| [sky-this-week-2026-12-07-eu-central](../episodes/sky-this-week-2026-12-07-eu-central/README.md) | sky-this-week | qa-passed | Jupiter and Venus are both up before dawn this week 🪐 | — | — |
+| [sky-this-week-2026-12-14-eu-central](../episodes/sky-this-week-2026-12-14-eu-central/README.md) | sky-this-week | qa-passed | The Geminids peak this weekend — and the Moon stays out of the way 🌠 | — | — |
+| [sky-this-week-2026-12-14-us-east](../episodes/sky-this-week-2026-12-14-us-east/README.md) | sky-this-week | rendered | The Geminids peak this weekend — and the Moon stays out of the way 🌠 | — | — |
+| [sky-this-week-2026-12-21-eu-central](../episodes/sky-this-week-2026-12-21-eu-central/README.md) | sky-this-week | qa-passed | The closest full Moon of 2026 rises on Christmas Eve 🌕 | — | — |
+| [sky-this-week-2026-12-28-eu-central](../episodes/sky-this-week-2026-12-28-eu-central/README.md) | sky-this-week | qa-passed | The Moon passes within six degrees of Mars on Monday 🌑 | — | — |
+| [sky-this-week-2027-01-04-eu-central](../episodes/sky-this-week-2027-01-04-eu-central/README.md) | sky-this-week | qa-passed | The Quadrantids peak this weekend — but timing matters 🌠 | — | — |
+| [sky-tonight-2026-12-13-eu-central](../episodes/sky-tonight-2026-12-13-eu-central/README.md) | sky-tonight | rendered | Tonight: the Geminids peak, and the Moon stays away 🌠 | — | — |

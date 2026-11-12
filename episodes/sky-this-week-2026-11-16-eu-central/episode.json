@@ -2,7 +2,7 @@
   "id": "sky-this-week-2026-11-16-eu-central",
   "series": "sky-this-week",
   "createdAt": "2026-11-11T21:50:49.527Z",
-  "stage": "published",
+  "stage": "qa-passed",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -16,18 +16,10 @@
   },
   "hashes": {
     "research": "76ff2a02caf320c3",
-    "plan": "6c3d58eb3f1b48b2",
-    "factcheckedPlan": "6c3d58eb3f1b48b2",
-    "narration": "d2959d8957f222a7",
-    "video": "b50d874a9179e8ca2c44bacdc92f08ffabaa5433861921d28a8011829ad8f6ea"
+    "plan": "88842961a1846b9d",
+    "factcheckedPlan": "88842961a1846b9d",
+    "narration": "bb778886b060b7d5",
+    "video": "61ade36669189e4dda19f0b0bd726e1aa061ff5acda6ab267edaec29d51dffb0"
   },
-  "approvals": [
-    {
-      "by": "Krzysztof",
-      "actor": "human",
-      "at": "2026-11-12T00:07:59.028Z",
-      "videoSha256": "b50d874a9179e8ca2c44bacdc92f08ffabaa5433861921d28a8011829ad8f6ea",
-      "note": "Approved by the owner in chat ('I approve'); command run by Claude on their behalf"
-    }
-  ]
+  "approvals": []
 }

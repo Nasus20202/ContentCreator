@@ -1,0 +1,331 @@
+{
+  "facts": [
+    {
+      "id": "episode-window",
+      "statement": "This episode covers Mon 15 Feb to Sun 21 Feb 2027.",
+      "values": [
+        15,
+        21,
+        2027
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "start": "2027-02-14T23:00:00.000Z",
+          "end": "2027-02-21T23:00:00.000Z"
+        }
+      }
+    },
+    {
+      "id": "episode-location",
+      "statement": "Positions are computed for central Europe (50°N, 15°E).",
+      "values": [
+        50,
+        15
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15
+        }
+      }
+    },
+    {
+      "id": "moon-mars-2027-02-20-sep",
+      "statement": "The Moon passes 5.7° from Mars on Sat 20 Feb, 19:23 (as seen from central Europe).",
+      "values": [
+        5.713,
+        20
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mars",
+          "minimumUtc": "2027-02-20T18:23:01.987Z"
+        }
+      }
+    },
+    {
+      "id": "moon-mars-2027-02-20-illum",
+      "statement": "The Moon is 100% illuminated then.",
+      "values": [
+        100
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2027-02-20T18:23:01.987Z"
+        }
+      }
+    },
+    {
+      "id": "moon-mars-2027-02-20-view",
+      "statement": "Best seen around Sat 20 Feb, 21:53, south-east, 45° up.",
+      "values": [
+        45.4
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "viewing": {
+            "bestLocal": "Sat 20 Feb, 21:53",
+            "bestUtc": "2027-02-20T20:53:01.987Z",
+            "azimuth": 127.8,
+            "altitude": 45.4,
+            "direction": "south-east"
+          }
+        }
+      }
+    },
+    {
+      "id": "moon-jupiter-2027-02-20-sep",
+      "statement": "The Moon passes 2.1° from Jupiter on Sat 20 Feb, 06:16 (as seen from central Europe).",
+      "values": [
+        2.057,
+        20
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Jupiter",
+          "minimumUtc": "2027-02-20T05:16:59.564Z"
+        }
+      }
+    },
+    {
+      "id": "moon-jupiter-2027-02-20-illum",
+      "statement": "The Moon is 99% illuminated then.",
+      "values": [
+        99
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2027-02-20T05:16:59.564Z"
+        }
+      }
+    },
+    {
+      "id": "moon-jupiter-2027-02-20-view",
+      "statement": "Best seen around Fri 19 Feb, 21:16, south-east, 46° up.",
+      "values": [
+        45.5
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "viewing": {
+            "bestLocal": "Fri 19 Feb, 21:16",
+            "bestUtc": "2027-02-19T20:16:59.564Z",
+            "azimuth": 128.2,
+            "altitude": 45.5,
+            "direction": "south-east"
+          }
+        }
+      }
+    },
+    {
+      "id": "phase-full-moon-2027-02-20",
+      "statement": "Full Moon: Sun 21 Feb, 00:24 (central Europe time).",
+      "values": [
+        21
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "quarter": 2
+        }
+      }
+    },
+    {
+      "id": "phase-full-moon-2027-02-20-distance",
+      "statement": "The full Moon on Sun 21 Feb, 00:24 is 363296 km away (centre to centre) and 32.9 arcminutes across.",
+      "values": [
+        363296,
+        32.9,
+        2027
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Moon",
+          "distanceKm": 363296,
+          "angularArcmin": 32.9,
+          "year": 2027
+        }
+      }
+    },
+    {
+      "id": "opposition-mars-2027-02-19",
+      "statement": "Mars reaches opposition on Fri 19 Feb, 16:44: opposite the Sun, up all night, magnitude -1.2.",
+      "values": [
+        19,
+        -1.214
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mars"
+        }
+      }
+    },
+    {
+      "id": "lunar-eclipse-2027-02-20",
+      "statement": "A penumbral lunar eclipse peaks Sun 21 Feb, 00:12; Moon altitude then 49° from central Europe.",
+      "values": [
+        49.148
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "kind": "penumbral"
+        }
+      }
+    },
+    {
+      "id": "visible-mars-2027-02-18",
+      "statement": "Mid-week, Mars (magnitude -1.2) is best seen around 00:00, south, 55° up.",
+      "values": [
+        -1.208,
+        54.625
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mars"
+        }
+      }
+    },
+    {
+      "id": "visible-jupiter-2027-02-18",
+      "statement": "Mid-week, Jupiter (magnitude -2.5) is best seen around 00:00, south, 55° up.",
+      "values": [
+        -2.549,
+        55.335
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Jupiter"
+        }
+      }
+    },
+    {
+      "id": "visible-saturn-2027-02-18",
+      "statement": "Mid-week, Saturn (magnitude 0.7) is best seen around 18:20, south-west, 26° up.",
+      "values": [
+        0.72,
+        25.769
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Saturn"
+        }
+      }
+    },
+    {
+      "id": "mars-distance-opposition",
+      "statement": "At opposition on 19 Feb 2027 Mars is about 101 million km from Earth (centre to centre).",
+      "values": [
+        101.4
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "body": "Mars",
+          "time": "2027-02-19T15:44:00Z",
+          "kind": "geocentric distance"
+        }
+      }
+    },
+    {
+      "id": "mars-closest",
+      "statement": "Mars came within about 55.8 million km of Earth at its closest approach in 2003.",
+      "values": [
+        55.8
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/missions/hubble/mars-closest-encounter/",
+        "title": "Mars: Closest Encounter",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "mars-farthest",
+      "statement": "Mars can be about 401 million km from Earth at its farthest point.",
+      "values": [
+        401
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.jpl.nasa.gov/news/nasas-new-mars-rover-is-ready-for-space-lasers/",
+        "title": "NASA's New Mars Rover Is Ready for Space Lasers",
+        "publisher": "NASA JPL",
+        "accessed": "2026-11-12"
+      }
+    }
+  ]
+}

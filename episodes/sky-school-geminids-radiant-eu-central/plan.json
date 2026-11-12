@@ -1,0 +1,231 @@
+{
+  "episodeId": "sky-school-geminids-radiant-eu-central",
+  "series": "sky-school",
+  "title": "Sky School · Why meteors come from one point",
+  "badge": "Sky School · The radiant",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "skyView",
+      "narration": [
+        "Every December, meteors seem to pour out of one point in Gemini.",
+        "That point is called the radiant — but the meteors do not come from there."
+      ],
+      "factIds": [
+        "meteor-radiant-perspective",
+        "meteors-geminids-2026-12-14-radiant"
+      ],
+      "title": {
+        "kicker": "Sky School",
+        "title": "The radiant",
+        "from": 0.1,
+        "to": 3
+      },
+      "params": {
+        "time": "2026-12-14T00:52:00.000Z",
+        "bodies": [],
+        "radiant": {
+          "ra": 112,
+          "dec": 33
+        },
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "radiant": true
+            },
+            "fov": 92,
+            "dAz": -2,
+            "dAlt": -18
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "radiant": true
+            },
+            "fov": 74,
+            "dAz": 2,
+            "dAlt": -12
+          }
+        ],
+        "constellation": {
+          "id": "Gem",
+          "label": "GEMINI",
+          "from": 0.8
+        },
+        "meteors": {
+          "perSecond": 5,
+          "from": 0
+        },
+        "twilight": 0.1,
+        "constellationLines": 0.07
+      }
+    },
+    {
+      "id": "phaethon",
+      "template": "image",
+      "narration": [
+        "The Geminids are debris from an asteroid called Phaethon, not a comet.",
+        "Earth runs into that stream, and the grains burn up high in the atmosphere."
+      ],
+      "factIds": [
+        "meteors-geminids-2026-12-14-zhr",
+        "meteor-shower-mechanism"
+      ],
+      "params": {
+        "assetId": "phaethon-radar",
+        "zoom": [
+          1.02,
+          1.14
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "parallel",
+      "template": "skyView",
+      "narration": [
+        "The debris travels on parallel paths.",
+        "We meet the stream head-on, so those paths seem to fan out from a point ahead of us.",
+        "It is the same illusion as driving into falling snow.",
+        "That is also why the shower is named after the constellation the radiant sits in."
+      ],
+      "factIds": [
+        "meteor-radiant-perspective"
+      ],
+      "params": {
+        "time": "2026-12-14T00:52:00.000Z",
+        "bodies": [],
+        "radiant": {
+          "ra": 112,
+          "dec": 33
+        },
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "radiant": true
+            },
+            "fov": 122,
+            "dAz": 0,
+            "dAlt": -34
+          },
+          {
+            "at": {
+              "sentence": 2,
+              "edge": "end"
+            },
+            "target": {
+              "radiant": true
+            },
+            "fov": 108,
+            "dAz": 6,
+            "dAlt": -26
+          }
+        ],
+        "meteors": {
+          "perSecond": 5,
+          "from": 0
+        },
+        "twilight": 0.1,
+        "constellationLines": 0.05
+      }
+    },
+    {
+      "id": "peak",
+      "template": "factCard",
+      "narration": [
+        "At the peak, the radiant in Gemini is seventy-three degrees up in the south.",
+        "Under a perfect sky, that is up to a hundred and fifty meteors an hour.",
+        "So the best time is when Gemini is highest, not necessarily the exact peak."
+      ],
+      "factIds": [
+        "meteors-geminids-2026-12-14-radiant",
+        "meteors-geminids-2026-12-14-zhr",
+        "meteors-geminids-2026-12-14-peak"
+      ],
+      "params": {
+        "value": "150",
+        "label": "meteors an hour in a perfect sky",
+        "sourceLine": "Geminids ZHR · International Meteor Organization"
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Positions calculated for central Europe.",
+        "Clear skies."
+      ],
+      "factIds": [
+        "episode-location",
+        "episode-window"
+      ],
+      "params": {
+        "kicker": "Sky School",
+        "cta": "Follow\nfor more\nsky, explained",
+        "footnote": "Positions computed for central Europe · 50°N 15°E",
+        "sky": {
+          "time": "2026-12-14T00:52:00.000Z",
+          "bodies": [],
+          "camera": [
+            {
+              "at": 0,
+              "target": {
+                "azAlt": [
+                  160,
+                  50
+                ]
+              },
+              "fov": 110
+            },
+            {
+              "at": 2.5,
+              "target": {
+                "azAlt": [
+                  170,
+                  55
+                ]
+              },
+              "fov": 100
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "post": {
+    "title": "Why meteors seem to come from one point in the sky 🌠",
+    "description": "The Geminids look like they come from a single point in Gemini, the radiant. They do not: the meteors are debris from asteroid 3200 Phaethon, and they all travel on parallel paths. We meet the stream head-on, so those paths seem to fan out from a point ahead of us. At the peak the radiant is 73° up in the south, where the ideal rate is up to 150 meteors an hour.\n\nImage: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#geminids",
+      "#meteorshower",
+      "#skyschool",
+      "#astronomy",
+      "#science",
+      "#nightsky"
+    ]
+  }
+}

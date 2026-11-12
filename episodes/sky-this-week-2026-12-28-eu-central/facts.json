@@ -1,0 +1,297 @@
+{
+  "facts": [
+    {
+      "id": "episode-window",
+      "statement": "This episode covers Mon 28 Dec to Sun 3 Jan, 2026.",
+      "values": [
+        28,
+        3,
+        2026
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "start": "2026-12-27T23:00:00.000Z",
+          "end": "2027-01-03T23:00:00.000Z"
+        }
+      }
+    },
+    {
+      "id": "episode-location",
+      "statement": "Positions are computed for central Europe (50°N, 15°E).",
+      "values": [
+        50,
+        15
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15
+        }
+      }
+    },
+    {
+      "id": "moon-mars-2026-12-28-sep",
+      "statement": "The Moon passes 5.6° from Mars on Mon 28 Dec, 15:02 (as seen from central Europe).",
+      "values": [
+        5.563,
+        28
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mars",
+          "minimumUtc": "2026-12-28T14:02:52.982Z"
+        }
+      }
+    },
+    {
+      "id": "moon-mars-2026-12-28-illum",
+      "statement": "The Moon is 73% illuminated then.",
+      "values": [
+        73
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2026-12-28T14:02:52.982Z"
+        }
+      }
+    },
+    {
+      "id": "moon-mars-2026-12-28-view",
+      "statement": "Best seen around Mon 28 Dec, 02:42, south-east, 46° up.",
+      "values": [
+        45.9
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "viewing": {
+            "bestLocal": "Mon 28 Dec, 02:42",
+            "bestUtc": "2026-12-28T01:42:52.982Z",
+            "azimuth": 143.6,
+            "altitude": 45.9,
+            "direction": "south-east"
+          }
+        }
+      }
+    },
+    {
+      "id": "meteors-quadrantids-2027-01-03-zhr",
+      "statement": "Quadrantids ZHR ≈ 80 meteors per hour under ideal conditions; parent: asteroid 2003 EH1.",
+      "values": [
+        80
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.imo.net/resources/calendar/",
+        "title": "IMO Meteor Shower Calendar / working list of visual meteor showers",
+        "publisher": "International Meteor Organization",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "meteors-quadrantids-2027-01-03-peak",
+      "statement": "Quadrantids peak (solar longitude 283.15°) falls on Sun 3 Jan, 19:37 (central Europe time).",
+      "values": [
+        3,
+        4
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "solarLongitude": 283.15,
+          "peakUtc": "2027-01-03T18:37:17.337Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-quadrantids-2027-01-03-radiant",
+      "statement": "The radiant (in Boo) is highest in darkness around Mon 4 Jan, 06:22, 70° up in the east.",
+      "values": [
+        70.104
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "radiant": {
+            "ra": 230,
+            "dec": 49
+          },
+          "bestUtc": "2027-01-04T05:22:17.337Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-quadrantids-2027-01-03-moon",
+      "statement": "The Moon is 12% illuminated and 5° up at that time.",
+      "values": [
+        12
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "at": "2027-01-04T05:22:17.337Z",
+          "moonAlt": 4.6869612418384605
+        }
+      }
+    },
+    {
+      "id": "meteors-quadrantids-2027-01-03-moonset",
+      "statement": "Moonset that night: 12:57 local time.",
+      "values": [
+        12,
+        57
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "moonsetUtc": "2027-01-04T11:57:30.789Z"
+        }
+      }
+    },
+    {
+      "id": "phase-last-quarter-2026-12-30",
+      "statement": "Last Quarter: Wed 30 Dec, 20:00 (central Europe time).",
+      "values": [
+        30
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "quarter": 3
+        }
+      }
+    },
+    {
+      "id": "elongation-venus-2027-01-03",
+      "statement": "Venus is 47° from the Sun in the morning sky on Sun 3 Jan, 18:56.",
+      "values": [
+        46.95,
+        3
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Venus"
+        }
+      }
+    },
+    {
+      "id": "visible-venus-2026-12-31",
+      "statement": "Mid-week, Venus (magnitude -4.6) is best seen around 06:30, south-east, 18° up.",
+      "values": [
+        -4.602,
+        18.312
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Venus"
+        }
+      }
+    },
+    {
+      "id": "visible-mars-2026-12-31",
+      "statement": "Mid-week, Mars (magnitude -0.1) is best seen around 02:30, south-east, 46° up.",
+      "values": [
+        -0.115,
+        45.611
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Mars"
+        }
+      }
+    },
+    {
+      "id": "visible-jupiter-2026-12-31",
+      "statement": "Mid-week, Jupiter (magnitude -2.4) is best seen around 01:10, south-east, 45° up.",
+      "values": [
+        -2.403,
+        45.154
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Jupiter"
+        }
+      }
+    },
+    {
+      "id": "visible-saturn-2026-12-31",
+      "statement": "Mid-week, Saturn (magnitude 0.7) is best seen around 18:50, south, 40° up.",
+      "values": [
+        0.72,
+        39.615
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "eu-central",
+          "lat": 50,
+          "lon": 15,
+          "body": "Saturn"
+        }
+      }
+    }
+  ]
+}

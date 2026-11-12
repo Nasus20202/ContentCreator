@@ -1,0 +1,307 @@
+{
+  "episodeId": "sky-this-week-2026-12-14-eu-central",
+  "series": "sky-this-week",
+  "title": "Sky This Week · Dec 14–20, 2026 · central Europe",
+  "badge": "Sky this week · Dec 14–20",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "skyView",
+      "narration": [
+        "The Geminids peak on Sunday night.",
+        "And this year, the Moon gets out of the way."
+      ],
+      "factIds": [
+        "meteors-geminids-2026-12-14-peak",
+        "meteors-geminids-2026-12-14-moon",
+        "meteors-geminids-2026-12-14-moonset"
+      ],
+      "title": {
+        "kicker": "Geminids",
+        "title": "Dec 14",
+        "from": 0.1,
+        "to": 2.9
+      },
+      "chips": [
+        {
+          "text": "PEAK · MON 14 DEC",
+          "from": 0.2,
+          "to": {
+            "sentence": 1
+          }
+        }
+      ],
+      "params": {
+        "time": "2026-12-14T00:52:00.000Z",
+        "bodies": [
+          "Jupiter",
+          "Mars"
+        ],
+        "radiant": {
+          "ra": 112,
+          "dec": 33
+        },
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "radiant": true
+            },
+            "fov": 86,
+            "dAz": -4,
+            "dAlt": -26
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "radiant": true
+            },
+            "fov": 84,
+            "dAz": 2,
+            "dAlt": -20
+          }
+        ],
+        "constellation": {
+          "id": "Gem",
+          "label": "GEMINI",
+          "from": 0.8
+        },
+        "meteors": {
+          "perSecond": 1.4,
+          "from": 0
+        },
+        "twilight": 0.12,
+        "constellationLines": 0.07
+      }
+    },
+    {
+      "id": "when",
+      "template": "skyView",
+      "narration": [
+        "The radiant in Gemini climbs high in the south after midnight.",
+        "That is the best window: after midnight, before dawn.",
+        "Under a perfectly dark sky, the peak can reach a hundred and fifty meteors an hour."
+      ],
+      "factIds": [
+        "meteors-geminids-2026-12-14-radiant",
+        "meteors-geminids-2026-12-14-peak",
+        "meteors-geminids-2026-12-14-zhr",
+        "meteors-geminids-2026-12-14-moonset"
+      ],
+      "chips": [
+        {
+          "text": "AFTER MIDNIGHT · HIGH IN THE SOUTH",
+          "from": 0.2,
+          "to": {
+            "sentence": 1
+          }
+        },
+        {
+          "text": "MOONSET 20:04",
+          "from": {
+            "sentence": 1,
+            "offset": 0.2
+          }
+        }
+      ],
+      "params": {
+        "time": "2026-12-14T00:52:00.000Z",
+        "bodies": [],
+        "radiant": {
+          "ra": 112,
+          "dec": 33
+        },
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "radiant": true
+            },
+            "fov": 78,
+            "dAz": 0,
+            "dAlt": -14
+          },
+          {
+            "at": {
+              "sentence": 2,
+              "edge": "end"
+            },
+            "target": {
+              "radiant": true
+            },
+            "fov": 58,
+            "dAz": 4,
+            "dAlt": -10
+          }
+        ],
+        "constellation": {
+          "id": "Gem",
+          "label": "GEMINI",
+          "from": 0.6
+        },
+        "meteors": {
+          "perSecond": 1.5,
+          "from": 0
+        },
+        "twilight": 0.1,
+        "constellationLines": 0.08
+      }
+    },
+    {
+      "id": "reality",
+      "template": "factCard",
+      "narration": [
+        "That number is for a perfect sky.",
+        "From a town, expect far fewer, so get away from streetlights if you can.",
+        "Give your eyes a few minutes to adjust, and skip the telescope."
+      ],
+      "factIds": [
+        "meteors-geminids-2026-12-14-zhr"
+      ],
+      "params": {
+        "value": "150",
+        "label": "meteors an hour in a perfect sky",
+        "sourceLine": "Geminids ZHR · International Meteor Organization"
+      }
+    },
+    {
+      "id": "moon-saturn",
+      "template": "skyView",
+      "narration": [
+        "And on Thursday evening, the Moon passes Saturn, high in the south."
+      ],
+      "factIds": [
+        "moon-saturn-2026-12-18-sep",
+        "moon-saturn-2026-12-18-view"
+      ],
+      "chips": [
+        {
+          "text": "THU 17 DEC · EVENING",
+          "from": 0.2
+        }
+      ],
+      "params": {
+        "time": "2026-12-17T17:45:00.000Z",
+        "bodies": [
+          "Moon",
+          "Saturn"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "midpoint": [
+                "Moon",
+                "Saturn"
+              ]
+            },
+            "fov": 66,
+            "dAz": 8,
+            "dAlt": -4
+          },
+          {
+            "at": {
+              "sentence": 0,
+              "edge": "end"
+            },
+            "target": {
+              "midpoint": [
+                "Moon",
+                "Saturn"
+              ]
+            },
+            "fov": 24
+          }
+        ],
+        "labels": [
+          {
+            "body": "Moon",
+            "text": "Moon",
+            "side": "right",
+            "from": 1
+          },
+          {
+            "body": "Saturn",
+            "text": "Saturn",
+            "side": "left",
+            "from": 1.5
+          }
+        ],
+        "twilight": 0.35,
+        "constellationLines": 0.07
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Positions calculated for central Europe.",
+        "Clear skies."
+      ],
+      "factIds": [
+        "episode-location",
+        "episode-window"
+      ],
+      "params": {
+        "kicker": "Next week's sky",
+        "cta": "Follow\nso you don't\nmiss it",
+        "footnote": "50°N 15°E",
+        "sky": {
+          "time": "2026-12-14T00:52:00.000Z",
+          "bodies": [
+            "Jupiter"
+          ],
+          "camera": [
+            {
+              "at": 0,
+              "target": {
+                "body": "Jupiter"
+              },
+              "fov": 110
+            },
+            {
+              "at": 2.5,
+              "target": {
+                "azAlt": [
+                  150,
+                  40
+                ]
+              },
+              "fov": 100
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "post": {
+    "title": "The Geminids peak this weekend — and the Moon stays out of the way 🌠",
+    "description": "The Geminids peak in the early hours of 14 December 2026. The radiant in Gemini is highest after midnight, and the Moon sets at 20:04, so the sky is dark. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. The Moon passes Saturn on the night of 17–18 December, 5.5° at closest, and the pair is best seen on Thursday evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#geminids",
+      "#meteorshower",
+      "#astronomy",
+      "#stargazing",
+      "#nightsky",
+      "#space"
+    ]
+  }
+}

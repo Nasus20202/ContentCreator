@@ -1,0 +1,341 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "946335fb823d50f7",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 7.544,
+      "sentences": [
+        {
+          "text": "Before dawn this week, Jupiter and Venus are both in the south-east.",
+          "start": 0.15,
+          "end": 3.864,
+          "words": [
+            {
+              "w": "Before",
+              "start": 0.15,
+              "end": 0.504
+            },
+            {
+              "w": "dawn",
+              "start": 0.504,
+              "end": 0.769
+            },
+            {
+              "w": "this",
+              "start": 0.769,
+              "end": 1.034
+            },
+            {
+              "w": "week,",
+              "start": 1.034,
+              "end": 1.432
+            },
+            {
+              "w": "Jupiter",
+              "start": 1.432,
+              "end": 1.83
+            },
+            {
+              "w": "and",
+              "start": 1.83,
+              "end": 2.051
+            },
+            {
+              "w": "Venus",
+              "start": 2.051,
+              "end": 2.361
+            },
+            {
+              "w": "are",
+              "start": 2.361,
+              "end": 2.582
+            },
+            {
+              "w": "both",
+              "start": 2.582,
+              "end": 2.847
+            },
+            {
+              "w": "in",
+              "start": 2.847,
+              "end": 3.024
+            },
+            {
+              "w": "the",
+              "start": 3.024,
+              "end": 3.245
+            },
+            {
+              "w": "south-east.",
+              "start": 3.245,
+              "end": 3.864
+            }
+          ]
+        },
+        {
+          "text": "Venus is the brighter of the two, low over the horizon.",
+          "start": 4.144,
+          "end": 7.264,
+          "words": [
+            {
+              "w": "Venus",
+              "start": 4.144,
+              "end": 4.452
+            },
+            {
+              "w": "is",
+              "start": 4.452,
+              "end": 4.627
+            },
+            {
+              "w": "the",
+              "start": 4.627,
+              "end": 4.847
+            },
+            {
+              "w": "brighter",
+              "start": 4.847,
+              "end": 5.286
+            },
+            {
+              "w": "of",
+              "start": 5.286,
+              "end": 5.462
+            },
+            {
+              "w": "the",
+              "start": 5.462,
+              "end": 5.682
+            },
+            {
+              "w": "two,",
+              "start": 5.682,
+              "end": 6.033
+            },
+            {
+              "w": "low",
+              "start": 6.033,
+              "end": 6.253
+            },
+            {
+              "w": "over",
+              "start": 6.253,
+              "end": 6.517
+            },
+            {
+              "w": "the",
+              "start": 6.517,
+              "end": 6.736
+            },
+            {
+              "w": "horizon.",
+              "start": 6.736,
+              "end": 7.264
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "new-moon",
+      "audioFile": "voice/new-moon.wav",
+      "duration": 8.132,
+      "sentences": [
+        {
+          "text": "The new Moon is on Wednesday, at 01:52 local time.",
+          "start": 0.15,
+          "end": 3.881,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.441
+            },
+            {
+              "w": "new",
+              "start": 0.441,
+              "end": 0.733
+            },
+            {
+              "w": "Moon",
+              "start": 0.733,
+              "end": 1.083
+            },
+            {
+              "w": "is",
+              "start": 1.083,
+              "end": 1.316
+            },
+            {
+              "w": "on",
+              "start": 1.316,
+              "end": 1.549
+            },
+            {
+              "w": "Wednesday,",
+              "start": 1.549,
+              "end": 2.365
+            },
+            {
+              "w": "at",
+              "start": 2.365,
+              "end": 2.599
+            },
+            {
+              "w": "01:52",
+              "start": 2.599,
+              "end": 2.948
+            },
+            {
+              "w": "local",
+              "start": 2.948,
+              "end": 3.356
+            },
+            {
+              "w": "time.",
+              "start": 3.356,
+              "end": 3.881
+            }
+          ]
+        },
+        {
+          "text": "With no moonlight, the sky is at its darkest for the nights that follow.",
+          "start": 4.161,
+          "end": 7.852,
+          "words": [
+            {
+              "w": "With",
+              "start": 4.161,
+              "end": 4.404
+            },
+            {
+              "w": "no",
+              "start": 4.404,
+              "end": 4.567
+            },
+            {
+              "w": "moonlight,",
+              "start": 4.567,
+              "end": 5.134
+            },
+            {
+              "w": "the",
+              "start": 5.134,
+              "end": 5.337
+            },
+            {
+              "w": "sky",
+              "start": 5.337,
+              "end": 5.54
+            },
+            {
+              "w": "is",
+              "start": 5.54,
+              "end": 5.702
+            },
+            {
+              "w": "at",
+              "start": 5.702,
+              "end": 5.864
+            },
+            {
+              "w": "its",
+              "start": 5.864,
+              "end": 6.067
+            },
+            {
+              "w": "darkest",
+              "start": 6.067,
+              "end": 6.432
+            },
+            {
+              "w": "for",
+              "start": 6.432,
+              "end": 6.635
+            },
+            {
+              "w": "the",
+              "start": 6.635,
+              "end": 6.838
+            },
+            {
+              "w": "nights",
+              "start": 6.838,
+              "end": 7.162
+            },
+            {
+              "w": "that",
+              "start": 7.162,
+              "end": 7.406
+            },
+            {
+              "w": "follow.",
+              "start": 7.406,
+              "end": 7.852
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.718,
+      "sentences": [
+        {
+          "text": "Positions calculated for central Europe.",
+          "start": 0.15,
+          "end": 2.331,
+          "words": [
+            {
+              "w": "Positions",
+              "start": 0.15,
+              "end": 0.65
+            },
+            {
+              "w": "calculated",
+              "start": 0.65,
+              "end": 1.195
+            },
+            {
+              "w": "for",
+              "start": 1.195,
+              "end": 1.422
+            },
+            {
+              "w": "central",
+              "start": 1.422,
+              "end": 1.831
+            },
+            {
+              "w": "Europe.",
+              "start": 1.831,
+              "end": 2.331
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.611,
+          "end": 3.438,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.611,
+              "end": 2.951
+            },
+            {
+              "w": "skies.",
+              "start": 2.951,
+              "end": 3.438
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

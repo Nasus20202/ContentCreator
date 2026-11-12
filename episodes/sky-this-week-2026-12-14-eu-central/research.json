@@ -1,0 +1,166 @@
+{
+  "kind": "sky-week",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "window": {
+    "start": "2026-12-13T23:00:00.000Z",
+    "end": "2026-12-20T23:00:00.000Z"
+  },
+  "generatedAt": "2026-11-12T10:07:21.443Z",
+  "engine": "astronomy-engine@2",
+  "events": [
+    {
+      "id": "meteors-geminids-2026-12-14",
+      "kind": "meteor-shower",
+      "title": "Geminids peak (ZHR ~150)",
+      "time": "2026-12-14T04:52:37.220Z",
+      "score": 85,
+      "bodies": [],
+      "viewing": {
+        "bestLocal": "Mon 14 Dec, 01:52",
+        "bestUtc": "2026-12-14T00:52:37.220Z",
+        "azimuth": 176.8,
+        "altitude": 73,
+        "direction": "south"
+      },
+      "factIds": [
+        "meteors-geminids-2026-12-14-zhr",
+        "meteors-geminids-2026-12-14-peak",
+        "meteors-geminids-2026-12-14-radiant",
+        "meteors-geminids-2026-12-14-moon",
+        "meteors-geminids-2026-12-14-moonset"
+      ],
+      "notes": [
+        "radiant RA 112° Dec 33°",
+        "constellation Gem"
+      ]
+    },
+    {
+      "id": "moon-saturn-2026-12-18",
+      "kind": "moon-pass",
+      "title": "Moon near Saturn (5.5°)",
+      "time": "2026-12-18T06:09:39.502Z",
+      "score": 42,
+      "bodies": [
+        "Moon",
+        "Saturn"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 17 Dec, 18:49",
+        "bestUtc": "2026-12-17T17:49:39.502Z",
+        "azimuth": 180.6,
+        "altitude": 40.9,
+        "direction": "south"
+      },
+      "factIds": [
+        "moon-saturn-2026-12-18-sep",
+        "moon-saturn-2026-12-18-illum",
+        "moon-saturn-2026-12-18-view"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-venus-2026-12-17",
+      "kind": "planet-visibility",
+      "title": "Venus visible (mag -4.7)",
+      "time": "2026-12-17T05:40:00.000Z",
+      "score": 39,
+      "bodies": [
+        "Venus"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 17 Dec, 06:40",
+        "bestUtc": "2026-12-17T05:40:00.000Z",
+        "azimuth": 145.6,
+        "altitude": 21.9,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-venus-2026-12-17"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-jupiter-2026-12-17",
+      "kind": "planet-visibility",
+      "title": "Jupiter visible (mag -2.3)",
+      "time": "2026-12-17T01:10:00.000Z",
+      "score": 29,
+      "bodies": [
+        "Jupiter"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 17 Dec, 02:10",
+        "bestUtc": "2026-12-17T01:10:00.000Z",
+        "azimuth": 134,
+        "altitude": 45.3,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-jupiter-2026-12-17"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-mars-2026-12-17",
+      "kind": "planet-visibility",
+      "title": "Mars visible (mag 0.2)",
+      "time": "2026-12-17T02:10:00.000Z",
+      "score": 19,
+      "bodies": [
+        "Mars"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 17 Dec, 03:10",
+        "bestUtc": "2026-12-17T02:10:00.000Z",
+        "azimuth": 141.1,
+        "altitude": 45.7,
+        "direction": "south-east"
+      },
+      "factIds": [
+        "visible-mars-2026-12-17"
+      ],
+      "notes": []
+    },
+    {
+      "id": "visible-saturn-2026-12-17",
+      "kind": "planet-visibility",
+      "title": "Saturn visible (mag 0.7)",
+      "time": "2026-12-17T17:50:00.000Z",
+      "score": 17,
+      "bodies": [
+        "Saturn"
+      ],
+      "viewing": {
+        "bestLocal": "Thu 17 Dec, 18:50",
+        "bestUtc": "2026-12-17T17:50:00.000Z",
+        "azimuth": 180.7,
+        "altitude": 40.9,
+        "direction": "south"
+      },
+      "factIds": [
+        "visible-saturn-2026-12-17"
+      ],
+      "notes": []
+    },
+    {
+      "id": "phase-first-quarter-2026-12-17",
+      "kind": "moon-phase",
+      "title": "First Quarter",
+      "time": "2026-12-17T05:43:14.883Z",
+      "score": 10,
+      "bodies": [
+        "Moon"
+      ],
+      "factIds": [
+        "phase-first-quarter-2026-12-17"
+      ],
+      "notes": []
+    }
+  ]
+}

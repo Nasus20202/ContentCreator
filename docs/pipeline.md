@@ -14,6 +14,10 @@
 
 Editing `plan.json` after stage 2 and re-running `cc plan` moves the episode back to `planned` (logged as `stage.regress`); every later stage must be re-run. Visual-only edits keep the existing voice (narration hash unchanged) but still require fact-check review, render and QA.
 
+## Look per series
+
+The accent colour comes from the series, not the template: `src/render/palette.ts` maps `sky-this-week` to amber, `sky-tonight` to coral and `sky-school` to cyan. It reaches the composition as `props.accent` and every template reads it through `useAccent()` (canvas code takes it as an argument), so caption highlights, chips, badges, fact-card numbers, the radiant marker and the outro kicker all change together. Add a series → add an entry there; missing series fall back to amber.
+
 ## Timing model
 
 - Narration is split into **sentences**; each is synthesised separately, trimmed, and joined with 0.28 s gaps (0.15 s lead-in).
@@ -23,7 +27,7 @@ Editing `plan.json` after stage 2 and re-running `cc plan` moves the episode bac
 ## Known limitations (honest list)
 
 - **Word timings are estimated** (proportional to word length) because Kokoro returns no timestamps. Captions are sentence-accurate and usually word-close; a forced-alignment pass (e.g. whisper) is the planned fix.
-- **Music** is a locally synthesised ambient pad (license-free, but plain). Swap `synthesizePad` for licensed tracks if desired, and record their licenses as assets.
+- **Music** is a locally synthesised bed (license-free) and a sampled felt piano. A slow Am–F–C–G progression: a steady pad and sub, with the chord tones and a picked-out melody note played from the FreePats Upright Piano KW samples (CC0). Three beds, chosen per series with `music.style` in the plan: `piano` (Sky This Week), `piano-pulse` (Sky Tonight), `piano-air` (Sky School). Optional `music.seed` and `music.transpose` give variants (`scripts/music-variants.ts`). The bed is seeded, so re-renders are identical. It sits at `music.volume` in the pauses and drops to half of that under narration, so the voice stays on top. Audition beds: `pnpm tsx scripts/music-ab.ts` and `pnpm tsx scripts/music-variants.ts`. Swap for licensed tracks if desired, and record their licences as assets.
 - **Fonts** are fetched from Google Fonts at render time (network needed).
 - **Meteor shower peaks** use IMO solar longitudes via astronomy-engine's apparent solar longitude; expect ±~half a day versus IMO's published times. Scripts say "around the peak".
 - **Sky rendering** is stereographic with a stylised horizon; no atmospheric refraction or light pollution model.

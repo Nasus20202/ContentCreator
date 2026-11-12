@@ -1,0 +1,279 @@
+{
+  "facts": [
+    {
+      "id": "episode-window",
+      "statement": "This episode covers Sun 13 Dec to Sat 19 Dec 2026.",
+      "values": [
+        13,
+        19,
+        2026
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "start": "2026-12-13T05:00:00.000Z",
+          "end": "2026-12-20T05:00:00.000Z"
+        }
+      }
+    },
+    {
+      "id": "episode-location",
+      "statement": "Positions are computed for the US East Coast (40.7°N, 74°W).",
+      "values": [
+        40.7,
+        74
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74
+        }
+      }
+    },
+    {
+      "id": "moon-saturn-2026-12-18-sep",
+      "statement": "The Moon passes 5.9° from Saturn on Fri 18 Dec, 02:10 (as seen from the US East Coast).",
+      "values": [
+        5.914,
+        18
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "body": "Saturn",
+          "minimumUtc": "2026-12-18T07:10:40.682Z"
+        }
+      }
+    },
+    {
+      "id": "moon-saturn-2026-12-18-illum",
+      "statement": "The Moon is 61% illuminated then.",
+      "values": [
+        61
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "at": "2026-12-18T07:10:40.682Z"
+        }
+      }
+    },
+    {
+      "id": "moon-saturn-2026-12-18-view",
+      "statement": "Best seen around Thu 17 Dec, 18:50, south, 50° up.",
+      "values": [
+        50.1
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "viewing": {
+            "bestLocal": "Thu 17 Dec, 18:50",
+            "bestUtc": "2026-12-17T23:50:40.682Z",
+            "azimuth": 183.1,
+            "altitude": 50.1,
+            "direction": "south"
+          }
+        }
+      }
+    },
+    {
+      "id": "meteors-geminids-2026-12-14-zhr",
+      "statement": "Geminids ZHR ≈ 150 meteors per hour under ideal conditions; parent: asteroid 3200 Phaethon.",
+      "values": [
+        150
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.imo.net/resources/calendar/",
+        "title": "IMO Meteor Shower Calendar / working list of visual meteor showers",
+        "publisher": "International Meteor Organization",
+        "accessed": "2026-11-12"
+      }
+    },
+    {
+      "id": "meteors-geminids-2026-12-14-peak",
+      "statement": "Geminids peak (solar longitude 262.2°) falls on Sun 13 Dec, 23:52 (the US East Coast time).",
+      "values": [
+        13,
+        14
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "solarLongitude": 262.2,
+          "peakUtc": "2026-12-14T04:52:37.220Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-geminids-2026-12-14-radiant",
+      "statement": "The radiant (in Gem) is highest in darkness around Mon 14 Dec, 01:52, 82° up in the south.",
+      "values": [
+        82.302
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "radiant": {
+            "ra": 112,
+            "dec": 33
+          },
+          "bestUtc": "2026-12-14T06:52:37.220Z"
+        }
+      }
+    },
+    {
+      "id": "meteors-geminids-2026-12-14-moon",
+      "statement": "The Moon is 23% illuminated and below the horizon at that time.",
+      "values": [
+        23
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "at": "2026-12-14T06:52:37.220Z",
+          "moonAlt": -54.23054857124049
+        }
+      }
+    },
+    {
+      "id": "meteors-geminids-2026-12-14-moonset",
+      "statement": "Moonset that night: 20:42 local time.",
+      "values": [
+        20,
+        42
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "moonsetUtc": "2026-12-14T01:42:47.674Z"
+        }
+      }
+    },
+    {
+      "id": "phase-first-quarter-2026-12-17",
+      "statement": "First Quarter: Thu 17 Dec, 00:43 (the US East Coast time).",
+      "values": [
+        17
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "quarter": 1
+        }
+      }
+    },
+    {
+      "id": "visible-venus-2026-12-16",
+      "statement": "Mid-week, Venus (magnitude -4.7) is best seen around 06:20, south-east, 28° up.",
+      "values": [
+        -4.75,
+        27.652
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "body": "Venus"
+        }
+      }
+    },
+    {
+      "id": "visible-mars-2026-12-16",
+      "statement": "Mid-week, Mars (magnitude 0.2) is best seen around 02:20, south-east, 45° up.",
+      "values": [
+        0.203,
+        45.306
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "body": "Mars"
+        }
+      }
+    },
+    {
+      "id": "visible-jupiter-2026-12-16",
+      "statement": "Mid-week, Jupiter (magnitude -2.3) is best seen around 01:40, south-east, 47° up.",
+      "values": [
+        -2.309,
+        46.639
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "body": "Jupiter"
+        }
+      }
+    },
+    {
+      "id": "visible-saturn-2026-12-16",
+      "statement": "Mid-week, Saturn (magnitude 0.7) is best seen around 18:50, south, 50° up.",
+      "values": [
+        0.666,
+        50.15
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2",
+        "inputs": {
+          "location": "us-east",
+          "lat": 40.7,
+          "lon": -74,
+          "body": "Saturn"
+        }
+      }
+    }
+  ]
+}

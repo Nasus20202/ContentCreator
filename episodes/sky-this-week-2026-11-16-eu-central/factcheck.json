@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-11T22:04:48.663Z",
-  "planHash": "6c3d58eb3f1b48b2",
+  "checkedAt": "2026-11-12T14:27:01.563Z",
+  "planHash": "88842961a1846b9d",
   "automated": {
     "ok": true,
     "claims": [
@@ -209,8 +209,8 @@
   },
   "review": {
     "actor": "claude",
-    "at": "2026-11-11T22:04:49.356Z",
+    "at": "2026-11-12T14:27:26.308Z",
     "verdict": "pass",
-    "notes": "Visual-only change (outro camera target). Narration, on-screen text and post copy unchanged from the reviewed version."
+    "notes": "Re-reviewed after visual-only edits: outro footnote now reads '50°N 15°E' (matches location lat 50, lon 15; the spoken sign-off is unchanged), hook opening camera field of view tightened by 20% (framing only), fact card gets a slow push-in (motion only). No narration, number, date, direction or fact id changed; all earlier verification still applies."
   }
 }

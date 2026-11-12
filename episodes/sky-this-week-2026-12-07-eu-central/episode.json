@@ -1,0 +1,25 @@
+{
+  "id": "sky-this-week-2026-12-07-eu-central",
+  "series": "sky-this-week",
+  "createdAt": "2026-11-12T12:33:04.902Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "window": {
+    "start": "2026-12-06T23:00:00.000Z",
+    "end": "2026-12-13T23:00:00.000Z"
+  },
+  "hashes": {
+    "research": "20a72c7814f702a7",
+    "plan": "7fc69c906d2fdd01",
+    "factcheckedPlan": "7fc69c906d2fdd01",
+    "narration": "946335fb823d50f7",
+    "video": "b221f3d7a6cf0d4ffea14f91fdb37a31807382ef95f0f3e67640326a11ef3f1f"
+  },
+  "approvals": []
+}

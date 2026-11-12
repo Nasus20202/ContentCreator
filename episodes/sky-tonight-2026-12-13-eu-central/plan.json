@@ -1,0 +1,207 @@
+{
+  "episodeId": "sky-tonight-2026-12-13-eu-central",
+  "series": "sky-tonight",
+  "title": "Tonight · The Geminids peak",
+  "badge": "Tonight · Dec 13",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "skyView",
+      "narration": [
+        "Tonight the Geminids peak.",
+        "Up to a hundred and fifty an hour in a perfect sky, and the Moon sets before the show starts."
+      ],
+      "factIds": [
+        "meteors-geminids-2026-12-14-zhr",
+        "meteors-geminids-2026-12-14-peak",
+        "meteors-geminids-2026-12-14-moon",
+        "meteors-geminids-2026-12-14-moonset",
+        "episode-window"
+      ],
+      "title": {
+        "kicker": "Geminids",
+        "title": "13 – 14 Dec",
+        "from": 0.1,
+        "to": 3.2
+      },
+      "chips": [
+        {
+          "text": "MOONLESS FROM 20:04",
+          "from": {
+            "sentence": 1,
+            "offset": 0.3
+          }
+        }
+      ],
+      "params": {
+        "time": "2026-12-14T00:52:00.000Z",
+        "bodies": [],
+        "radiant": {
+          "ra": 112,
+          "dec": 33
+        },
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "radiant": true
+            },
+            "fov": 100,
+            "dAz": -3,
+            "dAlt": -22
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "radiant": true
+            },
+            "fov": 78,
+            "dAz": 2,
+            "dAlt": -14
+          }
+        ],
+        "constellation": {
+          "id": "Gem",
+          "label": "GEMINI",
+          "from": 0.8
+        },
+        "meteors": {
+          "perSecond": 1.6,
+          "from": 0
+        },
+        "twilight": 0.1,
+        "constellationLines": 0.07
+      }
+    },
+    {
+      "id": "when",
+      "template": "skyView",
+      "narration": [
+        "Look south after midnight, when the radiant in Gemini is closest to overhead.",
+        "Any hour before dawn works — and give your eyes a few minutes to adapt."
+      ],
+      "factIds": [
+        "meteors-geminids-2026-12-14-radiant",
+        "meteors-geminids-2026-12-14-peak"
+      ],
+      "chips": [
+        {
+          "text": "AFTER MIDNIGHT · HIGH IN THE SOUTH"
+        }
+      ],
+      "params": {
+        "time": "2026-12-14T00:52:00.000Z",
+        "bodies": [],
+        "radiant": {
+          "ra": 112,
+          "dec": 33
+        },
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "radiant": true
+            },
+            "fov": 80,
+            "dAz": 0,
+            "dAlt": -18
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "radiant": true
+            },
+            "fov": 62,
+            "dAz": 5,
+            "dAlt": -10
+          }
+        ],
+        "constellation": {
+          "id": "Gem",
+          "label": "GEMINI",
+          "from": 0.6
+        },
+        "meteors": {
+          "perSecond": 1.5,
+          "from": 0
+        },
+        "twilight": 0.1,
+        "constellationLines": 0.08
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Positions calculated for central Europe.",
+        "Clear skies."
+      ],
+      "factIds": [
+        "episode-location",
+        "episode-window"
+      ],
+      "params": {
+        "kicker": "Next event",
+        "cta": "Follow\nso you don't\nmiss it",
+        "footnote": "Positions computed for central Europe · 50°N 15°E",
+        "sky": {
+          "time": "2026-12-14T00:52:00.000Z",
+          "bodies": [
+            "Jupiter"
+          ],
+          "camera": [
+            {
+              "at": 0,
+              "target": {
+                "body": "Jupiter"
+              },
+              "fov": 100
+            },
+            {
+              "at": 2,
+              "target": {
+                "azAlt": [
+                  160,
+                  40
+                ]
+              },
+              "fov": 96
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "post": {
+    "title": "Tonight: the Geminids peak, and the Moon stays away 🌠",
+    "description": "The Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#geminids",
+      "#tonight",
+      "#meteorshower",
+      "#stargazing",
+      "#nightsky"
+    ]
+  }
+}

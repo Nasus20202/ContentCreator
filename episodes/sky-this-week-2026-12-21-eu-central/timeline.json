@@ -1,0 +1,526 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "9d6f6d57e354da59",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 7.332,
+      "sentences": [
+        {
+          "text": "This Christmas Eve, the full Moon is the closest of the year.",
+          "start": 0.15,
+          "end": 3.255,
+          "words": [
+            {
+              "w": "This",
+              "start": 0.15,
+              "end": 0.389
+            },
+            {
+              "w": "Christmas",
+              "start": 0.389,
+              "end": 0.827
+            },
+            {
+              "w": "Eve,",
+              "start": 0.827,
+              "end": 1.145
+            },
+            {
+              "w": "the",
+              "start": 1.145,
+              "end": 1.344
+            },
+            {
+              "w": "full",
+              "start": 1.344,
+              "end": 1.583
+            },
+            {
+              "w": "Moon",
+              "start": 1.583,
+              "end": 1.822
+            },
+            {
+              "w": "is",
+              "start": 1.822,
+              "end": 1.981
+            },
+            {
+              "w": "the",
+              "start": 1.981,
+              "end": 2.18
+            },
+            {
+              "w": "closest",
+              "start": 2.18,
+              "end": 2.539
+            },
+            {
+              "w": "of",
+              "start": 2.539,
+              "end": 2.698
+            },
+            {
+              "w": "the",
+              "start": 2.698,
+              "end": 2.897
+            },
+            {
+              "w": "year.",
+              "start": 2.897,
+              "end": 3.255
+            }
+          ]
+        },
+        {
+          "text": "It is almost fourteen percent wider than the year's farthest full Moon.",
+          "start": 3.535,
+          "end": 7.052,
+          "words": [
+            {
+              "w": "It",
+              "start": 3.535,
+              "end": 3.699
+            },
+            {
+              "w": "is",
+              "start": 3.699,
+              "end": 3.862
+            },
+            {
+              "w": "almost",
+              "start": 3.862,
+              "end": 4.19
+            },
+            {
+              "w": "fourteen",
+              "start": 4.19,
+              "end": 4.598
+            },
+            {
+              "w": "percent",
+              "start": 4.598,
+              "end": 4.966
+            },
+            {
+              "w": "wider",
+              "start": 4.966,
+              "end": 5.253
+            },
+            {
+              "w": "than",
+              "start": 5.253,
+              "end": 5.498
+            },
+            {
+              "w": "the",
+              "start": 5.498,
+              "end": 5.702
+            },
+            {
+              "w": "year's",
+              "start": 5.702,
+              "end": 6.029
+            },
+            {
+              "w": "farthest",
+              "start": 6.029,
+              "end": 6.438
+            },
+            {
+              "w": "full",
+              "start": 6.438,
+              "end": 6.684
+            },
+            {
+              "w": "Moon.",
+              "start": 6.684,
+              "end": 7.052
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "distance",
+      "audioFile": "voice/distance.wav",
+      "duration": 7.817,
+      "sentences": [
+        {
+          "text": "Three hundred and fifty-seven thousand kilometres separate the Moon from Earth tonight.",
+          "start": 0.15,
+          "end": 4.544,
+          "words": [
+            {
+              "w": "Three",
+              "start": 0.15,
+              "end": 0.455
+            },
+            {
+              "w": "hundred",
+              "start": 0.455,
+              "end": 0.846
+            },
+            {
+              "w": "and",
+              "start": 0.846,
+              "end": 1.064
+            },
+            {
+              "w": "fifty-seven",
+              "start": 1.064,
+              "end": 1.586
+            },
+            {
+              "w": "thousand",
+              "start": 1.586,
+              "end": 2.021
+            },
+            {
+              "w": "kilometres",
+              "start": 2.021,
+              "end": 2.543
+            },
+            {
+              "w": "separate",
+              "start": 2.543,
+              "end": 2.978
+            },
+            {
+              "w": "the",
+              "start": 2.978,
+              "end": 3.195
+            },
+            {
+              "w": "Moon",
+              "start": 3.195,
+              "end": 3.457
+            },
+            {
+              "w": "from",
+              "start": 3.457,
+              "end": 3.718
+            },
+            {
+              "w": "Earth",
+              "start": 3.718,
+              "end": 4.022
+            },
+            {
+              "w": "tonight.",
+              "start": 4.022,
+              "end": 4.544
+            }
+          ]
+        },
+        {
+          "text": "That is the closest full Moon of 2026.",
+          "start": 4.824,
+          "end": 7.537,
+          "words": [
+            {
+              "w": "That",
+              "start": 4.824,
+              "end": 5.156
+            },
+            {
+              "w": "is",
+              "start": 5.156,
+              "end": 5.378
+            },
+            {
+              "w": "the",
+              "start": 5.378,
+              "end": 5.655
+            },
+            {
+              "w": "closest",
+              "start": 5.655,
+              "end": 6.153
+            },
+            {
+              "w": "full",
+              "start": 6.153,
+              "end": 6.485
+            },
+            {
+              "w": "Moon",
+              "start": 6.485,
+              "end": 6.818
+            },
+            {
+              "w": "of",
+              "start": 6.818,
+              "end": 7.039
+            },
+            {
+              "w": "2026.",
+              "start": 7.039,
+              "end": 7.537
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "where",
+      "audioFile": "voice/where.wav",
+      "duration": 5.633,
+      "sentences": [
+        {
+          "text": "Around midnight it is high in the south.",
+          "start": 0.15,
+          "end": 2.161,
+          "words": [
+            {
+              "w": "Around",
+              "start": 0.15,
+              "end": 0.465
+            },
+            {
+              "w": "midnight",
+              "start": 0.465,
+              "end": 0.86
+            },
+            {
+              "w": "it",
+              "start": 0.86,
+              "end": 1.017
+            },
+            {
+              "w": "is",
+              "start": 1.017,
+              "end": 1.175
+            },
+            {
+              "w": "high",
+              "start": 1.175,
+              "end": 1.412
+            },
+            {
+              "w": "in",
+              "start": 1.412,
+              "end": 1.569
+            },
+            {
+              "w": "the",
+              "start": 1.569,
+              "end": 1.767
+            },
+            {
+              "w": "south.",
+              "start": 1.767,
+              "end": 2.161
+            }
+          ]
+        },
+        {
+          "text": "It is bright enough to wash out all but the brightest stars.",
+          "start": 2.441,
+          "end": 5.353,
+          "words": [
+            {
+              "w": "It",
+              "start": 2.441,
+              "end": 2.596
+            },
+            {
+              "w": "is",
+              "start": 2.596,
+              "end": 2.752
+            },
+            {
+              "w": "bright",
+              "start": 2.752,
+              "end": 3.062
+            },
+            {
+              "w": "enough",
+              "start": 3.062,
+              "end": 3.373
+            },
+            {
+              "w": "to",
+              "start": 3.373,
+              "end": 3.528
+            },
+            {
+              "w": "wash",
+              "start": 3.528,
+              "end": 3.761
+            },
+            {
+              "w": "out",
+              "start": 3.761,
+              "end": 3.955
+            },
+            {
+              "w": "all",
+              "start": 3.955,
+              "end": 4.149
+            },
+            {
+              "w": "but",
+              "start": 4.149,
+              "end": 4.344
+            },
+            {
+              "w": "the",
+              "start": 4.344,
+              "end": 4.538
+            },
+            {
+              "w": "brightest",
+              "start": 4.538,
+              "end": 4.965
+            },
+            {
+              "w": "stars.",
+              "start": 4.965,
+              "end": 5.353
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "moon-jupiter",
+      "audioFile": "voice/moon-jupiter.wav",
+      "duration": 4.688,
+      "sentences": [
+        {
+          "text": "On the twenty-seventh, the Moon passes Jupiter, high in the south before dawn.",
+          "start": 0.15,
+          "end": 4.408,
+          "words": [
+            {
+              "w": "On",
+              "start": 0.15,
+              "end": 0.326
+            },
+            {
+              "w": "the",
+              "start": 0.326,
+              "end": 0.545
+            },
+            {
+              "w": "twenty-seventh,",
+              "start": 0.545,
+              "end": 1.335
+            },
+            {
+              "w": "the",
+              "start": 1.335,
+              "end": 1.555
+            },
+            {
+              "w": "Moon",
+              "start": 1.555,
+              "end": 1.818
+            },
+            {
+              "w": "passes",
+              "start": 1.818,
+              "end": 2.169
+            },
+            {
+              "w": "Jupiter,",
+              "start": 2.169,
+              "end": 2.696
+            },
+            {
+              "w": "high",
+              "start": 2.696,
+              "end": 2.959
+            },
+            {
+              "w": "in",
+              "start": 2.959,
+              "end": 3.135
+            },
+            {
+              "w": "the",
+              "start": 3.135,
+              "end": 3.354
+            },
+            {
+              "w": "south",
+              "start": 3.354,
+              "end": 3.661
+            },
+            {
+              "w": "before",
+              "start": 3.661,
+              "end": 4.013
+            },
+            {
+              "w": "dawn.",
+              "start": 4.013,
+              "end": 4.408
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.718,
+      "sentences": [
+        {
+          "text": "Positions calculated for central Europe.",
+          "start": 0.15,
+          "end": 2.331,
+          "words": [
+            {
+              "w": "Positions",
+              "start": 0.15,
+              "end": 0.65
+            },
+            {
+              "w": "calculated",
+              "start": 0.65,
+              "end": 1.195
+            },
+            {
+              "w": "for",
+              "start": 1.195,
+              "end": 1.422
+            },
+            {
+              "w": "central",
+              "start": 1.422,
+              "end": 1.831
+            },
+            {
+              "w": "Europe.",
+              "start": 1.831,
+              "end": 2.331
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.611,
+          "end": 3.438,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.611,
+              "end": 2.951
+            },
+            {
+              "w": "skies.",
+              "start": 2.951,
+              "end": 3.438
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

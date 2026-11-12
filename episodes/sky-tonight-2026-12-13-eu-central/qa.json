@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-11-12T12:14:28.840Z",
+  "videoSha256": "4806ceb3614df2d151fc07df96f00adddadbec054c16572a08d628149a79d49b",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "20.70 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 20.70 s vs timeline 20.63 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14.3 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.5 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 2.39
+    },
+    {
+      "file": "qa/00-hook-2.jpg",
+      "sceneId": "hook",
+      "tSec": 7.37
+    },
+    {
+      "file": "qa/01-when-0.jpg",
+      "sceneId": "when",
+      "tSec": 8.22
+    },
+    {
+      "file": "qa/01-when-1.jpg",
+      "sceneId": "when",
+      "tSec": 12.87
+    },
+    {
+      "file": "qa/01-when-2.jpg",
+      "sceneId": "when",
+      "tSec": 16.53
+    },
+    {
+      "file": "qa/02-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 17.38
+    },
+    {
+      "file": "qa/02-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 19.84
+    },
+    {
+      "file": "qa/02-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 20.53
+    }
+  ]
+}
