@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-tonight-2026-12-13-eu-central |
 | Series | sky-tonight |
-| Stage | **rendered** |
+| Stage | **qa-passed** |
 | Created | 2026-11-12T10:11:35.666Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-12-12T23:00:00.000Z → 2026-12-19T23:00:00.000Z |
@@ -79,7 +79,7 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 
 ## Render
 
-20.7 s, 1080×1920@30, sha256 `4806ceb3614df2d1…`, rendered 2026-11-12T12:14:28.261Z in 97 s.
+20.7 s, 1080×1920@30, sha256 `ffd2700254aa22a9…`, rendered 2026-11-12T15:04:08.575Z in 98 s.
 
 ## QA
 
@@ -93,6 +93,8 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 | loudness | ✅ | -14.3 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
+
+Visual review by **claude** (2026-11-12T15:04:40.809Z): **pass** — Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch.
 
 ## Event log
 
@@ -150,3 +152,8 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine; mete
 | 2026-11-12 12:14:28 | pipeline | rendered | stage.regress | 395ad8b |
 | 2026-11-12 12:14:28 | pipeline | rendered | render.video | 395ad8b |
 | 2026-11-12 12:14:32 | pipeline | qa | qa.automated | 395ad8b |
+| 2026-11-12 15:04:08 | pipeline | rendered | stage.advance | ca37d95 |
+| 2026-11-12 15:04:08 | pipeline | rendered | render.video | ca37d95 |
+| 2026-11-12 15:04:12 | pipeline | qa | qa.automated | ca37d95 |
+| 2026-11-12 15:04:40 | claude | qa | qa.review | ca37d95 |
+| 2026-11-12 15:04:40 | claude | qa-passed | stage.advance | ca37d95 |

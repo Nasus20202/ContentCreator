@@ -2,7 +2,7 @@
   "id": "sky-tonight-2026-12-13-eu-central",
   "series": "sky-tonight",
   "createdAt": "2026-11-12T10:11:35.666Z",
-  "stage": "rendered",
+  "stage": "qa-passed",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -19,7 +19,7 @@
     "plan": "789fbe6971c9a1a1",
     "factcheckedPlan": "789fbe6971c9a1a1",
     "narration": "51acf502bab95ee9",
-    "video": "4806ceb3614df2d151fc07df96f00adddadbec054c16572a08d628149a79d49b"
+    "video": "ffd2700254aa22a913e9d2a432867a84d4eb07eccaf8415fecf370f8595ceddd"
   },
   "approvals": []
 }

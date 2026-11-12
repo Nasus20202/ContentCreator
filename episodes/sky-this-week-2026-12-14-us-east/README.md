@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-this-week-2026-12-14-us-east |
 | Series | sky-this-week |
-| Stage | **rendered** |
+| Stage | **qa-passed** |
 | Created | 2026-11-12T10:17:22.648Z |
 | Location | the US East Coast (40.7°, -74°, America/New_York) |
 | Window | 2026-12-13T05:00:00.000Z → 2026-12-20T05:00:00.000Z |
@@ -91,7 +91,7 @@ Positions computed for the US East Coast (40.7°N, 74°W) with astronomy-engine;
 
 ## Render
 
-35.9 s, 1080×1920@30, sha256 `214a8d36843f4d39…`, rendered 2026-11-12T12:27:52.008Z in 129 s.
+35.9 s, 1080×1920@30, sha256 `eb499c094957a681…`, rendered 2026-11-12T15:02:22.617Z in 143 s.
 
 ## QA
 
@@ -102,9 +102,11 @@ Positions computed for the US East Coast (40.7°N, 74°W) with astronomy-engine;
 | audio-present | ✅ | aac |
 | duration | ✅ | 35.90 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 35.90 s vs timeline 35.80 s |
-| loudness | ✅ | -14 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.4 dBFS |
+| loudness | ✅ | -14.1 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.3 dBFS |
 | no-black-gaps | ✅ | none |
+
+Visual review by **claude** (2026-11-12T15:04:40.235Z): **pass** — Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch.
 
 ## Event log
 
@@ -170,3 +172,8 @@ Positions computed for the US East Coast (40.7°N, 74°W) with astronomy-engine;
 | 2026-11-12 12:27:52 | pipeline | rendered | stage.advance | 395ad8b |
 | 2026-11-12 12:27:52 | pipeline | rendered | render.video | 395ad8b |
 | 2026-11-12 12:27:58 | pipeline | qa | qa.automated | 395ad8b |
+| 2026-11-12 15:02:22 | pipeline | rendered | stage.advance | ca37d95 |
+| 2026-11-12 15:02:22 | pipeline | rendered | render.video | ca37d95 |
+| 2026-11-12 15:02:29 | pipeline | qa | qa.automated | ca37d95 |
+| 2026-11-12 15:04:40 | claude | qa | qa.review | ca37d95 |
+| 2026-11-12 15:04:40 | claude | qa-passed | stage.advance | ca37d95 |

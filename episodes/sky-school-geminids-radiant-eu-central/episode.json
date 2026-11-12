@@ -2,7 +2,7 @@
   "id": "sky-school-geminids-radiant-eu-central",
   "series": "sky-school",
   "createdAt": "2026-11-12T10:01:31.500Z",
-  "stage": "rendered",
+  "stage": "qa-passed",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -19,7 +19,7 @@
     "plan": "713b505346567c9d",
     "factcheckedPlan": "713b505346567c9d",
     "narration": "309af929ba7cc710",
-    "video": "4a0af52e6691f28b533e813a9d79f8cc63e90584d02176097dfbb30ff39fda5c"
+    "video": "df760f71ce5c87b18f75b3b85ae0819071d6eb442d45e4a40437a78d6bd5b147"
   },
   "approvals": []
 }

@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T11:58:26.089Z",
-  "videoSha256": "5393aef834c11ea342984f48619ab1dbe01a94d75dbc247b0071223b615a74ba",
+  "checkedAt": "2026-11-12T14:59:52.640Z",
+  "videoSha256": "13ac71a9409f7f9bd80a3e125254551a0c90e5a721062c6e6e05192152392565",
   "automated": [
     {
       "name": "resolution",
@@ -132,8 +132,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T11:59:17.292Z",
+    "at": "2026-11-12T15:04:39.666Z",
     "verdict": "pass",
-    "notes": "Reviewed 17 frames. Cyan Sky School accent. Orbit3D labels ('Mars / 101 million km', 'Earth / you are here') now sit above the disc and clear of the caption band; the earlier Mars-label/caption collision is gone. Hook title, '-1.2 magnitude' label, 101,000,000 km fact card with source line, and the outro are all inside the safe zone. Motion smoothness and the audio mix are not judgeable from stills — flagged for the human reviewer."
+    "notes": "Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch."
   }
 }

@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-geminids-radiant-eu-central |
 | Series | sky-school |
-| Stage | **rendered** |
+| Stage | **qa-passed** |
 | Created | 2026-11-12T10:01:31.500Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-12-13T23:00:00.000Z → 2026-12-20T23:00:00.000Z |
@@ -97,7 +97,7 @@ Image: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions co
 
 ## Render
 
-50.6 s, 1080×1920@30, sha256 `4a0af52e6691f28b…`, rendered 2026-11-12T12:17:16.834Z in 164 s.
+50.6 s, 1080×1920@30, sha256 `df760f71ce5c87b1…`, rendered 2026-11-12T14:57:58.556Z in 159 s.
 
 ## QA
 
@@ -108,9 +108,11 @@ Image: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions co
 | audio-present | ✅ | aac |
 | duration | ✅ | 50.60 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 50.60 s vs timeline 50.57 s |
-| loudness | ✅ | -14.3 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.1 dBFS |
+| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
+
+Visual review by **claude** (2026-11-12T15:04:39.105Z): **pass** — Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch.
 
 ## Event log
 
@@ -169,3 +171,8 @@ Image: radar imagery of Phaethon, NASA / JPL / Arecibo Observatory. Positions co
 | 2026-11-12 12:17:16 | pipeline | rendered | stage.regress | 395ad8b |
 | 2026-11-12 12:17:16 | pipeline | rendered | render.video | 395ad8b |
 | 2026-11-12 12:17:24 | pipeline | qa | qa.automated | 395ad8b |
+| 2026-11-12 14:57:58 | pipeline | rendered | stage.advance | ca37d95 |
+| 2026-11-12 14:57:58 | pipeline | rendered | render.video | ca37d95 |
+| 2026-11-12 14:58:06 | pipeline | qa | qa.automated | ca37d95 |
+| 2026-11-12 15:04:39 | claude | qa | qa.review | ca37d95 |
+| 2026-11-12 15:04:39 | claude | qa-passed | stage.advance | ca37d95 |

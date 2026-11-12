@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T12:27:52.716Z",
-  "videoSha256": "214a8d36843f4d390663ea4f6983838ee85480ba41ea6f2690b6d66f3e0e5d41",
+  "checkedAt": "2026-11-12T15:02:23.356Z",
+  "videoSha256": "eb499c094957a6812e54fba33af03befc39a727950e25da6a7b76eaa40de8ce8",
   "automated": [
     {
       "name": "resolution",
@@ -30,12 +30,12 @@
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14 LUFS (target -18…-11)"
+      "detail": "-14.1 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.4 dBFS"
+      "detail": "-1.3 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -124,5 +124,11 @@
       "sceneId": "outro",
       "tSec": 35.7
     }
-  ]
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-12T15:04:40.235Z",
+    "verdict": "pass",
+    "notes": "Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch."
+  }
 }

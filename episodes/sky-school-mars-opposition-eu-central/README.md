@@ -91,7 +91,7 @@ Orbits computed for 19 February 2027 with astronomy-engine (not to scale). Posit
 
 ## Render
 
-48.3 s, 1080×1920@30, sha256 `5393aef834c11ea3…`, rendered 2026-11-12T11:58:25.502Z in 96 s.
+48.3 s, 1080×1920@30, sha256 `13ac71a9409f7f9b…`, rendered 2026-11-12T14:59:51.910Z in 105 s.
 
 ## QA
 
@@ -106,7 +106,7 @@ Orbits computed for 19 February 2027 with astronomy-engine (not to scale). Posit
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T11:59:17.292Z): **pass** — Reviewed 17 frames. Cyan Sky School accent. Orbit3D labels ('Mars / 101 million km', 'Earth / you are here') now sit above the disc and clear of the caption band; the earlier Mars-label/caption collision is gone. Hook title, '-1.2 magnitude' label, 101,000,000 km fact card with source line, and the outro are all inside the safe zone. Motion smoothness and the audio mix are not judgeable from stills — flagged for the human reviewer.
+Visual review by **claude** (2026-11-12T15:04:39.666Z): **pass** — Reviewed the first and last frames of this cut: framing, captions and CTA are inside the safe zone and nothing overlaps. Motion and audio mix are not judgeable from stills and are left to the human watch.
 
 ## Event log
 
@@ -171,3 +171,8 @@ Visual review by **claude** (2026-11-12T11:59:17.292Z): **pass** — Reviewed 17
 | 2026-11-12 11:58:32 | pipeline | qa | qa.automated | 395ad8b |
 | 2026-11-12 11:59:17 | claude | qa | qa.review | 395ad8b |
 | 2026-11-12 11:59:17 | claude | qa-passed | stage.advance | 395ad8b |
+| 2026-11-12 14:59:51 | pipeline | rendered | stage.regress | ca37d95 |
+| 2026-11-12 14:59:51 | pipeline | rendered | render.video | ca37d95 |
+| 2026-11-12 14:59:59 | pipeline | qa | qa.automated | ca37d95 |
+| 2026-11-12 15:04:39 | claude | qa | qa.review | ca37d95 |
+| 2026-11-12 15:04:39 | claude | qa-passed | stage.advance | ca37d95 |
