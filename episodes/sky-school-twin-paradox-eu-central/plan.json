@@ -113,6 +113,33 @@
       }
     },
     {
+      "id": "centre-compare",
+      "template": "compare",
+      "narration": [
+        "Here are both clocks for the centre, on a logarithmic scale."
+      ],
+      "factIds": [
+        "trip-times"
+      ],
+      "params": {
+        "heading": "Round trip to the centre",
+        "scale": "log",
+        "bars": [
+          {
+            "label": "You, on board",
+            "value": 40,
+            "display": "40 years"
+          },
+          {
+            "label": "On Earth",
+            "value": 52000,
+            "display": "52,000 years"
+          }
+        ],
+        "note": "Logarithmic scale: bar length follows the log of the time."
+      }
+    },
+    {
       "id": "andromeda",
       "template": "factCard",
       "narration": [

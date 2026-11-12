@@ -208,6 +208,21 @@ export const ScaleParams = z.object({
 });
 export type ScaleParams = z.infer<typeof ScaleParams>;
 
+/**
+ * Horizontal bars with a shared unit, drawn to scale (linear) or on a log scale for values that span
+ * orders of magnitude. On a log scale every value must be at least 1, so the bars start from 1.
+ */
+export const CompareParams = z.object({
+  heading: z.string().max(50).optional(),
+  scale: z.enum(['linear', 'log']).default('linear'),
+  bars: z
+    .array(z.object({ label: z.string().max(40), value: z.number().min(1), display: z.string().max(20) }))
+    .min(2)
+    .max(3),
+  note: z.string().max(80).optional(),
+});
+export type CompareParams = z.infer<typeof CompareParams>;
+
 export const ImageParams = z.object({
   assetId: z.string(),
   zoom: z.tuple([z.number().min(1), z.number().min(1)]).default([1.0, 1.12]),
@@ -242,6 +257,7 @@ export const Scene = z.discriminatedUnion('template', [
   z.object({ ...SceneBase, template: z.literal('orbit3d'), params: Orbit3DParams }),
   z.object({ ...SceneBase, template: z.literal('factCard'), params: FactCardParams }),
   z.object({ ...SceneBase, template: z.literal('scale'), params: ScaleParams }),
+  z.object({ ...SceneBase, template: z.literal('compare'), params: CompareParams }),
   z.object({ ...SceneBase, template: z.literal('image'), params: ImageParams }),
   z.object({ ...SceneBase, template: z.literal('outro'), params: OutroParams }),
 ]);

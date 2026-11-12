@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T15:16:40.311Z",
-  "videoSha256": "abce08a65d7f5e955201c7a3c1a505c0952d21f0baf7a953cdb8a8c551717e57",
+  "checkedAt": "2026-11-12T16:04:28.905Z",
+  "videoSha256": "368aef1c7e916a7c7d5522a57c92cb844327218a2bb05f70dda42e830de3a6be",
   "automated": [
     {
       "name": "resolution",
@@ -20,12 +20,12 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "35.90 s (limit 60 s)"
+      "detail": "42.00 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 35.90 s vs timeline 35.83 s"
+      "detail": "video 42.00 s vs timeline 41.97 s"
     },
     {
       "name": "loudness",
@@ -35,7 +35,7 @@
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.5 dBFS"
+      "detail": "-1.4 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -105,25 +105,35 @@
       "tSec": 32.03
     },
     {
-      "file": "qa/04-outro-0.jpg",
-      "sceneId": "outro",
+      "file": "qa/04-compare-0.jpg",
+      "sceneId": "compare",
       "tSec": 32.88
     },
     {
-      "file": "qa/04-outro-1.jpg",
-      "sceneId": "outro",
-      "tSec": 35.05
+      "file": "qa/04-compare-1.jpg",
+      "sceneId": "compare",
+      "tSec": 38.17
     },
     {
-      "file": "qa/04-outro-2.jpg",
+      "file": "qa/05-outro-0.jpg",
       "sceneId": "outro",
-      "tSec": 35.73
+      "tSec": 39.02
+    },
+    {
+      "file": "qa/05-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 41.18
+    },
+    {
+      "file": "qa/05-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 41.87
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T15:17:00.509Z",
+    "at": "2026-11-12T16:04:44.006Z",
     "verdict": "pass",
-    "notes": "Reviewed all 15 frames: the Sun image holds the hook with the light-time chip and title clear of the captions; number cards (299,792 / 150 million km / 43 min) and sources read cleanly; the outro CTA sits in the safe zone with no overlap. Motion and audio not judgeable from stills."
+    "notes": "Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch."
   }
 }

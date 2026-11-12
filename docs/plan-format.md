@@ -21,7 +21,7 @@ Authoritative definition: `Plan` in `src/core/schemas.ts`. Worked example: `epis
 | Field       | Meaning                                                                   |
 | ----------- | ------------------------------------------------------------------------- |
 | `id`        | unique, kebab-case                                                        |
-| `template`  | `skyView` · `orbit3d` · `factCard` · `scale` · `image` · `outro`                    |
+| `template`  | `skyView` · `orbit3d` · `factCard` · `scale` · `compare` · `image` · `outro`                    |
 | `narration` | array of sentences (the timing unit)                                      |
 | `factIds`   | facts backing **every** claim in narration + on-screen text of this scene |
 | `chips`     | `[{ text ≤ 48, from, to? }]` accent-coloured info pills under the badge   |
@@ -60,6 +60,10 @@ Authoritative definition: `Plan` in `src/core/schemas.ts`. Worked example: `epis
 ## `scale`
 
 `{ total, totalLabel ≤ 40, markers: [{ at, label ≤ 40 }] (1–4) }` — a vertical distance bar from 0 to `total`, with markers placed linearly. Every marker label and the far-end label must be backed by a fact.
+
+## `compare`
+
+`{ heading? ≤ 50, scale: "linear" | "log", bars: [{ label ≤ 40, value ≥ 1, display ≤ 20 }] (2–3), note? ≤ 80 }` — horizontal bars in one unit. `value` sets the length; `display` is the printed number. Each bar's display and label must be backed by a fact. Use `log` when the values differ by orders of magnitude, and say so in `note`.
 
 ## `image` — real imagery
 

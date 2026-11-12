@@ -37,6 +37,10 @@ _None recorded yet._
 > Jupiter is about five and a fifth astronomical units away on average.
 > On average, sunlight takes forty-three minutes to reach it.
 
+**compare** (`compare`) — facts: `sun-light-time`, `jupiter-light-time`
+
+> Side by side, the Sun's light is a short bar, and Jupiter's is about five times longer.
+
 **outro** (`outro`) — facts: —
 
 > Follow for more sky, explained.
@@ -74,7 +78,7 @@ Image: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narrati
 
 ## Render
 
-35.9 s, 1080×1920@30, sha256 `abce08a65d7f5e95…`, rendered 2026-11-12T15:16:39.482Z in 30 s.
+42.0 s, 1080×1920@30, sha256 `368aef1c7e916a7c…`, rendered 2026-11-12T16:04:27.975Z in 41 s.
 
 ## QA
 
@@ -83,13 +87,13 @@ Image: NASA / JPL / JPL-Caltech / NRL / GSFC, full-disk view of the Sun. Narrati
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 35.90 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 35.90 s vs timeline 35.83 s |
+| duration | ✅ | 42.00 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 42.00 s vs timeline 41.97 s |
 | loudness | ✅ | -14.2 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.5 dBFS |
+| true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T15:17:00.509Z): **pass** — Reviewed all 15 frames: the Sun image holds the hook with the light-time chip and title clear of the captions; number cards (299,792 / 150 million km / 43 min) and sources read cleanly; the outro CTA sits in the safe zone with no overlap. Motion and audio not judgeable from stills.
+Visual review by **claude** (2026-11-12T16:04:44.006Z): **pass** — Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch.
 
 ## Event log
 
@@ -117,3 +121,21 @@ Visual review by **claude** (2026-11-12T15:17:00.509Z): **pass** — Reviewed al
 | 2026-11-12 15:16:46 | pipeline | qa | qa.automated | 9682277 |
 | 2026-11-12 15:17:00 | claude | qa | qa.review | 9682277 |
 | 2026-11-12 15:17:00 | claude | qa-passed | stage.advance | 9682277 |
+| 2026-11-12 15:55:40 | claude | planned | plan.check | d707811 |
+| 2026-11-12 15:55:40 | claude | planned | stage.regress | d707811 |
+| 2026-11-12 15:55:41 | pipeline | factcheck | factcheck.automated | d707811 |
+| 2026-11-12 15:58:28 | claude | factcheck | factcheck.review | d707811 |
+| 2026-11-12 15:58:28 | claude | factchecked | stage.advance | d707811 |
+| 2026-11-12 15:58:57 | pipeline | voiced | stage.advance | d707811 |
+| 2026-11-12 15:58:57 | pipeline | voiced | voice.synthesize | d707811 |
+| 2026-11-12 15:59:30 | pipeline | rendered | stage.advance | d707811 |
+| 2026-11-12 15:59:30 | pipeline | rendered | render.video | d707811 |
+| 2026-11-12 15:59:37 | pipeline | qa | qa.automated | d707811 |
+| 2026-11-12 16:01:57 | pipeline | rendered | stage.advance | d707811 |
+| 2026-11-12 16:01:57 | pipeline | rendered | render.video | d707811 |
+| 2026-11-12 16:02:05 | pipeline | qa | qa.automated | d707811 |
+| 2026-11-12 16:04:27 | pipeline | rendered | stage.advance | d707811 |
+| 2026-11-12 16:04:27 | pipeline | rendered | render.video | d707811 |
+| 2026-11-12 16:04:36 | pipeline | qa | qa.automated | d707811 |
+| 2026-11-12 16:04:44 | claude | qa | qa.review | d707811 |
+| 2026-11-12 16:04:44 | claude | qa-passed | stage.advance | d707811 |

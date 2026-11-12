@@ -37,6 +37,10 @@ _None recorded yet._
 > Round trip, you spend about forty years.
 > On Earth, about fifty-two thousand years pass.
 
+**centre-compare** (`compare`) — facts: `trip-times`
+
+> Here are both clocks for the centre, on a logarithmic scale.
+
 **andromeda** (`factCard`) — facts: `andromeda-distance`, `trip-times`
 
 > Andromeda, our largest galactic neighbour, is about two and a half million light-years away.
@@ -86,7 +90,7 @@ Image: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.
 
 ## Render
 
-45.5 s, 1080×1920@30, sha256 `deff270d77cfb704…`, rendered 2026-11-12T15:47:58.371Z in 35 s.
+49.5 s, 1080×1920@30, sha256 `f787191207640dc3…`, rendered 2026-11-12T16:02:52.609Z in 38 s.
 
 ## QA
 
@@ -95,13 +99,13 @@ Image: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 45.50 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 45.50 s vs timeline 45.47 s |
+| duration | ✅ | 49.50 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 49.50 s vs timeline 49.43 s |
 | loudness | ✅ | -14.1 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.4 dBFS |
+| true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T15:48:24.795Z): **pass** — Reviewed all 19 frames: the Andromeda hook is clean with the title clear of the captions; the Lorentz 13,400, Milky Way 26,000 ly, 52,000 yrs, 2.5 million ly and 5 million yrs cards read cleanly and their source lines sit inside the safe zone; the outro is clear and the footnote states the constant-gravity profile. Motion and audio are for the human watch.
+Visual review by **claude** (2026-11-12T16:04:42.883Z): **pass** — Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch.
 
 ## Event log
 
@@ -134,3 +138,21 @@ Visual review by **claude** (2026-11-12T15:48:24.795Z): **pass** — Reviewed al
 | 2026-11-12 15:48:06 | pipeline | qa | qa.automated | ff27824 |
 | 2026-11-12 15:48:24 | claude | qa | qa.review | ff27824 |
 | 2026-11-12 15:48:24 | claude | qa-passed | stage.advance | ff27824 |
+| 2026-11-12 15:55:38 | claude | planned | plan.check | d707811 |
+| 2026-11-12 15:55:38 | claude | planned | stage.regress | d707811 |
+| 2026-11-12 15:55:38 | pipeline | factcheck | factcheck.automated | d707811 |
+| 2026-11-12 15:55:45 | claude | factcheck | factcheck.review | d707811 |
+| 2026-11-12 15:55:45 | claude | factchecked | stage.advance | d707811 |
+| 2026-11-12 15:56:17 | pipeline | voiced | stage.advance | d707811 |
+| 2026-11-12 15:56:17 | pipeline | voiced | voice.synthesize | d707811 |
+| 2026-11-12 15:56:57 | pipeline | rendered | stage.advance | d707811 |
+| 2026-11-12 15:56:57 | pipeline | rendered | render.video | d707811 |
+| 2026-11-12 15:57:06 | pipeline | qa | qa.automated | d707811 |
+| 2026-11-12 16:00:32 | pipeline | rendered | stage.advance | d707811 |
+| 2026-11-12 16:00:32 | pipeline | rendered | render.video | d707811 |
+| 2026-11-12 16:00:40 | pipeline | qa | qa.automated | d707811 |
+| 2026-11-12 16:02:52 | pipeline | rendered | stage.advance | d707811 |
+| 2026-11-12 16:02:52 | pipeline | rendered | render.video | d707811 |
+| 2026-11-12 16:03:01 | pipeline | qa | qa.automated | d707811 |
+| 2026-11-12 16:04:42 | claude | qa | qa.review | d707811 |
+| 2026-11-12 16:04:42 | claude | qa-passed | stage.advance | d707811 |

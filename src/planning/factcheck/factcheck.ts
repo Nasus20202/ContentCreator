@@ -36,6 +36,11 @@ export function sceneTexts(scene: Scene): { where: string; text: string }[] {
     case 'factCard':
       out.push({ where: 'factCard', text: `${scene.params.value} ${scene.params.label}` });
       break;
+    case 'compare':
+      if (scene.params.heading) out.push({ where: 'heading', text: scene.params.heading });
+      scene.params.bars.forEach((b, i) => out.push({ where: `bars[${i}]`, text: `${b.display} ${b.label}` }));
+      if (scene.params.note) out.push({ where: 'note', text: scene.params.note });
+      break;
     case 'scale':
       out.push({ where: 'scale', text: scene.params.totalLabel });
       scene.params.markers.forEach((m, i) => out.push({ where: `markers[${i}]`, text: m.label }));

@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T15:40:48.765Z",
-  "planHash": "7253b13d6734eb91",
+  "checkedAt": "2026-11-12T15:55:39.914Z",
+  "planHash": "6be5fad350770483",
   "automated": {
     "ok": true,
     "claims": [
@@ -117,6 +117,38 @@
         "matchedFact": "starshot-speed"
       },
       {
+        "sceneId": "compare",
+        "where": "bars[0]",
+        "text": "89,000 years Voyager, at 3 AU a year",
+        "number": 89000,
+        "raw": "89000",
+        "matchedFact": "voyager-speed"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[0]",
+        "text": "89,000 years Voyager, at 3 AU a year",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "voyager-speed"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[1]",
+        "text": "28 years Starshot, at 15% of light speed",
+        "number": 28,
+        "raw": "28",
+        "matchedFact": "starshot-speed"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[1]",
+        "text": "28 years Starshot, at 15% of light speed",
+        "number": 15,
+        "raw": "15%",
+        "matchedFact": "starshot-speed"
+      },
+      {
         "sceneId": "ship-clock",
         "where": "narration[1]",
         "text": "At nearly the speed of light, the clock on board runs about 223,000 times slower, so the trip takes ten minutes of ship time.",
@@ -217,8 +249,8 @@
   },
   "review": {
     "actor": "claude",
-    "at": "2026-11-12T15:40:49.300Z",
+    "at": "2026-11-12T15:57:06.785Z",
     "verdict": "pass",
-    "notes": "Semantic review after the scale scene was added and the ship-clock wording was simplified: every number traces to a sourced fact (NASA Sun facts: 4.24 light-years; NASA Voyager: one light-day, reached in November 2026, and more than 3 AU per year; Breakthrough Starshot: 100 million mph; Wikipedia Lorentz factor: about 223,000). The scale is linear, so Voyager 1 is a point at the top, described as about one light-day out (the 18 Nov 2026 milestone) and not exactly one. The 99.999999999% figure is gone from narration, cards, post and fact text. No time of day or direction claim."
+    "notes": "Semantic review after adding a bar-comparison scene: the bars reuse facts already in this episode's record. Times are the same as the cards (twin paradox 40 and 52,000 years round trip; Proxima 89,000 and 28 years; light 8 min 20 s and 43 min). The 'thousands of times longer' line is 89,000 divided by 28, about 3,200. The 'about five times longer' line is 43 divided by 8.3, about 5.2. The log-scale bars are labelled as log scale on screen; the light bars are drawn to scale. No new claims."
   }
 }

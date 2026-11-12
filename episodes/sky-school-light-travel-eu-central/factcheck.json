@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T15:15:40.306Z",
-  "planHash": "d6d7f67fb13863a4",
+  "checkedAt": "2026-11-12T15:55:41.009Z",
+  "planHash": "b045deee77b94621",
   "automated": {
     "ok": true,
     "claims": [
@@ -109,6 +109,38 @@
         "matchedFact": "jupiter-light-time"
       },
       {
+        "sceneId": "compare",
+        "where": "narration[0]",
+        "text": "Side by side, the Sun's light is a short bar, and Jupiter's is about five times longer.",
+        "number": 5,
+        "raw": "five",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[0]",
+        "text": "8 min 20 s Sun, average distance",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[0]",
+        "text": "8 min 20 s Sun, average distance",
+        "number": 20,
+        "raw": "20",
+        "matchedFact": "sun-light-time"
+      },
+      {
+        "sceneId": "compare",
+        "where": "bars[1]",
+        "text": "43 min Jupiter, on average",
+        "number": 43,
+        "raw": "43",
+        "matchedFact": "jupiter-light-time"
+      },
+      {
         "sceneId": "post",
         "where": "title",
         "text": "The Sun you see is about 8 minutes old ☀️",
@@ -153,8 +185,8 @@
   },
   "review": {
     "actor": "claude",
-    "at": "2026-11-12T15:15:40.862Z",
+    "at": "2026-11-12T15:58:28.756Z",
     "verdict": "pass",
-    "notes": "Semantic review: every number traces to a sourced fact (NIST speed of light; NASA Sun and Jupiter facts). Averages are stated as averages ('about', 'on average'); the Sun's light time is the average 1 AU figure, not the December value (about 8 min 10 s). The Jupiter sentence was corrected to say sunlight takes 43 minutes to reach Jupiter, not that the light we see left it that long ago (reflected light travels back separately). No time of day, direction or position claim."
+    "notes": "Semantic review after adding a bar-comparison scene: the bars reuse facts already in this episode's record. Times are the same as the cards (twin paradox 40 and 52,000 years round trip; Proxima 89,000 and 28 years; light 8 min 20 s and 43 min). The 'thousands of times longer' line is 89,000 divided by 28, about 3,200. The 'about five times longer' line is 43 divided by 8.3, about 5.2. The log-scale bars are labelled as log scale on screen; the light bars are drawn to scale. No new claims."
   }
 }

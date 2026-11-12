@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T15:47:59.018Z",
-  "videoSha256": "deff270d77cfb7042e5278545b28704e0600c9fa13aae146e2c15aeea2df15ad",
+  "checkedAt": "2026-11-12T16:02:53.263Z",
+  "videoSha256": "f787191207640dc37ede103b6e9515b0746266442c138e8a9d80988e7323fabc",
   "automated": [
     {
       "name": "resolution",
@@ -20,12 +20,12 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "45.50 s (limit 60 s)"
+      "detail": "49.50 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 45.50 s vs timeline 45.47 s"
+      "detail": "video 49.50 s vs timeline 49.43 s"
     },
     {
       "name": "loudness",
@@ -35,7 +35,7 @@
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.4 dBFS"
+      "detail": "-1.5 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -105,45 +105,55 @@
       "tSec": 30.03
     },
     {
-      "file": "qa/04-andromeda-0.jpg",
-      "sceneId": "andromeda",
+      "file": "qa/04-centre-compare-0.jpg",
+      "sceneId": "centre-compare",
       "tSec": 30.88
     },
     {
-      "file": "qa/04-andromeda-1.jpg",
+      "file": "qa/04-centre-compare-1.jpg",
+      "sceneId": "centre-compare",
+      "tSec": 34
+    },
+    {
+      "file": "qa/05-andromeda-0.jpg",
       "sceneId": "andromeda",
-      "tSec": 36.15
+      "tSec": 34.85
     },
     {
-      "file": "qa/04-andromeda-2.jpg",
+      "file": "qa/05-andromeda-1.jpg",
       "sceneId": "andromeda",
-      "tSec": 39.77
+      "tSec": 40.12
     },
     {
-      "file": "qa/05-andromeda-earth-0.jpg",
+      "file": "qa/05-andromeda-2.jpg",
+      "sceneId": "andromeda",
+      "tSec": 43.73
+    },
+    {
+      "file": "qa/06-andromeda-earth-0.jpg",
       "sceneId": "andromeda-earth",
-      "tSec": 40.62
+      "tSec": 44.58
     },
     {
-      "file": "qa/05-andromeda-earth-1.jpg",
+      "file": "qa/06-andromeda-earth-1.jpg",
       "sceneId": "andromeda-earth",
-      "tSec": 42.8
+      "tSec": 46.77
     },
     {
-      "file": "qa/06-outro-0.jpg",
+      "file": "qa/07-outro-0.jpg",
       "sceneId": "outro",
-      "tSec": 43.65
+      "tSec": 47.62
     },
     {
-      "file": "qa/06-outro-1.jpg",
+      "file": "qa/07-outro-1.jpg",
       "sceneId": "outro",
-      "tSec": 45.37
+      "tSec": 49.33
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T15:48:24.795Z",
+    "at": "2026-11-12T16:04:42.883Z",
     "verdict": "pass",
-    "notes": "Reviewed all 19 frames: the Andromeda hook is clean with the title clear of the captions; the Lorentz 13,400, Milky Way 26,000 ly, 52,000 yrs, 2.5 million ly and 5 million yrs cards read cleanly and their source lines sit inside the safe zone; the outro is clear and the footnote states the constant-gravity profile. Motion and audio are for the human watch."
+    "notes": "Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch."
   }
 }

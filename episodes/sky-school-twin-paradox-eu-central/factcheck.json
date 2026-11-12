@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T15:46:48.866Z",
-  "planHash": "f62bee7fe3b4eaaf",
+  "checkedAt": "2026-11-12T15:55:38.816Z",
+  "planHash": "347726ed9ace7ae7",
   "automated": {
     "ok": true,
     "claims": [
@@ -66,6 +66,22 @@
         "text": "52,000 yrs on Earth, round trip · you: 40 years",
         "number": 40,
         "raw": "40",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "centre-compare",
+        "where": "bars[0]",
+        "text": "40 years You, on board",
+        "number": 40,
+        "raw": "40",
+        "matchedFact": "trip-times"
+      },
+      {
+        "sceneId": "centre-compare",
+        "where": "bars[1]",
+        "text": "52,000 years On Earth",
+        "number": 52000,
+        "raw": "52000",
         "matchedFact": "trip-times"
       },
       {
@@ -169,8 +185,8 @@
   },
   "review": {
     "actor": "claude",
-    "at": "2026-11-12T15:46:55.219Z",
+    "at": "2026-11-12T15:55:45.880Z",
     "verdict": "pass",
-    "notes": "Semantic review: every spoken and on-screen number traces to a sourced or computed fact. Distances: NASA (Sagittarius A* at 26,000 light-years; Andromeda at 2.5 million light-years). Trip times: computed with hyperbolic motion for a constant 1 g accelerate-to-midpoint-and-brake profile (ship 19.8 years one way, 39.5 round trip to the centre; Earth 26,002 and 52,004 years; Andromeda round trip 57.2 ship years and 5,000,004 Earth years), so the spoken figures are rounded from those. The 13,400 factor is the Lorentz factor at the midpoint of the centre trip. The paradox line is the standard resolution: the traveller accelerates and turns around, so the traveller is younger (Wikipedia). The profile is idealised, and the scene and footnote say so; no ship can do this yet."
+    "notes": "Semantic review after adding a bar-comparison scene: the bars reuse facts already in this episode's record. Times are the same as the cards (twin paradox 40 and 52,000 years round trip; Proxima 89,000 and 28 years; light 8 min 20 s and 43 min). The 'thousands of times longer' line is 89,000 divided by 28, about 3,200. The 'about five times longer' line is 43 divided by 8.3, about 5.2. The log-scale bars are labelled as log scale on screen; the light bars are drawn to scale. No new claims."
   }
 }

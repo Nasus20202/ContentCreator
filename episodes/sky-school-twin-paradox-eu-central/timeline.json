@@ -1,7 +1,7 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "3d3131d4c5f4c50a",
+  "narrationHash": "03b79a242568b670",
   "timing": "estimated-proportional",
   "scenes": [
     {
@@ -518,6 +518,75 @@
               "w": "pass.",
               "start": 4.591,
               "end": 4.982
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "centre-compare",
+      "audioFile": "voice/centre-compare.wav",
+      "duration": 3.697,
+      "sentences": [
+        {
+          "text": "Here are both clocks for the centre, on a logarithmic scale.",
+          "start": 0.15,
+          "end": 3.417,
+          "words": [
+            {
+              "w": "Here",
+              "start": 0.15,
+              "end": 0.408
+            },
+            {
+              "w": "are",
+              "start": 0.408,
+              "end": 0.623
+            },
+            {
+              "w": "both",
+              "start": 0.623,
+              "end": 0.881
+            },
+            {
+              "w": "clocks",
+              "start": 0.881,
+              "end": 1.225
+            },
+            {
+              "w": "for",
+              "start": 1.225,
+              "end": 1.44
+            },
+            {
+              "w": "the",
+              "start": 1.44,
+              "end": 1.655
+            },
+            {
+              "w": "centre,",
+              "start": 1.655,
+              "end": 2.128
+            },
+            {
+              "w": "on",
+              "start": 2.128,
+              "end": 2.3
+            },
+            {
+              "w": "a",
+              "start": 2.3,
+              "end": 2.428
+            },
+            {
+              "w": "logarithmic",
+              "start": 2.428,
+              "end": 2.987
+            },
+            {
+              "w": "scale.",
+              "start": 2.987,
+              "end": 3.417
             }
           ]
         }

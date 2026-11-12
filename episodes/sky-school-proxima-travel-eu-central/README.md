@@ -37,6 +37,10 @@ _None recorded yet._
 > Breakthrough Starshot aims for probes at about fifteen percent of light speed.
 > At that speed, the trip takes about twenty-eight years.
 
+**compare** (`compare`) — facts: `voyager-speed`, `starshot-speed`
+
+> Side by side, Voyager's speed would take thousands of times longer.
+
 **ship-clock** (`factCard`) — facts: `lorentz-clock`
 
 > From inside the ship, the trip could be much shorter.
@@ -77,7 +81,7 @@ Narration uses a synthetic voice.
 
 ## Render
 
-47.1 s, 1080×1920@30, sha256 `3a392a8e63c3bbaa…`, rendered 2026-11-12T15:42:46.049Z in 33 s.
+51.7 s, 1080×1920@30, sha256 `21387edc1ce6459d…`, rendered 2026-11-12T16:03:39.326Z in 38 s.
 
 ## QA
 
@@ -86,13 +90,13 @@ Narration uses a synthetic voice.
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 47.10 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 47.10 s vs timeline 47.07 s |
-| loudness | ✅ | -14.1 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.4 dBFS |
+| duration | ✅ | 51.70 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 51.70 s vs timeline 51.67 s |
+| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T15:43:08.367Z): **pass** — Reviewed the scale scene frames and the rest: the bar grows from Earth, Voyager 1 is the marker at the top and Proxima at the bottom, and the labels and the 'Earth to Proxima, to scale' line sit apart with no overlap or caption clash. The number cards and outro are unchanged from the earlier review. Motion and audio are left to the human watch.
+Visual review by **claude** (2026-11-12T16:04:43.442Z): **pass** — Reviewed the new comparison scene: the heading, each bar's label and value sit on their own lines above the bar with no overlap, the values stay inside the frame, and the log/to-scale note is shown. The rest of the episode is unchanged from the earlier review. Motion and audio are for the human watch.
 
 ## Event log
 
@@ -135,3 +139,21 @@ Visual review by **claude** (2026-11-12T15:43:08.367Z): **pass** — Reviewed th
 | 2026-11-12 15:42:53 | pipeline | qa | qa.automated | 6f14c95 |
 | 2026-11-12 15:43:08 | claude | qa | qa.review | 6f14c95 |
 | 2026-11-12 15:43:08 | claude | qa-passed | stage.advance | 6f14c95 |
+| 2026-11-12 15:55:39 | claude | planned | plan.check | d707811 |
+| 2026-11-12 15:55:39 | claude | planned | stage.regress | d707811 |
+| 2026-11-12 15:55:39 | pipeline | factcheck | factcheck.automated | d707811 |
+| 2026-11-12 15:57:06 | claude | factcheck | factcheck.review | d707811 |
+| 2026-11-12 15:57:06 | claude | factchecked | stage.advance | d707811 |
+| 2026-11-12 15:57:41 | pipeline | voiced | stage.advance | d707811 |
+| 2026-11-12 15:57:41 | pipeline | voiced | voice.synthesize | d707811 |
+| 2026-11-12 15:58:19 | pipeline | rendered | stage.advance | d707811 |
+| 2026-11-12 15:58:19 | pipeline | rendered | render.video | d707811 |
+| 2026-11-12 15:58:28 | pipeline | qa | qa.automated | d707811 |
+| 2026-11-12 16:01:18 | pipeline | rendered | stage.advance | d707811 |
+| 2026-11-12 16:01:18 | pipeline | rendered | render.video | d707811 |
+| 2026-11-12 16:01:26 | pipeline | qa | qa.automated | d707811 |
+| 2026-11-12 16:03:39 | pipeline | rendered | stage.advance | d707811 |
+| 2026-11-12 16:03:39 | pipeline | rendered | render.video | d707811 |
+| 2026-11-12 16:03:46 | pipeline | qa | qa.automated | d707811 |
+| 2026-11-12 16:04:43 | claude | qa | qa.review | d707811 |
+| 2026-11-12 16:04:43 | claude | qa-passed | stage.advance | d707811 |

@@ -1,7 +1,7 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "6e6ae808010af5a0",
+  "narrationHash": "fd6c15194cef7345",
   "timing": "estimated-proportional",
   "scenes": [
     {
@@ -493,6 +493,105 @@
               "w": "it.",
               "start": 7.397,
               "end": 7.686
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "compare",
+      "audioFile": "voice/compare.wav",
+      "duration": 5.864,
+      "sentences": [
+        {
+          "text": "Side by side, the Sun's light is a short bar, and Jupiter's is about five times longer.",
+          "start": 0.15,
+          "end": 5.584,
+          "words": [
+            {
+              "w": "Side",
+              "start": 0.15,
+              "end": 0.444
+            },
+            {
+              "w": "by",
+              "start": 0.444,
+              "end": 0.64
+            },
+            {
+              "w": "side,",
+              "start": 0.64,
+              "end": 1.08
+            },
+            {
+              "w": "the",
+              "start": 1.08,
+              "end": 1.325
+            },
+            {
+              "w": "Sun's",
+              "start": 1.325,
+              "end": 1.668
+            },
+            {
+              "w": "light",
+              "start": 1.668,
+              "end": 2.01
+            },
+            {
+              "w": "is",
+              "start": 2.01,
+              "end": 2.206
+            },
+            {
+              "w": "a",
+              "start": 2.206,
+              "end": 2.353
+            },
+            {
+              "w": "short",
+              "start": 2.353,
+              "end": 2.696
+            },
+            {
+              "w": "bar,",
+              "start": 2.696,
+              "end": 3.087
+            },
+            {
+              "w": "and",
+              "start": 3.087,
+              "end": 3.332
+            },
+            {
+              "w": "Jupiter's",
+              "start": 3.332,
+              "end": 3.871
+            },
+            {
+              "w": "is",
+              "start": 3.871,
+              "end": 4.067
+            },
+            {
+              "w": "about",
+              "start": 4.067,
+              "end": 4.409
+            },
+            {
+              "w": "five",
+              "start": 4.409,
+              "end": 4.703
+            },
+            {
+              "w": "times",
+              "start": 4.703,
+              "end": 5.046
+            },
+            {
+              "w": "longer.",
+              "start": 5.046,
+              "end": 5.584
             }
           ]
         }

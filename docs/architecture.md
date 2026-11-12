@@ -16,7 +16,7 @@
  factcheck                       │
  plan checks                     ▼
                          video/ (Remotion bundle, browser)
-                         templates: skyView · orbit3d · factCard · scale · image · outro
+                         templates: skyView · orbit3d · factCard · scale · compare · image · outro
 ```
 
 ## Modules

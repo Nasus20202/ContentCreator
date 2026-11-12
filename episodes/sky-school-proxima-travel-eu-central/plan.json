@@ -107,6 +107,34 @@
       }
     },
     {
+      "id": "compare",
+      "template": "compare",
+      "narration": [
+        "Side by side, Voyager's speed would take thousands of times longer."
+      ],
+      "factIds": [
+        "voyager-speed",
+        "starshot-speed"
+      ],
+      "params": {
+        "heading": "Time to Proxima Centauri",
+        "scale": "log",
+        "bars": [
+          {
+            "label": "Voyager, at 3 AU a year",
+            "value": 89000,
+            "display": "89,000 years"
+          },
+          {
+            "label": "Starshot, at 15% of light speed",
+            "value": 28,
+            "display": "28 years"
+          }
+        ],
+        "note": "Logarithmic scale: bar length follows the log of the time."
+      }
+    },
+    {
       "id": "ship-clock",
       "template": "factCard",
       "narration": [

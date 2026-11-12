@@ -1,7 +1,7 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "242840c6c1501b5d",
+  "narrationHash": "394f2090eae830b8",
   "timing": "estimated-proportional",
   "scenes": [
     {
@@ -498,6 +498,75 @@
               "w": "years.",
               "start": 6.726,
               "end": 7.087
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "compare",
+      "audioFile": "voice/compare.wav",
+      "duration": 4.326,
+      "sentences": [
+        {
+          "text": "Side by side, Voyager's speed would take thousands of times longer.",
+          "start": 0.15,
+          "end": 4.046,
+          "words": [
+            {
+              "w": "Side",
+              "start": 0.15,
+              "end": 0.432
+            },
+            {
+              "w": "by",
+              "start": 0.432,
+              "end": 0.619
+            },
+            {
+              "w": "side,",
+              "start": 0.619,
+              "end": 1.042
+            },
+            {
+              "w": "Voyager's",
+              "start": 1.042,
+              "end": 1.558
+            },
+            {
+              "w": "speed",
+              "start": 1.558,
+              "end": 1.887
+            },
+            {
+              "w": "would",
+              "start": 1.887,
+              "end": 2.215
+            },
+            {
+              "w": "take",
+              "start": 2.215,
+              "end": 2.497
+            },
+            {
+              "w": "thousands",
+              "start": 2.497,
+              "end": 3.013
+            },
+            {
+              "w": "of",
+              "start": 3.013,
+              "end": 3.201
+            },
+            {
+              "w": "times",
+              "start": 3.201,
+              "end": 3.53
+            },
+            {
+              "w": "longer.",
+              "start": 3.53,
+              "end": 4.046
             }
           ]
         }

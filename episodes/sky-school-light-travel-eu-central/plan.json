@@ -120,6 +120,34 @@
       }
     },
     {
+      "id": "compare",
+      "template": "compare",
+      "narration": [
+        "Side by side, the Sun's light is a short bar, and Jupiter's is about five times longer."
+      ],
+      "factIds": [
+        "sun-light-time",
+        "jupiter-light-time"
+      ],
+      "params": {
+        "heading": "How old the light is",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "Sun, average distance",
+            "value": 8.3,
+            "display": "8 min 20 s"
+          },
+          {
+            "label": "Jupiter, on average",
+            "value": 43,
+            "display": "43 min"
+          }
+        ],
+        "note": "Drawn to scale."
+      }
+    },
+    {
       "id": "outro",
       "template": "outro",
       "narration": [
