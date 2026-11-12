@@ -5,6 +5,12 @@
 
 ## 2026-11-12 · publish · human
 
+**Pale Blue Dot moved to 21:00 Polish time (12 Nov 20:00 UTC)**
+
+User's call
+
+## 2026-11-12 · publish · human
+
 **Pale Blue Dot moved to tonight, Thu 12 Nov 20:30 UTC; episode 1 stays Fri 13 Nov 17:00 UTC**
 
 User's call: one video today and one tomorrow, so the profile already has a video when the weekly lands

@@ -132,6 +132,15 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | youtube | submitted | 6af6103f11a42cfbe891c004 |  |
 | tiktok | submitted | 6af61040cfe45b714e4b954e |  |
 
+### 2026-11-12T19:41:37.057Z · buffer · reschedule for 2026-11-12T20:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af6103f11a42cfbe891c004 |  |
+| tiktok | submitted | 6af61040cfe45b714e4b954e |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -174,3 +183,4 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-12 19:15:12 | claude | publish | publish.submit | 37004a9 |
 | 2026-11-12 19:15:12 | claude | published | stage.advance | 37004a9 |
 | 2026-11-12 19:41:19 | claude | publish | publish.reschedule | 8cd89a4 |
+| 2026-11-12 19:41:37 | claude | publish | publish.reschedule | 749ea21 |
