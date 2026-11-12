@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-twin-paradox-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **rendered** |
 | Created | 2026-11-12T15:46:20.789Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -90,7 +90,7 @@ Image: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.
 
 ## Render
 
-49.5 s, 1080×1920@30, sha256 `f787191207640dc3…`, rendered 2026-11-12T16:02:52.609Z in 38 s.
+49.5 s, 1080×1920@30, sha256 `c5427805efea6a62…`, rendered 2026-11-12T16:10:11.805Z in 42 s.
 
 ## QA
 
@@ -156,3 +156,5 @@ Visual review by **claude** (2026-11-12T16:04:42.883Z): **pass** — Reviewed th
 | 2026-11-12 16:03:01 | pipeline | qa | qa.automated | d707811 |
 | 2026-11-12 16:04:42 | claude | qa | qa.review | d707811 |
 | 2026-11-12 16:04:42 | claude | qa-passed | stage.advance | d707811 |
+| 2026-11-12 16:10:11 | pipeline | rendered | stage.regress | 8a1640d |
+| 2026-11-12 16:10:11 | pipeline | rendered | render.video | 8a1640d |

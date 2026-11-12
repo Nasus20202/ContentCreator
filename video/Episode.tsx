@@ -62,7 +62,13 @@ const SceneShell: React.FC<{ scene: Scene; props: RenderProps; index: number; fr
   const timeline = props.timeline.scenes[index];
   return (
     <SceneContext.Provider value={{ timeline, props, durationSec: frames / fps }}>
-      <AbsoluteFill style={{ opacity: interpolate(frame, [0, 8], [0, 1], { extrapolateRight: 'clamp' }) }}>
+      <AbsoluteFill
+        style={{
+          opacity: interpolate(frame, [0, 10], [0, 1], { extrapolateRight: 'clamp' }),
+          // Each scene settles in from a slight zoom, so cuts feel like camera moves, not slides.
+          transform: `scale(${interpolate(frame, [0, 14], [1.05, 1], { extrapolateRight: 'clamp' })})`,
+        }}
+      >
         <Template scene={scene} />
         <SceneOverlays scene={scene} />
         <Audio src={staticFile(timeline.audioFile)} />

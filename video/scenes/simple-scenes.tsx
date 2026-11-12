@@ -9,6 +9,20 @@ import { theme } from '../theme';
 import { SkyView } from './SkyViewScene';
 
 /** One big number with its meaning. The number must be backed by a fact (enforced by cc factcheck). */
+/**
+ * Splits a value like "26,000 ly" into the number it starts with and the text after it, so the number
+ * can count up on screen. Values without a leading number are shown as they are.
+ */
+function countUp(value: string, t: number): string {
+  const m = value.match(/^(\d[\d,]*(?:\.\d+)?)(.*)$/);
+  if (!m) return value;
+  const target = Number(m[1].replace(/,/g, ''));
+  const decimals = (m[1].split('.')[1] ?? '').length;
+  const shown = target * ease(Math.min(1, t / 1.4));
+  const body = shown.toLocaleString('en-US', { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
+  return body + m[2];
+}
+
 export const FactCardScene: React.FC<{ sceneId: string; params: FactCardParams }> = ({ sceneId, params }) => {
   const accent = useAccent();
   const { t, durationSec } = useSceneTime();
@@ -16,10 +30,30 @@ export const FactCardScene: React.FC<{ sceneId: string; params: FactCardParams }
   // A slow push-in over the whole card, so it keeps moving after the figure has landed.
   const push = 1 + 0.03 * Math.min(1, t / Math.max(1, durationSec));
   // Shrink long values ("101,000,000 km") so they stay inside the 960 px column.
+  const shown = countUp(params.value, t);
   const size = Math.min(220, Math.floor(980 / (Math.max(4, params.value.length) * 0.6)));
+  // An orbit ring around the figure: it turns slowly and draws in as the card appears.
+  const ring = 420;
+  const spin = t * 18;
   return (
     <AbsoluteFill>
       <Starfield seed={sceneId} drift={0.02} />
+      <svg width={1080} height={1920} style={{ position: 'absolute', inset: 0, pointerEvents: 'none' }}>
+        <g transform={`rotate(${spin} 540 ${640})`}>
+          <ellipse
+            cx={540}
+            cy={640}
+            rx={ring}
+            ry={ring * 0.34}
+            fill="none"
+            stroke={accent.hex}
+            strokeWidth={3}
+            strokeDasharray={`${Math.PI * ring * 0.7 * k} ${Math.PI * ring}`}
+            opacity={0.55 * k}
+          />
+          <circle cx={540 + ring} cy={640} r={9} fill={accent.hex} opacity={k} />
+        </g>
+      </svg>
       <div
         style={{
           position: 'absolute',
@@ -40,9 +74,10 @@ export const FactCardScene: React.FC<{ sceneId: string; params: FactCardParams }
             letterSpacing: size > 150 ? -6 : -2,
             lineHeight: 1.05,
             whiteSpace: 'nowrap',
+            textShadow: `0 0 60px ${accent.hex}66`,
           }}
         >
-          {params.value}
+          {shown}
         </div>
         <div style={{ fontSize: 58, fontWeight: 600, color: theme.text, marginTop: 24, lineHeight: 1.15 }}>
           {params.label}
@@ -55,7 +90,6 @@ export const FactCardScene: React.FC<{ sceneId: string; params: FactCardParams }
   );
 };
 
-/** Real imagery with a slow push-in and the mandatory credit line. */
 export const ImageScene: React.FC<{ params: ImageParams }> = ({ params }) => {
   const { t, durationSec, props } = useSceneTime();
   const asset = props.assets[params.assetId];

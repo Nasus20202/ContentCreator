@@ -153,17 +153,25 @@ export const Badge: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
-/** Static seeded starfield for non-sky templates. */
+/**
+ * Seeded starfield for non-sky templates, in three depth layers: the near stars drift faster than the
+ * far ones, so the background moves with parallax instead of sliding as one sheet. A soft glow at the
+ * bottom reads as a horizon, which gives the cards a place to sit.
+ */
 export const Starfield: React.FC<{ seed: string; drift?: number }> = ({ seed, drift = 0 }) => {
   const frame = useCurrentFrame();
   const { width, height } = useVideoConfig();
-  const stars = useMemo(
+  const layers = useMemo(
     () =>
-      Array.from({ length: 260 }, (_, i) => ({
-        x: random(`${seed}x${i}`) * width,
-        y: random(`${seed}y${i}`) * height,
-        r: 0.6 + random(`${seed}r${i}`) ** 3 * 2.6,
-        a: 0.25 + random(`${seed}a${i}`) * 0.7,
+      [0.35, 0.7, 1].map((depth, layer) => ({
+        depth,
+        stars: Array.from({ length: layer === 2 ? 90 : 110 }, (_, i) => ({
+          x: random(`${seed}x${layer}${i}`) * width,
+          y: random(`${seed}y${layer}${i}`) * height,
+          r: (0.5 + random(`${seed}r${layer}${i}`) ** 3 * 2.2) * depth,
+          a: (0.25 + random(`${seed}a${layer}${i}`) * 0.7) * (0.5 + 0.5 * depth),
+          tw: random(`${seed}t${layer}${i}`) * 6.28,
+        })),
       })),
     [seed, width, height],
   );
@@ -177,9 +185,28 @@ export const Starfield: React.FC<{ seed: string; drift?: number }> = ({ seed, dr
         background: `radial-gradient(ellipse at 50% 30%, #0b1633 0%, ${theme.bg} 70%)`,
       }}
     >
-      {stars.map((s, i) => (
-        <circle key={i} cx={s.x} cy={(s.y + frame * drift * s.r) % height} r={s.r} fill="#dfe8ff" opacity={s.a} />
-      ))}
+      <defs>
+        <linearGradient id={`horizon-${seed}`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#1b3a7a" stopOpacity="0" />
+          <stop offset="100%" stopColor="#1b3a7a" stopOpacity="0.45" />
+        </linearGradient>
+      </defs>
+      {layers.map((layer, li) =>
+        layer.stars.map((s, i) => {
+          const twinkle = 0.8 + 0.2 * Math.sin(frame * 0.08 + s.tw);
+          return (
+            <circle
+              key={`${li}-${i}`}
+              cx={s.x}
+              cy={(s.y + frame * drift * 40 * layer.depth) % height}
+              r={s.r}
+              fill="#dfe8ff"
+              opacity={s.a * twinkle}
+            />
+          );
+        }),
+      )}
+      <rect x={0} y={height * 0.72} width={width} height={height * 0.28} fill={`url(#horizon-${seed})`} />
     </svg>
   );
 };
