@@ -168,6 +168,20 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | youtube | submitted | 6af6107fcfe45b714e4bb407 |  |
 | tiktok | submitted | 6af6107fd647bbafc5ad4571 |  |
 
+### 2026-11-14T21:04:01.042Z · buffer · schedule for 2026-11-17T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:12:35.496Z · buffer · schedule for 2026-11-17T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-proxima-travel-eu-central-cc07ba4e.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | submitted | 6af8cec6918fe79d2ea4bed2 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -294,3 +308,6 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-12 19:14:14 | claude | publish | publish.dry-run | 37004a9 |
 | 2026-11-12 19:16:15 | claude | publish | publish.submit | 37004a9 |
 | 2026-11-12 19:16:15 | claude | published | stage.advance | 37004a9 |
+| 2026-11-14 21:04:01 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:12:38 | claude | publish | publish.submit | 47c29b3 |
+| 2026-11-14 21:12:38 | claude | published | stage.advance | 47c29b3 |

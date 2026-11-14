@@ -126,6 +126,20 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | youtube | submitted | 6af6106111a42cfbe891d437 |  |
 | tiktok | submitted | 6af610622ef1f0c84e5cad6a |  |
 
+### 2026-11-14T21:03:59.638Z · buffer · schedule for 2026-11-15T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:12:27.682Z · buffer · schedule for 2026-11-15T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-how-fast-eu-central-acbd9ea1.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | submitted | 6af8cebec5b364e062188bbc |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -161,3 +175,6 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-12 19:14:13 | claude | publish | publish.dry-run | 37004a9 |
 | 2026-11-12 19:15:46 | claude | publish | publish.submit | 37004a9 |
 | 2026-11-12 19:15:46 | claude | published | stage.advance | 37004a9 |
+| 2026-11-14 21:03:59 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:12:30 | claude | publish | publish.submit | 47c29b3 |
+| 2026-11-14 21:12:30 | claude | published | stage.advance | 47c29b3 |

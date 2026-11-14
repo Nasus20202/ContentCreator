@@ -141,6 +141,27 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | youtube | submitted | 6af6103f11a42cfbe891c004 |  |
 | tiktok | submitted | 6af61040cfe45b714e4b954e |  |
 
+### 2026-11-14T21:04:03.875Z · buffer · schedule for 2026-11-21T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:12:24.248Z · buffer · schedule for 2026-11-14T22:20:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | submitted | 6af8cebac5b364e062188b37 |  |
+
+## Metrics
+
+| At | Platform | Views | Likes | Avg view % | Source |
+| --- | --- | --- | --- | --- | --- |
+| 2026-11-14T20:38 | youtube | 37 | 4 | — | Buffer API Post.metrics, updated 2026-11-14T20:19Z |
+| 2026-11-14T20:38 | tiktok | 4 | — | — | TikTok public profile grid, 2026-11-14 ~20:45 UTC |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -184,3 +205,8 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-12 19:15:12 | claude | published | stage.advance | 37004a9 |
 | 2026-11-12 19:41:19 | claude | publish | publish.reschedule | 8cd89a4 |
 | 2026-11-12 19:41:37 | claude | publish | publish.reschedule | 749ea21 |
+| 2026-11-14 20:38:03 | claude | published | metrics.add | 47c29b3 |
+| 2026-11-14 20:38:05 | claude | published | metrics.add | 47c29b3 |
+| 2026-11-14 21:04:03 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:12:26 | claude | publish | publish.submit | 47c29b3 |
+| 2026-11-14 21:12:26 | claude | published | stage.advance | 47c29b3 |

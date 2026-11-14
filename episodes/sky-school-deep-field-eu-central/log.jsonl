@@ -23,3 +23,9 @@
 {"ts":"2026-11-12T19:14:12.654Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run"]},"gitSha":"37004a9"}
 {"ts":"2026-11-12T19:15:30.544Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-deep-field-eu-central-f5302bec.mp4","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"37004a9"}
 {"ts":"2026-11-12T19:15:30.549Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"37004a9"}
+{"ts":"2026-11-14T20:38:05.021Z","actor":"claude","stage":"published","action":"metrics.add","details":{"platform":"youtube","views":298},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T20:38:07.231Z","actor":"claude","stage":"published","action":"metrics.add","details":{"platform":"tiktok","views":3},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T20:39:45.729Z","actor":"claude","stage":"published","action":"metrics.add","details":{"platform":"youtube","views":409},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:04:03.192Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["instagram:dry-run"]},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:12:23.538Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-deep-field-eu-central-f5302bec.mp4","targets":["instagram:submitted"]},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:12:23.543Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"published","to":"published","hashes":{}},"gitSha":"47c29b3"}

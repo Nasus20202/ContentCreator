@@ -85,11 +85,13 @@
       "provider": "buffer",
       "endpoint": "https://api.buffer.com",
       "videoSha256": "aa3ca3bd7f05a4d68ac2f1a6cc2c50321ce62043af5ed5171604070fe348e4e1",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-14-eu-central-aa3ca3bd.mp4"
+      },
       "targets": [
         {
           "platform": "youtube",
           "channelId": "6af4fe2a62b70b94b0fe97dc",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af610c6d647bbafc5ad5cd9",
           "payload": {
@@ -124,7 +126,6 @@
         {
           "platform": "tiktok",
           "channelId": "6af4fe6f62b70b94b0fe9d85",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af610c72ef1f0c84e5cd371",
           "payload": {
@@ -146,6 +147,95 @@
             ],
             "metadata": {
               "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-14T21:04:05.294Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-11T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "aa3ca3bd7f05a4d68ac2f1a6cc2c50321ce62043af5ed5171604070fe348e4e1",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The Geminids peak this weekend — and the Moon stays out of the way 🌠\n\nThe Geminids peak in the early hours of 14 December 2026. The radiant in Gemini is highest after midnight, and the Moon sets at 20:04, so the sky is dark. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. The Moon passes Saturn on the night of 17–18 December, 5.5° at closest, and the pair is best seen on Thursday evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#geminids #meteorshower #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-11T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-14T21:12:50.964Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-11T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "aa3ca3bd7f05a4d68ac2f1a6cc2c50321ce62043af5ed5171604070fe348e4e1",
+      "targets": [
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8ced5e86a5789a6d0f624",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The Geminids peak this weekend — and the Moon stays out of the way 🌠\n\nThe Geminids peak in the early hours of 14 December 2026. The radiant in Gemini is highest after midnight, and the Moon sets at 20:04, so the sky is dark. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. The Moon passes Saturn on the night of 17–18 December, 5.5° at closest, and the pair is best seen on Thursday evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#geminids #meteorshower #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-11T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-14-eu-central-aa3ca3bd.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
                 "isAiGenerated": false
               }
             }

@@ -129,6 +129,32 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | youtube | submitted | 6af6108fd647bbafc5ad4af7 |  |
 | tiktok | submitted | 6af6108f0522ffa5bc4b5d02 |  |
 
+### 2026-11-14T21:03:45.661Z · buffer · schedule for 2026-11-18T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:03:50.276Z · buffer · schedule for 2026-11-18T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:04:01.733Z · buffer · schedule for 2026-11-18T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:12:39.094Z · buffer · schedule for 2026-11-18T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-light-travel-eu-central-8aa62282.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | submitted | 6af8cec976c23bf1c73ef06d |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -220,3 +246,8 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-12 19:14:15 | claude | publish | publish.dry-run | 37004a9 |
 | 2026-11-12 19:16:32 | claude | publish | publish.submit | 37004a9 |
 | 2026-11-12 19:16:32 | claude | published | stage.advance | 37004a9 |
+| 2026-11-14 21:03:45 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:03:50 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:04:01 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:12:41 | claude | publish | publish.submit | 47c29b3 |
+| 2026-11-14 21:12:41 | claude | published | stage.advance | 47c29b3 |

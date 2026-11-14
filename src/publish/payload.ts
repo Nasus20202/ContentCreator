@@ -14,11 +14,20 @@ export interface PostOptions {
 /** YouTube category "Science & Technology". */
 export const YOUTUBE_CATEGORY_SCIENCE = '28';
 
+/** Drops URLs (keeping the source names before them); Instagram captions don't make links clickable. */
+export function stripUrls(text: string): string {
+  return text
+    .replace(/:?[ \t]*https?:\/\/\S+/g, '')
+    .replace(/[ \t]+$/gm, '')
+    .replace(/\n{3,}/g, '\n\n');
+}
+
 export function caption(plan: Plan, platform: Platform): string {
   const tags = plan.post.hashtags.join(' ');
   // YouTube shows the title separately; the others lead with it
   const head = platform === 'youtube' ? '' : `${plan.post.title}\n\n`;
-  return `${head}${plan.post.description}\n\n${tags}`.trim();
+  const body = platform === 'instagram' ? stripUrls(plan.post.description) : plan.post.description;
+  return `${head}${body}\n\n${tags}`.trim();
 }
 
 export function platformMetadata(plan: Plan, platform: Platform, opts: PostOptions): Record<string, unknown> {

@@ -346,6 +346,98 @@
           }
         }
       ]
+    },
+    {
+      "at": "2026-11-14T21:03:58.957Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-15T11:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "b75585e66213f4923055139523dd5e701e597e0092934ccdf9a2e7e4a5c1a8aa",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22\n\nBefore dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #leonids #jupiter #mars",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-15T11:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-14T21:12:16.284Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-14T21:20:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "b75585e66213f4923055139523dd5e701e597e0092934ccdf9a2e7e4a5c1a8aa",
+      "targets": [
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8ceb3e5a113497aaadae8",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22\n\nBefore dawn on Mon 16 Nov, Mars and Jupiter are just 1.2° apart, high in the south-east. The Leonids peak on Tue 17 Nov; the Moon sets at 23:28 that night, so look up after midnight on the nights around the peak. On Fri 20 Nov the Moon passes Saturn in the evening.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #leonids #jupiter #mars",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-14T21:20:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b75585e6.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b75585e6.mp4"
+      }
     }
   ]
 }

@@ -37,3 +37,8 @@
 {"ts":"2026-11-12T19:15:12.911Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"37004a9"}
 {"ts":"2026-11-12T19:41:19.394Z","actor":"claude","stage":"publish","action":"publish.reschedule","details":{"from":"2026-11-13T19:00:00.000Z","to":"2026-11-12T20:30:00.000Z","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"8cd89a4"}
 {"ts":"2026-11-12T19:41:37.725Z","actor":"claude","stage":"publish","action":"publish.reschedule","details":{"from":"2026-11-12T20:30:00.000Z","to":"2026-11-12T20:00:00.000Z","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"749ea21"}
+{"ts":"2026-11-14T20:38:03.670Z","actor":"claude","stage":"published","action":"metrics.add","details":{"platform":"youtube","views":37},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T20:38:05.708Z","actor":"claude","stage":"published","action":"metrics.add","details":{"platform":"tiktok","views":4},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:04:03.879Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["instagram:dry-run"]},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:12:26.933Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4","targets":["instagram:submitted"]},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:12:26.938Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"published","to":"published","hashes":{}},"gitSha":"47c29b3"}

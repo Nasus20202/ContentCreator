@@ -1,8 +1,10 @@
 # Publishing
 
 Approved episodes are published through **[Buffer](https://buffer.com)** (free plan: up to 3 channels) with its
-public GraphQL API (`src/publish/buffer.ts`). Channels: **YouTube** (Photon Sphere, `@thephotonsphere`) and
-**TikTok** (`@thephotonsphere`). Meta is not connected (see `docs/decisions/`).
+public GraphQL API (`src/publish/buffer.ts`). Channels: **YouTube** (Photon Sphere, `@thephotonsphere`),
+**TikTok** (`@thephotonsphere`) and **Instagram** (`@the.photonsphere`; `@thephotonsphere` belongs to a banned first
+account, see `TODO.md`). Instagram is connected with Instagram login (Professional account, no Facebook Page), which
+uses the last of the 3 free-plan channels, so Facebook is not connected.
 
 Why Buffer and not the self-hosted Postiz we started with: Buffer's YouTube and TikTok apps are already audited, so
 posts go out **public** from day one. With our own Postiz app, YouTube and TikTok keep API uploads private until
@@ -23,10 +25,11 @@ cc publish <id> --mode schedule --at <ISO>
 
 Per-platform input (`src/publish/payload.ts`):
 
-| Platform | Buffer metadata                                                                                                                 |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| YouTube  | `title` (≤100), `privacy: public`, `madeForKids: false`, `categoryId: 28` (Science & Technology), `isAiGenerated` (config flag) |
-| TikTok   | `isAiGenerated`; caption = title + description + hashtags                                                                       |
+| Platform  | Buffer metadata                                                                                                                 |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| YouTube   | `title` (≤100), `privacy: public`, `madeForKids: false`, `categoryId: 28` (Science & Technology), `isAiGenerated` (config flag) |
+| TikTok    | `isAiGenerated`; caption = title + description + hashtags                                                                       |
+| Instagram | `type: reel`, `shouldShareToFeed: true`, `isAiGenerated`; caption as TikTok but with URLs stripped (not clickable in captions)  |
 
 Modes: `now` → `shareNow`, `schedule` → `customScheduled` + `dueAt`, `draft` → saved as a Buffer draft (nothing is
 published until someone schedules it in Buffer).
@@ -44,6 +47,10 @@ cc publish reschedule <id> --at <same ISO> --replace-video
 then sends each post's original payload with only `assets[0].video.url` replaced (`replaceVideoUrl`); the attempt
 records the new video hash and media URL. Without the flag it only moves the time. Both paths write a `reschedule`
 attempt to `publish.json`, and a failure on one platform does not block the others.
+
+`reschedule` acts on the **latest** real submission only. Episodes whose Instagram post was added later in a separate
+`--platforms instagram` run (everything scheduled before 2026-11-14) would only move the Instagram post; move the
+other platforms by hand in Buffer, or extend the command first.
 
 Note that `reschedule` re-sends the payload of the previous submission, so the caption, title and AI-disclosure flag
 of the already-created posts are kept. If the copy changed too, delete the posts in Buffer and publish again.

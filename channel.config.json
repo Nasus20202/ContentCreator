@@ -62,6 +62,11 @@
         "platform": "tiktok",
         "channelId": "6af4fe6f62b70b94b0fe9d85",
         "enabled": true
+      },
+      {
+        "platform": "instagram",
+        "channelId": "6af8cc5162b70b94b032fcec",
+        "enabled": true
       }
     ]
   }

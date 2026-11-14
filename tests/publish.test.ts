@@ -9,6 +9,7 @@ import {
   caption,
   platformMetadata,
   replaceVideoUrl,
+  stripUrls,
   YOUTUBE_CATEGORY_SCIENCE,
 } from '../src/publish/payload';
 import { plan } from './fixtures';
@@ -54,6 +55,16 @@ describe('Buffer createPost inputs', () => {
     expect(caption(plan(), 'youtube').startsWith('Just 1.2°')).toBe(true);
     expect(caption(plan(), 'tiktok').startsWith('Mars and Jupiter')).toBe(true);
     expect(caption(plan(), 'tiktok')).toContain('#astronomy');
+  });
+
+  it('drops URLs from Instagram captions but keeps the source names', () => {
+    const p = plan();
+    p.post.description =
+      'Body.\n\nSources:\nNASA, Sun facts: https://science.nasa.gov/sun/facts/\nhttps://x.org/a\n\nImage: NASA.';
+    expect(stripUrls(p.post.description)).toBe('Body.\n\nSources:\nNASA, Sun facts\n\nImage: NASA.');
+    expect(caption(p, 'instagram')).not.toMatch(/https?:/);
+    expect(caption(p, 'instagram')).toContain('NASA, Sun facts');
+    expect(caption(p, 'tiktok')).toContain('https://science.nasa.gov/sun/facts/');
   });
 
   it('respects the AI disclosure flag and title limits', () => {

@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-this-week-2026-11-16-eu-central |
 | Series | sky-this-week |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-11T21:50:49.527Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-11-15T23:00:00.000Z → 2026-11-22T23:00:00.000Z |
@@ -207,6 +207,27 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-th
 | youtube | submitted | 6af5037d8a1a2f52b50f9fd3 |  |
 | tiktok | submitted | 6af5037e3d8c751bfd026031 |  |
 
+### 2026-11-14T21:03:58.957Z · buffer · schedule for 2026-11-15T11:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:12:16.284Z · buffer · schedule for 2026-11-14T21:20:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b75585e6.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | submitted | 6af8ceb3e5a113497aaadae8 |  |
+
+## Metrics
+
+| At | Platform | Views | Likes | Avg view % | Source |
+| --- | --- | --- | --- | --- | --- |
+| 2026-11-14T20:38 | youtube | 1144 | 27 | — | Buffer API Post.metrics, updated 2026-11-14T20:19Z |
+| 2026-11-14T20:38 | tiktok | 5 | — | — | TikTok public profile grid, 2026-11-14 ~20:45 UTC |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -341,3 +362,8 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-th
 | 2026-11-12 18:53:47 | claude | qa-passed | stage.advance | 56e31e5 |
 | 2026-11-12 19:13:28 | human | approved | stage.advance | 37004a9 |
 | 2026-11-12 19:14:45 | claude | publish | publish.reschedule | 37004a9 |
+| 2026-11-14 20:38:04 | claude | approved | metrics.add | 47c29b3 |
+| 2026-11-14 20:38:06 | claude | approved | metrics.add | 47c29b3 |
+| 2026-11-14 21:03:58 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:12:19 | claude | publish | publish.submit | 47c29b3 |
+| 2026-11-14 21:12:19 | claude | published | stage.advance | 47c29b3 |

@@ -85,11 +85,13 @@
       "provider": "buffer",
       "endpoint": "https://api.buffer.com",
       "videoSha256": "acbd9ea1b1c6e4f8712d42a500425c4610f8bf59e5dffc1c00d59bae6fccc420",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-how-fast-eu-central-acbd9ea1.mp4"
+      },
       "targets": [
         {
           "platform": "youtube",
           "channelId": "6af4fe2a62b70b94b0fe97dc",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af6106111a42cfbe891d437",
           "payload": {
@@ -124,7 +126,6 @@
         {
           "platform": "tiktok",
           "channelId": "6af4fe6f62b70b94b0fe9d85",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af610622ef1f0c84e5cad6a",
           "payload": {
@@ -146,6 +147,95 @@
             ],
             "metadata": {
               "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-14T21:03:59.638Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-15T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "acbd9ea1b1c6e4f8712d42a500425c4610f8bf59e5dffc1c00d59bae6fccc420",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "You are not sitting still 🚀\n\nEven sitting still in central Europe, Earth's spin carries you at about 1,076 km/h, Earth's orbit at about 107,000 km/h (29.8 km/s), and the Sun carries us around the Milky Way at about 720,000 km/h. Each speed is measured relative to a different centre.\n\nSources:\nNASA NSSDCA Planetary Fact Sheet\nNASA NSSDCA Earth Fact Sheet\nNASA Science, Sun facts\n\nImages: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #earth #milkyway",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-15T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-14T21:12:27.682Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-15T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "acbd9ea1b1c6e4f8712d42a500425c4610f8bf59e5dffc1c00d59bae6fccc420",
+      "targets": [
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8cebec5b364e062188bbc",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "You are not sitting still 🚀\n\nEven sitting still in central Europe, Earth's spin carries you at about 1,076 km/h, Earth's orbit at about 107,000 km/h (29.8 km/s), and the Sun carries us around the Milky Way at about 720,000 km/h. Each speed is measured relative to a different centre.\n\nSources:\nNASA NSSDCA Planetary Fact Sheet\nNASA NSSDCA Earth Fact Sheet\nNASA Science, Sun facts\n\nImages: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #earth #milkyway",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-15T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-how-fast-eu-central-acbd9ea1.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
                 "isAiGenerated": false
               }
             }

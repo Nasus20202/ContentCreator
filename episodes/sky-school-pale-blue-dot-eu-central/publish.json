@@ -309,6 +309,98 @@
           }
         }
       ]
+    },
+    {
+      "at": "2026-11-14T21:04:03.875Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-21T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "6771d54ab9f9adaa9b958366dd3011ede0cced71926c1f12c279a9eed6c2d808",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "This speck of light is Earth 🌍\n\nOn 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited\nNASA NSSDCA Planetary Fact Sheet\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #voyager #palebluedot",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-21T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-14T21:12:24.248Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-14T22:20:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "6771d54ab9f9adaa9b958366dd3011ede0cced71926c1f12c279a9eed6c2d808",
+      "targets": [
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8cebac5b364e062188b37",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "This speck of light is Earth 🌍\n\nOn 14 February 1990, Voyager 1 turned its camera back toward home from about 6 billion km away. Earth came out smaller than a single pixel. 34 minutes later, Voyager 1 switched its cameras off forever.\n\nSource:\nNASA Science, Pale Blue Dot Revisited\nNASA NSSDCA Planetary Fact Sheet\n\nImages: NASA / JPL-Caltech (Pale Blue Dot, 2020 reprocessing), NASA / JPL / KSC (Voyager 1 launch). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #voyager #palebluedot",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-14T22:20:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-pale-blue-dot-eu-central-6771d54a.mp4"
+      }
     }
   ]
 }

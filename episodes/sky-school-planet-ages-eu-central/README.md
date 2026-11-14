@@ -139,6 +139,20 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | youtube | submitted | 6af6106f0522ffa5bc4b510d |  |
 | tiktok | submitted | 6af610700522ffa5bc4b515d |  |
 
+### 2026-11-14T21:04:00.331Z · buffer · schedule for 2026-11-16T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:12:31.296Z · buffer · schedule for 2026-11-16T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-planet-ages-eu-central-68b56dc6.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | submitted | 6af8cec2e5a113497aaade0f |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -181,3 +195,6 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-12 19:14:14 | claude | publish | publish.dry-run | 37004a9 |
 | 2026-11-12 19:16:00 | claude | publish | publish.submit | 37004a9 |
 | 2026-11-12 19:16:00 | claude | published | stage.advance | 37004a9 |
+| 2026-11-14 21:04:00 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:12:34 | claude | publish | publish.submit | 47c29b3 |
+| 2026-11-14 21:12:34 | claude | published | stage.advance | 47c29b3 |

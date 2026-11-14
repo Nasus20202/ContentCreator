@@ -158,6 +158,20 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | youtube | submitted | 6af610a3d647bbafc5ad4fe1 |  |
 | tiktok | submitted | 6af610a4d647bbafc5ad5021 |  |
 
+### 2026-11-14T21:04:02.467Z · buffer · schedule for 2026-11-19T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:12:42.529Z · buffer · schedule for 2026-11-19T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-twin-paradox-eu-central-2bae828c.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | submitted | 6af8cecdc5b364e062188eec |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -264,3 +278,6 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-12 19:14:16 | claude | publish | publish.dry-run | 37004a9 |
 | 2026-11-12 19:16:52 | claude | publish | publish.submit | 37004a9 |
 | 2026-11-12 19:16:52 | claude | published | stage.advance | 37004a9 |
+| 2026-11-14 21:04:02 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:12:45 | claude | publish | publish.submit | 47c29b3 |
+| 2026-11-14 21:12:45 | claude | published | stage.advance | 47c29b3 |

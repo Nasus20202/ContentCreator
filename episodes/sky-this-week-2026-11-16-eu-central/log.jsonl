@@ -128,3 +128,8 @@
 {"ts":"2026-11-12T18:53:47.949Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T19:13:28.874Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}
 {"ts":"2026-11-12T19:14:45.655Z","actor":"claude","stage":"publish","action":"publish.reschedule","details":{"from":"2026-11-13T17:00:00.000Z","to":"2026-11-13T17:00:00.000Z","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"37004a9"}
+{"ts":"2026-11-14T20:38:04.363Z","actor":"claude","stage":"approved","action":"metrics.add","details":{"platform":"youtube","views":1144},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T20:38:06.557Z","actor":"claude","stage":"approved","action":"metrics.add","details":{"platform":"tiktok","views":5},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:03:58.960Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["instagram:dry-run"]},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:12:19.325Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-11-16-eu-central-b75585e6.mp4","targets":["instagram:submitted"]},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:12:19.331Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"47c29b3"}

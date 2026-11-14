@@ -29,3 +29,6 @@
 {"ts":"2026-11-12T19:14:13.333Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run"]},"gitSha":"37004a9"}
 {"ts":"2026-11-12T19:15:46.896Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-how-fast-eu-central-acbd9ea1.mp4","targets":["youtube:submitted","tiktok:submitted"]},"gitSha":"37004a9"}
 {"ts":"2026-11-12T19:15:46.902Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"37004a9"}
+{"ts":"2026-11-14T21:03:59.640Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["instagram:dry-run"]},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:12:30.560Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-how-fast-eu-central-acbd9ea1.mp4","targets":["instagram:submitted"]},"gitSha":"47c29b3"}
+{"ts":"2026-11-14T21:12:30.565Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"published","to":"published","hashes":{}},"gitSha":"47c29b3"}

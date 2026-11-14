@@ -132,6 +132,20 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-th
 | youtube | submitted | 6af610c6d647bbafc5ad5cd9 |  |
 | tiktok | submitted | 6af610c72ef1f0c84e5cd371 |  |
 
+### 2026-11-14T21:04:05.294Z · buffer · schedule for 2026-12-11T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:12:50.964Z · buffer · schedule for 2026-12-11T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-14-eu-central-aa3ca3bd.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | submitted | 6af8ced5e86a5789a6d0f624 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -266,3 +280,6 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-th
 | 2026-11-12 19:14:17 | claude | publish | publish.dry-run | 37004a9 |
 | 2026-11-12 19:17:27 | claude | publish | publish.submit | 37004a9 |
 | 2026-11-12 19:17:27 | claude | published | stage.advance | 37004a9 |
+| 2026-11-14 21:04:05 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:12:53 | claude | publish | publish.submit | 47c29b3 |
+| 2026-11-14 21:12:53 | claude | published | stage.advance | 47c29b3 |

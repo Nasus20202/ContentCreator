@@ -118,6 +118,28 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | youtube | submitted | 6af610510522ffa5bc4b44c3 |  |
 | tiktok | submitted | 6af61052cfe45b714e4ba2d0 |  |
 
+### 2026-11-14T21:04:03.190Z · buffer · schedule for 2026-11-20T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T21:12:20.007Z · buffer · schedule for 2026-11-14T21:50:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-deep-field-eu-central-f5302bec.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| instagram | submitted | 6af8ceb7b9a106584c6d6cd9 |  |
+
+## Metrics
+
+| At | Platform | Views | Likes | Avg view % | Source |
+| --- | --- | --- | --- | --- | --- |
+| 2026-11-14T20:38 | youtube | 298 | 6 | — | Buffer API Post.metrics, updated 2026-11-14T20:19Z |
+| 2026-11-14T20:38 | tiktok | 3 | — | — | TikTok public profile grid, 2026-11-14 ~20:45 UTC |
+| 2026-11-14T20:39 | youtube | 409 | 8 | 57.1 | YouTube Studio dashboard, first 3h35m (stayed to watch 42.2%) |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -147,3 +169,9 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-12 19:14:12 | claude | publish | publish.dry-run | 37004a9 |
 | 2026-11-12 19:15:30 | claude | publish | publish.submit | 37004a9 |
 | 2026-11-12 19:15:30 | claude | published | stage.advance | 37004a9 |
+| 2026-11-14 20:38:05 | claude | published | metrics.add | 47c29b3 |
+| 2026-11-14 20:38:07 | claude | published | metrics.add | 47c29b3 |
+| 2026-11-14 20:39:45 | claude | published | metrics.add | 47c29b3 |
+| 2026-11-14 21:04:03 | claude | publish | publish.dry-run | 47c29b3 |
+| 2026-11-14 21:12:23 | claude | publish | publish.submit | 47c29b3 |
+| 2026-11-14 21:12:23 | claude | published | stage.advance | 47c29b3 |
