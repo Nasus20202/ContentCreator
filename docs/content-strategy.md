@@ -57,6 +57,26 @@ Review cadence: after every 4 published episodes (`content-strategy` skill), and
 7. **"Space, verified" news** — deferred until the sourced-facts workflow has run end to end; speed-sensitive and competes with established space media on their strongest ground.
 8. **Polish-language channel** — blocked: Kokoro ships en/es/fr/hi/it/ja/pt/zh voices, so this needs a different TTS engine or a human voice, plus a second review loop.
 
+## Production queue (2026-11-15)
+
+Sky This Week ships on **Fridays at 17:00 UTC (18:00 CET)**, the Friday before the week it covers. Sky School fills the gaps.
+
+| Release           | Episode                                                                                | Status                              |
+| ----------------- | -------------------------------------------------------------------------------------- | ----------------------------------- |
+| Fri 20 Nov        | Sky School: "How many meteors will you really see from a city?" (sets up the Geminids) | to produce                          |
+| Tue 24 Nov        | Sky School: "Why the Moon's distance changes" (sets up the Christmas Eve full Moon)    | to produce                          |
+| Fri 27 Nov        | Sky This Week Nov 30–Dec 6: Moon–Jupiter 1.9°, Moon–Mars 3.7°                          | to produce                          |
+| Tue 1 / Thu 3 Dec | Sky School: one more evergreen (e.g. "why a conjunction is not a collision")           | to produce                          |
+| Mon 7 Dec         | Sky School: Geminids radiant                                                           | scheduled                           |
+| Fri 11 Dec        | Sky This Week Dec 14–20 (Geminids)                                                     | scheduled                           |
+| Sun 13 Dec        | Sky Tonight: Geminids (15:00 UTC)                                                      | scheduled                           |
+| Fri 18 Dec        | Sky This Week Dec 21–27 (Christmas Eve full Moon)                                      | scheduled                           |
+| Fri 1 Jan         | Sky This Week Jan 4–10 (Quadrantids)                                                   | scheduled                           |
+| Jan–Feb Fridays   | Sky This Week for weeks with a Moon–planet pass worth showing; Sky School otherwise    | to plan                             |
+| Mon 15 Feb        | Sky School: Mars opposition                                                            | approved, waiting for a Buffer slot |
+
+The limit is Buffer's 10 scheduled posts per channel: produce about 2 weeks ahead and schedule as slots free up.
+
 ## Open questions
 
 - Which platform responds best to this format? (no data yet)
@@ -68,3 +88,4 @@ Review cadence: after every 4 published episodes (`content-strategy` skill), and
 
 - 2026-11-11 — Initial thesis, KPIs, experiments (Claude; see channel decisions of the same date).
 - 2026-11-12 — Calendar scan of Nov 2026–Sep 2027: weekly cadence has holes (Nov 23, most of Mar–Jul 2027) and three peaks (Geminids, Christmas Moon, February planet week). Ranked the experiments backlog, added Sky School and the long-form pilot, noted two engine limits. No new series yet.
+- 2026-11-15 — First metrics (provisional, n=3): Sky This Week episode 1 ≈ 2.8× the best Sky School short on YouTube; TikTok is near zero for all of them. Sky This Week becomes a standing Friday release, Sky School drops to 2–3 a week to fill gaps. The approved backlog is scheduled, and a production queue for 20 Nov – 6 Dec is added.

@@ -1,0 +1,222 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-14T23:33:07.356Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-18T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "7977963a9c3b69fa1d8ef14402e8e35f9db83b51a91e5bb768a13522933d41c8",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "The full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#fullmoon #christmas #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The closest full Moon of 2026 rises on Christmas Eve 🌕",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The closest full Moon of 2026 rises on Christmas Eve 🌕\n\nThe full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#fullmoon #christmas #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The closest full Moon of 2026 rises on Christmas Eve 🌕\n\nThe full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#fullmoon #christmas #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-14T23:33:31.309Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-18T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "7977963a9c3b69fa1d8ef14402e8e35f9db83b51a91e5bb768a13522933d41c8",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8efd4b9a106584c76bffe",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "The full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#fullmoon #christmas #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-21-eu-central-7977963a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The closest full Moon of 2026 rises on Christmas Eve 🌕",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8efd5918fe79d2eae1eb3",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The closest full Moon of 2026 rises on Christmas Eve 🌕\n\nThe full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#fullmoon #christmas #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-21-eu-central-7977963a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8efd6e5a113497ab4baaa",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The closest full Moon of 2026 rises on Christmas Eve 🌕\n\nThe full Moon on 24 December 2026 is 356,729 km from Earth — the closest full Moon of the year and 13.8% wider than the year's farthest full Moon. It is high in the south around midnight. On 27 December the Moon passes Jupiter, closest at 2.1°, and the pair is best seen before dawn.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#fullmoon #christmas #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-21-eu-central-7977963a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-21-eu-central-7977963a.mp4"
+      }
+    }
+  ]
+}

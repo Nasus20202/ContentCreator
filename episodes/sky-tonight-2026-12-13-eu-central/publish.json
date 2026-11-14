@@ -1,0 +1,222 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-14T23:33:06.680Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-13T15:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "68bb1ea1bdb6b641ba1ee8f1a0db95d7708b400a244f8ef19340767b8fd43c42",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "The Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#geminids #tonight #meteorshower #stargazing #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-13T15:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Tonight: the Geminids peak, and the Moon stays away 🌠",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Tonight: the Geminids peak, and the Moon stays away 🌠\n\nThe Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#geminids #tonight #meteorshower #stargazing #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-13T15:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "Tonight: the Geminids peak, and the Moon stays away 🌠\n\nThe Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#geminids #tonight #meteorshower #stargazing #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-13T15:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-14T23:33:20.912Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-13T15:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "68bb1ea1bdb6b641ba1ee8f1a0db95d7708b400a244f8ef19340767b8fd43c42",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8efc9e5a113497ab4b948",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "The Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#geminids #tonight #meteorshower #stargazing #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-13T15:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-tonight-2026-12-13-eu-central-68bb1ea1.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Tonight: the Geminids peak, and the Moon stays away 🌠",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8efc9e86a5789a6da725f",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Tonight: the Geminids peak, and the Moon stays away 🌠\n\nThe Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#geminids #tonight #meteorshower #stargazing #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-13T15:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-tonight-2026-12-13-eu-central-68bb1ea1.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8efcae86a5789a6da7288",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "Tonight: the Geminids peak, and the Moon stays away 🌠\n\nThe Geminids peak on the night of 13 into 14 December 2026. The Moon sets at 20:04, so the sky is dark, and the radiant in Gemini is highest after midnight. Up to 150 meteors an hour is the ideal-sky rate (ZHR); from a town expect far fewer. Look south after midnight and let your eyes adapt for a few minutes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#geminids #tonight #meteorshower #stargazing #nightsky",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-13T15:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-tonight-2026-12-13-eu-central-68bb1ea1.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-tonight-2026-12-13-eu-central-68bb1ea1.mp4"
+      }
+    }
+  ]
+}

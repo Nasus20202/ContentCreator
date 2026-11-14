@@ -1,0 +1,222 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-14T23:33:08.049Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2027-01-01T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "8e064f4b7f2ba59e1e75ef7bdc12e51b4aeac869fee37b44913bda5f3cf5b94c",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "The Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#quadrantids #meteorshower #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2027-01-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The Quadrantids peak this weekend — but timing matters 🌠",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The Quadrantids peak this weekend — but timing matters 🌠\n\nThe Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#quadrantids #meteorshower #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2027-01-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The Quadrantids peak this weekend — but timing matters 🌠\n\nThe Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#quadrantids #meteorshower #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2027-01-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-14T23:33:42.903Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2027-01-01T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "8e064f4b7f2ba59e1e75ef7bdc12e51b4aeac869fee37b44913bda5f3cf5b94c",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8efe0e5a113497ab4bc5c",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "The Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#quadrantids #meteorshower #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2027-01-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2027-01-04-eu-central-8e064f4b.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The Quadrantids peak this weekend — but timing matters 🌠",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8efe0918fe79d2eae212b",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The Quadrantids peak this weekend — but timing matters 🌠\n\nThe Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#quadrantids #meteorshower #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2027-01-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2027-01-04-eu-central-8e064f4b.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af8efe1918fe79d2eae2154",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The Quadrantids peak this weekend — but timing matters 🌠\n\nThe Quadrantids peak at 19:37 central Europe time on 3 January 2027, when the radiant in Boötes is barely above the northern horizon here. The practical window is the hours before dawn on 4 January, when the radiant is high in the east. 80 meteors an hour is the peak rate (ZHR); expect a fraction of that by dawn. The Moon is a 12% crescent low in the east and barely interferes.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine; meteor rates from the International Meteor Organization. Narration uses a synthetic voice.\n\n#quadrantids #meteorshower #astronomy #stargazing #nightsky #space",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2027-01-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2027-01-04-eu-central-8e064f4b.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2027-01-04-eu-central-8e064f4b.mp4"
+      }
+    }
+  ]
+}

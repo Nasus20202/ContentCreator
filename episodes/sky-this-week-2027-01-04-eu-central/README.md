@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-this-week-2027-01-04-eu-central |
 | Series | sky-this-week |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-12T10:01:29.231Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2027-01-03T23:00:00.000Z → 2027-01-10T23:00:00.000Z |
@@ -111,6 +111,26 @@ Visual review by **claude** (2026-11-12T18:53:53.768Z): **pass** — Quadrantids
 
 - 2026-11-12T19:13:36.902Z — **Krzysztof Nasuta** (human) approved video `8e064f4b7f2ba59e…`
 
+## Publishing
+
+### 2026-11-14T23:33:08.049Z · buffer · schedule for 2027-01-01T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T23:33:42.903Z · buffer · schedule for 2027-01-01T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2027-01-04-eu-central-8e064f4b.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af8efe0e5a113497ab4bc5c |  |
+| tiktok | submitted | 6af8efe0918fe79d2eae212b |  |
+| instagram | submitted | 6af8efe1918fe79d2eae2154 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -213,3 +233,6 @@ Visual review by **claude** (2026-11-12T18:53:53.768Z): **pass** — Quadrantids
 | 2026-11-12 18:53:53 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:53 | claude | qa-passed | stage.advance | 56e31e5 |
 | 2026-11-12 19:13:36 | human | approved | stage.advance | 37004a9 |
+| 2026-11-14 23:33:08 | claude | publish | publish.dry-run | d4d1570 |
+| 2026-11-14 23:33:53 | claude | publish | publish.submit | d4d1570 |
+| 2026-11-14 23:33:53 | claude | published | stage.advance | d4d1570 |

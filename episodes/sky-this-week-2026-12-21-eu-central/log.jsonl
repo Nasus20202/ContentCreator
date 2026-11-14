@@ -121,3 +121,6 @@
 {"ts":"2026-11-12T18:53:53.069Z","actor":"claude","stage":"qa","action":"qa.review","details":{"verdict":"pass","notes":"Christmas Eve closest full Moon card (357,000 km), midnight Moon high in the south, Moon-Jupiter on 27 Dec, outro synced with hold."},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T18:53:53.075Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"56e31e5"}
 {"ts":"2026-11-12T19:13:36.241Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"37004a9"}
+{"ts":"2026-11-14T23:33:07.357Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run","instagram:dry-run"]},"gitSha":"d4d1570"}
+{"ts":"2026-11-14T23:33:42.218Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-21-eu-central-7977963a.mp4","targets":["youtube:submitted","tiktok:submitted","instagram:submitted"]},"gitSha":"d4d1570"}
+{"ts":"2026-11-14T23:33:42.223Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"d4d1570"}

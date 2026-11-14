@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-this-week-2026-12-21-eu-central |
 | Series | sky-this-week |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-12T10:01:28.022Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-12-20T23:00:00.000Z → 2026-12-27T23:00:00.000Z |
@@ -108,6 +108,26 @@ Visual review by **claude** (2026-11-12T18:53:53.069Z): **pass** — Christmas E
 ## Approvals
 
 - 2026-11-12T19:13:36.241Z — **Krzysztof Nasuta** (human) approved video `7977963a9c3b69fa…`
+
+## Publishing
+
+### 2026-11-14T23:33:07.356Z · buffer · schedule for 2026-12-18T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T23:33:31.309Z · buffer · schedule for 2026-12-18T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-21-eu-central-7977963a.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af8efd4b9a106584c76bffe |  |
+| tiktok | submitted | 6af8efd5918fe79d2eae1eb3 |  |
+| instagram | submitted | 6af8efd6e5a113497ab4baaa |  |
 
 ## Event log
 
@@ -236,3 +256,6 @@ Visual review by **claude** (2026-11-12T18:53:53.069Z): **pass** — Christmas E
 | 2026-11-12 18:53:53 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:53 | claude | qa-passed | stage.advance | 56e31e5 |
 | 2026-11-12 19:13:36 | human | approved | stage.advance | 37004a9 |
+| 2026-11-14 23:33:07 | claude | publish | publish.dry-run | d4d1570 |
+| 2026-11-14 23:33:42 | claude | publish | publish.submit | d4d1570 |
+| 2026-11-14 23:33:42 | claude | published | stage.advance | d4d1570 |

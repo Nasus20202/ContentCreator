@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-tonight-2026-12-13-eu-central |
 | Series | sky-tonight |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-12T10:11:35.666Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-12-12T23:00:00.000Z → 2026-12-19T23:00:00.000Z |
@@ -101,6 +101,26 @@ Visual review by **claude** (2026-11-12T18:53:52.358Z): **pass** — Tonight sho
 
 - 2026-11-12T19:13:35.585Z — **Krzysztof Nasuta** (human) approved video `68bb1ea1bdb6b641…`
 
+## Publishing
+
+### 2026-11-14T23:33:06.680Z · buffer · schedule for 2026-12-13T15:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+| instagram | dry-run | — |  |
+
+### 2026-11-14T23:33:20.912Z · buffer · schedule for 2026-12-13T15:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-tonight-2026-12-13-eu-central-68bb1ea1.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af8efc9e5a113497ab4b948 |  |
+| tiktok | submitted | 6af8efc9e86a5789a6da725f |  |
+| instagram | submitted | 6af8efcae86a5789a6da7288 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -190,3 +210,6 @@ Visual review by **claude** (2026-11-12T18:53:52.358Z): **pass** — Tonight sho
 | 2026-11-12 18:53:52 | claude | qa | qa.review | 56e31e5 |
 | 2026-11-12 18:53:52 | claude | qa-passed | stage.advance | 56e31e5 |
 | 2026-11-12 19:13:35 | human | approved | stage.advance | 37004a9 |
+| 2026-11-14 23:33:06 | claude | publish | publish.dry-run | d4d1570 |
+| 2026-11-14 23:33:30 | claude | publish | publish.submit | d4d1570 |
+| 2026-11-14 23:33:30 | claude | published | stage.advance | d4d1570 |
