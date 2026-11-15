@@ -6,6 +6,8 @@ import { promisify } from 'node:util';
 import { z } from 'zod';
 import { ensurePianoSamples, pianoDir } from '../assets/piano';
 import { isScoreStyle, renderScore, scoreNotes, type ScoreStyle } from './score';
+import type { ToneStyle } from './tone/compose';
+import { isToneStyle, renderToneBed } from './tone/render';
 
 const run = promisify(execFile);
 
@@ -71,7 +73,7 @@ export async function extractFrame(file: string, tSec: number, out: string): Pro
  * Beds, chosen per series or per episode in the plan. The `piano*` beds are the original slow piano
  * loops (kept so older cuts re-render identically); the arranged beds in `score.ts` follow the scenes.
  */
-export type MusicStyle = 'piano' | 'piano-pulse' | 'piano-air' | ScoreStyle;
+export type MusicStyle = 'piano' | 'piano-pulse' | 'piano-air' | ScoreStyle | ToneStyle;
 
 /** The bed a series gets unless its plan pins `music.style`. */
 export const SERIES_BED: Record<string, MusicStyle> = {
@@ -116,7 +118,7 @@ type Recipe = {
   echoTime: number;
 };
 
-const RECIPE: Record<Exclude<MusicStyle, ScoreStyle>, Recipe> = {
+const RECIPE: Record<Exclude<MusicStyle, ScoreStyle | ToneStyle>, Recipe> = {
   // Sustained felt-piano chords with one picked-out note per bar: the default house sound.
   piano: {
     bar: 4,
@@ -252,6 +254,11 @@ export async function synthesizePad(
   const n = Math.ceil((seconds + 2) * sr);
   let left: Float32Array;
   let right: Float32Array;
+  if (isToneStyle(style)) {
+    const bed = await renderToneBed(style, seconds, variant);
+    if (bed.sampleRate !== sr) throw new Error(`tone bed sample rate ${bed.sampleRate} != ${sr}`);
+    return writeBed(out, bed.left, bed.right, n, sr);
+  }
   if (isScoreStyle(style)) {
     const shift = variant.transpose ?? 0;
     const roots = pianoRoots();
@@ -282,7 +289,7 @@ export async function synthesizePad(
 /** The original piano loops (see RECIPE). */
 async function pianoLoop(
   seconds: number,
-  style: Exclude<MusicStyle, ScoreStyle>,
+  style: Exclude<MusicStyle, ScoreStyle | ToneStyle>,
   variant: BedVariant,
 ): Promise<[Float32Array, Float32Array]> {
   const recipe = RECIPE[style];
