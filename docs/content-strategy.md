@@ -57,25 +57,39 @@ Review cadence: after every 4 published episodes (`content-strategy` skill), and
 7. **"Space, verified" news** — deferred until the sourced-facts workflow has run end to end; speed-sensitive and competes with established space media on their strongest ground.
 8. **Polish-language channel** — blocked: Kokoro ships en/es/fr/hi/it/ja/pt/zh voices, so this needs a different TTS engine or a human voice, plus a second review loop.
 
+## Cadence and series rotation (2026-11-15, owner's decision)
+
+**One video every day at 17:00 UTC (18:00 CET).** Series rotate on fixed weekdays so they can be compared:
+
+| Day | Series                                                                          | Status               |
+| --- | ------------------------------------------------------------------------------- | -------------------- |
+| Mon | Sky School (explainer)                                                          | running              |
+| Tue | Myth Check: one common belief, corrected with a primary source                  | new, 3-episode trial |
+| Wed | One Picture: one real NASA/ESA/JWST image explained in 30–40 s                  | new, 3-episode trial |
+| Thu | Sky Tonight: 20 s, one date-urgent event (or Sky School if there is none)       | running              |
+| Fri | Sky This Week                                                                   | running, best so far |
+| Sat | Space Milestones: dated mission news, verified (pilot: Voyager 1 one light-day) | new, 3-episode trial |
+| Sun | Sky School, or more of whichever series is winning                              | —                    |
+
+Stop rule for new series: after 3 episodes, keep only if average views ≥ 50 % of the channel median and average view % ≥ 50. Dated events beat the rotation (e.g. Voyager on Wed 18 Nov).
+
+Buffer holds 10 scheduled posts per channel, which is about 10 days of daily posting. Production must stay about a week ahead.
+
 ## Production queue (2026-11-15)
 
-Sky This Week ships on **Fridays at 17:00 UTC (18:00 CET)**, the Friday before the week it covers. Sky School fills the gaps.
-
-| Release           | Episode                                                                                | Status                              |
-| ----------------- | -------------------------------------------------------------------------------------- | ----------------------------------- |
-| Fri 20 Nov        | Sky School: "How many meteors will you really see from a city?" (sets up the Geminids) | to produce                          |
-| Tue 24 Nov        | Sky School: "Why the Moon's distance changes" (sets up the Christmas Eve full Moon)    | to produce                          |
-| Fri 27 Nov        | Sky This Week Nov 30–Dec 6: Moon–Jupiter 1.9°, Moon–Mars 3.7°                          | to produce                          |
-| Tue 1 / Thu 3 Dec | Sky School: one more evergreen (e.g. "why a conjunction is not a collision")           | to produce                          |
-| Mon 7 Dec         | Sky School: Geminids radiant                                                           | scheduled                           |
-| Fri 11 Dec        | Sky This Week Dec 14–20 (Geminids)                                                     | scheduled                           |
-| Sun 13 Dec        | Sky Tonight: Geminids (15:00 UTC)                                                      | scheduled                           |
-| Fri 18 Dec        | Sky This Week Dec 21–27 (Christmas Eve full Moon)                                      | scheduled                           |
-| Fri 1 Jan         | Sky This Week Jan 4–10 (Quadrantids)                                                   | scheduled                           |
-| Jan–Feb Fridays   | Sky This Week for weeks with a Moon–planet pass worth showing; Sky School otherwise    | to plan                             |
-| Mon 15 Feb        | Sky School: Mars opposition                                                            | approved, waiting for a Buffer slot |
-
-The limit is Buffer's 10 scheduled posts per channel: produce about 2 weeks ahead and schedule as slots free up.
+| Release                 | Episode                                                                                 | Status                              |
+| ----------------------- | --------------------------------------------------------------------------------------- | ----------------------------------- |
+| Wed 18 Nov              | Space Milestones pilot: Voyager 1 one light-day (replaces Light Travel in this slot)    | QA passed, needs approval           |
+| Fri 20 Nov              | Sky School: Light Travel (moved from 18 Nov)                                            | scheduled, to reschedule            |
+| Sat 21 Nov – Thu 26 Nov | rotation: Milestones / Sky School / Sky School / Myth Check / One Picture / Sky Tonight | to produce                          |
+| Fri 27 Nov              | Sky This Week Nov 30–Dec 6: Moon–Jupiter 1.9°, Moon–Mars 3.7°                           | to produce                          |
+| 28 Nov – 6 Dec          | rotation                                                                                | to produce                          |
+| Mon 7 Dec               | Sky School: Geminids radiant                                                            | scheduled                           |
+| Fri 11 Dec              | Sky This Week Dec 14–20 (Geminids)                                                      | scheduled                           |
+| Sun 13 Dec              | Sky Tonight: Geminids (15:00 UTC)                                                       | scheduled                           |
+| Fri 18 Dec              | Sky This Week Dec 21–27 (Christmas Eve full Moon)                                       | scheduled                           |
+| Fri 1 Jan               | Sky This Week Jan 4–10 (Quadrantids)                                                    | scheduled                           |
+| Mon 15 Feb              | Sky School: Mars opposition                                                             | approved, waiting for a Buffer slot |
 
 ## Open questions
 
@@ -89,3 +103,4 @@ The limit is Buffer's 10 scheduled posts per channel: produce about 2 weeks ahea
 - 2026-11-11 — Initial thesis, KPIs, experiments (Claude; see channel decisions of the same date).
 - 2026-11-12 — Calendar scan of Nov 2026–Sep 2027: weekly cadence has holes (Nov 23, most of Mar–Jul 2027) and three peaks (Geminids, Christmas Moon, February planet week). Ranked the experiments backlog, added Sky School and the long-form pilot, noted two engine limits. No new series yet.
 - 2026-11-15 — First metrics (provisional, n=3): Sky This Week episode 1 ≈ 2.8× the best Sky School short on YouTube; TikTok is near zero for all of them. Sky This Week becomes a standing Friday release, Sky School drops to 2–3 a week to fill gaps. The approved backlog is scheduled, and a production queue for 20 Nov – 6 Dec is added.
+- 2026-11-15 (later) — Owner sets the cadence at one video per day and wants several series tested. Added a weekday rotation with three new trial series (Myth Check, One Picture, Space Milestones) and a stop rule.

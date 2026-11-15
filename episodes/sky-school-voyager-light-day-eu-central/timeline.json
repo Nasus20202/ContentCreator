@@ -1,0 +1,746 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "3a79f54cad9cf853",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 9.718,
+      "sentences": [
+        {
+          "text": "Voyager 1 is now one light-day from Earth.",
+          "start": 0.15,
+          "end": 2.68,
+          "words": [
+            {
+              "w": "Voyager",
+              "start": 0.15,
+              "end": 0.588
+            },
+            {
+              "w": "1",
+              "start": 0.588,
+              "end": 0.734
+            },
+            {
+              "w": "is",
+              "start": 0.734,
+              "end": 0.928
+            },
+            {
+              "w": "now",
+              "start": 0.928,
+              "end": 1.172
+            },
+            {
+              "w": "one",
+              "start": 1.172,
+              "end": 1.415
+            },
+            {
+              "w": "light-day",
+              "start": 1.415,
+              "end": 1.901
+            },
+            {
+              "w": "from",
+              "start": 1.901,
+              "end": 2.193
+            },
+            {
+              "w": "Earth.",
+              "start": 2.193,
+              "end": 2.68
+            }
+          ]
+        },
+        {
+          "text": "On the 18th of November it became the first human-made object this far away.",
+          "start": 2.96,
+          "end": 7.423,
+          "words": [
+            {
+              "w": "On",
+              "start": 2.96,
+              "end": 3.154
+            },
+            {
+              "w": "the",
+              "start": 3.154,
+              "end": 3.396
+            },
+            {
+              "w": "18th",
+              "start": 3.396,
+              "end": 3.687
+            },
+            {
+              "w": "of",
+              "start": 3.687,
+              "end": 3.882
+            },
+            {
+              "w": "November",
+              "start": 3.882,
+              "end": 4.367
+            },
+            {
+              "w": "it",
+              "start": 4.367,
+              "end": 4.561
+            },
+            {
+              "w": "became",
+              "start": 4.561,
+              "end": 4.949
+            },
+            {
+              "w": "the",
+              "start": 4.949,
+              "end": 5.192
+            },
+            {
+              "w": "first",
+              "start": 5.192,
+              "end": 5.531
+            },
+            {
+              "w": "human-made",
+              "start": 5.531,
+              "end": 6.065
+            },
+            {
+              "w": "object",
+              "start": 6.065,
+              "end": 6.453
+            },
+            {
+              "w": "this",
+              "start": 6.453,
+              "end": 6.744
+            },
+            {
+              "w": "far",
+              "start": 6.744,
+              "end": 6.987
+            },
+            {
+              "w": "away.",
+              "start": 6.987,
+              "end": 7.423
+            }
+          ]
+        },
+        {
+          "text": "It launched in 1977.",
+          "start": 7.703,
+          "end": 9.438,
+          "words": [
+            {
+              "w": "It",
+              "start": 7.703,
+              "end": 7.96
+            },
+            {
+              "w": "launched",
+              "start": 7.96,
+              "end": 8.603
+            },
+            {
+              "w": "in",
+              "start": 8.603,
+              "end": 8.86
+            },
+            {
+              "w": "1977.",
+              "start": 8.86,
+              "end": 9.438
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "compare",
+      "audioFile": "voice/compare.wav",
+      "duration": 13.627,
+      "sentences": [
+        {
+          "text": "A light-day is how far light travels in twenty-four hours: about twenty-six billion kilometres.",
+          "start": 0.15,
+          "end": 5.691,
+          "words": [
+            {
+              "w": "A",
+              "start": 0.15,
+              "end": 0.3
+            },
+            {
+              "w": "light-day",
+              "start": 0.3,
+              "end": 0.799
+            },
+            {
+              "w": "is",
+              "start": 0.799,
+              "end": 0.999
+            },
+            {
+              "w": "how",
+              "start": 0.999,
+              "end": 1.248
+            },
+            {
+              "w": "far",
+              "start": 1.248,
+              "end": 1.498
+            },
+            {
+              "w": "light",
+              "start": 1.498,
+              "end": 1.847
+            },
+            {
+              "w": "travels",
+              "start": 1.847,
+              "end": 2.296
+            },
+            {
+              "w": "in",
+              "start": 2.296,
+              "end": 2.496
+            },
+            {
+              "w": "twenty-four",
+              "start": 2.496,
+              "end": 3.095
+            },
+            {
+              "w": "hours:",
+              "start": 3.095,
+              "end": 3.594
+            },
+            {
+              "w": "about",
+              "start": 3.594,
+              "end": 3.944
+            },
+            {
+              "w": "twenty-six",
+              "start": 3.944,
+              "end": 4.493
+            },
+            {
+              "w": "billion",
+              "start": 4.493,
+              "end": 4.942
+            },
+            {
+              "w": "kilometres.",
+              "start": 4.942,
+              "end": 5.691
+            }
+          ]
+        },
+        {
+          "text": "Light reaches the Moon in 1.3 seconds, and the Sun in eight minutes and twenty seconds.",
+          "start": 5.971,
+          "end": 11.293,
+          "words": [
+            {
+              "w": "Light",
+              "start": 5.971,
+              "end": 6.319
+            },
+            {
+              "w": "reaches",
+              "start": 6.319,
+              "end": 6.767
+            },
+            {
+              "w": "the",
+              "start": 6.767,
+              "end": 7.015
+            },
+            {
+              "w": "Moon",
+              "start": 7.015,
+              "end": 7.314
+            },
+            {
+              "w": "in",
+              "start": 7.314,
+              "end": 7.513
+            },
+            {
+              "w": "1.3",
+              "start": 7.513,
+              "end": 7.712
+            },
+            {
+              "w": "seconds,",
+              "start": 7.712,
+              "end": 8.309
+            },
+            {
+              "w": "and",
+              "start": 8.309,
+              "end": 8.557
+            },
+            {
+              "w": "the",
+              "start": 8.557,
+              "end": 8.806
+            },
+            {
+              "w": "Sun",
+              "start": 8.806,
+              "end": 9.055
+            },
+            {
+              "w": "in",
+              "start": 9.055,
+              "end": 9.254
+            },
+            {
+              "w": "eight",
+              "start": 9.254,
+              "end": 9.602
+            },
+            {
+              "w": "minutes",
+              "start": 9.602,
+              "end": 10.05
+            },
+            {
+              "w": "and",
+              "start": 10.05,
+              "end": 10.298
+            },
+            {
+              "w": "twenty",
+              "start": 10.298,
+              "end": 10.696
+            },
+            {
+              "w": "seconds.",
+              "start": 10.696,
+              "end": 11.293
+            }
+          ]
+        },
+        {
+          "text": "Voyager 1 is a whole day away.",
+          "start": 11.573,
+          "end": 13.347,
+          "words": [
+            {
+              "w": "Voyager",
+              "start": 11.573,
+              "end": 11.972
+            },
+            {
+              "w": "1",
+              "start": 11.972,
+              "end": 12.105
+            },
+            {
+              "w": "is",
+              "start": 12.105,
+              "end": 12.283
+            },
+            {
+              "w": "a",
+              "start": 12.283,
+              "end": 12.416
+            },
+            {
+              "w": "whole",
+              "start": 12.416,
+              "end": 12.726
+            },
+            {
+              "w": "day",
+              "start": 12.726,
+              "end": 12.948
+            },
+            {
+              "w": "away.",
+              "start": 12.948,
+              "end": 13.347
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "signal",
+      "audioFile": "voice/signal.wav",
+      "duration": 6.421,
+      "sentences": [
+        {
+          "text": "So every command sent from Earth now takes a full day to arrive.",
+          "start": 0.15,
+          "end": 3.818,
+          "words": [
+            {
+              "w": "So",
+              "start": 0.15,
+              "end": 0.333
+            },
+            {
+              "w": "every",
+              "start": 0.333,
+              "end": 0.654
+            },
+            {
+              "w": "command",
+              "start": 0.654,
+              "end": 1.067
+            },
+            {
+              "w": "sent",
+              "start": 1.067,
+              "end": 1.342
+            },
+            {
+              "w": "from",
+              "start": 1.342,
+              "end": 1.617
+            },
+            {
+              "w": "Earth",
+              "start": 1.617,
+              "end": 1.938
+            },
+            {
+              "w": "now",
+              "start": 1.938,
+              "end": 2.167
+            },
+            {
+              "w": "takes",
+              "start": 2.167,
+              "end": 2.488
+            },
+            {
+              "w": "a",
+              "start": 2.488,
+              "end": 2.626
+            },
+            {
+              "w": "full",
+              "start": 2.626,
+              "end": 2.901
+            },
+            {
+              "w": "day",
+              "start": 2.901,
+              "end": 3.13
+            },
+            {
+              "w": "to",
+              "start": 3.13,
+              "end": 3.313
+            },
+            {
+              "w": "arrive.",
+              "start": 3.313,
+              "end": 3.818
+            }
+          ]
+        },
+        {
+          "text": "The reply takes another day to come back.",
+          "start": 4.098,
+          "end": 6.141,
+          "words": [
+            {
+              "w": "The",
+              "start": 4.098,
+              "end": 4.294
+            },
+            {
+              "w": "reply",
+              "start": 4.294,
+              "end": 4.569
+            },
+            {
+              "w": "takes",
+              "start": 4.569,
+              "end": 4.844
+            },
+            {
+              "w": "another",
+              "start": 4.844,
+              "end": 5.198
+            },
+            {
+              "w": "day",
+              "start": 5.198,
+              "end": 5.394
+            },
+            {
+              "w": "to",
+              "start": 5.394,
+              "end": 5.551
+            },
+            {
+              "w": "come",
+              "start": 5.551,
+              "end": 5.787
+            },
+            {
+              "w": "back.",
+              "start": 5.787,
+              "end": 6.141
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "trip",
+      "audioFile": "voice/trip.wav",
+      "duration": 6.623,
+      "sentences": [
+        {
+          "text": "Getting there took forty-nine years, two months and eleven days, at nearly sixty-one thousand kilometres an hour.",
+          "start": 0.15,
+          "end": 6.343,
+          "words": [
+            {
+              "w": "Getting",
+              "start": 0.15,
+              "end": 0.563
+            },
+            {
+              "w": "there",
+              "start": 0.563,
+              "end": 0.884
+            },
+            {
+              "w": "took",
+              "start": 0.884,
+              "end": 1.159
+            },
+            {
+              "w": "forty-nine",
+              "start": 1.159,
+              "end": 1.664
+            },
+            {
+              "w": "years,",
+              "start": 1.664,
+              "end": 2.123
+            },
+            {
+              "w": "two",
+              "start": 2.123,
+              "end": 2.352
+            },
+            {
+              "w": "months",
+              "start": 2.352,
+              "end": 2.719
+            },
+            {
+              "w": "and",
+              "start": 2.719,
+              "end": 2.948
+            },
+            {
+              "w": "eleven",
+              "start": 2.948,
+              "end": 3.315
+            },
+            {
+              "w": "days,",
+              "start": 3.315,
+              "end": 3.728
+            },
+            {
+              "w": "at",
+              "start": 3.728,
+              "end": 3.912
+            },
+            {
+              "w": "nearly",
+              "start": 3.912,
+              "end": 4.279
+            },
+            {
+              "w": "sixty-one",
+              "start": 4.279,
+              "end": 4.737
+            },
+            {
+              "w": "thousand",
+              "start": 4.737,
+              "end": 5.196
+            },
+            {
+              "w": "kilometres",
+              "start": 5.196,
+              "end": 5.747
+            },
+            {
+              "w": "an",
+              "start": 5.747,
+              "end": 5.93
+            },
+            {
+              "w": "hour.",
+              "start": 5.93,
+              "end": 6.343
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "still",
+      "audioFile": "voice/still.wav",
+      "duration": 3.657,
+      "sentences": [
+        {
+          "text": "And it is still sending data home.",
+          "start": 0.15,
+          "end": 1.703,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.327
+            },
+            {
+              "w": "it",
+              "start": 0.327,
+              "end": 0.468
+            },
+            {
+              "w": "is",
+              "start": 0.468,
+              "end": 0.609
+            },
+            {
+              "w": "still",
+              "start": 0.609,
+              "end": 0.856
+            },
+            {
+              "w": "sending",
+              "start": 0.856,
+              "end": 1.174
+            },
+            {
+              "w": "data",
+              "start": 1.174,
+              "end": 1.386
+            },
+            {
+              "w": "home.",
+              "start": 1.386,
+              "end": 1.703
+            }
+          ]
+        },
+        {
+          "text": "It just arrives a day late.",
+          "start": 1.983,
+          "end": 3.377,
+          "words": [
+            {
+              "w": "It",
+              "start": 1.983,
+              "end": 2.138
+            },
+            {
+              "w": "just",
+              "start": 2.138,
+              "end": 2.37
+            },
+            {
+              "w": "arrives",
+              "start": 2.37,
+              "end": 2.719
+            },
+            {
+              "w": "a",
+              "start": 2.719,
+              "end": 2.835
+            },
+            {
+              "w": "day",
+              "start": 2.835,
+              "end": 3.029
+            },
+            {
+              "w": "late.",
+              "start": 3.029,
+              "end": 3.377
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.421,
+      "sentences": [
+        {
+          "text": "Follow for more sky, explained.",
+          "start": 0.15,
+          "end": 2.033,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.518
+            },
+            {
+              "w": "for",
+              "start": 0.518,
+              "end": 0.747
+            },
+            {
+              "w": "more",
+              "start": 0.747,
+              "end": 1.023
+            },
+            {
+              "w": "sky,",
+              "start": 1.023,
+              "end": 1.39
+            },
+            {
+              "w": "explained.",
+              "start": 1.39,
+              "end": 2.033
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.313,
+          "end": 3.141,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.313,
+              "end": 2.654
+            },
+            {
+              "w": "skies.",
+              "start": 2.654,
+              "end": 3.141
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
