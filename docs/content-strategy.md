@@ -79,19 +79,19 @@ Buffer holds 10 scheduled posts per channel, which is about 10 days of daily pos
 
 ## Production queue (2026-11-15)
 
-| Release                 | Episode                                                                                 | Status                              |
-| ----------------------- | --------------------------------------------------------------------------------------- | ----------------------------------- |
-| Wed 18 Nov              | Space Milestones pilot: Voyager 1 one light-day (replaces Light Travel in this slot)    | QA passed, needs approval           |
-| Fri 20 Nov              | Sky School: Light Travel (moved from 18 Nov)                                            | scheduled, to reschedule            |
-| Sat 21 Nov – Thu 26 Nov | rotation: Milestones / Sky School / Sky School / Myth Check / One Picture / Sky Tonight | to produce                          |
-| Fri 27 Nov              | Sky This Week Nov 30–Dec 6: Moon–Jupiter 1.9°, Moon–Mars 3.7°                           | to produce                          |
-| 28 Nov – 6 Dec          | rotation                                                                                | to produce                          |
-| Mon 7 Dec               | Sky School: Geminids radiant                                                            | scheduled                           |
-| Fri 11 Dec              | Sky This Week Dec 14–20 (Geminids)                                                      | scheduled                           |
-| Sun 13 Dec              | Sky Tonight: Geminids (15:00 UTC)                                                       | scheduled                           |
-| Fri 18 Dec              | Sky This Week Dec 21–27 (Christmas Eve full Moon)                                       | scheduled                           |
-| Fri 1 Jan               | Sky This Week Jan 4–10 (Quadrantids)                                                    | scheduled                           |
-| Mon 15 Feb              | Sky School: Mars opposition                                                             | approved, waiting for a Buffer slot |
+| Release                 | Episode                                                                                 | Status                                |
+| ----------------------- | --------------------------------------------------------------------------------------- | ------------------------------------- |
+| Wed 18 Nov              | Space Milestones pilot: Voyager 1 one light-day (replaces Light Travel in this slot)    | QA passed, needs approval             |
+| Fri 20 Nov              | Sky School: Light Travel (moved from 18 Nov)                                            | scheduled, to reschedule              |
+| Sat 21 Nov – Thu 26 Nov | rotation: Milestones / Sky School / Sky School / Myth Check / One Picture / Sky Tonight | to produce                            |
+| Fri 27 Nov              | Sky This Week Nov 30–Dec 6: Moon–Jupiter 1.9°, Moon–Mars 3.7°                           | to produce                            |
+| 28 Nov – 6 Dec          | rotation                                                                                | to produce                            |
+| Mon 7 Dec               | Sky School: Geminids radiant                                                            | approved, re-schedule ≤10 days before |
+| Fri 11 Dec              | Sky This Week Dec 14–20 (Geminids)                                                      | approved, re-schedule ≤10 days before |
+| Sun 13 Dec              | Sky Tonight: Geminids (15:00 UTC)                                                       | approved, re-schedule ≤10 days before |
+| Fri 18 Dec              | Sky This Week Dec 21–27 (Christmas Eve full Moon)                                       | approved, re-schedule ≤10 days before |
+| Fri 1 Jan               | Sky This Week Jan 4–10 (Quadrantids)                                                    | approved, re-schedule ≤10 days before |
+| Mon 15 Feb              | Sky School: Mars opposition                                                             | approved, waiting for a Buffer slot   |
 
 ## Open questions
 
