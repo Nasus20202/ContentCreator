@@ -30,7 +30,8 @@ export async function renderEpisode(props: RenderProps, opts: RenderOptions): Pr
     outputLocation: opts.output,
     inputProps,
     chromiumOptions: { gl: 'swangle' },
-    concurrency: Math.max(1, Math.floor(os.cpus().length / 2)),
+    // CC_RENDER_CONCURRENCY lets a batch of parallel renders share the CPU
+    concurrency: Number(process.env.CC_RENDER_CONCURRENCY) || Math.max(1, Math.floor(os.cpus().length / 2)),
     onProgress: ({ progress }) => {
       const pct = Math.floor(progress * 100);
       if (pct >= last + 10) {

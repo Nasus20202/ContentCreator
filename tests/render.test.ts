@@ -6,7 +6,7 @@ import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import type { Plan, Timeline } from '../src/core/schemas';
 import { totalFrames } from '../src/core/timing';
 import { ffmpeg } from '../src/render/media';
-import { buildRenderProps, FPS } from '../src/render/prepare';
+import { buildRenderProps, FPS, onScreenCredit } from '../src/render/prepare';
 import { extractReviewFrames, runAutomatedQa } from '../src/render/qa';
 import { EU, plan } from './fixtures';
 
@@ -115,4 +115,16 @@ describe('QA on a synthetic clip (ffmpeg)', () => {
     expect(frames.map((f) => f.sceneId)).toEqual(['conj', 'conj', 'conj', 'outro', 'outro']);
     for (const f of frames) expect(fs.existsSync(path.join(dir, f.file))).toBe(true);
   }, 60_000);
+});
+
+describe('onScreenCredit', () => {
+  it('shows only the source, keeping Creative Commons licences that require attribution on screen', () => {
+    expect(onScreenCredit('NASA / JSC', 'NASA media usage guidelines (not copyrighted unless noted)')).toBe('NASA / JSC');
+    expect(onScreenCredit('Steve Jurvetson / Wikimedia Commons', 'CC BY 2.0')).toBe(
+      'Steve Jurvetson / Wikimedia Commons · CC BY 2.0',
+    );
+    expect(onScreenCredit('Steve Jurvetson / Wikimedia Commons (CC BY 2.0)', 'CC BY 2.0')).toBe(
+      'Steve Jurvetson / Wikimedia Commons (CC BY 2.0)',
+    );
+  });
 });
