@@ -326,6 +326,115 @@
           }
         }
       ]
+    },
+    {
+      "at": "2026-11-15T10:51:55.965Z",
+      "actor": "claude",
+      "mode": "reschedule",
+      "scheduledFor": "2026-11-15T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "986f8688c322ecb112882f2797a8081ee02a52e2d85dc6868beb5e57d389bfc6",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-11-14-starship-catch-986f8688.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6af91bc7e5a113497ac0604f",
+          "payload": {
+            "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.\n\n#spacex #starship #space #spaceexploration #rocket #missioncontrol",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-15T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-11-14-starship-catch-986f8688.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "SpaceX just caught a Starship spaceship with its tower 🦾🚀",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91bc7e5a113497ac0604f"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6af91bc8e86a5789a6e5e317",
+          "payload": {
+            "text": "SpaceX just caught a Starship spaceship with its tower 🦾🚀\n\nStarship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.\n\n#spacex #starship #space #spaceexploration #rocket #missioncontrol",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-15T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-11-14-starship-catch-986f8688.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91bc8e86a5789a6e5e317"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "submitted",
+          "postId": "6af91bc9e86a5789a6e5e34d",
+          "payload": {
+            "text": "SpaceX just caught a Starship spaceship with its tower 🦾🚀\n\nStarship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history\nSpaceflight Now, Starship Flight 15 coverage\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.\n\n#spacex #starship #space #spaceexploration #rocket #missioncontrol",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-15T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-11-14-starship-catch-986f8688.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91bc9e86a5789a6e5e34d"
+          }
+        }
+      ]
     }
   ]
 }

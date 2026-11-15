@@ -2,7 +2,7 @@
   "id": "wrong-about-space-iss-gravity",
   "series": "wrong-about-space",
   "createdAt": "2026-11-15T01:30:24.546Z",
-  "stage": "rendered",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -16,5 +16,12 @@
     "narration": "ce3feaaee8350590",
     "video": "723d9478a52947a05ce06e9df3d4c44841c55e9592e471eb04c75bac625ab563"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof",
+      "actor": "human",
+      "at": "2026-11-15T10:52:45.226Z",
+      "videoSha256": "723d9478a52947a05ce06e9df3d4c44841c55e9592e471eb04c75bac625ab563"
+    }
+  ]
 }

@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- | --- |
 | [cosmic-top-5-2026-11-24-farthest](../episodes/cosmic-top-5/2026-11-24-farthest/README.md) | cosmic-top-5 | published | The 5 farthest things humans have ever built 🚀 | youtube, tiktok, instagram | — |
 | [mission-control-2026-11-09-escapade](../episodes/mission-control/2026-11-09-escapade/README.md) | mission-control | published | Two NASA probes just slingshotted past Earth toward Mars 🔴 | youtube, tiktok, instagram | — |
-| [mission-control-2026-11-14-starship-catch](../episodes/mission-control/2026-11-14-starship-catch/README.md) | mission-control | qa-passed | SpaceX just caught a Starship spaceship with its tower 🦾🚀 | youtube, tiktok, instagram | — |
+| [mission-control-2026-11-14-starship-catch](../episodes/mission-control/2026-11-14-starship-catch/README.md) | mission-control | approved | SpaceX just caught a Starship spaceship with its tower 🦾🚀 | youtube, tiktok, instagram | — |
 | [one-shot-artemis-earth](../episodes/one-shot/artemis-earth/README.md) | one-shot | published | Earth, photographed from behind the Moon 🌍🌘 | youtube, tiktok, instagram | — |
 | [one-shot-earth-smiled](../episodes/one-shot/earth-smiled/README.md) | one-shot | published | Find Earth in this photo of Saturn 🪐🔵 | youtube, tiktok, instagram | — |
 | [sky-school-deep-field](../episodes/sky-school/deep-field/README.md) | sky-school | published | Almost every dot here is a galaxy 🌌 | youtube, tiktok, instagram | 412 |
@@ -28,4 +28,4 @@
 | [sky-tonight-2026-12-13-eu-central](../episodes/sky-tonight/2026-12-13-eu-central/README.md) | sky-tonight | published | Tonight: the Geminids peak, and the Moon stays away 🌠 | — | — |
 | [weird-physics-gravity-tunnel](../episodes/weird-physics/gravity-tunnel/README.md) | weird-physics | published | Jump into a tunnel through Earth: 42 minutes to the other side 🕳️🌍 | youtube, tiktok, instagram | — |
 | [wrong-about-space-dark-side](../episodes/wrong-about-space/dark-side/README.md) | wrong-about-space | published | The Moon has no dark side. Here's the photo that proves it 🌗 | youtube, tiktok, instagram | — |
-| [wrong-about-space-iss-gravity](../episodes/wrong-about-space/iss-gravity/README.md) | wrong-about-space | rendered | Astronauts don't float because there's no gravity 🧑‍🚀 | youtube, tiktok, instagram | — |
+| [wrong-about-space-iss-gravity](../episodes/wrong-about-space/iss-gravity/README.md) | wrong-about-space | approved | Astronauts don't float because there's no gravity 🧑‍🚀 | youtube, tiktok, instagram | — |

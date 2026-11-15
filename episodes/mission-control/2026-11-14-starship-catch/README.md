@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | mission-control-2026-11-14-starship-catch |
 | Series | mission-control |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T02:04:35.033Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -113,6 +113,10 @@ Footage: SpaceX webcast of the Flight 15 catch, via The Launch Pad on YouTube (h
 
 Visual review by **claude** (2026-11-15T08:24:33.531Z): **pass** — Hook and flight now play the real Flight 15 catch clip (muted, vertical crop, webcast HUD removed). Checked all 16 frames: hook shows tower-cam close-up then the ship held in the arms under 'FLIGHT 15 CATCH · SPACEX'; flight shows the descent, flip and landing burn into the tower under 'SHIP 42 COMING HOME', ship always in frame; credit line 'SpaceX webcast via The Launch Pad · © SpaceX, all rights reserved' on both video scenes, clear of captions; fact cards, outro (footnote 'footage: SpaceX') unchanged. Motion smoothness judged from stills only.
 
+## Approvals
+
+- 2026-11-15T10:50:37.873Z — **Krzysztof** (human) approved video `986f8688c322ecb1…`
+
 ## Publishing
 
 ### 2026-11-15T02:40:48.967Z · buffer · schedule for 2026-11-16T17:00:00.000Z
@@ -138,6 +142,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/missio
 ### 2026-11-15T09:01:03.424Z · buffer · reschedule for 2026-11-15T17:00:00.000Z
 
 Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-11-14-starship-catch-29354dd6.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91bc7e5a113497ac0604f |  |
+| tiktok | submitted | 6af91bc8e86a5789a6e5e317 |  |
+| instagram | submitted | 6af91bc9e86a5789a6e5e34d |  |
+
+### 2026-11-15T10:51:55.965Z · buffer · reschedule for 2026-11-15T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-11-14-starship-catch-986f8688.mp4
 
 | Platform | Status | Post id | Error |
 | --- | --- | --- | --- |
@@ -212,3 +226,5 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/m
 | 2026-11-15 08:24:33 | claude | qa-passed | stage.advance | 0d80a88 |
 | 2026-11-15 08:41:14 | claude | qa-passed | episode.rename | 0d80a88 |
 | 2026-11-15 09:01:06 | claude | publish | publish.reschedule | 0d80a88 |
+| 2026-11-15 10:50:37 | human | approved | stage.advance | 1749707 |
+| 2026-11-15 10:51:58 | claude | publish | publish.reschedule | 1749707 |
