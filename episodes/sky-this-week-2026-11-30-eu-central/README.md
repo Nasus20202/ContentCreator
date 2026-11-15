@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-this-week-2026-11-30-eu-central |
 | Series | sky-this-week |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T01:23:52.079Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-11-29T23:00:00.000Z → 2026-12-06T23:00:00.000Z |
@@ -76,7 +76,7 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narr
 
 ## Render
 
-35.0 s, 1080×1920@30, sha256 `da6816fd80bb914b…`, rendered 2026-11-15T01:30:24.789Z in 265 s.
+35.0 s, 1080×1920@30, sha256 `4f97308aaab319ef…`, rendered 2026-11-15T02:37:05.731Z in 136 s.
 
 ## QA
 
@@ -91,7 +91,11 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narr
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T01:31:18.783Z): **pass** — 14 frames. Hook: title 'Nov 30 – Dec 6' over the computed SE sky at 03:20 CET, zoom to the Moon. Group: Moon, Jupiter (bright, just below-left) and Mars (orange, further left) labelled in sequence, chips 'MON NOV 30 · BEFORE DAWN' then 'HIGH IN THE SOUTH-EAST' with no overlap; the rendered geometry matches 'near Jupiter, Mars close by'. Venus: label, low SE, mid-week chip. Outro with sky.
+Visual review by **claude** (2026-11-15T02:39:36.709Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+
+## Approvals
+
+- 2026-11-15T02:39:37.447Z — **Krzysztof Nasuta** (human) approved video `4f97308aaab319ef…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
 ## Event log
 
@@ -115,3 +119,9 @@ Visual review by **claude** (2026-11-15T01:31:18.783Z): **pass** — 14 frames. 
 | 2026-11-15 01:30:42 | pipeline | qa | qa.automated | 1e0af98 |
 | 2026-11-15 01:31:18 | claude | qa | qa.review | 1e0af98 |
 | 2026-11-15 01:31:18 | claude | qa-passed | stage.advance | 1e0af98 |
+| 2026-11-15 02:37:05 | pipeline | rendered | stage.regress | 4049d2c |
+| 2026-11-15 02:37:05 | pipeline | rendered | render.video | 4049d2c |
+| 2026-11-15 02:37:11 | pipeline | qa | qa.automated | 4049d2c |
+| 2026-11-15 02:39:36 | claude | qa | qa.review | 4049d2c |
+| 2026-11-15 02:39:36 | claude | qa-passed | stage.advance | 4049d2c |
+| 2026-11-15 02:39:37 | human | approved | stage.advance | 4049d2c |

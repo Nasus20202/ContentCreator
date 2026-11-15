@@ -153,6 +153,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | --- | --- | --- | --- |
 | instagram | submitted | 6af8cec2e5a113497aaade0f |  |
 
+### 2026-11-15T02:29:32.543Z · buffer · unschedule
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-planet-ages-eu-central-68b56dc6.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | deleted | 6af6106f0522ffa5bc4b510d |  |
+| tiktok | deleted | 6af610700522ffa5bc4b515d |  |
+| instagram | deleted | 6af8cec2e5a113497aaade0f |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -198,3 +208,4 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-14 21:04:00 | claude | publish | publish.dry-run | 47c29b3 |
 | 2026-11-14 21:12:34 | claude | publish | publish.submit | 47c29b3 |
 | 2026-11-14 21:12:34 | claude | published | stage.advance | 47c29b3 |
+| 2026-11-15 02:29:34 | claude | publish | publish.unschedule | 4049d2c |

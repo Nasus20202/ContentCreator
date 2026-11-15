@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | mission-control-2026-11-25-escapade |
 | Series | mission-control |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T01:04:55.034Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -80,7 +80,7 @@ Images: NASA / KSC / Blue Origin (launch, 13 Nov 2025), NASA / KSC / Kim Shiflet
 
 ## Render
 
-52.4 s, 1080×1920@30, sha256 `79b40de8fd317e02…`, rendered 2026-11-15T01:10:38.645Z in 73 s.
+52.4 s, 1080×1920@30, sha256 `0679ca40c9cee95a…`, rendered 2026-11-15T02:33:40.225Z in 55 s.
 
 ## QA
 
@@ -92,10 +92,14 @@ Images: NASA / KSC / Blue Origin (launch, 13 Nov 2025), NASA / KSC / Kim Shiflet
 | duration | ✅ | 52.40 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 52.40 s vs timeline 52.30 s |
 | loudness | ✅ | -14.2 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.4 dBFS |
+| true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T01:11:04.359Z): **pass** — 17 frames. Hook: title over the NG-2 launch photo. Wait: ESCAPADE spacecraft in the clean room, 'LAUNCHED 13 NOV 2025' chip; captions over the bright room are legible with the shadow. '≈ 1,000 km' card, then the Mars mosaic recropped tighter so no black mosaic edge shows, with the arrival chip. '2 orbiters' card. Orange Mission Control accent; outro clean.
+Visual review by **claude** (2026-11-15T02:39:33.673Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+
+## Approvals
+
+- 2026-11-15T02:39:34.441Z — **Krzysztof Nasuta** (human) approved video `0679ca40c9cee95a…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
 ## Event log
 
@@ -134,3 +138,9 @@ Visual review by **claude** (2026-11-15T01:11:04.359Z): **pass** — 17 frames. 
 | 2026-11-15 01:10:55 | pipeline | qa | qa.automated | 910e1db |
 | 2026-11-15 01:11:04 | claude | qa | qa.review | 910e1db |
 | 2026-11-15 01:11:04 | claude | qa-passed | stage.advance | 910e1db |
+| 2026-11-15 02:33:40 | pipeline | rendered | stage.regress | 4049d2c |
+| 2026-11-15 02:33:40 | pipeline | rendered | render.video | 4049d2c |
+| 2026-11-15 02:33:48 | pipeline | qa | qa.automated | 4049d2c |
+| 2026-11-15 02:39:33 | claude | qa | qa.review | 4049d2c |
+| 2026-11-15 02:39:33 | claude | qa-passed | stage.advance | 4049d2c |
+| 2026-11-15 02:39:34 | human | approved | stage.advance | 4049d2c |

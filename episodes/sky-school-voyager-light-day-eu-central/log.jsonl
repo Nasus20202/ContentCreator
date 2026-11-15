@@ -32,3 +32,4 @@
 {"ts":"2026-11-15T00:37:31.951Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run","instagram:dry-run"]},"gitSha":"c0f6392"}
 {"ts":"2026-11-15T00:37:47.208Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-voyager-light-day-eu-central-5a31bb97.mp4","targets":["youtube:submitted","tiktok:submitted","instagram:submitted"]},"gitSha":"c0f6392"}
 {"ts":"2026-11-15T00:37:47.213Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"c0f6392"}
+{"ts":"2026-11-15T02:29:38.948Z","actor":"claude","stage":"publish","action":"publish.unschedule","details":{"targets":["youtube:deleted","tiktok:deleted","instagram:deleted"]},"gitSha":"4049d2c"}

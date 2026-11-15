@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | one-shot-2026-11-28-earth-smiled |
 | Series | one-shot |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T01:26:16.332Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -74,7 +74,7 @@ Images: NASA / JPL-Caltech / Space Science Institute (Cassini). Narration uses a
 
 ## Render
 
-40.7 s, 1080×1920@30, sha256 `8e9a80451234f043…`, rendered 2026-11-15T01:30:15.657Z in 105 s.
+40.7 s, 1080×1920@30, sha256 `99f5cbba8c48fb9c…`, rendered 2026-11-15T02:37:54.878Z in 43 s.
 
 ## QA
 
@@ -85,11 +85,15 @@ Images: NASA / JPL-Caltech / Space Science Institute (Cassini). Narration uses a
 | audio-present | ✅ | aac |
 | duration | ✅ | 40.70 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 40.70 s vs timeline 40.67 s |
-| loudness | ✅ | -14.4 LUFS (target -18…-11) |
+| loudness | ✅ | -14.3 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T01:31:29.253Z): **pass** — 16 frames. Hook: 'Find the Earth' over the backlit Saturn mosaic. How: zoom across the rings, 'CASSINI · 19 JULY 2013' chip. Find: PIA17171 zoom, Earth marker on the blue dot, legible under the rings. '1.44 bn km' card. Outro clean. Gold One Shot accent.
+Visual review by **claude** (2026-11-15T02:39:38.200Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+
+## Approvals
+
+- 2026-11-15T02:39:38.947Z — **Krzysztof Nasuta** (human) approved video `99f5cbba8c48fb9c…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
 ## Event log
 
@@ -117,3 +121,9 @@ Visual review by **claude** (2026-11-15T01:31:29.253Z): **pass** — 16 frames. 
 | 2026-11-15 01:30:43 | pipeline | qa | qa.automated | 1e0af98 |
 | 2026-11-15 01:31:29 | claude | qa | qa.review | 1e0af98 |
 | 2026-11-15 01:31:29 | claude | qa-passed | stage.advance | 1e0af98 |
+| 2026-11-15 02:37:54 | pipeline | rendered | stage.regress | 4049d2c |
+| 2026-11-15 02:37:54 | pipeline | rendered | render.video | 4049d2c |
+| 2026-11-15 02:38:02 | pipeline | qa | qa.automated | 4049d2c |
+| 2026-11-15 02:39:38 | claude | qa | qa.review | 4049d2c |
+| 2026-11-15 02:39:38 | claude | qa-passed | stage.advance | 4049d2c |
+| 2026-11-15 02:39:38 | human | approved | stage.advance | 4049d2c |

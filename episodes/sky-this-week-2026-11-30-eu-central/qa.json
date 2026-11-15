@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T01:30:26.383Z",
-  "videoSha256": "da6816fd80bb914bf4c89e4df854e6b644ad9a1458991e5eafc33f02d86fcdfd",
+  "checkedAt": "2026-11-15T02:37:06.498Z",
+  "videoSha256": "4f97308aaab319ef4a9277f85be79e441ecc7015137489927cffb10a84e959b9",
   "automated": [
     {
       "name": "resolution",
@@ -117,8 +117,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T01:31:18.783Z",
+    "at": "2026-11-15T02:39:36.709Z",
     "verdict": "pass",
-    "notes": "14 frames. Hook: title 'Nov 30 – Dec 6' over the computed SE sky at 03:20 CET, zoom to the Moon. Group: Moon, Jupiter (bright, just below-left) and Mars (orange, further left) labelled in sequence, chips 'MON NOV 30 · BEFORE DAWN' then 'HIGH IN THE SOUTH-EAST' with no overlap; the rendered geometry matches 'near Jupiter, Mars close by'. Venus: label, low SE, mid-week chip. Outro with sky."
+    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
   }
 }

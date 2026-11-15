@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | weird-physics-2026-11-26-gravity-tunnel |
 | Series | weird-physics |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T01:08:07.699Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -82,7 +82,7 @@ Image: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.
 
 ## Render
 
-46.7 s, 1080×1920@30, sha256 `e8e6d6bc82394c76…`, rendered 2026-11-15T01:22:39.663Z in 50 s.
+46.7 s, 1080×1920@30, sha256 `cbd4b358d13926e7…`, rendered 2026-11-15T02:34:39.944Z in 51 s.
 
 ## QA
 
@@ -93,11 +93,15 @@ Image: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.
 | audio-present | ✅ | aac |
 | duration | ✅ | 46.70 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 46.70 s vs timeline 46.63 s |
-| loudness | ✅ | -14.3 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.4 dBFS |
+| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T01:23:51.196Z): **pass** — Re-checked after adding the real-Earth beat: the '38 min' card with the Klotz (2015) source line is clean; earlier scenes unchanged (hook '42 min' card, journey with clock to 42 min, the 'any straight tunnel' chip, '84 min' card); outro states the idealisation.
+Visual review by **claude** (2026-11-15T02:39:35.202Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+
+## Approvals
+
+- 2026-11-15T02:39:35.967Z — **Krzysztof Nasuta** (human) approved video `cbd4b358d13926e7…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
 ## Event log
 
@@ -155,3 +159,9 @@ Visual review by **claude** (2026-11-15T01:23:51.196Z): **pass** — Re-checked 
 | 2026-11-15 01:22:48 | pipeline | qa | qa.automated | 1e0af98 |
 | 2026-11-15 01:23:51 | claude | qa | qa.review | 1e0af98 |
 | 2026-11-15 01:23:51 | claude | qa-passed | stage.advance | 1e0af98 |
+| 2026-11-15 02:34:39 | pipeline | rendered | stage.regress | 4049d2c |
+| 2026-11-15 02:34:39 | pipeline | rendered | render.video | 4049d2c |
+| 2026-11-15 02:34:48 | pipeline | qa | qa.automated | 4049d2c |
+| 2026-11-15 02:39:35 | claude | qa | qa.review | 4049d2c |
+| 2026-11-15 02:39:35 | claude | qa-passed | stage.advance | 4049d2c |
+| 2026-11-15 02:39:35 | human | approved | stage.advance | 4049d2c |

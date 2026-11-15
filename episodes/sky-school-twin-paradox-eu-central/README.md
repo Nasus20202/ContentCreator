@@ -172,6 +172,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | --- | --- | --- | --- |
 | instagram | submitted | 6af8cecdc5b364e062188eec |  |
 
+### 2026-11-15T02:29:40.045Z · buffer · unschedule
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-twin-paradox-eu-central-2bae828c.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | deleted | 6af610a3d647bbafc5ad4fe1 |  |
+| tiktok | deleted | 6af610a4d647bbafc5ad5021 |  |
+| instagram | deleted | 6af8cecdc5b364e062188eec |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -281,3 +291,4 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-14 21:04:02 | claude | publish | publish.dry-run | 47c29b3 |
 | 2026-11-14 21:12:45 | claude | publish | publish.submit | 47c29b3 |
 | 2026-11-14 21:12:45 | claude | published | stage.advance | 47c29b3 |
+| 2026-11-15 02:29:41 | claude | publish | publish.unschedule | 4049d2c |

@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T00:58:53.665Z",
-  "videoSha256": "639bcaebe3aa1e4d63274dc4b7ec9ee7f815281c2dfda4b5a76fdc8fde6a245b",
+  "checkedAt": "2026-11-15T02:29:38.724Z",
+  "videoSha256": "5eb72ac9cc3573e0c5f3120ff318d93eb625f34a131e89b0c072eb31b28697b3",
   "automated": [
     {
       "name": "resolution",
@@ -30,7 +30,7 @@
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14.5 LUFS (target -18…-11)"
+      "detail": "-14.3 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
@@ -142,8 +142,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T00:59:02.052Z",
+    "at": "2026-11-15T02:39:27.525Z",
     "verdict": "pass",
-    "notes": "Re-voiced so 'Artemis II' is spoken as 'Artemis two' (new spoken-form lexicon; captions unchanged). Visuals identical to the previous QA-passed cut: same plan, scenes re-timed to the new narration; frames re-checked for caption/marker overlap."
+    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
   }
 }

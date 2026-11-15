@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T00:53:29.947Z",
-  "videoSha256": "e544cc8a138b993dc71e425f8bf61b01ad08f478e0b6c986b2ed58b87613d395",
+  "checkedAt": "2026-11-15T02:30:27.496Z",
+  "videoSha256": "5888e9f4eb8f2099440e1301fd6c2de3ccc772a60a442d8f2e2d21ee43f599ff",
   "automated": [
     {
       "name": "resolution",
@@ -132,8 +132,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T00:53:46.209Z",
+    "at": "2026-11-15T02:39:29.058Z",
     "verdict": "pass",
-    "notes": "17 frames. Hook: 'Myth' title + red WRONG chip over the full Moon. Why: full Moon push-in. Fact card 'Same sunlight'. Proof: the DSCOVR photo with the whole far-side disc in frame after recentring (first render cut it off at the left edge and the marker collided with captions, so the marker was removed); 'FACT: THE FAR SIDE IS SUNLIT' chip. Outro with the Wrong About Space kicker. Red series accent throughout. Credits on every photo."
+    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
   }
 }

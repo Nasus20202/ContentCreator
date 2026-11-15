@@ -208,11 +208,13 @@
       "provider": "buffer",
       "endpoint": "https://api.buffer.com",
       "videoSha256": "2bae828c2484902221d1a18785e9441d736e8918be555ef1b0816f18d611d1a8",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-twin-paradox-eu-central-2bae828c.mp4"
+      },
       "targets": [
         {
           "platform": "instagram",
           "channelId": "6af8cc5162b70b94b032fcec",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af8cecdc5b364e062188eec",
           "payload": {
@@ -241,10 +243,51 @@
             }
           }
         }
-      ],
+      ]
+    },
+    {
+      "at": "2026-11-15T02:29:40.045Z",
+      "actor": "claude",
+      "mode": "unschedule",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "2bae828c2484902221d1a18785e9441d736e8918be555ef1b0816f18d611d1a8",
       "media": {
         "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-twin-paradox-eu-central-2bae828c.mp4"
-      }
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "deleted",
+          "postId": "6af610a3d647bbafc5ad4fe1",
+          "payload": {
+            "postId": "6af610a3d647bbafc5ad4fe1",
+            "wasScheduledFor": "2026-11-19T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "deleted",
+          "postId": "6af610a4d647bbafc5ad5021",
+          "payload": {
+            "postId": "6af610a4d647bbafc5ad5021",
+            "wasScheduledFor": "2026-11-19T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "deleted",
+          "postId": "6af8cecdc5b364e062188eec",
+          "payload": {
+            "postId": "6af8cecdc5b364e062188eec",
+            "wasScheduledFor": "2026-11-19T17:00:00.000Z"
+          }
+        }
+      ]
     }
   ]
 }

@@ -2,7 +2,7 @@
   "id": "mission-control-2026-11-16-starship-catch",
   "series": "mission-control",
   "createdAt": "2026-11-15T02:04:35.033Z",
-  "stage": "qa-passed",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -14,7 +14,15 @@
     "plan": "417f60b82504bc98",
     "factcheckedPlan": "417f60b82504bc98",
     "narration": "89b12131f2131726",
-    "video": "af07c6699365e934a4cd896c30064c92c55cb7f8e98ddcd3997f51b308a8e924"
+    "video": "29354dd634bb16a194bf32eaf57c5b8a21de5e88a0cde5b24b325c26b814e89a"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-15T02:39:26.776Z",
+      "videoSha256": "29354dd634bb16a194bf32eaf57c5b8a21de5e88a0cde5b24b325c26b814e89a",
+      "note": "Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render."
+    }
+  ]
 }

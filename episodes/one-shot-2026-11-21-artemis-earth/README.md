@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | one-shot-2026-11-21-artemis-earth |
 | Series | one-shot |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T00:47:16.001Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -80,7 +80,7 @@ Images: NASA / JSC (Artemis II crew photos). Narration uses a synthetic voice.
 
 ## Render
 
-39.7 s, 1080×1920@30, sha256 `639bcaebe3aa1e4d…`, rendered 2026-11-15T00:58:52.967Z in 47 s.
+39.7 s, 1080×1920@30, sha256 `5eb72ac9cc3573e0…`, rendered 2026-11-15T02:29:37.942Z in 42 s.
 
 ## QA
 
@@ -91,11 +91,15 @@ Images: NASA / JSC (Artemis II crew photos). Narration uses a synthetic voice.
 | audio-present | ✅ | aac |
 | duration | ✅ | 39.70 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 39.70 s vs timeline 39.63 s |
-| loudness | ✅ | -14.5 LUFS (target -18…-11) |
+| loudness | ✅ | -14.3 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T00:59:02.052Z): **pass** — Re-voiced so 'Artemis II' is spoken as 'Artemis two' (new spoken-form lexicon; captions unchanged). Visuals identical to the previous QA-passed cut: same plan, scenes re-timed to the new narration; frames re-checked for caption/marker overlap.
+Visual review by **claude** (2026-11-15T02:39:27.525Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+
+## Approvals
+
+- 2026-11-15T02:39:28.288Z — **Krzysztof Nasuta** (human) approved video `5eb72ac9cc3573e0…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
 ## Event log
 
@@ -127,3 +131,9 @@ Visual review by **claude** (2026-11-15T00:59:02.052Z): **pass** — Re-voiced s
 | 2026-11-15 00:59:01 | pipeline | qa | qa.automated | 910e1db |
 | 2026-11-15 00:59:02 | claude | qa | qa.review | 910e1db |
 | 2026-11-15 00:59:02 | claude | qa-passed | stage.advance | 910e1db |
+| 2026-11-15 02:29:37 | pipeline | rendered | stage.regress | 4049d2c |
+| 2026-11-15 02:29:37 | pipeline | rendered | render.video | 4049d2c |
+| 2026-11-15 02:29:45 | pipeline | qa | qa.automated | 4049d2c |
+| 2026-11-15 02:39:27 | claude | qa | qa.review | 4049d2c |
+| 2026-11-15 02:39:27 | claude | qa-passed | stage.advance | 4049d2c |
+| 2026-11-15 02:39:28 | human | approved | stage.advance | 4049d2c |

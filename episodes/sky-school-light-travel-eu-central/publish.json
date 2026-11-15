@@ -489,6 +489,50 @@
           }
         }
       ]
+    },
+    {
+      "at": "2026-11-15T02:29:42.248Z",
+      "actor": "claude",
+      "mode": "unschedule",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "8aa6228213aba7dd72d30990d496a0b1c01c1d4888c313afd63ad3fec8851e6e",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-light-travel-eu-central-8aa62282.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "deleted",
+          "postId": "6af6108fd647bbafc5ad4af7",
+          "payload": {
+            "postId": "6af6108fd647bbafc5ad4af7",
+            "wasScheduledFor": "2026-11-20T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "deleted",
+          "postId": "6af6108f0522ffa5bc4b5d02",
+          "payload": {
+            "postId": "6af6108f0522ffa5bc4b5d02",
+            "wasScheduledFor": "2026-11-20T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "deleted",
+          "postId": "6af8cec976c23bf1c73ef06d",
+          "payload": {
+            "postId": "6af8cec976c23bf1c73ef06d",
+            "wasScheduledFor": "2026-11-20T17:00:00.000Z"
+          }
+        }
+      ]
     }
   ]
 }

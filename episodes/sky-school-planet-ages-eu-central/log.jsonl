@@ -39,3 +39,4 @@
 {"ts":"2026-11-14T21:04:00.334Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["instagram:dry-run"]},"gitSha":"47c29b3"}
 {"ts":"2026-11-14T21:12:34.682Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-planet-ages-eu-central-68b56dc6.mp4","targets":["instagram:submitted"]},"gitSha":"47c29b3"}
 {"ts":"2026-11-14T21:12:34.687Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"published","to":"published","hashes":{}},"gitSha":"47c29b3"}
+{"ts":"2026-11-15T02:29:34.271Z","actor":"claude","stage":"publish","action":"publish.unschedule","details":{"targets":["youtube:deleted","tiktok:deleted","instagram:deleted"]},"gitSha":"4049d2c"}

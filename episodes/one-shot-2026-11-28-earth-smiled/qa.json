@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T01:30:17.175Z",
-  "videoSha256": "8e9a80451234f04391bb83d61b2e56215baad8f7e73fba216ad8f34d91017b98",
+  "checkedAt": "2026-11-15T02:37:55.666Z",
+  "videoSha256": "99f5cbba8c48fb9cf57b90b1120c45253e1b9bdbd40aa27a65512b7d066e09dd",
   "automated": [
     {
       "name": "resolution",
@@ -30,7 +30,7 @@
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14.4 LUFS (target -18…-11)"
+      "detail": "-14.3 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
@@ -127,8 +127,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T01:31:29.253Z",
+    "at": "2026-11-15T02:39:38.200Z",
     "verdict": "pass",
-    "notes": "16 frames. Hook: 'Find the Earth' over the backlit Saturn mosaic. How: zoom across the rings, 'CASSINI · 19 JULY 2013' chip. Find: PIA17171 zoom, Earth marker on the blue dot, legible under the rings. '1.44 bn km' card. Outro clean. Gold One Shot accent."
+    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
   }
 }

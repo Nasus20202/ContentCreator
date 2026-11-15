@@ -136,6 +136,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | tiktok | submitted | 6af8feda918fe79d2eb283cb |  |
 | instagram | submitted | 6af8fedb918fe79d2eb283fb |  |
 
+### 2026-11-15T02:29:37.649Z · buffer · unschedule
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-voyager-light-day-eu-central-5a31bb97.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | deleted | 6af8fed9e5a113497ab90821 |  |
+| tiktok | deleted | 6af8feda918fe79d2eb283cb |  |
+| instagram | deleted | 6af8fedb918fe79d2eb283fb |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -174,3 +184,4 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-15 00:37:31 | claude | publish | publish.dry-run | c0f6392 |
 | 2026-11-15 00:37:47 | claude | publish | publish.submit | c0f6392 |
 | 2026-11-15 00:37:47 | claude | published | stage.advance | c0f6392 |
+| 2026-11-15 02:29:38 | claude | publish | publish.unschedule | 4049d2c |

@@ -115,11 +115,13 @@
       "provider": "buffer",
       "endpoint": "https://api.buffer.com",
       "videoSha256": "5a31bb97d7aeee05199b14eaa3591a466d25cd4d89226b7b8d7f56ebd0900850",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-voyager-light-day-eu-central-5a31bb97.mp4"
+      },
       "targets": [
         {
           "platform": "youtube",
           "channelId": "6af4fe2a62b70b94b0fe97dc",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af8fed9e5a113497ab90821",
           "payload": {
@@ -154,7 +156,6 @@
         {
           "platform": "tiktok",
           "channelId": "6af4fe6f62b70b94b0fe9d85",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af8feda918fe79d2eb283cb",
           "payload": {
@@ -184,7 +185,6 @@
         {
           "platform": "instagram",
           "channelId": "6af8cc5162b70b94b032fcec",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af8fedb918fe79d2eb283fb",
           "payload": {
@@ -213,10 +213,51 @@
             }
           }
         }
-      ],
+      ]
+    },
+    {
+      "at": "2026-11-15T02:29:37.649Z",
+      "actor": "claude",
+      "mode": "unschedule",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "5a31bb97d7aeee05199b14eaa3591a466d25cd4d89226b7b8d7f56ebd0900850",
       "media": {
         "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-voyager-light-day-eu-central-5a31bb97.mp4"
-      }
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "deleted",
+          "postId": "6af8fed9e5a113497ab90821",
+          "payload": {
+            "postId": "6af8fed9e5a113497ab90821",
+            "wasScheduledFor": "2026-11-18T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "deleted",
+          "postId": "6af8feda918fe79d2eb283cb",
+          "payload": {
+            "postId": "6af8feda918fe79d2eb283cb",
+            "wasScheduledFor": "2026-11-18T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "deleted",
+          "postId": "6af8fedb918fe79d2eb283fb",
+          "payload": {
+            "postId": "6af8fedb918fe79d2eb283fb",
+            "wasScheduledFor": "2026-11-18T17:00:00.000Z"
+          }
+        }
+      ]
     }
   ]
 }

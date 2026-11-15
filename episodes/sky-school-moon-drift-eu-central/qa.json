@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T01:03:21.758Z",
-  "videoSha256": "fb8de56ee8091b9e9357d1d7e09149f1e627dfb46a59e075a50873726caaa4c6",
+  "checkedAt": "2026-11-15T02:31:21.362Z",
+  "videoSha256": "b561b826bb4bfb091787d36977df0f61f0cf5310ff555367df2e48dca6edeaf3",
   "automated": [
     {
       "name": "resolution",
@@ -142,8 +142,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T01:04:30.666Z",
+    "at": "2026-11-15T02:39:30.598Z",
     "verdict": "pass",
-    "notes": "All frames checked. Hook: title + '3.8 CM EVERY YEAR' chip over the full Moon. Reflector scene: the Apollo 14 LRRR photo, captions overlap the reflector's lower half but stay fully legible (white with shadow on mid-grey); vertical crop has no slack on the near-square photo. '≈ 2 metres' card with method line. Oceans: full Moon pull-back. Eclipse: diamond-ring photo, '600+ MILLION YEARS LEFT' chip. Outro clean. Cyan Sky School accent, credits on every photo."
+    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
   }
 }

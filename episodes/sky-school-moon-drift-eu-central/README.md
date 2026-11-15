@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-moon-drift-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T00:59:04.117Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -84,7 +84,7 @@ Images: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / 
 
 ## Render
 
-45.3 s, 1080×1920@30, sha256 `fb8de56ee8091b9e…`, rendered 2026-11-15T01:03:21.037Z in 52 s.
+45.3 s, 1080×1920@30, sha256 `b561b826bb4bfb09…`, rendered 2026-11-15T02:31:20.563Z in 46 s.
 
 ## QA
 
@@ -99,7 +99,11 @@ Images: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / 
 | true-peak | ✅ | -1.3 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T01:04:30.666Z): **pass** — All frames checked. Hook: title + '3.8 CM EVERY YEAR' chip over the full Moon. Reflector scene: the Apollo 14 LRRR photo, captions overlap the reflector's lower half but stay fully legible (white with shadow on mid-grey); vertical crop has no slack on the near-square photo. '≈ 2 metres' card with method line. Oceans: full Moon pull-back. Eclipse: diamond-ring photo, '600+ MILLION YEARS LEFT' chip. Outro clean. Cyan Sky School accent, credits on every photo.
+Visual review by **claude** (2026-11-15T02:39:30.598Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+
+## Approvals
+
+- 2026-11-15T02:39:31.362Z — **Krzysztof Nasuta** (human) approved video `b561b826bb4bfb09…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
 ## Event log
 
@@ -141,3 +145,9 @@ Visual review by **claude** (2026-11-15T01:04:30.666Z): **pass** — All frames 
 | 2026-11-15 01:03:33 | pipeline | qa | qa.automated | 910e1db |
 | 2026-11-15 01:04:30 | claude | qa | qa.review | 910e1db |
 | 2026-11-15 01:04:30 | claude | qa-passed | stage.advance | 910e1db |
+| 2026-11-15 02:31:20 | pipeline | rendered | stage.regress | 4049d2c |
+| 2026-11-15 02:31:20 | pipeline | rendered | render.video | 4049d2c |
+| 2026-11-15 02:31:28 | pipeline | qa | qa.automated | 4049d2c |
+| 2026-11-15 02:39:30 | claude | qa | qa.review | 4049d2c |
+| 2026-11-15 02:39:30 | claude | qa-passed | stage.advance | 4049d2c |
+| 2026-11-15 02:39:31 | human | approved | stage.advance | 4049d2c |

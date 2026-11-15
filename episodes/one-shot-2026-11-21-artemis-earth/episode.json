@@ -2,7 +2,7 @@
   "id": "one-shot-2026-11-21-artemis-earth",
   "series": "one-shot",
   "createdAt": "2026-11-15T00:47:16.001Z",
-  "stage": "qa-passed",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -14,7 +14,15 @@
     "plan": "1487081f5809360b",
     "factcheckedPlan": "1487081f5809360b",
     "narration": "7b722f7ef7cf8f19",
-    "video": "639bcaebe3aa1e4d63274dc4b7ec9ee7f815281c2dfda4b5a76fdc8fde6a245b"
+    "video": "5eb72ac9cc3573e0c5f3120ff318d93eb625f34a131e89b0c072eb31b28697b3"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-15T02:39:28.288Z",
+      "videoSha256": "5eb72ac9cc3573e0c5f3120ff318d93eb625f34a131e89b0c072eb31b28697b3",
+      "note": "Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render."
+    }
+  ]
 }

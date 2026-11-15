@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T01:31:33.791Z",
-  "videoSha256": "e1db6da20d5726bf2103caa7c67fe4ee8823ab30fac16a30b9533b32280802fa",
+  "checkedAt": "2026-11-15T02:32:35.086Z",
+  "videoSha256": "dc0ec63fb81be5b060fa21fb04660e8e99c7d0aa203ed87d272afab4510aad15",
   "automated": [
     {
       "name": "resolution",
@@ -30,12 +30,12 @@
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14.4 LUFS (target -18…-11)"
+      "detail": "-14.3 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.5 dBFS"
+      "detail": "-1.2 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -167,8 +167,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T01:31:58.534Z",
+    "at": "2026-11-15T02:39:32.135Z",
     "verdict": "pass",
-    "notes": "Rebuilt per user feedback. 24 frames, 58.1 s. A photo per rank with magenta rank chips: Pluto by New Horizons, Pioneer 11 launch, Pioneer 10 with its plaque, Neptune by Voyager 2, Voyager 1 launch. Light race: Earth → New Horizons ('9 h 16 min' badge) → Voyager 1, hours clock to 24 h, labels spaced and unclipped. Compare: five linear bars (new compact layout), labels and values readable, note line. Outro clean."
+    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
   }
 }

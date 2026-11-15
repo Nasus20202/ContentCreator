@@ -208,11 +208,13 @@
       "provider": "buffer",
       "endpoint": "https://api.buffer.com",
       "videoSha256": "cc07ba4e5f222879137198c4cb505c006cb0386d4328c8a52359b77e5a889b7a",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-proxima-travel-eu-central-cc07ba4e.mp4"
+      },
       "targets": [
         {
           "platform": "instagram",
           "channelId": "6af8cc5162b70b94b032fcec",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af8cec6918fe79d2ea4bed2",
           "payload": {
@@ -241,10 +243,51 @@
             }
           }
         }
-      ],
+      ]
+    },
+    {
+      "at": "2026-11-15T02:29:35.615Z",
+      "actor": "claude",
+      "mode": "unschedule",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "cc07ba4e5f222879137198c4cb505c006cb0386d4328c8a52359b77e5a889b7a",
       "media": {
         "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-proxima-travel-eu-central-cc07ba4e.mp4"
-      }
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "deleted",
+          "postId": "6af6107fcfe45b714e4bb407",
+          "payload": {
+            "postId": "6af6107fcfe45b714e4bb407",
+            "wasScheduledFor": "2026-11-17T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "deleted",
+          "postId": "6af6107fd647bbafc5ad4571",
+          "payload": {
+            "postId": "6af6107fd647bbafc5ad4571",
+            "wasScheduledFor": "2026-11-17T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "deleted",
+          "postId": "6af8cec6918fe79d2ea4bed2",
+          "payload": {
+            "postId": "6af8cec6918fe79d2ea4bed2",
+            "wasScheduledFor": "2026-11-17T17:00:00.000Z"
+          }
+        }
+      ]
     }
   ]
 }

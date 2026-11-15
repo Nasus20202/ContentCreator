@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | wrong-about-space-2026-11-29-iss-gravity |
 | Series | wrong-about-space |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T01:30:24.546Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -75,7 +75,7 @@ Images: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floati
 
 ## Render
 
-36.1 s, 1080×1920@30, sha256 `aefd384ba261b7a3…`, rendered 2026-11-15T01:32:38.234Z in 40 s.
+36.1 s, 1080×1920@30, sha256 `67c1ef4a49e24530…`, rendered 2026-11-15T02:38:41.004Z in 38 s.
 
 ## QA
 
@@ -86,11 +86,15 @@ Images: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floati
 | audio-present | ✅ | aac |
 | duration | ✅ | 36.10 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 36.10 s vs timeline 36.07 s |
-| loudness | ✅ | -14.2 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.3 dBFS |
+| loudness | ✅ | -14.1 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T01:37:06.350Z): **pass** — 16 frames, 36.1 s. Hook: 'Myth: No gravity in space' title + red WRONG chip over Jessica Meir with a floating water sphere. '≈ 90 %' card. ISS photo with the Earth limb, chips 'FACT: THEY'RE IN FREE FALL' then '≈ 28,000 KM/H SIDEWAYS', no overlap. Outro clean, red accent, credits on photos.
+Visual review by **claude** (2026-11-15T02:39:39.710Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+
+## Approvals
+
+- 2026-11-15T02:39:40.500Z — **Krzysztof Nasuta** (human) approved video `67c1ef4a49e24530…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
 ## Event log
 
@@ -119,3 +123,9 @@ Visual review by **claude** (2026-11-15T01:37:06.350Z): **pass** — 16 frames, 
 | 2026-11-15 01:32:45 | pipeline | qa | qa.automated | 8f54726 |
 | 2026-11-15 01:37:06 | claude | qa | qa.review | af73493 |
 | 2026-11-15 01:37:06 | claude | qa-passed | stage.advance | af73493 |
+| 2026-11-15 02:38:41 | pipeline | rendered | stage.regress | 4049d2c |
+| 2026-11-15 02:38:41 | pipeline | rendered | render.video | 4049d2c |
+| 2026-11-15 02:38:48 | pipeline | qa | qa.automated | 4049d2c |
+| 2026-11-15 02:39:39 | claude | qa | qa.review | 4049d2c |
+| 2026-11-15 02:39:39 | claude | qa-passed | stage.advance | 4049d2c |
+| 2026-11-15 02:39:40 | human | approved | stage.advance | 4049d2c |

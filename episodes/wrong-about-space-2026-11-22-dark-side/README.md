@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | wrong-about-space-2026-11-22-dark-side |
 | Series | wrong-about-space |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T00:48:24.040Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -77,7 +77,7 @@ Images: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (A
 
 ## Render
 
-37.7 s, 1080×1920@30, sha256 `e544cc8a138b993d…`, rendered 2026-11-15T00:53:29.211Z in 47 s.
+37.7 s, 1080×1920@30, sha256 `5888e9f4eb8f2099…`, rendered 2026-11-15T02:30:26.700Z in 40 s.
 
 ## QA
 
@@ -92,7 +92,11 @@ Images: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (A
 | true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T00:53:46.209Z): **pass** — 17 frames. Hook: 'Myth' title + red WRONG chip over the full Moon. Why: full Moon push-in. Fact card 'Same sunlight'. Proof: the DSCOVR photo with the whole far-side disc in frame after recentring (first render cut it off at the left edge and the marker collided with captions, so the marker was removed); 'FACT: THE FAR SIDE IS SUNLIT' chip. Outro with the Wrong About Space kicker. Red series accent throughout. Credits on every photo.
+Visual review by **claude** (2026-11-15T02:39:29.058Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+
+## Approvals
+
+- 2026-11-15T02:39:29.815Z — **Krzysztof Nasuta** (human) approved video `5888e9f4eb8f2099…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
 ## Event log
 
@@ -138,3 +142,9 @@ Visual review by **claude** (2026-11-15T00:53:46.209Z): **pass** — 17 frames. 
 | 2026-11-15 00:53:37 | pipeline | qa | qa.automated | bf3b9b1 |
 | 2026-11-15 00:53:46 | claude | qa | qa.review | bf3b9b1 |
 | 2026-11-15 00:53:46 | claude | qa-passed | stage.advance | bf3b9b1 |
+| 2026-11-15 02:30:26 | pipeline | rendered | stage.regress | 4049d2c |
+| 2026-11-15 02:30:26 | pipeline | rendered | render.video | 4049d2c |
+| 2026-11-15 02:30:34 | pipeline | qa | qa.automated | 4049d2c |
+| 2026-11-15 02:39:29 | claude | qa | qa.review | 4049d2c |
+| 2026-11-15 02:39:29 | claude | qa-passed | stage.advance | 4049d2c |
+| 2026-11-15 02:39:29 | human | approved | stage.advance | 4049d2c |

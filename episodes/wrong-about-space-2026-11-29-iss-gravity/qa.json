@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T01:32:38.911Z",
-  "videoSha256": "aefd384ba261b7a367cbbbf774812246ac0ba3b26ad1527136aef7488fda0e6c",
+  "checkedAt": "2026-11-15T02:38:41.784Z",
+  "videoSha256": "67c1ef4a49e245306475bc6d21b1709841c71058dc206314102f9dc3b134e679",
   "automated": [
     {
       "name": "resolution",
@@ -30,12 +30,12 @@
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14.2 LUFS (target -18…-11)"
+      "detail": "-14.1 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.3 dBFS"
+      "detail": "-1.5 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -127,8 +127,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T01:37:06.350Z",
+    "at": "2026-11-15T02:39:39.710Z",
     "verdict": "pass",
-    "notes": "16 frames, 36.1 s. Hook: 'Myth: No gravity in space' title + red WRONG chip over Jessica Meir with a floating water sphere. '≈ 90 %' card. ISS photo with the Earth limb, chips 'FACT: THEY'RE IN FREE FALL' then '≈ 28,000 KM/H SIDEWAYS', no overlap. Outro clean, red accent, credits on photos."
+    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
   }
 }

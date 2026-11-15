@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | cosmic-top-5-2026-11-24-farthest |
 | Series | cosmic-top-5 |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T01:02:03.101Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -109,7 +109,7 @@ Images: NASA / JPL / MDSCC / INTA, Francisco "Paco" Moreno (Deep Space Network, 
 
 ## Render
 
-58.1 s, 1080×1920@30, sha256 `e1db6da20d5726bf…`, rendered 2026-11-15T01:31:07.643Z in 88 s.
+58.1 s, 1080×1920@30, sha256 `dc0ec63fb81be5b0…`, rendered 2026-11-15T02:32:34.286Z in 65 s.
 
 ## QA
 
@@ -120,11 +120,15 @@ Images: NASA / JPL / MDSCC / INTA, Francisco "Paco" Moreno (Deep Space Network, 
 | audio-present | ✅ | aac |
 | duration | ✅ | 58.10 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 58.10 s vs timeline 58.07 s |
-| loudness | ✅ | -14.4 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.5 dBFS |
+| loudness | ✅ | -14.3 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.2 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T01:31:58.534Z): **pass** — Rebuilt per user feedback. 24 frames, 58.1 s. A photo per rank with magenta rank chips: Pluto by New Horizons, Pioneer 11 launch, Pioneer 10 with its plaque, Neptune by Voyager 2, Voyager 1 launch. Light race: Earth → New Horizons ('9 h 16 min' badge) → Voyager 1, hours clock to 24 h, labels spaced and unclipped. Compare: five linear bars (new compact layout), labels and values readable, note line. Outro clean.
+Visual review by **claude** (2026-11-15T02:39:32.135Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+
+## Approvals
+
+- 2026-11-15T02:39:32.904Z — **Krzysztof Nasuta** (human) approved video `dc0ec63fb81be5b0…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
 ## Event log
 
@@ -213,3 +217,9 @@ Visual review by **claude** (2026-11-15T01:31:58.534Z): **pass** — Rebuilt per
 | 2026-11-15 01:31:49 | pipeline | qa | qa.automated | 1e0af98 |
 | 2026-11-15 01:31:58 | claude | qa | qa.review | 1e0af98 |
 | 2026-11-15 01:31:58 | claude | qa-passed | stage.advance | 1e0af98 |
+| 2026-11-15 02:32:34 | pipeline | rendered | stage.regress | 4049d2c |
+| 2026-11-15 02:32:34 | pipeline | rendered | render.video | 4049d2c |
+| 2026-11-15 02:32:44 | pipeline | qa | qa.automated | 4049d2c |
+| 2026-11-15 02:39:32 | claude | qa | qa.review | 4049d2c |
+| 2026-11-15 02:39:32 | claude | qa-passed | stage.advance | 4049d2c |
+| 2026-11-15 02:39:32 | human | approved | stage.advance | 4049d2c |

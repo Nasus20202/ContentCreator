@@ -182,6 +182,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | --- | --- | --- | --- |
 | instagram | submitted | 6af8cec6918fe79d2ea4bed2 |  |
 
+### 2026-11-15T02:29:35.615Z · buffer · unschedule
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-proxima-travel-eu-central-cc07ba4e.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | deleted | 6af6107fcfe45b714e4bb407 |  |
+| tiktok | deleted | 6af6107fd647bbafc5ad4571 |  |
+| instagram | deleted | 6af8cec6918fe79d2ea4bed2 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -311,3 +321,4 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-14 21:04:01 | claude | publish | publish.dry-run | 47c29b3 |
 | 2026-11-14 21:12:38 | claude | publish | publish.submit | 47c29b3 |
 | 2026-11-14 21:12:38 | claude | published | stage.advance | 47c29b3 |
+| 2026-11-15 02:29:36 | claude | publish | publish.unschedule | 4049d2c |

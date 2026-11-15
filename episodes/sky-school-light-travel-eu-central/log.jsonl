@@ -92,3 +92,4 @@
 {"ts":"2026-11-14T21:12:41.733Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"published","to":"published","hashes":{}},"gitSha":"47c29b3"}
 {"ts":"2026-11-15T00:37:31.243Z","actor":"claude","stage":"publish","action":"publish.reschedule","details":{"from":"2026-11-18T17:00:00.000Z","to":"2026-11-20T17:00:00.000Z","targets":["instagram:submitted"]},"gitSha":"c0f6392"}
 {"ts":"2026-11-15T00:38:46.509Z","actor":"claude","stage":"publish","action":"publish.reschedule","details":{"from":"2026-11-20T17:00:00.000Z","to":"2026-11-20T17:00:00.000Z","targets":["youtube:submitted","tiktok:submitted","instagram:submitted"]},"gitSha":"c0f6392"}
+{"ts":"2026-11-15T02:29:43.404Z","actor":"claude","stage":"publish","action":"publish.unschedule","details":{"targets":["youtube:deleted","tiktok:deleted","instagram:deleted"]},"gitSha":"4049d2c"}

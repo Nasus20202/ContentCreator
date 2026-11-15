@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T01:10:39.361Z",
-  "videoSha256": "79b40de8fd317e02ab4c7b904d26e25ca2d6db8d0824da364e260453a65d938c",
+  "checkedAt": "2026-11-15T02:33:41.026Z",
+  "videoSha256": "0679ca40c9cee95ad3e10b3d431ca310cc1e65497805c64030dcc0ca70d03fdc",
   "automated": [
     {
       "name": "resolution",
@@ -35,7 +35,7 @@
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.4 dBFS"
+      "detail": "-1.5 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -132,8 +132,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T01:11:04.359Z",
+    "at": "2026-11-15T02:39:33.673Z",
     "verdict": "pass",
-    "notes": "17 frames. Hook: title over the NG-2 launch photo. Wait: ESCAPADE spacecraft in the clean room, 'LAUNCHED 13 NOV 2025' chip; captions over the bright room are legible with the shadow. '≈ 1,000 km' card, then the Mars mosaic recropped tighter so no black mosaic edge shows, with the arrival chip. '2 orbiters' card. Orange Mission Control accent; outro clean."
+    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
   }
 }

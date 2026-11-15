@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | mission-control-2026-11-16-starship-catch |
 | Series | mission-control |
-| Stage | **qa-passed** |
+| Stage | **approved** |
 | Created | 2026-11-15T02:04:35.033Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -83,7 +83,7 @@ Photos (an earlier booster catch, Starship flight test 5, 13 October 2024): Stev
 
 ## Render
 
-49.2 s, 1080×1920@30, sha256 `af07c6699365e934…`, rendered 2026-11-15T02:08:11.582Z in 59 s.
+49.2 s, 1080×1920@30, sha256 `29354dd634bb16a1…`, rendered 2026-11-15T02:28:48.049Z in 54 s.
 
 ## QA
 
@@ -94,11 +94,15 @@ Photos (an earlier booster catch, Starship flight test 5, 13 October 2024): Stev
 | audio-present | ✅ | aac |
 | duration | ✅ | 49.20 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 49.20 s vs timeline 49.17 s |
-| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| loudness | ✅ | -14.1 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T02:08:45.192Z): **pass** — 16 frames, 49.2 s. Hook: title over the Flight 5 booster-catch photo, chip 'PHOTO: EARLIER BOOSTER CATCH, 2024' so it is not passed off as Flight 15. Flight scene: booster final-approach photo with its own 2024 chip. Cards: '1st ship', 'Booster lost', '124 m'. CC BY credits printed on both photos. Outro clean. Music: the new Tone.js 'drive' bed.
+Visual review by **claude** (2026-11-15T02:39:26.020Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+
+## Approvals
+
+- 2026-11-15T02:39:26.776Z — **Krzysztof Nasuta** (human) approved video `29354dd634bb16a1…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
 ## Event log
 
@@ -137,3 +141,9 @@ Visual review by **claude** (2026-11-15T02:08:45.192Z): **pass** — 16 frames, 
 | 2026-11-15 02:08:19 | pipeline | qa | qa.automated | d11260e |
 | 2026-11-15 02:08:45 | claude | qa | qa.review | d11260e |
 | 2026-11-15 02:08:45 | claude | qa-passed | stage.advance | d11260e |
+| 2026-11-15 02:28:48 | pipeline | rendered | stage.regress | 4049d2c |
+| 2026-11-15 02:28:48 | pipeline | rendered | render.video | 4049d2c |
+| 2026-11-15 02:28:55 | pipeline | qa | qa.automated | 4049d2c |
+| 2026-11-15 02:39:26 | claude | qa | qa.review | 4049d2c |
+| 2026-11-15 02:39:26 | claude | qa-passed | stage.advance | 4049d2c |
+| 2026-11-15 02:39:26 | human | approved | stage.advance | 4049d2c |

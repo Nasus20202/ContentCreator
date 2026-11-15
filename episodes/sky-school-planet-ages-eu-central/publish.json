@@ -208,11 +208,13 @@
       "provider": "buffer",
       "endpoint": "https://api.buffer.com",
       "videoSha256": "68b56dc6b5150bb9282db4e4a62d63f1cdc436e8f659df4d4ef3a29b4cd34288",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-planet-ages-eu-central-68b56dc6.mp4"
+      },
       "targets": [
         {
           "platform": "instagram",
           "channelId": "6af8cc5162b70b94b032fcec",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af8cec2e5a113497aaade0f",
           "payload": {
@@ -241,10 +243,51 @@
             }
           }
         }
-      ],
+      ]
+    },
+    {
+      "at": "2026-11-15T02:29:32.543Z",
+      "actor": "claude",
+      "mode": "unschedule",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "68b56dc6b5150bb9282db4e4a62d63f1cdc436e8f659df4d4ef3a29b4cd34288",
       "media": {
         "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-planet-ages-eu-central-68b56dc6.mp4"
-      }
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "deleted",
+          "postId": "6af6106f0522ffa5bc4b510d",
+          "payload": {
+            "postId": "6af6106f0522ffa5bc4b510d",
+            "wasScheduledFor": "2026-11-16T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "deleted",
+          "postId": "6af610700522ffa5bc4b515d",
+          "payload": {
+            "postId": "6af610700522ffa5bc4b515d",
+            "wasScheduledFor": "2026-11-16T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "deleted",
+          "postId": "6af8cec2e5a113497aaade0f",
+          "payload": {
+            "postId": "6af8cec2e5a113497aaade0f",
+            "wasScheduledFor": "2026-11-16T17:00:00.000Z"
+          }
+        }
+      ]
     }
   ]
 }
