@@ -1,0 +1,184 @@
+{
+  "episodeId": "one-shot-artemis-earth",
+  "series": "one-shot",
+  "title": "One Shot · Earth from behind the Moon",
+  "badge": "One Shot · Artemis II",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.15
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": [
+        "This photo was taken from behind the Moon.",
+        "The Artemis II crew shot it on the 6th of April, 2026."
+      ],
+      "factIds": [
+        "photo-farside"
+      ],
+      "chips": [],
+      "title": {
+        "kicker": "One Shot",
+        "title": "Seen from behind the Moon",
+        "from": 0.1,
+        "to": 3
+      },
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "farside-earth",
+        "zoom": [
+          1,
+          1.12
+        ],
+        "focus": [
+          0.45,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "earth",
+      "narration": [
+        "Now look past the Moon.",
+        "That tiny crescent is Earth.",
+        "That sliver of light is home."
+      ],
+      "factIds": [
+        "photo-farside"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "farside-earth",
+        "zoom": [
+          1.2,
+          3.2
+        ],
+        "focus": [
+          0.531,
+          0.469
+        ],
+        "fit": "cover",
+        "marker": {
+          "label": "Earth",
+          "from": {
+            "sentence": 1,
+            "edge": "start",
+            "offset": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "distance",
+      "narration": [
+        "It looks tiny because it is far away: about 384,400 kilometres on average.",
+        "The crew took about three days to get there."
+      ],
+      "factIds": [
+        "moon-distance"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "factCard",
+      "params": {
+        "value": "384,400 km",
+        "label": "average distance from Earth to the Moon",
+        "sourceLine": "NASA Science"
+      }
+    },
+    {
+      "id": "phases",
+      "narration": [
+        "Notice both are crescents, but not the same shape.",
+        "The same Sun lights them both; we just see each from a different angle."
+      ],
+      "factIds": [
+        "photo-farside"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "farside-earth",
+        "zoom": [
+          1.6,
+          1.3
+        ],
+        "focus": [
+          0.45,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "earthset",
+      "narration": [
+        "The same day, the crew watched Earth set behind the Moon.",
+        "The dark part of Earth is night."
+      ],
+      "factIds": [
+        "photo-earthset"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "earthset",
+        "zoom": [
+          1,
+          1.15
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "outro",
+      "narration": [
+        "One photo, one detail.",
+        "Follow for the next one."
+      ],
+      "factIds": [],
+      "chips": [],
+      "captions": true,
+      "template": "outro",
+      "params": {
+        "kicker": "One Shot",
+        "cta": "FOLLOW\nFOR ONE PHOTO\nA WEEK",
+        "footnote": "Photos: NASA / JSC (Artemis II) · distance: NASA Science"
+      }
+    }
+  ],
+  "post": {
+    "title": "Earth, photographed from behind the Moon 🌍🌘",
+    "description": "On 6 April 2026, the Artemis II crew looked back from behind the Moon. The Moon's far side fills the foreground; the tiny crescent beyond it is Earth, about 384,400 km away on average. Both are lit by the same Sun, which is why they show different phases from where the crew was.\n\nSources:\nNASA, Moon's Farside in the Foreground, Earth Beyond (art002e015228): https://images.nasa.gov/details/art002e015228\nNASA, Earthset Views (art002e021007): https://images.nasa.gov/details/art002e021007\nNASA Science, Earth–Moon distance: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JSC (Artemis II crew photos). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#space",
+      "#astronomy",
+      "#nasa",
+      "#artemis",
+      "#moon",
+      "#oneshot"
+    ]
+  }
+}

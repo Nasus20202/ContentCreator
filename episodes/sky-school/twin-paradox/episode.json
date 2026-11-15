@@ -1,0 +1,27 @@
+{
+  "id": "sky-school-twin-paradox",
+  "series": "sky-school",
+  "createdAt": "2026-11-12T15:46:20.789Z",
+  "stage": "published",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "652fb336995a6df4",
+    "factcheckedPlan": "652fb336995a6df4",
+    "narration": "395e603b5cd29e11",
+    "video": "2bae828c2484902221d1a18785e9441d736e8918be555ef1b0816f18d611d1a8"
+  },
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-12T19:13:33.611Z",
+      "videoSha256": "2bae828c2484902221d1a18785e9441d736e8918be555ef1b0816f18d611d1a8"
+    }
+  ]
+}

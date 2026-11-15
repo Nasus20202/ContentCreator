@@ -1,0 +1,182 @@
+{
+  "episodeId": "mission-control-2026-11-14-starship-catch",
+  "series": "mission-control",
+  "title": "Mission Control · Starship caught by the tower",
+  "badge": "Mission Control · Starship",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.06
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.15
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": [
+        "SpaceX just caught a spaceship with its launch tower.",
+        "It's the first time a Starship upper stage has flown home from orbit and been grabbed out of the air."
+      ],
+      "factIds": [
+        "first-catch",
+        "footage"
+      ],
+      "chips": [
+        {
+          "text": "FLIGHT 15 CATCH · SPACEX",
+          "from": {
+            "sentence": 1,
+            "edge": "start",
+            "offset": 0
+          }
+        }
+      ],
+      "title": {
+        "kicker": "Mission Control",
+        "title": "Caught by the tower",
+        "from": 0.1,
+        "to": 2.8
+      },
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "catch-video",
+        "zoom": [
+          1,
+          1.04
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover",
+        "start": 14
+      }
+    },
+    {
+      "id": "flight",
+      "narration": [
+        "Flight 15 launched from Texas on Friday the 13th.",
+        "The ship released 26 Starlink satellites and flew 14 laps around the Earth.",
+        "22 hours after launch, it came back to the tower it left from."
+      ],
+      "factIds": [
+        "launch",
+        "flight",
+        "first-catch",
+        "footage"
+      ],
+      "chips": [
+        {
+          "text": "SHIP 42 COMING HOME",
+          "from": 0.3
+        }
+      ],
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "catch-video",
+        "zoom": [
+          1,
+          1.04
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover",
+        "start": 0
+      }
+    },
+    {
+      "id": "arms",
+      "narration": [
+        "Two giant arms closed around it.",
+        "SpaceX had done this three times before, but only with boosters."
+      ],
+      "factIds": [
+        "first-catch",
+        "booster",
+        "arms"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "factCard",
+      "params": {
+        "value": "1st ship",
+        "label": "ever caught by the tower, after three booster catches",
+        "sourceLine": "AP / NPR"
+      }
+    },
+    {
+      "id": "booster",
+      "narration": [
+        "This time the booster's engines cut out too early on the way back, so it steered into the Gulf of Mexico and blew itself up."
+      ],
+      "factIds": [
+        "booster"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "factCard",
+      "params": {
+        "value": "Booster lost",
+        "label": "engines cut out early; it self-destructed in the Gulf",
+        "sourceLine": "AP / NPR"
+      }
+    },
+    {
+      "id": "why",
+      "narration": [
+        "Catching both halves is how SpaceX wants to make the world's biggest rocket fully reusable, the same Starship NASA plans to land on the Moon."
+      ],
+      "factIds": [
+        "reuse",
+        "size"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "factCard",
+      "params": {
+        "value": "124 m",
+        "label": "the world's largest rocket, built to be reused",
+        "sourceLine": "AP / NPR"
+      }
+    },
+    {
+      "id": "outro",
+      "narration": [
+        "Follow for what's happening in space, every week."
+      ],
+      "factIds": [],
+      "chips": [],
+      "captions": true,
+      "template": "outro",
+      "params": {
+        "kicker": "Mission Control",
+        "cta": "FOLLOW\nFOR SPACE\nNEWS, VERIFIED",
+        "footnote": "Sources: AP/NPR, Spaceflight Now · footage: SpaceX"
+      }
+    }
+  ],
+  "post": {
+    "title": "SpaceX just caught a Starship spaceship with its tower 🦾🚀",
+    "description": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nFootage: SpaceX webcast of the Flight 15 catch, via The Launch Pad on YouTube (https://www.youtube.com/watch?v=JLo08HUO2aY). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#spacex",
+      "#starship",
+      "#space",
+      "#spaceexploration",
+      "#rocket",
+      "#missioncontrol"
+    ]
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-15T02:43:37.712Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-23T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "67c1ef4a49e245306475bc6d21b1709841c71058dc206314102f9dc3b134e679",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-about-space-2026-11-29-iss-gravity-67c1ef4a.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6af91c6cb9a106584c82762d",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "At the International Space Station's altitude (200–250 miles, about 320–400 km), Earth's gravity is still about 90% as strong as on the ground. Astronauts float because they're in free fall: the station, the crew and everything aboard are constantly falling toward Earth while racing sideways at 17,500 mph (about 28,000 km/h), so they keep falling around it instead.\n\nSources:\nNASA, What Is Microgravity? (Grades 5-8): https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/\nNASA Glenn, What is Microgravity?: https://www.nasa.gov/centers-and-facilities/glenn/what-is-microgravity/\n\nImages: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floating water sphere, 2020). Narration uses a synthetic voice.\n\n#space #science #physics #iss #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-23T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-about-space-2026-11-29-iss-gravity-67c1ef4a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Astronauts don't float because there's no gravity 🧑‍🚀",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6af91c6d76c23bf1c7541740",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Astronauts don't float because there's no gravity 🧑‍🚀\n\nAt the International Space Station's altitude (200–250 miles, about 320–400 km), Earth's gravity is still about 90% as strong as on the ground. Astronauts float because they're in free fall: the station, the crew and everything aboard are constantly falling toward Earth while racing sideways at 17,500 mph (about 28,000 km/h), so they keep falling around it instead.\n\nSources:\nNASA, What Is Microgravity? (Grades 5-8): https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/\nNASA Glenn, What is Microgravity?: https://www.nasa.gov/centers-and-facilities/glenn/what-is-microgravity/\n\nImages: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floating water sphere, 2020). Narration uses a synthetic voice.\n\n#space #science #physics #iss #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-23T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-about-space-2026-11-29-iss-gravity-67c1ef4a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "submitted",
+          "postId": "6af91c6ee86a5789a6e6137a",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "Astronauts don't float because there's no gravity 🧑‍🚀\n\nAt the International Space Station's altitude (200–250 miles, about 320–400 km), Earth's gravity is still about 90% as strong as on the ground. Astronauts float because they're in free fall: the station, the crew and everything aboard are constantly falling toward Earth while racing sideways at 17,500 mph (about 28,000 km/h), so they keep falling around it instead.\n\nSources:\nNASA, What Is Microgravity? (Grades 5-8)\nNASA Glenn, What is Microgravity?\n\nImages: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floating water sphere, 2020). Narration uses a synthetic voice.\n\n#space #science #physics #iss #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-23T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-about-space-2026-11-29-iss-gravity-67c1ef4a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-15T08:02:01.849Z",
+      "actor": "claude",
+      "mode": "reschedule",
+      "scheduledFor": "2026-11-22T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "67c1ef4a49e245306475bc6d21b1709841c71058dc206314102f9dc3b134e679",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-about-space-2026-11-29-iss-gravity-67c1ef4a.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6af91c6cb9a106584c82762d",
+          "payload": {
+            "text": "At the International Space Station's altitude (200–250 miles, about 320–400 km), Earth's gravity is still about 90% as strong as on the ground. Astronauts float because they're in free fall: the station, the crew and everything aboard are constantly falling toward Earth while racing sideways at 17,500 mph (about 28,000 km/h), so they keep falling around it instead.\n\nSources:\nNASA, What Is Microgravity? (Grades 5-8): https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/\nNASA Glenn, What is Microgravity?: https://www.nasa.gov/centers-and-facilities/glenn/what-is-microgravity/\n\nImages: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floating water sphere, 2020). Narration uses a synthetic voice.\n\n#space #science #physics #iss #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-22T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-about-space-2026-11-29-iss-gravity-67c1ef4a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Astronauts don't float because there's no gravity 🧑‍🚀",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c6cb9a106584c82762d"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6af91c6d76c23bf1c7541740",
+          "payload": {
+            "text": "Astronauts don't float because there's no gravity 🧑‍🚀\n\nAt the International Space Station's altitude (200–250 miles, about 320–400 km), Earth's gravity is still about 90% as strong as on the ground. Astronauts float because they're in free fall: the station, the crew and everything aboard are constantly falling toward Earth while racing sideways at 17,500 mph (about 28,000 km/h), so they keep falling around it instead.\n\nSources:\nNASA, What Is Microgravity? (Grades 5-8): https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/\nNASA Glenn, What is Microgravity?: https://www.nasa.gov/centers-and-facilities/glenn/what-is-microgravity/\n\nImages: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floating water sphere, 2020). Narration uses a synthetic voice.\n\n#space #science #physics #iss #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-22T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-about-space-2026-11-29-iss-gravity-67c1ef4a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c6d76c23bf1c7541740"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "submitted",
+          "postId": "6af91c6ee86a5789a6e6137a",
+          "payload": {
+            "text": "Astronauts don't float because there's no gravity 🧑‍🚀\n\nAt the International Space Station's altitude (200–250 miles, about 320–400 km), Earth's gravity is still about 90% as strong as on the ground. Astronauts float because they're in free fall: the station, the crew and everything aboard are constantly falling toward Earth while racing sideways at 17,500 mph (about 28,000 km/h), so they keep falling around it instead.\n\nSources:\nNASA, What Is Microgravity? (Grades 5-8)\nNASA Glenn, What is Microgravity?\n\nImages: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floating water sphere, 2020). Narration uses a synthetic voice.\n\n#space #science #physics #iss #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-22T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-about-space-2026-11-29-iss-gravity-67c1ef4a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c6ee86a5789a6e6137a"
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-15T09:03:48.566Z",
+      "actor": "claude",
+      "mode": "reschedule",
+      "scheduledFor": "2026-11-22T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "67c1ef4a49e245306475bc6d21b1709841c71058dc206314102f9dc3b134e679",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/iss-gravity-67c1ef4a.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6af91c6cb9a106584c82762d",
+          "payload": {
+            "text": "At the International Space Station's altitude (200–250 miles, about 320–400 km), Earth's gravity is still about 90% as strong as on the ground. Astronauts float because they're in free fall: the station, the crew and everything aboard are constantly falling toward Earth while racing sideways at 17,500 mph (about 28,000 km/h), so they keep falling around it instead.\n\nSources:\nNASA, What Is Microgravity? (Grades 5-8): https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/\nNASA Glenn, What is Microgravity?: https://www.nasa.gov/centers-and-facilities/glenn/what-is-microgravity/\n\nImages: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floating water sphere, 2020). Narration uses a synthetic voice.\n\n#space #science #physics #iss #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-22T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/iss-gravity-67c1ef4a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Astronauts don't float because there's no gravity 🧑‍🚀",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c6cb9a106584c82762d"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6af91c6d76c23bf1c7541740",
+          "payload": {
+            "text": "Astronauts don't float because there's no gravity 🧑‍🚀\n\nAt the International Space Station's altitude (200–250 miles, about 320–400 km), Earth's gravity is still about 90% as strong as on the ground. Astronauts float because they're in free fall: the station, the crew and everything aboard are constantly falling toward Earth while racing sideways at 17,500 mph (about 28,000 km/h), so they keep falling around it instead.\n\nSources:\nNASA, What Is Microgravity? (Grades 5-8): https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/\nNASA Glenn, What is Microgravity?: https://www.nasa.gov/centers-and-facilities/glenn/what-is-microgravity/\n\nImages: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floating water sphere, 2020). Narration uses a synthetic voice.\n\n#space #science #physics #iss #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-22T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/iss-gravity-67c1ef4a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c6d76c23bf1c7541740"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "submitted",
+          "postId": "6af91c6ee86a5789a6e6137a",
+          "payload": {
+            "text": "Astronauts don't float because there's no gravity 🧑‍🚀\n\nAt the International Space Station's altitude (200–250 miles, about 320–400 km), Earth's gravity is still about 90% as strong as on the ground. Astronauts float because they're in free fall: the station, the crew and everything aboard are constantly falling toward Earth while racing sideways at 17,500 mph (about 28,000 km/h), so they keep falling around it instead.\n\nSources:\nNASA, What Is Microgravity? (Grades 5-8)\nNASA Glenn, What is Microgravity?\n\nImages: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floating water sphere, 2020). Narration uses a synthetic voice.\n\n#space #science #physics #iss #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-22T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/iss-gravity-67c1ef4a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c6ee86a5789a6e6137a"
+          }
+        }
+      ]
+    }
+  ]
+}

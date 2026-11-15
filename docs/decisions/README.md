@@ -5,6 +5,50 @@
 
 ## 2026-11-15 · publish · claude
 
+**Old 'videos' branch removed from this repo after moving all 24 hosted videos (every file it ever held) into Nasus20202/ContentCreator-assets under <series>/<slug>-<sha8>.mp4; local reflogs expired and objects pruned.**
+
+Owner deleted the protecting ruleset and asked to clean up the branch, its history and loose objects. Verified first: every old blob present in the assets repo, and Buffer's own post list shows all 30 scheduled posts on the new host (9 sent posts no longer need their media).
+
+Inputs: `https://github.com/Nasus20202/ContentCreator-assets`
+
+## 2026-11-15 · publish · claude
+
+**Hosted videos move from this repo's public 'videos' branch to a separate public repo, Nasus20202/ContentCreator-assets (branch main, files <series>/<slug>-<sha8>.mp4, git objects in a local bare cache). All 10 scheduled episodes (30 posts, 15–24 Nov) re-hosted with --rehost (same bytes, sha256-checked) and repointed; times unchanged. The assets repo's main is protected against deletion and force-push.**
+
+Owner: 'create repo ContentCreator-assets, point to it, push with new directory, rewrite this repo history to remove the old stuff, update schedule'. Keeps the code repo small (~380 MB of videos and growing ~15 MB/day), isolates takedown risk (the Flight 15 clip is SpaceX's) from the code repo, and groups files by series like episodes/.
+
+Alternatives considered:
+- keep the videos branch
+- Cloudflare R2 / S3 bucket
+
+Inputs: `channel.config.json`, `src/publish/media-host.ts`, `https://github.com/Nasus20202/ContentCreator-assets`
+
+## 2026-11-15 · strategy · claude
+
+**Series beds for Sky This Week, Sky Tonight and Sky School switch to the Tone.js ports of orbit, meteor and nebula on the Kawai upright (orbit-tone, meteor-tone, nebula-tone).**
+
+Owner listened to A/B pairs (original vs Tone.js + Kawai, same score) and said 'we can use Tone.js for that'. One engine for every bed; the score's event list (scoreEvents) is shared, and the originals stay bit-exact and pinnable.
+
+Alternatives considered:
+- keep the original Node-mixed beds
+- Tone.js with the tonejs-instruments piano
+
+Inputs: `src/render/score.ts`, `src/render/tone/compose.ts`, `tests/score-golden.test.ts`
+
+## 2026-11-15 · publish · claude
+
+**Reordered Buffer queue 15–24 Nov (17:00 UTC): Starship 15, How Fast 16, ESCAPADE 17, Dark side 18, Gravity tunnel 19, Earth smiled 20, Moon drift 21, ISS gravity 22, Artemis Earth 23, Cosmic Top 5 24.**
+
+Owner: release the SpaceX video today, and 'not similar video close to each other'. Starship catch (14 Nov) is fresh news; no two Moon (dark side, Moon drift, Artemis), gravity (tunnel, ISS), photo (Earth smiled, Artemis), mission (Starship, ESCAPADE) or same-series videos are adjacent. Top 5 stays on 24 Nov (computed for that date). ISS gravity moved to 22 Nov to leave time to re-approve its music-fixed render.
+
+Alternatives considered:
+- Starship 16 Nov as scheduled
+- Artemis 20 / Earth smiled 23 (puts Artemis next to Moon drift)
+
+Inputs: `memory:daily-cadence-rotation`, `memory:buffer-slot-limit`
+
+## 2026-11-15 · publish · claude
+
 **Buffer queue for 16–24 Nov (17:00 UTC): Starship 16, ESCAPADE 17, Gravity tunnel 18, Moon drift 19, Artemis Earth 20, Dark side 21, Earth smiled 22, ISS gravity 23, Cosmic Top 5 24. Old Sky School posts (Planet Ages, Proxima, Voyager light-day, Twin paradox, Light travel) unscheduled and waiting.**
 
 Owner: 'remove other schedules, I need everything scheduled for following 10 days, and tomorrow the spacex'. ESCAPADE is fresh news (moved early); Top 5 distances are computed for 24 Nov (kept). 10-post limit: How Fast (15 Nov) holds the 10th slot until it posts, so 25 Nov is filled next session; Sky This Week Nov 30 belongs on Fri 27 Nov.
