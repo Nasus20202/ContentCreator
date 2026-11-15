@@ -24,6 +24,7 @@ import {
   Timeline,
   type Stage,
 } from '../core/schemas';
+import { downloadCommons } from '../assets/wikimedia';
 import { downloadNasa, lookupNasa, searchNasa } from '../assets/nasa';
 import { BufferClient } from '../publish/buffer';
 import { GitBranchHost, mediaName } from '../publish/media-host';
@@ -220,12 +221,16 @@ asset
 asset
   .command('add')
   .argument('<episode>')
-  .requiredOption('--nasa-id <id>')
+  .option('--nasa-id <id>', 'NASA Image and Video Library id')
+  .option('--commons <file>', 'Wikimedia Commons file title, e.g. "File:Foo.jpg" (licence must allow commercial reuse)')
   .requiredOption('--id <assetId>', 'id the plan will reference')
   .addOption(actorOpt().default('claude'))
-  .action(async (id: string, o: { nasaId: string; id: string; actor: Actor }) => {
+  .action(async (id: string, o: { nasaId?: string; commons?: string; id: string; actor: Actor }) => {
     const ep = Episode.load(id);
-    const rec = await downloadNasa(await lookupNasa(o.nasaId), o.id, ep.paths.assetDir);
+    if (!o.nasaId === !o.commons) throw new PipelineError('give exactly one of --nasa-id or --commons');
+    const rec = o.nasaId
+      ? await downloadNasa(await lookupNasa(o.nasaId), o.id, ep.paths.assetDir)
+      : await downloadCommons(o.commons!, o.id, ep.paths.assetDir);
     const assets = stages.loadAssets(ep).filter((a) => a.id !== rec.id);
     writeJson(ep.paths.assets, AssetsFile.parse({ assets: [...assets, rec] }));
     ep.log(o.actor, ep.stage, 'asset.add', { id: rec.id, url: rec.source.url, license: rec.source.license });

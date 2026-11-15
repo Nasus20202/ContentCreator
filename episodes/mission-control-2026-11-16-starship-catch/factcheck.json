@@ -1,0 +1,192 @@
+{
+  "checkedAt": "2026-11-15T02:06:09.988Z",
+  "planHash": "417f60b82504bc98",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "PHOTO: EARLIER BOOSTER CATCH, 2024",
+        "number": 2024,
+        "raw": "2024",
+        "matchedFact": "photos"
+      },
+      {
+        "sceneId": "flight",
+        "where": "narration[0]",
+        "text": "Flight 15 launched from Texas on Friday the 13th.",
+        "number": 15,
+        "raw": "15",
+        "matchedFact": "launch"
+      },
+      {
+        "sceneId": "flight",
+        "where": "narration[1]",
+        "text": "The ship released 26 Starlink satellites and flew 14 laps around the Earth.",
+        "number": 26,
+        "raw": "26",
+        "matchedFact": "flight"
+      },
+      {
+        "sceneId": "flight",
+        "where": "narration[1]",
+        "text": "The ship released 26 Starlink satellites and flew 14 laps around the Earth.",
+        "number": 14,
+        "raw": "14",
+        "matchedFact": "flight"
+      },
+      {
+        "sceneId": "flight",
+        "where": "narration[2]",
+        "text": "22 hours after launch, it came back to the tower it left from.",
+        "number": 22,
+        "raw": "22",
+        "matchedFact": "launch"
+      },
+      {
+        "sceneId": "flight",
+        "where": "chips[0]",
+        "text": "PHOTO: BOOSTER RETURN, OCT 2024",
+        "number": 2024,
+        "raw": "2024",
+        "matchedFact": "photos"
+      },
+      {
+        "sceneId": "arms",
+        "where": "narration[0]",
+        "text": "Two giant arms closed around it.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "arms"
+      },
+      {
+        "sceneId": "arms",
+        "where": "narration[1]",
+        "text": "SpaceX had done this three times before, but only with boosters.",
+        "number": 3,
+        "raw": "three",
+        "matchedFact": "booster"
+      },
+      {
+        "sceneId": "arms",
+        "where": "factCard",
+        "text": "1st ship ever caught by the tower, after three booster catches",
+        "number": 3,
+        "raw": "three",
+        "matchedFact": "booster"
+      },
+      {
+        "sceneId": "why",
+        "where": "factCard",
+        "text": "124 m the world's largest rocket, built to be reused",
+        "number": 124,
+        "raw": "124",
+        "matchedFact": "size"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 15,
+        "raw": "15",
+        "matchedFact": "launch"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 13,
+        "raw": "13",
+        "matchedFact": "photos"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 2026,
+        "raw": "2026",
+        "matchedFact": "first-catch"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 26,
+        "raw": "26",
+        "matchedFact": "flight"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 14,
+        "raw": "14",
+        "matchedFact": "first-catch"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 265,
+        "raw": "265",
+        "matchedFact": "flight"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 22,
+        "raw": "22",
+        "matchedFact": "first-catch"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 15,
+        "raw": "15",
+        "matchedFact": "launch"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "photos"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 13,
+        "raw": "13",
+        "matchedFact": "photos"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 2024,
+        "raw": "2024",
+        "matchedFact": "photos"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Starship Flight 15 launched from Starbase, Texas, on Friday 13 November 2026, reached orbit, released 26 Starlink satellites and flew 14 laps around Earth about 265 km up. 22 hours after launch, the ship flew home and was caught by the launch tower's giant arms: the first time a Starship upper stage has ever been caught. The booster didn't make it: its engines stopped too early on the way back, so it diverted to the Gulf of Mexico and self-destructed. Catching both halves is the key to making Starship fully reusable.\n\nSources:\nThe Associated Press via NPR, SpaceX successfully catches Starship and makes history: https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history\nSpaceflight Now, Starship Flight 15 coverage: https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/\n\nPhotos (an earlier booster catch, Starship flight test 5, 13 October 2024): Steve Jurvetson and others, CC BY 2.0, via Wikimedia Commons. Narration uses a synthetic voice.",
+        "number": 2,
+        "raw": "2.0",
+        "matchedFact": "photos"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-15T02:06:18.283Z",
+    "verdict": "pass",
+    "notes": "Sources: AP via NPR (14 Nov 2026) and Spaceflight Now. Launch 13 Nov 2026 22:47 UTC (Friday the 13th). The ship reached orbit, released 26 Starlinks, flew 14 laps about 265 km up; caught 22 h after launch at the tower it left from; the first-ever capture of a Starship flying back from space; two arms; three previous booster catches; booster engines stopped early, diverted to the Gulf and self-destructed. 124 m, the world's largest rocket; SpaceX says the catch demonstrates full reusability; Starship is an Artemis lunar lander. The photos are NOT of Flight 15: they show the Flight 5 booster catch (13 Oct 2024, CC BY 2.0), and the on-screen chips say so. SpaceX's own photos are CC BY-NC and were not used. The 'full stack' photo was excluded because its author forbids cropping."
+  }
+}

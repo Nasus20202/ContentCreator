@@ -5,6 +5,7 @@
 | Episode | Series | Stage | Title | Published to | Views (latest) |
 | --- | --- | --- | --- | --- | --- |
 | [cosmic-top-5-2026-11-24-farthest](../episodes/cosmic-top-5-2026-11-24-farthest/README.md) | cosmic-top-5 | qa-passed | The 5 farthest things humans have ever built 🚀 | — | — |
+| [mission-control-2026-11-16-starship-catch](../episodes/mission-control-2026-11-16-starship-catch/README.md) | mission-control | qa-passed | SpaceX just caught a Starship spaceship with its tower 🦾🚀 | — | — |
 | [mission-control-2026-11-25-escapade](../episodes/mission-control-2026-11-25-escapade/README.md) | mission-control | qa-passed | Two NASA probes just slingshotted past Earth toward Mars 🔴 | — | — |
 | [one-shot-2026-11-21-artemis-earth](../episodes/one-shot-2026-11-21-artemis-earth/README.md) | one-shot | qa-passed | Earth, photographed from behind the Moon 🌍🌘 | — | — |
 | [one-shot-2026-11-28-earth-smiled](../episodes/one-shot-2026-11-28-earth-smiled/README.md) | one-shot | qa-passed | Find Earth in this photo of Saturn 🪐🔵 | — | — |

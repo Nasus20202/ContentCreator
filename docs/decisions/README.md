@@ -5,6 +5,17 @@
 
 ## 2026-11-15 · strategy · human
 
+**Visual style: one house style for every series (current Space Grotesk layout); series differ only by accent colour. Per-series fonts/frames (mock-ups A–E) dropped.**
+
+Owner prefers the current look and a consistent channel identity.
+
+Alternatives considered:
+- Per-series fonts and frames (A–E mock-ups)
+
+Inputs: `build/poc/fonts/looks.png`
+
+## 2026-11-15 · strategy · human
+
 **Music: retire the hand-rolled piano/score engine and its sample downloader; all beds are now Tone.js + tonal compositions on recorded instruments. Styles: acoustic (One Shot, Sky School), pulse (Cosmic Top 5, Sky Tonight), drive (Mission Control), lofi (Wrong About Space), nocturne (Sky This Week), lab (Weird Physics).**
 
 Owner: prefers real-instrument, acoustic vibes; pulse is okay; the previous lo-fi wasn't lo-fi; wants more variety of instruments and pulse-like tracks, and the old scripts removed.

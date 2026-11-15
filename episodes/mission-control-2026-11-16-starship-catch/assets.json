@@ -1,0 +1,68 @@
+{
+  "assets": [
+    {
+      "id": "approach",
+      "kind": "image",
+      "file": "assets/approach.jpg",
+      "sha256": "3070b9aa6a9045bd4b575b9ba16207751431f7ec7d142bddff92e3583b7a6405",
+      "source": {
+        "provider": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Starship_Booster_Return_on_Final_Approach_%2854063904149%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Starship_Booster_Return_on_Final_Approach_(54063904149).jpg",
+        "title": "Starship Booster Return on Final Approach (54063904149).jpg",
+        "credit": "Steve Jurvetson / Wikimedia Commons (CC BY 2.0)",
+        "license": "CC BY 2.0"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T02:04:36.716Z"
+    },
+    {
+      "id": "caught",
+      "kind": "image",
+      "file": "assets/caught.jpg",
+      "sha256": "42a6b3213a0c5f92e7a27567ffcd3aee6a6e6d657dcdb29e777c8dce2d561545",
+      "source": {
+        "provider": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Starship_5_Booster_Landing_on_Mechzilla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Starship_5_Booster_Landing_on_Mechzilla.jpg",
+        "title": "Starship 5 Booster Landing on Mechzilla.jpg",
+        "credit": "Bech, Prospectprospekt, Steve Jurvetson from Los Altos, USA / Wikimedia Commons (CC BY 2.0)",
+        "license": "CC BY 2.0"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T02:04:38.133Z"
+    },
+    {
+      "id": "fullstack",
+      "kind": "image",
+      "file": "assets/fullstack.jpg",
+      "sha256": "5c5e91e126f352b96d423cc74fd5e9df3be12b9d2a2c2adb1aff6dcc26faee9a",
+      "source": {
+        "provider": "wikimedia",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Starship_full_stack.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Starship_full_stack.jpg",
+        "title": "Starship full stack.jpg",
+        "credit": "Hotel Pika / Wikimedia Commons (CC BY-SA 2.0)",
+        "license": "CC BY-SA 2.0"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T02:04:39.634Z"
+    },
+    {
+      "id": "tower",
+      "kind": "image",
+      "file": "assets/tower.jpg",
+      "sha256": "bffb50f796383b6cd6dd547e07a19112c1198de8a911e5f15249a51cea5c5f98",
+      "source": {
+        "provider": "wikimedia",
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Tower_and_Booster.jpg/3840px-Tower_and_Booster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "pageUrl": "https://commons.wikimedia.org/wiki/File:Tower_and_Booster.jpg",
+        "title": "Tower and Booster.jpg",
+        "credit": "Jenny Hautmann / Wikimedia Commons (CC BY-SA 4.0)",
+        "license": "CC BY-SA 4.0"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T02:04:42.646Z"
+    }
+  ]
+}

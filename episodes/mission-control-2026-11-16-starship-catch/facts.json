@@ -1,0 +1,133 @@
+{
+  "facts": [
+    {
+      "id": "first-catch",
+      "statement": "On Saturday 14 November 2026, SpaceX's Starship returned from space and was caught in midair by giant mechanical arms on the launch tower where its journey began 22 hours earlier: the first-ever capture of a Starship flying back from space.",
+      "values": [
+        14,
+        2026,
+        22,
+        1
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history",
+        "title": "SpaceX successfully catches Starship and makes history (The Associated Press, via NPR)",
+        "publisher": "NPR / The Associated Press",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "flight",
+      "statement": "The upper stage soared into orbit, released 26 Starlink satellites, circled Earth 165 miles (265 km) up and completed 14 laps around Earth. It was SpaceX's 15th flight of a full-scale Starship since 2023 and only its second trip to orbit.",
+      "values": [
+        26,
+        165,
+        265,
+        14,
+        15,
+        2023,
+        2
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history",
+        "title": "SpaceX successfully catches Starship and makes history (The Associated Press, via NPR)",
+        "publisher": "NPR / The Associated Press",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "size",
+      "statement": "Starship is the world's largest and most powerful rocket, 407 feet (124 metres) tall.",
+      "values": [
+        407,
+        124
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history",
+        "title": "SpaceX successfully catches Starship and makes history (The Associated Press, via NPR)",
+        "publisher": "NPR / The Associated Press",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "booster",
+      "statement": "The first-stage booster's engines stopped firing too soon on the way back down; its guidance sensed it was out of position and automatically diverted it to the Gulf of Mexico and self-destructed. SpaceX had already made three previous booster catches.",
+      "values": [
+        3
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history",
+        "title": "SpaceX successfully catches Starship and makes history (The Associated Press, via NPR)",
+        "publisher": "NPR / The Associated Press",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "reuse",
+      "statement": "SpaceX officials said the catch demonstrates the full reusability of Starship, intended for Moon and Mars travel; Starship is one of the landers NASA plans to use to put Artemis crews on the Moon.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history",
+        "title": "SpaceX successfully catches Starship and makes history (The Associated Press, via NPR)",
+        "publisher": "NPR / The Associated Press",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "launch",
+      "statement": "Starship Flight 15 (Ship 42 on Super Heavy Booster 22) lifted off from Starbase, Texas, at 4:47 p.m. CST (22:47 UTC) on Friday 13 November 2026.",
+      "values": [
+        15,
+        42,
+        22,
+        4,
+        47,
+        13,
+        2026
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://spaceflightnow.com/2026/11/13/live-coverage-starship-flight-15-attempts-to-recover-full-vehicle-in-double-launch-pad-catch/",
+        "title": "Starship in orbit ahead of catch attempt, booster diverts to explosive splashdown",
+        "publisher": "Spaceflight Now",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "photos",
+      "statement": "The photos show the Super Heavy booster returning to and being caught by the tower during Starship flight test 5 on 13 October 2024 (photos: Steve Jurvetson and others, CC BY 2.0), not the Flight 15 ship catch.",
+      "values": [
+        5,
+        13,
+        2024,
+        2
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://commons.wikimedia.org/wiki/File:Starship_Booster_Return_on_Final_Approach_(54063904149).jpg",
+        "title": "Wikimedia Commons: Starship flight test 5 booster return and catch (Steve Jurvetson, CC BY 2.0)",
+        "publisher": "Wikimedia Commons",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "arms",
+      "statement": "The spacecraft returned to its Texas launchpad by carefully lowering itself until two metal arms attached to the launch tower could secure it.",
+      "values": [
+        2
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.npr.org/2026/11/14/g-s1-153786/spacex-successfully-catches-starship-and-makes-history",
+        "title": "SpaceX successfully catches Starship and makes history (The Associated Press, via NPR)",
+        "publisher": "NPR / The Associated Press",
+        "accessed": "2026-11-15"
+      }
+    }
+  ]
+}

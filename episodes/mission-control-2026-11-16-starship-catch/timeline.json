@@ -1,0 +1,815 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "89b12131f2131726",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 8.464,
+      "sentences": [
+        {
+          "text": "SpaceX just caught a spaceship with its launch tower.",
+          "start": 0.15,
+          "end": 2.665,
+          "words": [
+            {
+              "w": "SpaceX",
+              "start": 0.15,
+              "end": 0.46
+            },
+            {
+              "w": "just",
+              "start": 0.46,
+              "end": 0.692
+            },
+            {
+              "w": "caught",
+              "start": 0.692,
+              "end": 1.001
+            },
+            {
+              "w": "a",
+              "start": 1.001,
+              "end": 1.117
+            },
+            {
+              "w": "spaceship",
+              "start": 1.117,
+              "end": 1.543
+            },
+            {
+              "w": "with",
+              "start": 1.543,
+              "end": 1.775
+            },
+            {
+              "w": "its",
+              "start": 1.775,
+              "end": 1.969
+            },
+            {
+              "w": "launch",
+              "start": 1.969,
+              "end": 2.278
+            },
+            {
+              "w": "tower.",
+              "start": 2.278,
+              "end": 2.665
+            }
+          ]
+        },
+        {
+          "text": "It's the first time a Starship upper stage has flown home from orbit and been grabbed out of the air.",
+          "start": 2.945,
+          "end": 8.184,
+          "words": [
+            {
+              "w": "It's",
+              "start": 2.945,
+              "end": 3.199
+            },
+            {
+              "w": "the",
+              "start": 3.199,
+              "end": 3.41
+            },
+            {
+              "w": "first",
+              "start": 3.41,
+              "end": 3.706
+            },
+            {
+              "w": "time",
+              "start": 3.706,
+              "end": 3.959
+            },
+            {
+              "w": "a",
+              "start": 3.959,
+              "end": 4.086
+            },
+            {
+              "w": "Starship",
+              "start": 4.086,
+              "end": 4.508
+            },
+            {
+              "w": "upper",
+              "start": 4.508,
+              "end": 4.804
+            },
+            {
+              "w": "stage",
+              "start": 4.804,
+              "end": 5.1
+            },
+            {
+              "w": "has",
+              "start": 5.1,
+              "end": 5.311
+            },
+            {
+              "w": "flown",
+              "start": 5.311,
+              "end": 5.607
+            },
+            {
+              "w": "home",
+              "start": 5.607,
+              "end": 5.86
+            },
+            {
+              "w": "from",
+              "start": 5.86,
+              "end": 6.114
+            },
+            {
+              "w": "orbit",
+              "start": 6.114,
+              "end": 6.41
+            },
+            {
+              "w": "and",
+              "start": 6.41,
+              "end": 6.621
+            },
+            {
+              "w": "been",
+              "start": 6.621,
+              "end": 6.874
+            },
+            {
+              "w": "grabbed",
+              "start": 6.874,
+              "end": 7.254
+            },
+            {
+              "w": "out",
+              "start": 7.254,
+              "end": 7.466
+            },
+            {
+              "w": "of",
+              "start": 7.466,
+              "end": 7.635
+            },
+            {
+              "w": "the",
+              "start": 7.635,
+              "end": 7.846
+            },
+            {
+              "w": "air.",
+              "start": 7.846,
+              "end": 8.184
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "flight",
+      "audioFile": "voice/flight.wav",
+      "duration": 12.394,
+      "sentences": [
+        {
+          "text": "Flight 15 launched from Texas on Friday the 13th.",
+          "start": 0.15,
+          "end": 3.441,
+          "words": [
+            {
+              "w": "Flight",
+              "start": 0.15,
+              "end": 0.582
+            },
+            {
+              "w": "15",
+              "start": 0.582,
+              "end": 0.797
+            },
+            {
+              "w": "launched",
+              "start": 0.797,
+              "end": 1.337
+            },
+            {
+              "w": "from",
+              "start": 1.337,
+              "end": 1.661
+            },
+            {
+              "w": "Texas",
+              "start": 1.661,
+              "end": 2.038
+            },
+            {
+              "w": "on",
+              "start": 2.038,
+              "end": 2.254
+            },
+            {
+              "w": "Friday",
+              "start": 2.254,
+              "end": 2.686
+            },
+            {
+              "w": "the",
+              "start": 2.686,
+              "end": 2.955
+            },
+            {
+              "w": "13th.",
+              "start": 2.955,
+              "end": 3.441
+            }
+          ]
+        },
+        {
+          "text": "The ship released 26 Starlink satellites and flew 14 laps around the Earth.",
+          "start": 3.721,
+          "end": 8.181,
+          "words": [
+            {
+              "w": "The",
+              "start": 3.721,
+              "end": 3.966
+            },
+            {
+              "w": "ship",
+              "start": 3.966,
+              "end": 4.26
+            },
+            {
+              "w": "released",
+              "start": 4.26,
+              "end": 4.75
+            },
+            {
+              "w": "26",
+              "start": 4.75,
+              "end": 4.946
+            },
+            {
+              "w": "Starlink",
+              "start": 4.946,
+              "end": 5.436
+            },
+            {
+              "w": "satellites",
+              "start": 5.436,
+              "end": 6.024
+            },
+            {
+              "w": "and",
+              "start": 6.024,
+              "end": 6.27
+            },
+            {
+              "w": "flew",
+              "start": 6.27,
+              "end": 6.564
+            },
+            {
+              "w": "14",
+              "start": 6.564,
+              "end": 6.76
+            },
+            {
+              "w": "laps",
+              "start": 6.76,
+              "end": 7.054
+            },
+            {
+              "w": "around",
+              "start": 7.054,
+              "end": 7.446
+            },
+            {
+              "w": "the",
+              "start": 7.446,
+              "end": 7.691
+            },
+            {
+              "w": "Earth.",
+              "start": 7.691,
+              "end": 8.181
+            }
+          ]
+        },
+        {
+          "text": "22 hours after launch, it came back to the tower it left from.",
+          "start": 8.461,
+          "end": 12.114,
+          "words": [
+            {
+              "w": "22",
+              "start": 8.461,
+              "end": 8.644
+            },
+            {
+              "w": "hours",
+              "start": 8.644,
+              "end": 8.963
+            },
+            {
+              "w": "after",
+              "start": 8.963,
+              "end": 9.283
+            },
+            {
+              "w": "launch,",
+              "start": 9.283,
+              "end": 9.785
+            },
+            {
+              "w": "it",
+              "start": 9.785,
+              "end": 9.968
+            },
+            {
+              "w": "came",
+              "start": 9.968,
+              "end": 10.242
+            },
+            {
+              "w": "back",
+              "start": 10.242,
+              "end": 10.516
+            },
+            {
+              "w": "to",
+              "start": 10.516,
+              "end": 10.698
+            },
+            {
+              "w": "the",
+              "start": 10.698,
+              "end": 10.927
+            },
+            {
+              "w": "tower",
+              "start": 10.927,
+              "end": 11.246
+            },
+            {
+              "w": "it",
+              "start": 11.246,
+              "end": 11.429
+            },
+            {
+              "w": "left",
+              "start": 11.429,
+              "end": 11.703
+            },
+            {
+              "w": "from.",
+              "start": 11.703,
+              "end": 12.114
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "arms",
+      "audioFile": "voice/arms.wav",
+      "duration": 6.056,
+      "sentences": [
+        {
+          "text": "Two giant arms closed around it.",
+          "start": 0.15,
+          "end": 1.937,
+          "words": [
+            {
+              "w": "Two",
+              "start": 0.15,
+              "end": 0.368
+            },
+            {
+              "w": "giant",
+              "start": 0.368,
+              "end": 0.673
+            },
+            {
+              "w": "arms",
+              "start": 0.673,
+              "end": 0.934
+            },
+            {
+              "w": "closed",
+              "start": 0.934,
+              "end": 1.283
+            },
+            {
+              "w": "around",
+              "start": 1.283,
+              "end": 1.632
+            },
+            {
+              "w": "it.",
+              "start": 1.632,
+              "end": 1.937
+            }
+          ]
+        },
+        {
+          "text": "SpaceX had done this three times before, but only with boosters.",
+          "start": 2.217,
+          "end": 5.776,
+          "words": [
+            {
+              "w": "SpaceX",
+              "start": 2.217,
+              "end": 2.573
+            },
+            {
+              "w": "had",
+              "start": 2.573,
+              "end": 2.795
+            },
+            {
+              "w": "done",
+              "start": 2.795,
+              "end": 3.062
+            },
+            {
+              "w": "this",
+              "start": 3.062,
+              "end": 3.329
+            },
+            {
+              "w": "three",
+              "start": 3.329,
+              "end": 3.64
+            },
+            {
+              "w": "times",
+              "start": 3.64,
+              "end": 3.952
+            },
+            {
+              "w": "before,",
+              "start": 3.952,
+              "end": 4.441
+            },
+            {
+              "w": "but",
+              "start": 4.441,
+              "end": 4.663
+            },
+            {
+              "w": "only",
+              "start": 4.663,
+              "end": 4.93
+            },
+            {
+              "w": "with",
+              "start": 4.93,
+              "end": 5.197
+            },
+            {
+              "w": "boosters.",
+              "start": 5.197,
+              "end": 5.776
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "booster",
+      "audioFile": "voice/booster.wav",
+      "duration": 7.285,
+      "sentences": [
+        {
+          "text": "This time the booster's engines cut out too early on the way back, so it steered into the Gulf of Mexico and blew itself up.",
+          "start": 0.15,
+          "end": 7.005,
+          "words": [
+            {
+              "w": "This",
+              "start": 0.15,
+              "end": 0.417
+            },
+            {
+              "w": "time",
+              "start": 0.417,
+              "end": 0.684
+            },
+            {
+              "w": "the",
+              "start": 0.684,
+              "end": 0.907
+            },
+            {
+              "w": "booster's",
+              "start": 0.907,
+              "end": 1.396
+            },
+            {
+              "w": "engines",
+              "start": 1.396,
+              "end": 1.797
+            },
+            {
+              "w": "cut",
+              "start": 1.797,
+              "end": 2.02
+            },
+            {
+              "w": "out",
+              "start": 2.02,
+              "end": 2.242
+            },
+            {
+              "w": "too",
+              "start": 2.242,
+              "end": 2.465
+            },
+            {
+              "w": "early",
+              "start": 2.465,
+              "end": 2.776
+            },
+            {
+              "w": "on",
+              "start": 2.776,
+              "end": 2.954
+            },
+            {
+              "w": "the",
+              "start": 2.954,
+              "end": 3.177
+            },
+            {
+              "w": "way",
+              "start": 3.177,
+              "end": 3.4
+            },
+            {
+              "w": "back,",
+              "start": 3.4,
+              "end": 3.8
+            },
+            {
+              "w": "so",
+              "start": 3.8,
+              "end": 3.978
+            },
+            {
+              "w": "it",
+              "start": 3.978,
+              "end": 4.156
+            },
+            {
+              "w": "steered",
+              "start": 4.156,
+              "end": 4.557
+            },
+            {
+              "w": "into",
+              "start": 4.557,
+              "end": 4.824
+            },
+            {
+              "w": "the",
+              "start": 4.824,
+              "end": 5.047
+            },
+            {
+              "w": "Gulf",
+              "start": 5.047,
+              "end": 5.314
+            },
+            {
+              "w": "of",
+              "start": 5.314,
+              "end": 5.492
+            },
+            {
+              "w": "Mexico",
+              "start": 5.492,
+              "end": 5.848
+            },
+            {
+              "w": "and",
+              "start": 5.848,
+              "end": 6.07
+            },
+            {
+              "w": "blew",
+              "start": 6.07,
+              "end": 6.338
+            },
+            {
+              "w": "itself",
+              "start": 6.338,
+              "end": 6.694
+            },
+            {
+              "w": "up.",
+              "start": 6.694,
+              "end": 7.005
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "why",
+      "audioFile": "voice/why.wav",
+      "duration": 8.832,
+      "sentences": [
+        {
+          "text": "Catching both halves is how SpaceX wants to make the world's biggest rocket fully reusable, the same Starship NASA plans to land on the Moon.",
+          "start": 0.15,
+          "end": 8.552,
+          "words": [
+            {
+              "w": "Catching",
+              "start": 0.15,
+              "end": 0.641
+            },
+            {
+              "w": "both",
+              "start": 0.641,
+              "end": 0.936
+            },
+            {
+              "w": "halves",
+              "start": 0.936,
+              "end": 1.329
+            },
+            {
+              "w": "is",
+              "start": 1.329,
+              "end": 1.526
+            },
+            {
+              "w": "how",
+              "start": 1.526,
+              "end": 1.772
+            },
+            {
+              "w": "SpaceX",
+              "start": 1.772,
+              "end": 2.165
+            },
+            {
+              "w": "wants",
+              "start": 2.165,
+              "end": 2.509
+            },
+            {
+              "w": "to",
+              "start": 2.509,
+              "end": 2.705
+            },
+            {
+              "w": "make",
+              "start": 2.705,
+              "end": 3
+            },
+            {
+              "w": "the",
+              "start": 3,
+              "end": 3.246
+            },
+            {
+              "w": "world's",
+              "start": 3.246,
+              "end": 3.688
+            },
+            {
+              "w": "biggest",
+              "start": 3.688,
+              "end": 4.13
+            },
+            {
+              "w": "rocket",
+              "start": 4.13,
+              "end": 4.523
+            },
+            {
+              "w": "fully",
+              "start": 4.523,
+              "end": 4.867
+            },
+            {
+              "w": "reusable,",
+              "start": 4.867,
+              "end": 5.506
+            },
+            {
+              "w": "the",
+              "start": 5.506,
+              "end": 5.752
+            },
+            {
+              "w": "same",
+              "start": 5.752,
+              "end": 6.046
+            },
+            {
+              "w": "Starship",
+              "start": 6.046,
+              "end": 6.538
+            },
+            {
+              "w": "NASA",
+              "start": 6.538,
+              "end": 6.833
+            },
+            {
+              "w": "plans",
+              "start": 6.833,
+              "end": 7.177
+            },
+            {
+              "w": "to",
+              "start": 7.177,
+              "end": 7.373
+            },
+            {
+              "w": "land",
+              "start": 7.373,
+              "end": 7.668
+            },
+            {
+              "w": "on",
+              "start": 7.668,
+              "end": 7.865
+            },
+            {
+              "w": "the",
+              "start": 7.865,
+              "end": 8.11
+            },
+            {
+              "w": "Moon.",
+              "start": 8.11,
+              "end": 8.552
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 2.915,
+      "sentences": [
+        {
+          "text": "Follow for what's happening in space, every week.",
+          "start": 0.15,
+          "end": 2.635,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.471
+            },
+            {
+              "w": "for",
+              "start": 0.471,
+              "end": 0.671
+            },
+            {
+              "w": "what's",
+              "start": 0.671,
+              "end": 0.992
+            },
+            {
+              "w": "happening",
+              "start": 0.992,
+              "end": 1.433
+            },
+            {
+              "w": "in",
+              "start": 1.433,
+              "end": 1.593
+            },
+            {
+              "w": "space,",
+              "start": 1.593,
+              "end": 1.994
+            },
+            {
+              "w": "every",
+              "start": 1.994,
+              "end": 2.274
+            },
+            {
+              "w": "week.",
+              "start": 2.274,
+              "end": 2.635
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
