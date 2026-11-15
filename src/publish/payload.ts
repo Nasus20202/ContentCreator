@@ -3,6 +3,7 @@
  * Field names follow Buffer's GraphQL schema (CreatePostInput, PostInputMetaData).
  */
 import type { Plan, Platform } from '../core/schemas';
+import { DEFAULT_COVER_AT } from '../core/timing';
 
 export interface PostOptions {
   mode: 'now' | 'schedule' | 'draft';
@@ -77,7 +78,15 @@ export function buildCreatePostInput(
     ...modeFields(opts),
     // the script and post copy are written by Claude
     aiAssisted: true,
-    assets: [{ video: { url: media.url, metadata: { thumbnailOffset: 1000 } } }],
+    // Cover frame (Buffer applies it on Instagram and TikTok; YouTube picks its own Shorts frame).
+    assets: [
+      {
+        video: {
+          url: media.url,
+          metadata: { thumbnailOffset: Math.round((plan.post.coverAt ?? DEFAULT_COVER_AT) * 1000) },
+        },
+      },
+    ],
     metadata: platformMetadata(plan, target.platform, opts),
   };
 }

@@ -116,6 +116,8 @@ export function validatePlan(plan: Plan, facts: Fact[], assets: AssetRecord[] = 
   const first = plan.scenes[0];
   if (first.narration[0].split(/\s+/).length > 14)
     warn(first.id, 'hook sentence is long; the first line should land in under ~3 s');
+  if (!first.title)
+    warn(first.id, 'the opening scene has no title, so the cover frame (first ~0.6 s) will have no title either');
   if (plan.scenes[plan.scenes.length - 1].template !== 'outro') warn('plan', 'last scene is not an outro');
 
   return issues;

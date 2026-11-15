@@ -379,6 +379,12 @@ export const Plan = z.object({
     title: z.string().min(2).max(90),
     description: z.string().max(2000),
     hashtags: z.array(z.string().regex(/^#[\p{L}\p{N}_]+$/u)).max(8),
+    /**
+     * Seconds into the video for the cover frame (Instagram, TikTok via Buffer's thumbnailOffset).
+     * Defaults to inside the clean cover moment (see COVER_SEC in timing.ts). Optional, not defaulted,
+     * so older plans keep their hash.
+     */
+    coverAt: z.number().min(0).max(60).optional(),
   }),
 });
 export type Plan = z.infer<typeof Plan>;

@@ -49,6 +49,8 @@ lives in the records (`pnpm -s cc status`); this file is for what a human or the
 - [x] 2026-11-15 Sky School / Sky This Week / Sky Tonight beds switched to the Tone.js + Kawai ports.
 - [x] 2026-11-15 Hosted videos moved to `Nasus20202/ContentCreator-assets` (`<series>/<slug>-<sha8>.mp4`, `main`
       protected); all 30 scheduled posts for 15–24 Nov re-pointed with `--rehost` (same bytes, hash-checked).
+- [x] 2026-11-15 Clean cover moment (first 0.6 s), `post.coverAt` → Buffer thumbnailOffset, cover frames in QA.
+      Applies to new renders; already-approved videos keep their old 1.0 s cover.
 - [x] 2026-11-15 All 24 videos from the old `videos` branch copied into the assets repo (`<series>/<slug>-<sha8>.mp4`,
       verified blob-for-blob); Buffer queried directly: 30 scheduled posts, none on the old URL. Old branch deleted
       on GitHub, reflogs expired and objects pruned (`.git` 381 MB → 2.8 MB).

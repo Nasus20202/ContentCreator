@@ -13,6 +13,7 @@ import { bufferApiKey, loadConfig, resolveLocation } from '../core/config';
 import { Episode } from '../core/episode';
 import { appendJsonl, nowIso, PipelineError, readJson, sha256File, writeJson } from '../core/io';
 import { paths } from '../core/paths';
+import { DEFAULT_COVER_AT } from '../core/timing';
 import { addLocalDays, localMidnight } from '../core/time';
 import {
   Actor,
@@ -427,7 +428,8 @@ program
       ep,
       {
         automated: (v) => runAutomatedQa(v, timeline, FPS),
-        frames: (v) => extractReviewFrames(v, timeline, FPS, ep.paths.qaDir),
+        frames: (v) =>
+          extractReviewFrames(v, timeline, FPS, ep.paths.qaDir, stages.loadPlan(ep).post.coverAt ?? DEFAULT_COVER_AT),
       },
       o.actor,
     );

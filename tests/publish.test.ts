@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import { COVER_SEC, DEFAULT_COVER_AT } from '../src/core/timing';
 import { describe, expect, it, vi } from 'vitest';
 import { BufferClient, BufferError } from '../src/publish/buffer';
 import { GitBranchHost, mediaName } from '../src/publish/media-host';
@@ -12,6 +13,7 @@ import {
   stripUrls,
   YOUTUBE_CATEGORY_SCIENCE,
 } from '../src/publish/payload';
+import type { Plan } from '../src/core/schemas';
 import { plan } from './fixtures';
 
 const media = { url: 'https://github.com/o/media/releases/download/ep-1234abcd/video.mp4' };
@@ -181,10 +183,23 @@ describe('replaceVideoUrl', () => {
     });
     const next = replaceVideoUrl(payload, 'https://example.test/new.mp4');
     expect(next.assets).toEqual([
-      { video: { url: 'https://example.test/new.mp4', metadata: { thumbnailOffset: 1000 } } },
+      { video: { url: 'https://example.test/new.mp4', metadata: { thumbnailOffset: 300 } } },
     ]);
     expect(next.text).toBe(payload.text);
     expect(next.metadata).toEqual(payload.metadata);
+  });
+
+  it('points the cover frame at post.coverAt (default: inside the clean cover moment)', () => {
+    const opts = { mode: 'schedule' as const, date: '2026-11-14T17:00:00Z', aiDisclosure: true };
+    const offset = (p: Plan) =>
+      (
+        buildCreatePostInput(p, { platform: 'instagram', channelId: 'ig' }, media, opts).assets as {
+          video: { metadata: { thumbnailOffset: number } };
+        }[]
+      )[0].video.metadata.thumbnailOffset;
+    expect(offset(plan())).toBe(Math.round(DEFAULT_COVER_AT * 1000));
+    expect(DEFAULT_COVER_AT).toBeLessThan(COVER_SEC);
+    expect(offset(plan({ post: { ...plan().post, coverAt: 1.25 } }))).toBe(1250);
   });
 
   it('keeps assets without a video untouched', () => {

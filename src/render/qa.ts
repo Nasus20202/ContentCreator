@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import type { QaRecord, Timeline } from '../core/schemas';
 import { resolveTime, sceneStarts } from '../core/timing';
-import { blackSegments, extractFrame, loudness, probe } from './media';
+import { blackSegments, extractFrame, ffmpeg, loudness, probe } from './media';
 
 export const QA_LIMITS = {
   width: 1080,
@@ -66,6 +66,8 @@ export async function extractReviewFrames(
   timeline: Timeline,
   fps: number,
   outDir: string,
+  /** Cover frame time (plan.post.coverAt); extracted as cover.jpg plus cover-grid.jpg with the 3:4 profile-grid crop. */
+  coverAt?: number,
 ): Promise<QaRecord['frames']> {
   fs.rmSync(outDir, { recursive: true, force: true });
   fs.mkdirSync(outDir, { recursive: true });
@@ -83,6 +85,15 @@ export async function extractReviewFrames(
       await extractFrame(video, tSec, file);
       frames.push({ file: path.relative(path.dirname(outDir), file), sceneId: sc.sceneId, tSec });
     }
+  }
+  if (coverAt !== undefined) {
+    const cover = path.join(outDir, 'cover.jpg');
+    await extractFrame(video, coverAt, cover);
+    // Instagram's and TikTok's profile grids show a centred 3:4 crop of the 9:16 cover.
+    const grid = path.join(outDir, 'cover-grid.jpg');
+    await ffmpeg(['-i', cover, '-vf', 'crop=iw:iw*4/3', '-q:v', '3', grid]);
+    for (const f of [cover, grid])
+      frames.push({ file: path.relative(path.dirname(outDir), f), sceneId: 'cover', tSec: coverAt });
   }
   return frames;
 }

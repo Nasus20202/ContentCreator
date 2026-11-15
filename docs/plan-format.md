@@ -10,11 +10,17 @@ Authoritative definition: `Plan` in `src/core/schemas.ts`. Worked example: `epis
   "badge": "Sky this week · Nov 16–22",                 // pill at the top after the first scene (≤ 40)
   "location": { … },                                    // copy from episode.json for sky series
   "voice": { "id": "af_heart", "speed": 1.05 },         // Kokoro voice id
-  "music": { "enabled": true, "volume": 0.15, "style": "ambient" },
+  "music": { "enabled": true, "volume": 0.15 },                // style optional: series bed by default
   "scenes": [ /* ≥ 2, last should be an outro */ ],
-  "post": { "title": "≤ 90 chars", "description": "…", "hashtags": ["#astronomy"] }
+  "post": { "title": "≤ 90 chars", "description": "…", "hashtags": ["#astronomy"], "coverAt": 0.3 }
 }
 ```
+
+**Cover.** The first 0.6 s of every video is the cover moment: the opening scene's image and `title` at full
+strength, no captions, chips or credit, no fade from black. Instagram and TikTok use the frame at `post.coverAt`
+(default 0.3 s) as the cover and show it cropped to 3:4 on the profile grid; YouTube picks its own Shorts frame, and
+frame 0 is the same clean cover. So: always give the opening scene a short, strong `title`, pick an opening image that
+differs from the neighbouring episodes in the queue, and check `build/qa/cover-grid.jpg` in QA.
 
 ## Common scene fields
 
