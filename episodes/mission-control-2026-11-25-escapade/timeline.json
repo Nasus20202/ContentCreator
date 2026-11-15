@@ -1,0 +1,827 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "0caa611c60414024",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 6.288,
+      "sentences": [
+        {
+          "text": "Two NASA spacecraft just slingshotted past Earth, on their way to Mars.",
+          "start": 0.15,
+          "end": 4.165,
+          "words": [
+            {
+              "w": "Two",
+              "start": 0.15,
+              "end": 0.378
+            },
+            {
+              "w": "NASA",
+              "start": 0.378,
+              "end": 0.652
+            },
+            {
+              "w": "spacecraft",
+              "start": 0.652,
+              "end": 1.199
+            },
+            {
+              "w": "just",
+              "start": 1.199,
+              "end": 1.473
+            },
+            {
+              "w": "slingshotted",
+              "start": 1.473,
+              "end": 2.112
+            },
+            {
+              "w": "past",
+              "start": 2.112,
+              "end": 2.385
+            },
+            {
+              "w": "Earth,",
+              "start": 2.385,
+              "end": 2.842
+            },
+            {
+              "w": "on",
+              "start": 2.842,
+              "end": 3.024
+            },
+            {
+              "w": "their",
+              "start": 3.024,
+              "end": 3.343
+            },
+            {
+              "w": "way",
+              "start": 3.343,
+              "end": 3.572
+            },
+            {
+              "w": "to",
+              "start": 3.572,
+              "end": 3.754
+            },
+            {
+              "w": "Mars.",
+              "start": 3.754,
+              "end": 4.165
+            }
+          ]
+        },
+        {
+          "text": "The mission is called ESCAPADE.",
+          "start": 4.445,
+          "end": 6.008,
+          "words": [
+            {
+              "w": "The",
+              "start": 4.445,
+              "end": 4.645
+            },
+            {
+              "w": "mission",
+              "start": 4.645,
+              "end": 5.006
+            },
+            {
+              "w": "is",
+              "start": 5.006,
+              "end": 5.166
+            },
+            {
+              "w": "called",
+              "start": 5.166,
+              "end": 5.487
+            },
+            {
+              "w": "ESCAPADE.",
+              "start": 5.487,
+              "end": 6.008
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "wait",
+      "audioFile": "voice/wait.wav",
+      "duration": 11.491,
+      "sentences": [
+        {
+          "text": "They launched a year ago, when Mars was on the far side of the Sun.",
+          "start": 0.15,
+          "end": 3.646,
+          "words": [
+            {
+              "w": "They",
+              "start": 0.15,
+              "end": 0.391
+            },
+            {
+              "w": "launched",
+              "start": 0.391,
+              "end": 0.793
+            },
+            {
+              "w": "a",
+              "start": 0.793,
+              "end": 0.913
+            },
+            {
+              "w": "year",
+              "start": 0.913,
+              "end": 1.155
+            },
+            {
+              "w": "ago,",
+              "start": 1.155,
+              "end": 1.476
+            },
+            {
+              "w": "when",
+              "start": 1.476,
+              "end": 1.717
+            },
+            {
+              "w": "Mars",
+              "start": 1.717,
+              "end": 1.958
+            },
+            {
+              "w": "was",
+              "start": 1.958,
+              "end": 2.159
+            },
+            {
+              "w": "on",
+              "start": 2.159,
+              "end": 2.32
+            },
+            {
+              "w": "the",
+              "start": 2.32,
+              "end": 2.521
+            },
+            {
+              "w": "far",
+              "start": 2.521,
+              "end": 2.722
+            },
+            {
+              "w": "side",
+              "start": 2.722,
+              "end": 2.963
+            },
+            {
+              "w": "of",
+              "start": 2.963,
+              "end": 3.123
+            },
+            {
+              "w": "the",
+              "start": 3.123,
+              "end": 3.324
+            },
+            {
+              "w": "Sun.",
+              "start": 3.324,
+              "end": 3.646
+            }
+          ]
+        },
+        {
+          "text": "So instead of heading straight there, they waited in space, looping around a point about 1.6 million kilometres from Earth.",
+          "start": 3.926,
+          "end": 11.211,
+          "words": [
+            {
+              "w": "So",
+              "start": 3.926,
+              "end": 4.121
+            },
+            {
+              "w": "instead",
+              "start": 4.121,
+              "end": 4.561
+            },
+            {
+              "w": "of",
+              "start": 4.561,
+              "end": 4.757
+            },
+            {
+              "w": "heading",
+              "start": 4.757,
+              "end": 5.197
+            },
+            {
+              "w": "straight",
+              "start": 5.197,
+              "end": 5.686
+            },
+            {
+              "w": "there,",
+              "start": 5.686,
+              "end": 6.175
+            },
+            {
+              "w": "they",
+              "start": 6.175,
+              "end": 6.468
+            },
+            {
+              "w": "waited",
+              "start": 6.468,
+              "end": 6.859
+            },
+            {
+              "w": "in",
+              "start": 6.859,
+              "end": 7.055
+            },
+            {
+              "w": "space,",
+              "start": 7.055,
+              "end": 7.544
+            },
+            {
+              "w": "looping",
+              "start": 7.544,
+              "end": 7.984
+            },
+            {
+              "w": "around",
+              "start": 7.984,
+              "end": 8.375
+            },
+            {
+              "w": "a",
+              "start": 8.375,
+              "end": 8.522
+            },
+            {
+              "w": "point",
+              "start": 8.522,
+              "end": 8.864
+            },
+            {
+              "w": "about",
+              "start": 8.864,
+              "end": 9.206
+            },
+            {
+              "w": "1.6",
+              "start": 9.206,
+              "end": 9.402
+            },
+            {
+              "w": "million",
+              "start": 9.402,
+              "end": 9.842
+            },
+            {
+              "w": "kilometres",
+              "start": 9.842,
+              "end": 10.428
+            },
+            {
+              "w": "from",
+              "start": 10.428,
+              "end": 10.722
+            },
+            {
+              "w": "Earth.",
+              "start": 10.722,
+              "end": 11.211
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "slingshot",
+      "audioFile": "voice/slingshot.wav",
+      "duration": 11.35,
+      "sentences": [
+        {
+          "text": "This month they came back.",
+          "start": 0.15,
+          "end": 1.398,
+          "words": [
+            {
+              "w": "This",
+              "start": 0.15,
+              "end": 0.37
+            },
+            {
+              "w": "month",
+              "start": 0.37,
+              "end": 0.627
+            },
+            {
+              "w": "they",
+              "start": 0.627,
+              "end": 0.847
+            },
+            {
+              "w": "came",
+              "start": 0.847,
+              "end": 1.068
+            },
+            {
+              "w": "back.",
+              "start": 1.068,
+              "end": 1.398
+            }
+          ]
+        },
+        {
+          "text": "On the 7th and 9th of November, each one swept past Earth, the second as low as about 1,000 kilometres, and fired its engine for about nine minutes.",
+          "start": 1.678,
+          "end": 11.07,
+          "words": [
+            {
+              "w": "On",
+              "start": 1.678,
+              "end": 1.882
+            },
+            {
+              "w": "the",
+              "start": 1.882,
+              "end": 2.138
+            },
+            {
+              "w": "7th",
+              "start": 2.138,
+              "end": 2.393
+            },
+            {
+              "w": "and",
+              "start": 2.393,
+              "end": 2.648
+            },
+            {
+              "w": "9th",
+              "start": 2.648,
+              "end": 2.903
+            },
+            {
+              "w": "of",
+              "start": 2.903,
+              "end": 3.107
+            },
+            {
+              "w": "November,",
+              "start": 3.107,
+              "end": 3.771
+            },
+            {
+              "w": "each",
+              "start": 3.771,
+              "end": 4.077
+            },
+            {
+              "w": "one",
+              "start": 4.077,
+              "end": 4.332
+            },
+            {
+              "w": "swept",
+              "start": 4.332,
+              "end": 4.69
+            },
+            {
+              "w": "past",
+              "start": 4.69,
+              "end": 4.996
+            },
+            {
+              "w": "Earth,",
+              "start": 4.996,
+              "end": 5.506
+            },
+            {
+              "w": "the",
+              "start": 5.506,
+              "end": 5.762
+            },
+            {
+              "w": "second",
+              "start": 5.762,
+              "end": 6.17
+            },
+            {
+              "w": "as",
+              "start": 6.17,
+              "end": 6.374
+            },
+            {
+              "w": "low",
+              "start": 6.374,
+              "end": 6.629
+            },
+            {
+              "w": "as",
+              "start": 6.629,
+              "end": 6.834
+            },
+            {
+              "w": "about",
+              "start": 6.834,
+              "end": 7.191
+            },
+            {
+              "w": "1,000",
+              "start": 7.191,
+              "end": 7.497
+            },
+            {
+              "w": "kilometres,",
+              "start": 7.497,
+              "end": 8.263
+            },
+            {
+              "w": "and",
+              "start": 8.263,
+              "end": 8.518
+            },
+            {
+              "w": "fired",
+              "start": 8.518,
+              "end": 8.875
+            },
+            {
+              "w": "its",
+              "start": 8.875,
+              "end": 9.131
+            },
+            {
+              "w": "engine",
+              "start": 9.131,
+              "end": 9.539
+            },
+            {
+              "w": "for",
+              "start": 9.539,
+              "end": 9.794
+            },
+            {
+              "w": "about",
+              "start": 9.794,
+              "end": 10.151
+            },
+            {
+              "w": "nine",
+              "start": 10.151,
+              "end": 10.458
+            },
+            {
+              "w": "minutes.",
+              "start": 10.458,
+              "end": 11.07
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "mars",
+      "audioFile": "voice/mars.wav",
+      "duration": 11.457,
+      "sentences": [
+        {
+          "text": "Now they're cruising for 10 months, due at Mars on the 7th and 9th of September, 2027.",
+          "start": 0.15,
+          "end": 5.968,
+          "words": [
+            {
+              "w": "Now",
+              "start": 0.15,
+              "end": 0.414
+            },
+            {
+              "w": "they're",
+              "start": 0.414,
+              "end": 0.89
+            },
+            {
+              "w": "cruising",
+              "start": 0.89,
+              "end": 1.419
+            },
+            {
+              "w": "for",
+              "start": 1.419,
+              "end": 1.684
+            },
+            {
+              "w": "10",
+              "start": 1.684,
+              "end": 1.895
+            },
+            {
+              "w": "months,",
+              "start": 1.895,
+              "end": 2.477
+            },
+            {
+              "w": "due",
+              "start": 2.477,
+              "end": 2.742
+            },
+            {
+              "w": "at",
+              "start": 2.742,
+              "end": 2.953
+            },
+            {
+              "w": "Mars",
+              "start": 2.953,
+              "end": 3.27
+            },
+            {
+              "w": "on",
+              "start": 3.27,
+              "end": 3.482
+            },
+            {
+              "w": "the",
+              "start": 3.482,
+              "end": 3.746
+            },
+            {
+              "w": "7th",
+              "start": 3.746,
+              "end": 4.011
+            },
+            {
+              "w": "and",
+              "start": 4.011,
+              "end": 4.275
+            },
+            {
+              "w": "9th",
+              "start": 4.275,
+              "end": 4.54
+            },
+            {
+              "w": "of",
+              "start": 4.54,
+              "end": 4.751
+            },
+            {
+              "w": "September,",
+              "start": 4.751,
+              "end": 5.492
+            },
+            {
+              "w": "2027.",
+              "start": 5.492,
+              "end": 5.968
+            }
+          ]
+        },
+        {
+          "text": "There they'll fly in formation, to study how the solar wind strips away Mars's atmosphere.",
+          "start": 6.248,
+          "end": 11.177,
+          "words": [
+            {
+              "w": "There",
+              "start": 6.248,
+              "end": 6.561
+            },
+            {
+              "w": "they'll",
+              "start": 6.561,
+              "end": 6.965
+            },
+            {
+              "w": "fly",
+              "start": 6.965,
+              "end": 7.189
+            },
+            {
+              "w": "in",
+              "start": 7.189,
+              "end": 7.368
+            },
+            {
+              "w": "formation,",
+              "start": 7.368,
+              "end": 7.995
+            },
+            {
+              "w": "to",
+              "start": 7.995,
+              "end": 8.175
+            },
+            {
+              "w": "study",
+              "start": 8.175,
+              "end": 8.488
+            },
+            {
+              "w": "how",
+              "start": 8.488,
+              "end": 8.713
+            },
+            {
+              "w": "the",
+              "start": 8.713,
+              "end": 8.937
+            },
+            {
+              "w": "solar",
+              "start": 8.937,
+              "end": 9.25
+            },
+            {
+              "w": "wind",
+              "start": 9.25,
+              "end": 9.519
+            },
+            {
+              "w": "strips",
+              "start": 9.519,
+              "end": 9.878
+            },
+            {
+              "w": "away",
+              "start": 9.878,
+              "end": 10.147
+            },
+            {
+              "w": "Mars's",
+              "start": 10.147,
+              "end": 10.505
+            },
+            {
+              "w": "atmosphere.",
+              "start": 10.505,
+              "end": 11.177
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "first",
+      "audioFile": "voice/first.wav",
+      "duration": 4.471,
+      "sentences": [
+        {
+          "text": "It will be the first science mission to choreograph two orbiters around Mars.",
+          "start": 0.15,
+          "end": 4.191,
+          "words": [
+            {
+              "w": "It",
+              "start": 0.15,
+              "end": 0.324
+            },
+            {
+              "w": "will",
+              "start": 0.324,
+              "end": 0.585
+            },
+            {
+              "w": "be",
+              "start": 0.585,
+              "end": 0.758
+            },
+            {
+              "w": "the",
+              "start": 0.758,
+              "end": 0.976
+            },
+            {
+              "w": "first",
+              "start": 0.976,
+              "end": 1.28
+            },
+            {
+              "w": "science",
+              "start": 1.28,
+              "end": 1.671
+            },
+            {
+              "w": "mission",
+              "start": 1.671,
+              "end": 2.062
+            },
+            {
+              "w": "to",
+              "start": 2.062,
+              "end": 2.236
+            },
+            {
+              "w": "choreograph",
+              "start": 2.236,
+              "end": 2.801
+            },
+            {
+              "w": "two",
+              "start": 2.801,
+              "end": 3.018
+            },
+            {
+              "w": "orbiters",
+              "start": 3.018,
+              "end": 3.453
+            },
+            {
+              "w": "around",
+              "start": 3.453,
+              "end": 3.8
+            },
+            {
+              "w": "Mars.",
+              "start": 3.8,
+              "end": 4.191
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 4.017,
+      "sentences": [
+        {
+          "text": "Follow for what's happening in space, every week.",
+          "start": 0.15,
+          "end": 2.635,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.471
+            },
+            {
+              "w": "for",
+              "start": 0.471,
+              "end": 0.671
+            },
+            {
+              "w": "what's",
+              "start": 0.671,
+              "end": 0.992
+            },
+            {
+              "w": "happening",
+              "start": 0.992,
+              "end": 1.433
+            },
+            {
+              "w": "in",
+              "start": 1.433,
+              "end": 1.593
+            },
+            {
+              "w": "space,",
+              "start": 1.593,
+              "end": 1.994
+            },
+            {
+              "w": "every",
+              "start": 1.994,
+              "end": 2.274
+            },
+            {
+              "w": "week.",
+              "start": 2.274,
+              "end": 2.635
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.915,
+          "end": 3.737,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.915,
+              "end": 3.254
+            },
+            {
+              "w": "skies.",
+              "start": 3.254,
+              "end": 3.737
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

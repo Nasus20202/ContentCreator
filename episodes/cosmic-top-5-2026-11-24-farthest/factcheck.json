@@ -1,0 +1,592 @@
+{
+  "checkedAt": "2026-11-15T01:05:43.004Z",
+  "planHash": "1887b8684df668eb",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[0]",
+        "text": "These are the five farthest things humans have ever built.",
+        "number": 5,
+        "raw": "five",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Cosmic Top 5 Farthest things we built",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "n5",
+        "where": "narration[0]",
+        "text": "Number five: New Horizons, the probe that flew past Pluto. About ten billion kilometres away.",
+        "number": 5,
+        "raw": "five",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "n5",
+        "where": "narration[0]",
+        "text": "Number five: New Horizons, the probe that flew past Pluto. About ten billion kilometres away.",
+        "number": 10000000000,
+        "raw": "ten billion",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "n5",
+        "where": "factCard",
+        "text": "10 bn km #5 New Horizons",
+        "number": 10,
+        "raw": "10",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "n5",
+        "where": "factCard",
+        "text": "10 bn km #5 New Horizons",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "n4",
+        "where": "narration[0]",
+        "text": "Number four: Pioneer 11, at 17.8 billion kilometres.",
+        "number": 4,
+        "raw": "four",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "n4",
+        "where": "narration[0]",
+        "text": "Number four: Pioneer 11, at 17.8 billion kilometres.",
+        "number": 11,
+        "raw": "11",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "n4",
+        "where": "narration[0]",
+        "text": "Number four: Pioneer 11, at 17.8 billion kilometres.",
+        "number": 17.8,
+        "raw": "17.8",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "n4",
+        "where": "factCard",
+        "text": "17.8 bn km #4 Pioneer 11",
+        "number": 17.8,
+        "raw": "17.8",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "n4",
+        "where": "factCard",
+        "text": "17.8 bn km #4 Pioneer 11",
+        "number": 4,
+        "raw": "4",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "n4",
+        "where": "factCard",
+        "text": "17.8 bn km #4 Pioneer 11",
+        "number": 11,
+        "raw": "11",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "n3",
+        "where": "narration[0]",
+        "text": "Number three: Pioneer 10, at 21.2 billion kilometres.",
+        "number": 3,
+        "raw": "three",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "n3",
+        "where": "narration[0]",
+        "text": "Number three: Pioneer 10, at 21.2 billion kilometres.",
+        "number": 10,
+        "raw": "10",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "n3",
+        "where": "narration[0]",
+        "text": "Number three: Pioneer 10, at 21.2 billion kilometres.",
+        "number": 21.2,
+        "raw": "21.2",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "n3",
+        "where": "narration[1]",
+        "text": "Launched in 1972, it was the farthest of all, until Voyager 1 overtook it in 1998.",
+        "number": 1972,
+        "raw": "1972",
+        "matchedFact": "p10-overtaken"
+      },
+      {
+        "sceneId": "n3",
+        "where": "narration[1]",
+        "text": "Launched in 1972, it was the farthest of all, until Voyager 1 overtook it in 1998.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "p10-overtaken"
+      },
+      {
+        "sceneId": "n3",
+        "where": "narration[1]",
+        "text": "Launched in 1972, it was the farthest of all, until Voyager 1 overtook it in 1998.",
+        "number": 1998,
+        "raw": "1998",
+        "matchedFact": "p10-overtaken"
+      },
+      {
+        "sceneId": "n3",
+        "where": "factCard",
+        "text": "21.2 bn km #3 Pioneer 10 · overtaken in 1998",
+        "number": 21.2,
+        "raw": "21.2",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "n3",
+        "where": "factCard",
+        "text": "21.2 bn km #3 Pioneer 10 · overtaken in 1998",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "n3",
+        "where": "factCard",
+        "text": "21.2 bn km #3 Pioneer 10 · overtaken in 1998",
+        "number": 10,
+        "raw": "10",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "n3",
+        "where": "factCard",
+        "text": "21.2 bn km #3 Pioneer 10 · overtaken in 1998",
+        "number": 1998,
+        "raw": "1998",
+        "matchedFact": "p10-overtaken"
+      },
+      {
+        "sceneId": "n2",
+        "where": "narration[0]",
+        "text": "Number two: Voyager 2, at 21.7 billion kilometres.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "n2",
+        "where": "narration[0]",
+        "text": "Number two: Voyager 2, at 21.7 billion kilometres.",
+        "number": 2,
+        "raw": "2",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "n2",
+        "where": "narration[0]",
+        "text": "Number two: Voyager 2, at 21.7 billion kilometres.",
+        "number": 21.7,
+        "raw": "21.7",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "n2",
+        "where": "chips[0]",
+        "text": "#2 · 21.7 BILLION KM",
+        "number": 2,
+        "raw": "2",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "n2",
+        "where": "chips[0]",
+        "text": "#2 · 21.7 BILLION KM",
+        "number": 21.7,
+        "raw": "21.7",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "n1",
+        "where": "narration[0]",
+        "text": "And number one: Voyager 1.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "n1",
+        "where": "narration[1]",
+        "text": "25.9 billion kilometres, so far that its signals now take a full day to reach us.",
+        "number": 25.9,
+        "raw": "25.9",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "n1",
+        "where": "chips[0]",
+        "text": "#1 · 25.9 BILLION KM",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "n1",
+        "where": "chips[0]",
+        "text": "#1 · 25.9 BILLION KM",
+        "number": 25.9,
+        "raw": "25.9",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "scale",
+        "where": "narration[1]",
+        "text": "Even number five is about ten billion kilometres from home.",
+        "number": 5,
+        "raw": "five",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "scale",
+        "where": "narration[1]",
+        "text": "Even number five is about ten billion kilometres from home.",
+        "number": 10000000000,
+        "raw": "ten billion",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "scale",
+        "where": "scale",
+        "text": "#1 Voyager 1 · 25.9 bn km",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "scale",
+        "where": "scale",
+        "text": "#1 Voyager 1 · 25.9 bn km",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "scale",
+        "where": "scale",
+        "text": "#1 Voyager 1 · 25.9 bn km",
+        "number": 25.9,
+        "raw": "25.9",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "scale",
+        "where": "markers[0]",
+        "text": "#5 New Horizons · 10 bn km",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "scale",
+        "where": "markers[0]",
+        "text": "#5 New Horizons · 10 bn km",
+        "number": 10,
+        "raw": "10",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "scale",
+        "where": "markers[1]",
+        "text": "#4 Pioneer 11 · 17.8 bn km",
+        "number": 4,
+        "raw": "4",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "scale",
+        "where": "markers[1]",
+        "text": "#4 Pioneer 11 · 17.8 bn km",
+        "number": 11,
+        "raw": "11",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "scale",
+        "where": "markers[1]",
+        "text": "#4 Pioneer 11 · 17.8 bn km",
+        "number": 17.8,
+        "raw": "17.8",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "scale",
+        "where": "markers[2]",
+        "text": "#2 Voyager 2 & #3 Pioneer 10",
+        "number": 2,
+        "raw": "2",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "scale",
+        "where": "markers[2]",
+        "text": "#2 Voyager 2 & #3 Pioneer 10",
+        "number": 2,
+        "raw": "2",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "scale",
+        "where": "markers[2]",
+        "text": "#2 Voyager 2 & #3 Pioneer 10",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "scale",
+        "where": "markers[2]",
+        "text": "#2 Voyager 2 & #3 Pioneer 10",
+        "number": 10,
+        "raw": "10",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "outro",
+        "where": "narration[0]",
+        "text": "Follow for the next five.",
+        "number": 5,
+        "raw": "five",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "outro",
+        "where": "outro",
+        "text": "Cosmic Top 5 FOLLOW\nFOR THE\nNEXT FIVE Distances from Earth: NASA/JPL Horizons",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "outro",
+        "where": "outro",
+        "text": "Cosmic Top 5 FOLLOW\nFOR THE\nNEXT FIVE Distances from Earth: NASA/JPL Horizons",
+        "number": 5,
+        "raw": "five",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "The 5 farthest things humans have ever built 🚀",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 24,
+        "raw": "24",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 2026,
+        "raw": "2026",
+        "matchedFact": "v1-light-day"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 10,
+        "raw": "10",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 4,
+        "raw": "4",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 11,
+        "raw": "11",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 17.8,
+        "raw": "17.8",
+        "matchedFact": "dist-p11"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 10,
+        "raw": "10",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 21.2,
+        "raw": "21.2",
+        "matchedFact": "dist-p10"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1972,
+        "raw": "1972",
+        "matchedFact": "p10-overtaken"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1998,
+        "raw": "1998",
+        "matchedFact": "p10-overtaken"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 2,
+        "raw": "2",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 2,
+        "raw": "2",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 21.7,
+        "raw": "21.7",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 25.9,
+        "raw": "25.9",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 10,
+        "raw": "10",
+        "matchedFact": "dist-nh"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "dist-v1"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 2,
+        "raw": "2",
+        "matchedFact": "dist-v2"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "1",
+        "matchedFact": "dist-v1"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-15T01:05:49.694Z",
+    "verdict": "pass",
+    "notes": "Wording unchanged from the reviewed version. Removed the #5 title overlay (it collided with the card) and merged the #2/#3 scale markers (21.7 vs 21.2 bn km overlap) into one '#2 Voyager 2 & #3 Pioneer 10' marker at 21.45; the exact distances are on the cards and in the narration."
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "checkedAt": "2026-11-15T01:03:21.758Z",
+  "videoSha256": "fb8de56ee8091b9e9357d1d7e09149f1e627dfb46a59e075a50873726caaa4c6",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "45.30 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 45.30 s vs timeline 45.27 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14.2 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.3 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 2.71
+    },
+    {
+      "file": "qa/00-hook-2.jpg",
+      "sceneId": "hook",
+      "tSec": 6.9
+    },
+    {
+      "file": "qa/01-how-0.jpg",
+      "sceneId": "how",
+      "tSec": 7.75
+    },
+    {
+      "file": "qa/01-how-1.jpg",
+      "sceneId": "how",
+      "tSec": 11.07
+    },
+    {
+      "file": "qa/01-how-2.jpg",
+      "sceneId": "how",
+      "tSec": 15.69
+    },
+    {
+      "file": "qa/01-how-3.jpg",
+      "sceneId": "how",
+      "tSec": 17.87
+    },
+    {
+      "file": "qa/02-since-0.jpg",
+      "sceneId": "since",
+      "tSec": 18.72
+    },
+    {
+      "file": "qa/02-since-1.jpg",
+      "sceneId": "since",
+      "tSec": 25.03
+    },
+    {
+      "file": "qa/03-why-0.jpg",
+      "sceneId": "why",
+      "tSec": 25.88
+    },
+    {
+      "file": "qa/03-why-1.jpg",
+      "sceneId": "why",
+      "tSec": 28.19
+    },
+    {
+      "file": "qa/03-why-2.jpg",
+      "sceneId": "why",
+      "tSec": 31.6
+    },
+    {
+      "file": "qa/04-eclipses-0.jpg",
+      "sceneId": "eclipses",
+      "tSec": 32.45
+    },
+    {
+      "file": "qa/04-eclipses-1.jpg",
+      "sceneId": "eclipses",
+      "tSec": 35.48
+    },
+    {
+      "file": "qa/04-eclipses-2.jpg",
+      "sceneId": "eclipses",
+      "tSec": 37.52
+    },
+    {
+      "file": "qa/04-eclipses-3.jpg",
+      "sceneId": "eclipses",
+      "tSec": 39.87
+    },
+    {
+      "file": "qa/05-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 40.72
+    },
+    {
+      "file": "qa/05-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 42.88
+    },
+    {
+      "file": "qa/05-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 45.17
+    }
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-15T01:04:30.666Z",
+    "verdict": "pass",
+    "notes": "All frames checked. Hook: title + '3.8 CM EVERY YEAR' chip over the full Moon. Reflector scene: the Apollo 14 LRRR photo, captions overlap the reflector's lower half but stay fully legible (white with shadow on mid-grey); vertical crop has no slack on the near-square photo. '≈ 2 metres' card with method line. Oceans: full Moon pull-back. Eclipse: diamond-ring photo, '600+ MILLION YEARS LEFT' chip. Outro clean. Cyan Sky School accent, credits on every photo."
+  }
+}

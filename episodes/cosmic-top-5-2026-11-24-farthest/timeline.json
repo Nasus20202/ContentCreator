@@ -1,0 +1,730 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "7ace18df257cd2d0",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 5.277,
+      "sentences": [
+        {
+          "text": "These are the five farthest things humans have ever built.",
+          "start": 0.15,
+          "end": 2.774,
+          "words": [
+            {
+              "w": "These",
+              "start": 0.15,
+              "end": 0.409
+            },
+            {
+              "w": "are",
+              "start": 0.409,
+              "end": 0.594
+            },
+            {
+              "w": "the",
+              "start": 0.594,
+              "end": 0.778
+            },
+            {
+              "w": "five",
+              "start": 0.778,
+              "end": 1
+            },
+            {
+              "w": "farthest",
+              "start": 1,
+              "end": 1.37
+            },
+            {
+              "w": "things",
+              "start": 1.37,
+              "end": 1.666
+            },
+            {
+              "w": "humans",
+              "start": 1.666,
+              "end": 1.961
+            },
+            {
+              "w": "have",
+              "start": 1.961,
+              "end": 2.183
+            },
+            {
+              "w": "ever",
+              "start": 2.183,
+              "end": 2.405
+            },
+            {
+              "w": "built.",
+              "start": 2.405,
+              "end": 2.774
+            }
+          ]
+        },
+        {
+          "text": "Ranked by distance from Earth, this week.",
+          "start": 3.054,
+          "end": 4.997,
+          "words": [
+            {
+              "w": "Ranked",
+              "start": 3.054,
+              "end": 3.348
+            },
+            {
+              "w": "by",
+              "start": 3.348,
+              "end": 3.494
+            },
+            {
+              "w": "distance",
+              "start": 3.494,
+              "end": 3.861
+            },
+            {
+              "w": "from",
+              "start": 3.861,
+              "end": 4.081
+            },
+            {
+              "w": "Earth,",
+              "start": 4.081,
+              "end": 4.447
+            },
+            {
+              "w": "this",
+              "start": 4.447,
+              "end": 4.667
+            },
+            {
+              "w": "week.",
+              "start": 4.667,
+              "end": 4.997
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "n5",
+      "audioFile": "voice/n5.wav",
+      "duration": 6.109,
+      "sentences": [
+        {
+          "text": "Number five: New Horizons, the probe that flew past Pluto. About ten billion kilometres away.",
+          "start": 0.15,
+          "end": 5.829,
+          "words": [
+            {
+              "w": "Number",
+              "start": 0.15,
+              "end": 0.538
+            },
+            {
+              "w": "five:",
+              "start": 0.538,
+              "end": 0.975
+            },
+            {
+              "w": "New",
+              "start": 0.975,
+              "end": 1.218
+            },
+            {
+              "w": "Horizons,",
+              "start": 1.218,
+              "end": 1.849
+            },
+            {
+              "w": "the",
+              "start": 1.849,
+              "end": 2.092
+            },
+            {
+              "w": "probe",
+              "start": 2.092,
+              "end": 2.431
+            },
+            {
+              "w": "that",
+              "start": 2.431,
+              "end": 2.723
+            },
+            {
+              "w": "flew",
+              "start": 2.723,
+              "end": 3.014
+            },
+            {
+              "w": "past",
+              "start": 3.014,
+              "end": 3.305
+            },
+            {
+              "w": "Pluto.",
+              "start": 3.305,
+              "end": 3.791
+            },
+            {
+              "w": "About",
+              "start": 3.791,
+              "end": 4.13
+            },
+            {
+              "w": "ten",
+              "start": 4.13,
+              "end": 4.373
+            },
+            {
+              "w": "billion",
+              "start": 4.373,
+              "end": 4.81
+            },
+            {
+              "w": "kilometres",
+              "start": 4.81,
+              "end": 5.393
+            },
+            {
+              "w": "away.",
+              "start": 5.393,
+              "end": 5.829
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "n4",
+      "audioFile": "voice/n4.wav",
+      "duration": 4.711,
+      "sentences": [
+        {
+          "text": "Number four: Pioneer 11, at 17.8 billion kilometres.",
+          "start": 0.15,
+          "end": 4.431,
+          "words": [
+            {
+              "w": "Number",
+              "start": 0.15,
+              "end": 0.669
+            },
+            {
+              "w": "four:",
+              "start": 0.669,
+              "end": 1.253
+            },
+            {
+              "w": "Pioneer",
+              "start": 1.253,
+              "end": 1.837
+            },
+            {
+              "w": "11,",
+              "start": 1.837,
+              "end": 2.291
+            },
+            {
+              "w": "at",
+              "start": 2.291,
+              "end": 2.55
+            },
+            {
+              "w": "17.8",
+              "start": 2.55,
+              "end": 2.875
+            },
+            {
+              "w": "billion",
+              "start": 2.875,
+              "end": 3.458
+            },
+            {
+              "w": "kilometres.",
+              "start": 3.458,
+              "end": 4.431
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "n3",
+      "audioFile": "voice/n3.wav",
+      "duration": 10.951,
+      "sentences": [
+        {
+          "text": "Number three: Pioneer 10, at 21.2 billion kilometres.",
+          "start": 0.15,
+          "end": 4.251,
+          "words": [
+            {
+              "w": "Number",
+              "start": 0.15,
+              "end": 0.64
+            },
+            {
+              "w": "three:",
+              "start": 0.64,
+              "end": 1.252
+            },
+            {
+              "w": "Pioneer",
+              "start": 1.252,
+              "end": 1.803
+            },
+            {
+              "w": "10,",
+              "start": 1.803,
+              "end": 2.231
+            },
+            {
+              "w": "at",
+              "start": 2.231,
+              "end": 2.476
+            },
+            {
+              "w": "21.2",
+              "start": 2.476,
+              "end": 2.782
+            },
+            {
+              "w": "billion",
+              "start": 2.782,
+              "end": 3.333
+            },
+            {
+              "w": "kilometres.",
+              "start": 3.333,
+              "end": 4.251
+            }
+          ]
+        },
+        {
+          "text": "Launched in 1972, it was the farthest of all, until Voyager 1 overtook it in 1998.",
+          "start": 4.531,
+          "end": 10.671,
+          "words": [
+            {
+              "w": "Launched",
+              "start": 4.531,
+              "end": 5.116
+            },
+            {
+              "w": "in",
+              "start": 5.116,
+              "end": 5.35
+            },
+            {
+              "w": "1972,",
+              "start": 5.35,
+              "end": 5.876
+            },
+            {
+              "w": "it",
+              "start": 5.876,
+              "end": 6.11
+            },
+            {
+              "w": "was",
+              "start": 6.11,
+              "end": 6.402
+            },
+            {
+              "w": "the",
+              "start": 6.402,
+              "end": 6.694
+            },
+            {
+              "w": "farthest",
+              "start": 6.694,
+              "end": 7.279
+            },
+            {
+              "w": "of",
+              "start": 7.279,
+              "end": 7.513
+            },
+            {
+              "w": "all,",
+              "start": 7.513,
+              "end": 7.981
+            },
+            {
+              "w": "until",
+              "start": 7.981,
+              "end": 8.39
+            },
+            {
+              "w": "Voyager",
+              "start": 8.39,
+              "end": 8.916
+            },
+            {
+              "w": "1",
+              "start": 8.916,
+              "end": 9.092
+            },
+            {
+              "w": "overtook",
+              "start": 9.092,
+              "end": 9.677
+            },
+            {
+              "w": "it",
+              "start": 9.677,
+              "end": 9.91
+            },
+            {
+              "w": "in",
+              "start": 9.91,
+              "end": 10.144
+            },
+            {
+              "w": "1998.",
+              "start": 10.144,
+              "end": 10.671
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "n2",
+      "audioFile": "voice/n2.wav",
+      "duration": 4.696,
+      "sentences": [
+        {
+          "text": "Number two: Voyager 2, at 21.7 billion kilometres.",
+          "start": 0.15,
+          "end": 4.416,
+          "words": [
+            {
+              "w": "Number",
+              "start": 0.15,
+              "end": 0.683
+            },
+            {
+              "w": "two:",
+              "start": 0.683,
+              "end": 1.217
+            },
+            {
+              "w": "Voyager",
+              "start": 1.217,
+              "end": 1.817
+            },
+            {
+              "w": "2,",
+              "start": 1.817,
+              "end": 2.217
+            },
+            {
+              "w": "at",
+              "start": 2.217,
+              "end": 2.483
+            },
+            {
+              "w": "21.7",
+              "start": 2.483,
+              "end": 2.817
+            },
+            {
+              "w": "billion",
+              "start": 2.817,
+              "end": 3.417
+            },
+            {
+              "w": "kilometres.",
+              "start": 3.417,
+              "end": 4.416
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "n1",
+      "audioFile": "voice/n1.wav",
+      "duration": 7.945,
+      "sentences": [
+        {
+          "text": "And number one: Voyager 1.",
+          "start": 0.15,
+          "end": 1.881,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.39
+            },
+            {
+              "w": "number",
+              "start": 0.39,
+              "end": 0.775
+            },
+            {
+              "w": "one:",
+              "start": 0.775,
+              "end": 1.16
+            },
+            {
+              "w": "Voyager",
+              "start": 1.16,
+              "end": 1.593
+            },
+            {
+              "w": "1.",
+              "start": 1.593,
+              "end": 1.881
+            }
+          ]
+        },
+        {
+          "text": "25.9 billion kilometres, so far that its signals now take a full day to reach us.",
+          "start": 2.161,
+          "end": 7.665,
+          "words": [
+            {
+              "w": "25.9",
+              "start": 2.161,
+              "end": 2.434
+            },
+            {
+              "w": "billion",
+              "start": 2.434,
+              "end": 2.924
+            },
+            {
+              "w": "kilometres,",
+              "start": 2.924,
+              "end": 3.742
+            },
+            {
+              "w": "so",
+              "start": 3.742,
+              "end": 3.96
+            },
+            {
+              "w": "far",
+              "start": 3.96,
+              "end": 4.232
+            },
+            {
+              "w": "that",
+              "start": 4.232,
+              "end": 4.559
+            },
+            {
+              "w": "its",
+              "start": 4.559,
+              "end": 4.831
+            },
+            {
+              "w": "signals",
+              "start": 4.831,
+              "end": 5.322
+            },
+            {
+              "w": "now",
+              "start": 5.322,
+              "end": 5.594
+            },
+            {
+              "w": "take",
+              "start": 5.594,
+              "end": 5.921
+            },
+            {
+              "w": "a",
+              "start": 5.921,
+              "end": 6.085
+            },
+            {
+              "w": "full",
+              "start": 6.085,
+              "end": 6.412
+            },
+            {
+              "w": "day",
+              "start": 6.412,
+              "end": 6.684
+            },
+            {
+              "w": "to",
+              "start": 6.684,
+              "end": 6.902
+            },
+            {
+              "w": "reach",
+              "start": 6.902,
+              "end": 7.284
+            },
+            {
+              "w": "us.",
+              "start": 7.284,
+              "end": 7.665
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "scale",
+      "audioFile": "voice/scale.wav",
+      "duration": 5.145,
+      "sentences": [
+        {
+          "text": "Here they are, to scale.",
+          "start": 0.15,
+          "end": 1.309,
+          "words": [
+            {
+              "w": "Here",
+              "start": 0.15,
+              "end": 0.355
+            },
+            {
+              "w": "they",
+              "start": 0.355,
+              "end": 0.559
+            },
+            {
+              "w": "are,",
+              "start": 0.559,
+              "end": 0.832
+            },
+            {
+              "w": "to",
+              "start": 0.832,
+              "end": 0.968
+            },
+            {
+              "w": "scale.",
+              "start": 0.968,
+              "end": 1.309
+            }
+          ]
+        },
+        {
+          "text": "Even number five is about ten billion kilometres from home.",
+          "start": 1.589,
+          "end": 4.865,
+          "words": [
+            {
+              "w": "Even",
+              "start": 1.589,
+              "end": 1.862
+            },
+            {
+              "w": "number",
+              "start": 1.862,
+              "end": 2.226
+            },
+            {
+              "w": "five",
+              "start": 2.226,
+              "end": 2.499
+            },
+            {
+              "w": "is",
+              "start": 2.499,
+              "end": 2.681
+            },
+            {
+              "w": "about",
+              "start": 2.681,
+              "end": 2.999
+            },
+            {
+              "w": "ten",
+              "start": 2.999,
+              "end": 3.227
+            },
+            {
+              "w": "billion",
+              "start": 3.227,
+              "end": 3.636
+            },
+            {
+              "w": "kilometres",
+              "start": 3.636,
+              "end": 4.182
+            },
+            {
+              "w": "from",
+              "start": 4.182,
+              "end": 4.455
+            },
+            {
+              "w": "home.",
+              "start": 4.455,
+              "end": 4.865
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 2.81,
+      "sentences": [
+        {
+          "text": "Follow for the next five.",
+          "start": 0.15,
+          "end": 1.434,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.461
+            },
+            {
+              "w": "for",
+              "start": 0.461,
+              "end": 0.656
+            },
+            {
+              "w": "the",
+              "start": 0.656,
+              "end": 0.85
+            },
+            {
+              "w": "next",
+              "start": 0.85,
+              "end": 1.084
+            },
+            {
+              "w": "five.",
+              "start": 1.084,
+              "end": 1.434
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 1.714,
+          "end": 2.53,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 1.714,
+              "end": 2.05
+            },
+            {
+              "w": "skies.",
+              "start": 2.05,
+              "end": 2.53
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

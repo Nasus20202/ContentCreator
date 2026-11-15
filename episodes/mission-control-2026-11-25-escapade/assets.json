@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "id": "launch",
+      "kind": "image",
+      "file": "assets/launch.jpg",
+      "sha256": "43b0987269bd17f895c2a83ebf9e81ac460c1c641e77aab4c8af8a550bbe0af5",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/KSC-20251113-PH-BLU01_0007/KSC-20251113-PH-BLU01_0007~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/KSC-20251113-PH-BLU01_0007",
+        "title": "NASA's ESCAPADE Launch on Blue Origin's NG-2",
+        "credit": "NASA / KSC / Blue Origin",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:04:57.889Z"
+    },
+    {
+      "id": "twins",
+      "kind": "image",
+      "file": "assets/twins.jpg",
+      "sha256": "51c859274b75c0e84d20a1eeb723b42f0f2bd7a0802becb077c9d83f45e02724",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/KSC-20240822-PH-KLS01_0033/KSC-20240822-PH-KLS01_0033~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/KSC-20240822-PH-KLS01_0033",
+        "title": "ESCAPADE Unboxed at Astrotech",
+        "credit": "NASA / KSC / Kim Shiflett",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:05:00.443Z"
+    },
+    {
+      "id": "mars",
+      "kind": "image",
+      "file": "assets/mars.jpg",
+      "sha256": "2157c6b84b29ffa392508ae67e0499d00f0bf89c694ca4d7b745bd1ca619cd5f",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA00003/PIA00003~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA00003",
+        "title": "Valles Marineris Hemisphere",
+        "credit": "NASA / JPL / USGS",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:05:25.478Z"
+    }
+  ]
+}

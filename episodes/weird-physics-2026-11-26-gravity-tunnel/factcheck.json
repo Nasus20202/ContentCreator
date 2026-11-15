@@ -1,0 +1,216 @@
+{
+  "checkedAt": "2026-11-15T01:08:57.135Z",
+  "planHash": "cd7f25ed73a3ad47",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[1]",
+        "text": "You'd pop out the other side in about 42 minutes.",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "hook",
+        "where": "factCard",
+        "text": "42 min to fall all the way through the Earth",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "fall",
+        "where": "narration[2]",
+        "text": "At the centre you're doing about 28,000 kilometres an hour.",
+        "number": 28000,
+        "raw": "28000",
+        "matchedFact": "tunnel-speed"
+      },
+      {
+        "sceneId": "fall",
+        "where": "stops[0]",
+        "text": "You jump in speed: zero",
+        "number": 0,
+        "raw": "zero",
+        "matchedFact": "earth-data"
+      },
+      {
+        "sceneId": "fall",
+        "where": "stops[1]",
+        "text": "Earth's centre 6,371 km down ≈ 28,000 km/h",
+        "number": 6371,
+        "raw": "6371",
+        "matchedFact": "earth-data"
+      },
+      {
+        "sceneId": "fall",
+        "where": "stops[1]",
+        "text": "Earth's centre 6,371 km down ≈ 28,000 km/h",
+        "number": 28000,
+        "raw": "28000",
+        "matchedFact": "tunnel-speed"
+      },
+      {
+        "sceneId": "fall",
+        "where": "stops[2]",
+        "text": "The other side speed: zero again 42 min",
+        "number": 0,
+        "raw": "zero",
+        "matchedFact": "earth-data"
+      },
+      {
+        "sceneId": "fall",
+        "where": "stops[2]",
+        "text": "The other side speed: zero again 42 min",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "fall",
+        "where": "clocks[0]",
+        "text": "Falling for 42 min",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "fall",
+        "where": "backdrop",
+        "text": "Earth, Apollo 17 (NASA)",
+        "number": 17,
+        "raw": "17",
+        "matchedFact": "photo-apollo17"
+      },
+      {
+        "sceneId": "weird",
+        "where": "narration[1]",
+        "text": "Tilt the tunnel, so it's a short cut between two nearby cities.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "weird",
+        "where": "narration[2]",
+        "text": "It still takes 42 minutes.",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "weird",
+        "where": "narration[3]",
+        "text": "A shorter tunnel is less steep, so you fall more gently, and the two effects cancel exactly.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "weird",
+        "where": "chips[0]",
+        "text": "ANY STRAIGHT TUNNEL: 42 MIN",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "orbit",
+        "where": "narration[0]",
+        "text": "And 42 minutes is exactly half of one orbit, for a satellite skimming the surface.",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "orbit-match"
+      },
+      {
+        "sceneId": "orbit",
+        "where": "factCard",
+        "text": "84 min one orbit skimming the surface: half of it is 42 min",
+        "number": 84,
+        "raw": "84",
+        "matchedFact": "orbit-match"
+      },
+      {
+        "sceneId": "orbit",
+        "where": "factCard",
+        "text": "84 min one orbit skimming the surface: half of it is 42 min",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "orbit-match"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "Jump into a tunnel through Earth: 42 minutes to the other side 🕳️🌍",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface.\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface.\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.",
+        "number": 28000,
+        "raw": "28000",
+        "matchedFact": "tunnel-speed"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface.\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface.\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.",
+        "number": 42,
+        "raw": "42",
+        "matchedFact": "tunnel-time"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface.\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.",
+        "number": 6371,
+        "raw": "6371",
+        "matchedFact": "earth-data"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface.\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.",
+        "number": 398600,
+        "raw": "398600",
+        "matchedFact": "earth-data"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface.\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.",
+        "number": 17,
+        "raw": "17",
+        "matchedFact": "photo-apollo17"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-15T01:09:07.970Z",
+    "verdict": "pass",
+    "notes": "The classic gravity-tunnel result in the stated idealisation (said aloud: 'forget air, heat and rock'; footnote: uniform, non-rotating Earth, no air). Inputs from NASA's Earth Fact Sheet: R = 6,371 km, GM = 398,600 km^3/s^2. One way pi*sqrt(R^3/GM) = 2,530 s = 42.2 min ('about 42'); v_max = sqrt(GM/R) = 7.91 km/s = 28,475 km/h ('about 28,000'); a grazing orbit 2*pi*sqrt(R^3/GM) = 84.3 min, half of it equal to the drop. Chord independence holds for a uniform sphere (the along-tunnel component of gravity is proportional to the distance from the chord midpoint, with the same omega). 'Exactly' applies within the model. Real-Earth density raises it to ~38 min; I don't claim a real-Earth figure."
+  }
+}

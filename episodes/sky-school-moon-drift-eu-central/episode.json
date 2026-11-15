@@ -1,0 +1,20 @@
+{
+  "id": "sky-school-moon-drift-eu-central",
+  "series": "sky-school",
+  "createdAt": "2026-11-15T00:59:04.117Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "76eb9be3ed29e907",
+    "factcheckedPlan": "76eb9be3ed29e907",
+    "narration": "f91c876a479c303d",
+    "video": "fb8de56ee8091b9e9357d1d7e09149f1e627dfb46a59e075a50873726caaa4c6"
+  },
+  "approvals": []
+}

@@ -80,7 +80,7 @@ Images: NASA / JSC (Artemis II crew photos). Narration uses a synthetic voice.
 
 ## Render
 
-39.7 s, 1080×1920@30, sha256 `842c5e46231678b8…`, rendered 2026-11-15T00:49:47.991Z in 62 s.
+39.7 s, 1080×1920@30, sha256 `639bcaebe3aa1e4d…`, rendered 2026-11-15T00:58:52.967Z in 47 s.
 
 ## QA
 
@@ -95,7 +95,7 @@ Images: NASA / JSC (Artemis II crew photos). Narration uses a synthetic voice.
 | true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T00:50:18.403Z): **pass** — 19 frames. Hook title over the far-side photo; Earth marker circles Earth's whole disc (lit crescent + night side) during the 1.2→3.2 zoom; factCard counts up to 384,400 km with label and source; phases scene pulls back; Earthset frames clean; outro shows the One Shot kicker and CTA. Gold One Shot accent on captions and badge. Credits on every photo.
+Visual review by **claude** (2026-11-15T00:59:02.052Z): **pass** — Re-voiced so 'Artemis II' is spoken as 'Artemis two' (new spoken-form lexicon; captions unchanged). Visuals identical to the previous QA-passed cut: same plan, scenes re-timed to the new narration; frames re-checked for caption/marker overlap.
 
 ## Event log
 
@@ -120,3 +120,10 @@ Visual review by **claude** (2026-11-15T00:50:18.403Z): **pass** — 19 frames. 
 | 2026-11-15 00:50:08 | pipeline | qa | qa.automated | bf3b9b1 |
 | 2026-11-15 00:50:18 | claude | qa | qa.review | bf3b9b1 |
 | 2026-11-15 00:50:18 | claude | qa-passed | stage.advance | bf3b9b1 |
+| 2026-11-15 00:57:59 | pipeline | voiced | stage.regress | 910e1db |
+| 2026-11-15 00:57:59 | pipeline | voiced | voice.reuse | 910e1db |
+| 2026-11-15 00:58:52 | pipeline | rendered | stage.advance | 910e1db |
+| 2026-11-15 00:58:52 | pipeline | rendered | render.video | 910e1db |
+| 2026-11-15 00:59:01 | pipeline | qa | qa.automated | 910e1db |
+| 2026-11-15 00:59:02 | claude | qa | qa.review | 910e1db |
+| 2026-11-15 00:59:02 | claude | qa-passed | stage.advance | 910e1db |

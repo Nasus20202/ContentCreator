@@ -1,0 +1,111 @@
+{
+  "facts": [
+    {
+      "id": "flybys",
+      "statement": "NASA's two ESCAPADE (Escape and Plasma Acceleration and Dynamics Explorers) spacecraft each completed a powered Earth flyby, combining Earth's gravity with an approximately 9-minute engine burn to slingshot toward Mars: the first around 5 a.m. EST on 7 Nov 2026 at about 1,000 miles altitude, the second around 6 a.m. EST on 9 Nov 2026 at about 650 miles.",
+      "values": [
+        2,
+        9,
+        7,
+        9,
+        2026,
+        1000,
+        650,
+        5,
+        6
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/",
+        "title": "NASA's ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "loiter",
+      "statement": "The two ESCAPADE spacecraft launched from Cape Canaveral on 13 Nov 2025, when Earth and Mars were on opposite sides of the Sun, so instead of heading straight to Mars they looped around Lagrange point 2, about a million miles (1.6 million km) from Earth, before returning to Earth for the slingshot.",
+      "values": [
+        13,
+        2025,
+        1,
+        1.6,
+        2
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/",
+        "title": "NASA's ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "arrival",
+      "statement": "After a 10-month cruise, ESCAPADE's Mars orbit insertion burns are planned for 7 and 9 September 2027. In orbit the two spacecraft will fly in formation to study how the solar wind (a million-mile-per-hour stream from the Sun) interacts with Mars and drives atmospheric loss. Science operations are expected to begin in June 2028.",
+      "values": [
+        10,
+        7,
+        9,
+        2027,
+        2028,
+        1
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/",
+        "title": "NASA's ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "first-two",
+      "statement": "Principal investigator Rob Lillis: 'This will be the first science mission to choreograph two orbiters around Mars, and the first time we will be able to make coordinated observations of the Martian environment from two different locations simultaneously.'",
+      "values": [
+        2,
+        1
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/",
+        "title": "NASA's ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "low-km",
+      "statement": "The second spacecraft's flyby altitude of about 650 miles is about 1,046 km, about 1,000 kilometres.",
+      "values": [
+        650,
+        1046,
+        1000
+      ],
+      "source": {
+        "type": "computed",
+        "method": "unit conversion: 1 mile = 1.609344 km",
+        "inputs": {
+          "miles": 650,
+          "source": "NASA Science ESCAPADE flyby article"
+        }
+      }
+    },
+    {
+      "id": "launch-photo",
+      "statement": "ESCAPADE launched on Blue Origin's New Glenn (NG-2) on 13 November 2025.",
+      "values": [
+        13,
+        2025,
+        2
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov/details/KSC-20251113-PH-BLU01_0007",
+        "title": "NASA's ESCAPADE Launch on Blue Origin's NG-2",
+        "publisher": "NASA Image and Video Library",
+        "accessed": "2026-11-15"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "mission-control-2026-11-25-escapade",
+  "series": "mission-control",
+  "createdAt": "2026-11-15T01:04:55.034Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "fccbdb0df4c217cf",
+    "factcheckedPlan": "fccbdb0df4c217cf",
+    "narration": "0caa611c60414024",
+    "video": "79b40de8fd317e02ab4c7b904d26e25ca2d6db8d0824da364e260453a65d938c"
+  },
+  "approvals": []
+}

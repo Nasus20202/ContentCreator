@@ -1,0 +1,100 @@
+{
+  "facts": [
+    {
+      "id": "drift-rate",
+      "statement": "The Earth and Moon are slowly drifting apart at the rate that fingernails grow, 1.5 inches (3.8 centimeters) per year.",
+      "values": [
+        3.8,
+        1.5
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/",
+        "title": "Laser Beams Reflected Between Earth and Moon Boost Science",
+        "publisher": "NASA",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "laser-ranging",
+      "statement": "Reflectors left on the Moon by Apollo astronauts (Apollo 14's panel has 100 corner-cube mirrors) return laser light in about 2.5 seconds on average, giving the Earth–Moon distance to within a few millimetres.",
+      "values": [
+        2.5,
+        14,
+        100
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/",
+        "title": "Laser Beams Reflected Between Earth and Moon Boost Science",
+        "publisher": "NASA",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "since-1971",
+      "statement": "From Apollo 14's reflector placement in 1971 to 2026 (55 years) at 3.8 cm per year, the Moon has moved about 209 cm, about 2 metres, farther away.",
+      "values": [
+        1971,
+        14,
+        55,
+        209,
+        2
+      ],
+      "source": {
+        "type": "computed",
+        "method": "arithmetic: years x rate",
+        "inputs": {
+          "from": 1971,
+          "to": 2026,
+          "years": 55,
+          "rateCmPerYear": 3.8,
+          "source": "NASA, 3.8 cm/yr"
+        }
+      }
+    },
+    {
+      "id": "ocean-push",
+      "statement": "The energy propelling the Moon away comes primarily from Earth's oceans, which bulge out in response to the Moon's gravity and exert a gravitational pull of their own on the Moon; its drift slows as it goes.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/moon/tidal-locking/",
+        "title": "Tidal Locking",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "eclipse-end",
+      "statement": "Once the Moon has drifted 14,600 miles (23,500 km) farther out, it will appear too small from Earth to cover the Sun; that is another 600-million-plus years away.",
+      "values": [
+        600,
+        23500,
+        14600
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/moon/eclipses/",
+        "title": "Eclipses and the Moon",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "eclipse-photo",
+      "statement": "Photo of the total solar eclipse of 21 August 2017.",
+      "values": [
+        2017,
+        21
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov/details/AFRC2017-0233-009",
+        "title": "2017 Total Solar Eclipse (AFRC2017-0233-009)",
+        "publisher": "NASA Image and Video Library",
+        "accessed": "2026-11-15"
+      }
+    }
+  ]
+}

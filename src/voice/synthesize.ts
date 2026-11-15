@@ -7,6 +7,7 @@ import path from 'node:path';
 import type { Plan, Timeline } from '../core/schemas';
 import { hashData } from '../core/io';
 import { concat, encodeWav16, silence, trimSilence } from './audio';
+import { spokenForm } from './lexicon';
 import { estimateWordTimings } from './timing';
 
 export const TTS_ENGINE = 'kokoro-82M-v1.0-onnx-q8';
@@ -48,7 +49,7 @@ export async function synthesizePlan(
     let t = LEAD_IN_SEC;
     parts.push(silence(LEAD_IN_SEC, sampleRate));
     for (const line of scene.narration) {
-      const res = await engine.generate(line, plan.voice.id, plan.voice.speed);
+      const res = await engine.generate(spokenForm(line), plan.voice.id, plan.voice.speed);
       sampleRate = res.sampleRate;
       const seg = trimSilence(res.audio, sampleRate);
       const dur = seg.length / sampleRate;

@@ -1,0 +1,100 @@
+{
+  "facts": [
+    {
+      "id": "earth-data",
+      "statement": "Earth's volumetric mean radius is 6,371.000 km and GM is 0.39860 x 10^6 km^3/s^2 (398,600 km^3/s^2).",
+      "values": [
+        6371,
+        6371,
+        398600,
+        0.3986
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+        "title": "Earth Fact Sheet",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "tunnel-time",
+      "statement": "Dropped into a straight frictionless tunnel through a uniform Earth, you reach the far end in pi*sqrt(R^3/GM) = 2,530 s = 42.2 minutes, about 42 minutes, and the time is the same for any straight tunnel between two surface points, not only one through the centre.",
+      "values": [
+        42,
+        42.2,
+        2530
+      ],
+      "source": {
+        "type": "computed",
+        "method": "simple harmonic motion: t = pi*sqrt(R^3/GM)",
+        "inputs": {
+          "model": "straight frictionless tunnel through a uniform-density, non-rotating Earth, no air; gravity inside grows linearly with distance from the centre (simple harmonic motion)",
+          "R_m": 6371000,
+          "GM_m3_s2": 398600000000000,
+          "one_way_s": "pi*sqrt(R^3/GM)",
+          "v_max": "sqrt(GM/R)",
+          "source_inputs": "NASA Earth Fact Sheet"
+        }
+      }
+    },
+    {
+      "id": "tunnel-speed",
+      "statement": "Falling through a tunnel through the centre, your top speed, reached at Earth's centre, is sqrt(GM/R) = 7.91 km/s, about 28,000 km/h.",
+      "values": [
+        7.9,
+        7.91,
+        28000,
+        28475
+      ],
+      "source": {
+        "type": "computed",
+        "method": "v_max = sqrt(GM/R)",
+        "inputs": {
+          "model": "straight frictionless tunnel through a uniform-density, non-rotating Earth, no air; gravity inside grows linearly with distance from the centre (simple harmonic motion)",
+          "R_m": 6371000,
+          "GM_m3_s2": 398600000000000,
+          "one_way_s": "pi*sqrt(R^3/GM)",
+          "v_max": "sqrt(GM/R)",
+          "source_inputs": "NASA Earth Fact Sheet"
+        }
+      }
+    },
+    {
+      "id": "orbit-match",
+      "statement": "A satellite orbiting just above the surface (no air) would take 2*pi*sqrt(R^3/GM) = 84.3 minutes per orbit, so it travels halfway round in the same ~42 minutes as the tunnel drop.",
+      "values": [
+        84,
+        84.3,
+        42
+      ],
+      "source": {
+        "type": "computed",
+        "method": "circular orbit period at R: 2*pi*sqrt(R^3/GM)",
+        "inputs": {
+          "model": "straight frictionless tunnel through a uniform-density, non-rotating Earth, no air; gravity inside grows linearly with distance from the centre (simple harmonic motion)",
+          "R_m": 6371000,
+          "GM_m3_s2": 398600000000000,
+          "one_way_s": "pi*sqrt(R^3/GM)",
+          "v_max": "sqrt(GM/R)",
+          "source_inputs": "NASA Earth Fact Sheet"
+        }
+      }
+    },
+    {
+      "id": "photo-apollo17",
+      "statement": "The 'Blue Marble' photo of Earth was taken by the Apollo 17 crew in December 1972.",
+      "values": [
+        17,
+        1972
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov/details/as17-148-22727",
+        "title": "View of the Earth as seen by the Apollo 17 crew (as17-148-22727)",
+        "publisher": "NASA Image and Video Library",
+        "accessed": "2026-11-15"
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "assets": [
+    {
+      "id": "earth-apollo17",
+      "kind": "image",
+      "file": "assets/earth-apollo17.jpg",
+      "sha256": "36dad3314b64319ea75465c4293719eb131d943566eb462e8bac3281e02c3bd4",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/as17-148-22727/as17-148-22727~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/as17-148-22727",
+        "title": "View of the Earth seen by the Apollo 17 crew traveling toward the moon",
+        "credit": "NASA / JSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:08:19.190Z"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "id": "full-moon",
+      "kind": "image",
+      "file": "assets/full-moon.jpg",
+      "sha256": "e609200b2e2182de7079aff42fb24f561d4d86fa1d4f8dc58f9b5d06189ece19",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001861/GSFC_20171208_Archive_e001861~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001861",
+        "title": "Full Moon",
+        "credit": "NASA / GSFC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T00:59:06.158Z"
+    },
+    {
+      "id": "lrrr-apollo14",
+      "kind": "image",
+      "file": "assets/lrrr-apollo14.jpg",
+      "sha256": "26632f848c9097103f8ed6f0337991288c70d6bb18ce284955afed35d44f03f6",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/as14-67-09386/as14-67-09386~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/as14-67-09386",
+        "title": "View of the Laser Ranging Retro Reflector deployed by Apollo 14 astronauts",
+        "credit": "NASA / JSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T00:59:07.923Z"
+    },
+    {
+      "id": "eclipse-2017",
+      "kind": "image",
+      "file": "assets/eclipse-2017.jpg",
+      "sha256": "ab83582f733cc31d67923223d9baf035acfccd6f9d291020e318876cb06513b9",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/AFRC2017-0233-009/AFRC2017-0233-009~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/AFRC2017-0233-009",
+        "title": "2017 Total Solar Eclipse",
+        "credit": "NASA / AFRC / Carla Thomas",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T00:59:09.734Z"
+    }
+  ]
+}

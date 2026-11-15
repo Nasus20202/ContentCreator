@@ -1,0 +1,796 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "49a471676000c11b",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 5.64,
+      "sentences": [
+        {
+          "text": "Dig a tunnel straight through the Earth, and jump in.",
+          "start": 0.15,
+          "end": 2.407,
+          "words": [
+            {
+              "w": "Dig",
+              "start": 0.15,
+              "end": 0.316
+            },
+            {
+              "w": "a",
+              "start": 0.316,
+              "end": 0.416
+            },
+            {
+              "w": "tunnel",
+              "start": 0.416,
+              "end": 0.681
+            },
+            {
+              "w": "straight",
+              "start": 0.681,
+              "end": 1.013
+            },
+            {
+              "w": "through",
+              "start": 1.013,
+              "end": 1.312
+            },
+            {
+              "w": "the",
+              "start": 1.312,
+              "end": 1.478
+            },
+            {
+              "w": "Earth,",
+              "start": 1.478,
+              "end": 1.81
+            },
+            {
+              "w": "and",
+              "start": 1.81,
+              "end": 1.976
+            },
+            {
+              "w": "jump",
+              "start": 1.976,
+              "end": 2.175
+            },
+            {
+              "w": "in.",
+              "start": 2.175,
+              "end": 2.407
+            }
+          ]
+        },
+        {
+          "text": "You'd pop out the other side in about 42 minutes.",
+          "start": 2.687,
+          "end": 5.36,
+          "words": [
+            {
+              "w": "You'd",
+              "start": 2.687,
+              "end": 2.989
+            },
+            {
+              "w": "pop",
+              "start": 2.989,
+              "end": 3.205
+            },
+            {
+              "w": "out",
+              "start": 3.205,
+              "end": 3.42
+            },
+            {
+              "w": "the",
+              "start": 3.42,
+              "end": 3.636
+            },
+            {
+              "w": "other",
+              "start": 3.636,
+              "end": 3.937
+            },
+            {
+              "w": "side",
+              "start": 3.937,
+              "end": 4.196
+            },
+            {
+              "w": "in",
+              "start": 4.196,
+              "end": 4.368
+            },
+            {
+              "w": "about",
+              "start": 4.368,
+              "end": 4.67
+            },
+            {
+              "w": "42",
+              "start": 4.67,
+              "end": 4.843
+            },
+            {
+              "w": "minutes.",
+              "start": 4.843,
+              "end": 5.36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "fall",
+      "audioFile": "voice/fall.wav",
+      "duration": 12.647,
+      "sentences": [
+        {
+          "text": "Forget air, heat and rock for a moment.",
+          "start": 0.15,
+          "end": 2.249,
+          "words": [
+            {
+              "w": "Forget",
+              "start": 0.15,
+              "end": 0.473
+            },
+            {
+              "w": "air,",
+              "start": 0.473,
+              "end": 0.796
+            },
+            {
+              "w": "heat",
+              "start": 0.796,
+              "end": 1.038
+            },
+            {
+              "w": "and",
+              "start": 1.038,
+              "end": 1.24
+            },
+            {
+              "w": "rock",
+              "start": 1.24,
+              "end": 1.482
+            },
+            {
+              "w": "for",
+              "start": 1.482,
+              "end": 1.684
+            },
+            {
+              "w": "a",
+              "start": 1.684,
+              "end": 1.805
+            },
+            {
+              "w": "moment.",
+              "start": 1.805,
+              "end": 2.249
+            }
+          ]
+        },
+        {
+          "text": "Gravity pulls you down, faster and faster.",
+          "start": 2.529,
+          "end": 4.865,
+          "words": [
+            {
+              "w": "Gravity",
+              "start": 2.529,
+              "end": 2.918
+            },
+            {
+              "w": "pulls",
+              "start": 2.918,
+              "end": 3.221
+            },
+            {
+              "w": "you",
+              "start": 3.221,
+              "end": 3.437
+            },
+            {
+              "w": "down,",
+              "start": 3.437,
+              "end": 3.827
+            },
+            {
+              "w": "faster",
+              "start": 3.827,
+              "end": 4.173
+            },
+            {
+              "w": "and",
+              "start": 4.173,
+              "end": 4.389
+            },
+            {
+              "w": "faster.",
+              "start": 4.389,
+              "end": 4.865
+            }
+          ]
+        },
+        {
+          "text": "At the centre you're doing about 28,000 kilometres an hour.",
+          "start": 5.145,
+          "end": 8.684,
+          "words": [
+            {
+              "w": "At",
+              "start": 5.145,
+              "end": 5.344
+            },
+            {
+              "w": "the",
+              "start": 5.344,
+              "end": 5.593
+            },
+            {
+              "w": "centre",
+              "start": 5.593,
+              "end": 5.992
+            },
+            {
+              "w": "you're",
+              "start": 5.992,
+              "end": 6.391
+            },
+            {
+              "w": "doing",
+              "start": 6.391,
+              "end": 6.74
+            },
+            {
+              "w": "about",
+              "start": 6.74,
+              "end": 7.089
+            },
+            {
+              "w": "28,000",
+              "start": 7.089,
+              "end": 7.438
+            },
+            {
+              "w": "kilometres",
+              "start": 7.438,
+              "end": 8.036
+            },
+            {
+              "w": "an",
+              "start": 8.036,
+              "end": 8.235
+            },
+            {
+              "w": "hour.",
+              "start": 8.235,
+              "end": 8.684
+            }
+          ]
+        },
+        {
+          "text": "Then gravity slows you down, and you stop right at the far end.",
+          "start": 8.964,
+          "end": 12.367,
+          "words": [
+            {
+              "w": "Then",
+              "start": 8.964,
+              "end": 9.216
+            },
+            {
+              "w": "gravity",
+              "start": 9.216,
+              "end": 9.594
+            },
+            {
+              "w": "slows",
+              "start": 9.594,
+              "end": 9.888
+            },
+            {
+              "w": "you",
+              "start": 9.888,
+              "end": 10.098
+            },
+            {
+              "w": "down,",
+              "start": 10.098,
+              "end": 10.476
+            },
+            {
+              "w": "and",
+              "start": 10.476,
+              "end": 10.686
+            },
+            {
+              "w": "you",
+              "start": 10.686,
+              "end": 10.896
+            },
+            {
+              "w": "stop",
+              "start": 10.896,
+              "end": 11.148
+            },
+            {
+              "w": "right",
+              "start": 11.148,
+              "end": 11.443
+            },
+            {
+              "w": "at",
+              "start": 11.443,
+              "end": 11.611
+            },
+            {
+              "w": "the",
+              "start": 11.611,
+              "end": 11.821
+            },
+            {
+              "w": "far",
+              "start": 11.821,
+              "end": 12.031
+            },
+            {
+              "w": "end.",
+              "start": 12.031,
+              "end": 12.367
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "weird",
+      "audioFile": "voice/weird.wav",
+      "duration": 12.304,
+      "sentences": [
+        {
+          "text": "Now the weird part.",
+          "start": 0.15,
+          "end": 1.23,
+          "words": [
+            {
+              "w": "Now",
+              "start": 0.15,
+              "end": 0.358
+            },
+            {
+              "w": "the",
+              "start": 0.358,
+              "end": 0.566
+            },
+            {
+              "w": "weird",
+              "start": 0.566,
+              "end": 0.856
+            },
+            {
+              "w": "part.",
+              "start": 0.856,
+              "end": 1.23
+            }
+          ]
+        },
+        {
+          "text": "Tilt the tunnel, so it's a short cut between two nearby cities.",
+          "start": 1.51,
+          "end": 4.95,
+          "words": [
+            {
+              "w": "Tilt",
+              "start": 1.51,
+              "end": 1.768
+            },
+            {
+              "w": "the",
+              "start": 1.768,
+              "end": 1.983
+            },
+            {
+              "w": "tunnel,",
+              "start": 1.983,
+              "end": 2.456
+            },
+            {
+              "w": "so",
+              "start": 2.456,
+              "end": 2.628
+            },
+            {
+              "w": "it's",
+              "start": 2.628,
+              "end": 2.886
+            },
+            {
+              "w": "a",
+              "start": 2.886,
+              "end": 3.015
+            },
+            {
+              "w": "short",
+              "start": 3.015,
+              "end": 3.316
+            },
+            {
+              "w": "cut",
+              "start": 3.316,
+              "end": 3.531
+            },
+            {
+              "w": "between",
+              "start": 3.531,
+              "end": 3.918
+            },
+            {
+              "w": "two",
+              "start": 3.918,
+              "end": 4.133
+            },
+            {
+              "w": "nearby",
+              "start": 4.133,
+              "end": 4.477
+            },
+            {
+              "w": "cities.",
+              "start": 4.477,
+              "end": 4.95
+            }
+          ]
+        },
+        {
+          "text": "It still takes 42 minutes.",
+          "start": 5.23,
+          "end": 6.824,
+          "words": [
+            {
+              "w": "It",
+              "start": 5.23,
+              "end": 5.418
+            },
+            {
+              "w": "still",
+              "start": 5.418,
+              "end": 5.746
+            },
+            {
+              "w": "takes",
+              "start": 5.746,
+              "end": 6.074
+            },
+            {
+              "w": "42",
+              "start": 6.074,
+              "end": 6.261
+            },
+            {
+              "w": "minutes.",
+              "start": 6.261,
+              "end": 6.824
+            }
+          ]
+        },
+        {
+          "text": "A shorter tunnel is less steep, so you fall more gently, and the two effects cancel exactly.",
+          "start": 7.104,
+          "end": 12.024,
+          "words": [
+            {
+              "w": "A",
+              "start": 7.104,
+              "end": 7.231
+            },
+            {
+              "w": "shorter",
+              "start": 7.231,
+              "end": 7.613
+            },
+            {
+              "w": "tunnel",
+              "start": 7.613,
+              "end": 7.952
+            },
+            {
+              "w": "is",
+              "start": 7.952,
+              "end": 8.122
+            },
+            {
+              "w": "less",
+              "start": 8.122,
+              "end": 8.376
+            },
+            {
+              "w": "steep,",
+              "start": 8.376,
+              "end": 8.8
+            },
+            {
+              "w": "so",
+              "start": 8.8,
+              "end": 8.97
+            },
+            {
+              "w": "you",
+              "start": 8.97,
+              "end": 9.182
+            },
+            {
+              "w": "fall",
+              "start": 9.182,
+              "end": 9.437
+            },
+            {
+              "w": "more",
+              "start": 9.437,
+              "end": 9.691
+            },
+            {
+              "w": "gently,",
+              "start": 9.691,
+              "end": 10.158
+            },
+            {
+              "w": "and",
+              "start": 10.158,
+              "end": 10.37
+            },
+            {
+              "w": "the",
+              "start": 10.37,
+              "end": 10.582
+            },
+            {
+              "w": "two",
+              "start": 10.582,
+              "end": 10.794
+            },
+            {
+              "w": "effects",
+              "start": 10.794,
+              "end": 11.176
+            },
+            {
+              "w": "cancel",
+              "start": 11.176,
+              "end": 11.515
+            },
+            {
+              "w": "exactly.",
+              "start": 11.515,
+              "end": 12.024
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "orbit",
+      "audioFile": "voice/orbit.wav",
+      "duration": 8.864,
+      "sentences": [
+        {
+          "text": "And 42 minutes is exactly half of one orbit, for a satellite skimming the surface.",
+          "start": 0.15,
+          "end": 4.973,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.386
+            },
+            {
+              "w": "42",
+              "start": 0.386,
+              "end": 0.576
+            },
+            {
+              "w": "minutes",
+              "start": 0.576,
+              "end": 1.001
+            },
+            {
+              "w": "is",
+              "start": 1.001,
+              "end": 1.19
+            },
+            {
+              "w": "exactly",
+              "start": 1.19,
+              "end": 1.616
+            },
+            {
+              "w": "half",
+              "start": 1.616,
+              "end": 1.899
+            },
+            {
+              "w": "of",
+              "start": 1.899,
+              "end": 2.089
+            },
+            {
+              "w": "one",
+              "start": 2.089,
+              "end": 2.325
+            },
+            {
+              "w": "orbit,",
+              "start": 2.325,
+              "end": 2.798
+            },
+            {
+              "w": "for",
+              "start": 2.798,
+              "end": 3.034
+            },
+            {
+              "w": "a",
+              "start": 3.034,
+              "end": 3.176
+            },
+            {
+              "w": "satellite",
+              "start": 3.176,
+              "end": 3.696
+            },
+            {
+              "w": "skimming",
+              "start": 3.696,
+              "end": 4.169
+            },
+            {
+              "w": "the",
+              "start": 4.169,
+              "end": 4.406
+            },
+            {
+              "w": "surface.",
+              "start": 4.406,
+              "end": 4.973
+            }
+          ]
+        },
+        {
+          "text": "Falling through the planet and flying around it take the same time.",
+          "start": 5.253,
+          "end": 8.584,
+          "words": [
+            {
+              "w": "Falling",
+              "start": 5.253,
+              "end": 5.618
+            },
+            {
+              "w": "through",
+              "start": 5.618,
+              "end": 5.984
+            },
+            {
+              "w": "the",
+              "start": 5.984,
+              "end": 6.187
+            },
+            {
+              "w": "planet",
+              "start": 6.187,
+              "end": 6.512
+            },
+            {
+              "w": "and",
+              "start": 6.512,
+              "end": 6.715
+            },
+            {
+              "w": "flying",
+              "start": 6.715,
+              "end": 7.04
+            },
+            {
+              "w": "around",
+              "start": 7.04,
+              "end": 7.365
+            },
+            {
+              "w": "it",
+              "start": 7.365,
+              "end": 7.527
+            },
+            {
+              "w": "take",
+              "start": 7.527,
+              "end": 7.771
+            },
+            {
+              "w": "the",
+              "start": 7.771,
+              "end": 7.974
+            },
+            {
+              "w": "same",
+              "start": 7.974,
+              "end": 8.218
+            },
+            {
+              "w": "time.",
+              "start": 8.218,
+              "end": 8.584
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 2.815,
+      "sentences": [
+        {
+          "text": "Physics is weird.",
+          "start": 0.15,
+          "end": 1.166,
+          "words": [
+            {
+              "w": "Physics",
+              "start": 0.15,
+              "end": 0.547
+            },
+            {
+              "w": "is",
+              "start": 0.547,
+              "end": 0.724
+            },
+            {
+              "w": "weird.",
+              "start": 0.724,
+              "end": 1.166
+            }
+          ]
+        },
+        {
+          "text": "Follow for more of it.",
+          "start": 1.446,
+          "end": 2.535,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 1.446,
+              "end": 1.736
+            },
+            {
+              "w": "for",
+              "start": 1.736,
+              "end": 1.918
+            },
+            {
+              "w": "more",
+              "start": 1.918,
+              "end": 2.135
+            },
+            {
+              "w": "of",
+              "start": 2.135,
+              "end": 2.281
+            },
+            {
+              "w": "it.",
+              "start": 2.281,
+              "end": 2.535
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

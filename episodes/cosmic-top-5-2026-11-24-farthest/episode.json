@@ -1,0 +1,20 @@
+{
+  "id": "cosmic-top-5-2026-11-24-farthest",
+  "series": "cosmic-top-5",
+  "createdAt": "2026-11-15T01:02:03.101Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "1887b8684df668eb",
+    "factcheckedPlan": "1887b8684df668eb",
+    "narration": "7ace18df257cd2d0",
+    "video": "5ea44f18d4a4d232e6b5e57b126bf897f941fc8aa75ec3050c69baa6708e2934"
+  },
+  "approvals": []
+}

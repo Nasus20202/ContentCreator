@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T00:49:54.471Z",
-  "videoSha256": "842c5e46231678b8051b45627ca66f7f2638c7e09ef42f8cf8d0814a74e8df06",
+  "checkedAt": "2026-11-15T00:58:53.665Z",
+  "videoSha256": "639bcaebe3aa1e4d63274dc4b7ec9ee7f815281c2dfda4b5a76fdc8fde6a245b",
   "automated": [
     {
       "name": "resolution",
@@ -142,8 +142,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T00:50:18.403Z",
+    "at": "2026-11-15T00:59:02.052Z",
     "verdict": "pass",
-    "notes": "19 frames. Hook title over the far-side photo; Earth marker circles Earth's whole disc (lit crescent + night side) during the 1.2→3.2 zoom; factCard counts up to 384,400 km with label and source; phases scene pulls back; Earthset frames clean; outro shows the One Shot kicker and CTA. Gold One Shot accent on captions and badge. Credits on every photo."
+    "notes": "Re-voiced so 'Artemis II' is spoken as 'Artemis two' (new spoken-form lexicon; captions unchanged). Visuals identical to the previous QA-passed cut: same plan, scenes re-timed to the new narration; frames re-checked for caption/marker overlap."
   }
 }

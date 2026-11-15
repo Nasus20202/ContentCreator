@@ -1,0 +1,159 @@
+{
+  "checkedAt": "2026-11-15T01:06:59.170Z",
+  "videoSha256": "5ea44f18d4a4d232e6b5e57b126bf897f941fc8aa75ec3050c69baa6708e2934",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "51.40 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 51.40 s vs timeline 51.33 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14.3 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.1 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 3.65
+    },
+    {
+      "file": "qa/00-hook-2.jpg",
+      "sceneId": "hook",
+      "tSec": 5.43
+    },
+    {
+      "file": "qa/01-n5-0.jpg",
+      "sceneId": "n5",
+      "tSec": 6.28
+    },
+    {
+      "file": "qa/01-n5-1.jpg",
+      "sceneId": "n5",
+      "tSec": 11.8
+    },
+    {
+      "file": "qa/02-n4-0.jpg",
+      "sceneId": "n4",
+      "tSec": 12.65
+    },
+    {
+      "file": "qa/02-n4-1.jpg",
+      "sceneId": "n4",
+      "tSec": 16.77
+    },
+    {
+      "file": "qa/03-n3-0.jpg",
+      "sceneId": "n3",
+      "tSec": 17.62
+    },
+    {
+      "file": "qa/03-n3-1.jpg",
+      "sceneId": "n3",
+      "tSec": 22
+    },
+    {
+      "file": "qa/03-n3-2.jpg",
+      "sceneId": "n3",
+      "tSec": 28
+    },
+    {
+      "file": "qa/04-n2-0.jpg",
+      "sceneId": "n2",
+      "tSec": 28.85
+    },
+    {
+      "file": "qa/04-n2-1.jpg",
+      "sceneId": "n2",
+      "tSec": 32.97
+    },
+    {
+      "file": "qa/05-n1-0.jpg",
+      "sceneId": "n1",
+      "tSec": 33.82
+    },
+    {
+      "file": "qa/05-n1-1.jpg",
+      "sceneId": "n1",
+      "tSec": 35.83
+    },
+    {
+      "file": "qa/05-n1-2.jpg",
+      "sceneId": "n1",
+      "tSec": 41.17
+    },
+    {
+      "file": "qa/06-scale-0.jpg",
+      "sceneId": "scale",
+      "tSec": 42.02
+    },
+    {
+      "file": "qa/06-scale-1.jpg",
+      "sceneId": "scale",
+      "tSec": 43.46
+    },
+    {
+      "file": "qa/06-scale-2.jpg",
+      "sceneId": "scale",
+      "tSec": 46.57
+    },
+    {
+      "file": "qa/07-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 47.42
+    },
+    {
+      "file": "qa/07-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 48.98
+    },
+    {
+      "file": "qa/07-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 51.23
+    }
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-15T01:07:43.108Z",
+    "verdict": "pass",
+    "notes": "21 frames. Hook: title over the DSN Madrid photo. #5–#3 fact cards in magenta: 10 / 17.8 / 21.2 bn km, labels readable, no title collision after the fix. #2 and #1: launch photos with rank chips. Scale: linear bar, three markers (#2/#3 merged because 21.2 and 21.7 overlap), #1 at the far end. Outro clean."
+  }
+}

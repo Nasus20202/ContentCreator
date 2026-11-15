@@ -1,0 +1,220 @@
+{
+  "episodeId": "cosmic-top-5-2026-11-24-farthest",
+  "series": "cosmic-top-5",
+  "title": "Cosmic Top 5 · The farthest things we ever built",
+  "badge": "Cosmic Top 5 · Farthest",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.08
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.15
+  },
+  "post": {
+    "title": "The 5 farthest things humans have ever built 🚀",
+    "description": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#space",
+      "#astronomy",
+      "#science",
+      "#top5",
+      "#voyager",
+      "#nasa"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "image",
+      "narration": [
+        "These are the five farthest things humans have ever built.",
+        "Ranked by distance from Earth, this week."
+      ],
+      "factIds": [
+        "dist-v1",
+        "dist-nh"
+      ],
+      "title": {
+        "kicker": "Cosmic Top 5",
+        "title": "Farthest things we built",
+        "from": 0.1,
+        "to": 3
+      },
+      "params": {
+        "assetId": "dsn-madrid",
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "focus": [
+          0.75,
+          0.45
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "n5",
+      "template": "factCard",
+      "narration": [
+        "Number five: New Horizons, the probe that flew past Pluto. About ten billion kilometres away."
+      ],
+      "factIds": [
+        "dist-nh",
+        "nh-pluto"
+      ],
+      "params": {
+        "value": "10 bn km",
+        "label": "#5 New Horizons",
+        "sourceLine": "JPL Horizons, 24 Nov 2026"
+      }
+    },
+    {
+      "id": "n4",
+      "template": "factCard",
+      "narration": [
+        "Number four: Pioneer 11, at 17.8 billion kilometres."
+      ],
+      "factIds": [
+        "dist-p11"
+      ],
+      "params": {
+        "value": "17.8 bn km",
+        "label": "#4 Pioneer 11",
+        "sourceLine": "JPL Horizons, 24 Nov 2026"
+      }
+    },
+    {
+      "id": "n3",
+      "template": "factCard",
+      "narration": [
+        "Number three: Pioneer 10, at 21.2 billion kilometres.",
+        "Launched in 1972, it was the farthest of all, until Voyager 1 overtook it in 1998."
+      ],
+      "factIds": [
+        "dist-p10",
+        "p10-overtaken"
+      ],
+      "params": {
+        "value": "21.2 bn km",
+        "label": "#3 Pioneer 10 · overtaken in 1998",
+        "sourceLine": "JPL Horizons · NASA"
+      }
+    },
+    {
+      "id": "n2",
+      "template": "image",
+      "narration": [
+        "Number two: Voyager 2, at 21.7 billion kilometres."
+      ],
+      "factIds": [
+        "dist-v2"
+      ],
+      "chips": [
+        {
+          "text": "#2 · 21.7 BILLION KM",
+          "from": 0.3
+        }
+      ],
+      "params": {
+        "assetId": "voyager2-launch",
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "n1",
+      "template": "image",
+      "narration": [
+        "And number one: Voyager 1.",
+        "25.9 billion kilometres, so far that its signals now take a full day to reach us."
+      ],
+      "factIds": [
+        "dist-v1",
+        "v1-light-day"
+      ],
+      "chips": [
+        {
+          "text": "#1 · 25.9 BILLION KM",
+          "from": 0.4
+        }
+      ],
+      "params": {
+        "assetId": "voyager1-launch",
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "focus": [
+          0.5,
+          0.45
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "scale",
+      "template": "scale",
+      "narration": [
+        "Here they are, to scale.",
+        "Even number five is about ten billion kilometres from home."
+      ],
+      "factIds": [
+        "dist-v1",
+        "dist-v2",
+        "dist-p10",
+        "dist-p11",
+        "dist-nh"
+      ],
+      "params": {
+        "total": 25.9,
+        "totalLabel": "#1 Voyager 1 · 25.9 bn km",
+        "markers": [
+          {
+            "at": 10,
+            "label": "#5 New Horizons · 10 bn km"
+          },
+          {
+            "at": 17.8,
+            "label": "#4 Pioneer 11 · 17.8 bn km"
+          },
+          {
+            "at": 21.45,
+            "label": "#2 Voyager 2 & #3 Pioneer 10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Follow for the next five.",
+        "Clear skies."
+      ],
+      "factIds": [
+        "dist-nh"
+      ],
+      "params": {
+        "kicker": "Cosmic Top 5",
+        "cta": "FOLLOW\nFOR THE\nNEXT FIVE",
+        "footnote": "Distances from Earth: NASA/JPL Horizons"
+      }
+    }
+  ]
+}

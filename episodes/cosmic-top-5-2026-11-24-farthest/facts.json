@@ -1,0 +1,165 @@
+{
+  "facts": [
+    {
+      "id": "dist-v1",
+      "statement": "On 24 Nov 2026, Voyager 1 (-31) is 173.21 AU from Earth = 25.91 billion km.",
+      "values": [
+        173.2,
+        173,
+        25.9,
+        26,
+        1
+      ],
+      "source": {
+        "type": "computed",
+        "method": "JPL Horizons observer range",
+        "inputs": {
+          "service": "JPL Horizons API (ssd.jpl.nasa.gov/api/horizons.api)",
+          "center": "500@399 (geocentric)",
+          "quantity": "20 (observer range, delta)",
+          "epoch": "2026-11-24 00:00 UTC",
+          "au_km": 149597870.7
+        }
+      }
+    },
+    {
+      "id": "dist-v2",
+      "statement": "On 24 Nov 2026, Voyager 2 (-32) is 145.05 AU from Earth = 21.70 billion km.",
+      "values": [
+        145.1,
+        145,
+        21.7,
+        2
+      ],
+      "source": {
+        "type": "computed",
+        "method": "JPL Horizons observer range",
+        "inputs": {
+          "service": "JPL Horizons API (ssd.jpl.nasa.gov/api/horizons.api)",
+          "center": "500@399 (geocentric)",
+          "quantity": "20 (observer range, delta)",
+          "epoch": "2026-11-24 00:00 UTC",
+          "au_km": 149597870.7
+        }
+      }
+    },
+    {
+      "id": "dist-p10",
+      "statement": "On 24 Nov 2026, Pioneer 10 (-23) is 141.36 AU from Earth = 21.15 billion km.",
+      "values": [
+        141.4,
+        141,
+        21.1,
+        21.2,
+        10,
+        3
+      ],
+      "source": {
+        "type": "computed",
+        "method": "JPL Horizons observer range",
+        "inputs": {
+          "service": "JPL Horizons API (ssd.jpl.nasa.gov/api/horizons.api)",
+          "center": "500@399 (geocentric)",
+          "quantity": "20 (observer range, delta)",
+          "epoch": "2026-11-24 00:00 UTC",
+          "au_km": 149597870.7
+        }
+      }
+    },
+    {
+      "id": "dist-p11",
+      "statement": "On 24 Nov 2026, Pioneer 11 (-24) is 118.99 AU from Earth = 17.80 billion km.",
+      "values": [
+        119,
+        119,
+        17.8,
+        11,
+        4
+      ],
+      "source": {
+        "type": "computed",
+        "method": "JPL Horizons observer range",
+        "inputs": {
+          "service": "JPL Horizons API (ssd.jpl.nasa.gov/api/horizons.api)",
+          "center": "500@399 (geocentric)",
+          "quantity": "20 (observer range, delta)",
+          "epoch": "2026-11-24 00:00 UTC",
+          "au_km": 149597870.7
+        }
+      }
+    },
+    {
+      "id": "dist-nh",
+      "statement": "On 24 Nov 2026, New Horizons (-98) is 66.81 AU from Earth = 9.99 billion km, about 10 billion km.",
+      "values": [
+        66.8,
+        10,
+        5
+      ],
+      "source": {
+        "type": "computed",
+        "method": "JPL Horizons observer range",
+        "inputs": {
+          "service": "JPL Horizons API (ssd.jpl.nasa.gov/api/horizons.api)",
+          "center": "500@399 (geocentric)",
+          "quantity": "20 (observer range, delta)",
+          "epoch": "2026-11-24 00:00 UTC",
+          "au_km": 149597870.7
+        }
+      }
+    },
+    {
+      "id": "p10-overtaken",
+      "statement": "Pioneer 10 (launched 1972) was the most remote human-made object through most of its mission; on 17 February 1998 Voyager 1 equalled its distance from the Sun (69.4 AU) and then pulled ahead. Pioneer 10's last, very weak signal was received on 23 January 2003.",
+      "values": [
+        1972,
+        17,
+        1998,
+        69.4,
+        23,
+        2003,
+        10,
+        1
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/",
+        "title": "Pioneer 10 Sends Last Signal",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "v1-light-day",
+      "statement": "Voyager 1 reached one light-day from Earth on 18 November 2026 and is the most distant human-made object; it launched in 1977.",
+      "values": [
+        1,
+        18,
+        2026,
+        1977
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+        "title": "Voyager 1: What Is a Light-Day",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "nh-pluto",
+      "statement": "New Horizons was the first spacecraft to explore Pluto up close, flying by it on July 14, 2015.",
+      "values": [
+        14,
+        2015
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/new-horizons/",
+        "title": "New Horizons",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    }
+  ]
+}

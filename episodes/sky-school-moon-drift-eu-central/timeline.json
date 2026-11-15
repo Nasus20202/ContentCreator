@@ -1,0 +1,756 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "f91c876a479c303d",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 6.748,
+      "sentences": [
+        {
+          "text": "The Moon is drifting away from us.",
+          "start": 0.15,
+          "end": 1.833,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.341
+            },
+            {
+              "w": "Moon",
+              "start": 0.341,
+              "end": 0.571
+            },
+            {
+              "w": "is",
+              "start": 0.571,
+              "end": 0.724
+            },
+            {
+              "w": "drifting",
+              "start": 0.724,
+              "end": 1.106
+            },
+            {
+              "w": "away",
+              "start": 1.106,
+              "end": 1.336
+            },
+            {
+              "w": "from",
+              "start": 1.336,
+              "end": 1.566
+            },
+            {
+              "w": "us.",
+              "start": 1.566,
+              "end": 1.833
+            }
+          ]
+        },
+        {
+          "text": "About 3.8 centimetres a year, roughly as fast as your fingernails grow.",
+          "start": 2.113,
+          "end": 6.468,
+          "words": [
+            {
+              "w": "About",
+              "start": 2.113,
+              "end": 2.464
+            },
+            {
+              "w": "3.8",
+              "start": 2.464,
+              "end": 2.664
+            },
+            {
+              "w": "centimetres",
+              "start": 2.664,
+              "end": 3.315
+            },
+            {
+              "w": "a",
+              "start": 3.315,
+              "end": 3.465
+            },
+            {
+              "w": "year,",
+              "start": 3.465,
+              "end": 3.915
+            },
+            {
+              "w": "roughly",
+              "start": 3.915,
+              "end": 4.366
+            },
+            {
+              "w": "as",
+              "start": 4.366,
+              "end": 4.566
+            },
+            {
+              "w": "fast",
+              "start": 4.566,
+              "end": 4.866
+            },
+            {
+              "w": "as",
+              "start": 4.866,
+              "end": 5.066
+            },
+            {
+              "w": "your",
+              "start": 5.066,
+              "end": 5.366
+            },
+            {
+              "w": "fingernails",
+              "start": 5.366,
+              "end": 6.017
+            },
+            {
+              "w": "grow.",
+              "start": 6.017,
+              "end": 6.468
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "how",
+      "audioFile": "voice/how.wav",
+      "duration": 10.704,
+      "sentences": [
+        {
+          "text": "We know because Apollo astronauts left mirrors on the Moon.",
+          "start": 0.15,
+          "end": 3.188,
+          "words": [
+            {
+              "w": "We",
+              "start": 0.15,
+              "end": 0.319
+            },
+            {
+              "w": "know",
+              "start": 0.319,
+              "end": 0.572
+            },
+            {
+              "w": "because",
+              "start": 0.572,
+              "end": 0.952
+            },
+            {
+              "w": "Apollo",
+              "start": 0.952,
+              "end": 1.289
+            },
+            {
+              "w": "astronauts",
+              "start": 1.289,
+              "end": 1.796
+            },
+            {
+              "w": "left",
+              "start": 1.796,
+              "end": 2.049
+            },
+            {
+              "w": "mirrors",
+              "start": 2.049,
+              "end": 2.428
+            },
+            {
+              "w": "on",
+              "start": 2.428,
+              "end": 2.597
+            },
+            {
+              "w": "the",
+              "start": 2.597,
+              "end": 2.808
+            },
+            {
+              "w": "Moon.",
+              "start": 2.808,
+              "end": 3.188
+            }
+          ]
+        },
+        {
+          "text": "Fire a laser at them, and the light comes back in about 2.5 seconds.",
+          "start": 3.468,
+          "end": 7.805,
+          "words": [
+            {
+              "w": "Fire",
+              "start": 3.468,
+              "end": 3.77
+            },
+            {
+              "w": "a",
+              "start": 3.77,
+              "end": 3.922
+            },
+            {
+              "w": "laser",
+              "start": 3.922,
+              "end": 4.275
+            },
+            {
+              "w": "at",
+              "start": 4.275,
+              "end": 4.477
+            },
+            {
+              "w": "them,",
+              "start": 4.477,
+              "end": 4.93
+            },
+            {
+              "w": "and",
+              "start": 4.93,
+              "end": 5.183
+            },
+            {
+              "w": "the",
+              "start": 5.183,
+              "end": 5.435
+            },
+            {
+              "w": "light",
+              "start": 5.435,
+              "end": 5.788
+            },
+            {
+              "w": "comes",
+              "start": 5.788,
+              "end": 6.141
+            },
+            {
+              "w": "back",
+              "start": 6.141,
+              "end": 6.443
+            },
+            {
+              "w": "in",
+              "start": 6.443,
+              "end": 6.645
+            },
+            {
+              "w": "about",
+              "start": 6.645,
+              "end": 6.998
+            },
+            {
+              "w": "2.5",
+              "start": 6.998,
+              "end": 7.2
+            },
+            {
+              "w": "seconds.",
+              "start": 7.2,
+              "end": 7.805
+            }
+          ]
+        },
+        {
+          "text": "That pins the distance down to a few millimetres.",
+          "start": 8.085,
+          "end": 10.424,
+          "words": [
+            {
+              "w": "That",
+              "start": 8.085,
+              "end": 8.315
+            },
+            {
+              "w": "pins",
+              "start": 8.315,
+              "end": 8.545
+            },
+            {
+              "w": "the",
+              "start": 8.545,
+              "end": 8.737
+            },
+            {
+              "w": "distance",
+              "start": 8.737,
+              "end": 9.121
+            },
+            {
+              "w": "down",
+              "start": 9.121,
+              "end": 9.351
+            },
+            {
+              "w": "to",
+              "start": 9.351,
+              "end": 9.504
+            },
+            {
+              "w": "a",
+              "start": 9.504,
+              "end": 9.619
+            },
+            {
+              "w": "few",
+              "start": 9.619,
+              "end": 9.811
+            },
+            {
+              "w": "millimetres.",
+              "start": 9.811,
+              "end": 10.424
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "since",
+      "audioFile": "voice/since.wav",
+      "duration": 6.906,
+      "sentences": [
+        {
+          "text": "Since Apollo 14 set up this mirror in 1971, the Moon has moved about two metres farther away.",
+          "start": 0.15,
+          "end": 6.626,
+          "words": [
+            {
+              "w": "Since",
+              "start": 0.15,
+              "end": 0.541
+            },
+            {
+              "w": "Apollo",
+              "start": 0.541,
+              "end": 0.987
+            },
+            {
+              "w": "14",
+              "start": 0.987,
+              "end": 1.211
+            },
+            {
+              "w": "set",
+              "start": 1.211,
+              "end": 1.49
+            },
+            {
+              "w": "up",
+              "start": 1.49,
+              "end": 1.713
+            },
+            {
+              "w": "this",
+              "start": 1.713,
+              "end": 2.048
+            },
+            {
+              "w": "mirror",
+              "start": 2.048,
+              "end": 2.495
+            },
+            {
+              "w": "in",
+              "start": 2.495,
+              "end": 2.718
+            },
+            {
+              "w": "1971,",
+              "start": 2.718,
+              "end": 3.22
+            },
+            {
+              "w": "the",
+              "start": 3.22,
+              "end": 3.5
+            },
+            {
+              "w": "Moon",
+              "start": 3.5,
+              "end": 3.835
+            },
+            {
+              "w": "has",
+              "start": 3.835,
+              "end": 4.114
+            },
+            {
+              "w": "moved",
+              "start": 4.114,
+              "end": 4.504
+            },
+            {
+              "w": "about",
+              "start": 4.504,
+              "end": 4.895
+            },
+            {
+              "w": "two",
+              "start": 4.895,
+              "end": 5.174
+            },
+            {
+              "w": "metres",
+              "start": 5.174,
+              "end": 5.621
+            },
+            {
+              "w": "farther",
+              "start": 5.621,
+              "end": 6.123
+            },
+            {
+              "w": "away.",
+              "start": 6.123,
+              "end": 6.626
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "why",
+      "audioFile": "voice/why.wav",
+      "duration": 6.286,
+      "sentences": [
+        {
+          "text": "The push comes mostly from Earth's oceans.",
+          "start": 0.15,
+          "end": 2.176,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.345
+            },
+            {
+              "w": "push",
+              "start": 0.345,
+              "end": 0.579
+            },
+            {
+              "w": "comes",
+              "start": 0.579,
+              "end": 0.851
+            },
+            {
+              "w": "mostly",
+              "start": 0.851,
+              "end": 1.163
+            },
+            {
+              "w": "from",
+              "start": 1.163,
+              "end": 1.397
+            },
+            {
+              "w": "Earth's",
+              "start": 1.397,
+              "end": 1.747
+            },
+            {
+              "w": "oceans.",
+              "start": 1.747,
+              "end": 2.176
+            }
+          ]
+        },
+        {
+          "text": "They bulge toward the Moon, and that bulge pulls on the Moon in return.",
+          "start": 2.456,
+          "end": 6.006,
+          "words": [
+            {
+              "w": "They",
+              "start": 2.456,
+              "end": 2.693
+            },
+            {
+              "w": "bulge",
+              "start": 2.693,
+              "end": 2.969
+            },
+            {
+              "w": "toward",
+              "start": 2.969,
+              "end": 3.284
+            },
+            {
+              "w": "the",
+              "start": 3.284,
+              "end": 3.482
+            },
+            {
+              "w": "Moon,",
+              "start": 3.482,
+              "end": 3.837
+            },
+            {
+              "w": "and",
+              "start": 3.837,
+              "end": 4.034
+            },
+            {
+              "w": "that",
+              "start": 4.034,
+              "end": 4.271
+            },
+            {
+              "w": "bulge",
+              "start": 4.271,
+              "end": 4.547
+            },
+            {
+              "w": "pulls",
+              "start": 4.547,
+              "end": 4.823
+            },
+            {
+              "w": "on",
+              "start": 4.823,
+              "end": 4.981
+            },
+            {
+              "w": "the",
+              "start": 4.981,
+              "end": 5.178
+            },
+            {
+              "w": "Moon",
+              "start": 5.178,
+              "end": 5.415
+            },
+            {
+              "w": "in",
+              "start": 5.415,
+              "end": 5.572
+            },
+            {
+              "w": "return.",
+              "start": 5.572,
+              "end": 6.006
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "eclipses",
+      "audioFile": "voice/eclipses.wav",
+      "duration": 8.007,
+      "sentences": [
+        {
+          "text": "Someday the Moon will look too small to cover the Sun.",
+          "start": 0.15,
+          "end": 2.896,
+          "words": [
+            {
+              "w": "Someday",
+              "start": 0.15,
+              "end": 0.513
+            },
+            {
+              "w": "the",
+              "start": 0.513,
+              "end": 0.715
+            },
+            {
+              "w": "Moon",
+              "start": 0.715,
+              "end": 0.958
+            },
+            {
+              "w": "will",
+              "start": 0.958,
+              "end": 1.2
+            },
+            {
+              "w": "look",
+              "start": 1.2,
+              "end": 1.442
+            },
+            {
+              "w": "too",
+              "start": 1.442,
+              "end": 1.644
+            },
+            {
+              "w": "small",
+              "start": 1.644,
+              "end": 1.927
+            },
+            {
+              "w": "to",
+              "start": 1.927,
+              "end": 2.089
+            },
+            {
+              "w": "cover",
+              "start": 2.089,
+              "end": 2.371
+            },
+            {
+              "w": "the",
+              "start": 2.371,
+              "end": 2.573
+            },
+            {
+              "w": "Sun.",
+              "start": 2.573,
+              "end": 2.896
+            }
+          ]
+        },
+        {
+          "text": "Total solar eclipses will end.",
+          "start": 3.176,
+          "end": 4.944,
+          "words": [
+            {
+              "w": "Total",
+              "start": 3.176,
+              "end": 3.502
+            },
+            {
+              "w": "solar",
+              "start": 3.502,
+              "end": 3.828
+            },
+            {
+              "w": "eclipses",
+              "start": 3.828,
+              "end": 4.293
+            },
+            {
+              "w": "will",
+              "start": 4.293,
+              "end": 4.572
+            },
+            {
+              "w": "end.",
+              "start": 4.572,
+              "end": 4.944
+            }
+          ]
+        },
+        {
+          "text": "But not for another 600 million years or more.",
+          "start": 5.224,
+          "end": 7.727,
+          "words": [
+            {
+              "w": "But",
+              "start": 5.224,
+              "end": 5.44
+            },
+            {
+              "w": "not",
+              "start": 5.44,
+              "end": 5.656
+            },
+            {
+              "w": "for",
+              "start": 5.656,
+              "end": 5.871
+            },
+            {
+              "w": "another",
+              "start": 5.871,
+              "end": 6.26
+            },
+            {
+              "w": "600",
+              "start": 6.26,
+              "end": 6.476
+            },
+            {
+              "w": "million",
+              "start": 6.476,
+              "end": 6.864
+            },
+            {
+              "w": "years",
+              "start": 6.864,
+              "end": 7.166
+            },
+            {
+              "w": "or",
+              "start": 7.166,
+              "end": 7.339
+            },
+            {
+              "w": "more.",
+              "start": 7.339,
+              "end": 7.727
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.421,
+      "sentences": [
+        {
+          "text": "Follow for more sky, explained.",
+          "start": 0.15,
+          "end": 2.033,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.518
+            },
+            {
+              "w": "for",
+              "start": 0.518,
+              "end": 0.747
+            },
+            {
+              "w": "more",
+              "start": 0.747,
+              "end": 1.023
+            },
+            {
+              "w": "sky,",
+              "start": 1.023,
+              "end": 1.39
+            },
+            {
+              "w": "explained.",
+              "start": 1.39,
+              "end": 2.033
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 2.313,
+          "end": 3.141,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 2.313,
+              "end": 2.654
+            },
+            {
+              "w": "skies.",
+              "start": 2.654,
+              "end": 3.141
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

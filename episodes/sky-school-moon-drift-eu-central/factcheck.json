@@ -1,0 +1,168 @@
+{
+  "checkedAt": "2026-11-15T01:02:26.383Z",
+  "planHash": "76eb9be3ed29e907",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[1]",
+        "text": "About 3.8 centimetres a year, roughly as fast as your fingernails grow.",
+        "number": 3.8,
+        "raw": "3.8",
+        "matchedFact": "drift-rate"
+      },
+      {
+        "sceneId": "hook",
+        "where": "chips[0]",
+        "text": "3.8 CM EVERY YEAR",
+        "number": 3.8,
+        "raw": "3.8",
+        "matchedFact": "drift-rate"
+      },
+      {
+        "sceneId": "how",
+        "where": "narration[1]",
+        "text": "Fire a laser at them, and the light comes back in about 2.5 seconds.",
+        "number": 2.5,
+        "raw": "2.5",
+        "matchedFact": "laser-ranging"
+      },
+      {
+        "sceneId": "how",
+        "where": "chips[0]",
+        "text": "LASER ROUND TRIP: 2.5 S",
+        "number": 2.5,
+        "raw": "2.5",
+        "matchedFact": "laser-ranging"
+      },
+      {
+        "sceneId": "since",
+        "where": "narration[0]",
+        "text": "Since Apollo 14 set up this mirror in 1971, the Moon has moved about two metres farther away.",
+        "number": 14,
+        "raw": "14",
+        "matchedFact": "since-1971"
+      },
+      {
+        "sceneId": "since",
+        "where": "narration[0]",
+        "text": "Since Apollo 14 set up this mirror in 1971, the Moon has moved about two metres farther away.",
+        "number": 1971,
+        "raw": "1971",
+        "matchedFact": "since-1971"
+      },
+      {
+        "sceneId": "since",
+        "where": "narration[0]",
+        "text": "Since Apollo 14 set up this mirror in 1971, the Moon has moved about two metres farther away.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "since-1971"
+      },
+      {
+        "sceneId": "since",
+        "where": "factCard",
+        "text": "≈ 2 metres farther away than in 1971",
+        "number": 2,
+        "raw": "2",
+        "matchedFact": "since-1971"
+      },
+      {
+        "sceneId": "since",
+        "where": "factCard",
+        "text": "≈ 2 metres farther away than in 1971",
+        "number": 1971,
+        "raw": "1971",
+        "matchedFact": "since-1971"
+      },
+      {
+        "sceneId": "eclipses",
+        "where": "narration[2]",
+        "text": "But not for another 600 million years or more.",
+        "number": 600,
+        "raw": "600",
+        "matchedFact": "eclipse-end"
+      },
+      {
+        "sceneId": "eclipses",
+        "where": "chips[0]",
+        "text": "600+ MILLION YEARS LEFT",
+        "number": 600,
+        "raw": "600",
+        "matchedFact": "eclipse-end"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science: https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/\nNASA Science, Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\nNASA Science, Eclipses and the Moon: https://science.nasa.gov/moon/eclipses/\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.",
+        "number": 3.8,
+        "raw": "3.8",
+        "matchedFact": "drift-rate"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science: https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/\nNASA Science, Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\nNASA Science, Eclipses and the Moon: https://science.nasa.gov/moon/eclipses/\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.",
+        "number": 2.5,
+        "raw": "2.5",
+        "matchedFact": "laser-ranging"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science: https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/\nNASA Science, Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\nNASA Science, Eclipses and the Moon: https://science.nasa.gov/moon/eclipses/\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.",
+        "number": 1971,
+        "raw": "1971",
+        "matchedFact": "since-1971"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science: https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/\nNASA Science, Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\nNASA Science, Eclipses and the Moon: https://science.nasa.gov/moon/eclipses/\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.",
+        "number": 2,
+        "raw": "2",
+        "matchedFact": "since-1971"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science: https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/\nNASA Science, Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\nNASA Science, Eclipses and the Moon: https://science.nasa.gov/moon/eclipses/\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.",
+        "number": 1,
+        "raw": "one",
+        "matchedFact": "drift-rate"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science: https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/\nNASA Science, Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\nNASA Science, Eclipses and the Moon: https://science.nasa.gov/moon/eclipses/\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.",
+        "number": 600,
+        "raw": "600",
+        "matchedFact": "eclipse-end"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science: https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/\nNASA Science, Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\nNASA Science, Eclipses and the Moon: https://science.nasa.gov/moon/eclipses/\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.",
+        "number": 14,
+        "raw": "14",
+        "matchedFact": "laser-ranging"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science: https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/\nNASA Science, Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\nNASA Science, Eclipses and the Moon: https://science.nasa.gov/moon/eclipses/\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.",
+        "number": 2017,
+        "raw": "2017",
+        "matchedFact": "eclipse-photo"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-15T01:02:27.142Z",
+    "verdict": "pass",
+    "notes": "Wording unchanged from the reviewed version; only the reflector scene crop moved."
+  }
+}
