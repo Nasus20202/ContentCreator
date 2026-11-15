@@ -119,7 +119,9 @@ describe('QA on a synthetic clip (ffmpeg)', () => {
 
 describe('onScreenCredit', () => {
   it('shows only the source, keeping Creative Commons licences that require attribution on screen', () => {
-    expect(onScreenCredit('NASA / JSC', 'NASA media usage guidelines (not copyrighted unless noted)')).toBe('NASA / JSC');
+    expect(onScreenCredit('NASA / JSC', 'NASA media usage guidelines (not copyrighted unless noted)')).toBe(
+      'NASA / JSC',
+    );
     expect(onScreenCredit('Steve Jurvetson / Wikimedia Commons', 'CC BY 2.0')).toBe(
       'Steve Jurvetson / Wikimedia Commons · CC BY 2.0',
     );
