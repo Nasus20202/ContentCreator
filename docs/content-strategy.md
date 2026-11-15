@@ -61,15 +61,17 @@ Review cadence: after every 4 published episodes (`content-strategy` skill), and
 
 **One video every day at 17:00 UTC (18:00 CET).** Series rotate on fixed weekdays so they can be compared:
 
-| Day | Series                                                                          | Status               |
-| --- | ------------------------------------------------------------------------------- | -------------------- |
-| Mon | Sky School (explainer)                                                          | running              |
-| Tue | Myth Check: one common belief, corrected with a primary source                  | new, 3-episode trial |
-| Wed | One Picture: one real NASA/ESA/JWST image explained in 30–40 s                  | new, 3-episode trial |
-| Thu | Sky Tonight: 20 s, one date-urgent event (or Sky School if there is none)       | running              |
-| Fri | Sky This Week                                                                   | running, best so far |
-| Sat | Space Milestones: dated mission news, verified (pilot: Voyager 1 one light-day) | new, 3-episode trial |
-| Sun | Sky School, or more of whichever series is winning                              | —                    |
+| Day | Series                                                                           | Status                              |
+| --- | -------------------------------------------------------------------------------- | ----------------------------------- |
+| Mon | Sky School (explainer)                                                           | running                             |
+| Tue | Top N: a ranked list from sourced data ("5 biggest moons", "fastest spacecraft") | new, 3-episode trial                |
+| Wed | Space News: missions and milestones, verified (Artemis, Voyager, launches)       | new, pilot: Voyager 1 one light-day |
+| Thu | Physics: one physical idea, computed or sourced (twin paradox, escape velocity…) | new, 3-episode trial                |
+| Fri | Sky This Week                                                                    | running, best so far                |
+| Sat | One Picture: one real NASA/ESA/JWST image explained                              | new, 3-episode trial                |
+| Sun | Myth Check, or Sky Tonight when an event is date-urgent                          | new, 3-episode trial                |
+
+Production: weekly batches (once or twice a week) that cover the following week.
 
 Stop rule for new series: after 3 episodes, keep only if average views ≥ 50 % of the channel median and average view % ≥ 50. Dated events beat the rotation (e.g. Voyager on Wed 18 Nov).
 
@@ -104,3 +106,4 @@ Buffer holds 10 scheduled posts per channel, which is about 10 days of daily pos
 - 2026-11-12 — Calendar scan of Nov 2026–Sep 2027: weekly cadence has holes (Nov 23, most of Mar–Jul 2027) and three peaks (Geminids, Christmas Moon, February planet week). Ranked the experiments backlog, added Sky School and the long-form pilot, noted two engine limits. No new series yet.
 - 2026-11-15 — First metrics (provisional, n=3): Sky This Week episode 1 ≈ 2.8× the best Sky School short on YouTube; TikTok is near zero for all of them. Sky This Week becomes a standing Friday release, Sky School drops to 2–3 a week to fill gaps. The approved backlog is scheduled, and a production queue for 20 Nov – 6 Dec is added.
 - 2026-11-15 (later) — Owner sets the cadence at one video per day and wants several series tested. Added a weekday rotation with three new trial series (Myth Check, One Picture, Space Milestones) and a stop rule.
+- 2026-11-15 (later still) — Owner's series ideas replace the trial set: Top N (Tue), Space News (Wed), Physics (Thu), One Picture (Sat), Myth Check / Sky Tonight (Sun). Weekly production batches.
