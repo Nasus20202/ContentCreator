@@ -61,15 +61,15 @@ Review cadence: after every 4 published episodes (`content-strategy` skill), and
 
 **One video every day at 17:00 UTC (18:00 CET).** Series rotate on fixed weekdays so they can be compared:
 
-| Day | Series                                                                           | Status                              |
-| --- | -------------------------------------------------------------------------------- | ----------------------------------- |
-| Mon | Sky School (explainer)                                                           | running                             |
-| Tue | Top N: a ranked list from sourced data ("5 biggest moons", "fastest spacecraft") | new, 3-episode trial                |
-| Wed | Space News: missions and milestones, verified (Artemis, Voyager, launches)       | new, pilot: Voyager 1 one light-day |
-| Thu | Physics: one physical idea, computed or sourced (twin paradox, escape velocity…) | new, 3-episode trial                |
-| Fri | Sky This Week                                                                    | running, best so far                |
-| Sat | One Picture: one real NASA/ESA/JWST image explained                              | new, 3-episode trial                |
-| Sun | Myth Check, or Sky Tonight when an event is date-urgent                          | new, 3-episode trial                |
+| Day | Series                                                                                      | Status                              |
+| --- | ------------------------------------------------------------------------------------------- | ----------------------------------- |
+| Mon | Sky School (explainer)                                                                      | running                             |
+| Tue | **Cosmic Top 5**: a ranked list from sourced data ("5 biggest moons", "fastest spacecraft") | new, 3-episode trial                |
+| Wed | **Mission Control**: missions and milestones, verified (Artemis, Voyager, launches)         | new, pilot: Voyager 1 one light-day |
+| Thu | **Weird Physics**: one physical idea, computed or sourced (twin paradox, escape velocity…)  | new, 3-episode trial                |
+| Fri | Sky This Week                                                                               | running, best so far                |
+| Sat | **One Shot**: one real NASA/ESA/JWST image explained                                        | new, 3-episode trial                |
+| Sun | **Wrong About Space**, or Sky Tonight when an event is date-urgent                          | new, 3-episode trial                |
 
 Production: weekly batches (once or twice a week) that cover the following week.
 
