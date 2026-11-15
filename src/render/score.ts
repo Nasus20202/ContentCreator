@@ -211,20 +211,33 @@ export function scoreNotes(style: ScoreStyle, transpose: number): number[] {
   return [...out];
 }
 
-/** Fill a stereo buffer with the arranged bed. Returns [left, right] of length ceil((seconds + 2) * sr). */
-export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
+/** One thing the arrangement plays, in the order the original renderer mixed it. */
+export type ScoreEvent =
+  | { type: 'piano'; t: number; midi: number; gain: number; pan: number; ring: number }
+  | { type: 'kick'; t: number; gain: number }
+  | { type: 'sub'; t: number; midi: number; length: number; gain: number }
+  | { type: 'pad'; t: number; length: number; upper: number[] }
+  | { type: 'shaker'; t: number; gain: number; pan: number }
+  | { type: 'riser'; end: number; length: number; gain: number }
+  | { type: 'impact'; t: number; midi: number; gain: number };
+
+export interface ScoreArrangement {
+  bpm: number;
+  finalAt: number;
+  padGain: number;
+  pump: number;
+  reverb: number;
+  events: ScoreEvent[];
+}
+
+/**
+ * The arrangement as an ordered event list: chords, arpeggio, motif, groove, risers and the ending.
+ * Pure and browser-safe, so the original sample mixer (`renderScore`) and the Tone.js port
+ * (`tone/compose.ts`) play exactly the same notes.
+ */
+export function scoreEvents(input: Omit<ScoreInput, 'sampleRate' | 'piano'>): ScoreArrangement {
   const r = RECIPE[input.style];
-  const sr = input.sampleRate;
-  const dur = input.seconds + 2;
-  const n = Math.ceil(dur * sr);
-  // Two buses: melodic (pumped by the kick, sent to the reverb) and drums.
-  const melL = new Float32Array(n);
-  const melR = new Float32Array(n);
-  const drL = new Float32Array(n);
-  const drR = new Float32Array(n);
-  const at = (sec: number) => Math.floor(sec * sr);
-  const pan = (p: number) => [Math.cos(((p + 1) * Math.PI) / 4), Math.sin(((p + 1) * Math.PI) / 4)] as const;
-  const midiHz = (m: number) => 440 * 2 ** ((m - 69) / 12);
+  const ev: ScoreEvent[] = [];
   const rnd = (salt: number): number => {
     const x = Math.sin((salt + input.seed * 1009) * 12.9898 + 78.233) * 43758.5453;
     return x - Math.floor(x);
@@ -248,7 +261,99 @@ export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
   const section = (t: number): 'hook' | 'body' | 'outro' | 'end' =>
     t >= finalAt ? 'end' : t < hookEnd - 1e-3 ? 'hook' : t >= outroStart - 1e-3 ? 'outro' : 'body';
 
-  const piano = (t0: number, midi: number, gain: number, panPos: number, ring = Infinity, busL = melL, busR = melR) => {
+  const piano = (t: number, midi: number, gain: number, pan: number, ring = Infinity) =>
+    ev.push({ type: 'piano', t, midi, gain, pan, ring });
+
+  for (let b = 0, t0 = 0; t0 < finalAt - 1e-6; b++, t0 = b * bar) {
+    const chord = prog[Math.floor(b / r.barsPerChord) % prog.length];
+    const sec = section(t0);
+    const firstOfChord = b % r.barsPerChord === 0;
+    const human = (salt: number) => (rnd(salt) - 0.5) * 0.012;
+
+    if (firstOfChord) {
+      ev.push({ type: 'pad', t: t0, length: bar * r.barsPerChord, upper: chord.upper });
+      // Chord, rolled like a hand would, and the bass under it.
+      chord.upper.forEach((m, k) =>
+        piano(t0 + k * 0.018 + human(b * 7 + k), m, r.chordGain * (0.85 + 0.15 * rnd(b * 3 + k)), (k - 1.5) * 0.3),
+      );
+      piano(t0, chord.bass, r.bassGain, -0.1);
+    }
+
+    // Arpeggio over chord tones and their octave.
+    const pool = [...chord.upper, ...chord.upper.map((m) => m + 12)].map((m) => m + r.arpOctave);
+    const steps = 4 * r.arpStepsPerBeat;
+    for (let s = 0; s < steps; s++) {
+      // The outro thins the arpeggio to every other note.
+      if (sec === 'outro' && s % 2 === 1) continue;
+      const ts = t0 + (s * beat) / r.arpStepsPerBeat + human(b * 31 + s);
+      const accent = s % r.arpStepsPerBeat === 0 ? 1 : 0.78;
+      const g = r.arpGain * accent * (0.85 + 0.15 * rnd(b * 13 + s)) * (sec === 'hook' ? 0.85 : 1);
+      piano(ts, pool[arp[s % arp.length] % pool.length], g, s % 2 === 0 ? 0.35 : -0.35, r.arpRing);
+    }
+
+    // Groove.
+    if (sec === 'hook' || sec === 'body') {
+      const kicksHere = sec === 'hook' ? r.kickHook : r.kick;
+      for (const k of kicksHere) ev.push({ type: 'kick', t: t0 + k * beat, gain: r.kickGain * (k === 0 ? 1 : 0.8) });
+      for (const k of kicksHere)
+        ev.push({ type: 'sub', t: t0 + k * beat, midi: chord.bass - 12, length: beat * 0.9, gain: r.subGain });
+      if (sec === 'body' && r.shaker > 0) {
+        for (let s = 0; s < 4 * r.shaker; s++) {
+          const off = s % 2 === 1;
+          ev.push({
+            type: 'shaker',
+            t: t0 + (s * beat) / r.shaker + human(b * 17 + s),
+            gain: r.shakerGain * (off ? 1 : 0.55) * (0.8 + 0.2 * rnd(b * 19 + s)),
+            pan: off ? 0.3 : -0.3,
+          });
+        }
+      }
+    }
+
+    // Motif: every other bar in the body, high and light, so it reads as a tune and not a loop.
+    if (sec === 'body' && b % 2 === 1) {
+      motif.at.forEach((a, k) => {
+        const m =
+          chord.upper[motif.notes[k] % chord.upper.length] + 12 * (motif.notes[k] >= chord.upper.length ? 2 : 1);
+        piano(t0 + a * beat, m, r.motifGain, 0.15, 1.6);
+      });
+    }
+  }
+
+  // Scene changes: a riser into each, and a soft impact where the hook hands over.
+  cues.slice(1).forEach((c, i) => {
+    if (c >= finalAt) return;
+    ev.push({ type: 'riser', end: c, length: i === 0 ? 1.6 : 1.1, gain: r.riserGain * (i === 0 ? 1.3 : 1) });
+  });
+  if (cues[1] !== undefined && cues[1] < finalAt)
+    ev.push({ type: 'impact', t: cues[1], midi: prog[0].bass - 12, gain: 0.12 });
+
+  // The ending: the home chord, struck full, with its bass, ringing into the fade.
+  const home = prog[0];
+  home.upper.forEach((m, k) => piano(finalAt + k * 0.03, m, r.chordGain * 1.15, (k - 1.5) * 0.3));
+  home.upper.forEach((m, k) => piano(finalAt + 0.12 + k * 0.05, m + 12, r.chordGain * 0.55, (1.5 - k) * 0.3));
+  piano(finalAt, home.bass, r.bassGain, 0);
+  ev.push({ type: 'pad', t: finalAt, length: input.seconds + 2 - finalAt, upper: home.upper });
+
+  return { bpm: r.bpm, finalAt, padGain: r.padGain, pump: r.pump, reverb: r.reverb, events: ev };
+}
+
+/** Fill a stereo buffer with the arranged bed. Returns [left, right] of length ceil((seconds + 2) * sr). */
+export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
+  const arr = scoreEvents(input);
+  const sr = input.sampleRate;
+  const dur = input.seconds + 2;
+  const n = Math.ceil(dur * sr);
+  // Two buses: melodic (pumped by the kick, sent to the reverb) and drums.
+  const melL = new Float32Array(n);
+  const melR = new Float32Array(n);
+  const drL = new Float32Array(n);
+  const drR = new Float32Array(n);
+  const at = (sec: number) => Math.floor(sec * sr);
+  const pan = (p: number) => [Math.cos(((p + 1) * Math.PI) / 4), Math.sin(((p + 1) * Math.PI) / 4)] as const;
+  const midiHz = (m: number) => 440 * 2 ** ((m - 69) / 12);
+
+  const piano = (t0: number, midi: number, gain: number, panPos: number, ring: number) => {
     const note = input.piano(midi);
     const [gl, gr] = pan(panPos);
     const start = at(t0);
@@ -261,8 +366,8 @@ export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
       const fr = j - idx;
       const env = k > ringN ? 1 - (k - ringN) / release : 1;
       const s = env * gain;
-      busL[i] += (note.left[idx] * (1 - fr) + note.left[idx + 1] * fr) * s * gl;
-      busR[i] += (note.right[idx] * (1 - fr) + note.right[idx + 1] * fr) * s * gr;
+      melL[i] += (note.left[idx] * (1 - fr) + note.left[idx + 1] * fr) * s * gl;
+      melR[i] += (note.right[idx] * (1 - fr) + note.right[idx + 1] * fr) * s * gr;
     }
   };
 
@@ -320,8 +425,8 @@ export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
     }
   };
 
-  const pad = (t0: number, length: number, chord: Chord) => {
-    chord.upper.forEach((m, vi) => {
+  const pad = (t0: number, length: number, upper: number[]) => {
+    upper.forEach((m, vi) => {
       for (const [det, side] of [
         [-0.0015, -0.5],
         [0.0015, 0.5],
@@ -334,7 +439,7 @@ export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
           const env = Math.min(1, t / 0.6) * Math.min(1, Math.max(0, (length + 0.6 - t) / 0.6));
           const wob = 1 + 0.05 * Math.sin(2 * Math.PI * (0.11 + vi * 0.03) * t);
           const ph = 2 * Math.PI * f * t;
-          const v = (Math.sin(ph) + 0.12 * Math.sin(2 * ph)) * r.padGain * env * wob;
+          const v = (Math.sin(ph) + 0.12 * Math.sin(2 * ph)) * arr.padGain * env * wob;
           melL[i] += v * gl;
           melR[i] += v * gr;
         }
@@ -374,81 +479,18 @@ export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
     }
   };
 
-  // ----------------------------------------------------------------- arrangement
-  for (let b = 0, t0 = 0; t0 < finalAt - 1e-6; b++, t0 = b * bar) {
-    const chord = prog[Math.floor(b / r.barsPerChord) % prog.length];
-    const sec = section(t0);
-    const firstOfChord = b % r.barsPerChord === 0;
-    const human = (salt: number) => (rnd(salt) - 0.5) * 0.012;
-
-    if (firstOfChord) {
-      pad(t0, bar * r.barsPerChord, chord);
-      // Chord, rolled like a hand would, and the bass under it.
-      chord.upper.forEach((m, k) =>
-        piano(t0 + k * 0.018 + human(b * 7 + k), m, r.chordGain * (0.85 + 0.15 * rnd(b * 3 + k)), (k - 1.5) * 0.3),
-      );
-      piano(t0, chord.bass, r.bassGain, -0.1);
-    }
-
-    // Arpeggio over chord tones and their octave.
-    const pool = [...chord.upper, ...chord.upper.map((m) => m + 12)].map((m) => m + r.arpOctave);
-    const steps = 4 * r.arpStepsPerBeat;
-    {
-      for (let s = 0; s < steps; s++) {
-        // The outro thins the arpeggio to every other note.
-        if (sec === 'outro' && s % 2 === 1) continue;
-        const ts = t0 + (s * beat) / r.arpStepsPerBeat + human(b * 31 + s);
-        const accent = s % r.arpStepsPerBeat === 0 ? 1 : 0.78;
-        const g = r.arpGain * accent * (0.85 + 0.15 * rnd(b * 13 + s)) * (sec === 'hook' ? 0.85 : 1);
-        piano(ts, pool[arp[s % arp.length] % pool.length], g, s % 2 === 0 ? 0.35 : -0.35, r.arpRing);
-      }
-    }
-
-    // Groove.
-    if (sec === 'hook' || sec === 'body') {
-      const kicksHere = sec === 'hook' ? r.kickHook : r.kick;
-      for (const k of kicksHere) kick(t0 + k * beat, r.kickGain * (k === 0 ? 1 : 0.8));
-      for (const k of kicksHere) sub(t0 + k * beat, chord.bass - 12, beat * 0.9, r.subGain);
-      if (sec === 'body' && r.shaker > 0) {
-        for (let s = 0; s < 4 * r.shaker; s++) {
-          const off = s % 2 === 1;
-          shaker(
-            t0 + (s * beat) / r.shaker + human(b * 17 + s),
-            r.shakerGain * (off ? 1 : 0.55) * (0.8 + 0.2 * rnd(b * 19 + s)),
-            off ? 0.3 : -0.3,
-          );
-        }
-      }
-    }
-
-    // Motif: every other bar in the body, high and light, so it reads as a tune and not a loop.
-    if (sec === 'body' && b % 2 === 1) {
-      motif.at.forEach((a, k) => {
-        const m =
-          chord.upper[motif.notes[k] % chord.upper.length] + 12 * (motif.notes[k] >= chord.upper.length ? 2 : 1);
-        piano(t0 + a * beat, m, r.motifGain, 0.15, 1.6);
-      });
-    }
-  }
-
-  // Scene changes: a riser into each, and a soft impact where the hook hands over.
-  cues.slice(1).forEach((c, i) => {
-    if (c >= finalAt) return;
-    riser(c, i === 0 ? 1.6 : 1.1, r.riserGain * (i === 0 ? 1.3 : 1));
-  });
-  if (cues[1] !== undefined && cues[1] < finalAt) impact(cues[1], prog[0].bass - 12, 0.12);
-
-  // The ending: the home chord, struck full, with its bass, ringing into the fade.
-  {
-    const home = prog[0];
-    home.upper.forEach((m, k) => piano(finalAt + k * 0.03, m, r.chordGain * 1.15, (k - 1.5) * 0.3));
-    home.upper.forEach((m, k) => piano(finalAt + 0.12 + k * 0.05, m + 12, r.chordGain * 0.55, (1.5 - k) * 0.3));
-    piano(finalAt, home.bass, r.bassGain, 0);
-    pad(finalAt, input.seconds + 2 - finalAt, home);
+  for (const e of arr.events) {
+    if (e.type === 'piano') piano(e.t, e.midi, e.gain, e.pan, e.ring);
+    else if (e.type === 'kick') kick(e.t, e.gain);
+    else if (e.type === 'sub') sub(e.t, e.midi, e.length, e.gain);
+    else if (e.type === 'pad') pad(e.t, e.length, e.upper);
+    else if (e.type === 'shaker') shaker(e.t, e.gain, e.pan);
+    else if (e.type === 'riser') riser(e.end, e.length, e.gain);
+    else impact(e.t, e.midi, e.gain);
   }
 
   // Sidechain: each kick briefly pushes the melodic bus down, which gives the groove its breath.
-  if (r.pump > 0 && kicks.length) {
+  if (arr.pump > 0 && kicks.length) {
     kicks.sort((a, b) => a - b);
     let k = 0;
     for (let i = 0; i < n; i++) {
@@ -456,7 +498,7 @@ export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
       while (k + 1 < kicks.length && kicks[k + 1] <= t) k++;
       const dt = t - kicks[k];
       if (dt < 0 || dt > 0.5) continue;
-      const g = 1 - r.pump * Math.exp(-dt / 0.11) * Math.min(1, dt / 0.004 + 0.6);
+      const g = 1 - arr.pump * Math.exp(-dt / 0.11) * Math.min(1, dt / 0.004 + 0.6);
       melL[i] *= g;
       melR[i] *= g;
     }
@@ -467,8 +509,8 @@ export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
   const left = new Float32Array(n);
   const right = new Float32Array(n);
   for (let i = 0; i < n; i++) {
-    left[i] = melL[i] + wetL[i] * r.reverb + drL[i] + wetL[i] * 0.04;
-    right[i] = melR[i] + wetR[i] * r.reverb + drR[i] + wetR[i] * 0.04;
+    left[i] = melL[i] + wetL[i] * arr.reverb + drL[i] + wetL[i] * 0.04;
+    right[i] = melR[i] + wetR[i] * arr.reverb + drR[i] + wetR[i] * 0.04;
   }
   return [left, right];
 }

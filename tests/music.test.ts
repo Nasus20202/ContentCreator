@@ -3,31 +3,61 @@ import os from 'node:os';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { instrumentManifest } from '../src/assets/instruments';
-import { bedFor, loudness, probe, resolveStyle, SERIES_BED, synthesizePad } from '../src/render/media';
+import { bedFor, bedPeak, fitChannel, loudness, probe, SERIES_BED, synthesizePad } from '../src/render/media';
 import { renderToneBed } from '../src/render/tone/render';
 import { PIANO_STYLES } from '../src/render/piano-loop';
-import { SCORE_STYLES } from '../src/render/score';
-import { LEGACY_STYLES, STYLE_INSTRUMENTS, TONE_STYLES } from '../src/render/tone/styles';
+import { SCORE_STYLES, scoreEvents } from '../src/render/score';
+import { isToneStyle, KAWAI, STYLE_INSTRUMENTS, TONE_STYLES } from '../src/render/tone/styles';
+import { pianoFiles } from '../src/assets/piano';
 
 const hasBrowser = ['CHROMIUM_PATH', '/usr/bin/chromium-browser', '/usr/bin/chromium', '/usr/bin/google-chrome']
   .map((p) => (p === 'CHROMIUM_PATH' ? process.env.CHROMIUM_PATH : p))
   .some((p) => !!p && fs.existsSync(p));
 
 describe('music styles', () => {
-  it('every series bed is a real style and retired names resolve to one', () => {
+  it('every series bed is a real style', () => {
     const real = [...TONE_STYLES, ...PIANO_STYLES, ...SCORE_STYLES];
     for (const style of Object.values(SERIES_BED)) expect(real).toContain(style);
-    for (const [old, now] of Object.entries(LEGACY_STYLES)) expect(resolveStyle(old as never)).toBe(now);
-    // The original beds render as themselves, not as a successor.
-    for (const style of [...PIANO_STYLES, ...SCORE_STYLES]) expect(resolveStyle(style)).toBe(style);
-    expect(bedFor('unknown-series')).toBe('piano');
+    expect(bedFor('unknown-series')).toBe('nocturne');
   });
 
-  it('only loads instruments that are in the pinned sample manifest', () => {
+  it('pads a bed that is one sample short instead of muting it', () => {
+    // (1082/30 + 2) * 44100 rounds up to one sample more than the renderer returns.
+    const n = Math.ceil((1082 / 30 + 2) * 44100);
+    const short = new Float32Array(n - 1).fill(0.5);
+    const fitted = fitChannel(short, n);
+    expect(fitted.length).toBe(n);
+    expect(fitted[n - 1]).toBe(0);
+    expect(bedPeak(fitted, fitted)).toBeCloseTo(0.5);
+    expect(fitChannel(short, n - 1)).toBe(short);
+  });
+
+  it('refuses a silent or NaN bed', () => {
+    expect(() => bedPeak(new Float32Array(10), new Float32Array(10))).toThrow(/silent/);
+    expect(() => bedPeak(new Float32Array([NaN, 1]), new Float32Array(2))).toThrow(/silent/);
+  });
+
+  it('only loads instruments that are in the pinned sample manifest (or the Kawai bank)', () => {
     const m = instrumentManifest();
     expect(m.commit).toMatch(/^[0-9a-f]{40}$/);
     for (const insts of Object.values(STYLE_INSTRUMENTS)) {
-      for (const i of insts) expect(m.instruments[i]?.length ?? 0).toBeGreaterThan(0);
+      for (const i of insts) {
+        if (i === KAWAI) continue;
+        expect(m.instruments[i]?.length ?? 0).toBeGreaterThan(0);
+      }
+    }
+    // The Tone.js ports of the original beds play the Kawai soft layer from assets/audio/piano.
+    const soft = pianoFiles().filter((f) => f.layer === 4);
+    expect(soft.length).toBe(19);
+  });
+
+  it('the Tone.js ports play the same arrangement as the original beds', () => {
+    for (const style of SCORE_STYLES) {
+      expect(isToneStyle(`${style}-tone`)).toBe(true);
+      expect(STYLE_INSTRUMENTS[`${style}-tone`]).toEqual([KAWAI]);
+      const arr = scoreEvents({ style, seconds: 20, seed: 1, transpose: 0, cues: [0, 4, 9, 16] });
+      expect(arr.events.filter((e) => e.type === 'piano').length).toBeGreaterThan(50);
+      expect(arr.events.some((e) => e.type === 'kick')).toBe(true);
     }
   });
 });

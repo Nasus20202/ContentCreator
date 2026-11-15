@@ -1,0 +1,7 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`original score beds stay bit-exact > meteor 1`] = `"415cabc189bc0be2"`;
+
+exports[`original score beds stay bit-exact > nebula 1`] = `"e71b3699589cae2a"`;
+
+exports[`original score beds stay bit-exact > orbit 1`] = `"0ffad54fb873eaf5"`;

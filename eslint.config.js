@@ -6,7 +6,7 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['node_modules', 'episodes/*/build', 'coverage'] },
+  { ignores: ['node_modules', 'episodes/**/build', 'build', 'coverage'] },
   js.configs.recommended,
   ...tseslint.configs.recommendedTypeChecked,
   {

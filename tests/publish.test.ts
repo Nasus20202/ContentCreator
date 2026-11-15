@@ -118,42 +118,57 @@ describe('BufferClient', () => {
 describe('GitBranchHost', () => {
   const video = path.join(os.tmpdir(), 'cc-media-test.mp4');
   fs.writeFileSync(video, 'x');
+  const gitDir = path.join(os.tmpdir(), 'cc-media-test.git');
 
-  it('commits the file onto the media branch with plumbing and returns the raw URL', async () => {
+  it('commits the file into nested folders of the assets repo with plumbing and returns the raw URL', async () => {
     const calls: string[][] = [];
-    const exec = (cmd: string, args: string[]) => {
+    let trees = 0;
+    const exec = (_cmd: string, args: string[]) => {
       calls.push(args);
-      const out: Record<string, string> = { 'hash-object': 'BLOB', mktree: 'TREE', 'commit-tree': 'COMMIT' };
-      if (args[0] === 'rev-parse') return Promise.reject(new Error('no branch yet'));
-      return Promise.resolve({ stdout: out[args[0]] ?? '' });
+      const sub = args[0] === 'init' ? 'init' : args[1];
+      if (sub === 'rev-parse') return Promise.reject(new Error('no branch yet'));
+      const out: Record<string, string> = { 'hash-object': 'BLOB', 'commit-tree': 'COMMIT' };
+      if (sub === 'mktree') return Promise.resolve({ stdout: `TREE${++trees}` });
+      return Promise.resolve({ stdout: out[sub] ?? '' });
     };
-    const res = await new GitBranchHost('o/repo', 'videos', 'origin', exec).host(video, 'ep-1234abcd.mp4');
-    expect(res.url).toBe('https://raw.githubusercontent.com/o/repo/videos/ep-1234abcd.mp4');
-    expect(calls.map((c) => c[0])).toEqual([
-      'fetch',
-      'rev-parse',
-      'hash-object',
-      'mktree',
-      'commit-tree',
-      'push',
-      'update-ref',
+    const fresh = fs.mkdtempSync(path.join(os.tmpdir(), 'cc-media-')) + '/cache.git'; // not created yet
+    const host = new GitBranchHost('o/assets', 'main', 'git@github.com:o/assets.git', exec, fresh);
+    const res = await host.host(video, 'sky-school/moon-drift-1234abcd.mp4');
+    expect(res.url).toBe('https://raw.githubusercontent.com/o/assets/main/sky-school/moon-drift-1234abcd.mp4');
+    expect(calls[0]).toEqual(['init', '--bare', '--quiet', fresh]);
+    // blobless partial clone: the cache never downloads existing videos
+    expect(calls.filter((c) => c[1] === 'config').map((c) => c.slice(2))).toEqual([
+      ['remote.assets.url', 'git@github.com:o/assets.git'],
+      ['remote.assets.promisor', 'true'],
+      ['remote.assets.partialclonefilter', 'blob:none'],
     ]);
-    expect(calls.find((c) => c[0] === 'commit-tree')).not.toContain('-p'); // first upload: orphan root commit
-    expect(calls.find((c) => c[0] === 'push')).toEqual(['push', 'origin', 'COMMIT:refs/heads/videos']);
+    expect(calls.find((c) => c[1] === 'fetch')).toContain('--filter=blob:none');
+    const git = calls.filter((c) => c[0] === `--git-dir=${fresh}` && c[1] !== 'config').map((c) => c[1]);
+    expect(git).toEqual(['fetch', 'rev-parse', 'hash-object', 'mktree', 'mktree', 'commit-tree', 'push', 'update-ref']);
+    expect(calls.find((c) => c[1] === 'commit-tree')).not.toContain('-p'); // first upload: root commit
+    expect(calls.find((c) => c[1] === 'push')).toEqual([
+      `--git-dir=${fresh}`,
+      'push',
+      '--quiet',
+      'assets',
+      'COMMIT:refs/heads/main',
+    ]);
   });
 
-  it('reuses a file that is already on the branch', async () => {
+  it('reuses a file that is already in the repo', async () => {
+    fs.mkdirSync(gitDir, { recursive: true });
     const exec = vi.fn((_cmd: string, args: string[]) =>
       Promise.resolve({
-        stdout: args[0] === 'rev-parse' ? 'PARENT' : args[0] === 'ls-tree' ? '100644 blob B\tep-1.mp4' : '',
+        stdout: args[1] === 'rev-parse' ? 'PARENT' : args[1] === 'ls-tree' ? '100644 blob B\tsky-school/ep-1.mp4' : '',
       }),
     );
-    await new GitBranchHost('o/repo', 'videos', 'origin', exec).host(video, 'ep-1.mp4');
-    expect(exec.mock.calls.map((c) => c[1][0])).toEqual(['fetch', 'rev-parse', 'ls-tree']);
+    await new GitBranchHost('o/assets', 'main', 'r', exec, gitDir).host(video, 'sky-school/ep-1.mp4');
+    expect(exec.mock.calls.map((c) => c[1][1])).toEqual(['fetch', 'rev-parse', 'ls-tree']);
   });
 
-  it('names media by episode and video hash', () => {
-    expect(mediaName('ep', 'abcdef0123456789')).toBe('ep-abcdef01.mp4');
+  it('names media by the episode folder and video hash', () => {
+    expect(mediaName('sky-school-moon-drift', 'abcdef0123456789')).toBe('sky-school/moon-drift-abcdef01.mp4');
+    expect(mediaName('unknown-ep', 'abcdef0123456789')).toBe('unknown-ep-abcdef01.mp4');
   });
 });
 

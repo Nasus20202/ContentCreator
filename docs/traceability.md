@@ -2,7 +2,7 @@
 
 **Principle:** machine-readable records are append-only and committed; human-readable reports are generated from them (`pnpm cc report`). Nobody (human or Claude) edits records by hand.
 
-## Per episode — `episodes/<id>/`
+## Per episode — `episodes/<series>/<slug>/`
 
 | File              | Written by               | Contents                                                                                                                                         |
 | ----------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |

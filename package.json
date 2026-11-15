@@ -14,7 +14,8 @@
     "test:watch": "vitest",
     "check": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run validate:records",
     "test:bundle": "tsx scripts/bundle-smoke.ts",
-    "validate:records": "tsx src/cli/index.ts validate"
+    "validate:records": "tsx src/cli/index.ts validate",
+    "docs:cli": "tsx scripts/cli-docs.ts"
   },
   "dependencies": {
     "@react-three/fiber": "^9.8.2",

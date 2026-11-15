@@ -10,8 +10,9 @@ import { fileURLToPath } from 'node:url';
 import { build } from 'esbuild';
 import puppeteer from 'puppeteer-core';
 import { ensureInstrumentSamples, instrumentManifest, instrumentsDir } from '../../assets/instruments';
+import { ensurePianoSamples, pianoDir, pianoFiles } from '../../assets/piano';
 import type { BedSpec } from './compose';
-import { STYLE_INSTRUMENTS, type ToneStyle } from './styles';
+import { KAWAI, STYLE_INSTRUMENTS, type ToneStyle } from './styles';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 let bundled: string | undefined;
@@ -49,7 +50,9 @@ export async function renderToneBed(
   variant: { seed?: number; transpose?: number; cues?: number[] } = {},
 ): Promise<{ sampleRate: number; left: Float32Array; right: Float32Array }> {
   const instruments = STYLE_INSTRUMENTS[style];
-  await ensureInstrumentSamples(instruments);
+  const kawai = instruments.includes(KAWAI);
+  await ensureInstrumentSamples(instruments.filter((i) => i !== KAWAI));
+  if (kawai) await ensurePianoSamples();
   const manifest = instrumentManifest();
   const js = await bundle();
   const root = instrumentsDir();
@@ -65,8 +68,10 @@ export async function renderToneBed(
       res.end(js);
       return;
     }
-    const file = path.join(root, url.replace(/^\/samples\//, ''));
-    if (!file.startsWith(root) || !fs.existsSync(file)) {
+    const rel = url.replace(/^\/samples\//, '');
+    const base = rel.startsWith(`${KAWAI}/`) ? pianoDir() : root;
+    const file = path.join(base, rel.startsWith(`${KAWAI}/`) ? rel.slice(KAWAI.length + 1) : rel);
+    if (!file.startsWith(base) || !fs.existsSync(file)) {
       res.writeHead(404);
       res.end();
       return;
@@ -91,7 +96,12 @@ export async function renderToneBed(
       transpose: variant.transpose ?? 0,
       cues: variant.cues ?? [0],
       sampleBase: `http://127.0.0.1:${port}/samples`,
-      samples: Object.fromEntries(instruments.map((i) => [i, manifest.instruments[i] ?? []])),
+      samples: Object.fromEntries(
+        instruments.map((i) => [
+          i,
+          i === KAWAI ? pianoFiles().map((f) => path.basename(f.file)) : (manifest.instruments[i] ?? []),
+        ]),
+      ),
     };
     const out = await page.evaluate(
       (s) =>

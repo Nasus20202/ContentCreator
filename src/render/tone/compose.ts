@@ -10,7 +10,8 @@
 import * as Tone from 'tone';
 import { Chord, Note, Scale } from 'tonal';
 
-import type { ToneStyle } from './styles';
+import { scoreEvents, type ScoreStyle } from '../score';
+import { KAWAI, type ToneStyle } from './styles';
 
 export interface BedSpec {
   style: ToneStyle;
@@ -483,70 +484,6 @@ const flute: Composer = async (spec, master, r) => {
 };
 
 /**
- * Mission Control: a driving band groove on recorded instruments. Palm-muted electric guitar in
- * 16ths, electric bass in 8ths, piano chords, a violin line on top, four-on-the-floor with a pump.
- */
-const drive: Composer = async (spec, master, r) => {
-  const s = sections(spec, 116);
-  const prog = ['Em', 'C', 'G', 'D'];
-  const kicks: number[] = [];
-  for (let t = 0; t < s.finalAt; t += s.beat) if (t >= s.hookEnd || Math.round(t / s.beat) % 2 === 0) kicks.push(t);
-  const verb = await reverb(2.6, 0.24);
-  verb.connect(master);
-  const bus = pumpBus(verb, kicks, 0.45);
-  const chug = sampler(spec, 'guitar-electric', { release: 0.06, volume: -9 }).chain(
-    new Tone.Filter(2400, 'lowpass'),
-    bus,
-  );
-  const bass = sampler(spec, 'bass-electric', { release: 0.12, volume: -5 }).connect(bus);
-  const violin = sampler(spec, 'violin', { attack: 0.08, release: 1.2, volume: -12 }).chain(
-    new Tone.FeedbackDelay('8n', 0.2),
-    verb,
-  );
-  const piano = sampler(spec, 'piano', { release: 1.5, volume: -16 }).connect(verb);
-  const d = drums(master, { snareTone: true });
-  await Tone.loaded();
-  for (const k of kicks) d.kick.triggerAttackRelease('C1', '8n', k);
-  const melody = [
-    [4, 2, 1, 0],
-    [0, 1, 2, 4],
-  ][spec.seed % 2];
-  forBars(s, (b, t0) => {
-    const sym = prog[b % prog.length];
-    const root = rootOf(sym, 2, spec.transpose);
-    const body = isBody(s, t0);
-    // Palm-muted power chord (root + fifth) in 16ths, accents on the beat.
-    for (let q = 0; q < 16; q++) {
-      if (!body && q % 2) continue;
-      const t = t0 + q * (s.beat / 4) + r() * 0.5 * 0.004;
-      const v = (q % 4 === 0 ? 0.85 : 0.55) + 0.1 * r();
-      chug.triggerAttackRelease([shift(root, 12), shift(root, 19)], s.beat / 6, t, v);
-    }
-    for (let e = 0; e < 8; e++) bass.triggerAttackRelease(root, s.beat * 0.42, t0 + e * (s.beat / 2), 0.8);
-    piano.triggerAttackRelease(voice(sym, 4, spec.transpose), s.beat * 2, t0, 0.35);
-    if (body) {
-      const tones = voice(sym, 5, spec.transpose);
-      violin.triggerAttackRelease(tones[melody[b % 4] % tones.length], s.beat * 2.8, t0, 0.65);
-      violin.triggerAttackRelease(tones[(melody[(b + 1) % 4] + 1) % tones.length], s.beat * 0.9, t0 + s.beat * 3, 0.5);
-      d.hitSnare(t0 + s.beat);
-      d.hitSnare(t0 + s.beat * 3);
-      for (let h = 0; h < 8; h++) d.hat.triggerAttackRelease('32n', t0 + h * (s.beat / 2), h % 2 ? 0.9 : 0.45);
-    }
-  });
-  const home = voice(prog[0], 3, spec.transpose);
-  const homeRoot = rootOf(prog[0], 3, spec.transpose);
-  piano.triggerAttackRelease(
-    home.map((n) => shift(n, 12)),
-    3,
-    s.finalAt,
-    0.6,
-  );
-  chug.triggerAttackRelease([homeRoot, shift(homeRoot, 7)], 2, s.finalAt, 0.8);
-  bass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 2.5, s.finalAt, 0.8);
-  violin.triggerAttackRelease(shift(home[0], 24), 2.6, s.finalAt, 0.55);
-};
-
-/**
  * Wrong About Space: lo-fi hip-hop, one steady loop. A mellow clean electric guitar carries the
  * ninth chords, the piano only pads quietly underneath, electric bass and a dusty swung beat run the
  * same pattern from the first bar to the last, with tape wow and a little vinyl.
@@ -649,7 +586,138 @@ const nocturne: Composer = async (spec, master, r) => {
   contrabass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 3, s.finalAt, 0.6);
 };
 
-const COMPOSERS: Record<ToneStyle, Composer> = { acoustic, strings, flute, pulse, drive, lofi, nocturne };
+/**
+ * Tone.js ports of the original arranged beds (nebula, orbit, meteor): the same event list as
+ * `../score.ts`, played on the Kawai upright's soft layer with Tone instruments standing in for the
+ * hand-written kick, sub, pad, shaker, riser, impact, sidechain and reverb.
+ */
+const scoreTone =
+  (style: ScoreStyle): Composer =>
+  async (spec, master) => {
+    const arr = scoreEvents({
+      style,
+      seconds: spec.seconds,
+      seed: spec.seed,
+      transpose: spec.transpose,
+      cues: spec.cues,
+    });
+    const hz = (m: number) => 440 * 2 ** ((m - 69) / 12);
+
+    // Melodic bus, ducked by the kick, dry plus a reverb send; drums dry.
+    const pump = new Tone.Gain(1);
+    pump.connect(master);
+    const verb = await reverb(1.6, 1);
+    pump.connect(verb);
+    verb.connect(new Tone.Gain(arr.reverb + 0.04).connect(master));
+    const drums = new Tone.Gain(1).connect(master);
+
+    // One sampler per pan position, all on the soft layer (what the original beds play).
+    const urls: Record<number, string> = {};
+    for (const f of spec.samples[KAWAI] ?? []) {
+      const m = /^(\d+)_v4\.mp3$/.exec(f);
+      if (m) urls[Number(m[1])] = f;
+    }
+    const pianos = new Map<number, Tone.Sampler>();
+    for (const e of arr.events) {
+      if (e.type !== 'piano' || pianos.has(e.pan)) continue;
+      const panner = new Tone.Panner(e.pan).connect(pump);
+      pianos.set(
+        e.pan,
+        new Tone.Sampler({ urls, baseUrl: `${spec.sampleBase}/${KAWAI}/`, release: 0.25 }).connect(panner),
+      );
+    }
+
+    const kick = new Tone.MembraneSynth({
+      pitchDecay: 0.03,
+      octaves: Math.log2(136 / 46),
+      oscillator: { type: 'sine' },
+      envelope: { attack: 0.002, decay: 0.45, sustain: 0, release: 0.05 },
+    }).connect(drums);
+    const sub = new Tone.PolySynth(Tone.Synth, {
+      oscillator: { type: 'sine' },
+      envelope: { attack: 0.01, decay: 0.6, sustain: 0.2, release: 0.08 },
+    }).connect(pump);
+    const pads = ([-1, 1] as const).map((side) =>
+      new Tone.PolySynth(Tone.Synth, {
+        detune: side * 2.6,
+        oscillator: { type: 'custom', partials: [1, 0.12] },
+        envelope: { attack: 0.6, decay: 0, sustain: 1, release: 0.6 },
+      }).connect(new Tone.Panner(side * 0.5).connect(pump)),
+    );
+    const shakers = new Map<number, Tone.NoiseSynth>();
+    const shakerAt = (pan: number) => {
+      if (!shakers.has(pan)) {
+        const n = new Tone.NoiseSynth({
+          noise: { type: 'white' },
+          envelope: { attack: 0.004, decay: 0.08, sustain: 0 },
+        });
+        n.chain(new Tone.Filter(7000, 'highpass'), new Tone.Panner(pan), drums);
+        shakers.set(pan, n);
+      }
+      return shakers.get(pan)!;
+    };
+    await Tone.loaded();
+
+    const kicks: number[] = [];
+    // Humanised timing can nudge the first notes just before 0 s; Web Audio needs t >= 0.
+    for (const e of arr.events.map((x) => ('t' in x ? { ...x, t: Math.max(0, x.t) } : x))) {
+      if (e.type === 'piano') {
+        const dur = Number.isFinite(e.ring) ? e.ring : 6;
+        pianos.get(e.pan)!.triggerAttackRelease(hz(e.midi), dur, e.t, Math.min(1, e.gain * 2.5));
+      } else if (e.type === 'kick') {
+        kicks.push(e.t);
+        kick.triggerAttackRelease(46, 0.4, e.t, e.gain);
+      } else if (e.type === 'sub') {
+        sub.triggerAttackRelease(hz(e.midi), Math.max(0.05, e.length - 0.08), e.t, e.gain);
+      } else if (e.type === 'pad') {
+        for (const p of pads) p.triggerAttackRelease(e.upper.map(hz), e.length, e.t, arr.padGain);
+      } else if (e.type === 'shaker') {
+        shakerAt(e.pan).triggerAttackRelease(0.08, e.t, Math.min(1, e.gain * 3));
+      } else if (e.type === 'riser') {
+        const t0 = Math.max(0, e.end - e.length);
+        const lp = new Tone.Filter(140, 'lowpass');
+        const g = new Tone.Gain(0);
+        const noise = new Tone.Noise('white').chain(lp, g, drums);
+        lp.frequency.setValueAtTime(140, t0);
+        lp.frequency.exponentialRampToValueAtTime(2200, e.end);
+        const curve = Array.from({ length: 32 }, (_, i) => (i / 31) ** 2 * e.gain * 2.2);
+        g.gain.setValueCurveAtTime(curve, t0, e.end - t0);
+        noise.start(t0).stop(e.end);
+      } else {
+        const boom = new Tone.Synth({
+          oscillator: { type: 'sine' },
+          envelope: { attack: 0.005, decay: 2.2, sustain: 0, release: 0.1 },
+        }).connect(drums);
+        boom.triggerAttackRelease(hz(e.midi), 2.3, e.t, e.gain);
+        const air = new Tone.Gain(0);
+        new Tone.Noise('white')
+          .chain(new Tone.Filter(420, 'lowpass'), air, drums)
+          .start(e.t)
+          .stop(e.t + 2.4);
+        air.gain.setValueAtTime(e.gain * 0.8, e.t);
+        air.gain.setTargetAtTime(0, e.t, 0.9);
+      }
+    }
+
+    // Sidechain: each kick dips the melodic bus and lets it breathe back (same curve as the original).
+    for (const t of kicks.sort((a, b) => a - b)) {
+      pump.gain.setValueAtTime(1 - arr.pump * 0.6, t);
+      pump.gain.linearRampToValueAtTime(1 - arr.pump, t + 0.0016);
+      pump.gain.setTargetAtTime(1, t + 0.0016, 0.11);
+    }
+  };
+
+const COMPOSERS: Record<ToneStyle, Composer> = {
+  acoustic,
+  strings,
+  flute,
+  pulse,
+  lofi,
+  nocturne,
+  'nebula-tone': scoreTone('nebula'),
+  'orbit-tone': scoreTone('orbit'),
+  'meteor-tone': scoreTone('meteor'),
+};
 
 function toBase64(a: Float32Array): string {
   const bytes = new Uint8Array(a.buffer, a.byteOffset, a.byteLength);

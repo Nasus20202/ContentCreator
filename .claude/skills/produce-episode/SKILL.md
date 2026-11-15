@@ -11,6 +11,7 @@ Drive the pipeline stage by stage. After every command, read its output; on fail
 
 - Pick the series (default `sky-this-week`) and, for weekly series, the **Monday** of the target week (normally next week). Location: `channel.config.json` → `defaultLocation` unless the user names one.
 - `pnpm -s cc episode new --series sky-this-week --week YYYY-MM-DD --location eu-central --actor claude`
+- Other series: `pnpm -s cc episode new --series <series> --slug <topic> [--date YYYY-MM-DD] --actor claude`. Put a date in the id **only** when the content is tied to it (news: the event date; a night-sky event). Evergreen explainers get no date, so they can be posted any time.
 
 ## 2. Research
 
@@ -21,7 +22,7 @@ Drive the pipeline stage by stage. After every command, read its output; on fail
 ## 3. Plan (skill: `plan-episode`)
 
 - Record the event selection **before** writing: `cc decision <id> --stage research --decision … --rationale … --alternatives "a|b"`.
-- Write `episodes/<id>/plan.json`, then `pnpm -s cc plan <id>` until it reports `plan accepted`.
+- Write `plan.json` in the episode folder (`episodes/<series>/<slug>/`), then `pnpm -s cc plan <id>` until it reports `plan accepted`.
 
 ## 4. Fact-check (skill: `fact-check`)
 
@@ -35,15 +36,17 @@ Drive the pipeline stage by stage. After every command, read its output; on fail
 
 ## 6. QA (skill: `qa-review`)
 
-- `pnpm -s cc qa <id>`, then **Read every frame** in `episodes/<id>/build/qa/`.
+- `pnpm -s cc qa <id>`, then **Read every frame** in the episode's `build/qa/`.
 - Fix problems in the plan (labels, camera, chips) → re-run `plan` → `factcheck` → (`voice` only if narration changed) → `render` → `qa`.
 - When clean: `cc qa <id> --review pass --actor claude --notes "<what you checked>"`.
 
 ## 7. Hand off
 
 - `pnpm -s cc report <id>`.
-- Tell the user: the video path (`episodes/<id>/build/video.mp4`), the script, the decisions you made, anything you are unsure about, and the approval command they run themselves:
+- Tell the user: the video path (`episodes/<series>/<slug>/build/video.mp4`), sent with SendUserFile when they are on the phone, the script, the decisions you made, anything you are unsure about, and the approval command they run themselves:
   `pnpm cc approve <id> --by "<their name>"`.
 - Commit the episode records (not `build/`) with a conventional message, e.g. `feat(episode): sky-this-week 2026-11-16 eu-central`, if the user wants commits.
+
+- Add the pending approval to `TODO.md` ("Needs the owner"), with the episode id and the slot it is meant for.
 
 Do **not** approve or publish yourself. Publishing is the `publish-episode` skill, and only on explicit request.

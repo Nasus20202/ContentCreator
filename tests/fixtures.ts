@@ -73,10 +73,8 @@ export function plan(overrides: Partial<Plan> = {}): Plan {
 }
 
 export const config: ChannelConfig = {
-  name: 'test',
   defaultLocation: 'eu-central',
   locations: [EU],
-  voice: { id: 'af_heart', speed: 1 },
   autoApprove: false,
   publishing: {
     defaultMode: 'draft',

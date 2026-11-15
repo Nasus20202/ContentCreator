@@ -341,6 +341,69 @@ describe('pipeline stages', () => {
     expect(r.targets.map((t) => t.status)).toEqual(['submitted', 'submitted']);
   });
 
+  it('only swaps a scheduled video for a render the human approved, and keeps the time by default', async () => {
+    await toQaPassed();
+    stages.approve(ep, 'Tester', 'human', config);
+    const date = '2099-01-02T17:00:00Z';
+    await stages.publish(
+      ep,
+      {
+        targets: [{ platform: 'youtube', channelId: 'yt' }],
+        mode: 'schedule',
+        date,
+        dryRun: false,
+        publisher: {
+          provider: 'buffer',
+          endpoint: 'https://buffer.test',
+          hostMedia: () => Promise.resolve({ url: 'https://media.test/old.mp4' }),
+          post: () => Promise.resolve({ id: 'YT1' }),
+        },
+        buildPayload: (p, t, m) => buildCreatePostInput(p, t, m, { mode: 'schedule', date, aiDisclosure: false }),
+      },
+      'claude',
+    );
+    // Same approved bytes under a new URL (e.g. after a rename): allowed, time unchanged.
+    const moved = await stages.reschedule(
+      ep,
+      { endpoint: 'x', edit: () => Promise.resolve(), mediaUrl: 'https://media.test/new.mp4' },
+      'claude',
+    );
+    expect(moved.scheduledFor).toBe(new Date(date).toISOString());
+    expect(moved.media?.url).toBe('https://media.test/new.mp4');
+    // Moving the same file to another host is allowed without a new approval, but only for those bytes.
+    const posted = stages.currentMedia(ep);
+    expect(posted.url).toBe('https://media.test/new.mp4');
+    await expect(
+      stages.reschedule(
+        ep,
+        { endpoint: 'x', edit: () => Promise.resolve(), mediaUrl: 'https://assets.test/x.mp4', rehostedSha256: 'nope' },
+        'claude',
+      ),
+    ).rejects.toThrow(/not the video/);
+    // A fresh, unapproved render must not reach the live post.
+    await stages.runRender(ep, fakeRenderer, 'pipeline');
+    await stages.runQa(ep, fakeQa, 'pipeline');
+    stages.reviewQa(ep, 'pass', 'looked at frames', 'claude');
+    const rehosted = await stages.reschedule(
+      ep,
+      {
+        endpoint: 'x',
+        edit: () => Promise.resolve(),
+        mediaUrl: 'https://assets.test/a.mp4',
+        rehostedSha256: posted.sha256,
+      },
+      'claude',
+    );
+    expect(rehosted.videoSha256).toBe(posted.sha256);
+    await expect(
+      stages.reschedule(
+        ep,
+        { endpoint: 'x', edit: () => Promise.resolve(), mediaUrl: 'https://media.test/v2.mp4' },
+        'claude',
+      ),
+    ).rejects.toThrow(/not been approved/);
+  });
+
   it('reschedules submitted posts and records the move', async () => {
     await toQaPassed();
     stages.approve(ep, 'Tester', 'human', config);

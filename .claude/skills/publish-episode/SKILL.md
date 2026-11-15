@@ -17,14 +17,16 @@ description: Hand an episode to the human for approval and publish it to YouTube
    (payloads are recorded in `publish.json`).
 2. Only after the user explicitly confirms platforms, mode and time:
    `pnpm -s cc publish <id> --mode schedule --at 2026-11-14T17:00:00Z --actor claude`
-   - This commits the video to the public `videos` branch, then creates one Buffer post per platform.
+   - This commits the video to the public assets repo (`Nasus20202/ContentCreator-assets`, `<series>/<slug>-<sha8>.mp4`), then creates one Buffer post per platform.
    - `draft` saves Buffer drafts for a final manual click in Buffer.
    - Partial failures are recorded per platform; retry with `--platforms <failed ones>`.
    - To move scheduled posts: `pnpm -s cc publish reschedule <id> --at <ISO> --actor claude` (recorded as a `reschedule` attempt).
+   - To put an approved re-render on already-scheduled posts: `pnpm -s cc publish reschedule <id> --replace-video --actor claude` (keeps the time unless `--at` is given; refused unless the human approved exactly that render).
    - To take still-scheduled posts out of the queue (free slots): `pnpm -s cc publish unschedule <id> --actor claude` (deletes them in Buffer, recorded as an `unschedule` attempt; the episode stays approved and can be scheduled again).
    - Queue policy: keep the **next 10 days** filled (one post per day per channel, 10-post limit); don't park far-future posts in Buffer.
 3. Check the posts in the Buffer queue (<https://publish.buffer.com>), `pnpm -s cc report <id>`, and tell the user what was submitted (and what failed, verbatim).
-4. Commit the updated records.
+4. Update `TODO.md`: the queue section (what is scheduled through which date, what is approved but waiting for a slot).
+5. Commit the updated records.
 
 ## Later: metrics
 

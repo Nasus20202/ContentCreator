@@ -3,6 +3,7 @@
  * Every pipeline command goes through `Episode` so nothing happens without a record.
  */
 import fs from 'node:fs';
+import path from 'node:path';
 import { episodePaths, type EpisodePaths } from './paths';
 import { appendJsonl, gitSha, nowIso, PipelineError, readJson, readJsonl, writeJson } from './io';
 import { Decision, LogEntry, Manifest, STAGES, type Actor, type Stage } from './schemas';
@@ -39,12 +40,22 @@ export class Episode {
     return new Episode(id, readJson(p.manifest, Manifest));
   }
 
+  /** Every episode id under `root` (`<series>/<slug>/`, plus any legacy flat `<id>/`). */
   static list(root: string): string[] {
     if (!fs.existsSync(root)) return [];
-    return fs
-      .readdirSync(root)
-      .filter((d) => fs.existsSync(episodePaths(d).manifest))
-      .sort();
+    const ids: string[] = [];
+    for (const d of fs.readdirSync(root, { withFileTypes: true })) {
+      if (!d.isDirectory()) continue;
+      if (fs.existsSync(path.join(root, d.name, 'episode.json'))) {
+        ids.push(d.name);
+        continue;
+      }
+      for (const s of fs.readdirSync(path.join(root, d.name), { withFileTypes: true })) {
+        if (s.isDirectory() && fs.existsSync(path.join(root, d.name, s.name, 'episode.json')))
+          ids.push(`${d.name}-${s.name}`);
+      }
+    }
+    return ids.filter((id) => fs.existsSync(episodePaths(id).manifest)).sort();
   }
 
   get manifest(): Readonly<Manifest> {

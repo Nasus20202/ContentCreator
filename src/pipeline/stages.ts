@@ -11,10 +11,11 @@ import { livePosts } from '../publish/live';
 import { replaceVideoUrl } from '../publish/payload';
 import { Episode, stageIndex } from '../core/episode';
 import { hashData, nowIso, PipelineError, readJson, sha256File, writeJson } from '../core/io';
-import { paths } from '../core/paths';
+import { episodePaths, paths } from '../core/paths';
 import {
   AssetsFile,
   FactsFile,
+  Manifest,
   Plan,
   PublishRecord,
   QaRecord,
@@ -64,6 +65,11 @@ export async function restoreAssets(ep: Episode, fetchImpl: typeof fetch = fetch
     const file = path.join(ep.paths.build, a.file);
     let status: AssetRestore['status'] = 'present';
     if (!fs.existsSync(file)) {
+      if (a.source.provider === 'web')
+        throw new PipelineError(
+          `asset ${a.id} was imported by hand and cannot be re-downloaded`,
+          `Re-create it from ${a.source.url} (${a.source.derivation ?? 'see assets.json'}) and run: cc asset add ${ep.id} --file … --id ${a.id}`,
+        );
       const res = await fetchImpl(a.source.url);
       if (!res.ok) throw new PipelineError(`asset ${a.id}: download failed, HTTP ${res.status} from ${a.source.url}`);
       fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -109,6 +115,67 @@ export function createEpisode(opts: {
     },
     opts.actor,
   );
+}
+
+/**
+ * Rename an episode (and move it to its series folder). The id lives in episode.json and
+ * plan.episodeId; because the plan hash covers the id, every record that signed the old plan hash
+ * (manifest hashes, factcheck.json, render.json) is re-signed with the new one, and the rename is
+ * logged with both hashes so the chain stays auditable. Approvals pin the video sha, which a rename
+ * does not change. Hosted media keep their old file names (they are immutable copies).
+ */
+export function renameEpisode(fromId: string, toId: string, actor: Actor): Episode {
+  const from = Episode.load(fromId);
+  const series = from.manifest.series;
+  if (!toId.startsWith(`${series}-`) || toId.length <= series.length + 1)
+    throw new PipelineError(`New id must start with the series: "${series}-<slug>"`);
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(toId))
+    throw new PipelineError(`Invalid id "${toId}" (lowercase, digits, dashes)`);
+  const target = path.join(paths.episodes, series, toId.slice(series.length + 1));
+  if (fs.existsSync(target))
+    throw new PipelineError(fromId === toId ? `${toId} is already in place` : `Episode ${toId} already exists`);
+
+  const oldPlan = fs.existsSync(from.paths.plan) ? readJson(from.paths.plan, Plan) : undefined;
+  const oldHash = oldPlan ? planHash(oldPlan) : undefined;
+  fs.mkdirSync(path.dirname(target), { recursive: true });
+  fs.renameSync(from.paths.dir, target);
+  // Drop the old series/legacy folder if the move emptied it.
+  const oldParent = path.dirname(from.paths.dir);
+  if (oldParent !== paths.episodes && fs.readdirSync(oldParent).length === 0) fs.rmdirSync(oldParent);
+
+  const to = episodePaths(toId);
+  let newHash: string | undefined;
+  if (oldPlan && oldHash) {
+    const plan = Plan.parse({ ...oldPlan, episodeId: toId });
+    writeJson(to.plan, plan);
+    newHash = planHash(plan);
+    for (const file of [to.factcheck, to.render]) {
+      if (!fs.existsSync(file)) continue;
+      const rec = JSON.parse(fs.readFileSync(file, 'utf8')) as { planHash?: string };
+      if (rec.planHash === oldHash) writeJson(file, { ...rec, planHash: newHash });
+    }
+  }
+  const manifest = readJson(to.manifest, Manifest);
+  const hashes = Object.fromEntries(
+    Object.entries(manifest.hashes).map(([k, v]) => [k, oldHash && v === oldHash ? newHash! : v]),
+  );
+  writeJson(to.manifest, Manifest.parse({ ...manifest, id: toId, hashes }));
+  const ep = Episode.load(toId);
+  ep.log(actor, ep.stage, 'episode.rename', { from: fromId, to: toId, planHash: { from: oldHash, to: newHash } });
+  return ep;
+}
+
+/** Episode id convention: dates only for date-bound content (see docs/plan-format.md). */
+export function episodeId(opts: {
+  series: string;
+  slug?: string;
+  date?: string;
+  week?: string;
+  location?: string;
+}): string {
+  if (opts.week) return [opts.series, opts.week, opts.location].filter(Boolean).join('-');
+  if (!opts.slug) throw new PipelineError('--slug is required (or --week for weekly series)', 'e.g. --slug moon-drift');
+  return [opts.series, opts.date, opts.slug].filter(Boolean).join('-');
 }
 
 // ------------------------------------------------------------------ research
@@ -430,14 +497,31 @@ export async function unschedule(
 }
 
 /** Moves the scheduled posts of the latest real submission to a new time; recorded as a `reschedule` attempt. */
+/** The hosted video the episode's latest real submission points at, with the hash it was recorded with. */
+export function currentMedia(ep: Episode): { url: string; sha256: string } {
+  if (!fs.existsSync(ep.paths.publish)) throw new PipelineError('Nothing published yet');
+  const record = readJson(ep.paths.publish, PublishRecord);
+  const a = record.attempts.findLast(
+    (x) => !x.dryRun && x.media?.url && x.targets.some((t) => t.status === 'submitted'),
+  );
+  if (!a?.media) throw new PipelineError('No hosted media recorded for this episode');
+  return { url: a.media.url, sha256: a.videoSha256 };
+}
+
 export async function reschedule(
   ep: Episode,
   opts: {
-    date: string;
+    /** New time; omitted keeps the posts' current time (e.g. when only the media moves). */
+    date?: string;
     endpoint: string;
     edit: (input: Record<string, unknown>) => Promise<unknown>;
     /** Point the existing posts at another hosted video (e.g. a re-render of the same cut). */
     mediaUrl?: string;
+    /**
+     * The new URL serves the very file the posts already use (verified by sha256, e.g. after moving
+     * the media host), so no render or approval check applies; the recorded hash stays the same.
+     */
+    rehostedSha256?: string;
   },
   actor: Actor,
 ): Promise<PublishRecord['attempts'][number]> {
@@ -452,14 +536,24 @@ export async function reschedule(
     (p) => p.scheduledFor !== undefined && new Date(p.scheduledFor).getTime() > now,
   );
   if (live.length === 0) throw new PipelineError('No scheduled (future) posts to reschedule');
-  const dueAt = new Date(opts.date).toISOString();
+  const times = [...new Set(live.map((p) => p.scheduledFor!))];
+  if (!opts.date && times.length > 1) throw new PipelineError('The posts are scheduled at different times; give --at');
+  const dueAt = new Date(opts.date ?? times[0]).toISOString();
   if (new Date(dueAt).getTime() <= Date.now()) throw new PipelineError('--at must be in the future');
-  // Swapping the media means the post no longer matches the approved file, so require a QA-passed
-  // render and record its hash rather than the old one.
+  // Swapping the media puts a different file on a live post, so it must be the current render and
+  // a human must have approved exactly that file (re-hosting the same approved bytes passes too).
   const swapped = opts.mediaUrl !== undefined;
-  if (swapped) {
+  const rehosted = swapped && opts.rehostedSha256 !== undefined;
+  if (rehosted && opts.rehostedSha256 !== last.videoSha256)
+    throw new PipelineError('The re-hosted file is not the video these posts use (sha256 differs)');
+  if (swapped && !rehosted) {
     ep.requireStage('qa-passed');
-    requireFreshRender(ep);
+    const render = requireFreshRender(ep);
+    if (!ep.manifest.approvals.some((a) => a.videoSha256 === render.videoSha256))
+      throw new PipelineError(
+        'The current render has not been approved, so it cannot replace the scheduled video',
+        `Ask the human to watch build/video.mp4 and run: cc approve ${ep.id} --by "<name>"`,
+      );
   }
   const attempt: PublishRecord['attempts'][number] = {
     at: nowIso(),
@@ -469,7 +563,7 @@ export async function reschedule(
     dryRun: false,
     provider: 'buffer',
     endpoint: opts.endpoint,
-    videoSha256: swapped ? (ep.manifest.hashes.video ?? last.videoSha256) : last.videoSha256,
+    videoSha256: swapped && !rehosted ? readJson(ep.paths.render, RenderRecord).videoSha256 : last.videoSha256,
     media: swapped ? { url: opts.mediaUrl! } : last.media,
     targets: [],
   };

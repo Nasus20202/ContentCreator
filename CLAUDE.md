@@ -2,7 +2,9 @@
 
 This repo is a short-form video channel run from Claude Code. You (Claude) plan, write, fact-check and review episodes; the `cc` CLI does everything deterministic (astronomy, TTS, rendering, QA, publishing) and **records every step**. A human approves before anything is published.
 
-Read before working: `docs/quality-bar.md` (non-negotiable), the series file in `series/`, and `docs/plan-format.md` when writing a plan.
+Read before working: **`TODO.md`** (open chores and hand-offs: pending approvals, the publishing queue, owner tasks), `docs/quality-bar.md` (non-negotiable), the series file in `series/`, and `docs/plan-format.md` when writing a plan.
+
+**Keep `TODO.md` current.** Before you finish a session, tick what you completed (move it to _Done_ with the date) and add anything now pending: approvals you asked for, posts waiting for a slot, follow-ups the owner must do. Episode state itself lives in the records (`pnpm -s cc status`), not in TODO.md.
 
 ## Golden rules
 
@@ -40,4 +42,5 @@ episode new → research → plan.json (you) → plan → factcheck (+ your revi
 - Before committing: `pnpm check` (prettier, eslint, tsc, vitest). Add tests for new logic in `tests/`.
 - Dependencies: Renovate (`renovate.json`, preset `github>Nasus20202/renovate`). Remotion packages share one exact version; TypeScript stays < 6.1 until typescript-eslint supports 7.
 - CI (`.github/workflows/ci.yml`): format, lint, typecheck, tests (+coverage), Remotion bundle, record validation (`cc validate`).
-- Commit episode records (everything in `episodes/<id>/` except `build/`). Conventional commit messages.
+- Episodes live in `episodes/<series>/<slug>/` (id `<series>-<slug>`). Dates go in the id only for date-bound content (weekly guides, events, news: the event date); evergreen explainers have none. Rename or move with `cc episode rename`, never by hand.
+- Commit episode records (everything in the episode folder except `build/`). Conventional commit messages.
