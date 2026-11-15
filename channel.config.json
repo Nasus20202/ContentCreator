@@ -1,5 +1,4 @@
 {
-  "name": "Sky This Week",
   "defaultLocation": "eu-central",
   "locations": [
     {
@@ -38,10 +37,6 @@
       "timeZone": "Australia/Sydney"
     }
   ],
-  "voice": {
-    "id": "af_heart",
-    "speed": 1.05
-  },
   "autoApprove": false,
   "publishing": {
     "defaultMode": "draft",
@@ -49,8 +44,8 @@
     "provider": "buffer",
     "mediaHost": {
       "type": "git-branch",
-      "repo": "Nasus20202/ContentCreator",
-      "branch": "videos"
+      "repo": "Nasus20202/ContentCreator-assets",
+      "branch": "main"
     },
     "targets": [
       {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { AbsoluteFill, Img, staticFile } from 'remotion';
+import { AbsoluteFill, Img, OffthreadVideo, staticFile } from 'remotion';
 import type { FactCardParams, ImageParams, OutroParams } from '../../src/core/schemas';
 import { Credit, Starfield } from '../components/overlays';
 import markPng from '../brand/mark.png';
@@ -113,7 +113,7 @@ export const FactCardScene: React.FC<{ sceneId: string; params: FactCardParams }
 
 export const ImageScene: React.FC<{ params: ImageParams }> = ({ params }) => {
   const accent = useAccent();
-  const { t, at, durationSec, props } = useSceneTime();
+  const { t, at, durationSec, props, fps } = useSceneTime();
   const asset = props.assets[params.assetId];
   if (!asset) throw new Error(`Asset ${params.assetId} missing`);
   const k = ease(Math.min(1, t / Math.max(1, durationSec)));
@@ -139,6 +139,21 @@ export const ImageScene: React.FC<{ params: ImageParams }> = ({ params }) => {
             }}
           />
         </div>
+      ) : asset.kind === 'video' ? (
+        // Real footage plays muted (narration and music carry the audio) from `start` seconds in.
+        <OffthreadVideo
+          src={staticFile(asset.file)}
+          muted
+          trimBefore={Math.round((params.start ?? 0) * fps)}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: `${params.focus[0] * 100}% ${params.focus[1] * 100}%`,
+            transform: `scale(${scale})`,
+            transformOrigin: `${params.focus[0] * 100}% ${params.focus[1] * 100}%`,
+          }}
+        />
       ) : (
         <Img
           src={staticFile(asset.file)}

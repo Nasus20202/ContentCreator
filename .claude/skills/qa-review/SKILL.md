@@ -5,7 +5,7 @@ description: Visually review a rendered episode via the frames extracted by `cc 
 
 # Visual QA review
 
-`pnpm -s cc qa <id>` runs technical checks (resolution, codec, duration ≤ 60 s, loudness ≈ -14 LUFS, true peak, black gaps) and extracts one frame per sentence plus each scene's last frame into `episodes/<id>/build/qa/`. Any ✗ there must be fixed first.
+`pnpm -s cc qa <id>` runs technical checks (resolution, codec, duration ≤ 60 s, loudness ≈ -14 LUFS, true peak, black gaps) and extracts one frame per sentence plus each scene's last frame into the episode's `build/qa/` (`episodes/<series>/<slug>/build/qa/`). Any ✗ there must be fixed first.
 
 ## Look at every frame (Read tool) and check
 

@@ -6,7 +6,7 @@ import { z } from 'zod';
 import { isPianoStyle, loadPianoNote, pianoLoop, type PianoStyle } from './piano-loop';
 import { isScoreStyle, renderScore, scoreNotes, type ScoreStyle } from './score';
 import { renderToneBed } from './tone/render';
-import { isToneStyle, LEGACY_STYLES, type LegacyStyle, type ToneStyle } from './tone/styles';
+import { type ToneStyle } from './tone/styles';
 
 const run = promisify(execFile);
 
@@ -72,16 +72,17 @@ export async function extractFrame(file: string, tSec: number, out: string): Pro
  * Music beds, chosen per series or pinned per episode in the plan (`music.style`). The `piano*` beds
  * are the channel's original piano loops (`piano-loop.ts`); the others are composed with Tone.js and
  * tonal on recorded instruments (`tone/compose.ts`) and rendered offline in headless Chromium.
- * Older plans may name a retired style; it maps to its successor.
  */
 export type BedStyle = ToneStyle | PianoStyle | ScoreStyle;
-export type MusicStyle = BedStyle | LegacyStyle;
+export type MusicStyle = BedStyle;
 
 /** The bed a series gets unless its plan pins `music.style`. */
 export const SERIES_BED: Record<string, BedStyle> = {
-  'sky-this-week': 'orbit',
-  'sky-tonight': 'meteor',
-  'sky-school': 'nebula',
+  // Tone.js ports of the original arranged beds on the Kawai upright (owner's pick, 2026-11-15);
+  // the originals (`orbit`/`nebula`/`meteor`, ../score.ts) stay available to pin per plan.
+  'sky-this-week': 'orbit-tone',
+  'sky-tonight': 'meteor-tone',
+  'sky-school': 'nebula-tone',
   'one-shot': 'flute',
   'wrong-about-space': 'acoustic',
   'cosmic-top-5': 'pulse',
@@ -89,11 +90,8 @@ export const SERIES_BED: Record<string, BedStyle> = {
   'weird-physics': 'pulse',
 };
 
-export const bedFor = (series: string): BedStyle => SERIES_BED[series] ?? 'piano';
-
-/** Resolve a (possibly retired) style name to the style that actually renders. */
-export const resolveStyle = (style: MusicStyle): BedStyle =>
-  isToneStyle(style) || isPianoStyle(style) || isScoreStyle(style) ? style : LEGACY_STYLES[style];
+/** A new series without a chosen bed gets the calm Tone.js `nocturne` until one is picked. */
+export const bedFor = (series: string): BedStyle => SERIES_BED[series] ?? 'nocturne';
 
 export interface BedVariant {
   /** Picks the progression/motif variant and the humanisation. */
@@ -108,12 +106,12 @@ export interface BedVariant {
 export async function synthesizePad(
   out: string,
   seconds: number,
-  style: MusicStyle = 'piano',
+  style: MusicStyle = 'nocturne',
   variant: BedVariant = {},
 ): Promise<void> {
   const sr = 44100;
   const n = Math.ceil((seconds + 2) * sr);
-  const resolved = resolveStyle(style);
+  const resolved = style;
   if (isScoreStyle(resolved)) {
     const shift = variant.transpose ?? 0;
     const notes = new Map<number, Awaited<ReturnType<typeof loadPianoNote>>>();
@@ -142,7 +140,35 @@ export async function synthesizePad(
   return writeBed(out, bed.left, bed.right, n, sr);
 }
 
-async function writeBed(out: string, left: Float32Array, right: Float32Array, n: number, sr: number): Promise<void> {
+/**
+ * Copy a channel into exactly `n` samples, zero-padding a short one. A renderer can return a sample
+ * fewer than `ceil((seconds + 2) * sr)` through float rounding; reading past its end gives NaN, which
+ * used to poison the peak and silently zero the whole bed.
+ */
+export function fitChannel(ch: Float32Array, n: number): Float32Array {
+  if (ch.length === n) return ch;
+  const outCh = new Float32Array(n);
+  outCh.set(ch.subarray(0, n));
+  return outCh;
+}
+
+/** Peak of the faded bed; throws if it is silent or not finite, so a mute bed never reaches a render. */
+export function bedPeak(left: Float32Array, right: Float32Array): number {
+  let peak = 0;
+  for (let i = 0; i < left.length; i++) peak = Math.max(peak, Math.abs(left[i]), Math.abs(right[i]));
+  if (!Number.isFinite(peak) || peak < 1e-4) throw new Error(`music bed is silent or invalid (peak ${peak})`);
+  return peak;
+}
+
+async function writeBed(
+  out: string,
+  rawLeft: Float32Array,
+  rawRight: Float32Array,
+  n: number,
+  sr: number,
+): Promise<void> {
+  const left = fitChannel(rawLeft, n);
+  const right = fitChannel(rawRight, n);
   const dur = n / sr;
 
   // Fades, then peak-normalise only for headroom and fix the loudness afterwards: a struck piano
@@ -151,16 +177,14 @@ async function writeBed(out: string, left: Float32Array, right: Float32Array, n:
   const fadeIn = Math.floor(2.5 * sr);
   const fadeOutStart = Math.floor((dur - 4) * sr);
   const fadeOut = Math.max(1, n - fadeOutStart);
-  let peak = 0;
   for (let i = 0; i < n; i++) {
     let g = 1;
     if (i < fadeIn) g = i / fadeIn;
     if (i > fadeOutStart) g *= (n - i) / fadeOut;
     left[i] *= g;
     right[i] *= g;
-    peak = Math.max(peak, Math.abs(left[i]), Math.abs(right[i]));
   }
-  const norm = peak > 0 ? 0.95 / peak : 0;
+  const norm = 0.95 / bedPeak(left, right);
 
   const pcm = Buffer.alloc(44 + n * 4);
   pcm.write('RIFF', 0);

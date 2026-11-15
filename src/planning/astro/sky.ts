@@ -4,7 +4,6 @@ import type { Location } from '../../core/schemas';
 
 export const ENGINE = 'astronomy-engine@2';
 export const NAKED_EYE_PLANETS = ['Mercury', 'Venus', 'Mars', 'Jupiter', 'Saturn'] as const;
-export type PlanetName = (typeof NAKED_EYE_PLANETS)[number];
 
 /** Mean angular diameter of the full Moon, degrees. */
 export const MOON_DIAMETER_DEG = 0.52;

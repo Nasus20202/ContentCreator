@@ -287,6 +287,8 @@ export const ImageParams = z.object({
   focus: z.tuple([z.number().min(0).max(1), z.number().min(0).max(1)]).default([0.5, 0.5]),
   /** "cover" fills the frame (crops), "contain" shows the whole image as a centred band. */
   fit: z.enum(['cover', 'contain']).default('cover'),
+  /** Video assets only: where in the clip (seconds) the scene starts playing. Played muted. */
+  start: z.number().min(0).optional(),
   /**
    * A ring and label on the focus point ("cover" only: the focus pixel stays at the same place on
    * screen while zooming, so the ring stays on target), e.g. Earth in the Pale Blue Dot.
@@ -327,7 +329,6 @@ export const Scene = z.discriminatedUnion('template', [
   z.object({ ...SceneBase, template: z.literal('outro'), params: OutroParams }),
 ]);
 export type Scene = z.infer<typeof Scene>;
-export type SceneTemplate = Scene['template'];
 
 export const Platform = z.enum(['youtube', 'tiktok', 'instagram', 'facebook']);
 export type Platform = z.infer<typeof Platform>;
@@ -345,7 +346,7 @@ export const Plan = z.object({
     /** Multiplier on the synthesised bed. 0.14-0.15 sits ~11 LU under the voice. */
     volume: z.number().min(0).max(1).default(0.15),
     /**
-     * Bed character; see src/render/tone/compose.ts (retired names map via LEGACY_STYLES). Optional rather than defaulted so adding it
+     * Bed character; see src/render/media.ts (SERIES_BED) and src/render/tone/compose.ts. Optional rather than defaulted so adding it
      * does not change the plan hash of episodes that predate it.
      */
     style: z
@@ -357,15 +358,15 @@ export const Plan = z.object({
         'strings',
         'flute',
         'pulse',
-        'drive',
         'lofi',
         'nocturne',
-        // retired names, kept so older plans validate (they map to the styles above)
-        'lab',
+        'nebula-tone',
+        'orbit-tone',
+        'meteor-tone',
+        // the original Node-mixed arranged beds (src/render/score.ts), pinnable per plan
         'orbit',
         'nebula',
         'meteor',
-        'telemetry',
       ])
       .optional(),
     /** Bed variant: timing/velocity seed and transposition in semitones. Optional, same reason as style. */
@@ -411,12 +412,15 @@ export const AssetRecord = z.object({
   file: z.string(),
   sha256: z.string(),
   source: z.object({
-    provider: z.enum(['nasa-images', 'esa', 'wikimedia', 'own']),
+    /** `web`: a file fetched by hand (e.g. a clip cut from an online video), imported with `--file`. */
+    provider: z.enum(['nasa-images', 'esa', 'wikimedia', 'web', 'own']),
     url: z.url(),
     pageUrl: z.url().optional(),
     title: z.string(),
     credit: z.string(),
     license: z.string(),
+    /** How the file was derived from the source (trim, crop, muting), for `web` imports. */
+    derivation: z.string().optional(),
   }),
   aiGenerated: z.boolean().default(false),
   addedAt: z.iso.datetime(),
@@ -551,21 +555,19 @@ export type MetricSnapshot = z.infer<typeof MetricSnapshot>;
 // ---------------------------------------------------------------- config
 
 export const ChannelConfig = z.object({
-  name: z.string(),
   defaultLocation: z.string(),
   locations: z.array(Location),
-  voice: z.object({ id: z.string(), speed: z.number() }),
   /** Never auto-approve unless the human explicitly flips this. */
   autoApprove: z.boolean().default(false),
   publishing: z.object({
     defaultMode: z.enum(['now', 'schedule', 'draft']).default('draft'),
     aiDisclosure: z.boolean().default(true),
     provider: z.literal('buffer').default('buffer'),
-    /** Buffer fetches media by URL: approved videos are committed to an orphan branch of this public repo. */
+    /** Buffer fetches media by URL: approved videos are committed to a separate public assets repo. */
     mediaHost: z.object({
       type: z.literal('git-branch'),
       repo: z.string().regex(/^[\w.-]+\/[\w.-]+$/),
-      branch: z.string().default('videos'),
+      branch: z.string().default('main'),
     }),
     targets: z.array(z.object({ platform: Platform, channelId: z.string(), enabled: z.boolean().default(true) })),
   }),
@@ -608,7 +610,10 @@ export const RenderProps = z.object({
   timeline: Timeline,
   sky: z.record(z.string(), SkySnapshot),
   orbits: z.record(z.string(), OrbitSnapshot),
-  assets: z.record(z.string(), z.object({ file: z.string(), credit: z.string() })),
+  assets: z.record(
+    z.string(),
+    z.object({ file: z.string(), credit: z.string(), kind: z.enum(['image', 'video']).default('image') }),
+  ),
   musicFile: z.string().optional(),
   /** Series accent, so every template draws the same colour without importing the theme map. */
   accent: z.object({ hex: z.string(), rgb: z.string() }),

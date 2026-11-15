@@ -5,7 +5,7 @@ description: Choose what an episode covers and write its plan.json (script, scen
 
 # Plan an episode
 
-Inputs: `research.json`, `facts.json`, `series/<series>.md`, `docs/quality-bar.md`, `docs/plan-format.md` (template reference). Output: `episodes/<id>/plan.json`, validated with `pnpm -s cc plan <id>`.
+Inputs: `research.json`, `facts.json`, `series/<series>.md`, `docs/quality-bar.md`, `docs/plan-format.md` (template reference). Output: `plan.json` in the episode folder (`episodes/<series>/<slug>/`), validated with `pnpm -s cc plan <id>`.
 
 ## Choose
 

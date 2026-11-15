@@ -11,7 +11,7 @@ description: Add a new series (e.g. science news, space missions explained) or a
 2. Research path:
    - **Computed** (like the sky): add a generator in `src/planning/<domain>/` that returns `{ events, facts }`, a `cc research <domain>` command, and tests with a known date.
    - **Sourced** (news/science): research on the web; add every claim with `cc fact add <id> --url … --title … --publisher … --statement … --values …`. Primary sources only (agency/paper/press release), not aggregators. Images via `cc asset search` / `cc asset add` (NASA library; credits are recorded and shown).
-3. Episodes without a location/window: `cc episode new --series <id> --id <series>-<yyyy-mm-dd>-<slug>`.
+3. Episodes without a location/window: `cc episode new --series <id> --slug <slug> [--date YYYY-MM-DD]` (date only for date-bound content).
 4. Record the decision: `cc decision --channel --stage strategy …`.
 
 ## New scene template

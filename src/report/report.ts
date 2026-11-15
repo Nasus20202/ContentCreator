@@ -259,7 +259,7 @@ export function ledger(): string {
     const live = pub ? [...livePosts(pub).keys()] : [];
     const views = latestViews(readJsonl(ep.paths.metrics, MetricSnapshot));
     return [
-      `[${id}](../episodes/${id}/README.md)`,
+      `[${id}](${path.relative(paths.docs, ep.paths.readme).split(path.sep).join('/')})`,
       ep.manifest.series,
       ep.stage,
       plan?.post.title ?? '—',

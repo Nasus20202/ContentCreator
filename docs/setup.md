@@ -20,7 +20,7 @@ Optional: `cp .env.example .env` and set `BUFFER_API_KEY` (see `publishing.md`).
 ## Previewing an episode in Remotion Studio
 
 ```bash
-pnpm studio -- --props episodes/<id>/build/render-props.json --public-dir episodes/<id>/build
+pnpm studio -- --props episodes/<series>/<slug>/build/render-props.json --public-dir episodes/<series>/<slug>/build
 ```
 
 `render-props.json` is produced by `cc render`; voice files by `cc voice`.

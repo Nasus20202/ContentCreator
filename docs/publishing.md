@@ -16,11 +16,12 @@ history if we ever need it).
 ```
 cc publish <id> --mode schedule --at <ISO>
   1. checks: stage approved, current video sha256 == approved sha256, targets configured
-  2. hosts the video: commits `<episode>-<sha8>.mp4` to the orphan `videos` branch of this public repo
-     (git plumbing; working tree untouched) → https://raw.githubusercontent.com/<repo>/videos/<file>
+  2. hosts the video: commits `<series>/<slug>-<sha8>.mp4` to the public assets repo
+     (`Nasus20202/ContentCreator-assets`, branch `main`) with git plumbing in a local bare cache
+     (`.cache/media.git`; this repo never holds a video) → https://raw.githubusercontent.com/<assets repo>/main/<file>
      (Buffer only accepts media by public URL; re-runs reuse the file)
   3. one Buffer createPost per platform (a failure on one does not block the others)
-  4. records everything in episodes/<id>/publish.json (payloads, media URL, Buffer post ids, errors)
+  4. records everything in episodes/<series>/<slug>/publish.json (payloads, media URL, Buffer post ids, errors)
 ```
 
 Per-platform input (`src/publish/payload.ts`):
@@ -40,17 +41,22 @@ If a cut is re-rendered before it goes out (Buffer fetches the media URL at publ
 same slot and repoint the posts:
 
 ```
-cc publish reschedule <id> --at <same ISO> --replace-video
+cc publish reschedule <id> [--at <ISO>] [--replace-video | --rehost]
 ```
 
-`--replace-video` requires a QA-passed render, hosts `build/video.mp4` as `<id>-<sha8>.mp4` on the `videos` branch,
-then sends each post's original payload with only `assets[0].video.url` replaced (`replaceVideoUrl`); the attempt
-records the new video hash and media URL. Without the flag it only moves the time. Both paths write a `reschedule`
+`--at` omitted keeps the posts' current time.
+
+`--replace-video` puts the current render on the scheduled posts. It is refused unless a human approved exactly that
+render (`cc approve`). It hosts `build/video.mp4` as `<series>/<slug>-<sha8>.mp4` in the assets repo, then sends each
+post's original payload with only `assets[0].video.url` replaced (`replaceVideoUrl`); the attempt records the new
+video hash and media URL.
+
+`--rehost` copies the very file the posts already use to the current media host (downloaded, sha256-checked against
+the record) and repoints them; no approval is needed because the bytes do not change. Use it after moving the media
+host or renaming an episode. Without either flag `reschedule` only moves the time. Both paths write a `reschedule`
 attempt to `publish.json`, and a failure on one platform does not block the others.
 
-`reschedule` acts on the **latest** real submission only. Episodes whose Instagram post was added later in a separate
-`--platforms instagram` run (everything scheduled before 2026-11-14) would only move the Instagram post; move the
-other platforms by hand in Buffer, or extend the command first.
+`reschedule` moves every platform's live post, even when platforms were submitted in separate runs.
 
 Note that `reschedule` re-sends the payload of the previous submission, so the caption, title and AI-disclosure flag
 of the already-created posts are kept. If the copy changed too, delete the posts in Buffer and publish again.
@@ -60,8 +66,10 @@ of the already-created posts are kept. If the copy changed too, delete the posts
 1. The human creates the Buffer account and connects the YouTube and TikTok channels in Buffer (OAuth).
 2. The human creates an API key at <https://publish.buffer.com/settings/api> and puts it in `.env` as
    `BUFFER_API_KEY` (never commit it, never paste it into chat or records).
-3. Media: this repository (public), orphan branch `videos` (`channel.config.json → publishing.mediaHost`).
-   Needs push access to `origin`. Clone `main` with `git clone --single-branch` to skip the videos.
+3. Media: the public assets repo `Nasus20202/ContentCreator-assets`, branch `main`
+   (`channel.config.json → publishing.mediaHost`), pushed over SSH. Its `main` is protected against deletion and
+   force-push (ruleset `protect-hosted-media`), so a hosted file can't vanish under a scheduled post. Kept out of
+   this repo so the code repo stays small and a takedown notice about one clip can't disable it.
 4. `pnpm -s cc publish channels` → copy the YouTube and TikTok channel ids into
    `channel.config.json → publishing.targets` (`{ "platform": "youtube", "channelId": "…" }`).
 

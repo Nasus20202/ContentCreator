@@ -1,3 +1,4 @@
+import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -19,9 +20,32 @@ export const paths = {
   videoEntry: path.join(REPO_ROOT, 'video', 'index.tsx'),
 };
 
+/** Series ids (series/<id>.md), longest first so `sky-this-week` wins over a shorter prefix. */
+function seriesIds(): string[] {
+  if (!fs.existsSync(paths.series)) return [];
+  return fs
+    .readdirSync(paths.series)
+    .filter((f) => f.endsWith('.md'))
+    .map((f) => f.slice(0, -3))
+    .sort((a, b) => b.length - a.length);
+}
+
+/**
+ * Episodes are grouped by series: `<series>-<slug>` lives in `episodes/<series>/<slug>/`. An id that
+ * starts with no known series, or a legacy flat folder, resolves to `episodes/<id>/`.
+ */
+export function episodeDir(episodeId: string): string {
+  const flat = path.join(paths.episodes, episodeId);
+  const series = seriesIds().find((s) => episodeId.startsWith(`${s}-`) && episodeId.length > s.length + 1);
+  if (!series) return flat;
+  const grouped = path.join(paths.episodes, series, episodeId.slice(series.length + 1));
+  // Legacy flat folders (before the series layout) still resolve until `cc episode rename` moves them.
+  return !fs.existsSync(grouped) && fs.existsSync(path.join(flat, 'episode.json')) ? flat : grouped;
+}
+
 /** Files inside one episode directory. Committed files are the audit trail; `build/` is gitignored. */
 export function episodePaths(episodeId: string) {
-  const dir = path.join(paths.episodes, episodeId);
+  const dir = episodeDir(episodeId);
   const build = path.join(dir, 'build');
   return {
     dir,

@@ -6,6 +6,7 @@
 import 'dotenv/config';
 import { Command, Option } from 'commander';
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { recordChannelDecision, channelDecisionsMarkdown } from '../core/channel-log';
 import { bufferApiKey, loadConfig, resolveLocation } from '../core/config';
@@ -25,6 +26,7 @@ import {
   type Stage,
 } from '../core/schemas';
 import { downloadCommons } from '../assets/wikimedia';
+import { importLocal } from '../assets/local';
 import { downloadNasa, lookupNasa, searchNasa } from '../assets/nasa';
 import { BufferClient } from '../publish/buffer';
 import { GitBranchHost, mediaName } from '../publish/media-host';
@@ -90,19 +92,49 @@ episode
   .requiredOption('--series <series>', 'series id (series/<id>.md)')
   .option('--week <date>', 'first day (YYYY-MM-DD) of a 7-day window, for time-boxed series')
   .option('--location <id>', 'location preset id from channel.config.json')
+  .option('--slug <slug>', 'short topic name, e.g. moon-drift (id: <series>-<slug>)')
+  .option('--date <date>', 'YYYY-MM-DD the content is tied to (event, news); omit for evergreen topics')
   .option('--id <id>', 'explicit episode id')
   .addOption(actorOpt())
-  .action((o: { series: string; week?: string; location?: string; id?: string; actor: Actor }) => {
-    const config = loadConfig();
-    const location = o.week || o.location ? resolveLocation(config, o.location) : undefined;
-    // the window is a local calendar week: local midnight to local midnight
-    const start = o.week && location ? localMidnight(o.week, location.timeZone) : undefined;
-    const end = o.week && location ? localMidnight(addLocalDays(o.week, 7), location.timeZone) : undefined;
-    const id =
-      o.id ?? [o.series, o.week ?? new Date().toISOString().slice(0, 10), location?.id].filter(Boolean).join('-');
-    const ep = stages.createEpisode({ series: o.series, id, location, start, end, actor: o.actor });
+  .action(
+    (o: {
+      series: string;
+      week?: string;
+      location?: string;
+      slug?: string;
+      date?: string;
+      id?: string;
+      actor: Actor;
+    }) => {
+      const config = loadConfig();
+      const location = o.week || o.location ? resolveLocation(config, o.location) : undefined;
+      // the window is a local calendar week: local midnight to local midnight
+      const start = o.week && location ? localMidnight(o.week, location.timeZone) : undefined;
+      const end = o.week && location ? localMidnight(addLocalDays(o.week, 7), location.timeZone) : undefined;
+      const id =
+        o.id ??
+        stages.episodeId({
+          series: o.series,
+          slug: o.slug,
+          date: o.date,
+          week: o.week,
+          location: o.week ? location?.id : undefined,
+        });
+      const ep = stages.createEpisode({ series: o.series, id, location, start, end, actor: o.actor });
+      refreshReport(ep.id);
+      say(`created ${ep.id}`, `next: ${NEXT.created.replaceAll('<id>', ep.id)}`);
+    },
+  );
+episode
+  .command('rename')
+  .argument('<from>')
+  .argument('<to>', 'new id, <series>-<slug> (dates only for date-bound content)')
+  .description('rename an episode and move it to episodes/<series>/<slug>/, re-signing its plan hash')
+  .addOption(actorOpt().default('claude'))
+  .action((from: string, to: string, o: { actor: Actor }) => {
+    const ep = stages.renameEpisode(from, to, o.actor);
     refreshReport(ep.id);
-    say(`created ${ep.id}`, `next: ${NEXT.created.replaceAll('<id>', ep.id)}`);
+    say(`renamed ${from} → ${ep.id}  (${path.relative(paths.root, ep.paths.dir)})`);
   });
 
 // ------------------------------------------------------------------ research
@@ -223,20 +255,56 @@ asset
   .argument('<episode>')
   .option('--nasa-id <id>', 'NASA Image and Video Library id')
   .option('--commons <file>', 'Wikimedia Commons file title, e.g. "File:Foo.jpg" (licence must allow commercial reuse)')
+  .option('--file <path>', 'a local image or clip obtained by hand; needs --url, --title, --credit, --license')
+  .option('--url <url>', '(--file) page the file came from')
+  .option('--title <text>', '(--file) what it shows')
+  .option('--credit <text>', '(--file) on-screen credit')
+  .option('--license <text>', '(--file) licence exactly as stated by the source, e.g. "all rights reserved"')
+  .option('--derivation <text>', '(--file) how it was cut from the source (trim, crop, muted)')
   .requiredOption('--id <assetId>', 'id the plan will reference')
   .addOption(actorOpt().default('claude'))
-  .action(async (id: string, o: { nasaId?: string; commons?: string; id: string; actor: Actor }) => {
-    const ep = Episode.load(id);
-    if (!o.nasaId === !o.commons) throw new PipelineError('give exactly one of --nasa-id or --commons');
-    const rec = o.nasaId
-      ? await downloadNasa(await lookupNasa(o.nasaId), o.id, ep.paths.assetDir)
-      : await downloadCommons(o.commons!, o.id, ep.paths.assetDir);
-    const assets = stages.loadAssets(ep).filter((a) => a.id !== rec.id);
-    writeJson(ep.paths.assets, AssetsFile.parse({ assets: [...assets, rec] }));
-    ep.log(o.actor, ep.stage, 'asset.add', { id: rec.id, url: rec.source.url, license: rec.source.license });
-    refreshReport(id);
-    say(`added ${rec.id} → build/${rec.file}`, `credit: ${rec.source.credit}`);
-  });
+  .action(
+    async (
+      id: string,
+      o: {
+        nasaId?: string;
+        commons?: string;
+        file?: string;
+        url?: string;
+        title?: string;
+        credit?: string;
+        license?: string;
+        derivation?: string;
+        id: string;
+        actor: Actor;
+      },
+    ) => {
+      const ep = Episode.load(id);
+      if ([o.nasaId, o.commons, o.file].filter(Boolean).length !== 1)
+        throw new PipelineError('give exactly one of --nasa-id, --commons or --file');
+      const rec = o.nasaId
+        ? await downloadNasa(await lookupNasa(o.nasaId), o.id, ep.paths.assetDir)
+        : o.commons
+          ? await downloadCommons(o.commons, o.id, ep.paths.assetDir)
+          : importLocal(
+              {
+                file: o.file!,
+                assetId: o.id,
+                url: o.url ?? '',
+                title: o.title ?? '',
+                credit: o.credit ?? '',
+                license: o.license ?? '',
+                derivation: o.derivation,
+              },
+              ep.paths.assetDir,
+            );
+      const assets = stages.loadAssets(ep).filter((a) => a.id !== rec.id);
+      writeJson(ep.paths.assets, AssetsFile.parse({ assets: [...assets, rec] }));
+      ep.log(o.actor, ep.stage, 'asset.add', { id: rec.id, url: rec.source.url, license: rec.source.license });
+      refreshReport(id);
+      say(`added ${rec.id} → build/${rec.file}`, `credit: ${rec.source.credit}`);
+    },
+  );
 asset
   .command('restore')
   .argument('<episode>')
@@ -387,9 +455,7 @@ program
 
 // ------------------------------------------------------------------ publish
 
-const pub = program
-  .command('publish')
-  .description('publish via Buffer (videos served from the public `videos` branch)');
+const pub = program.command('publish').description('publish via Buffer (videos served from the public assets repo)');
 
 function bufferClient(): BufferClient | undefined {
   const key = bufferApiKey();
@@ -414,15 +480,32 @@ pub
   .command('reschedule')
   .description('move the scheduled Buffer posts of the latest submission to a new time')
   .argument('<episode>')
-  .requiredOption('--at <iso>', 'new time (ISO 8601)')
-  .option('--replace-video', 'host the current QA-passed render and repoint the posts at it')
+  .option('--at <iso>', 'new time (ISO 8601); omitted keeps the current time')
+  .option('--replace-video', 'host the current approved render and repoint the posts at it')
+  .option('--rehost', 'copy the exact file the posts use to the current media host (hash-checked) and repoint')
   .addOption(actorOpt())
-  .action(async (id: string, o: { at: string; replaceVideo?: boolean; actor: Actor }) => {
+  .action(async (id: string, o: { at?: string; replaceVideo?: boolean; rehost?: boolean; actor: Actor }) => {
     const client = bufferClient();
     if (!client)
       throw new PipelineError('BUFFER_API_KEY not set', 'Create one at https://publish.buffer.com/settings/api');
     const ep = Episode.load(id);
     let mediaUrl: string | undefined;
+    let rehostedSha256: string | undefined;
+    if (o.replaceVideo && o.rehost) throw new PipelineError('Use either --replace-video or --rehost');
+    if (o.rehost) {
+      const cur = stages.currentMedia(ep);
+      const res = await fetch(cur.url);
+      if (!res.ok) throw new PipelineError(`Could not download ${cur.url}: HTTP ${res.status}`);
+      const tmp = path.join(os.tmpdir(), `cc-rehost-${ep.id}.mp4`);
+      fs.writeFileSync(tmp, Buffer.from(await res.arrayBuffer()));
+      if (sha256File(tmp) !== cur.sha256) throw new PipelineError(`${cur.url} does not match the recorded sha256`);
+      const config = loadConfig();
+      const host = new GitBranchHost(config.publishing.mediaHost.repo, config.publishing.mediaHost.branch);
+      mediaUrl = (await host.host(tmp, mediaName(id, cur.sha256))).url;
+      rehostedSha256 = cur.sha256;
+      fs.rmSync(tmp);
+      say(`media      ${mediaUrl}  (re-hosted from ${cur.url})`);
+    }
     if (o.replaceVideo) {
       ep.requireStage('qa-passed');
       const config = loadConfig();
@@ -432,7 +515,7 @@ pub
     }
     const attempt = await stages.reschedule(
       ep,
-      { date: o.at, endpoint: client.endpoint, edit: (input) => client.editPost(input), mediaUrl },
+      { date: o.at, endpoint: client.endpoint, edit: (input) => client.editPost(input), mediaUrl, rehostedSha256 },
       o.actor,
     );
     refreshReport(id);

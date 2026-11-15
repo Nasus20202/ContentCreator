@@ -68,7 +68,8 @@ export function buildRenderProps(
   }
 
   const assetMap: RenderProps['assets'] = {};
-  for (const a of assets) assetMap[a.id] = { file: a.file, credit: `${a.source.credit} · ${a.source.license}` };
+  for (const a of assets)
+    assetMap[a.id] = { file: a.file, credit: `${a.source.credit} · ${a.source.license}`, kind: a.kind };
 
   return { plan, timeline, sky, orbits, assets: assetMap, musicFile, accent: accentFor(plan.series), fps: FPS };
 }

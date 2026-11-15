@@ -74,7 +74,7 @@ export const Orbit3DScene: React.FC<{ sceneId: string; params: Orbit3DParams }> 
         new THREE.BufferGeometry(),
         new THREE.LineBasicMaterial({ color: accent.hex, transparent: true, opacity: 0.9 }),
       ),
-    [],
+    [accent.hex],
   );
   const grow = Math.min(1, Math.max(0, (t - 0.2) / 1.2));
   sightLine.geometry.setFromPoints([
