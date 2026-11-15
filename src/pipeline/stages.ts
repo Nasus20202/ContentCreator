@@ -445,6 +445,13 @@ export async function reschedule(
   const record = readJson(ep.paths.publish, PublishRecord);
   const last = record.attempts.findLast((a) => !a.dryRun && a.targets.some((t) => t.status === 'submitted'));
   if (!last) throw new PipelineError('No submitted posts to reschedule');
+  // Every platform's live post, even when platforms were submitted in separate attempts
+  // (e.g. Instagram added later); posts already out are left alone.
+  const now = Date.now();
+  const live = [...livePosts(record).values()].filter(
+    (p) => p.scheduledFor !== undefined && new Date(p.scheduledFor).getTime() > now,
+  );
+  if (live.length === 0) throw new PipelineError('No scheduled (future) posts to reschedule');
   const dueAt = new Date(opts.date).toISOString();
   if (new Date(dueAt).getTime() <= Date.now()) throw new PipelineError('--at must be in the future');
   // Swapping the media means the post no longer matches the approved file, so require a QA-passed
@@ -466,7 +473,7 @@ export async function reschedule(
     media: swapped ? { url: opts.mediaUrl! } : last.media,
     targets: [],
   };
-  for (const t of last.targets.filter((x) => x.status === 'submitted' && x.postId)) {
+  for (const { target: t } of live) {
     // editPost replaces the whole post: resend the original input with the new time
     const { channelId: _channel, ...original } = t.payload as Record<string, unknown>;
     const withMedia = swapped ? replaceVideoUrl(original, opts.mediaUrl!) : original;

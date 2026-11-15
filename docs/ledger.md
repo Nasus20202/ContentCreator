@@ -13,7 +13,7 @@
 | [sky-school-planet-ages-eu-central](../episodes/sky-school-planet-ages-eu-central/README.md) | sky-school | published | 30 on Earth, barely 1 on Saturn 🪐 | youtube, tiktok, instagram | — |
 | [sky-school-proxima-travel-eu-central](../episodes/sky-school-proxima-travel-eu-central/README.md) | sky-school | published | How long to Proxima Centauri? It depends on your clock 🚀 | youtube, tiktok, instagram | — |
 | [sky-school-twin-paradox-eu-central](../episodes/sky-school-twin-paradox-eu-central/README.md) | sky-school | published | The twin paradox, and how long a ride to the galaxy takes 🚀 | youtube, tiktok, instagram | — |
-| [sky-school-voyager-light-day-eu-central](../episodes/sky-school-voyager-light-day-eu-central/README.md) | sky-school | qa-passed | Voyager 1 is now a whole light-day from Earth 🛰️ | — | — |
+| [sky-school-voyager-light-day-eu-central](../episodes/sky-school-voyager-light-day-eu-central/README.md) | sky-school | published | Voyager 1 is now a whole light-day from Earth 🛰️ | youtube, tiktok, instagram | — |
 | [sky-this-week-2026-11-16-eu-central](../episodes/sky-this-week-2026-11-16-eu-central/README.md) | sky-this-week | published | Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22 | youtube, tiktok, instagram | 1149 |
 | [sky-this-week-2026-12-14-eu-central](../episodes/sky-this-week-2026-12-14-eu-central/README.md) | sky-this-week | published | The Geminids peak this weekend — and the Moon stays out of the way 🌠 | — | — |
 | [sky-this-week-2026-12-21-eu-central](../episodes/sky-this-week-2026-12-21-eu-central/README.md) | sky-this-week | published | The closest full Moon of 2026 rises on Christmas Eve 🌕 | — | — |

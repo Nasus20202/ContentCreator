@@ -307,6 +307,40 @@ describe('pipeline stages', () => {
     );
   });
 
+  it('reschedules every live platform, even when they were submitted in separate attempts', async () => {
+    await toQaPassed();
+    stages.approve(ep, 'Tester', 'human', config);
+    const date = '2099-01-02T17:00:00Z';
+    const submit = (platform: 'youtube' | 'instagram', id: string) =>
+      stages.publish(
+        ep,
+        {
+          targets: [{ platform, channelId: platform }],
+          mode: 'schedule',
+          date,
+          dryRun: false,
+          publisher: {
+            provider: 'buffer',
+            endpoint: 'https://buffer.test',
+            hostMedia: () => Promise.resolve({ url: 'https://media.test/v.mp4' }),
+            post: () => Promise.resolve({ id }),
+          },
+          buildPayload: (p, t, m) => buildCreatePostInput(p, t, m, { mode: 'schedule', date, aiDisclosure: false }),
+        },
+        'claude',
+      );
+    await submit('youtube', 'YT1');
+    await submit('instagram', 'IG1');
+    const edited: unknown[] = [];
+    const r = await stages.reschedule(
+      ep,
+      { date: '2099-03-01T17:00:00Z', endpoint: 'x', edit: (i) => Promise.resolve(void edited.push(i.id)) },
+      'claude',
+    );
+    expect(edited.sort()).toEqual(['IG1', 'YT1']);
+    expect(r.targets.map((t) => t.status)).toEqual(['submitted', 'submitted']);
+  });
+
   it('reschedules submitted posts and records the move', async () => {
     await toQaPassed();
     stages.approve(ep, 'Tester', 'human', config);

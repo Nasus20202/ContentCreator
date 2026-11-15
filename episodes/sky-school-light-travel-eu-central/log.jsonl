@@ -90,3 +90,5 @@
 {"ts":"2026-11-14T21:04:01.736Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["instagram:dry-run"]},"gitSha":"47c29b3"}
 {"ts":"2026-11-14T21:12:41.727Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-light-travel-eu-central-8aa62282.mp4","targets":["instagram:submitted"]},"gitSha":"47c29b3"}
 {"ts":"2026-11-14T21:12:41.733Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"published","to":"published","hashes":{}},"gitSha":"47c29b3"}
+{"ts":"2026-11-15T00:37:31.243Z","actor":"claude","stage":"publish","action":"publish.reschedule","details":{"from":"2026-11-18T17:00:00.000Z","to":"2026-11-20T17:00:00.000Z","targets":["instagram:submitted"]},"gitSha":"c0f6392"}
+{"ts":"2026-11-15T00:38:46.509Z","actor":"claude","stage":"publish","action":"publish.reschedule","details":{"from":"2026-11-20T17:00:00.000Z","to":"2026-11-20T17:00:00.000Z","targets":["youtube:submitted","tiktok:submitted","instagram:submitted"]},"gitSha":"c0f6392"}

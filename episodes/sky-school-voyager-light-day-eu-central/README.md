@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-voyager-light-day-eu-central |
 | Series | sky-school |
-| Stage | **qa-passed** |
+| Stage | **published** |
 | Created | 2026-11-14T23:59:41.725Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -112,6 +112,30 @@ Images: NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch), NASA / JPL / MDSCC / 
 
 Visual review by **claude** (2026-11-15T00:03:40.822Z): **pass** — All 19 frames checked. Hook: title over the launch photo, the '18 NOV · 11:16 CET' chip below it, badge appears after the title with no collision. Compare: 1.3 s / 8 min 20 s / 24 hours bars drawn linearly to scale, Moon and Sun read as slivers (intended), 'Drawn to scale' note visible. Signal: DSN Madrid photo with credit, '24 HOURS EACH WAY' chip. FactCard counts up to '49 years' with '2 months and 11 days, at nearly 61,000 km/h'. Pale Blue Dot 'Home' marker on Earth's pixel. Outro clean. Captions readable everywhere; credits printed on every photo.
 
+## Approvals
+
+- 2026-11-15T00:36:06.954Z — **Krzysztof** (human) approved video `5a31bb97d7aeee05…`
+
+## Publishing
+
+### 2026-11-15T00:37:31.950Z · buffer · schedule for 2026-11-18T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+| instagram | dry-run | — |  |
+
+### 2026-11-15T00:37:32.625Z · buffer · schedule for 2026-11-18T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-voyager-light-day-eu-central-5a31bb97.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af8fed9e5a113497ab90821 |  |
+| tiktok | submitted | 6af8feda918fe79d2eb283cb |  |
+| instagram | submitted | 6af8fedb918fe79d2eb283fb |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -146,3 +170,7 @@ Visual review by **claude** (2026-11-15T00:03:40.822Z): **pass** — All 19 fram
 | 2026-11-15 00:03:23 | pipeline | qa | qa.automated | 76957dc |
 | 2026-11-15 00:03:40 | claude | qa | qa.review | 76957dc |
 | 2026-11-15 00:03:40 | claude | qa-passed | stage.advance | 76957dc |
+| 2026-11-15 00:36:06 | human | approved | stage.advance | c0f6392 |
+| 2026-11-15 00:37:31 | claude | publish | publish.dry-run | c0f6392 |
+| 2026-11-15 00:37:47 | claude | publish | publish.submit | c0f6392 |
+| 2026-11-15 00:37:47 | claude | published | stage.advance | c0f6392 |
