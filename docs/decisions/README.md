@@ -5,6 +5,17 @@
 
 ## 2026-11-15 · strategy · human
 
+**Music: keep acoustic and nocturne as they are; drop 'lab' (Weird Physics now uses pulse); lofi reworked into one consistent loop with less piano (guitar-led chords, steady beat throughout).**
+
+Owner feedback after listening: nocturne ok, acoustic ok, lab bad, lofi too much piano and not consistent.
+
+Alternatives considered:
+- Keep lab and tweak it
+
+Inputs: `build/poc/music3`, `build/poc/music4`
+
+## 2026-11-15 · strategy · human
+
 **Visual style: one house style for every series (current Space Grotesk layout); series differ only by accent colour. Per-series fonts/frames (mock-ups A–E) dropped.**
 
 Owner prefers the current look and a consistent channel identity.

@@ -86,7 +86,7 @@ export const SERIES_BED: Record<string, ToneStyle> = {
   'wrong-about-space': 'lofi',
   'cosmic-top-5': 'pulse',
   'mission-control': 'drive',
-  'weird-physics': 'lab',
+  'weird-physics': 'pulse',
 };
 
 export const bedFor = (series: string): ToneStyle => SERIES_BED[series] ?? 'nocturne';
