@@ -69,7 +69,15 @@ export function buildRenderProps(
 
   const assetMap: RenderProps['assets'] = {};
   for (const a of assets)
-    assetMap[a.id] = { file: a.file, credit: `${a.source.credit} · ${a.source.license}`, kind: a.kind };
+    assetMap[a.id] = { file: a.file, credit: onScreenCredit(a.source.credit, a.source.license), kind: a.kind };
 
   return { plan, timeline, sky, orbits, assets: assetMap, musicFile, accent: accentFor(plan.series), fps: FPS };
+}
+
+/**
+ * The credit line viewers see: just the source. The full licence stays in the records and the post copy;
+ * Creative Commons licences require naming the licence with the attribution, so those keep it on screen.
+ */
+export function onScreenCredit(credit: string, license: string): string {
+  return /^CC /.test(license) && !credit.includes(license) ? `${credit} · ${license}` : credit;
 }

@@ -301,18 +301,18 @@ export const Credit: React.FC<{ text: string }> = ({ text }) => (
   <div
     style={{
       position: 'absolute',
-      // Inside the image band (470..1170) and clear of both the caption band (1290) and the inset
-      // labels that sit in the bottom-right of press images: a full-width line at 1185 wrapped onto
-      // the radar's own caption in QA, so the credit now lives on a small scrim at the lower left.
-      top: 1082,
+      // Lower left, its bottom edge just above the caption band (1290): out of the subject's way and clear of
+      // the platform UI in the bottom ~420 px. Anchored by its bottom so a long credit grows upwards. Kept
+      // small: it is the source only (the licence lives in the records), on a light scrim.
+      bottom: 1920 - 1270,
       left: 44,
-      maxWidth: 640,
+      maxWidth: 720,
       fontFamily: theme.font,
-      fontSize: 22,
+      fontSize: 19,
       lineHeight: 1.3,
-      color: 'rgba(232,238,250,0.92)',
-      background: 'rgba(0,0,0,0.55)',
-      padding: '8px 14px',
+      color: 'rgba(232,238,250,0.85)',
+      background: 'rgba(0,0,0,0.45)',
+      padding: '5px 12px',
       borderRadius: 10,
       textShadow: '0 2px 8px #000',
     }}

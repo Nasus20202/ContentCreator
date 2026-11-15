@@ -217,21 +217,32 @@ async function writeBed(
   }
 }
 
-/** Normalise to the -14 LUFS / -1 dBTP that short-form platforms play back at. Video stream is copied. */
+/**
+ * Normalise to the -14 LUFS / -1 dBTP that short-form platforms play back at. Video stream is copied.
+ * Single-pass loudnorm plus the AAC encode can overshoot its true-peak ceiling, so the result is measured
+ * and, if it lands above MAX_TRUE_PEAK, redone with the ceiling lowered by the overshoot.
+ */
 export async function normalizeLoudness(input: string, output: string): Promise<void> {
-  await ffmpeg([
-    '-i',
-    input,
-    '-c:v',
-    'copy',
-    '-af',
-    'loudnorm=I=-14:TP=-1.5:LRA=11',
-    '-ar',
-    '48000',
-    '-c:a',
-    'aac',
-    '-b:a',
-    '192k',
-    output,
-  ]);
+  const MAX_TRUE_PEAK = -1;
+  let ceiling = -1.5;
+  for (let attempt = 0; ; attempt++) {
+    await ffmpeg([
+      '-i',
+      input,
+      '-c:v',
+      'copy',
+      '-af',
+      `loudnorm=I=-14:TP=${ceiling.toFixed(1)}:LRA=11`,
+      '-ar',
+      '48000',
+      '-c:a',
+      'aac',
+      '-b:a',
+      '192k',
+      output,
+    ]);
+    const { truePeak } = await loudness(output);
+    if (truePeak <= MAX_TRUE_PEAK || attempt >= 2) return;
+    ceiling -= truePeak - MAX_TRUE_PEAK + 0.5;
+  }
 }
