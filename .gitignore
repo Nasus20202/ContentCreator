@@ -6,11 +6,6 @@ episodes/*/build/
 .remotion/
 coverage/
 
-# downloaded piano source samples (scripts/prepare-piano.ts)
-.cache/
-
-# generated piano samples (scripts/prepare-piano.ts, fetched on first render)
-assets/audio/piano/
 /build/
 
 # Tone.js instrument samples (tonejs-instruments, fetched on first render)

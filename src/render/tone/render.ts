@@ -10,19 +10,8 @@ import { fileURLToPath } from 'node:url';
 import { build } from 'esbuild';
 import puppeteer from 'puppeteer-core';
 import { ensureInstrumentSamples, instrumentManifest, instrumentsDir } from '../../assets/instruments';
-import type { BedSpec, ToneStyle } from './compose';
-
-export const TONE_STYLES: readonly ToneStyle[] = ['pulse', 'telemetry', 'lab', 'acoustic', 'lofi'];
-export const isToneStyle = (s: string): s is ToneStyle => (TONE_STYLES as readonly string[]).includes(s);
-
-/** Which sampled instruments each style loads (the rest are Tone synths). */
-const STYLE_INSTRUMENTS: Record<ToneStyle, string[]> = {
-  pulse: [],
-  telemetry: [],
-  lab: ['xylophone', 'harp', 'bass-electric'],
-  acoustic: ['guitar-acoustic', 'harp', 'violin'],
-  lofi: ['bass-electric'],
-};
+import type { BedSpec } from './compose';
+import { STYLE_INSTRUMENTS, type ToneStyle } from './styles';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 let bundled: string | undefined;

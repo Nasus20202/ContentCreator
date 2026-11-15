@@ -1,17 +1,16 @@
 /**
- * Music beds composed with Tone.js (synths, samplers, effects) and tonal (harmony), rendered offline
- * in a headless browser by `render.ts`. Browser-only module: it is bundled with esbuild and exposes
- * `window.renderBed`.
+ * Music beds composed with Tone.js (samplers of recorded instruments, synths, effects) and tonal
+ * (harmony), rendered offline in a headless browser by `render.ts`. Browser-only module: it is
+ * bundled with esbuild and exposes `window.renderBed`.
  *
  * Every style follows the episode's scene cues: a lighter hook, the full groove in the body, a
- * thinner outro, and the home chord ringing out at the end. Seeded, so a plan always renders the
- * same bed.
+ * thinner outro, and the home chord ringing out at the end. Seeded (including Math.random, which
+ * Tone uses for noise), so a plan always renders the same bed.
  */
 import * as Tone from 'tone';
 import { Chord, Note } from 'tonal';
 
-export const TONE_STYLES = ['pulse', 'telemetry', 'lab', 'acoustic', 'lofi'] as const;
-export type ToneStyle = (typeof TONE_STYLES)[number];
+import type { ToneStyle } from './styles';
 
 export interface BedSpec {
   style: ToneStyle;
@@ -36,23 +35,25 @@ function sections(spec: BedSpec, bpm: number): Sections {
 }
 
 function rng(seed: number): () => number {
-  let s = (seed * 2654435761) >>> 0 || 1;
+  let s = (seed * 2654435761 + 1013904223) >>> 0 || 1;
   return () => {
     s ^= s << 13;
     s ^= s >>> 17;
     s ^= s << 5;
-    return ((s >>> 0) % 100000) / 100000;
+    return (s >>> 0) / 4294967296;
   };
 }
 
-/** Chord symbols → note names voiced upward from `octave`, transposed by semitones. */
+const shift = (n: string, semis: number): string => Note.fromMidi((Note.midi(n) ?? 60) + semis);
+
+/** Chord symbol → note names voiced upward from `octave`, transposed by semitones. */
 function voice(symbol: string, octave: number, transpose: number): string[] {
   const c = Chord.get(symbol);
   const root = `${c.tonic ?? 'C'}${octave}`;
-  return c.intervals.map((iv) => tr(Note.transpose(root, iv), transpose));
+  return c.intervals.map((iv) => shift(Note.transpose(root, iv), transpose));
 }
-const shift = (n: string, semis: number): string => Note.fromMidi((Note.midi(n) ?? 60) + semis);
-const tr = (n: string, t: number): string => shift(n, t);
+const rootOf = (symbol: string, octave: number, transpose: number): string =>
+  shift(`${Chord.get(symbol).tonic ?? 'C'}${octave}`, transpose);
 
 function samplerUrls(files: string[]): Record<string, string> {
   const urls: Record<string, string> = {};
@@ -75,7 +76,7 @@ async function reverb(decay: number, wet: number): Promise<Tone.Reverb> {
   return r;
 }
 
-/** Bus that ducks on every kick (sidechain feel). */
+/** Bus that ducks on every kick (the sidechain "pump"). */
 function pumpBus(dest: Tone.InputNode, kicks: number[], depth: number): Tone.Gain {
   const g = new Tone.Gain(1).connect(dest);
   for (const k of kicks) {
@@ -85,36 +86,87 @@ function pumpBus(dest: Tone.InputNode, kicks: number[], depth: number): Tone.Gai
   return g;
 }
 
-function drums(master: Tone.InputNode) {
+function drums(master: Tone.InputNode, opts: { snareTone?: boolean; dark?: boolean } = {}) {
+  const out = opts.dark ? new Tone.Filter(4200, 'lowpass').connect(master) : master;
   const kick = new Tone.MembraneSynth({
-    pitchDecay: 0.03,
+    pitchDecay: 0.035,
     octaves: 6,
-    envelope: { attack: 0.001, decay: 0.35, sustain: 0, release: 0.1 },
+    envelope: { attack: 0.001, decay: 0.38, sustain: 0, release: 0.1 },
     volume: -6,
-  }).connect(master);
-  const snareVerb = new Tone.Reverb({ decay: 1.2, wet: 0.25 }).connect(master);
+  }).connect(out);
+  const snareVerb = new Tone.Reverb({ decay: 1.1, wet: 0.22 }).connect(out);
   const snare = new Tone.NoiseSynth({
-    noise: { type: 'white' },
-    envelope: { attack: 0.001, decay: 0.16, sustain: 0 },
-    volume: -14,
-  }).chain(new Tone.Filter(1800, 'bandpass'), snareVerb);
+    noise: { type: opts.dark ? 'pink' : 'white' },
+    envelope: { attack: 0.001, decay: 0.17, sustain: 0 },
+    volume: -13,
+  }).chain(new Tone.Filter(opts.dark ? 1500 : 1900, 'bandpass'), snareVerb);
+  const body = new Tone.MembraneSynth({
+    pitchDecay: 0.01,
+    octaves: 1.5,
+    envelope: { attack: 0.001, decay: 0.09, sustain: 0 },
+    volume: -16,
+  }).connect(snareVerb);
   const hat = new Tone.NoiseSynth({
     noise: { type: 'white' },
-    envelope: { attack: 0.001, decay: 0.035, sustain: 0 },
-    volume: -24,
-  }).chain(new Tone.Filter(8000, 'highpass'), master);
-  return { kick, snare, hat };
+    envelope: { attack: 0.001, decay: opts.dark ? 0.03 : 0.035, sustain: 0 },
+    volume: opts.dark ? -27 : -24,
+  }).chain(new Tone.Filter(opts.dark ? 6500 : 8000, 'highpass'), out);
+  const hitSnare = (t: number, v = 1) => {
+    snare.triggerAttackRelease('16n', t, v);
+    if (opts.snareTone) body.triggerAttackRelease('G2', '32n', t, v * 0.8);
+  };
+  return { kick, hitSnare, hat };
 }
 
-type Composer = (spec: BedSpec, master: Tone.ToneAudioNode) => Promise<void>;
+type Composer = (spec: BedSpec, master: Tone.ToneAudioNode, r: () => number) => Promise<void>;
+const forBars = (s: Sections, fn: (b: number, t0: number) => void) => {
+  for (let b = 0, t0 = 0; t0 < s.finalAt - 1e-6; b++, t0 = b * s.bar) fn(b, t0);
+};
+const isBody = (s: Sections, t0: number) => t0 >= s.hookEnd && t0 < s.outroStart;
+/** Lift any note below G3 an octave, so voicings sit in the middle register. */
+const mid = (n: string): string => ((Note.midi(n) ?? 60) < 55 ? shift(n, 12) : n);
 
 // ------------------------------------------------------------------ styles
 
-/** Cosmic Top 5: bright electronic. Supersaw stabs, plucky arp, four-on-the-floor, sidechain. */
-const pulse: Composer = async (spec, master) => {
-  const bpm = 120;
-  const s = sections(spec, bpm);
-  const r = rng(spec.seed);
+/** One Shot / Sky School: fingerpicked acoustic guitar (Travis pattern), harp shimmer, violin line. */
+const acoustic: Composer = async (spec, master, r) => {
+  const s = sections(spec, 78);
+  const prog = [
+    ['D', 'A', 'Bm', 'G'],
+    ['G', 'D', 'Em', 'C'],
+  ][spec.seed % 2];
+  const verb = await reverb(3.2, 0.3);
+  verb.connect(master);
+  const guitar = sampler(spec, 'guitar-acoustic', { release: 1.6, volume: -4 }).connect(verb);
+  const harp = sampler(spec, 'harp', { release: 2, volume: -18 }).connect(verb);
+  const violin = sampler(spec, 'violin', { attack: 0.4, release: 1.5, volume: -22 }).connect(verb);
+  await Tone.loaded();
+  forBars(s, (b, t0) => {
+    const sym = prog[b % prog.length];
+    const tri = voice(sym, 3, spec.transpose);
+    const bassA = rootOf(sym, 2, spec.transpose);
+    const bassB = shift(bassA, 7);
+    const treble = [shift(tri[1], 12), shift(tri[2], 12), shift(tri[0], 12)];
+    for (let e = 0; e < 8; e++) {
+      const t = t0 + e * (s.beat / 2) + r() * 0.5 * 0.012;
+      const v = 0.55 + 0.25 * r();
+      if (e % 2 === 0) guitar.triggerAttackRelease(e % 4 === 0 ? bassA : bassB, s.beat * 1.6, t, v + 0.1);
+      else guitar.triggerAttackRelease(treble[(e >> 1) % 3], s.beat * 1.2, t, v);
+    }
+    if (isBody(s, t0)) {
+      if (b % 2 === 1) violin.triggerAttackRelease(shift(tri[2], 12), s.bar * 0.95, t0, 0.5);
+      harp.triggerAttackRelease(shift(tri[0], 24), s.beat, t0 + s.beat * 3.5, 0.45);
+    }
+  });
+  const home = voice(prog[0], 3, spec.transpose);
+  home.forEach((n, i) => guitar.triggerAttackRelease(n, 3, s.finalAt + i * 0.035, 0.7));
+  guitar.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 3, s.finalAt, 0.75);
+  harp.triggerAttackRelease(shift(home[0], 24), 2.5, s.finalAt + 0.2, 0.5);
+};
+
+/** Cosmic Top 5 / Sky Tonight: bright electronic. Supersaw stabs, plucky arp, four-on-the-floor. */
+const pulse: Composer = async (spec, master, r) => {
+  const s = sections(spec, 120);
   const prog = ['Am', 'F', 'C', 'G'];
   const kicks: number[] = [];
   for (let t = 0; t < s.finalAt; t += s.beat) if (t >= s.hookEnd || Math.round(t / s.beat) % 2 === 0) kicks.push(t);
@@ -140,237 +192,269 @@ const pulse: Composer = async (spec, master) => {
   }).connect(bus);
   const d = drums(master);
   for (const k of kicks) d.kick.triggerAttackRelease('C1', '8n', k);
-  for (let b = 0, t0 = 0; t0 < s.finalAt - 1e-6; b++, t0 = b * s.bar) {
+  forBars(s, (b, t0) => {
     const sym = prog[b % prog.length];
     const notes = voice(sym, 4, spec.transpose);
-    const body = t0 >= s.hookEnd && t0 < s.outroStart;
+    const body = isBody(s, t0);
     chords.triggerAttackRelease(notes, s.beat * 0.9, t0, 0.8);
     if (body) chords.triggerAttackRelease(notes, s.beat * 0.5, t0 + s.beat * 2.5, 0.6);
-    const root = tr(`${Chord.get(sym).tonic}2`, spec.transpose);
+    const root = rootOf(sym, 2, spec.transpose);
     for (let e = 0; e < 8; e++)
       bass.triggerAttackRelease(e % 2 ? shift(root, 12) : root, s.beat * 0.4, t0 + e * (s.beat / 2), 0.9);
     const arp = [...notes, ...notes.map((n) => shift(n, 12))];
     for (let q = 0; q < 16; q++) {
       if (!body && q % 2) continue;
       const n = arp[(q * 3 + (b % 2)) % arp.length];
-      pluck.triggerAttackRelease(shift(n, 12), '32n', t0 + q * (s.beat / 4) + (r() - 0.5) * 0.006, 0.5 + 0.3 * r());
+      pluck.triggerAttackRelease(shift(n, 12), '32n', t0 + q * (s.beat / 4) + r() * 0.5 * 0.006, 0.5 + 0.3 * r());
     }
     if (body) {
-      d.snare.triggerAttackRelease('16n', t0 + s.beat);
-      d.snare.triggerAttackRelease('16n', t0 + s.beat * 3);
+      d.hitSnare(t0 + s.beat);
+      d.hitSnare(t0 + s.beat * 3);
       for (let h = 0; h < 4; h++) d.hat.triggerAttackRelease('32n', t0 + h * s.beat + s.beat / 2);
     }
-  }
+  });
   chords.triggerAttackRelease(voice(prog[0], 4, spec.transpose), 2.6, s.finalAt, 0.8);
-  bass.triggerAttackRelease(tr(`${Chord.get(prog[0]).tonic}2`, spec.transpose), 2.4, s.finalAt);
+  bass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 2.4, s.finalAt);
 };
 
-/** Mission Control: dark synthwave. Gated arp with filter sweep, warm pad, steady backbeat. */
-const telemetry: Composer = async (spec, master) => {
-  const bpm = 96;
-  const s = sections(spec, bpm);
-  const prog = ['Dm', 'Bb', 'F', 'C'];
+/**
+ * Mission Control: a driving band groove on recorded instruments. Palm-muted electric guitar in
+ * 16ths, electric bass in 8ths, piano chords, a violin line on top, four-on-the-floor with a pump.
+ */
+const drive: Composer = async (spec, master, r) => {
+  const s = sections(spec, 116);
+  const prog = ['Em', 'C', 'G', 'D'];
   const kicks: number[] = [];
-  for (let t = 0; t < s.finalAt; t += s.beat * 2) kicks.push(t);
-  const verb = await reverb(3.5, 0.32);
+  for (let t = 0; t < s.finalAt; t += s.beat) if (t >= s.hookEnd || Math.round(t / s.beat) % 2 === 0) kicks.push(t);
+  const verb = await reverb(2.6, 0.24);
   verb.connect(master);
-  const bus = pumpBus(verb, kicks, 0.4);
-  const chorus = new Tone.Chorus(0.6, 3.5, 0.6).start().connect(bus);
-  const pad = new Tone.PolySynth(Tone.Synth, {
-    oscillator: { type: 'fatsawtooth', count: 3, spread: 40 },
-    envelope: { attack: 0.8, decay: 0.5, sustain: 0.8, release: 1.6 },
-    volume: -24,
-  }).chain(new Tone.Filter(1100, 'lowpass'), chorus);
-  const arpFilter = new Tone.Filter(900, 'lowpass', -24);
-  arpFilter.frequency.setValueAtTime(700, 0);
-  arpFilter.frequency.linearRampToValueAtTime(3200, s.outroStart);
-  arpFilter.frequency.linearRampToValueAtTime(900, s.finalAt);
-  const arp = new Tone.MonoSynth({
-    oscillator: { type: 'sawtooth' },
-    filter: { Q: 4, type: 'lowpass' },
-    filterEnvelope: { attack: 0.002, decay: 0.12, sustain: 0.1, baseFrequency: 400, octaves: 3 },
-    envelope: { attack: 0.002, decay: 0.12, sustain: 0.1, release: 0.05 },
-    volume: -16,
-  }).chain(arpFilter, new Tone.FeedbackDelay('8n.', 0.3), bus);
-  const bass = new Tone.MonoSynth({
-    oscillator: { type: 'square' },
-    filter: { Q: 1, type: 'lowpass', frequency: 300 },
-    envelope: { attack: 0.01, decay: 0.3, sustain: 0.6, release: 0.1 },
-    volume: -14,
-  }).connect(bus);
-  const d = drums(master);
-  for (const k of kicks) if (k >= s.hookEnd * 0.5) d.kick.triggerAttackRelease('C1', '8n', k);
-  for (let b = 0, t0 = 0; t0 < s.finalAt - 1e-6; b++, t0 = b * s.bar) {
-    const sym = prog[b % prog.length];
-    const notes = voice(sym, 3, spec.transpose);
-    pad.triggerAttackRelease(
-      notes.map((n) => shift(n, 12)),
-      s.bar * 0.98,
-      t0,
-      0.6,
-    );
-    const root = tr(`${Chord.get(sym).tonic}2`, spec.transpose);
-    for (let e = 0; e < 8; e++) bass.triggerAttackRelease(root, s.beat * 0.45, t0 + e * (s.beat / 2), 0.8);
-    const pattern = [0, 1, 2, 1, 0, 2, 1, 2];
-    const pool = [...notes, ...notes.map((n) => shift(n, 12))];
-    for (let q = 0; q < 16; q++)
-      arp.triggerAttackRelease(shift(pool[pattern[q % 8] + (q >= 8 ? 3 : 0)], 12), '32n', t0 + q * (s.beat / 4), 0.7);
-    if (t0 >= s.hookEnd && t0 < s.outroStart) {
-      d.snare.triggerAttackRelease('16n', t0 + s.beat);
-      d.snare.triggerAttackRelease('16n', t0 + s.beat * 3);
-      for (let h = 0; h < 8; h++) d.hat.triggerAttackRelease('32n', t0 + h * (s.beat / 2), h % 2 ? 0.9 : 0.5);
-    }
-  }
-  pad.triggerAttackRelease(voice(prog[0], 4, spec.transpose), 3, s.finalAt, 0.7);
-  bass.triggerAttackRelease(tr('D2', spec.transpose), 2.5, s.finalAt);
-};
-
-/** Weird Physics: playful xylophone over a bouncy electric bass and light percussion. */
-const lab: Composer = async (spec, master) => {
-  const bpm = 112;
-  const s = sections(spec, bpm);
-  const r = rng(spec.seed);
-  const prog = ['C', 'Am', 'Dm7', 'G7'];
-  const verb = await reverb(1.6, 0.2);
-  verb.connect(master);
-  const xylo = sampler(spec, 'xylophone', { release: 0.6, volume: -8 }).connect(verb);
-  const harp = sampler(spec, 'harp', { release: 1.5, volume: -14 }).connect(verb);
-  const bass = sampler(spec, 'bass-electric', { release: 0.3, volume: -6 }).connect(verb);
-  const d = drums(master);
-  d.kick.volume.value = -10;
+  const bus = pumpBus(verb, kicks, 0.45);
+  const chug = sampler(spec, 'guitar-electric', { release: 0.06, volume: -9 }).chain(
+    new Tone.Filter(2400, 'lowpass'),
+    bus,
+  );
+  const bass = sampler(spec, 'bass-electric', { release: 0.12, volume: -5 }).connect(bus);
+  const violin = sampler(spec, 'violin', { attack: 0.08, release: 1.2, volume: -12 }).chain(
+    new Tone.FeedbackDelay('8n', 0.2),
+    verb,
+  );
+  const piano = sampler(spec, 'piano', { release: 1.5, volume: -16 }).connect(verb);
+  const d = drums(master, { snareTone: true });
   await Tone.loaded();
-  const motif = [
-    [0, 2, 4, 2, 5, 4, 2, 1],
-    [4, 2, 0, 2, 4, 5, 6, 4],
+  for (const k of kicks) d.kick.triggerAttackRelease('C1', '8n', k);
+  const melody = [
+    [4, 2, 1, 0],
+    [0, 1, 2, 4],
   ][spec.seed % 2];
-  for (let b = 0, t0 = 0; t0 < s.finalAt - 1e-6; b++, t0 = b * s.bar) {
+  forBars(s, (b, t0) => {
     const sym = prog[b % prog.length];
-    const notes = voice(sym, 4, spec.transpose);
-    const body = t0 >= s.hookEnd && t0 < s.outroStart;
-    harp.triggerAttackRelease(notes, s.bar, t0, 0.5);
-    const root = tr(`${Chord.get(sym).tonic}2`, spec.transpose);
-    const walk = [root, shift(root, 7), shift(root, 12), shift(root, 7)];
-    for (let e = 0; e < 4; e++) bass.triggerAttackRelease(walk[e], s.beat * 0.6, t0 + e * s.beat, 0.8);
-    const scale = [...notes, ...notes.map((n) => shift(n, 12))].map((n) => shift(n, 12));
-    for (let q = 0; q < 8; q++) {
+    const root = rootOf(sym, 2, spec.transpose);
+    const body = isBody(s, t0);
+    // Palm-muted power chord (root + fifth) in 16ths, accents on the beat.
+    for (let q = 0; q < 16; q++) {
       if (!body && q % 2) continue;
-      const swing = q % 2 ? s.beat * 0.08 : 0;
-      xylo.triggerAttackRelease(
-        scale[motif[q] % scale.length],
-        '8n',
-        t0 + q * (s.beat / 2) + swing + (r() - 0.5) * 0.008,
-        0.6 + 0.3 * r(),
-      );
+      const t = t0 + q * (s.beat / 4) + r() * 0.5 * 0.004;
+      const v = (q % 4 === 0 ? 0.85 : 0.55) + 0.1 * r();
+      chug.triggerAttackRelease([shift(root, 12), shift(root, 19)], s.beat / 6, t, v);
     }
+    for (let e = 0; e < 8; e++) bass.triggerAttackRelease(root, s.beat * 0.42, t0 + e * (s.beat / 2), 0.8);
+    piano.triggerAttackRelease(voice(sym, 4, spec.transpose), s.beat * 2, t0, 0.35);
     if (body) {
-      d.kick.triggerAttackRelease('C1', '8n', t0);
-      d.kick.triggerAttackRelease('C1', '8n', t0 + s.beat * 2.5);
-      for (let h = 0; h < 8; h++)
-        d.hat.triggerAttackRelease('32n', t0 + h * (s.beat / 2) + (h % 2 ? s.beat * 0.08 : 0), h % 2 ? 1 : 0.5);
+      const tones = voice(sym, 5, spec.transpose);
+      violin.triggerAttackRelease(tones[melody[b % 4] % tones.length], s.beat * 2.8, t0, 0.65);
+      violin.triggerAttackRelease(tones[(melody[(b + 1) % 4] + 1) % tones.length], s.beat * 0.9, t0 + s.beat * 3, 0.5);
+      d.hitSnare(t0 + s.beat);
+      d.hitSnare(t0 + s.beat * 3);
+      for (let h = 0; h < 8; h++) d.hat.triggerAttackRelease('32n', t0 + h * (s.beat / 2), h % 2 ? 0.9 : 0.45);
     }
-  }
-  harp.triggerAttackRelease(voice(prog[0], 4, spec.transpose), 3, s.finalAt, 0.7);
-  xylo.triggerAttackRelease(tr('C6', spec.transpose), 1.5, s.finalAt + 0.05, 0.6);
-};
-
-/** One Shot: fingerpicked acoustic guitar (Travis pattern), harp shimmer, soft violin line. No drums. */
-const acoustic: Composer = async (spec, master) => {
-  const bpm = 78;
-  const s = sections(spec, bpm);
-  const r = rng(spec.seed);
-  const prog = ['D', 'A', 'Bm', 'G'];
-  const verb = await reverb(3.2, 0.3);
-  verb.connect(master);
-  const guitar = sampler(spec, 'guitar-acoustic', { release: 1.6, volume: -4 }).connect(verb);
-  const harp = sampler(spec, 'harp', { release: 2, volume: -18 }).connect(verb);
-  const violin = sampler(spec, 'violin', { attack: 0.4, release: 1.5, volume: -22 }).connect(verb);
-  await Tone.loaded();
-  for (let b = 0, t0 = 0; t0 < s.finalAt - 1e-6; b++, t0 = b * s.bar) {
-    const sym = prog[b % prog.length];
-    const tonic = Chord.get(sym).tonic ?? 'D';
-    const tri = voice(sym, 3, spec.transpose);
-    const bassA = tr(`${tonic}2`, spec.transpose);
-    const bassB = shift(bassA, 7);
-    const treble = [shift(tri[1], 12), shift(tri[2], 12), shift(tri[0], 12)];
-    for (let e = 0; e < 8; e++) {
-      const t = t0 + e * (s.beat / 2) + (r() - 0.5) * 0.012;
-      const v = 0.55 + 0.25 * r();
-      if (e % 2 === 0) guitar.triggerAttackRelease(e % 4 === 0 ? bassA : bassB, s.beat * 1.6, t, v + 0.1);
-      else guitar.triggerAttackRelease(treble[(e >> 1) % 3], s.beat * 1.2, t, v);
-    }
-    if (t0 >= s.hookEnd && t0 < s.outroStart) {
-      if (b % 2 === 1) violin.triggerAttackRelease(shift(tri[2], 12), s.bar * 0.95, t0, 0.5);
-      harp.triggerAttackRelease(shift(tri[0], 24), s.beat, t0 + s.beat * 3.5, 0.45);
-    }
-  }
+  });
   const home = voice(prog[0], 3, spec.transpose);
-  home.forEach((n, i) => guitar.triggerAttackRelease(n, 3, s.finalAt + i * 0.035, 0.7));
-  guitar.triggerAttackRelease(tr('D2', spec.transpose), 3, s.finalAt, 0.75);
-  harp.triggerAttackRelease(shift(home[0], 24), 2.5, s.finalAt + 0.2, 0.5);
-};
-
-/** Wrong About Space: lo-fi electric piano (FM), swung boom-bap, warm bass, tape wobble and crackle. */
-const lofi: Composer = async (spec, master) => {
-  const bpm = 82;
-  const s = sections(spec, bpm);
-  const r = rng(spec.seed);
-  const prog = ['Fmaj7', 'Em7', 'Dm7', 'Cmaj7'];
-  const verb = await reverb(2.4, 0.22);
-  const tape = new Tone.Vibrato(0.6, 0.08).connect(new Tone.Filter(3800, 'lowpass').connect(verb));
-  verb.connect(master);
-  const keys = new Tone.PolySynth(Tone.FMSynth, {
-    harmonicity: 3,
-    modulationIndex: 8,
-    oscillator: { type: 'sine' },
-    modulation: { type: 'sine' },
-    envelope: { attack: 0.005, decay: 1.6, sustain: 0.25, release: 1.2 },
-    modulationEnvelope: { attack: 0.002, decay: 0.4, sustain: 0.1, release: 0.5 },
-    volume: -14,
-  }).connect(tape);
-  const bass = sampler(spec, 'bass-electric', { release: 0.4, volume: -8 }).connect(verb);
-  const crackle = new Tone.Noise({ type: 'brown', volume: -56 }).chain(new Tone.Filter(2500, 'highpass'), master);
-  crackle.start(0).stop(s.finalAt + 2.5);
-  const d = drums(master);
-  d.kick.volume.value = -8;
-  await Tone.loaded();
-  const swing = s.beat * 0.1;
-  for (let b = 0, t0 = 0; t0 < s.finalAt - 1e-6; b++, t0 = b * s.bar) {
-    const sym = prog[b % prog.length];
-    const notes = voice(sym, 3, spec.transpose).map((n) => shift(n, 12));
-    const body = t0 >= s.hookEnd && t0 < s.outroStart;
-    keys.triggerAttackRelease(notes, s.beat * 1.5, t0 + 0.01, 0.6);
-    keys.triggerAttackRelease(notes, s.beat * 0.8, t0 + s.beat * 2.5 + swing, 0.45);
-    if (body && b % 2 === 1)
-      keys.triggerAttackRelease(shift(notes[notes.length - 1], 12), s.beat, t0 + s.beat * 3.5 + swing, 0.4);
-    const root = tr(`${Chord.get(sym).tonic}2`, spec.transpose);
-    bass.triggerAttackRelease(root, s.beat * 1.4, t0, 0.8);
-    bass.triggerAttackRelease(shift(root, 7), s.beat * 0.6, t0 + s.beat * 2.5 + swing, 0.6);
-    if (t0 >= s.hookEnd * 0.5) {
-      d.kick.triggerAttackRelease('C1', '8n', t0);
-      d.kick.triggerAttackRelease('C1', '8n', t0 + s.beat * 1.75 + swing * 0.5);
-      if (body) d.kick.triggerAttackRelease('C1', '8n', t0 + s.beat * 2.5 + swing);
-    }
-    if (body) {
-      d.snare.triggerAttackRelease('16n', t0 + s.beat, 0.7);
-      d.snare.triggerAttackRelease('16n', t0 + s.beat * 3, 0.7);
-      for (let h = 0; h < 8; h++)
-        d.hat.triggerAttackRelease(
-          '32n',
-          t0 + h * (s.beat / 2) + (h % 2 ? swing : 0),
-          (h % 2 ? 0.8 : 0.45) * (0.85 + 0.3 * r()),
-        );
-    }
-  }
-  keys.triggerAttackRelease(
-    voice(prog[0], 3, spec.transpose).map((n) => shift(n, 12)),
+  const homeRoot = rootOf(prog[0], 3, spec.transpose);
+  piano.triggerAttackRelease(
+    home.map((n) => shift(n, 12)),
     3,
     s.finalAt,
     0.6,
   );
-  bass.triggerAttackRelease(tr('F2', spec.transpose), 2.5, s.finalAt, 0.8);
+  chug.triggerAttackRelease([homeRoot, shift(homeRoot, 7)], 2, s.finalAt, 0.8);
+  bass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 2.5, s.finalAt, 0.8);
+  violin.triggerAttackRelease(shift(home[0], 24), 2.6, s.finalAt, 0.55);
 };
 
-const COMPOSERS: Record<ToneStyle, Composer> = { pulse, telemetry, lab, acoustic, lofi };
+/**
+ * Wrong About Space: lo-fi hip-hop. Recorded piano playing ninth chords behind the beat, a clean
+ * electric-guitar lick now and then, electric bass, dusty swung drums (bit-crushed, low-passed),
+ * tape wow and a little vinyl.
+ */
+const lofi: Composer = async (spec, master, r) => {
+  const s = sections(spec, 76);
+  const prog = [
+    ['Dm9', 'G13', 'Cmaj9', 'Am9'],
+    ['Fmaj9', 'Em9', 'Dm9', 'Cmaj9'],
+  ][spec.seed % 2];
+  const swing = s.beat * 0.12;
+  // Tape: slow wow, dark top end, a touch of saturation.
+  const tape = new Tone.Filter(2600, 'lowpass', -24).connect(master);
+  const sat = new Tone.Distortion({ distortion: 0.08, wet: 0.5 }).connect(tape);
+  const wow = new Tone.Vibrato({ frequency: 0.5, depth: 0.06 }).connect(sat);
+  const verb = await reverb(2.2, 0.25);
+  verb.connect(wow);
+  const piano = sampler(spec, 'piano', { release: 1.8, volume: -6 }).connect(verb);
+  const guitar = sampler(spec, 'guitar-electric', { release: 0.8, volume: -14 }).chain(
+    new Tone.FeedbackDelay('8n.', 0.28),
+    verb,
+  );
+  const bass = sampler(spec, 'bass-electric', { release: 0.5, volume: -6 }).connect(sat);
+  const crush = new Tone.BitCrusher(9);
+  crush.wet.value = 0.35;
+  crush.connect(tape);
+  const d = drums(crush, { snareTone: true, dark: true });
+  const vinyl = new Tone.Noise({ type: 'pink', volume: -60 }).chain(new Tone.Filter(1800, 'bandpass'), master);
+  vinyl.start(0).stop(s.finalAt + 2.6);
+  const crackle = new Tone.NoiseSynth({
+    envelope: { attack: 0.0005, decay: 0.004, sustain: 0 },
+    volume: -40,
+  }).connect(master);
+  for (let t = 0.3; t < s.finalAt + 2; t += 0.15 + r() * 0.6) crackle.triggerAttackRelease('64n', t, 0.3 + 0.7 * r());
+  await Tone.loaded();
+  forBars(s, (b, t0) => {
+    const sym = prog[b % prog.length];
+    const body = isBody(s, t0);
+    // Rootless voicing in the middle register, rolled like a hand, played a hair late.
+    const chord = voice(sym, 3, spec.transpose).slice(1).map(mid);
+    chord.forEach((n, i) => piano.triggerAttackRelease(n, s.beat * 2.2, t0 + 0.02 + i * 0.022, 0.42 + 0.1 * r()));
+    chord.forEach((n, i) =>
+      piano.triggerAttackRelease(n, s.beat * 1.1, t0 + s.beat * 2.5 + swing + i * 0.018, 0.3 + 0.08 * r()),
+    );
+    const root = rootOf(sym, 2, spec.transpose);
+    bass.triggerAttackRelease(root, s.beat * 1.6, t0, 0.75);
+    bass.triggerAttackRelease(shift(root, b % 2 ? 7 : 12), s.beat * 0.7, t0 + s.beat * 2.5 + swing, 0.55);
+    if (body && b % 2 === 1) {
+      const lick = voice(sym, 4, spec.transpose);
+      [0, 0.75, 1.5].forEach((o, i) =>
+        guitar.triggerAttackRelease(lick[(i + b) % lick.length], s.beat * 0.6, t0 + s.beat * (2 + o) + swing, 0.5),
+      );
+    }
+    if (t0 >= s.hookEnd * 0.5) {
+      d.kick.triggerAttackRelease('C1', '8n', t0, 0.9);
+      d.kick.triggerAttackRelease('C1', '8n', t0 + s.beat * 1.5 + swing, 0.6);
+      if (body) d.kick.triggerAttackRelease('C1', '8n', t0 + s.beat * 2.75, 0.7);
+    }
+    if (body) {
+      d.hitSnare(t0 + s.beat + 0.015, 0.75);
+      d.hitSnare(t0 + s.beat * 3 + 0.015, 0.75);
+      if (r() < 0.4) d.hitSnare(t0 + s.beat * 3.75 + swing, 0.25);
+      for (let h = 0; h < 8; h++)
+        d.hat.triggerAttackRelease(
+          '32n',
+          t0 + h * (s.beat / 2) + (h % 2 ? swing : 0),
+          (h % 2 ? 0.7 : 0.4) * (0.8 + 0.4 * r()),
+        );
+    }
+  });
+  const home = voice(prog[0], 3, spec.transpose).map(mid);
+  home.forEach((n, i) => piano.triggerAttackRelease(n, 3, s.finalAt + i * 0.03, 0.45));
+  bass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 2.5, s.finalAt, 0.7);
+};
+
+/** Sky This Week: night-sky piano. Recorded piano arpeggios, harp and contrabass, violin pad, soft pulse. */
+const nocturne: Composer = async (spec, master, r) => {
+  const s = sections(spec, 88);
+  const prog = [
+    ['C#m', 'A', 'E', 'B'],
+    ['Am', 'F', 'C', 'G'],
+  ][spec.seed % 2];
+  const kicks: number[] = [];
+  for (let t = 0; t < s.finalAt; t += s.beat * 2) if (t >= s.hookEnd) kicks.push(t);
+  const verb = await reverb(3.8, 0.33);
+  verb.connect(master);
+  const bus = pumpBus(verb, kicks, 0.25);
+  const piano = sampler(spec, 'piano', { release: 2.2, volume: -5 }).connect(bus);
+  const harp = sampler(spec, 'harp', { release: 2.5, volume: -14 }).connect(verb);
+  const violin = sampler(spec, 'violin', { attack: 0.6, release: 2, volume: -20 }).connect(verb);
+  const contrabass = sampler(spec, 'contrabass', { attack: 0.1, release: 1.5, volume: -12 }).connect(verb);
+  const d = drums(master);
+  d.kick.volume.value = -12;
+  await Tone.loaded();
+  forBars(s, (b, t0) => {
+    const sym = prog[b % prog.length];
+    const tri = voice(sym, 4, spec.transpose);
+    const body = isBody(s, t0);
+    const arp = [tri[0], tri[1], tri[2], shift(tri[0], 12), tri[2], tri[1], shift(tri[1], 12), tri[2]];
+    arp.forEach((n, i) =>
+      piano.triggerAttackRelease(
+        n,
+        s.beat * 1.2,
+        t0 + i * (s.beat / 2) + r() * 0.5 * 0.01,
+        (i % 2 ? 0.38 : 0.5) + 0.08 * r(),
+      ),
+    );
+    harp.triggerAttackRelease(rootOf(sym, 3, spec.transpose), s.bar, t0, 0.55);
+    contrabass.triggerAttackRelease(rootOf(sym, 2, spec.transpose), s.bar * 0.95, t0, 0.6);
+    if (body) {
+      violin.triggerAttackRelease(shift(tri[b % 3], 12), s.bar * 0.98, t0, 0.5);
+      for (const k of [0, 2]) d.kick.triggerAttackRelease('C1', '8n', t0 + k * s.beat, 0.8);
+      for (let h = 0; h < 4; h++) d.hat.triggerAttackRelease('32n', t0 + h * s.beat + s.beat / 2, 0.35);
+    }
+  });
+  const home = voice(prog[0], 4, spec.transpose);
+  home.forEach((n, i) => piano.triggerAttackRelease(n, 3.2, s.finalAt + i * 0.04, 0.5));
+  harp.triggerAttackRelease(shift(home[0], 12), 3, s.finalAt + 0.15, 0.5);
+  contrabass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 3, s.finalAt, 0.6);
+};
+
+/** Weird Physics: bouncy and pulse-like. Recorded xylophone hook, piano stabs, bass, kick and clap. */
+const lab: Composer = async (spec, master, r) => {
+  const s = sections(spec, 114);
+  const prog = ['C', 'Am', 'Dm7', 'G7'];
+  const kicks: number[] = [];
+  for (let t = 0; t < s.finalAt; t += s.beat) if (t >= s.hookEnd || Math.round(t / s.beat) % 2 === 0) kicks.push(t);
+  const verb = await reverb(1.8, 0.2);
+  verb.connect(master);
+  const bus = pumpBus(verb, kicks, 0.4);
+  const xylo = sampler(spec, 'xylophone', { release: 0.6, volume: -7 }).connect(bus);
+  const piano = sampler(spec, 'piano', { release: 0.4, volume: -12 }).connect(bus);
+  const bass = sampler(spec, 'bass-electric', { release: 0.2, volume: -6 }).connect(bus);
+  const harp = sampler(spec, 'harp', { release: 1.5, volume: -16 }).connect(verb);
+  const d = drums(master, { snareTone: true });
+  d.kick.volume.value = -8;
+  await Tone.loaded();
+  for (const k of kicks) d.kick.triggerAttackRelease('C1', '8n', k);
+  const motif = [
+    [0, 2, 4, 2, 5, 4, 2, 1],
+    [4, 2, 0, 2, 4, 5, 6, 4],
+  ][spec.seed % 2];
+  forBars(s, (b, t0) => {
+    const sym = prog[b % prog.length];
+    const notes = voice(sym, 4, spec.transpose);
+    const body = isBody(s, t0);
+    harp.triggerAttackRelease(notes, s.bar, t0, 0.45);
+    for (const off of [0.5, 1.5, 2.5, 3.5]) piano.triggerAttackRelease(notes, s.beat * 0.3, t0 + off * s.beat, 0.4);
+    const root = rootOf(sym, 2, spec.transpose);
+    for (let e = 0; e < 8; e++)
+      bass.triggerAttackRelease(e % 4 === 3 ? shift(root, 7) : root, s.beat * 0.4, t0 + e * (s.beat / 2), 0.8);
+    const scale = [...notes, ...notes.map((n) => shift(n, 12))].map((n) => shift(n, 12));
+    for (let q = 0; q < 8; q++) {
+      if (!body && q % 2) continue;
+      xylo.triggerAttackRelease(
+        scale[motif[q] % scale.length],
+        '8n',
+        t0 + q * (s.beat / 2) + r() * 0.5 * 0.006,
+        0.6 + 0.3 * r(),
+      );
+    }
+    if (body) {
+      d.hitSnare(t0 + s.beat, 0.7);
+      d.hitSnare(t0 + s.beat * 3, 0.7);
+      for (let h = 0; h < 4; h++) d.hat.triggerAttackRelease('32n', t0 + h * s.beat + s.beat / 2);
+    }
+  });
+  harp.triggerAttackRelease(voice(prog[0], 4, spec.transpose), 3, s.finalAt, 0.7);
+  xylo.triggerAttackRelease(shift('C6', spec.transpose), 1.5, s.finalAt + 0.05, 0.6);
+  bass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 2.4, s.finalAt, 0.8);
+};
+
+const COMPOSERS: Record<ToneStyle, Composer> = { acoustic, pulse, drive, lofi, nocturne, lab };
 
 function toBase64(a: Float32Array): string {
   const bytes = new Uint8Array(a.buffer, a.byteOffset, a.byteLength);
@@ -381,10 +465,13 @@ function toBase64(a: Float32Array): string {
 
 export async function renderBed(spec: BedSpec): Promise<{ sampleRate: number; left: string; right: string }> {
   const sampleRate = 44100;
+  // Tone's noise sources use Math.random; seed it so renders are reproducible.
+  Math.random = rng(spec.seed + 7919);
+  const r = rng(spec.seed);
   const buffer = await Tone.Offline(
     async () => {
       const master = new Tone.Compressor({ threshold: -18, ratio: 3, attack: 0.01, release: 0.2 }).toDestination();
-      await COMPOSERS[spec.style](spec, master);
+      await COMPOSERS[spec.style](spec, master, r);
     },
     spec.seconds + 2,
     2,

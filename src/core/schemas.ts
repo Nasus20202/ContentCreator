@@ -345,22 +345,25 @@ export const Plan = z.object({
     /** Multiplier on the synthesised bed. 0.14-0.15 sits ~11 LU under the voice. */
     volume: z.number().min(0).max(1).default(0.15),
     /**
-     * Bed character; see RECIPE in src/render/media.ts. Optional rather than defaulted so adding it
+     * Bed character; see src/render/tone/compose.ts (retired names map via LEGACY_STYLES). Optional rather than defaulted so adding it
      * does not change the plan hash of episodes that predate it.
      */
     style: z
       .enum([
+        'acoustic',
+        'pulse',
+        'drive',
+        'lofi',
+        'nocturne',
+        'lab',
+        // retired names, kept so older plans validate (they map to the styles above)
         'piano',
         'piano-pulse',
         'piano-air',
         'orbit',
         'nebula',
         'meteor',
-        'pulse',
         'telemetry',
-        'lab',
-        'acoustic',
-        'lofi',
       ])
       .optional(),
     /** Bed variant: timing/velocity seed and transposition in semitones. Optional, same reason as style. */

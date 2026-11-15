@@ -10,28 +10,16 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { Episode } from '../src/core/episode';
 import { ffmpeg, loudness, synthesizePad, type MusicStyle } from '../src/render/media';
+import { TONE_STYLES } from '../src/render/tone/styles';
 
-const STYLES: MusicStyle[] = [
-  'orbit',
-  'nebula',
-  'meteor',
-  'pulse',
-  'telemetry',
-  'lab',
-  'acoustic',
-  'lofi',
-  'piano',
-  'piano-pulse',
-  'piano-air',
-];
+const STYLES: MusicStyle[] = [...TONE_STYLES];
 
 function arg(name: string, fallback: string): string {
   const i = process.argv.indexOf(`--${name}`);
   return i >= 0 && process.argv[i + 1] ? process.argv[i + 1] : fallback;
 }
-const style = arg('style', 'orbit') as MusicStyle;
+const style = arg('style', 'nocturne') as MusicStyle;
 const seeds = arg('seeds', '0,1,2').split(',').map(Number);
 const shifts = arg('transpose', '0').split(',').map(Number);
 const seconds = Number(arg('seconds', '20'));
@@ -41,7 +29,7 @@ if (seeds.some((s) => !Number.isInteger(s) || s < 0 || s > 999)) throw new Error
 if (shifts.some((t) => !Number.isInteger(t) || t < -6 || t > 6)) throw new Error('--transpose: integers -6..6');
 if (!(seconds >= 5)) throw new Error('--seconds must be at least 5');
 
-const out = arg('out', path.join(Episode.load('sky-tonight-2026-12-13-eu-central').paths.build, 'music', 'variants'));
+const out = arg('out', path.join('build', 'music-variants'));
 fs.mkdirSync(out, { recursive: true });
 
 const files: string[] = [];
