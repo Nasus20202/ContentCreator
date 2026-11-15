@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T08:24:09.049Z",
-  "videoSha256": "986f8688c322ecb112882f2797a8081ee02a52e2d85dc6868beb5e57d389bfc6",
+  "checkedAt": "2026-11-15T11:13:19.860Z",
+  "videoSha256": "058aed3dbf0743d2b27d247f97c31b4751416a958b01903b594fa698f1b8b6f7",
   "automated": [
     {
       "name": "resolution",
@@ -35,7 +35,7 @@
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.5 dBFS"
+      "detail": "-1.4 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -123,12 +123,22 @@
       "file": "qa/05-outro-1.jpg",
       "sceneId": "outro",
       "tSec": 49.07
+    },
+    {
+      "file": "qa/cover.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
+    },
+    {
+      "file": "qa/cover-grid.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T08:24:33.531Z",
+    "at": "2026-11-15T11:15:00.673Z",
     "verdict": "pass",
-    "notes": "Hook and flight now play the real Flight 15 catch clip (muted, vertical crop, webcast HUD removed). Checked all 16 frames: hook shows tower-cam close-up then the ship held in the arms under 'FLIGHT 15 CATCH · SPACEX'; flight shows the descent, flip and landing burn into the tower under 'SHIP 42 COMING HOME', ship always in frame; credit line 'SpaceX webcast via The Launch Pad · © SpaceX, all rights reserved' on both video scenes, clear of captions; fact cards, outro (footnote 'footage: SpaceX') unchanged. Motion smoothness judged from stills only."
+    "notes": "Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills."
   }
 }

@@ -4,17 +4,17 @@
 
 | Episode | Series | Stage | Title | Published to | Views (latest) |
 | --- | --- | --- | --- | --- | --- |
-| [cosmic-top-5-2026-11-24-farthest](../episodes/cosmic-top-5/2026-11-24-farthest/README.md) | cosmic-top-5 | published | The 5 farthest things humans have ever built 🚀 | youtube, tiktok, instagram | — |
-| [mission-control-2026-11-09-escapade](../episodes/mission-control/2026-11-09-escapade/README.md) | mission-control | published | Two NASA probes just slingshotted past Earth toward Mars 🔴 | youtube, tiktok, instagram | — |
+| [cosmic-top-5-2026-11-24-farthest](../episodes/cosmic-top-5/2026-11-24-farthest/README.md) | cosmic-top-5 | approved | The 5 farthest things humans have ever built 🚀 | youtube, tiktok, instagram | — |
+| [mission-control-2026-11-09-escapade](../episodes/mission-control/2026-11-09-escapade/README.md) | mission-control | approved | Two NASA probes just slingshotted past Earth toward Mars 🔴 | youtube, tiktok, instagram | — |
 | [mission-control-2026-11-14-starship-catch](../episodes/mission-control/2026-11-14-starship-catch/README.md) | mission-control | approved | SpaceX just caught a Starship spaceship with its tower 🦾🚀 | youtube, tiktok, instagram | — |
-| [one-shot-artemis-earth](../episodes/one-shot/artemis-earth/README.md) | one-shot | published | Earth, photographed from behind the Moon 🌍🌘 | youtube, tiktok, instagram | — |
-| [one-shot-earth-smiled](../episodes/one-shot/earth-smiled/README.md) | one-shot | published | Find Earth in this photo of Saturn 🪐🔵 | youtube, tiktok, instagram | — |
+| [one-shot-artemis-earth](../episodes/one-shot/artemis-earth/README.md) | one-shot | approved | Earth, photographed from behind the Moon 🌍🌘 | youtube, tiktok, instagram | — |
+| [one-shot-earth-smiled](../episodes/one-shot/earth-smiled/README.md) | one-shot | approved | Find Earth in this photo of Saturn 🪐🔵 | youtube, tiktok, instagram | — |
 | [sky-school-deep-field](../episodes/sky-school/deep-field/README.md) | sky-school | published | Almost every dot here is a galaxy 🌌 | youtube, tiktok, instagram | 412 |
 | [sky-school-geminids-radiant-eu-central](../episodes/sky-school/geminids-radiant-eu-central/README.md) | sky-school | published | Why meteors seem to come from one point in the sky 🌠 | — | — |
-| [sky-school-how-fast](../episodes/sky-school/how-fast/README.md) | sky-school | published | You are not sitting still 🚀 | youtube, tiktok, instagram | — |
+| [sky-school-how-fast](../episodes/sky-school/how-fast/README.md) | sky-school | approved | You are not sitting still 🚀 | youtube, tiktok, instagram | — |
 | [sky-school-light-travel](../episodes/sky-school/light-travel/README.md) | sky-school | published | The Sun you see is about 8 minutes old ☀️ | — | — |
 | [sky-school-mars-opposition-eu-central](../episodes/sky-school/mars-opposition-eu-central/README.md) | sky-school | approved | Why Mars opposition is the best time to see it 🔴 | — | — |
-| [sky-school-moon-drift](../episodes/sky-school/moon-drift/README.md) | sky-school | published | The Moon is drifting away as fast as your fingernails grow 🌕 | youtube, tiktok, instagram | — |
+| [sky-school-moon-drift](../episodes/sky-school/moon-drift/README.md) | sky-school | approved | The Moon is drifting away as fast as your fingernails grow 🌕 | youtube, tiktok, instagram | — |
 | [sky-school-pale-blue-dot](../episodes/sky-school/pale-blue-dot/README.md) | sky-school | published | This speck of light is Earth 🌍 | youtube, tiktok, instagram | 41 |
 | [sky-school-planet-ages](../episodes/sky-school/planet-ages/README.md) | sky-school | published | 30 on Earth, barely 1 on Saturn 🪐 | — | — |
 | [sky-school-proxima-travel](../episodes/sky-school/proxima-travel/README.md) | sky-school | published | How long to Proxima Centauri? It depends on your clock 🚀 | — | — |
@@ -26,6 +26,6 @@
 | [sky-this-week-2026-12-21-eu-central](../episodes/sky-this-week/2026-12-21-eu-central/README.md) | sky-this-week | published | The closest full Moon of 2026 rises on Christmas Eve 🌕 | — | — |
 | [sky-this-week-2027-01-04-eu-central](../episodes/sky-this-week/2027-01-04-eu-central/README.md) | sky-this-week | published | The Quadrantids peak this weekend — but timing matters 🌠 | — | — |
 | [sky-tonight-2026-12-13-eu-central](../episodes/sky-tonight/2026-12-13-eu-central/README.md) | sky-tonight | published | Tonight: the Geminids peak, and the Moon stays away 🌠 | — | — |
-| [weird-physics-gravity-tunnel](../episodes/weird-physics/gravity-tunnel/README.md) | weird-physics | published | Jump into a tunnel through Earth: 42 minutes to the other side 🕳️🌍 | youtube, tiktok, instagram | — |
-| [wrong-about-space-dark-side](../episodes/wrong-about-space/dark-side/README.md) | wrong-about-space | published | The Moon has no dark side. Here's the photo that proves it 🌗 | youtube, tiktok, instagram | — |
+| [weird-physics-gravity-tunnel](../episodes/weird-physics/gravity-tunnel/README.md) | weird-physics | approved | Jump into a tunnel through Earth: 42 minutes to the other side 🕳️🌍 | youtube, tiktok, instagram | — |
+| [wrong-about-space-dark-side](../episodes/wrong-about-space/dark-side/README.md) | wrong-about-space | approved | The Moon has no dark side. Here's the photo that proves it 🌗 | youtube, tiktok, instagram | — |
 | [wrong-about-space-iss-gravity](../episodes/wrong-about-space/iss-gravity/README.md) | wrong-about-space | approved | Astronauts don't float because there's no gravity 🧑‍🚀 | youtube, tiktok, instagram | — |

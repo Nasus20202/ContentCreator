@@ -2,7 +2,7 @@
   "id": "weird-physics-gravity-tunnel",
   "series": "weird-physics",
   "createdAt": "2026-11-15T01:08:07.699Z",
-  "stage": "published",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -14,15 +14,14 @@
     "plan": "1ffd6c28951ff3ca",
     "factcheckedPlan": "1ffd6c28951ff3ca",
     "narration": "54d138e2f184d999",
-    "video": "cbd4b358d13926e75b08837af69e082aa6ebeb8a5b10ab915e3eb372666ab897"
+    "video": "154a2b8c21a769cb198a9744bca530f04eea60bfc4a784f554cac8889a436b70"
   },
   "approvals": [
     {
-      "by": "Krzysztof Nasuta",
+      "by": "Krzysztof",
       "actor": "human",
-      "at": "2026-11-15T02:39:35.967Z",
-      "videoSha256": "cbd4b358d13926e75b08837af69e082aa6ebeb8a5b10ab915e3eb372666ab897",
-      "note": "Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render."
+      "at": "2026-11-15T11:16:08.524Z",
+      "videoSha256": "154a2b8c21a769cb198a9744bca530f04eea60bfc4a784f554cac8889a436b70"
     }
   ]
 }

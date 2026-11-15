@@ -2,7 +2,7 @@
   "id": "wrong-about-space-dark-side",
   "series": "wrong-about-space",
   "createdAt": "2026-11-15T00:48:24.040Z",
-  "stage": "published",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -14,15 +14,14 @@
     "plan": "969707bafab746c6",
     "factcheckedPlan": "969707bafab746c6",
     "narration": "ef7ff7daaa15f1b6",
-    "video": "5888e9f4eb8f2099440e1301fd6c2de3ccc772a60a442d8f2e2d21ee43f599ff"
+    "video": "f1bb052a033f701c0df73efcaa7b9025ad239d3771b01c2cfc43626b6d705546"
   },
   "approvals": [
     {
-      "by": "Krzysztof Nasuta",
+      "by": "Krzysztof",
       "actor": "human",
-      "at": "2026-11-15T02:39:29.815Z",
-      "videoSha256": "5888e9f4eb8f2099440e1301fd6c2de3ccc772a60a442d8f2e2d21ee43f599ff",
-      "note": "Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render."
+      "at": "2026-11-15T11:16:07.747Z",
+      "videoSha256": "f1bb052a033f701c0df73efcaa7b9025ad239d3771b01c2cfc43626b6d705546"
     }
   ]
 }

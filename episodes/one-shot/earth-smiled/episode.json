@@ -2,7 +2,7 @@
   "id": "one-shot-earth-smiled",
   "series": "one-shot",
   "createdAt": "2026-11-15T01:26:16.332Z",
-  "stage": "published",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -14,15 +14,14 @@
     "plan": "5ab6cd0022cc89c4",
     "factcheckedPlan": "5ab6cd0022cc89c4",
     "narration": "5c7e94f82d7a5c00",
-    "video": "99f5cbba8c48fb9cf57b90b1120c45253e1b9bdbd40aa27a65512b7d066e09dd"
+    "video": "4d7d944422ef19e51f80870128a23a8f0e3e5da1af8bf92d1d4c202db4095eb8"
   },
   "approvals": [
     {
-      "by": "Krzysztof Nasuta",
+      "by": "Krzysztof",
       "actor": "human",
-      "at": "2026-11-15T02:39:38.947Z",
-      "videoSha256": "99f5cbba8c48fb9cf57b90b1120c45253e1b9bdbd40aa27a65512b7d066e09dd",
-      "note": "Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render."
+      "at": "2026-11-15T11:16:09.292Z",
+      "videoSha256": "4d7d944422ef19e51f80870128a23a8f0e3e5da1af8bf92d1d4c202db4095eb8"
     }
   ]
 }

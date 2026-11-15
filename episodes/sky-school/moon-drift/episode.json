@@ -2,7 +2,7 @@
   "id": "sky-school-moon-drift",
   "series": "sky-school",
   "createdAt": "2026-11-15T00:59:04.117Z",
-  "stage": "published",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -14,15 +14,14 @@
     "plan": "2c4be4d478945c3c",
     "factcheckedPlan": "2c4be4d478945c3c",
     "narration": "f91c876a479c303d",
-    "video": "b561b826bb4bfb091787d36977df0f61f0cf5310ff555367df2e48dca6edeaf3"
+    "video": "280eba9b891687435360a93bfc85e4fa6ee1da19c6833b7e36db28457677c580"
   },
   "approvals": [
     {
-      "by": "Krzysztof Nasuta",
+      "by": "Krzysztof",
       "actor": "human",
-      "at": "2026-11-15T02:39:31.362Z",
-      "videoSha256": "b561b826bb4bfb091787d36977df0f61f0cf5310ff555367df2e48dca6edeaf3",
-      "note": "Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render."
+      "at": "2026-11-15T11:16:10.084Z",
+      "videoSha256": "280eba9b891687435360a93bfc85e4fa6ee1da19c6833b7e36db28457677c580"
     }
   ]
 }

@@ -435,6 +435,115 @@
           }
         }
       ]
+    },
+    {
+      "at": "2026-11-15T11:17:38.304Z",
+      "actor": "claude",
+      "mode": "reschedule",
+      "scheduledFor": "2026-11-18T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "f1bb052a033f701c0df73efcaa7b9025ad239d3771b01c2cfc43626b6d705546",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/dark-side-f1bb052a.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6af91c44e5a113497ac0866a",
+          "payload": {
+            "text": "The 'dark side of the Moon' is really the far side: the half we never see from Earth, because the Moon is tidally locked. It gets as much sunlight as the near side. At new moon, when our side is dark, the far side is in full daylight. NASA's DSCOVR spacecraft photographed exactly that in July 2015, from about 1.6 million km away.\n\nSources:\nNASA Science, Top Moon Questions: https://science.nasa.gov/moon/top-moon-questions/\nNASA Science, Moon Facts: https://science.nasa.gov/moon/facts/\nNASA, From a Million Miles Away, NASA Camera Shows Moon Crossing Face of Earth: https://www.nasa.gov/solar-system/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth/\n\nImages: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (Artemis II). Narration uses a synthetic voice.\n\n#space #astronomy #science #moon #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/dark-side-f1bb052a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The Moon has no dark side. Here's the photo that proves it 🌗",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c44e5a113497ac0866a"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6af91c44e86a5789a6e607df",
+          "payload": {
+            "text": "The Moon has no dark side. Here's the photo that proves it 🌗\n\nThe 'dark side of the Moon' is really the far side: the half we never see from Earth, because the Moon is tidally locked. It gets as much sunlight as the near side. At new moon, when our side is dark, the far side is in full daylight. NASA's DSCOVR spacecraft photographed exactly that in July 2015, from about 1.6 million km away.\n\nSources:\nNASA Science, Top Moon Questions: https://science.nasa.gov/moon/top-moon-questions/\nNASA Science, Moon Facts: https://science.nasa.gov/moon/facts/\nNASA, From a Million Miles Away, NASA Camera Shows Moon Crossing Face of Earth: https://www.nasa.gov/solar-system/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth/\n\nImages: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (Artemis II). Narration uses a synthetic voice.\n\n#space #astronomy #science #moon #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/dark-side-f1bb052a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c44e86a5789a6e607df"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "submitted",
+          "postId": "6af91c45e86a5789a6e60808",
+          "payload": {
+            "text": "The Moon has no dark side. Here's the photo that proves it 🌗\n\nThe 'dark side of the Moon' is really the far side: the half we never see from Earth, because the Moon is tidally locked. It gets as much sunlight as the near side. At new moon, when our side is dark, the far side is in full daylight. NASA's DSCOVR spacecraft photographed exactly that in July 2015, from about 1.6 million km away.\n\nSources:\nNASA Science, Top Moon Questions\nNASA Science, Moon Facts\nNASA, From a Million Miles Away, NASA Camera Shows Moon Crossing Face of Earth\n\nImages: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (Artemis II). Narration uses a synthetic voice.\n\n#space #astronomy #science #moon #mythbusting #wrongaboutspace",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/dark-side-f1bb052a.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c45e86a5789a6e60808"
+          }
+        }
+      ]
     }
   ]
 }
