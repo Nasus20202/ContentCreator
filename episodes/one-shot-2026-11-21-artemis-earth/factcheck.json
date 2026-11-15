@@ -1,0 +1,72 @@
+{
+  "checkedAt": "2026-11-15T00:47:50.247Z",
+  "planHash": "1487081f5809360b",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[1]",
+        "text": "The Artemis II crew shot it on the 6th of April, 2026.",
+        "number": 2026,
+        "raw": "2026",
+        "matchedFact": "photo-farside"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[0]",
+        "text": "It looks tiny because it is far away: about 384,400 kilometres on average.",
+        "number": 384400,
+        "raw": "384400",
+        "matchedFact": "moon-distance"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[1]",
+        "text": "The crew took about three days to get there.",
+        "number": 3,
+        "raw": "three",
+        "matchedFact": "moon-distance"
+      },
+      {
+        "sceneId": "distance",
+        "where": "factCard",
+        "text": "384,400 km average distance from Earth to the Moon",
+        "number": 384400,
+        "raw": "384400",
+        "matchedFact": "moon-distance"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 6 April 2026, the Artemis II crew looked back from behind the Moon. The Moon's far side fills the foreground; the tiny crescent beyond it is Earth, about 384,400 km away on average. Both are lit by the same Sun, which is why they show different phases from where the crew was.\n\nSources:\nNASA, Moon's Farside in the Foreground, Earth Beyond (art002e015228): https://images.nasa.gov/details/art002e015228\nNASA, Earthset Views (art002e021007): https://images.nasa.gov/details/art002e021007\nNASA Science, Earth–Moon distance: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JSC (Artemis II crew photos). Narration uses a synthetic voice.",
+        "number": 6,
+        "raw": "6",
+        "matchedFact": "photo-farside"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 6 April 2026, the Artemis II crew looked back from behind the Moon. The Moon's far side fills the foreground; the tiny crescent beyond it is Earth, about 384,400 km away on average. Both are lit by the same Sun, which is why they show different phases from where the crew was.\n\nSources:\nNASA, Moon's Farside in the Foreground, Earth Beyond (art002e015228): https://images.nasa.gov/details/art002e015228\nNASA, Earthset Views (art002e021007): https://images.nasa.gov/details/art002e021007\nNASA Science, Earth–Moon distance: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JSC (Artemis II crew photos). Narration uses a synthetic voice.",
+        "number": 2026,
+        "raw": "2026",
+        "matchedFact": "photo-farside"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "On 6 April 2026, the Artemis II crew looked back from behind the Moon. The Moon's far side fills the foreground; the tiny crescent beyond it is Earth, about 384,400 km away on average. Both are lit by the same Sun, which is why they show different phases from where the crew was.\n\nSources:\nNASA, Moon's Farside in the Foreground, Earth Beyond (art002e015228): https://images.nasa.gov/details/art002e015228\nNASA, Earthset Views (art002e021007): https://images.nasa.gov/details/art002e021007\nNASA Science, Earth–Moon distance: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JSC (Artemis II crew photos). Narration uses a synthetic voice.",
+        "number": 384400,
+        "raw": "384400",
+        "matchedFact": "moon-distance"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-15T00:47:55.844Z",
+    "verdict": "pass",
+    "notes": "Checked against the NASA image captions for art002e015228 and art002e021007: both taken 6 April 2026 during Artemis II; the far side in the foreground with Earth beyond, both partly sunlit with different phases; Earthset through Orion's window, the dark part of Earth is night. I don't claim which photo came first ('the same day'). The 384,400 km average and 'about three days' come from NASA Science. 'That sliver of light is home' is figurative: the crew were not on Earth, so I avoided 'everyone'. The Earth marker sits on the crescent at (0.531, 0.469), checked on the image."
+  }
+}

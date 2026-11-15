@@ -1,0 +1,56 @@
+{
+  "facts": [
+    {
+      "id": "photo-farside",
+      "statement": "Photo art002e015228, taken on 6 April 2026 during Artemis II, seen from behind the Moon: the Moon's surface in the foreground and Earth much farther away, smaller, in the background; both partially lit by the Sun, with different phases. A faint reflection in the spacecraft window is visible.",
+      "values": [
+        6,
+        2026,
+        2
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov/details/art002e015228",
+        "title": "Moon's Farside in the Foreground, Earth Beyond (art002e015228)",
+        "publisher": "NASA Image and Video Library",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "photo-earthset",
+      "statement": "Earthset captured through the Orion spacecraft window at 6:37 p.m. EDT on 6 April 2026 during the Artemis II crew's flyby of the Moon; the dark portion of Earth is in nighttime.",
+      "values": [
+        6,
+        37,
+        2026,
+        2
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov/details/art002e021007",
+        "title": "Earthset Views (art002e021007)",
+        "publisher": "NASA Image and Video Library",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "moon-distance",
+      "statement": "The Moon is 384,400 km (238,855 miles) from Earth on average; the Artemis II astronauts took about three days to get there, and light crosses that distance in 1.3 seconds.",
+      "values": [
+        384400,
+        384,
+        400,
+        3,
+        1.3,
+        238855
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/",
+        "title": "Voyager 1: What Is a Light-Day",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    }
+  ]
+}

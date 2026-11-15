@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "id": "dscovr-transit",
+      "kind": "image",
+      "file": "assets/dscovr-transit.jpg",
+      "sha256": "99440a9b08d18a52e90627a8336dad689450c70c56d6c0463016ecbde9eb2b88",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth_20129140980_o/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth_20129140980_o~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth_20129140980_o",
+        "title": "From a Million Miles Away, NASA Camera Shows Moon Crossing Face of Earth",
+        "credit": "NASA / GSFC / NOAA",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T00:48:26.613Z"
+    },
+    {
+      "id": "full-moon",
+      "kind": "image",
+      "file": "assets/full-moon.jpg",
+      "sha256": "e609200b2e2182de7079aff42fb24f561d4d86fa1d4f8dc58f9b5d06189ece19",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001861/GSFC_20171208_Archive_e001861~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/GSFC_20171208_Archive_e001861",
+        "title": "Full Moon",
+        "credit": "NASA / GSFC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T00:48:29.105Z"
+    },
+    {
+      "id": "farside-earth",
+      "kind": "image",
+      "file": "assets/farside-earth.jpg",
+      "sha256": "00dd662db8158fed95f59ae58684d7328904b18fcdec3542531db4c2b13349ac",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/art002e015228/art002e015228~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/art002e015228",
+        "title": "Moon's Farside in the Foreground, Earth Beyond",
+        "credit": "NASA / JSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T00:48:30.892Z"
+    }
+  ]
+}

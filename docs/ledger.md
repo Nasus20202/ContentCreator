@@ -4,6 +4,7 @@
 
 | Episode | Series | Stage | Title | Published to | Views (latest) |
 | --- | --- | --- | --- | --- | --- |
+| [one-shot-2026-11-21-artemis-earth](../episodes/one-shot-2026-11-21-artemis-earth/README.md) | one-shot | qa-passed | Earth, photographed from behind the Moon 🌍🌘 | — | — |
 | [sky-school-deep-field-eu-central](../episodes/sky-school-deep-field-eu-central/README.md) | sky-school | published | Almost every dot here is a galaxy 🌌 | youtube, tiktok, instagram | 412 |
 | [sky-school-geminids-radiant-eu-central](../episodes/sky-school-geminids-radiant-eu-central/README.md) | sky-school | published | Why meteors seem to come from one point in the sky 🌠 | — | — |
 | [sky-school-how-fast-eu-central](../episodes/sky-school-how-fast-eu-central/README.md) | sky-school | published | You are not sitting still 🚀 | youtube, tiktok, instagram | — |
@@ -19,3 +20,4 @@
 | [sky-this-week-2026-12-21-eu-central](../episodes/sky-this-week-2026-12-21-eu-central/README.md) | sky-this-week | published | The closest full Moon of 2026 rises on Christmas Eve 🌕 | — | — |
 | [sky-this-week-2027-01-04-eu-central](../episodes/sky-this-week-2027-01-04-eu-central/README.md) | sky-this-week | published | The Quadrantids peak this weekend — but timing matters 🌠 | — | — |
 | [sky-tonight-2026-12-13-eu-central](../episodes/sky-tonight-2026-12-13-eu-central/README.md) | sky-tonight | published | Tonight: the Geminids peak, and the Moon stays away 🌠 | — | — |
+| [wrong-about-space-2026-11-22-dark-side](../episodes/wrong-about-space-2026-11-22-dark-side/README.md) | wrong-about-space | qa-passed | The Moon has no dark side. Here's the photo that proves it 🌗 | — | — |

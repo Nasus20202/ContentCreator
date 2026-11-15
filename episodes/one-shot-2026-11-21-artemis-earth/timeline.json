@@ -1,0 +1,681 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "7b722f7ef7cf8f19",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 7.104,
+      "sentences": [
+        {
+          "text": "This photo was taken from behind the Moon.",
+          "start": 0.15,
+          "end": 2.241,
+          "words": [
+            {
+              "w": "This",
+              "start": 0.15,
+              "end": 0.387
+            },
+            {
+              "w": "photo",
+              "start": 0.387,
+              "end": 0.663
+            },
+            {
+              "w": "was",
+              "start": 0.663,
+              "end": 0.86
+            },
+            {
+              "w": "taken",
+              "start": 0.86,
+              "end": 1.136
+            },
+            {
+              "w": "from",
+              "start": 1.136,
+              "end": 1.373
+            },
+            {
+              "w": "behind",
+              "start": 1.373,
+              "end": 1.689
+            },
+            {
+              "w": "the",
+              "start": 1.689,
+              "end": 1.886
+            },
+            {
+              "w": "Moon.",
+              "start": 1.886,
+              "end": 2.241
+            }
+          ]
+        },
+        {
+          "text": "The Artemis II crew shot it on the 6th of April, 2026.",
+          "start": 2.521,
+          "end": 6.824,
+          "words": [
+            {
+              "w": "The",
+              "start": 2.521,
+              "end": 2.824
+            },
+            {
+              "w": "Artemis",
+              "start": 2.824,
+              "end": 3.37
+            },
+            {
+              "w": "II",
+              "start": 3.37,
+              "end": 3.612
+            },
+            {
+              "w": "crew",
+              "start": 3.612,
+              "end": 3.976
+            },
+            {
+              "w": "shot",
+              "start": 3.976,
+              "end": 4.339
+            },
+            {
+              "w": "it",
+              "start": 4.339,
+              "end": 4.582
+            },
+            {
+              "w": "on",
+              "start": 4.582,
+              "end": 4.824
+            },
+            {
+              "w": "the",
+              "start": 4.824,
+              "end": 5.127
+            },
+            {
+              "w": "6th",
+              "start": 5.127,
+              "end": 5.43
+            },
+            {
+              "w": "of",
+              "start": 5.43,
+              "end": 5.673
+            },
+            {
+              "w": "April,",
+              "start": 5.673,
+              "end": 6.278
+            },
+            {
+              "w": "2026.",
+              "start": 6.278,
+              "end": 6.824
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "earth",
+      "audioFile": "voice/earth.wav",
+      "duration": 4.951,
+      "sentences": [
+        {
+          "text": "Now look past the Moon.",
+          "start": 0.15,
+          "end": 1.341,
+          "words": [
+            {
+              "w": "Now",
+              "start": 0.15,
+              "end": 0.342
+            },
+            {
+              "w": "look",
+              "start": 0.342,
+              "end": 0.572
+            },
+            {
+              "w": "past",
+              "start": 0.572,
+              "end": 0.803
+            },
+            {
+              "w": "the",
+              "start": 0.803,
+              "end": 0.995
+            },
+            {
+              "w": "Moon.",
+              "start": 0.995,
+              "end": 1.341
+            }
+          ]
+        },
+        {
+          "text": "That tiny crescent is Earth.",
+          "start": 1.621,
+          "end": 3.049,
+          "words": [
+            {
+              "w": "That",
+              "start": 1.621,
+              "end": 1.859
+            },
+            {
+              "w": "tiny",
+              "start": 1.859,
+              "end": 2.097
+            },
+            {
+              "w": "crescent",
+              "start": 2.097,
+              "end": 2.493
+            },
+            {
+              "w": "is",
+              "start": 2.493,
+              "end": 2.652
+            },
+            {
+              "w": "Earth.",
+              "start": 2.652,
+              "end": 3.049
+            }
+          ]
+        },
+        {
+          "text": "That sliver of light is home.",
+          "start": 3.329,
+          "end": 4.671,
+          "words": [
+            {
+              "w": "That",
+              "start": 3.329,
+              "end": 3.541
+            },
+            {
+              "w": "sliver",
+              "start": 3.541,
+              "end": 3.823
+            },
+            {
+              "w": "of",
+              "start": 3.823,
+              "end": 3.964
+            },
+            {
+              "w": "light",
+              "start": 3.964,
+              "end": 4.212
+            },
+            {
+              "w": "is",
+              "start": 4.212,
+              "end": 4.353
+            },
+            {
+              "w": "home.",
+              "start": 4.353,
+              "end": 4.671
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "distance",
+      "audioFile": "voice/distance.wav",
+      "duration": 9.007,
+      "sentences": [
+        {
+          "text": "It looks tiny because it is far away: about 384,400 kilometres on average.",
+          "start": 0.15,
+          "end": 6.482,
+          "words": [
+            {
+              "w": "It",
+              "start": 0.15,
+              "end": 0.428
+            },
+            {
+              "w": "looks",
+              "start": 0.428,
+              "end": 0.915
+            },
+            {
+              "w": "tiny",
+              "start": 0.915,
+              "end": 1.333
+            },
+            {
+              "w": "because",
+              "start": 1.333,
+              "end": 1.959
+            },
+            {
+              "w": "it",
+              "start": 1.959,
+              "end": 2.237
+            },
+            {
+              "w": "is",
+              "start": 2.237,
+              "end": 2.516
+            },
+            {
+              "w": "far",
+              "start": 2.516,
+              "end": 2.864
+            },
+            {
+              "w": "away:",
+              "start": 2.864,
+              "end": 3.49
+            },
+            {
+              "w": "about",
+              "start": 3.49,
+              "end": 3.977
+            },
+            {
+              "w": "384,400",
+              "start": 3.977,
+              "end": 4.534
+            },
+            {
+              "w": "kilometres",
+              "start": 4.534,
+              "end": 5.369
+            },
+            {
+              "w": "on",
+              "start": 5.369,
+              "end": 5.647
+            },
+            {
+              "w": "average.",
+              "start": 5.647,
+              "end": 6.482
+            }
+          ]
+        },
+        {
+          "text": "The crew took about three days to get there.",
+          "start": 6.762,
+          "end": 8.727,
+          "words": [
+            {
+              "w": "The",
+              "start": 6.762,
+              "end": 6.937
+            },
+            {
+              "w": "crew",
+              "start": 6.937,
+              "end": 7.148
+            },
+            {
+              "w": "took",
+              "start": 7.148,
+              "end": 7.358
+            },
+            {
+              "w": "about",
+              "start": 7.358,
+              "end": 7.604
+            },
+            {
+              "w": "three",
+              "start": 7.604,
+              "end": 7.85
+            },
+            {
+              "w": "days",
+              "start": 7.85,
+              "end": 8.06
+            },
+            {
+              "w": "to",
+              "start": 8.06,
+              "end": 8.2
+            },
+            {
+              "w": "get",
+              "start": 8.2,
+              "end": 8.376
+            },
+            {
+              "w": "there.",
+              "start": 8.376,
+              "end": 8.727
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "phases",
+      "audioFile": "voice/phases.wav",
+      "duration": 6.865,
+      "sentences": [
+        {
+          "text": "Notice both are crescents, but not the same shape.",
+          "start": 0.15,
+          "end": 2.793,
+          "words": [
+            {
+              "w": "Notice",
+              "start": 0.15,
+              "end": 0.48
+            },
+            {
+              "w": "both",
+              "start": 0.48,
+              "end": 0.728
+            },
+            {
+              "w": "are",
+              "start": 0.728,
+              "end": 0.935
+            },
+            {
+              "w": "crescents,",
+              "start": 0.935,
+              "end": 1.513
+            },
+            {
+              "w": "but",
+              "start": 1.513,
+              "end": 1.719
+            },
+            {
+              "w": "not",
+              "start": 1.719,
+              "end": 1.926
+            },
+            {
+              "w": "the",
+              "start": 1.926,
+              "end": 2.133
+            },
+            {
+              "w": "same",
+              "start": 2.133,
+              "end": 2.38
+            },
+            {
+              "w": "shape.",
+              "start": 2.38,
+              "end": 2.793
+            }
+          ]
+        },
+        {
+          "text": "The same Sun lights them both; we just see each from a different angle.",
+          "start": 3.073,
+          "end": 6.585,
+          "words": [
+            {
+              "w": "The",
+              "start": 3.073,
+              "end": 3.268
+            },
+            {
+              "w": "same",
+              "start": 3.268,
+              "end": 3.502
+            },
+            {
+              "w": "Sun",
+              "start": 3.502,
+              "end": 3.698
+            },
+            {
+              "w": "lights",
+              "start": 3.698,
+              "end": 4.01
+            },
+            {
+              "w": "them",
+              "start": 4.01,
+              "end": 4.244
+            },
+            {
+              "w": "both;",
+              "start": 4.244,
+              "end": 4.595
+            },
+            {
+              "w": "we",
+              "start": 4.595,
+              "end": 4.751
+            },
+            {
+              "w": "just",
+              "start": 4.751,
+              "end": 4.985
+            },
+            {
+              "w": "see",
+              "start": 4.985,
+              "end": 5.18
+            },
+            {
+              "w": "each",
+              "start": 5.18,
+              "end": 5.414
+            },
+            {
+              "w": "from",
+              "start": 5.414,
+              "end": 5.648
+            },
+            {
+              "w": "a",
+              "start": 5.648,
+              "end": 5.765
+            },
+            {
+              "w": "different",
+              "start": 5.765,
+              "end": 6.194
+            },
+            {
+              "w": "angle.",
+              "start": 6.194,
+              "end": 6.585
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "earthset",
+      "audioFile": "voice/earthset.wav",
+      "duration": 5.14,
+      "sentences": [
+        {
+          "text": "The same day, the crew watched Earth set behind the Moon.",
+          "start": 0.15,
+          "end": 3.087,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.351
+            },
+            {
+              "w": "same",
+              "start": 0.351,
+              "end": 0.593
+            },
+            {
+              "w": "day,",
+              "start": 0.593,
+              "end": 0.914
+            },
+            {
+              "w": "the",
+              "start": 0.914,
+              "end": 1.116
+            },
+            {
+              "w": "crew",
+              "start": 1.116,
+              "end": 1.357
+            },
+            {
+              "w": "watched",
+              "start": 1.357,
+              "end": 1.719
+            },
+            {
+              "w": "Earth",
+              "start": 1.719,
+              "end": 2.001
+            },
+            {
+              "w": "set",
+              "start": 2.001,
+              "end": 2.202
+            },
+            {
+              "w": "behind",
+              "start": 2.202,
+              "end": 2.524
+            },
+            {
+              "w": "the",
+              "start": 2.524,
+              "end": 2.725
+            },
+            {
+              "w": "Moon.",
+              "start": 2.725,
+              "end": 3.087
+            }
+          ]
+        },
+        {
+          "text": "The dark part of Earth is night.",
+          "start": 3.367,
+          "end": 4.86,
+          "words": [
+            {
+              "w": "The",
+              "start": 3.367,
+              "end": 3.545
+            },
+            {
+              "w": "dark",
+              "start": 3.545,
+              "end": 3.758
+            },
+            {
+              "w": "part",
+              "start": 3.758,
+              "end": 3.971
+            },
+            {
+              "w": "of",
+              "start": 3.971,
+              "end": 4.114
+            },
+            {
+              "w": "Earth",
+              "start": 4.114,
+              "end": 4.363
+            },
+            {
+              "w": "is",
+              "start": 4.363,
+              "end": 4.505
+            },
+            {
+              "w": "night.",
+              "start": 4.505,
+              "end": 4.86
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.367,
+      "sentences": [
+        {
+          "text": "One photo, one detail.",
+          "start": 0.15,
+          "end": 1.636,
+          "words": [
+            {
+              "w": "One",
+              "start": 0.15,
+              "end": 0.39
+            },
+            {
+              "w": "photo,",
+              "start": 0.39,
+              "end": 0.869
+            },
+            {
+              "w": "one",
+              "start": 0.869,
+              "end": 1.109
+            },
+            {
+              "w": "detail.",
+              "start": 1.109,
+              "end": 1.636
+            }
+          ]
+        },
+        {
+          "text": "Follow for the next one.",
+          "start": 1.916,
+          "end": 3.087,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 1.916,
+              "end": 2.209
+            },
+            {
+              "w": "for",
+              "start": 2.209,
+              "end": 2.392
+            },
+            {
+              "w": "the",
+              "start": 2.392,
+              "end": 2.575
+            },
+            {
+              "w": "next",
+              "start": 2.575,
+              "end": 2.794
+            },
+            {
+              "w": "one.",
+              "start": 2.794,
+              "end": 3.087
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

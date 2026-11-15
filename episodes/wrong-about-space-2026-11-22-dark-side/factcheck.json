@@ -1,0 +1,56 @@
+{
+  "checkedAt": "2026-11-15T00:52:39.936Z",
+  "planHash": "6cc5e5b44aa2e832",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "proof",
+        "where": "narration[1]",
+        "text": "In 2015, NASA's DSCOVR spacecraft watched the far side cross in front of Earth, fully lit by the Sun.",
+        "number": 2015,
+        "raw": "2015",
+        "matchedFact": "dscovr-photo"
+      },
+      {
+        "sceneId": "proof",
+        "where": "narration[2]",
+        "text": "It was about 1.6 million kilometres away.",
+        "number": 1.6,
+        "raw": "1.6",
+        "matchedFact": "dscovr-photo"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The 'dark side of the Moon' is really the far side: the half we never see from Earth, because the Moon is tidally locked. It gets as much sunlight as the near side. At new moon, when our side is dark, the far side is in full daylight. NASA's DSCOVR spacecraft photographed exactly that in July 2015, from about 1.6 million km away.\n\nSources:\nNASA Science, Top Moon Questions: https://science.nasa.gov/moon/top-moon-questions/\nNASA Science, Moon Facts: https://science.nasa.gov/moon/facts/\nNASA, From a Million Miles Away, NASA Camera Shows Moon Crossing Face of Earth: https://www.nasa.gov/solar-system/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth/\n\nImages: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (Artemis II). Narration uses a synthetic voice.",
+        "number": 2015,
+        "raw": "2015",
+        "matchedFact": "dscovr-photo"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The 'dark side of the Moon' is really the far side: the half we never see from Earth, because the Moon is tidally locked. It gets as much sunlight as the near side. At new moon, when our side is dark, the far side is in full daylight. NASA's DSCOVR spacecraft photographed exactly that in July 2015, from about 1.6 million km away.\n\nSources:\nNASA Science, Top Moon Questions: https://science.nasa.gov/moon/top-moon-questions/\nNASA Science, Moon Facts: https://science.nasa.gov/moon/facts/\nNASA, From a Million Miles Away, NASA Camera Shows Moon Crossing Face of Earth: https://www.nasa.gov/solar-system/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth/\n\nImages: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (Artemis II). Narration uses a synthetic voice.",
+        "number": 1.6,
+        "raw": "1.6",
+        "matchedFact": "dscovr-photo"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "The 'dark side of the Moon' is really the far side: the half we never see from Earth, because the Moon is tidally locked. It gets as much sunlight as the near side. At new moon, when our side is dark, the far side is in full daylight. NASA's DSCOVR spacecraft photographed exactly that in July 2015, from about 1.6 million km away.\n\nSources:\nNASA Science, Top Moon Questions: https://science.nasa.gov/moon/top-moon-questions/\nNASA Science, Moon Facts: https://science.nasa.gov/moon/facts/\nNASA, From a Million Miles Away, NASA Camera Shows Moon Crossing Face of Earth: https://www.nasa.gov/solar-system/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth/\n\nImages: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (Artemis II). Narration uses a synthetic voice.",
+        "number": 1000000,
+        "raw": "a million",
+        "matchedFact": "dscovr-photo"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-15T00:52:40.672Z",
+    "verdict": "pass",
+    "notes": "Unchanged wording; proof-scene crop recentred on the Moon."
+  }
+}

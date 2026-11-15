@@ -1,0 +1,677 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "ef7ff7daaa15f1b6",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 3.897,
+      "sentences": [
+        {
+          "text": "The Moon has no dark side.",
+          "start": 0.15,
+          "end": 1.65,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.364
+            },
+            {
+              "w": "Moon",
+              "start": 0.364,
+              "end": 0.622
+            },
+            {
+              "w": "has",
+              "start": 0.622,
+              "end": 0.836
+            },
+            {
+              "w": "no",
+              "start": 0.836,
+              "end": 1.007
+            },
+            {
+              "w": "dark",
+              "start": 1.007,
+              "end": 1.264
+            },
+            {
+              "w": "side.",
+              "start": 1.264,
+              "end": 1.65
+            }
+          ]
+        },
+        {
+          "text": "And there is a photo that proves it.",
+          "start": 1.93,
+          "end": 3.617,
+          "words": [
+            {
+              "w": "And",
+              "start": 1.93,
+              "end": 2.11
+            },
+            {
+              "w": "there",
+              "start": 2.11,
+              "end": 2.361
+            },
+            {
+              "w": "is",
+              "start": 2.361,
+              "end": 2.504
+            },
+            {
+              "w": "a",
+              "start": 2.504,
+              "end": 2.612
+            },
+            {
+              "w": "photo",
+              "start": 2.612,
+              "end": 2.863
+            },
+            {
+              "w": "that",
+              "start": 2.863,
+              "end": 3.078
+            },
+            {
+              "w": "proves",
+              "start": 3.078,
+              "end": 3.365
+            },
+            {
+              "w": "it.",
+              "start": 3.365,
+              "end": 3.617
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "why",
+      "audioFile": "voice/why.wav",
+      "duration": 8.116,
+      "sentences": [
+        {
+          "text": "We always see the same face of the Moon, because it is tidally locked to Earth.",
+          "start": 0.15,
+          "end": 4.17,
+          "words": [
+            {
+              "w": "We",
+              "start": 0.15,
+              "end": 0.311
+            },
+            {
+              "w": "always",
+              "start": 0.311,
+              "end": 0.632
+            },
+            {
+              "w": "see",
+              "start": 0.632,
+              "end": 0.833
+            },
+            {
+              "w": "the",
+              "start": 0.833,
+              "end": 1.034
+            },
+            {
+              "w": "same",
+              "start": 1.034,
+              "end": 1.276
+            },
+            {
+              "w": "face",
+              "start": 1.276,
+              "end": 1.517
+            },
+            {
+              "w": "of",
+              "start": 1.517,
+              "end": 1.678
+            },
+            {
+              "w": "the",
+              "start": 1.678,
+              "end": 1.879
+            },
+            {
+              "w": "Moon,",
+              "start": 1.879,
+              "end": 2.241
+            },
+            {
+              "w": "because",
+              "start": 2.241,
+              "end": 2.602
+            },
+            {
+              "w": "it",
+              "start": 2.602,
+              "end": 2.763
+            },
+            {
+              "w": "is",
+              "start": 2.763,
+              "end": 2.924
+            },
+            {
+              "w": "tidally",
+              "start": 2.924,
+              "end": 3.286
+            },
+            {
+              "w": "locked",
+              "start": 3.286,
+              "end": 3.607
+            },
+            {
+              "w": "to",
+              "start": 3.607,
+              "end": 3.768
+            },
+            {
+              "w": "Earth.",
+              "start": 3.768,
+              "end": 4.17
+            }
+          ]
+        },
+        {
+          "text": "The half we never see is the far side.",
+          "start": 4.45,
+          "end": 6.522,
+          "words": [
+            {
+              "w": "The",
+              "start": 4.45,
+              "end": 4.657
+            },
+            {
+              "w": "half",
+              "start": 4.657,
+              "end": 4.906
+            },
+            {
+              "w": "we",
+              "start": 4.906,
+              "end": 5.072
+            },
+            {
+              "w": "never",
+              "start": 5.072,
+              "end": 5.362
+            },
+            {
+              "w": "see",
+              "start": 5.362,
+              "end": 5.569
+            },
+            {
+              "w": "is",
+              "start": 5.569,
+              "end": 5.735
+            },
+            {
+              "w": "the",
+              "start": 5.735,
+              "end": 5.942
+            },
+            {
+              "w": "far",
+              "start": 5.942,
+              "end": 6.149
+            },
+            {
+              "w": "side.",
+              "start": 6.149,
+              "end": 6.522
+            }
+          ]
+        },
+        {
+          "text": "Far, not dark.",
+          "start": 6.802,
+          "end": 7.836,
+          "words": [
+            {
+              "w": "Far,",
+              "start": 6.802,
+              "end": 7.178
+            },
+            {
+              "w": "not",
+              "start": 7.178,
+              "end": 7.413
+            },
+            {
+              "w": "dark.",
+              "start": 7.413,
+              "end": 7.836
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "fact",
+      "audioFile": "voice/fact.wav",
+      "duration": 7.652,
+      "sentences": [
+        {
+          "text": "The far side gets just as much sunlight as the near side.",
+          "start": 0.15,
+          "end": 3.327,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.371
+            },
+            {
+              "w": "far",
+              "start": 0.371,
+              "end": 0.591
+            },
+            {
+              "w": "side",
+              "start": 0.591,
+              "end": 0.856
+            },
+            {
+              "w": "gets",
+              "start": 0.856,
+              "end": 1.121
+            },
+            {
+              "w": "just",
+              "start": 1.121,
+              "end": 1.385
+            },
+            {
+              "w": "as",
+              "start": 1.385,
+              "end": 1.562
+            },
+            {
+              "w": "much",
+              "start": 1.562,
+              "end": 1.827
+            },
+            {
+              "w": "sunlight",
+              "start": 1.827,
+              "end": 2.268
+            },
+            {
+              "w": "as",
+              "start": 2.268,
+              "end": 2.444
+            },
+            {
+              "w": "the",
+              "start": 2.444,
+              "end": 2.665
+            },
+            {
+              "w": "near",
+              "start": 2.665,
+              "end": 2.93
+            },
+            {
+              "w": "side.",
+              "start": 2.93,
+              "end": 3.327
+            }
+          ]
+        },
+        {
+          "text": "When our side is dark at new moon, the far side is in full daylight.",
+          "start": 3.607,
+          "end": 7.372,
+          "words": [
+            {
+              "w": "When",
+              "start": 3.607,
+              "end": 3.863
+            },
+            {
+              "w": "our",
+              "start": 3.863,
+              "end": 4.077
+            },
+            {
+              "w": "side",
+              "start": 4.077,
+              "end": 4.334
+            },
+            {
+              "w": "is",
+              "start": 4.334,
+              "end": 4.505
+            },
+            {
+              "w": "dark",
+              "start": 4.505,
+              "end": 4.762
+            },
+            {
+              "w": "at",
+              "start": 4.762,
+              "end": 4.933
+            },
+            {
+              "w": "new",
+              "start": 4.933,
+              "end": 5.147
+            },
+            {
+              "w": "moon,",
+              "start": 5.147,
+              "end": 5.532
+            },
+            {
+              "w": "the",
+              "start": 5.532,
+              "end": 5.746
+            },
+            {
+              "w": "far",
+              "start": 5.746,
+              "end": 5.96
+            },
+            {
+              "w": "side",
+              "start": 5.96,
+              "end": 6.217
+            },
+            {
+              "w": "is",
+              "start": 6.217,
+              "end": 6.388
+            },
+            {
+              "w": "in",
+              "start": 6.388,
+              "end": 6.559
+            },
+            {
+              "w": "full",
+              "start": 6.559,
+              "end": 6.816
+            },
+            {
+              "w": "daylight.",
+              "start": 6.816,
+              "end": 7.372
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "proof",
+      "audioFile": "voice/proof.wav",
+      "duration": 10.922,
+      "sentences": [
+        {
+          "text": "Here it is.",
+          "start": 0.15,
+          "end": 0.814,
+          "words": [
+            {
+              "w": "Here",
+              "start": 0.15,
+              "end": 0.384
+            },
+            {
+              "w": "it",
+              "start": 0.384,
+              "end": 0.54
+            },
+            {
+              "w": "is.",
+              "start": 0.54,
+              "end": 0.814
+            }
+          ]
+        },
+        {
+          "text": "In 2015, NASA's DSCOVR spacecraft watched the far side cross in front of Earth, fully lit by the Sun.",
+          "start": 1.094,
+          "end": 7.769,
+          "words": [
+            {
+              "w": "In",
+              "start": 1.094,
+              "end": 1.304
+            },
+            {
+              "w": "2015,",
+              "start": 1.304,
+              "end": 1.777
+            },
+            {
+              "w": "NASA's",
+              "start": 1.777,
+              "end": 2.197
+            },
+            {
+              "w": "DSCOVR",
+              "start": 2.197,
+              "end": 2.618
+            },
+            {
+              "w": "spacecraft",
+              "start": 2.618,
+              "end": 3.249
+            },
+            {
+              "w": "watched",
+              "start": 3.249,
+              "end": 3.722
+            },
+            {
+              "w": "the",
+              "start": 3.722,
+              "end": 3.985
+            },
+            {
+              "w": "far",
+              "start": 3.985,
+              "end": 4.247
+            },
+            {
+              "w": "side",
+              "start": 4.247,
+              "end": 4.563
+            },
+            {
+              "w": "cross",
+              "start": 4.563,
+              "end": 4.931
+            },
+            {
+              "w": "in",
+              "start": 4.931,
+              "end": 5.141
+            },
+            {
+              "w": "front",
+              "start": 5.141,
+              "end": 5.509
+            },
+            {
+              "w": "of",
+              "start": 5.509,
+              "end": 5.719
+            },
+            {
+              "w": "Earth,",
+              "start": 5.719,
+              "end": 6.245
+            },
+            {
+              "w": "fully",
+              "start": 6.245,
+              "end": 6.613
+            },
+            {
+              "w": "lit",
+              "start": 6.613,
+              "end": 6.875
+            },
+            {
+              "w": "by",
+              "start": 6.875,
+              "end": 7.086
+            },
+            {
+              "w": "the",
+              "start": 7.086,
+              "end": 7.349
+            },
+            {
+              "w": "Sun.",
+              "start": 7.349,
+              "end": 7.769
+            }
+          ]
+        },
+        {
+          "text": "It was about 1.6 million kilometres away.",
+          "start": 8.049,
+          "end": 10.642,
+          "words": [
+            {
+              "w": "It",
+              "start": 8.049,
+              "end": 8.256
+            },
+            {
+              "w": "was",
+              "start": 8.256,
+              "end": 8.516
+            },
+            {
+              "w": "about",
+              "start": 8.516,
+              "end": 8.879
+            },
+            {
+              "w": "1.6",
+              "start": 8.879,
+              "end": 9.086
+            },
+            {
+              "w": "million",
+              "start": 9.086,
+              "end": 9.553
+            },
+            {
+              "w": "kilometres",
+              "start": 9.553,
+              "end": 10.175
+            },
+            {
+              "w": "away.",
+              "start": 10.175,
+              "end": 10.642
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 4.137,
+      "sentences": [
+        {
+          "text": "Far side, not dark side.",
+          "start": 0.15,
+          "end": 1.802,
+          "words": [
+            {
+              "w": "Far",
+              "start": 0.15,
+              "end": 0.393
+            },
+            {
+              "w": "side,",
+              "start": 0.393,
+              "end": 0.83
+            },
+            {
+              "w": "not",
+              "start": 0.83,
+              "end": 1.073
+            },
+            {
+              "w": "dark",
+              "start": 1.073,
+              "end": 1.365
+            },
+            {
+              "w": "side.",
+              "start": 1.365,
+              "end": 1.802
+            }
+          ]
+        },
+        {
+          "text": "Follow to fix one more space myth.",
+          "start": 2.082,
+          "end": 3.857,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 2.082,
+              "end": 2.405
+            },
+            {
+              "w": "to",
+              "start": 2.405,
+              "end": 2.566
+            },
+            {
+              "w": "fix",
+              "start": 2.566,
+              "end": 2.768
+            },
+            {
+              "w": "one",
+              "start": 2.768,
+              "end": 2.969
+            },
+            {
+              "w": "more",
+              "start": 2.969,
+              "end": 3.211
+            },
+            {
+              "w": "space",
+              "start": 3.211,
+              "end": 3.494
+            },
+            {
+              "w": "myth.",
+              "start": 3.494,
+              "end": 3.857
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

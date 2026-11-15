@@ -1,0 +1,36 @@
+{
+  "assets": [
+    {
+      "id": "farside-earth",
+      "kind": "image",
+      "file": "assets/farside-earth.jpg",
+      "sha256": "00dd662db8158fed95f59ae58684d7328904b18fcdec3542531db4c2b13349ac",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/art002e015228/art002e015228~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/art002e015228",
+        "title": "Moon's Farside in the Foreground, Earth Beyond",
+        "credit": "NASA / JSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T00:47:18.097Z"
+    },
+    {
+      "id": "earthset",
+      "kind": "image",
+      "file": "assets/earthset.jpg",
+      "sha256": "9228afe6d718b78b8ec26c7790a29da851ff3f9d5b358dbbdde83daf7d7ba10d",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/art002e021007/art002e021007~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/art002e021007",
+        "title": "Earthset Views",
+        "credit": "NASA / JSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T00:47:19.866Z"
+    }
+  ]
+}

@@ -78,6 +78,11 @@ export const SERIES_BED: Record<string, MusicStyle> = {
   'sky-this-week': 'orbit',
   'sky-tonight': 'meteor',
   'sky-school': 'nebula',
+  'one-shot': 'piano-air',
+  'wrong-about-space': 'meteor',
+  'cosmic-top-5': 'meteor',
+  'mission-control': 'orbit',
+  'weird-physics': 'piano-pulse',
 };
 
 export const bedFor = (series: string): MusicStyle => SERIES_BED[series] ?? 'orbit';

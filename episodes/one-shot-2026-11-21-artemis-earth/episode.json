@@ -1,0 +1,20 @@
+{
+  "id": "one-shot-2026-11-21-artemis-earth",
+  "series": "one-shot",
+  "createdAt": "2026-11-15T00:47:16.001Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "1487081f5809360b",
+    "factcheckedPlan": "1487081f5809360b",
+    "narration": "7b722f7ef7cf8f19",
+    "video": "842c5e46231678b8051b45627ca66f7f2638c7e09ef42f8cf8d0814a74e8df06"
+  },
+  "approvals": []
+}

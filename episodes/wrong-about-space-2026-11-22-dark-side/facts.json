@@ -1,0 +1,45 @@
+{
+  "facts": [
+    {
+      "id": "no-dark-side",
+      "statement": "There is no permanent dark side of the Moon. The far side gets as much sunlight as the near side. Like Earth, the Moon has a day side and a night side, which change as it rotates. At new moon it is daytime on the far side (night on the near side); at full moon it is daytime on the near side.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/moon/top-moon-questions/",
+        "title": "Top Moon Questions",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "tidal-lock",
+      "statement": "The Earth and Moon are tidally locked, so the same hemisphere of the Moon always faces Earth; the far side is the hemisphere we never see from Earth. Calling it the 'dark side' is misleading.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/moon/facts/",
+        "title": "Moon Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "dscovr-photo",
+      "statement": "NASA's EPIC camera on the DSCOVR satellite, about 1 million miles (1.6 million km) from Earth, photographed the fully sunlit far side of the Moon crossing in front of Earth on 16 July 2015.",
+      "values": [
+        1,
+        1.6,
+        16,
+        2015
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.nasa.gov/solar-system/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth/",
+        "title": "From a Million Miles Away, NASA Camera Shows Moon Crossing Face of Earth",
+        "publisher": "NASA",
+        "accessed": "2026-11-15"
+      }
+    }
+  ]
+}

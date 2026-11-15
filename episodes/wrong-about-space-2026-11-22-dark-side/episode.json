@@ -1,0 +1,20 @@
+{
+  "id": "wrong-about-space-2026-11-22-dark-side",
+  "series": "wrong-about-space",
+  "createdAt": "2026-11-15T00:48:24.040Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "6cc5e5b44aa2e832",
+    "factcheckedPlan": "6cc5e5b44aa2e832",
+    "narration": "ef7ff7daaa15f1b6",
+    "video": "e544cc8a138b993dc71e425f8bf61b01ad08f478e0b6c986b2ed58b87613d395"
+  },
+  "approvals": []
+}
