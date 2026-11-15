@@ -121,6 +121,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-to
 | tiktok | submitted | 6af8efc9e86a5789a6da725f |  |
 | instagram | submitted | 6af8efcae86a5789a6da7288 |  |
 
+### 2026-11-15T00:33:41.872Z · buffer · unschedule
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-tonight-2026-12-13-eu-central-68bb1ea1.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | deleted | 6af8efc9e5a113497ab4b948 |  |
+| tiktok | deleted | 6af8efc9e86a5789a6da725f |  |
+| instagram | deleted | 6af8efcae86a5789a6da7288 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -213,3 +223,4 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-to
 | 2026-11-14 23:33:06 | claude | publish | publish.dry-run | d4d1570 |
 | 2026-11-14 23:33:30 | claude | publish | publish.submit | d4d1570 |
 | 2026-11-14 23:33:30 | claude | published | stage.advance | d4d1570 |
+| 2026-11-15 00:33:42 | claude | publish | publish.unschedule | 7613fe4 |

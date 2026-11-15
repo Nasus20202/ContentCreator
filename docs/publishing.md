@@ -65,6 +65,10 @@ of the already-created posts are kept. If the copy changed too, delete the posts
 4. `pnpm -s cc publish channels` → copy the YouTube and TikTok channel ids into
    `channel.config.json → publishing.targets` (`{ "platform": "youtube", "channelId": "…" }`).
 
+## Freeing queue slots
+
+`cc publish unschedule <id>` deletes an episode's still-scheduled posts from Buffer (already-published posts are never touched) and records an `unschedule` attempt. The episode stays approved; schedule it again with `cc publish <id> --mode schedule --at …` when it is within the 10-day window.
+
 ## Limits and caveats
 
 - Free plan: 3 channels, a limited queue per channel. "Queue limit reached" comes back as a per-platform failure.

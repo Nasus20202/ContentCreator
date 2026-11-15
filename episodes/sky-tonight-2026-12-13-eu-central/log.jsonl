@@ -86,3 +86,4 @@
 {"ts":"2026-11-14T23:33:06.681Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["youtube:dry-run","tiktok:dry-run","instagram:dry-run"]},"gitSha":"d4d1570"}
 {"ts":"2026-11-14T23:33:30.612Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-tonight-2026-12-13-eu-central-68bb1ea1.mp4","targets":["youtube:submitted","tiktok:submitted","instagram:submitted"]},"gitSha":"d4d1570"}
 {"ts":"2026-11-14T23:33:30.618Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"approved","to":"published","hashes":{}},"gitSha":"d4d1570"}
+{"ts":"2026-11-15T00:33:42.758Z","actor":"claude","stage":"publish","action":"publish.unschedule","details":{"targets":["youtube:deleted","tiktok:deleted","instagram:deleted"]},"gitSha":"7613fe4"}

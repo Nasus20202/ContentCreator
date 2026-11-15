@@ -84,6 +84,20 @@ export class BufferClient {
     return result.post;
   }
 
+  /** Deletes a post from the queue; throws BufferError with Buffer's message on a mutation error. */
+  async deletePost(id: string): Promise<void> {
+    const data = (await this.gql(
+      `mutation($input: DeletePostInput!) {
+        deletePost(input: $input) {
+          ... on DeletePostSuccess { id }
+          ... on VoidMutationError { message }
+        }
+      }`,
+      { input: { id } },
+    )) as { deletePost: { id?: string; message?: string } };
+    if (data.deletePost.message) throw new BufferError(data.deletePost.message);
+  }
+
   /** Returns the Buffer post id; throws BufferError with Buffer's message on a MutationError. */
   async createPost(input: Record<string, unknown>): Promise<{ id: string; dueAt?: string | null }> {
     const data = (await this.gql(

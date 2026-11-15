@@ -150,6 +150,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | --- | --- | --- | --- |
 | instagram | submitted | 6af8ced176c23bf1c73ef2cb |  |
 
+### 2026-11-15T00:33:38.622Z · buffer · unschedule
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-geminids-radiant-eu-central-ac7bb431.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | deleted | 6af610b7d647bbafc5ad55f1 |  |
+| tiktok | deleted | 6af610b711a42cfbe891f454 |  |
+| instagram | deleted | 6af8ced176c23bf1c73ef2cb |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -243,3 +253,4 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-14 21:04:04 | claude | publish | publish.dry-run | 47c29b3 |
 | 2026-11-14 21:12:50 | claude | publish | publish.submit | 47c29b3 |
 | 2026-11-14 21:12:50 | claude | published | stage.advance | 47c29b3 |
+| 2026-11-15 00:33:39 | claude | publish | publish.unschedule | 7613fe4 |

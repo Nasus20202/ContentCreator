@@ -9,6 +9,7 @@ import { type Episode } from '../src/core/episode';
 import { readJson, writeJson } from '../src/core/io';
 import { localMidnight } from '../src/core/time';
 import { PublishRecord, type Plan } from '../src/core/schemas';
+import { livePosts } from '../src/publish/live';
 import * as stages from '../src/pipeline/stages';
 import { buildCreatePostInput } from '../src/publish/payload';
 import { episodeReport, ledger } from '../src/report/report';
@@ -235,6 +236,75 @@ describe('pipeline stages', () => {
     expect(hosted).toEqual([`sky-test-${a.videoSha256.slice(0, 8)}.mp4`]);
     expect(a.media?.url).toBe(`https://media.test/${hosted[0]}`);
     expect(ep.stage).toBe('published');
+  });
+
+  it('unschedules future posts, keeps them out of the live set, and can schedule again', async () => {
+    await toQaPassed();
+    stages.approve(ep, 'Tester', 'human', config);
+    const publishAt = (date: string, id: string) =>
+      stages.publish(
+        ep,
+        {
+          targets: [
+            { platform: 'youtube', channelId: 'yt' },
+            { platform: 'tiktok', channelId: 'tt' },
+          ],
+          mode: 'schedule',
+          date,
+          dryRun: false,
+          publisher: {
+            provider: 'buffer',
+            endpoint: 'https://buffer.test',
+            hostMedia: () => Promise.resolve({ url: 'https://media.test/v.mp4' }),
+            post: (input) => Promise.resolve({ id: `${id}-${String(input.channelId)}` }),
+          },
+          buildPayload: (p, t, m) => buildCreatePostInput(p, t, m, { mode: 'schedule', date, aiDisclosure: false }),
+        },
+        'claude',
+      );
+    await publishAt('2099-01-02T17:00:00Z', 'P1');
+    const removed: string[] = [];
+    const remove = (postId: string) =>
+      postId.endsWith('tt') ? Promise.reject(new Error('Post not found')) : Promise.resolve(void removed.push(postId));
+    const u = await stages.unschedule(ep, { endpoint: 'https://buffer.test', remove }, 'claude');
+    expect(u.mode).toBe('unschedule');
+    expect(removed).toEqual(['P1-yt']);
+    expect(u.targets.map((t) => [t.platform, t.status])).toEqual([
+      ['youtube', 'deleted'],
+      ['tiktok', 'failed'],
+    ]);
+    const record = readJson(ep.paths.publish, PublishRecord);
+    // the failed deletion is still live; the deleted one is not
+    expect([...livePosts(record).keys()]).toEqual(['tiktok']);
+    expect(ep.logs().at(-1)?.action).toBe('publish.unschedule');
+    // scheduling again makes both live with new ids
+    await publishAt('2099-02-01T17:00:00Z', 'P2');
+    const again = livePosts(readJson(ep.paths.publish, PublishRecord));
+    expect([...again.values()].map((x) => x.target.postId).sort()).toEqual(['P2-tt', 'P2-yt']);
+  });
+
+  it('refuses to unschedule posts that are already out', async () => {
+    await toQaPassed();
+    stages.approve(ep, 'Tester', 'human', config);
+    await stages.publish(
+      ep,
+      {
+        targets: [{ platform: 'youtube', channelId: 'yt' }],
+        mode: 'now',
+        dryRun: false,
+        publisher: {
+          provider: 'buffer',
+          endpoint: 'https://buffer.test',
+          hostMedia: () => Promise.resolve({ url: 'https://media.test/v.mp4' }),
+          post: () => Promise.resolve({ id: 'P1' }),
+        },
+        buildPayload: (p, t, m) => buildCreatePostInput(p, t, m, { mode: 'now', aiDisclosure: false }),
+      },
+      'claude',
+    );
+    await expect(stages.unschedule(ep, { endpoint: 'x', remove: () => Promise.resolve() }, 'claude')).rejects.toThrow(
+      /No scheduled/,
+    );
   });
 
   it('reschedules submitted posts and records the move', async () => {

@@ -115,11 +115,13 @@
       "provider": "buffer",
       "endpoint": "https://api.buffer.com",
       "videoSha256": "8e064f4b7f2ba59e1e75ef7bdc12e51b4aeac869fee37b44913bda5f3cf5b94c",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2027-01-04-eu-central-8e064f4b.mp4"
+      },
       "targets": [
         {
           "platform": "youtube",
           "channelId": "6af4fe2a62b70b94b0fe97dc",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af8efe0e5a113497ab4bc5c",
           "payload": {
@@ -154,7 +156,6 @@
         {
           "platform": "tiktok",
           "channelId": "6af4fe6f62b70b94b0fe9d85",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af8efe0918fe79d2eae212b",
           "payload": {
@@ -184,7 +185,6 @@
         {
           "platform": "instagram",
           "channelId": "6af8cc5162b70b94b032fcec",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af8efe1918fe79d2eae2154",
           "payload": {
@@ -213,10 +213,51 @@
             }
           }
         }
-      ],
+      ]
+    },
+    {
+      "at": "2026-11-15T00:33:45.116Z",
+      "actor": "claude",
+      "mode": "unschedule",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "8e064f4b7f2ba59e1e75ef7bdc12e51b4aeac869fee37b44913bda5f3cf5b94c",
       "media": {
         "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2027-01-04-eu-central-8e064f4b.mp4"
-      }
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "deleted",
+          "postId": "6af8efe0e5a113497ab4bc5c",
+          "payload": {
+            "postId": "6af8efe0e5a113497ab4bc5c",
+            "wasScheduledFor": "2027-01-01T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "deleted",
+          "postId": "6af8efe0918fe79d2eae212b",
+          "payload": {
+            "postId": "6af8efe0918fe79d2eae212b",
+            "wasScheduledFor": "2027-01-01T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "deleted",
+          "postId": "6af8efe1918fe79d2eae2154",
+          "payload": {
+            "postId": "6af8efe1918fe79d2eae2154",
+            "wasScheduledFor": "2027-01-01T17:00:00.000Z"
+          }
+        }
+      ]
     }
   ]
 }

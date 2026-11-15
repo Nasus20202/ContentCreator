@@ -436,6 +436,25 @@ pub
     if (attempt.targets.some((t) => t.status === 'failed')) process.exitCode = 1;
   });
 pub
+  .command('unschedule')
+  .description('delete the still-scheduled Buffer posts of an episode (frees queue slots; it stays approved)')
+  .argument('<episode>')
+  .addOption(actorOpt())
+  .action(async (id: string, o: { actor: Actor }) => {
+    const client = bufferClient();
+    if (!client)
+      throw new PipelineError('BUFFER_API_KEY not set', 'Create one at https://publish.buffer.com/settings/api');
+    const attempt = await stages.unschedule(
+      Episode.load(id),
+      { endpoint: client.endpoint, remove: (postId) => client.deletePost(postId) },
+      o.actor,
+    );
+    refreshReport(id);
+    for (const t of attempt.targets)
+      say(`${t.platform.padEnd(10)} ${t.status} ${t.postId}${t.error ? ` — ${t.error}` : ''}`);
+    if (attempt.targets.some((t) => t.status === 'failed')) process.exitCode = 1;
+  });
+pub
   .command('episode', { isDefault: true })
   .argument('<episode>')
   .addOption(new Option('--mode <mode>').choices(['now', 'schedule', 'draft']))

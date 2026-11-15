@@ -208,11 +208,13 @@
       "provider": "buffer",
       "endpoint": "https://api.buffer.com",
       "videoSha256": "aa3ca3bd7f05a4d68ac2f1a6cc2c50321ce62043af5ed5171604070fe348e4e1",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-14-eu-central-aa3ca3bd.mp4"
+      },
       "targets": [
         {
           "platform": "instagram",
           "channelId": "6af8cc5162b70b94b032fcec",
-          "enabled": true,
           "status": "submitted",
           "postId": "6af8ced5e86a5789a6d0f624",
           "payload": {
@@ -241,10 +243,51 @@
             }
           }
         }
-      ],
+      ]
+    },
+    {
+      "at": "2026-11-15T00:33:40.263Z",
+      "actor": "claude",
+      "mode": "unschedule",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "aa3ca3bd7f05a4d68ac2f1a6cc2c50321ce62043af5ed5171604070fe348e4e1",
       "media": {
         "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-14-eu-central-aa3ca3bd.mp4"
-      }
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "deleted",
+          "postId": "6af610c6d647bbafc5ad5cd9",
+          "payload": {
+            "postId": "6af610c6d647bbafc5ad5cd9",
+            "wasScheduledFor": "2026-12-11T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "deleted",
+          "postId": "6af610c72ef1f0c84e5cd371",
+          "payload": {
+            "postId": "6af610c72ef1f0c84e5cd371",
+            "wasScheduledFor": "2026-12-11T17:00:00.000Z"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "deleted",
+          "postId": "6af8ced5e86a5789a6d0f624",
+          "payload": {
+            "postId": "6af8ced5e86a5789a6d0f624",
+            "wasScheduledFor": "2026-12-11T17:00:00.000Z"
+          }
+        }
+      ]
     }
   ]
 }

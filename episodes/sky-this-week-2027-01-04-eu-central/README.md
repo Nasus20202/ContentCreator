@@ -131,6 +131,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-th
 | tiktok | submitted | 6af8efe0918fe79d2eae212b |  |
 | instagram | submitted | 6af8efe1918fe79d2eae2154 |  |
 
+### 2026-11-15T00:33:45.116Z · buffer · unschedule
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2027-01-04-eu-central-8e064f4b.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | deleted | 6af8efe0e5a113497ab4bc5c |  |
+| tiktok | deleted | 6af8efe0918fe79d2eae212b |  |
+| instagram | deleted | 6af8efe1918fe79d2eae2154 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -236,3 +246,4 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-th
 | 2026-11-14 23:33:08 | claude | publish | publish.dry-run | d4d1570 |
 | 2026-11-14 23:33:53 | claude | publish | publish.submit | d4d1570 |
 | 2026-11-14 23:33:53 | claude | published | stage.advance | d4d1570 |
+| 2026-11-15 00:33:46 | claude | publish | publish.unschedule | 7613fe4 |

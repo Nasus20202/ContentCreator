@@ -131,3 +131,4 @@
 {"ts":"2026-11-14T21:04:05.296Z","actor":"claude","stage":"publish","action":"publish.dry-run","details":{"mode":"schedule","media":"DRY-RUN","targets":["instagram:dry-run"]},"gitSha":"47c29b3"}
 {"ts":"2026-11-14T21:12:53.927Z","actor":"claude","stage":"publish","action":"publish.submit","details":{"mode":"schedule","media":"https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-this-week-2026-12-14-eu-central-aa3ca3bd.mp4","targets":["instagram:submitted"]},"gitSha":"47c29b3"}
 {"ts":"2026-11-14T21:12:53.934Z","actor":"claude","stage":"published","action":"stage.advance","details":{"from":"published","to":"published","hashes":{}},"gitSha":"47c29b3"}
+{"ts":"2026-11-15T00:33:41.188Z","actor":"claude","stage":"publish","action":"publish.unschedule","details":{"targets":["youtube:deleted","tiktok:deleted","instagram:deleted"]},"gitSha":"7613fe4"}

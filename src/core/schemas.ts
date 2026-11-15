@@ -485,7 +485,8 @@ export const PublishTarget = z.object({
   platform: Platform,
   /** Channel id in the publishing provider (Buffer channel id). */
   channelId: z.string(),
-  status: z.enum(['dry-run', 'submitted', 'failed']),
+  /** `deleted`: the post was removed from the provider's queue by an `unschedule` attempt. */
+  status: z.enum(['dry-run', 'submitted', 'failed', 'deleted']),
   /** Post id returned by the provider. */
   postId: z.string().optional(),
   error: z.string().optional(),
@@ -496,8 +497,11 @@ export const PublishRecord = z.object({
     z.object({
       at: z.iso.datetime(),
       actor: Actor,
-      /** `reschedule` moves the posts of the previous submission (payload = { postId, dueAt }). */
-      mode: z.enum(['now', 'schedule', 'draft', 'reschedule']),
+      /**
+       * `reschedule` moves the posts of the previous submission (payload = { postId, dueAt });
+       * `unschedule` deletes still-scheduled posts from the provider's queue (payload = { postId }).
+       */
+      mode: z.enum(['now', 'schedule', 'draft', 'reschedule', 'unschedule']),
       scheduledFor: z.iso.datetime().optional(),
       dryRun: z.boolean(),
       provider: z.literal('buffer'),

@@ -7,6 +7,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { mediaName } from '../publish/media-host';
+import { livePosts } from '../publish/live';
 import { replaceVideoUrl } from '../publish/payload';
 import { Episode, stageIndex } from '../core/episode';
 import { hashData, nowIso, PipelineError, readJson, sha256File, writeJson } from '../core/io';
@@ -366,6 +367,66 @@ export interface Publisher {
 export interface PublishTarget {
   platform: Platform;
   channelId: string;
+}
+
+/**
+ * Deletes this episode's still-scheduled posts from the provider's queue (e.g. to free queue slots
+ * for nearer dates); recorded as an `unschedule` attempt. Already-published posts are never touched.
+ * The episode stays approved and can be scheduled again with `publish`.
+ */
+export async function unschedule(
+  ep: Episode,
+  opts: { endpoint: string; remove: (postId: string) => Promise<unknown> },
+  actor: Actor,
+): Promise<PublishRecord['attempts'][number]> {
+  if (!fs.existsSync(ep.paths.publish)) throw new PipelineError('Nothing published yet');
+  const record = readJson(ep.paths.publish, PublishRecord);
+  const now = Date.now();
+  const pending = [...livePosts(record).values()].filter(
+    (p) => p.scheduledFor !== undefined && new Date(p.scheduledFor).getTime() > now,
+  );
+  if (pending.length === 0) throw new PipelineError('No scheduled (future) posts to unschedule');
+  const last = record.attempts.findLast((a) => !a.dryRun)!;
+  const attempt: PublishRecord['attempts'][number] = {
+    at: nowIso(),
+    actor,
+    mode: 'unschedule',
+    dryRun: false,
+    provider: 'buffer',
+    endpoint: opts.endpoint,
+    videoSha256: last.videoSha256,
+    media: last.media,
+    targets: [],
+  };
+  for (const { target: t, scheduledFor } of pending) {
+    const payload = { postId: t.postId, wasScheduledFor: scheduledFor };
+    try {
+      await opts.remove(t.postId!);
+      attempt.targets.push({
+        platform: t.platform,
+        channelId: t.channelId,
+        status: 'deleted',
+        postId: t.postId,
+        payload,
+      });
+    } catch (e) {
+      const error = e instanceof Error ? e.message : String(e);
+      attempt.targets.push({
+        platform: t.platform,
+        channelId: t.channelId,
+        status: 'failed',
+        postId: t.postId,
+        error,
+        payload,
+      });
+    }
+  }
+  record.attempts.push(attempt);
+  writeJson(ep.paths.publish, record);
+  ep.log(actor, 'publish', 'publish.unschedule', {
+    targets: attempt.targets.map((t) => `${t.platform}:${t.status}`),
+  });
+  return attempt;
 }
 
 /** Moves the scheduled posts of the latest real submission to a new time; recorded as a `reschedule` attempt. */

@@ -7,6 +7,7 @@ import path from 'node:path';
 import { Episode } from '../core/episode';
 import { readJson, readJsonl } from '../core/io';
 import { paths } from '../core/paths';
+import { livePosts } from '../publish/live';
 import {
   AssetsFile,
   FactsFile,
@@ -255,10 +256,7 @@ export function ledger(): string {
     const ep = Episode.load(id);
     const plan = opt(ep.paths.plan, () => readJson(ep.paths.plan, Plan));
     const pub = opt(ep.paths.publish, () => readJson(ep.paths.publish, PublishRecord));
-    const live =
-      pub?.attempts
-        .filter((a) => !a.dryRun)
-        .flatMap((a) => a.targets.filter((t) => t.status === 'submitted').map((t) => t.platform)) ?? [];
+    const live = pub ? [...livePosts(pub).keys()] : [];
     const views = latestViews(readJsonl(ep.paths.metrics, MetricSnapshot));
     return [
       `[${id}](../episodes/${id}/README.md)`,

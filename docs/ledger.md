@@ -5,7 +5,7 @@
 | Episode | Series | Stage | Title | Published to | Views (latest) |
 | --- | --- | --- | --- | --- | --- |
 | [sky-school-deep-field-eu-central](../episodes/sky-school-deep-field-eu-central/README.md) | sky-school | published | Almost every dot here is a galaxy 🌌 | youtube, tiktok, instagram | 412 |
-| [sky-school-geminids-radiant-eu-central](../episodes/sky-school-geminids-radiant-eu-central/README.md) | sky-school | published | Why meteors seem to come from one point in the sky 🌠 | youtube, tiktok, instagram | — |
+| [sky-school-geminids-radiant-eu-central](../episodes/sky-school-geminids-radiant-eu-central/README.md) | sky-school | published | Why meteors seem to come from one point in the sky 🌠 | — | — |
 | [sky-school-how-fast-eu-central](../episodes/sky-school-how-fast-eu-central/README.md) | sky-school | published | You are not sitting still 🚀 | youtube, tiktok, instagram | — |
 | [sky-school-light-travel-eu-central](../episodes/sky-school-light-travel-eu-central/README.md) | sky-school | published | The Sun you see is about 8 minutes old ☀️ | youtube, tiktok, instagram | — |
 | [sky-school-mars-opposition-eu-central](../episodes/sky-school-mars-opposition-eu-central/README.md) | sky-school | approved | Why Mars opposition is the best time to see it 🔴 | — | — |
@@ -15,7 +15,7 @@
 | [sky-school-twin-paradox-eu-central](../episodes/sky-school-twin-paradox-eu-central/README.md) | sky-school | published | The twin paradox, and how long a ride to the galaxy takes 🚀 | youtube, tiktok, instagram | — |
 | [sky-school-voyager-light-day-eu-central](../episodes/sky-school-voyager-light-day-eu-central/README.md) | sky-school | qa-passed | Voyager 1 is now a whole light-day from Earth 🛰️ | — | — |
 | [sky-this-week-2026-11-16-eu-central](../episodes/sky-this-week-2026-11-16-eu-central/README.md) | sky-this-week | published | Mars and Jupiter almost touch this week 🔭 Sky This Week, Nov 16–22 | youtube, tiktok, instagram | 1149 |
-| [sky-this-week-2026-12-14-eu-central](../episodes/sky-this-week-2026-12-14-eu-central/README.md) | sky-this-week | published | The Geminids peak this weekend — and the Moon stays out of the way 🌠 | youtube, tiktok, instagram | — |
-| [sky-this-week-2026-12-21-eu-central](../episodes/sky-this-week-2026-12-21-eu-central/README.md) | sky-this-week | published | The closest full Moon of 2026 rises on Christmas Eve 🌕 | youtube, tiktok, instagram | — |
-| [sky-this-week-2027-01-04-eu-central](../episodes/sky-this-week-2027-01-04-eu-central/README.md) | sky-this-week | published | The Quadrantids peak this weekend — but timing matters 🌠 | youtube, tiktok, instagram | — |
-| [sky-tonight-2026-12-13-eu-central](../episodes/sky-tonight-2026-12-13-eu-central/README.md) | sky-tonight | published | Tonight: the Geminids peak, and the Moon stays away 🌠 | youtube, tiktok, instagram | — |
+| [sky-this-week-2026-12-14-eu-central](../episodes/sky-this-week-2026-12-14-eu-central/README.md) | sky-this-week | published | The Geminids peak this weekend — and the Moon stays out of the way 🌠 | — | — |
+| [sky-this-week-2026-12-21-eu-central](../episodes/sky-this-week-2026-12-21-eu-central/README.md) | sky-this-week | published | The closest full Moon of 2026 rises on Christmas Eve 🌕 | — | — |
+| [sky-this-week-2027-01-04-eu-central](../episodes/sky-this-week-2027-01-04-eu-central/README.md) | sky-this-week | published | The Quadrantids peak this weekend — but timing matters 🌠 | — | — |
+| [sky-tonight-2026-12-13-eu-central](../episodes/sky-tonight-2026-12-13-eu-central/README.md) | sky-tonight | published | Tonight: the Geminids peak, and the Moon stays away 🌠 | — | — |

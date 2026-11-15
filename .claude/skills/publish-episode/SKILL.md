@@ -21,6 +21,8 @@ description: Hand an episode to the human for approval and publish it to YouTube
    - `draft` saves Buffer drafts for a final manual click in Buffer.
    - Partial failures are recorded per platform; retry with `--platforms <failed ones>`.
    - To move scheduled posts: `pnpm -s cc publish reschedule <id> --at <ISO> --actor claude` (recorded as a `reschedule` attempt).
+   - To take still-scheduled posts out of the queue (free slots): `pnpm -s cc publish unschedule <id> --actor claude` (deletes them in Buffer, recorded as an `unschedule` attempt; the episode stays approved and can be scheduled again).
+   - Queue policy: keep the **next 10 days** filled (one post per day per channel, 10-post limit); don't park far-future posts in Buffer.
 3. Check the posts in the Buffer queue (<https://publish.buffer.com>), `pnpm -s cc report <id>`, and tell the user what was submitted (and what failed, verbatim).
 4. Commit the updated records.
 
