@@ -2,7 +2,7 @@
   "id": "sky-school-how-fast",
   "series": "sky-school",
   "createdAt": "2026-11-12T18:43:09.956Z",
-  "stage": "published",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -14,14 +14,14 @@
     "plan": "4d64ea02e90935e9",
     "factcheckedPlan": "4d64ea02e90935e9",
     "narration": "ddef2ed6dbb37ad9",
-    "video": "acbd9ea1b1c6e4f8712d42a500425c4610f8bf59e5dffc1c00d59bae6fccc420"
+    "video": "f5fbd0467d5668694c167d9fe077310e336435ffbe252db7fca128b1a9d0c05c"
   },
   "approvals": [
     {
-      "by": "Krzysztof Nasuta",
+      "by": "Krzysztof",
       "actor": "human",
-      "at": "2026-11-12T19:13:30.857Z",
-      "videoSha256": "acbd9ea1b1c6e4f8712d42a500425c4610f8bf59e5dffc1c00d59bae6fccc420"
+      "at": "2026-11-15T11:16:06.169Z",
+      "videoSha256": "f5fbd0467d5668694c167d9fe077310e336435ffbe252db7fca128b1a9d0c05c"
     }
   ]
 }

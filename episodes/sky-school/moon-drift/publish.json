@@ -435,6 +435,115 @@
           }
         }
       ]
+    },
+    {
+      "at": "2026-11-15T11:18:25.011Z",
+      "actor": "claude",
+      "mode": "reschedule",
+      "scheduledFor": "2026-11-21T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "280eba9b891687435360a93bfc85e4fa6ee1da19c6833b7e36db28457677c580",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/moon-drift-280eba9b.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6af91c1d76c23bf1c7540e45",
+          "payload": {
+            "text": "The Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science: https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/\nNASA Science, Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\nNASA Science, Eclipses and the Moon: https://science.nasa.gov/moon/eclipses/\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.\n\n#astronomy #space #science #moon #skyschool #apollo",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-21T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/moon-drift-280eba9b.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The Moon is drifting away as fast as your fingernails grow 🌕",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c1d76c23bf1c7540e45"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6af91c1eb9a106584c826ab4",
+          "payload": {
+            "text": "The Moon is drifting away as fast as your fingernails grow 🌕\n\nThe Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science: https://www.nasa.gov/missions/laser-beams-reflected-between-earth-and-moon-boost-science/\nNASA Science, Tidal Locking: https://science.nasa.gov/moon/tidal-locking/\nNASA Science, Eclipses and the Moon: https://science.nasa.gov/moon/eclipses/\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.\n\n#astronomy #space #science #moon #skyschool #apollo",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-21T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/moon-drift-280eba9b.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c1eb9a106584c826ab4"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "submitted",
+          "postId": "6af91c1fc5b364e0622d8f00",
+          "payload": {
+            "text": "The Moon is drifting away as fast as your fingernails grow 🌕\n\nThe Moon moves about 3.8 cm farther from Earth every year, roughly the rate your fingernails grow. We know because Apollo astronauts left mirrors on the Moon: a laser fired at them comes back in about 2.5 seconds, pinning the distance down to a few millimetres. Since Apollo 14's reflector was set up in 1971, that adds up to about 2 metres. One day the Moon will look too small to cover the Sun, ending total solar eclipses, but not for another 600 million years or more.\n\nSources:\nNASA, Laser Beams Reflected Between Earth and Moon Boost Science\nNASA Science, Tidal Locking\nNASA Science, Eclipses and the Moon\n\nImages: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / AFRC / Carla Thomas (2017 total solar eclipse). Narration uses a synthetic voice.\n\n#astronomy #space #science #moon #skyschool #apollo",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-21T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/moon-drift-280eba9b.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af91c1fc5b364e0622d8f00"
+          }
+        }
+      ]
     }
   ]
 }

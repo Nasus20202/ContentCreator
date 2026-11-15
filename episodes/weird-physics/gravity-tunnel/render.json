@@ -1,10 +1,10 @@
 {
-  "renderedAt": "2026-11-15T02:34:39.944Z",
+  "renderedAt": "2026-11-15T11:12:14.461Z",
   "planHash": "1ffd6c28951ff3ca",
   "timelineHash": "5c4d277a4e7894b9",
   "videoFile": "build/video.mp4",
-  "videoSha256": "cbd4b358d13926e75b08837af69e082aa6ebeb8a5b10ab915e3eb372666ab897",
-  "renderSeconds": 50.646,
+  "videoSha256": "154a2b8c21a769cb198a9744bca530f04eea60bfc4a784f554cac8889a436b70",
+  "renderSeconds": 366.242,
   "durationSec": 46.7,
   "width": 1080,
   "height": 1920,

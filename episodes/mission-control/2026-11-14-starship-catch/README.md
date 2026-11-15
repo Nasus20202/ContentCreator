@@ -96,7 +96,7 @@ Footage: SpaceX webcast of the Flight 15 catch, via The Launch Pad on YouTube (h
 
 ## Render
 
-49.2 s, 1080×1920@30, sha256 `986f8688c322ecb1…`, rendered 2026-11-15T08:24:08.232Z in 72 s.
+49.2 s, 1080×1920@30, sha256 `058aed3dbf0743d2…`, rendered 2026-11-15T11:13:19.027Z in 431 s.
 
 ## QA
 
@@ -108,14 +108,14 @@ Footage: SpaceX webcast of the Flight 15 catch, via The Launch Pad on YouTube (h
 | duration | ✅ | 49.20 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 49.20 s vs timeline 49.17 s |
 | loudness | ✅ | -14.1 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.5 dBFS |
+| true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T08:24:33.531Z): **pass** — Hook and flight now play the real Flight 15 catch clip (muted, vertical crop, webcast HUD removed). Checked all 16 frames: hook shows tower-cam close-up then the ship held in the arms under 'FLIGHT 15 CATCH · SPACEX'; flight shows the descent, flip and landing burn into the tower under 'SHIP 42 COMING HOME', ship always in frame; credit line 'SpaceX webcast via The Launch Pad · © SpaceX, all rights reserved' on both video scenes, clear of captions; fact cards, outro (footnote 'footage: SpaceX') unchanged. Motion smoothness judged from stills only.
+Visual review by **claude** (2026-11-15T11:15:00.673Z): **pass** — Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills.
 
 ## Approvals
 
-- 2026-11-15T10:50:37.873Z — **Krzysztof** (human) approved video `986f8688c322ecb1…`
+- 2026-11-15T11:16:05.385Z — **Krzysztof** (human) approved video `058aed3dbf0743d2…`
 
 ## Publishing
 
@@ -152,6 +152,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/m
 ### 2026-11-15T10:51:55.965Z · buffer · reschedule for 2026-11-15T17:00:00.000Z
 
 Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-11-14-starship-catch-986f8688.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91bc7e5a113497ac0604f |  |
+| tiktok | submitted | 6af91bc8e86a5789a6e5e317 |  |
+| instagram | submitted | 6af91bc9e86a5789a6e5e34d |  |
+
+### 2026-11-15T11:16:50.801Z · buffer · reschedule for 2026-11-15T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-11-14-starship-catch-058aed3d.mp4
 
 | Platform | Status | Post id | Error |
 | --- | --- | --- | --- |
@@ -228,3 +238,10 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/m
 | 2026-11-15 09:01:06 | claude | publish | publish.reschedule | 0d80a88 |
 | 2026-11-15 10:50:37 | human | approved | stage.advance | 1749707 |
 | 2026-11-15 10:51:58 | claude | publish | publish.reschedule | 1749707 |
+| 2026-11-15 11:13:19 | claude | rendered | stage.regress | f9c99ca |
+| 2026-11-15 11:13:19 | claude | rendered | render.video | f9c99ca |
+| 2026-11-15 11:13:27 | pipeline | qa | qa.automated | f9c99ca |
+| 2026-11-15 11:15:00 | claude | qa | qa.review | f9c99ca |
+| 2026-11-15 11:15:00 | claude | qa-passed | stage.advance | f9c99ca |
+| 2026-11-15 11:16:05 | human | approved | stage.advance | f9c99ca |
+| 2026-11-15 11:16:53 | claude | publish | publish.reschedule | f9c99ca |

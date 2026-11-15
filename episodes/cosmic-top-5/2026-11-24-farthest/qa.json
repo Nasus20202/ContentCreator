@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T02:32:35.086Z",
-  "videoSha256": "dc0ec63fb81be5b060fa21fb04660e8e99c7d0aa203ed87d272afab4510aad15",
+  "checkedAt": "2026-11-15T11:15:11.285Z",
+  "videoSha256": "778365e914ecd796b71a51945c286e167ed46232f07ff3c7f2ff425e333e7fbd",
   "automated": [
     {
       "name": "resolution",
@@ -35,7 +35,7 @@
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.2 dBFS"
+      "detail": "-1.4 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -163,12 +163,22 @@
       "file": "qa/08-outro-2.jpg",
       "sceneId": "outro",
       "tSec": 57.97
+    },
+    {
+      "file": "qa/cover.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
+    },
+    {
+      "file": "qa/cover-grid.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T02:39:32.135Z",
+    "at": "2026-11-15T11:15:41.957Z",
     "verdict": "pass",
-    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
+    "notes": "Re-render for the credit change (source-only, small, lower left above the captions) plus the clean cover; first attempt failed true peak (+0.1 dBFS), fixed by the measured loudnorm retry, now -1.4 dBTP. Contact sheet of all 26 frames: credits legible (New Horizons' long credit wraps to two lines upward, clear of the caption), chips and bars clean, cover and grid crop clean. Script/facts unchanged; audio not judged from stills."
   }
 }

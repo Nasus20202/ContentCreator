@@ -15,6 +15,9 @@ _Nothing waiting on approval._
 - [ ] **Approved, waiting for a slot:** Sky School Planet Ages, Proxima travel, Voyager light-day, Twin paradox, Light
       travel; Geminids radiant (Mon 7 Dec), Sky This Week Dec 14 (Fri 11 Dec), Sky Tonight Geminids (Sun 13 Dec
       15:00 UTC), Sky This Week Dec 21 (Fri 18 Dec), Sky This Week Jan 4 (Fri 1 Jan), Mars opposition (Mon 15 Feb).
+- [ ] **Re-render the approved-but-unscheduled episodes before they get a slot** (Sky School Planet Ages, Proxima,
+      Voyager light-day, Twin paradox, Light travel, Geminids, the Dec/Jan Sky This Week, Mars opposition): they still
+      have the old long credit and no clean cover. Re-render → QA → owner approval → schedule.
 - [ ] **Next production batch** (weekly): the week after 24 Nov. New episodes use `cc episode new --slug …`
       (`--date` only for date-bound content) and get the Tone.js beds automatically.
 
@@ -35,6 +38,10 @@ _Nothing waiting on approval._
 
 ## Done
 
+- [x] 2026-11-15 Credit line shortened to the source only (CC licences kept), small, lower left above the captions;
+      the 15–24 Nov queue re-rendered in parallel (clean covers too), QA'd, owner-approved and swapped into Buffer
+      (30 posts, 0 differences, hosted files hash-checked). Loudness step now re-measures and retries on true-peak
+      overshoot (Cosmic Top 5 had hit +0.1 dBFS).
 - [x] 2026-11-15 Starship catch (footage version) and ISS gravity (music fixed) approved by the owner and swapped
       into their Buffer posts (15 and 22 Nov); Buffer re-checked: 30 posts, 0 differences. Fixed the media-cache
       upload (`mktree --missing`) that failed when a series folder already held videos the blobless cache lacks.

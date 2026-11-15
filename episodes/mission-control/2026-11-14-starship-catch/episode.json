@@ -14,14 +14,14 @@
     "plan": "71af0b61b9aa756b",
     "factcheckedPlan": "71af0b61b9aa756b",
     "narration": "89b12131f2131726",
-    "video": "986f8688c322ecb112882f2797a8081ee02a52e2d85dc6868beb5e57d389bfc6"
+    "video": "058aed3dbf0743d2b27d247f97c31b4751416a958b01903b594fa698f1b8b6f7"
   },
   "approvals": [
     {
       "by": "Krzysztof",
       "actor": "human",
-      "at": "2026-11-15T10:50:37.873Z",
-      "videoSha256": "986f8688c322ecb112882f2797a8081ee02a52e2d85dc6868beb5e57d389bfc6"
+      "at": "2026-11-15T11:16:05.385Z",
+      "videoSha256": "058aed3dbf0743d2b27d247f97c31b4751416a958b01903b594fa698f1b8b6f7"
     }
   ]
 }

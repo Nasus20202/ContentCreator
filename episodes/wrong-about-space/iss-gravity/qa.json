@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T10:50:45.301Z",
-  "videoSha256": "723d9478a52947a05ce06e9df3d4c44841c55e9592e471eb04c75bac625ab563",
+  "checkedAt": "2026-11-15T11:10:52.681Z",
+  "videoSha256": "420de94d530c228f5335778204011dd6e27528cea525ba7b2820740105780c9a",
   "automated": [
     {
       "name": "resolution",
@@ -137,8 +137,8 @@
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T10:52:44.434Z",
+    "at": "2026-11-15T11:15:08.256Z",
     "verdict": "pass",
-    "notes": "Re-render with the music bed restored. Technical checks all pass (-14.1 LUFS, -1.5 dBTP, 36.1 s). Frames: hook (NASA/JSC water-drop photo) title + WRONG chip clear, credit visible; 90% number card legible, NASA source shown; ISS scenes: FACT/28,000 km/h chips above the station, captions clear of platform UI, credit on every image frame; outro CTA and sources fine. Cover: rendered before the clean-cover change, so it still has the first caption and credit (same as the previously approved version); 3:4 grid crop keeps title and drop. Audio itself not judged from stills; the owner approved after watching."
+    "notes": "Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills."
   }
 }

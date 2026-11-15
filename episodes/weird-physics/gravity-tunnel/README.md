@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | weird-physics-gravity-tunnel |
 | Series | weird-physics |
-| Stage | **published** |
+| Stage | **approved** |
 | Created | 2026-11-15T01:08:07.699Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -82,7 +82,7 @@ Image: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.
 
 ## Render
 
-46.7 s, 1080×1920@30, sha256 `cbd4b358d13926e7…`, rendered 2026-11-15T02:34:39.944Z in 51 s.
+46.7 s, 1080×1920@30, sha256 `154a2b8c21a769cb…`, rendered 2026-11-15T11:12:14.461Z in 366 s.
 
 ## QA
 
@@ -97,11 +97,11 @@ Image: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T02:39:35.202Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+Visual review by **claude** (2026-11-15T11:15:05.802Z): **pass** — Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills.
 
 ## Approvals
 
-- 2026-11-15T02:39:35.967Z — **Krzysztof Nasuta** (human) approved video `cbd4b358d13926e7…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
+- 2026-11-15T11:16:08.524Z — **Krzysztof** (human) approved video `154a2b8c21a769cb…`
 
 ## Publishing
 
@@ -138,6 +138,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/weird-
 ### 2026-11-15T09:02:28.117Z · buffer · reschedule for 2026-11-19T17:00:00.000Z
 
 Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/weird-physics/gravity-tunnel-cbd4b358.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c02e5a113497ac07bfe |  |
+| tiktok | submitted | 6af91c03b9a106584c82614c |  |
+| instagram | submitted | 6af91c04c5b364e0622d8a41 |  |
+
+### 2026-11-15T11:17:56.288Z · buffer · reschedule for 2026-11-19T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/weird-physics/gravity-tunnel-154a2b8c.mp4
 
 | Platform | Status | Post id | Error |
 | --- | --- | --- | --- |
@@ -213,3 +223,10 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/w
 | 2026-11-15 08:41:30 | claude | published | episode.rename | 0d80a88 |
 | 2026-11-15 08:42:30 | claude | publish | publish.reschedule | 0d80a88 |
 | 2026-11-15 09:02:30 | claude | publish | publish.reschedule | 0d80a88 |
+| 2026-11-15 11:12:14 | claude | rendered | stage.regress | f9c99ca |
+| 2026-11-15 11:12:14 | claude | rendered | render.video | f9c99ca |
+| 2026-11-15 11:12:45 | pipeline | qa | qa.automated | f9c99ca |
+| 2026-11-15 11:15:05 | claude | qa | qa.review | f9c99ca |
+| 2026-11-15 11:15:05 | claude | qa-passed | stage.advance | f9c99ca |
+| 2026-11-15 11:16:08 | human | approved | stage.advance | f9c99ca |
+| 2026-11-15 11:17:58 | claude | publish | publish.reschedule | f9c99ca |

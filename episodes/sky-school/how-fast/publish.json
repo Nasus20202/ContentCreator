@@ -571,6 +571,115 @@
           }
         }
       ]
+    },
+    {
+      "at": "2026-11-15T11:17:07.597Z",
+      "actor": "claude",
+      "mode": "reschedule",
+      "scheduledFor": "2026-11-16T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "f5fbd0467d5668694c167d9fe077310e336435ffbe252db7fca128b1a9d0c05c",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/how-fast-f5fbd046.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6af6106111a42cfbe891d437",
+          "payload": {
+            "text": "Even sitting still in central Europe, Earth's spin carries you at about 1,076 km/h, Earth's orbit at about 107,000 km/h (29.8 km/s), and the Sun carries us around the Milky Way at about 720,000 km/h. Each speed is measured relative to a different centre.\n\nSources:\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\n\nImages: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #earth #milkyway",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-16T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/how-fast-f5fbd046.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "You are not sitting still 🚀",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af6106111a42cfbe891d437"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6af610622ef1f0c84e5cad6a",
+          "payload": {
+            "text": "You are not sitting still 🚀\n\nEven sitting still in central Europe, Earth's spin carries you at about 1,076 km/h, Earth's orbit at about 107,000 km/h (29.8 km/s), and the Sun carries us around the Milky Way at about 720,000 km/h. Each speed is measured relative to a different centre.\n\nSources:\nNASA NSSDCA Planetary Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA Science, Sun facts: https://science.nasa.gov/sun/facts/\n\nImages: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #earth #milkyway",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-16T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/how-fast-f5fbd046.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af610622ef1f0c84e5cad6a"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "submitted",
+          "postId": "6af8cebec5b364e062188bbc",
+          "payload": {
+            "text": "You are not sitting still 🚀\n\nEven sitting still in central Europe, Earth's spin carries you at about 1,076 km/h, Earth's orbit at about 107,000 km/h (29.8 km/s), and the Sun carries us around the Milky Way at about 720,000 km/h. Each speed is measured relative to a different centre.\n\nSources:\nNASA NSSDCA Planetary Fact Sheet\nNASA NSSDCA Earth Fact Sheet\nNASA Science, Sun facts\n\nImages: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #earth #milkyway",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-16T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/how-fast-f5fbd046.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            },
+            "id": "6af8cebec5b364e062188bbc"
+          }
+        }
+      ]
     }
   ]
 }

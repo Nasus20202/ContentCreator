@@ -2,7 +2,7 @@
   "id": "cosmic-top-5-2026-11-24-farthest",
   "series": "cosmic-top-5",
   "createdAt": "2026-11-15T01:02:03.101Z",
-  "stage": "published",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -14,15 +14,14 @@
     "plan": "efdd8adfd77660e9",
     "factcheckedPlan": "efdd8adfd77660e9",
     "narration": "c524bb3f7debd1d0",
-    "video": "dc0ec63fb81be5b060fa21fb04660e8e99c7d0aa203ed87d272afab4510aad15"
+    "video": "778365e914ecd796b71a51945c286e167ed46232f07ff3c7f2ff425e333e7fbd"
   },
   "approvals": [
     {
-      "by": "Krzysztof Nasuta",
+      "by": "Krzysztof",
       "actor": "human",
-      "at": "2026-11-15T02:39:32.904Z",
-      "videoSha256": "dc0ec63fb81be5b060fa21fb04660e8e99c7d0aa203ed87d272afab4510aad15",
-      "note": "Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render."
+      "at": "2026-11-15T11:16:12.448Z",
+      "videoSha256": "778365e914ecd796b71a51945c286e167ed46232f07ff3c7f2ff425e333e7fbd"
     }
   ]
 }

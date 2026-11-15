@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | one-shot-artemis-earth |
 | Series | one-shot |
-| Stage | **published** |
+| Stage | **approved** |
 | Created | 2026-11-15T00:47:16.001Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -80,7 +80,7 @@ Images: NASA / JSC (Artemis II crew photos). Narration uses a synthetic voice.
 
 ## Render
 
-39.7 s, 1080×1920@30, sha256 `5eb72ac9cc3573e0…`, rendered 2026-11-15T02:29:37.942Z in 42 s.
+39.7 s, 1080×1920@30, sha256 `21f56d922ec38c42…`, rendered 2026-11-15T11:11:08.935Z in 301 s.
 
 ## QA
 
@@ -92,14 +92,14 @@ Images: NASA / JSC (Artemis II crew photos). Narration uses a synthetic voice.
 | duration | ✅ | 39.70 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 39.70 s vs timeline 39.63 s |
 | loudness | ✅ | -14.3 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.4 dBFS |
+| true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T02:39:27.525Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+Visual review by **claude** (2026-11-15T11:15:09.127Z): **pass** — Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills.
 
 ## Approvals
 
-- 2026-11-15T02:39:28.288Z — **Krzysztof Nasuta** (human) approved video `5eb72ac9cc3573e0…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
+- 2026-11-15T11:16:11.660Z — **Krzysztof** (human) approved video `21f56d922ec38c42…`
 
 ## Publishing
 
@@ -136,6 +136,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/one-sh
 ### 2026-11-15T09:04:04.035Z · buffer · reschedule for 2026-11-23T17:00:00.000Z
 
 Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/one-shot/artemis-earth-5eb72ac9.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c2d76c23bf1c7540fa1 |  |
+| tiktok | submitted | 6af91c2de5a113497ac082b9 |  |
+| instagram | submitted | 6af91c2e76c23bf1c7540fd2 |  |
+
+### 2026-11-15T11:18:51.503Z · buffer · reschedule for 2026-11-23T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/one-shot/artemis-earth-21f56d92.mp4
 
 | Platform | Status | Post id | Error |
 | --- | --- | --- | --- |
@@ -185,3 +195,10 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/o
 | 2026-11-15 08:41:16 | claude | published | episode.rename | 0d80a88 |
 | 2026-11-15 08:42:53 | claude | publish | publish.reschedule | 0d80a88 |
 | 2026-11-15 09:04:06 | claude | publish | publish.reschedule | 0d80a88 |
+| 2026-11-15 11:11:09 | claude | rendered | stage.regress | f9c99ca |
+| 2026-11-15 11:11:09 | claude | rendered | render.video | f9c99ca |
+| 2026-11-15 11:12:01 | pipeline | qa | qa.automated | f9c99ca |
+| 2026-11-15 11:15:09 | claude | qa | qa.review | f9c99ca |
+| 2026-11-15 11:15:09 | claude | qa-passed | stage.advance | f9c99ca |
+| 2026-11-15 11:16:11 | human | approved | stage.advance | f9c99ca |
+| 2026-11-15 11:18:53 | claude | publish | publish.reschedule | f9c99ca |

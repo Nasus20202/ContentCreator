@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | cosmic-top-5-2026-11-24-farthest |
 | Series | cosmic-top-5 |
-| Stage | **published** |
+| Stage | **approved** |
 | Created | 2026-11-15T01:02:03.101Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -109,7 +109,7 @@ Images: NASA / JPL / MDSCC / INTA, Francisco "Paco" Moreno (Deep Space Network, 
 
 ## Render
 
-58.1 s, 1080×1920@30, sha256 `dc0ec63fb81be5b0…`, rendered 2026-11-15T02:32:34.286Z in 65 s.
+58.1 s, 1080×1920@30, sha256 `778365e914ecd796…`, rendered 2026-11-15T11:15:10.411Z in 69 s.
 
 ## QA
 
@@ -121,14 +121,14 @@ Images: NASA / JPL / MDSCC / INTA, Francisco "Paco" Moreno (Deep Space Network, 
 | duration | ✅ | 58.10 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 58.10 s vs timeline 58.07 s |
 | loudness | ✅ | -14.3 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.2 dBFS |
+| true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T02:39:32.135Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+Visual review by **claude** (2026-11-15T11:15:41.957Z): **pass** — Re-render for the credit change (source-only, small, lower left above the captions) plus the clean cover; first attempt failed true peak (+0.1 dBFS), fixed by the measured loudnorm retry, now -1.4 dBTP. Contact sheet of all 26 frames: credits legible (New Horizons' long credit wraps to two lines upward, clear of the caption), chips and bars clean, cover and grid crop clean. Script/facts unchanged; audio not judged from stills.
 
 ## Approvals
 
-- 2026-11-15T02:39:32.904Z — **Krzysztof Nasuta** (human) approved video `dc0ec63fb81be5b0…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
+- 2026-11-15T11:16:12.448Z — **Krzysztof** (human) approved video `778365e914ecd796…`
 
 ## Publishing
 
@@ -155,6 +155,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/cosmic
 ### 2026-11-15T09:04:29.765Z · buffer · reschedule for 2026-11-24T17:00:00.000Z
 
 Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/cosmic-top-5/2026-11-24-farthest-dc0ec63f.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c8ee86a5789a6e615ff |  |
+| tiktok | submitted | 6af91c8ec5b364e0622da56f |  |
+| instagram | submitted | 6af91c8fb9a106584c8278c2 |  |
+
+### 2026-11-15T11:19:11.399Z · buffer · reschedule for 2026-11-24T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/cosmic-top-5/2026-11-24-farthest-778365e9.mp4
 
 | Platform | Status | Post id | Error |
 | --- | --- | --- | --- |
@@ -260,3 +270,13 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/c
 | 2026-11-15 08:41:14 | claude | published | episode.rename | 0d80a88 |
 | 2026-11-15 08:42:56 | claude | publish | publish.reschedule | 0d80a88 |
 | 2026-11-15 09:04:32 | claude | publish | publish.reschedule | 0d80a88 |
+| 2026-11-15 11:12:47 | claude | rendered | stage.regress | f9c99ca |
+| 2026-11-15 11:12:47 | claude | rendered | render.video | f9c99ca |
+| 2026-11-15 11:13:05 | pipeline | qa | qa.automated | f9c99ca |
+| 2026-11-15 11:15:10 | claude | rendered | stage.advance | f9c99ca |
+| 2026-11-15 11:15:10 | claude | rendered | render.video | f9c99ca |
+| 2026-11-15 11:15:22 | pipeline | qa | qa.automated | f9c99ca |
+| 2026-11-15 11:15:41 | claude | qa | qa.review | f9c99ca |
+| 2026-11-15 11:15:41 | claude | qa-passed | stage.advance | f9c99ca |
+| 2026-11-15 11:16:12 | human | approved | stage.advance | f9c99ca |
+| 2026-11-15 11:19:14 | claude | publish | publish.reschedule | f9c99ca |

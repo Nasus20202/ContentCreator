@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-moon-drift |
 | Series | sky-school |
-| Stage | **published** |
+| Stage | **approved** |
 | Created | 2026-11-15T00:59:04.117Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -84,7 +84,7 @@ Images: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / 
 
 ## Render
 
-45.3 s, 1080×1920@30, sha256 `b561b826bb4bfb09…`, rendered 2026-11-15T02:31:20.563Z in 46 s.
+45.3 s, 1080×1920@30, sha256 `280eba9b89168743…`, rendered 2026-11-15T11:12:24.375Z in 376 s.
 
 ## QA
 
@@ -96,14 +96,14 @@ Images: NASA / GSFC (full Moon), NASA / JSC (Apollo 14 laser reflector), NASA / 
 | duration | ✅ | 45.30 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 45.30 s vs timeline 45.27 s |
 | loudness | ✅ | -14.2 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.3 dBFS |
+| true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T02:39:30.598Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+Visual review by **claude** (2026-11-15T11:15:07.422Z): **pass** — Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills.
 
 ## Approvals
 
-- 2026-11-15T02:39:31.362Z — **Krzysztof Nasuta** (human) approved video `b561b826bb4bfb09…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
+- 2026-11-15T11:16:10.084Z — **Krzysztof** (human) approved video `280eba9b89168743…`
 
 ## Publishing
 
@@ -140,6 +140,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 ### 2026-11-15T09:03:31.294Z · buffer · reschedule for 2026-11-21T17:00:00.000Z
 
 Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/moon-drift-b561b826.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c1d76c23bf1c7540e45 |  |
+| tiktok | submitted | 6af91c1eb9a106584c826ab4 |  |
+| instagram | submitted | 6af91c1fc5b364e0622d8f00 |  |
+
+### 2026-11-15T11:18:25.011Z · buffer · reschedule for 2026-11-21T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/moon-drift-280eba9b.mp4
 
 | Platform | Status | Post id | Error |
 | --- | --- | --- | --- |
@@ -199,3 +209,10 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/s
 | 2026-11-15 08:41:21 | claude | published | episode.rename | 0d80a88 |
 | 2026-11-15 08:42:45 | claude | publish | publish.reschedule | 0d80a88 |
 | 2026-11-15 09:03:33 | claude | publish | publish.reschedule | 0d80a88 |
+| 2026-11-15 11:12:24 | claude | rendered | stage.regress | f9c99ca |
+| 2026-11-15 11:12:24 | claude | rendered | render.video | f9c99ca |
+| 2026-11-15 11:12:49 | pipeline | qa | qa.automated | f9c99ca |
+| 2026-11-15 11:15:07 | claude | qa | qa.review | f9c99ca |
+| 2026-11-15 11:15:07 | claude | qa-passed | stage.advance | f9c99ca |
+| 2026-11-15 11:16:10 | human | approved | stage.advance | f9c99ca |
+| 2026-11-15 11:18:27 | claude | publish | publish.reschedule | f9c99ca |

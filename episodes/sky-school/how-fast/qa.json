@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-12T18:58:15.878Z",
-  "videoSha256": "acbd9ea1b1c6e4f8712d42a500425c4610f8bf59e5dffc1c00d59bae6fccc420",
+  "checkedAt": "2026-11-15T11:12:37.182Z",
+  "videoSha256": "f5fbd0467d5668694c167d9fe077310e336435ffbe252db7fca128b1a9d0c05c",
   "automated": [
     {
       "name": "resolution",
@@ -128,12 +128,22 @@
       "file": "qa/05-outro-2.jpg",
       "sceneId": "outro",
       "tSec": 44.83
+    },
+    {
+      "file": "qa/cover.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
+    },
+    {
+      "file": "qa/cover-grid.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-12T18:58:30.673Z",
+    "at": "2026-11-15T11:15:02.059Z",
     "verdict": "pass",
-    "notes": "Hook title now has a soft scrim and reads over the Blue Marble clouds; 1,076 km/h card (count-up animation), two-bar and three-bar to-scale charts with the 'relative to a different centre' note clear of the captions, Spitzer galactic centre with 720,000 km/h then 230-million-year chips, outro synced."
+    "notes": "Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills."
   }
 }

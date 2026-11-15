@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | one-shot-earth-smiled |
 | Series | one-shot |
-| Stage | **published** |
+| Stage | **approved** |
 | Created | 2026-11-15T01:26:16.332Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -74,7 +74,7 @@ Images: NASA / JPL-Caltech / Space Science Institute (Cassini). Narration uses a
 
 ## Render
 
-40.7 s, 1080×1920@30, sha256 `99f5cbba8c48fb9c…`, rendered 2026-11-15T02:37:54.878Z in 43 s.
+40.7 s, 1080×1920@30, sha256 `4d7d944422ef19e5…`, rendered 2026-11-15T11:11:09.982Z in 302 s.
 
 ## QA
 
@@ -89,11 +89,11 @@ Images: NASA / JPL-Caltech / Space Science Institute (Cassini). Narration uses a
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T02:39:38.200Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+Visual review by **claude** (2026-11-15T11:15:06.606Z): **pass** — Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills.
 
 ## Approvals
 
-- 2026-11-15T02:39:38.947Z — **Krzysztof Nasuta** (human) approved video `99f5cbba8c48fb9c…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
+- 2026-11-15T11:16:09.292Z — **Krzysztof** (human) approved video `4d7d944422ef19e5…`
 
 ## Publishing
 
@@ -130,6 +130,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/one-sh
 ### 2026-11-15T09:02:44.479Z · buffer · reschedule for 2026-11-20T17:00:00.000Z
 
 Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/one-shot/earth-smiled-99f5cbba.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c57e86a5789a6e60f41 |  |
+| tiktok | submitted | 6af91c58c5b364e0622d980c |  |
+| instagram | submitted | 6af91c5876c23bf1c7541471 |  |
+
+### 2026-11-15T11:18:09.643Z · buffer · reschedule for 2026-11-20T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/one-shot/earth-smiled-4d7d9444.mp4
 
 | Platform | Status | Post id | Error |
 | --- | --- | --- | --- |
@@ -175,3 +185,10 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/o
 | 2026-11-15 08:41:17 | claude | published | episode.rename | 0d80a88 |
 | 2026-11-15 08:42:37 | claude | publish | publish.reschedule | 0d80a88 |
 | 2026-11-15 09:02:46 | claude | publish | publish.reschedule | 0d80a88 |
+| 2026-11-15 11:11:10 | claude | rendered | stage.regress | f9c99ca |
+| 2026-11-15 11:11:10 | claude | rendered | render.video | f9c99ca |
+| 2026-11-15 11:12:01 | pipeline | qa | qa.automated | f9c99ca |
+| 2026-11-15 11:15:06 | claude | qa | qa.review | f9c99ca |
+| 2026-11-15 11:15:06 | claude | qa-passed | stage.advance | f9c99ca |
+| 2026-11-15 11:16:09 | human | approved | stage.advance | f9c99ca |
+| 2026-11-15 11:18:11 | claude | publish | publish.reschedule | f9c99ca |

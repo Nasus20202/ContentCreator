@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T02:33:41.026Z",
-  "videoSha256": "0679ca40c9cee95ad3e10b3d431ca310cc1e65497805c64030dcc0ca70d03fdc",
+  "checkedAt": "2026-11-15T11:12:07.036Z",
+  "videoSha256": "848f080ba272cc77c10cbe83a56948409c9af01f8ffd610afb48fb99bddb056c",
   "automated": [
     {
       "name": "resolution",
@@ -128,12 +128,22 @@
       "file": "qa/05-outro-2.jpg",
       "sceneId": "outro",
       "tSec": 52.2
+    },
+    {
+      "file": "qa/cover.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
+    },
+    {
+      "file": "qa/cover-grid.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T02:39:33.673Z",
+    "at": "2026-11-15T11:15:03.467Z",
     "verdict": "pass",
-    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
+    "notes": "Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills."
   }
 }

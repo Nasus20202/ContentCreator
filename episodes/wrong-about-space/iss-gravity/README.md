@@ -81,7 +81,7 @@ Images: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floati
 
 ## Render
 
-36.1 s, 1080×1920@30, sha256 `723d9478a52947a0…`, rendered 2026-11-15T08:02:50.005Z in 40 s.
+36.1 s, 1080×1920@30, sha256 `420de94d530c228f…`, rendered 2026-11-15T11:10:47.881Z in 280 s.
 
 ## QA
 
@@ -96,11 +96,11 @@ Images: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floati
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T10:52:44.434Z): **pass** — Re-render with the music bed restored. Technical checks all pass (-14.1 LUFS, -1.5 dBTP, 36.1 s). Frames: hook (NASA/JSC water-drop photo) title + WRONG chip clear, credit visible; 90% number card legible, NASA source shown; ISS scenes: FACT/28,000 km/h chips above the station, captions clear of platform UI, credit on every image frame; outro CTA and sources fine. Cover: rendered before the clean-cover change, so it still has the first caption and credit (same as the previously approved version); 3:4 grid crop keeps title and drop. Audio itself not judged from stills; the owner approved after watching.
+Visual review by **claude** (2026-11-15T11:15:08.256Z): **pass** — Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills.
 
 ## Approvals
 
-- 2026-11-15T10:52:45.226Z — **Krzysztof** (human) approved video `723d9478a52947a0…`
+- 2026-11-15T11:16:10.883Z — **Krzysztof** (human) approved video `420de94d530c228f…`
 
 ## Publishing
 
@@ -137,6 +137,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/w
 ### 2026-11-15T10:52:55.871Z · buffer · reschedule for 2026-11-22T17:00:00.000Z
 
 Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/iss-gravity-723d9478.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c6cb9a106584c82762d |  |
+| tiktok | submitted | 6af91c6d76c23bf1c7541740 |  |
+| instagram | submitted | 6af91c6ee86a5789a6e6137a |  |
+
+### 2026-11-15T11:18:39.649Z · buffer · reschedule for 2026-11-22T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/iss-gravity-420de94d.mp4
 
 | Platform | Status | Post id | Error |
 | --- | --- | --- | --- |
@@ -191,3 +201,10 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/w
 | 2026-11-15 10:52:44 | claude | qa-passed | stage.advance | 1749707 |
 | 2026-11-15 10:52:45 | human | approved | stage.advance | 1749707 |
 | 2026-11-15 10:52:58 | claude | publish | publish.reschedule | 1749707 |
+| 2026-11-15 11:10:48 | claude | rendered | stage.regress | f9c99ca |
+| 2026-11-15 11:10:48 | claude | rendered | render.video | f9c99ca |
+| 2026-11-15 11:11:44 | pipeline | qa | qa.automated | f9c99ca |
+| 2026-11-15 11:15:08 | claude | qa | qa.review | f9c99ca |
+| 2026-11-15 11:15:08 | claude | qa-passed | stage.advance | f9c99ca |
+| 2026-11-15 11:16:10 | human | approved | stage.advance | f9c99ca |
+| 2026-11-15 11:18:41 | claude | publish | publish.reschedule | f9c99ca |

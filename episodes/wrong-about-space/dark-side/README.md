@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | wrong-about-space-dark-side |
 | Series | wrong-about-space |
-| Stage | **published** |
+| Stage | **approved** |
 | Created | 2026-11-15T00:48:24.040Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -77,7 +77,7 @@ Images: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (A
 
 ## Render
 
-37.7 s, 1080×1920@30, sha256 `5888e9f4eb8f2099…`, rendered 2026-11-15T02:30:26.700Z in 40 s.
+37.7 s, 1080×1920@30, sha256 `f1bb052a033f701c…`, rendered 2026-11-15T11:10:47.153Z in 279 s.
 
 ## QA
 
@@ -89,14 +89,14 @@ Images: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (A
 | duration | ✅ | 37.70 s (limit 60 s) |
 | duration-matches-timeline | ✅ | video 37.70 s vs timeline 37.67 s |
 | loudness | ✅ | -14.4 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.4 dBFS |
+| true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T02:39:29.058Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+Visual review by **claude** (2026-11-15T11:15:04.819Z): **pass** — Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills.
 
 ## Approvals
 
-- 2026-11-15T02:39:29.815Z — **Krzysztof Nasuta** (human) approved video `5888e9f4eb8f2099…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
+- 2026-11-15T11:16:07.747Z — **Krzysztof** (human) approved video `f1bb052a033f701c…`
 
 ## Publishing
 
@@ -133,6 +133,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-
 ### 2026-11-15T09:02:04.969Z · buffer · reschedule for 2026-11-18T17:00:00.000Z
 
 Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/dark-side-5888e9f4.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c44e5a113497ac0866a |  |
+| tiktok | submitted | 6af91c44e86a5789a6e607df |  |
+| instagram | submitted | 6af91c45e86a5789a6e60808 |  |
+
+### 2026-11-15T11:17:38.304Z · buffer · reschedule for 2026-11-18T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/dark-side-f1bb052a.mp4
 
 | Platform | Status | Post id | Error |
 | --- | --- | --- | --- |
@@ -196,3 +206,10 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/w
 | 2026-11-15 08:41:31 | claude | published | episode.rename | 0d80a88 |
 | 2026-11-15 08:42:22 | claude | publish | publish.reschedule | 0d80a88 |
 | 2026-11-15 09:02:07 | claude | publish | publish.reschedule | 0d80a88 |
+| 2026-11-15 11:10:47 | claude | rendered | stage.regress | f9c99ca |
+| 2026-11-15 11:10:47 | claude | rendered | render.video | f9c99ca |
+| 2026-11-15 11:11:46 | pipeline | qa | qa.automated | f9c99ca |
+| 2026-11-15 11:15:04 | claude | qa | qa.review | f9c99ca |
+| 2026-11-15 11:15:04 | claude | qa-passed | stage.advance | f9c99ca |
+| 2026-11-15 11:16:07 | human | approved | stage.advance | f9c99ca |
+| 2026-11-15 11:17:40 | claude | publish | publish.reschedule | f9c99ca |

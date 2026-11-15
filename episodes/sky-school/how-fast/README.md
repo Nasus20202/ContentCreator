@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-how-fast |
 | Series | sky-school |
-| Stage | **published** |
+| Stage | **approved** |
 | Created | 2026-11-12T18:43:09.956Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -87,7 +87,7 @@ Images: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a
 
 ## Render
 
-45.0 s, 1080×1920@30, sha256 `acbd9ea1b1c6e4f8…`, rendered 2026-11-12T18:58:15.170Z in 54 s.
+45.0 s, 1080×1920@30, sha256 `f5fbd0467d566869…`, rendered 2026-11-15T11:12:35.220Z in 387 s.
 
 ## QA
 
@@ -102,11 +102,11 @@ Images: NASA / JSC (Blue Marble), NASA / JPL-Caltech (Spitzer). Narration uses a
 | true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-12T18:58:30.673Z): **pass** — Hook title now has a soft scrim and reads over the Blue Marble clouds; 1,076 km/h card (count-up animation), two-bar and three-bar to-scale charts with the 'relative to a different centre' note clear of the captions, Spitzer galactic centre with 720,000 km/h then 230-million-year chips, outro synced.
+Visual review by **claude** (2026-11-15T11:15:02.059Z): **pass** — Re-render for the credit change only (channel decision: source-only credit, small, lower left above the captions) plus the clean cover moment. Contact sheet of every QA frame checked: credit legible and clear of captions/chips/subject on every image frame, captions in the safe zone, cover and 3:4 grid crop clean (no captions or credit). Script, facts and timing unchanged from the approved version; audio not judged from stills.
 
 ## Approvals
 
-- 2026-11-12T19:13:30.857Z — **Krzysztof Nasuta** (human) approved video `acbd9ea1b1c6e4f8…`
+- 2026-11-15T11:16:06.169Z — **Krzysztof** (human) approved video `f5fbd0467d566869…`
 
 ## Publishing
 
@@ -170,6 +170,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/s
 | tiktok | submitted | 6af610622ef1f0c84e5cad6a |  |
 | instagram | submitted | 6af8cebec5b364e062188bbc |  |
 
+### 2026-11-15T11:17:07.597Z · buffer · reschedule for 2026-11-16T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/how-fast-f5fbd046.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af6106111a42cfbe891d437 |  |
+| tiktok | submitted | 6af610622ef1f0c84e5cad6a |  |
+| instagram | submitted | 6af8cebec5b364e062188bbc |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -212,3 +222,10 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/s
 | 2026-11-15 08:41:19 | claude | published | episode.rename | 0d80a88 |
 | 2026-11-15 08:42:06 | claude | publish | publish.reschedule | 0d80a88 |
 | 2026-11-15 09:01:26 | claude | publish | publish.reschedule | 0d80a88 |
+| 2026-11-15 11:12:35 | claude | rendered | stage.regress | f9c99ca |
+| 2026-11-15 11:12:35 | claude | rendered | render.video | f9c99ca |
+| 2026-11-15 11:12:55 | pipeline | qa | qa.automated | f9c99ca |
+| 2026-11-15 11:15:02 | claude | qa | qa.review | f9c99ca |
+| 2026-11-15 11:15:02 | claude | qa-passed | stage.advance | f9c99ca |
+| 2026-11-15 11:16:06 | human | approved | stage.advance | f9c99ca |
+| 2026-11-15 11:17:10 | claude | publish | publish.reschedule | f9c99ca |
