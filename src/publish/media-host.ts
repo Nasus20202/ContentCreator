@@ -106,6 +106,7 @@ export class GitBranchHost implements MediaHost {
       const subTree = sub ? sub.split(' ')[2].split('\t')[0] : '';
       entry = `040000 tree ${await this.putPath(git, subTree, rest, blob)}\t${head}`;
     }
-    return git(['mktree'], [...others, entry].join('\n') + '\n');
+    // --missing: in a blobless clone the other videos in this folder are not local, and need not be
+    return git(['mktree', '--missing'], [...others, entry].join('\n') + '\n');
   }
 }
