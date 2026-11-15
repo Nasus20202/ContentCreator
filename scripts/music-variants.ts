@@ -11,9 +11,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { ffmpeg, loudness, synthesizePad, type MusicStyle } from '../src/render/media';
+import { PIANO_STYLES } from '../src/render/piano-loop';
+import { SCORE_STYLES } from '../src/render/score';
 import { TONE_STYLES } from '../src/render/tone/styles';
 
-const STYLES: MusicStyle[] = [...TONE_STYLES];
+const STYLES: MusicStyle[] = [...TONE_STYLES, ...PIANO_STYLES, ...SCORE_STYLES];
 
 function arg(name: string, fallback: string): string {
   const i = process.argv.indexOf(`--${name}`);

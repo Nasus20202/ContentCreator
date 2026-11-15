@@ -5,6 +5,8 @@ import { describe, expect, it } from 'vitest';
 import { instrumentManifest } from '../src/assets/instruments';
 import { bedFor, loudness, probe, resolveStyle, SERIES_BED, synthesizePad } from '../src/render/media';
 import { renderToneBed } from '../src/render/tone/render';
+import { PIANO_STYLES } from '../src/render/piano-loop';
+import { SCORE_STYLES } from '../src/render/score';
 import { LEGACY_STYLES, STYLE_INSTRUMENTS, TONE_STYLES } from '../src/render/tone/styles';
 
 const hasBrowser = ['CHROMIUM_PATH', '/usr/bin/chromium-browser', '/usr/bin/chromium', '/usr/bin/google-chrome']
@@ -13,9 +15,12 @@ const hasBrowser = ['CHROMIUM_PATH', '/usr/bin/chromium-browser', '/usr/bin/chro
 
 describe('music styles', () => {
   it('every series bed is a real style and retired names resolve to one', () => {
-    for (const style of Object.values(SERIES_BED)) expect(TONE_STYLES).toContain(style);
+    const real = [...TONE_STYLES, ...PIANO_STYLES, ...SCORE_STYLES];
+    for (const style of Object.values(SERIES_BED)) expect(real).toContain(style);
     for (const [old, now] of Object.entries(LEGACY_STYLES)) expect(resolveStyle(old as never)).toBe(now);
-    expect(bedFor('unknown-series')).toBe('nocturne');
+    // The original beds render as themselves, not as a successor.
+    for (const style of [...PIANO_STYLES, ...SCORE_STYLES]) expect(resolveStyle(style)).toBe(style);
+    expect(bedFor('unknown-series')).toBe('piano');
   });
 
   it('only loads instruments that are in the pinned sample manifest', () => {

@@ -350,16 +350,18 @@ export const Plan = z.object({
      */
     style: z
       .enum([
+        'piano',
+        'piano-pulse',
+        'piano-air',
         'acoustic',
+        'strings',
+        'flute',
         'pulse',
         'drive',
         'lofi',
         'nocturne',
-        'lab',
         // retired names, kept so older plans validate (they map to the styles above)
-        'piano',
-        'piano-pulse',
-        'piano-air',
+        'lab',
         'orbit',
         'nebula',
         'meteor',

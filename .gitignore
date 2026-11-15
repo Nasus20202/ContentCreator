@@ -10,3 +10,7 @@ coverage/
 
 # Tone.js instrument samples (tonejs-instruments, fetched on first render)
 assets/audio/tonejs-instruments/
+
+# Original piano bed samples (FreePats Upright Piano KW, CC0; fetched on first render)
+.cache/
+assets/audio/piano/

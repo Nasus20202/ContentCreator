@@ -8,7 +8,7 @@
  * Tone uses for noise), so a plan always renders the same bed.
  */
 import * as Tone from 'tone';
-import { Chord, Note } from 'tonal';
+import { Chord, Note, Scale } from 'tonal';
 
 import type { ToneStyle } from './styles';
 
@@ -118,6 +118,80 @@ function drums(master: Tone.InputNode, opts: { snareTone?: boolean; dark?: boole
   return { kick, hitSnare, hat };
 }
 
+/** A soft, round kick: a sine thump with the click filtered off (no noise). */
+function softKick(dest: Tone.InputNode, volume = -10): Tone.MembraneSynth {
+  return new Tone.MembraneSynth({
+    pitchDecay: 0.05,
+    octaves: 4,
+    envelope: { attack: 0.004, decay: 0.32, sustain: 0, release: 0.1 },
+    volume,
+  }).chain(new Tone.Filter(240, 'lowpass', -24), dest);
+}
+
+type MelodyNote = { bar: number; at: number; dur: number; note: string };
+
+/**
+ * A singable line over a progression: chord tones on the strong beats, scale steps in between, an
+ * arch per four-bar phrase (up, then home), ending each phrase on a chord tone. `rhythm` holds one
+ * pattern per bar of [start, length] in beats. Untransposed; shift the notes by the episode's
+ * transpose when playing them.
+ */
+function melody(
+  prog: string[],
+  key: string,
+  octave: number,
+  bars: number,
+  rhythm: [number, number][][],
+  r: () => number,
+): MelodyNote[] {
+  const scale = Scale.get(`${key} major`).notes.map((n) => Note.chroma(n));
+  const base = Note.midi(`${key}${octave}`) ?? 72;
+  const lo = base - 3;
+  const hi = base + 14;
+  let cur = base + 4;
+  const out: MelodyNote[] = [];
+  for (let b = 0; b < bars; b++) {
+    const sym = prog[b % prog.length];
+    const tones = Chord.get(sym).notes.map((n) => Note.chroma(n));
+    const steps = rhythm[b % rhythm.length];
+    const phrase = b % 4;
+    const dir = phrase < 2 ? 1 : -1;
+    steps.forEach(([at, dur], i) => {
+      const strong = at % 2 === 0;
+      const last = phrase === 3 && i === steps.length - 1;
+      const allowed = strong || last ? tones : scale;
+      const want = last ? base + (b % 8 === 7 ? 0 : 4) : cur + dir * (strong ? 2 + Math.floor(r() * 3) : 1);
+      let best = cur;
+      let bestD = Infinity;
+      for (let m = lo; m <= hi; m++) {
+        if (!allowed.includes(m % 12)) continue;
+        const d = Math.abs(m - want) + (m === cur && !last ? 1.5 : 0);
+        if (d < bestD) {
+          bestD = d;
+          best = m;
+        }
+      }
+      cur = best;
+      out.push({ bar: b, at, dur, note: Note.fromMidi(best) });
+    });
+  }
+  return out;
+}
+
+/** Fingerpicked guitar for one bar (Travis pattern: alternating bass, treble in between). */
+function travis(guitar: Tone.Sampler, sym: string, t0: number, s: Sections, transpose: number, r: () => number) {
+  const tri = voice(sym, 3, transpose);
+  const bassA = rootOf(sym, 2, transpose);
+  const bassB = shift(bassA, 7);
+  const treble = [shift(tri[1], 12), shift(tri[2], 12), shift(tri[0], 12)];
+  for (let e = 0; e < 8; e++) {
+    const t = t0 + e * (s.beat / 2) + r() * 0.5 * 0.012;
+    const v = 0.5 + 0.22 * r();
+    if (e % 2 === 0) guitar.triggerAttackRelease(e % 4 === 0 ? bassA : bassB, s.beat * 1.6, t, v + 0.1);
+    else guitar.triggerAttackRelease(treble[(e >> 1) % 3], s.beat * 1.2, t, v);
+  }
+}
+
 type Composer = (spec: BedSpec, master: Tone.ToneAudioNode, r: () => number) => Promise<void>;
 const forBars = (s: Sections, fn: (b: number, t0: number) => void) => {
   for (let b = 0, t0 = 0; t0 < s.finalAt - 1e-6; b++, t0 = b * s.bar) fn(b, t0);
@@ -144,13 +218,12 @@ const acoustic: Composer = async (spec, master, r) => {
   forBars(s, (b, t0) => {
     const sym = prog[b % prog.length];
     const tri = voice(sym, 3, spec.transpose);
-    const bassA = rootOf(sym, 2, spec.transpose);
-    const bassB = shift(bassA, 7);
-    const treble = [shift(tri[1], 12), shift(tri[2], 12), shift(tri[0], 12)];
     for (let e = 0; e < 8; e++) {
       const t = t0 + e * (s.beat / 2) + r() * 0.5 * 0.012;
       const v = 0.55 + 0.25 * r();
-      if (e % 2 === 0) guitar.triggerAttackRelease(e % 4 === 0 ? bassA : bassB, s.beat * 1.6, t, v + 0.1);
+      const bassA = rootOf(sym, 2, spec.transpose);
+      const treble = [shift(tri[1], 12), shift(tri[2], 12), shift(tri[0], 12)];
+      if (e % 2 === 0) guitar.triggerAttackRelease(e % 4 === 0 ? bassA : shift(bassA, 7), s.beat * 1.6, t, v + 0.1);
       else guitar.triggerAttackRelease(treble[(e >> 1) % 3], s.beat * 1.2, t, v);
     }
     if (isBody(s, t0)) {
@@ -164,57 +237,249 @@ const acoustic: Composer = async (spec, master, r) => {
   harp.triggerAttackRelease(shift(home[0], 24), 2.5, s.finalAt + 0.2, 0.5);
 };
 
-/** Cosmic Top 5 / Sky Tonight: bright electronic. Supersaw stabs, plucky arp, four-on-the-floor. */
+/**
+ * Cosmic Top 5 / Weird Physics: a modern-classical pulse on real instruments. Repeating piano
+ * eighths, pizzicato-style contrabass, mid-register harp and a low violin melody (nothing high-pitched) over a soft round kick that
+ * gently pumps the mix. No synths, no noise drums.
+ */
 const pulse: Composer = async (spec, master, r) => {
-  const s = sections(spec, 120);
-  const prog = ['Am', 'F', 'C', 'G'];
+  const s = sections(spec, 100);
+  const [key, prog] = (
+    [
+      ['C', ['Am', 'F', 'C', 'G']],
+      ['G', ['Em', 'C', 'G', 'D']],
+    ] as const
+  )[spec.seed % 2];
   const kicks: number[] = [];
   for (let t = 0; t < s.finalAt; t += s.beat) if (t >= s.hookEnd || Math.round(t / s.beat) % 2 === 0) kicks.push(t);
-  const verb = await reverb(2.2, 0.28);
+  const verb = await reverb(3, 0.3);
   verb.connect(master);
-  const bus = pumpBus(verb, kicks, 0.65);
-  const chords = new Tone.PolySynth(Tone.Synth, {
-    oscillator: { type: 'fatsawtooth', count: 3, spread: 28 },
-    envelope: { attack: 0.01, decay: 0.3, sustain: 0.35, release: 0.4 },
-    volume: -20,
-  }).chain(new Tone.Filter(2600, 'lowpass'), bus);
-  const pluck = new Tone.PolySynth(Tone.Synth, {
-    oscillator: { type: 'square8' },
-    envelope: { attack: 0.002, decay: 0.12, sustain: 0, release: 0.08 },
-    volume: -22,
-  }).chain(new Tone.Filter(3200, 'lowpass'), new Tone.PingPongDelay('8n.', 0.25), bus);
-  const bass = new Tone.MonoSynth({
-    oscillator: { type: 'sawtooth' },
-    filter: { Q: 2, type: 'lowpass' },
-    filterEnvelope: { attack: 0.005, decay: 0.15, sustain: 0.2, baseFrequency: 120, octaves: 2.6 },
-    envelope: { attack: 0.005, decay: 0.2, sustain: 0.5, release: 0.08 },
-    volume: -12,
-  }).connect(bus);
-  const d = drums(master);
-  for (const k of kicks) d.kick.triggerAttackRelease('C1', '8n', k);
+  const bus = pumpBus(verb, kicks, 0.3);
+  const piano = sampler(spec, 'piano', { release: 1.2, volume: -6 }).chain(new Tone.Filter(4500, 'lowpass', -12), bus);
+  const harp = sampler(spec, 'harp', { release: 2, volume: -16 }).connect(bus);
+  const bass = sampler(spec, 'contrabass', { attack: 0.01, release: 0.25, volume: -6 }).connect(bus);
+  const violin = sampler(spec, 'violin', { attack: 0.25, release: 1.6, volume: -10 }).chain(
+    new Tone.Filter(3200, 'lowpass', -24),
+    verb,
+  );
+  const kick = softKick(master, -9);
+  await Tone.loaded();
+  for (const k of kicks) kick.triggerAttackRelease('C2', '8n', k, k >= s.hookEnd ? 0.8 : 0.6);
+  const bars = Math.round(s.finalAt / s.bar);
+  const line = melody(
+    [...prog],
+    key,
+    4,
+    bars,
+    [
+      [
+        [0, 2],
+        [2, 1.5],
+        [3.5, 0.5],
+      ],
+      [
+        [0, 3],
+        [3, 1],
+      ],
+      [
+        [0, 1],
+        [1, 1],
+        [2, 2],
+      ],
+      [[0, 4]],
+    ],
+    r,
+  );
   forBars(s, (b, t0) => {
     const sym = prog[b % prog.length];
-    const notes = voice(sym, 4, spec.transpose);
+    const tri = voice(sym, 4, spec.transpose);
     const body = isBody(s, t0);
-    chords.triggerAttackRelease(notes, s.beat * 0.9, t0, 0.8);
-    if (body) chords.triggerAttackRelease(notes, s.beat * 0.5, t0 + s.beat * 2.5, 0.6);
+    const pat = [tri[0], tri[1], tri[2], tri[1], shift(tri[0], 12), tri[2], tri[1], tri[2]];
+    pat.forEach((n, i) =>
+      piano.triggerAttackRelease(
+        n,
+        s.beat * 0.9,
+        t0 + i * (s.beat / 2) + r() * 0.5 * 0.008,
+        (i % 2 ? 0.32 : 0.45) + 0.08 * r(),
+      ),
+    );
+    piano.triggerAttackRelease(rootOf(sym, 3, spec.transpose), s.bar, t0, 0.45);
     const root = rootOf(sym, 2, spec.transpose);
-    for (let e = 0; e < 8; e++)
-      bass.triggerAttackRelease(e % 2 ? shift(root, 12) : root, s.beat * 0.4, t0 + e * (s.beat / 2), 0.9);
-    const arp = [...notes, ...notes.map((n) => shift(n, 12))];
-    for (let q = 0; q < 16; q++) {
-      if (!body && q % 2) continue;
-      const n = arp[(q * 3 + (b % 2)) % arp.length];
-      pluck.triggerAttackRelease(shift(n, 12), '32n', t0 + q * (s.beat / 4) + r() * 0.5 * 0.006, 0.5 + 0.3 * r());
-    }
     if (body) {
-      d.hitSnare(t0 + s.beat);
-      d.hitSnare(t0 + s.beat * 3);
-      for (let h = 0; h < 4; h++) d.hat.triggerAttackRelease('32n', t0 + h * s.beat + s.beat / 2);
+      for (let e = 0; e < 8; e++)
+        bass.triggerAttackRelease(
+          e % 4 === 3 ? shift(root, 7) : root,
+          s.beat * 0.35,
+          t0 + e * (s.beat / 2),
+          e % 2 ? 0.5 : 0.75,
+        );
+      for (const q of [3, 7, 11, 15]) harp.triggerAttackRelease(tri[(q >> 2) % 3], s.beat, t0 + q * (s.beat / 4), 0.3);
+      for (const m of line.filter((x) => x.bar === b))
+        violin.triggerAttackRelease(shift(m.note, spec.transpose), m.dur * s.beat * 0.95, t0 + m.at * s.beat, 0.6);
+    } else {
+      bass.triggerAttackRelease(root, s.beat * 1.5, t0, 0.6);
     }
   });
-  chords.triggerAttackRelease(voice(prog[0], 4, spec.transpose), 2.6, s.finalAt, 0.8);
-  bass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 2.4, s.finalAt);
+  const home = voice(prog[0], 4, spec.transpose);
+  home.forEach((n, i) => piano.triggerAttackRelease(n, 3, s.finalAt + i * 0.04, 0.5));
+  bass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 2.5, s.finalAt, 0.6);
+  harp.triggerAttackRelease(home[0], 2.5, s.finalAt + 0.2, 0.4);
+};
+
+/**
+ * Strings: a violin song. Piano broken chords and contrabass carry a slow four-chord-pair ballad;
+ * a solo violin sings the melody in the body, a second violin holds the chord underneath, harp
+ * rolls mark the phrases.
+ */
+const strings: Composer = async (spec, master, r) => {
+  const s = sections(spec, 72);
+  const [key, prog] = (
+    [
+      ['D', ['D', 'A', 'Bm', 'F#m', 'G', 'D', 'G', 'A']],
+      ['G', ['G', 'D', 'Em', 'Bm', 'C', 'G', 'C', 'D']],
+    ] as const
+  )[spec.seed % 2];
+  const verb = await reverb(3.6, 0.34);
+  verb.connect(master);
+  const piano = sampler(spec, 'piano', { release: 1.8, volume: -9 }).connect(verb);
+  const bass = sampler(spec, 'contrabass', { attack: 0.2, release: 1.6, volume: -12 }).connect(verb);
+  const lead = sampler(spec, 'violin', { attack: 0.12, release: 1.3, volume: -5 }).chain(
+    new Tone.Filter(5200, 'lowpass', -24),
+    verb,
+  );
+  const pad = sampler(spec, 'violin', { attack: 0.7, release: 2, volume: -17 }).chain(
+    new Tone.Filter(4000, 'lowpass', -24),
+    verb,
+  );
+  const harp = sampler(spec, 'harp', { release: 2.4, volume: -15 }).connect(verb);
+  await Tone.loaded();
+  const bars = Math.round(s.finalAt / s.bar);
+  const line = melody(
+    [...prog],
+    key,
+    5,
+    bars,
+    [
+      [
+        [0, 3],
+        [3, 1],
+      ],
+      [
+        [0, 1.5],
+        [1.5, 0.5],
+        [2, 2],
+      ],
+      [
+        [0, 2],
+        [2, 1],
+        [3, 1],
+      ],
+      [[0, 4]],
+    ],
+    r,
+  );
+  forBars(s, (b, t0) => {
+    const sym = prog[b % prog.length];
+    const tri = voice(sym, 4, spec.transpose);
+    const root = rootOf(sym, 3, spec.transpose);
+    const body = isBody(s, t0);
+    const arp = [root, shift(root, 7), tri[1], shift(root, 7), shift(root, 12), tri[1], tri[2], tri[1]];
+    arp.forEach((n, i) =>
+      piano.triggerAttackRelease(
+        n,
+        s.beat * 1.5,
+        t0 + i * (s.beat / 2) + r() * 0.5 * 0.012,
+        (i % 4 === 0 ? 0.48 : 0.34) + 0.06 * r(),
+      ),
+    );
+    bass.triggerAttackRelease(rootOf(sym, 2, spec.transpose), s.bar * 0.98, t0, 0.55);
+    if (body) {
+      for (const m of line.filter((x) => x.bar === b))
+        lead.triggerAttackRelease(
+          shift(m.note, spec.transpose),
+          m.dur * s.beat * 0.97,
+          t0 + m.at * s.beat,
+          0.62 + 0.08 * r(),
+        );
+      pad.triggerAttackRelease(tri[1], s.bar * 0.98, t0, 0.45);
+      if (b % 4 === 0) tri.forEach((n, i) => harp.triggerAttackRelease(shift(n, 12), s.beat * 2, t0 + i * 0.07, 0.4));
+    }
+  });
+  const home = voice(prog[0], 4, spec.transpose);
+  home.forEach((n, i) => piano.triggerAttackRelease(n, 3.2, s.finalAt + i * 0.04, 0.5));
+  bass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 3, s.finalAt, 0.55);
+  lead.triggerAttackRelease(shift(`${key}5`, spec.transpose), 2.6, s.finalAt, 0.5);
+};
+
+/**
+ * Flute: a pastoral song. Fingerpicked acoustic guitar and harp, contrabass in the body, and a
+ * wooden-sounding flute melody that enters after the hook.
+ */
+const flute: Composer = async (spec, master, r) => {
+  const s = sections(spec, 84);
+  const [key, prog] = (
+    [
+      ['G', ['G', 'Em', 'C', 'D']],
+      ['C', ['C', 'Am', 'F', 'G']],
+    ] as const
+  )[spec.seed % 2];
+  const verb = await reverb(3.2, 0.3);
+  verb.connect(master);
+  const guitar = sampler(spec, 'guitar-acoustic', { release: 1.6, volume: -6 }).connect(verb);
+  const harp = sampler(spec, 'harp', { release: 2, volume: -17 }).connect(verb);
+  const bass = sampler(spec, 'contrabass', { attack: 0.15, release: 1.2, volume: -14 }).connect(verb);
+  const fl = sampler(spec, 'flute', { attack: 0.06, release: 0.9, volume: -7 }).chain(
+    new Tone.Filter(6500, 'lowpass', -24),
+    verb,
+  );
+  await Tone.loaded();
+  const bars = Math.round(s.finalAt / s.bar);
+  const line = melody(
+    [...prog],
+    key,
+    5,
+    bars,
+    [
+      [
+        [0, 1],
+        [1, 1],
+        [2, 1.5],
+        [3.5, 0.5],
+      ],
+      [
+        [0, 3],
+        [3, 1],
+      ],
+      [
+        [0, 1.5],
+        [1.5, 0.5],
+        [2, 1],
+        [3, 1],
+      ],
+      [[0, 4]],
+    ],
+    r,
+  );
+  forBars(s, (b, t0) => {
+    const sym = prog[b % prog.length];
+    travis(guitar, sym, t0, s, spec.transpose, r);
+    if (isBody(s, t0)) {
+      bass.triggerAttackRelease(rootOf(sym, 2, spec.transpose), s.bar * 0.9, t0, 0.5);
+      for (const m of line.filter((x) => x.bar === b))
+        fl.triggerAttackRelease(
+          shift(m.note, spec.transpose),
+          m.dur * s.beat * 0.9,
+          t0 + m.at * s.beat,
+          0.55 + 0.1 * r(),
+        );
+      harp.triggerAttackRelease(shift(voice(sym, 4, spec.transpose)[0], 12), s.beat, t0 + s.beat * 3.5, 0.4);
+    }
+  });
+  const home = voice(prog[0], 3, spec.transpose);
+  home.forEach((n, i) => guitar.triggerAttackRelease(n, 3, s.finalAt + i * 0.035, 0.65));
+  guitar.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 3, s.finalAt, 0.7);
+  fl.triggerAttackRelease(shift(`${key}5`, spec.transpose), 2.4, s.finalAt, 0.45);
+  harp.triggerAttackRelease(shift(home[0], 24), 2.5, s.finalAt + 0.2, 0.45);
 };
 
 /**
@@ -356,8 +621,7 @@ const nocturne: Composer = async (spec, master, r) => {
   const harp = sampler(spec, 'harp', { release: 2.5, volume: -14 }).connect(verb);
   const violin = sampler(spec, 'violin', { attack: 0.6, release: 2, volume: -20 }).connect(verb);
   const contrabass = sampler(spec, 'contrabass', { attack: 0.1, release: 1.5, volume: -12 }).connect(verb);
-  const d = drums(master);
-  d.kick.volume.value = -12;
+  const kick = softKick(master, -12);
   await Tone.loaded();
   forBars(s, (b, t0) => {
     const sym = prog[b % prog.length];
@@ -376,8 +640,7 @@ const nocturne: Composer = async (spec, master, r) => {
     contrabass.triggerAttackRelease(rootOf(sym, 2, spec.transpose), s.bar * 0.95, t0, 0.6);
     if (body) {
       violin.triggerAttackRelease(shift(tri[b % 3], 12), s.bar * 0.98, t0, 0.5);
-      for (const k of [0, 2]) d.kick.triggerAttackRelease('C1', '8n', t0 + k * s.beat, 0.8);
-      for (let h = 0; h < 4; h++) d.hat.triggerAttackRelease('32n', t0 + h * s.beat + s.beat / 2, 0.35);
+      for (const k of [0, 2]) kick.triggerAttackRelease('C2', '8n', t0 + k * s.beat, 0.8);
     }
   });
   const home = voice(prog[0], 4, spec.transpose);
@@ -386,7 +649,7 @@ const nocturne: Composer = async (spec, master, r) => {
   contrabass.triggerAttackRelease(rootOf(prog[0], 2, spec.transpose), 3, s.finalAt, 0.6);
 };
 
-const COMPOSERS: Record<ToneStyle, Composer> = { acoustic, pulse, drive, lofi, nocturne };
+const COMPOSERS: Record<ToneStyle, Composer> = { acoustic, strings, flute, pulse, drive, lofi, nocturne };
 
 function toBase64(a: Float32Array): string {
   const bytes = new Uint8Array(a.buffer, a.byteOffset, a.byteLength);
@@ -402,7 +665,9 @@ export async function renderBed(spec: BedSpec): Promise<{ sampleRate: number; le
   const r = rng(spec.seed);
   const buffer = await Tone.Offline(
     async () => {
-      const master = new Tone.Compressor({ threshold: -18, ratio: 3, attack: 0.01, release: 0.2 }).toDestination();
+      const comp = new Tone.Compressor({ threshold: -18, ratio: 3, attack: 0.01, release: 0.2 }).toDestination();
+      // Keep the top end soft: nothing glassy or fizzy above ~9 kHz reaches the bed.
+      const master = new Tone.Filter({ frequency: 9000, type: 'lowpass', rolloff: -12 }).connect(comp);
       await COMPOSERS[spec.style](spec, master, r);
     },
     spec.seconds + 2,

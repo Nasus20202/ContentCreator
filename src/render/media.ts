@@ -3,6 +3,8 @@ import { execFile } from 'node:child_process';
 import fs from 'node:fs/promises';
 import { promisify } from 'node:util';
 import { z } from 'zod';
+import { isPianoStyle, loadPianoNote, pianoLoop, type PianoStyle } from './piano-loop';
+import { isScoreStyle, renderScore, scoreNotes, type ScoreStyle } from './score';
 import { renderToneBed } from './tone/render';
 import { isToneStyle, LEGACY_STYLES, type LegacyStyle, type ToneStyle } from './tone/styles';
 
@@ -67,32 +69,31 @@ export async function extractFrame(file: string, tSec: number, out: string): Pro
 }
 
 /**
- * Beds, chosen per series or per episode in the plan. The `piano*` beds are the original slow piano
- * loops (kept so older cuts re-render identically); the arranged beds in `score.ts` follow the scenes.
+ * Music beds, chosen per series or pinned per episode in the plan (`music.style`). The `piano*` beds
+ * are the channel's original piano loops (`piano-loop.ts`); the others are composed with Tone.js and
+ * tonal on recorded instruments (`tone/compose.ts`) and rendered offline in headless Chromium.
+ * Older plans may name a retired style; it maps to its successor.
  */
-/**
- * Music beds, chosen per series or pinned per episode in the plan (`music.style`). All beds are
- * composed with Tone.js and tonal on recorded instruments (see `tone/compose.ts`) and rendered
- * offline in headless Chromium. Older plans may name a retired style; it maps to its successor.
- */
-export type MusicStyle = ToneStyle | LegacyStyle;
+export type BedStyle = ToneStyle | PianoStyle | ScoreStyle;
+export type MusicStyle = BedStyle | LegacyStyle;
 
 /** The bed a series gets unless its plan pins `music.style`. */
-export const SERIES_BED: Record<string, ToneStyle> = {
-  'sky-this-week': 'nocturne',
-  'sky-tonight': 'pulse',
-  'sky-school': 'acoustic',
-  'one-shot': 'acoustic',
-  'wrong-about-space': 'lofi',
+export const SERIES_BED: Record<string, BedStyle> = {
+  'sky-this-week': 'orbit',
+  'sky-tonight': 'meteor',
+  'sky-school': 'nebula',
+  'one-shot': 'flute',
+  'wrong-about-space': 'acoustic',
   'cosmic-top-5': 'pulse',
-  'mission-control': 'drive',
+  'mission-control': 'strings',
   'weird-physics': 'pulse',
 };
 
-export const bedFor = (series: string): ToneStyle => SERIES_BED[series] ?? 'nocturne';
+export const bedFor = (series: string): BedStyle => SERIES_BED[series] ?? 'piano';
 
 /** Resolve a (possibly retired) style name to the style that actually renders. */
-export const resolveStyle = (style: MusicStyle): ToneStyle => (isToneStyle(style) ? style : LEGACY_STYLES[style]);
+export const resolveStyle = (style: MusicStyle): BedStyle =>
+  isToneStyle(style) || isPianoStyle(style) || isScoreStyle(style) ? style : LEGACY_STYLES[style];
 
 export interface BedVariant {
   /** Picks the progression/motif variant and the humanisation. */
@@ -107,12 +108,36 @@ export interface BedVariant {
 export async function synthesizePad(
   out: string,
   seconds: number,
-  style: MusicStyle = 'nocturne',
+  style: MusicStyle = 'piano',
   variant: BedVariant = {},
 ): Promise<void> {
   const sr = 44100;
   const n = Math.ceil((seconds + 2) * sr);
-  const bed = await renderToneBed(resolveStyle(style), seconds, variant);
+  const resolved = resolveStyle(style);
+  if (isScoreStyle(resolved)) {
+    const shift = variant.transpose ?? 0;
+    const notes = new Map<number, Awaited<ReturnType<typeof loadPianoNote>>>();
+    for (const midi of scoreNotes(resolved, shift)) notes.set(midi, await loadPianoNote(midi));
+    const [left, right] = renderScore({
+      style: resolved,
+      seconds,
+      sampleRate: sr,
+      seed: variant.seed ?? 0,
+      transpose: shift,
+      cues: variant.cues ?? [0],
+      piano: (midi) => {
+        const note = notes.get(midi);
+        if (!note) throw new Error(`score asked for an unloaded piano note ${midi}`);
+        return note;
+      },
+    });
+    return writeBed(out, left, right, n, sr);
+  }
+  if (isPianoStyle(resolved)) {
+    const [left, right] = await pianoLoop(seconds, resolved, variant);
+    return writeBed(out, left, right, n, sr);
+  }
+  const bed = await renderToneBed(resolved, seconds, variant);
   if (bed.sampleRate !== sr) throw new Error(`music bed sample rate ${bed.sampleRate} != ${sr}`);
   return writeBed(out, bed.left, bed.right, n, sr);
 }
