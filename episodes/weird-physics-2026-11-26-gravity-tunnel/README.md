@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | weird-physics-2026-11-26-gravity-tunnel |
 | Series | weird-physics |
-| Stage | **voiced** |
+| Stage | **qa-passed** |
 | Created | 2026-11-15T01:08:07.699Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -74,6 +74,25 @@ Image: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.
 | --- | --- | --- | --- | --- |
 | earth-apollo17 | [View of the Earth seen by the Apollo 17 crew traveling toward the moon](https://images.nasa.gov/details/as17-148-22727) | NASA / JSC | NASA media usage guidelines (not copyrighted unless noted) | no |
 
+## Render
+
+45.2 s, 1080×1920@30, sha256 `2bd773dc8d661de3…`, rendered 2026-11-15T01:12:39.504Z in 45 s.
+
+## QA
+
+| Check | OK | Detail |
+| --- | --- | --- |
+| resolution | ✅ | 1080x1920 |
+| video-codec | ✅ | h264 |
+| audio-present | ✅ | aac |
+| duration | ✅ | 45.20 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 45.20 s vs timeline 45.17 s |
+| loudness | ✅ | -14.3 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.4 dBFS |
+| no-black-gaps | ✅ | none |
+
+Visual review by **claude** (2026-11-15T01:13:00.467Z): **pass** — 19 frames. Hook card '42 min' in acid green, no title collision after the fix. Journey: the Blue Marble backdrop, three stops (centre labelled 'top speed ≈ 28,000 km/h'), the ship accelerates then brakes, the clock runs to '42 min' with an arrival badge. Weird part: the Blue Marble with the 'ANY STRAIGHT TUNNEL: 42 MIN' chip. '84 min' orbit card. Outro footnote states the idealisation.
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -96,3 +115,18 @@ Image: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.
 | 2026-11-15 01:09:07 | claude | factchecked | stage.advance | 910e1db |
 | 2026-11-15 01:10:27 | pipeline | voiced | stage.advance | 910e1db |
 | 2026-11-15 01:10:27 | pipeline | voiced | voice.synthesize | 910e1db |
+| 2026-11-15 01:11:27 | pipeline | rendered | stage.advance | d30457f |
+| 2026-11-15 01:11:27 | pipeline | rendered | render.video | d30457f |
+| 2026-11-15 01:11:36 | pipeline | qa | qa.automated | d30457f |
+| 2026-11-15 01:11:52 | claude | planned | plan.check | d30457f |
+| 2026-11-15 01:11:52 | claude | planned | stage.regress | d30457f |
+| 2026-11-15 01:11:52 | pipeline | factcheck | factcheck.automated | d30457f |
+| 2026-11-15 01:11:53 | claude | factcheck | factcheck.review | d30457f |
+| 2026-11-15 01:11:53 | claude | factchecked | stage.advance | d30457f |
+| 2026-11-15 01:11:53 | pipeline | voiced | stage.advance | d30457f |
+| 2026-11-15 01:11:53 | pipeline | voiced | voice.reuse | d30457f |
+| 2026-11-15 01:12:39 | pipeline | rendered | stage.advance | d30457f |
+| 2026-11-15 01:12:39 | pipeline | rendered | render.video | d30457f |
+| 2026-11-15 01:12:48 | pipeline | qa | qa.automated | d30457f |
+| 2026-11-15 01:13:00 | claude | qa | qa.review | d30457f |
+| 2026-11-15 01:13:00 | claude | qa-passed | stage.advance | d30457f |

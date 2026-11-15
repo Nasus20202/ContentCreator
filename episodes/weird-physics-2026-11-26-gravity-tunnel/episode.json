@@ -2,7 +2,7 @@
   "id": "weird-physics-2026-11-26-gravity-tunnel",
   "series": "weird-physics",
   "createdAt": "2026-11-15T01:08:07.699Z",
-  "stage": "voiced",
+  "stage": "qa-passed",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -11,9 +11,10 @@
     "timeZone": "Europe/Warsaw"
   },
   "hashes": {
-    "plan": "cd7f25ed73a3ad47",
-    "factcheckedPlan": "cd7f25ed73a3ad47",
-    "narration": "49a471676000c11b"
+    "plan": "2551cdc7c38b4c72",
+    "factcheckedPlan": "2551cdc7c38b4c72",
+    "narration": "49a471676000c11b",
+    "video": "2bd773dc8d661de3628c72bb592e7cf0a038ed99e920db030e08c7c3f68d3eef"
   },
   "approvals": []
 }

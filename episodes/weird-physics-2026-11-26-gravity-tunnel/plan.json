@@ -40,12 +40,6 @@
       "factIds": [
         "tunnel-time"
       ],
-      "title": {
-        "kicker": "Weird Physics",
-        "title": "Jump through the Earth",
-        "from": 0.1,
-        "to": 2.8
-      },
       "params": {
         "value": "42 min",
         "label": "to fall all the way through the Earth",
@@ -80,8 +74,7 @@
             "name": "Earth's centre",
             "at": 6371,
             "kind": "point",
-            "sub": "6,371 km down",
-            "arrive": "≈ 28,000 km/h"
+            "sub": "top speed ≈ 28,000 km/h"
           },
           {
             "name": "The other side",

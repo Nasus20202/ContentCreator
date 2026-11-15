@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T01:08:57.135Z",
-  "planHash": "cd7f25ed73a3ad47",
+  "checkedAt": "2026-11-15T01:11:52.718Z",
+  "planHash": "2551cdc7c38b4c72",
   "automated": {
     "ok": true,
     "claims": [
@@ -39,15 +39,7 @@
       {
         "sceneId": "fall",
         "where": "stops[1]",
-        "text": "Earth's centre 6,371 km down ≈ 28,000 km/h",
-        "number": 6371,
-        "raw": "6371",
-        "matchedFact": "earth-data"
-      },
-      {
-        "sceneId": "fall",
-        "where": "stops[1]",
-        "text": "Earth's centre 6,371 km down ≈ 28,000 km/h",
+        "text": "Earth's centre top speed ≈ 28,000 km/h",
         "number": 28000,
         "raw": "28000",
         "matchedFact": "tunnel-speed"
@@ -209,8 +201,8 @@
   },
   "review": {
     "actor": "claude",
-    "at": "2026-11-15T01:09:07.970Z",
+    "at": "2026-11-15T01:11:53.340Z",
     "verdict": "pass",
-    "notes": "The classic gravity-tunnel result in the stated idealisation (said aloud: 'forget air, heat and rock'; footnote: uniform, non-rotating Earth, no air). Inputs from NASA's Earth Fact Sheet: R = 6,371 km, GM = 398,600 km^3/s^2. One way pi*sqrt(R^3/GM) = 2,530 s = 42.2 min ('about 42'); v_max = sqrt(GM/R) = 7.91 km/s = 28,475 km/h ('about 28,000'); a grazing orbit 2*pi*sqrt(R^3/GM) = 84.3 min, half of it equal to the drop. Chord independence holds for a uniform sphere (the along-tunnel component of gravity is proportional to the distance from the chord midpoint, with the same omega). 'Exactly' applies within the model. Real-Earth density raises it to ~38 min; I don't claim a real-Earth figure."
+    "notes": "Wording unchanged; removed the hook title (it collided with the card) and moved the top speed into the centre stop's label."
   }
 }
