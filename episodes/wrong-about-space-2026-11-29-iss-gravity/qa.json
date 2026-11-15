@@ -124,5 +124,11 @@
       "sceneId": "outro",
       "tSec": 35.97
     }
-  ]
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-15T01:37:06.350Z",
+    "verdict": "pass",
+    "notes": "16 frames, 36.1 s. Hook: 'Myth: No gravity in space' title + red WRONG chip over Jessica Meir with a floating water sphere. '≈ 90 %' card. ISS photo with the Earth limb, chips 'FACT: THEY'RE IN FREE FALL' then '≈ 28,000 KM/H SIDEWAYS', no overlap. Outro clean, red accent, credits on photos."
+  }
 }

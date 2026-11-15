@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | wrong-about-space-2026-11-29-iss-gravity |
 | Series | wrong-about-space |
-| Stage | **rendered** |
+| Stage | **qa-passed** |
 | Created | 2026-11-15T01:30:24.546Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -90,6 +90,8 @@ Images: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floati
 | true-peak | ✅ | -1.3 dBFS |
 | no-black-gaps | ✅ | none |
 
+Visual review by **claude** (2026-11-15T01:37:06.350Z): **pass** — 16 frames, 36.1 s. Hook: 'Myth: No gravity in space' title + red WRONG chip over Jessica Meir with a floating water sphere. '≈ 90 %' card. ISS photo with the Earth limb, chips 'FACT: THEY'RE IN FREE FALL' then '≈ 28,000 KM/H SIDEWAYS', no overlap. Outro clean, red accent, credits on photos.
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -115,3 +117,5 @@ Images: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floati
 | 2026-11-15 01:32:38 | pipeline | rendered | stage.advance | 8f54726 |
 | 2026-11-15 01:32:38 | pipeline | rendered | render.video | 8f54726 |
 | 2026-11-15 01:32:45 | pipeline | qa | qa.automated | 8f54726 |
+| 2026-11-15 01:37:06 | claude | qa | qa.review | af73493 |
+| 2026-11-15 01:37:06 | claude | qa-passed | stage.advance | af73493 |

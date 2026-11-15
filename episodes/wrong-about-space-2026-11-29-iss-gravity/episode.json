@@ -2,7 +2,7 @@
   "id": "wrong-about-space-2026-11-29-iss-gravity",
   "series": "wrong-about-space",
   "createdAt": "2026-11-15T01:30:24.546Z",
-  "stage": "rendered",
+  "stage": "qa-passed",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
