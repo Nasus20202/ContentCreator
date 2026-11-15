@@ -1,0 +1,64 @@
+{
+  "facts": [
+    {
+      "id": "iss-gravity",
+      "statement": "The International Space Station orbits Earth at an altitude between 200 and 250 miles (about 320–400 km). At that altitude, Earth's gravity is about 90 percent of what it is on the surface.",
+      "values": [
+        90,
+        200,
+        250
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/",
+        "title": "What Is Microgravity? (Grades 5-8)",
+        "publisher": "NASA",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "free-fall",
+      "statement": "Astronauts float because they are in free fall: the spacecraft, its crew and everything aboard are all falling toward but around Earth. The station is constantly falling toward Earth's surface while moving at 17,500 miles per hour (about 28,000 km/h).",
+      "values": [
+        17500,
+        28000
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/",
+        "title": "What Is Microgravity? (Grades 5-8)",
+        "publisher": "NASA",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "myth",
+      "statement": "Many people mistakenly think that gravity does not exist in space. If an astronaut on the space station drops an apple, it falls too; it just doesn't look like it's falling.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://www.nasa.gov/centers-and-facilities/glenn/what-is-microgravity/",
+        "title": "What is Microgravity?",
+        "publisher": "NASA Glenn",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "photos",
+      "statement": "iss056e201248: the ISS photographed from a departing Soyuz on 4 Oct 2018. iss062e004933: NASA astronaut Jessica Meir observes a floating sphere of water inside the station, 9 Feb 2020.",
+      "values": [
+        4,
+        2018,
+        9,
+        2020
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov",
+        "title": "NASA image captions iss056e201248, iss062e004933",
+        "publisher": "NASA",
+        "accessed": "2026-11-15"
+      }
+    }
+  ]
+}

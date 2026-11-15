@@ -1,0 +1,19 @@
+{
+  "id": "wrong-about-space-2026-11-29-iss-gravity",
+  "series": "wrong-about-space",
+  "createdAt": "2026-11-15T01:30:24.546Z",
+  "stage": "voiced",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "0878efdd9c727431",
+    "factcheckedPlan": "0878efdd9c727431",
+    "narration": "ce3feaaee8350590"
+  },
+  "approvals": []
+}

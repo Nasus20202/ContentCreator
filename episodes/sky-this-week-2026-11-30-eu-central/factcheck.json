@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-11-15T01:24:40.541Z",
+  "planHash": "ad1d65c844b30d34",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Sky this week Nov 30 – Dec 6",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "hook",
+        "where": "title",
+        "text": "Sky this week Nov 30 – Dec 6",
+        "number": 6,
+        "raw": "6",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "group",
+        "where": "narration[0]",
+        "text": "Early on Monday, November thirtieth, look high in the south-east.",
+        "number": 30,
+        "raw": "thirtieth",
+        "matchedFact": "moon-jupiter-2026-11-30-sep"
+      },
+      {
+        "sceneId": "group",
+        "where": "narration[2]",
+        "text": "Their closest moment, under two degrees from Jupiter, comes later, in daylight. So go out before dawn.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "moon-jupiter-2026-11-30-sep"
+      },
+      {
+        "sceneId": "group",
+        "where": "chips[0]",
+        "text": "MON NOV 30 · BEFORE DAWN",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "moon-jupiter-2026-11-30-sep"
+      },
+      {
+        "sceneId": "venus",
+        "where": "narration[1]",
+        "text": "At magnitude minus 4.8, you can't miss it.",
+        "number": 4.8,
+        "raw": "4.8",
+        "matchedFact": "visible-venus-2026-12-03"
+      },
+      {
+        "sceneId": "venus",
+        "where": "chips[0]",
+        "text": "MID-WEEK · 06:40 · LOW SOUTH-EAST",
+        "number": 6,
+        "raw": "06:40",
+        "matchedFact": "visible-venus-2026-12-03"
+      },
+      {
+        "sceneId": "venus",
+        "where": "chips[0]",
+        "text": "MID-WEEK · 06:40 · LOW SOUTH-EAST",
+        "number": 40,
+        "raw": "06:40",
+        "matchedFact": "visible-venus-2026-12-03"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6",
+        "number": 6,
+        "raw": "6",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 30 Nov, look high in the south-east: the Moon, Jupiter and Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) happens in daylight that morning, and to Mars (3.7°) that evening. All week before sunrise, Venus (magnitude -4.8) shines low in the south-east, 23° up around 06:40 mid-week.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 30,
+        "raw": "30",
+        "matchedFact": "episode-window"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 30 Nov, look high in the south-east: the Moon, Jupiter and Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) happens in daylight that morning, and to Mars (3.7°) that evening. All week before sunrise, Venus (magnitude -4.8) shines low in the south-east, 23° up around 06:40 mid-week.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 1.9,
+        "raw": "1.9°",
+        "matchedFact": "moon-jupiter-2026-11-30-sep"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 30 Nov, look high in the south-east: the Moon, Jupiter and Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) happens in daylight that morning, and to Mars (3.7°) that evening. All week before sunrise, Venus (magnitude -4.8) shines low in the south-east, 23° up around 06:40 mid-week.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 3.7,
+        "raw": "3.7°",
+        "matchedFact": "moon-mars-2026-11-30-sep"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 30 Nov, look high in the south-east: the Moon, Jupiter and Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) happens in daylight that morning, and to Mars (3.7°) that evening. All week before sunrise, Venus (magnitude -4.8) shines low in the south-east, 23° up around 06:40 mid-week.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 4.8,
+        "raw": "-4.8",
+        "matchedFact": "visible-venus-2026-12-03"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 30 Nov, look high in the south-east: the Moon, Jupiter and Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) happens in daylight that morning, and to Mars (3.7°) that evening. All week before sunrise, Venus (magnitude -4.8) shines low in the south-east, 23° up around 06:40 mid-week.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 23,
+        "raw": "23°",
+        "matchedFact": "visible-venus-2026-12-03"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 30 Nov, look high in the south-east: the Moon, Jupiter and Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) happens in daylight that morning, and to Mars (3.7°) that evening. All week before sunrise, Venus (magnitude -4.8) shines low in the south-east, 23° up around 06:40 mid-week.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 6,
+        "raw": "06:40",
+        "matchedFact": "visible-venus-2026-12-03"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Before dawn on Mon 30 Nov, look high in the south-east: the Moon, Jupiter and Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) happens in daylight that morning, and to Mars (3.7°) that evening. All week before sunrise, Venus (magnitude -4.8) shines low in the south-east, 23° up around 06:40 mid-week.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+        "number": 40,
+        "raw": "06:40",
+        "matchedFact": "visible-venus-2026-12-03"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-15T01:24:50.033Z",
+    "verdict": "pass",
+    "notes": "Computed facts (astronomy-engine, 50°N 15°E). Posted Fri 27 Nov, so 'this Monday' = Mon 30 Nov. The view time 03:20 CET (02:20 UTC) matches the computed best-view times (Jupiter 03:16, 45° up SE; Mars 03:53, 47° up SE). The closest Moon–Jupiter approach (1.9°) is at 09:26, in daylight, and the narration says so; Moon–Mars 3.7° at 17:53 is in the post only. Narration uses 'near' / 'close by' for the dawn view rather than a separation figure that isn't computed for that moment. Venus magnitude -4.8 (computed -4.85), 23° up SE at 06:40 mid-week (Thu 3 Dec)."
+  }
+}

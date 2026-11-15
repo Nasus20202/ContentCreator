@@ -14,6 +14,9 @@ const STEP = 250;
 /** Three bars sit closer together so the note stays clear of the caption band (1290). */
 const STEP_3 = 215;
 const BAR_H = 72;
+/** Four or five bars: a compact layout (thinner bars, smaller type) that still ends above the captions. */
+const STEP_5 = 142;
+const BAR_H_5 = 40;
 
 /**
  * Horizontal bars, all in one unit, each on a full-width track so its length reads as a share of the
@@ -31,7 +34,10 @@ export const CompareScene: React.FC<{ params: CompareParams }> = ({ params }) =>
     return max > 1 ? Math.log10(v) / Math.log10(max) : 1;
   };
   const head = ease(Math.min(1, t / 0.6));
-  const step = params.bars.length > 2 ? STEP_3 : STEP;
+  const many = params.bars.length > 3;
+  const step = many ? STEP_5 : params.bars.length > 2 ? STEP_3 : STEP;
+  const barH = many ? BAR_H_5 : BAR_H;
+  const firstY = many ? 560 : FIRST_Y;
   return (
     <AbsoluteFill>
       <Starfield seed="compare" drift={0.02} />
@@ -56,8 +62,8 @@ export const CompareScene: React.FC<{ params: CompareParams }> = ({ params }) =>
         </div>
       )}
       {params.bars.map((b, i) => {
-        const y = FIRST_Y + i * step;
-        const start = 0.5 + i * 0.7;
+        const y = firstY + i * step;
+        const start = 0.5 + i * (many ? 0.45 : 0.7);
         const appear = ease(Math.min(1, Math.max(0, (t - start) / 0.5)));
         const grow = ease(Math.min(1, Math.max(0, (t - start) / 1.6)));
         const w = MAX_W * frac(b.value) * grow;
@@ -71,7 +77,7 @@ export const CompareScene: React.FC<{ params: CompareParams }> = ({ params }) =>
                 position: 'absolute',
                 left: LEFT,
                 width: MAX_W,
-                top: y - 84,
+                top: y - (many ? 58 : 84),
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'baseline',
@@ -79,12 +85,20 @@ export const CompareScene: React.FC<{ params: CompareParams }> = ({ params }) =>
                 opacity: appear,
               }}
             >
-              <div style={{ fontSize: 40, fontWeight: 600, color: theme.muted, maxWidth: 520, lineHeight: 1.1 }}>
+              <div
+                style={{
+                  fontSize: many ? 34 : 40,
+                  fontWeight: 600,
+                  color: theme.muted,
+                  maxWidth: 560,
+                  lineHeight: 1.1,
+                }}
+              >
                 {b.label}
               </div>
               <div
                 style={{
-                  fontSize: 64,
+                  fontSize: many ? 46 : 64,
                   fontWeight: 700,
                   color,
                   whiteSpace: 'nowrap',
@@ -101,8 +115,8 @@ export const CompareScene: React.FC<{ params: CompareParams }> = ({ params }) =>
                 left: LEFT,
                 top: y,
                 width: MAX_W,
-                height: BAR_H,
-                borderRadius: BAR_H / 2,
+                height: barH,
+                borderRadius: barH / 2,
                 background: 'rgba(255,255,255,0.07)',
                 border: '1px solid rgba(255,255,255,0.12)',
                 opacity: appear,
@@ -113,9 +127,9 @@ export const CompareScene: React.FC<{ params: CompareParams }> = ({ params }) =>
                 position: 'absolute',
                 left: LEFT,
                 top: y,
-                width: Math.max(sliver ? 12 : BAR_H * 0.5, w),
-                height: BAR_H,
-                borderRadius: BAR_H / 2,
+                width: Math.max(sliver ? 12 : barH * 0.5, w),
+                height: barH,
+                borderRadius: barH / 2,
                 background: `linear-gradient(90deg, ${color}aa, ${color})`,
                 boxShadow: `0 0 ${sliver ? 34 : 26}px ${color}`,
                 opacity: appear * pulse,
@@ -128,7 +142,7 @@ export const CompareScene: React.FC<{ params: CompareParams }> = ({ params }) =>
         <div
           style={{
             position: 'absolute',
-            top: FIRST_Y + (params.bars.length - 1) * step + BAR_H + 34,
+            top: firstY + (params.bars.length - 1) * step + barH + 34,
             left: 60,
             right: 60,
             textAlign: 'center',

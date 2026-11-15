@@ -1,0 +1,690 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "5c7e94f82d7a5c00",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 5.096,
+      "sentences": [
+        {
+          "text": "This is Saturn, with the Sun hidden right behind it.",
+          "start": 0.15,
+          "end": 2.853,
+          "words": [
+            {
+              "w": "This",
+              "start": 0.15,
+              "end": 0.392
+            },
+            {
+              "w": "is",
+              "start": 0.392,
+              "end": 0.553
+            },
+            {
+              "w": "Saturn,",
+              "start": 0.553,
+              "end": 0.997
+            },
+            {
+              "w": "with",
+              "start": 0.997,
+              "end": 1.239
+            },
+            {
+              "w": "the",
+              "start": 1.239,
+              "end": 1.441
+            },
+            {
+              "w": "Sun",
+              "start": 1.441,
+              "end": 1.643
+            },
+            {
+              "w": "hidden",
+              "start": 1.643,
+              "end": 1.966
+            },
+            {
+              "w": "right",
+              "start": 1.966,
+              "end": 2.248
+            },
+            {
+              "w": "behind",
+              "start": 2.248,
+              "end": 2.571
+            },
+            {
+              "w": "it.",
+              "start": 2.571,
+              "end": 2.853
+            }
+          ]
+        },
+        {
+          "text": "And somewhere in this photo is Earth.",
+          "start": 3.133,
+          "end": 4.816,
+          "words": [
+            {
+              "w": "And",
+              "start": 3.133,
+              "end": 3.312
+            },
+            {
+              "w": "somewhere",
+              "start": 3.312,
+              "end": 3.706
+            },
+            {
+              "w": "in",
+              "start": 3.706,
+              "end": 3.849
+            },
+            {
+              "w": "this",
+              "start": 3.849,
+              "end": 4.064
+            },
+            {
+              "w": "photo",
+              "start": 4.064,
+              "end": 4.315
+            },
+            {
+              "w": "is",
+              "start": 4.315,
+              "end": 4.458
+            },
+            {
+              "w": "Earth.",
+              "start": 4.458,
+              "end": 4.816
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "how",
+      "audioFile": "voice/how.wav",
+      "duration": 10.405,
+      "sentences": [
+        {
+          "text": "In July 2013, NASA's Cassini slipped into Saturn's shadow.",
+          "start": 0.15,
+          "end": 4.148,
+          "words": [
+            {
+              "w": "In",
+              "start": 0.15,
+              "end": 0.372
+            },
+            {
+              "w": "July",
+              "start": 0.372,
+              "end": 0.705
+            },
+            {
+              "w": "2013,",
+              "start": 0.705,
+              "end": 1.205
+            },
+            {
+              "w": "NASA's",
+              "start": 1.205,
+              "end": 1.649
+            },
+            {
+              "w": "Cassini",
+              "start": 1.649,
+              "end": 2.149
+            },
+            {
+              "w": "slipped",
+              "start": 2.149,
+              "end": 2.649
+            },
+            {
+              "w": "into",
+              "start": 2.649,
+              "end": 2.982
+            },
+            {
+              "w": "Saturn's",
+              "start": 2.982,
+              "end": 3.537
+            },
+            {
+              "w": "shadow.",
+              "start": 3.537,
+              "end": 4.148
+            }
+          ]
+        },
+        {
+          "text": "With the Sun blocked, it could look back toward home without being blinded, and the rings lit up from behind.",
+          "start": 4.428,
+          "end": 10.125,
+          "words": [
+            {
+              "w": "With",
+              "start": 4.428,
+              "end": 4.68
+            },
+            {
+              "w": "the",
+              "start": 4.68,
+              "end": 4.889
+            },
+            {
+              "w": "Sun",
+              "start": 4.889,
+              "end": 5.099
+            },
+            {
+              "w": "blocked,",
+              "start": 5.099,
+              "end": 5.601
+            },
+            {
+              "w": "it",
+              "start": 5.601,
+              "end": 5.769
+            },
+            {
+              "w": "could",
+              "start": 5.769,
+              "end": 6.062
+            },
+            {
+              "w": "look",
+              "start": 6.062,
+              "end": 6.313
+            },
+            {
+              "w": "back",
+              "start": 6.313,
+              "end": 6.565
+            },
+            {
+              "w": "toward",
+              "start": 6.565,
+              "end": 6.9
+            },
+            {
+              "w": "home",
+              "start": 6.9,
+              "end": 7.151
+            },
+            {
+              "w": "without",
+              "start": 7.151,
+              "end": 7.528
+            },
+            {
+              "w": "being",
+              "start": 7.528,
+              "end": 7.821
+            },
+            {
+              "w": "blinded,",
+              "start": 7.821,
+              "end": 8.324
+            },
+            {
+              "w": "and",
+              "start": 8.324,
+              "end": 8.534
+            },
+            {
+              "w": "the",
+              "start": 8.534,
+              "end": 8.743
+            },
+            {
+              "w": "rings",
+              "start": 8.743,
+              "end": 9.036
+            },
+            {
+              "w": "lit",
+              "start": 9.036,
+              "end": 9.246
+            },
+            {
+              "w": "up",
+              "start": 9.246,
+              "end": 9.413
+            },
+            {
+              "w": "from",
+              "start": 9.413,
+              "end": 9.665
+            },
+            {
+              "w": "behind.",
+              "start": 9.665,
+              "end": 10.125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "find",
+      "audioFile": "voice/find.wav",
+      "duration": 7.861,
+      "sentences": [
+        {
+          "text": "Now look under the rings.",
+          "start": 0.15,
+          "end": 1.328,
+          "words": [
+            {
+              "w": "Now",
+              "start": 0.15,
+              "end": 0.329
+            },
+            {
+              "w": "look",
+              "start": 0.329,
+              "end": 0.543
+            },
+            {
+              "w": "under",
+              "start": 0.543,
+              "end": 0.793
+            },
+            {
+              "w": "the",
+              "start": 0.793,
+              "end": 0.971
+            },
+            {
+              "w": "rings.",
+              "start": 0.971,
+              "end": 1.328
+            }
+          ]
+        },
+        {
+          "text": "That blue dot is Earth, 1.44 billion kilometres away.",
+          "start": 1.608,
+          "end": 5.52,
+          "words": [
+            {
+              "w": "That",
+              "start": 1.608,
+              "end": 1.964
+            },
+            {
+              "w": "blue",
+              "start": 1.964,
+              "end": 2.32
+            },
+            {
+              "w": "dot",
+              "start": 2.32,
+              "end": 2.616
+            },
+            {
+              "w": "is",
+              "start": 2.616,
+              "end": 2.853
+            },
+            {
+              "w": "Earth,",
+              "start": 2.853,
+              "end": 3.445
+            },
+            {
+              "w": "1.44",
+              "start": 3.445,
+              "end": 3.742
+            },
+            {
+              "w": "billion",
+              "start": 3.742,
+              "end": 4.275
+            },
+            {
+              "w": "kilometres",
+              "start": 4.275,
+              "end": 4.986
+            },
+            {
+              "w": "away.",
+              "start": 4.986,
+              "end": 5.52
+            }
+          ]
+        },
+        {
+          "text": "The faint bump beside it is the Moon.",
+          "start": 5.8,
+          "end": 7.581,
+          "words": [
+            {
+              "w": "The",
+              "start": 5.8,
+              "end": 5.985
+            },
+            {
+              "w": "faint",
+              "start": 5.985,
+              "end": 6.245
+            },
+            {
+              "w": "bump",
+              "start": 6.245,
+              "end": 6.467
+            },
+            {
+              "w": "beside",
+              "start": 6.467,
+              "end": 6.764
+            },
+            {
+              "w": "it",
+              "start": 6.764,
+              "end": 6.913
+            },
+            {
+              "w": "is",
+              "start": 6.913,
+              "end": 7.061
+            },
+            {
+              "w": "the",
+              "start": 7.061,
+              "end": 7.247
+            },
+            {
+              "w": "Moon.",
+              "start": 7.247,
+              "end": 7.581
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "smile",
+      "audioFile": "voice/smile.wav",
+      "duration": 10.984,
+      "sentences": [
+        {
+          "text": "And for the first time, people on Earth knew in advance that their photo was being taken from that far away.",
+          "start": 0.15,
+          "end": 5.867,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.363
+            },
+            {
+              "w": "for",
+              "start": 0.363,
+              "end": 0.577
+            },
+            {
+              "w": "the",
+              "start": 0.577,
+              "end": 0.79
+            },
+            {
+              "w": "first",
+              "start": 0.79,
+              "end": 1.089
+            },
+            {
+              "w": "time,",
+              "start": 1.089,
+              "end": 1.473
+            },
+            {
+              "w": "people",
+              "start": 1.473,
+              "end": 1.814
+            },
+            {
+              "w": "on",
+              "start": 1.814,
+              "end": 1.985
+            },
+            {
+              "w": "Earth",
+              "start": 1.985,
+              "end": 2.283
+            },
+            {
+              "w": "knew",
+              "start": 2.283,
+              "end": 2.539
+            },
+            {
+              "w": "in",
+              "start": 2.539,
+              "end": 2.71
+            },
+            {
+              "w": "advance",
+              "start": 2.71,
+              "end": 3.094
+            },
+            {
+              "w": "that",
+              "start": 3.094,
+              "end": 3.35
+            },
+            {
+              "w": "their",
+              "start": 3.35,
+              "end": 3.649
+            },
+            {
+              "w": "photo",
+              "start": 3.649,
+              "end": 3.947
+            },
+            {
+              "w": "was",
+              "start": 3.947,
+              "end": 4.161
+            },
+            {
+              "w": "being",
+              "start": 4.161,
+              "end": 4.459
+            },
+            {
+              "w": "taken",
+              "start": 4.459,
+              "end": 4.758
+            },
+            {
+              "w": "from",
+              "start": 4.758,
+              "end": 5.014
+            },
+            {
+              "w": "that",
+              "start": 5.014,
+              "end": 5.27
+            },
+            {
+              "w": "far",
+              "start": 5.27,
+              "end": 5.483
+            },
+            {
+              "w": "away.",
+              "start": 5.483,
+              "end": 5.867
+            }
+          ]
+        },
+        {
+          "text": "Around the world, they went out to celebrate. NASA called it the Day the Earth Smiled.",
+          "start": 6.147,
+          "end": 10.704,
+          "words": [
+            {
+              "w": "Around",
+              "start": 6.147,
+              "end": 6.482
+            },
+            {
+              "w": "the",
+              "start": 6.482,
+              "end": 6.691
+            },
+            {
+              "w": "world,",
+              "start": 6.691,
+              "end": 7.109
+            },
+            {
+              "w": "they",
+              "start": 7.109,
+              "end": 7.359
+            },
+            {
+              "w": "went",
+              "start": 7.359,
+              "end": 7.61
+            },
+            {
+              "w": "out",
+              "start": 7.61,
+              "end": 7.819
+            },
+            {
+              "w": "to",
+              "start": 7.819,
+              "end": 7.986
+            },
+            {
+              "w": "celebrate.",
+              "start": 7.986,
+              "end": 8.572
+            },
+            {
+              "w": "NASA",
+              "start": 8.572,
+              "end": 8.822
+            },
+            {
+              "w": "called",
+              "start": 8.822,
+              "end": 9.157
+            },
+            {
+              "w": "it",
+              "start": 9.157,
+              "end": 9.324
+            },
+            {
+              "w": "the",
+              "start": 9.324,
+              "end": 9.533
+            },
+            {
+              "w": "Day",
+              "start": 9.533,
+              "end": 9.742
+            },
+            {
+              "w": "the",
+              "start": 9.742,
+              "end": 9.951
+            },
+            {
+              "w": "Earth",
+              "start": 9.951,
+              "end": 10.244
+            },
+            {
+              "w": "Smiled.",
+              "start": 10.244,
+              "end": 10.704
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.367,
+      "sentences": [
+        {
+          "text": "One photo, one detail.",
+          "start": 0.15,
+          "end": 1.636,
+          "words": [
+            {
+              "w": "One",
+              "start": 0.15,
+              "end": 0.39
+            },
+            {
+              "w": "photo,",
+              "start": 0.39,
+              "end": 0.869
+            },
+            {
+              "w": "one",
+              "start": 0.869,
+              "end": 1.109
+            },
+            {
+              "w": "detail.",
+              "start": 1.109,
+              "end": 1.636
+            }
+          ]
+        },
+        {
+          "text": "Follow for the next one.",
+          "start": 1.916,
+          "end": 3.087,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 1.916,
+              "end": 2.209
+            },
+            {
+              "w": "for",
+              "start": 2.209,
+              "end": 2.392
+            },
+            {
+              "w": "the",
+              "start": 2.392,
+              "end": 2.575
+            },
+            {
+              "w": "next",
+              "start": 2.575,
+              "end": 2.794
+            },
+            {
+              "w": "one.",
+              "start": 2.794,
+              "end": 3.087
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

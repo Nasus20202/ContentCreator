@@ -20,7 +20,7 @@
   },
   "post": {
     "title": "The 5 farthest things humans have ever built 🚀",
-    "description": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
+    "description": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JHUAPL / SwRI (Pluto by New Horizons), NASA / MSFC (Pioneer 11 launch), NASA / ARC (Pioneer 10), NASA / JPL (Neptune by Voyager 2), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.",
     "hashtags": [
       "#space",
       "#astronomy",
@@ -63,76 +63,120 @@
     },
     {
       "id": "n5",
-      "template": "factCard",
+      "template": "image",
       "narration": [
-        "Number five: New Horizons, the probe that flew past Pluto. About ten billion kilometres away."
+        "Number five: New Horizons, the probe that took this photo of Pluto.",
+        "It's about ten billion kilometres away."
       ],
       "factIds": [
         "dist-nh",
-        "nh-pluto"
+        "nh-pluto",
+        "photos"
+      ],
+      "chips": [
+        {
+          "text": "#5 · NEW HORIZONS · 10 BN KM",
+          "from": 0.2
+        }
       ],
       "params": {
-        "value": "10 bn km",
-        "label": "#5 New Horizons",
-        "sourceLine": "JPL Horizons, 24 Nov 2026"
+        "assetId": "pluto-color",
+        "zoom": [
+          1.0,
+          1.2
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
       }
     },
     {
       "id": "n4",
-      "template": "factCard",
+      "template": "image",
       "narration": [
-        "Number four: Pioneer 11, at 17.8 billion kilometres."
+        "Number four: Pioneer 11, launched in 1973, now 17.8 billion kilometres out."
       ],
       "factIds": [
-        "dist-p11"
+        "dist-p11",
+        "photos"
+      ],
+      "chips": [
+        {
+          "text": "#4 · PIONEER 11 · 17.8 BN KM",
+          "from": 0.2
+        }
       ],
       "params": {
-        "value": "17.8 bn km",
-        "label": "#4 Pioneer 11",
-        "sourceLine": "JPL Horizons, 24 Nov 2026"
+        "assetId": "p11-launch",
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "focus": [
+          0.58,
+          0.45
+        ],
+        "fit": "cover"
       }
     },
     {
       "id": "n3",
-      "template": "factCard",
+      "template": "image",
       "narration": [
         "Number three: Pioneer 10, at 21.2 billion kilometres.",
-        "Launched in 1972, it was the farthest of all, until Voyager 1 overtook it in 1998."
+        "It was the farthest of all, until Voyager 1 overtook it in 1998."
       ],
       "factIds": [
         "dist-p10",
-        "p10-overtaken"
+        "p10-overtaken",
+        "photos"
+      ],
+      "chips": [
+        {
+          "text": "#3 · PIONEER 10 · 21.2 BN KM",
+          "from": 0.2
+        }
       ],
       "params": {
-        "value": "21.2 bn km",
-        "label": "#3 Pioneer 10 · overtaken in 1998",
-        "sourceLine": "JPL Horizons · NASA"
+        "assetId": "p10-plaque",
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "focus": [
+          0.45,
+          0.45
+        ],
+        "fit": "cover"
       }
     },
     {
       "id": "n2",
       "template": "image",
       "narration": [
-        "Number two: Voyager 2, at 21.7 billion kilometres."
+        "Number two: Voyager 2, the probe that photographed Neptune, at 21.7 billion kilometres."
       ],
       "factIds": [
-        "dist-v2"
+        "dist-v2",
+        "photos"
       ],
       "chips": [
         {
-          "text": "#2 · 21.7 BILLION KM",
-          "from": 0.3
+          "text": "#2 · VOYAGER 2 · 21.7 BN KM",
+          "from": 0.2
         }
       ],
       "params": {
-        "assetId": "voyager2-launch",
+        "assetId": "neptune-v2",
         "zoom": [
           1.0,
-          1.15
+          1.25
         ],
         "focus": [
           0.5,
-          0.4
+          0.5
         ],
         "fit": "cover"
       }
@@ -141,8 +185,7 @@
       "id": "n1",
       "template": "image",
       "narration": [
-        "And number one: Voyager 1.",
-        "25.9 billion kilometres, so far that its signals now take a full day to reach us."
+        "And number one: Voyager 1, at 25.9 billion kilometres."
       ],
       "factIds": [
         "dist-v1",
@@ -150,8 +193,8 @@
       ],
       "chips": [
         {
-          "text": "#1 · 25.9 BILLION KM",
-          "from": 0.4
+          "text": "#1 · VOYAGER 1 · 25.9 BN KM",
+          "from": 0.2
         }
       ],
       "params": {
@@ -168,11 +211,66 @@
       }
     },
     {
-      "id": "scale",
-      "template": "scale",
+      "id": "race",
+      "template": "journey",
       "narration": [
-        "Here they are, to scale.",
-        "Even number five is about ten billion kilometres from home."
+        "Now race a beam of light out there.",
+        "It passes New Horizons after about nine hours, and reaches Voyager 1 only after a full day."
+      ],
+      "factIds": [
+        "light-times",
+        "dist-nh",
+        "dist-v1"
+      ],
+      "params": {
+        "traveller": "light",
+        "stops": [
+          {
+            "name": "Earth",
+            "at": 0,
+            "kind": "earth",
+            "sub": "light sets off"
+          },
+          {
+            "name": "#5 New Horizons",
+            "at": 66.8,
+            "kind": "point",
+            "sub": "10 bn km",
+            "arrive": "9 h 16 min"
+          },
+          {
+            "name": "#1 Voyager 1",
+            "at": 173.2,
+            "kind": "point",
+            "sub": "25.9 bn km",
+            "arrive": "24 h"
+          }
+        ],
+        "path": [
+          0,
+          1,
+          2
+        ],
+        "start": {
+          "sentence": 1
+        },
+        "travel": 7,
+        "clocks": [
+          {
+            "label": "Light travel time",
+            "from": 0,
+            "to": 24,
+            "unit": "h"
+          }
+        ]
+      }
+    },
+    {
+      "id": "compare",
+      "template": "compare",
+      "narration": [
+        "Here are all five, to scale.",
+        "Voyager 1, out in front."
       ],
       "factIds": [
         "dist-v1",
@@ -182,22 +280,36 @@
         "dist-nh"
       ],
       "params": {
-        "total": 25.9,
-        "totalLabel": "#1 Voyager 1 · 25.9 bn km",
-        "markers": [
+        "heading": "Distance from Earth",
+        "scale": "linear",
+        "bars": [
           {
-            "at": 10,
-            "label": "#5 New Horizons · 10 bn km"
+            "label": "#5 New Horizons",
+            "value": 10,
+            "display": "10 bn km"
           },
           {
-            "at": 17.8,
-            "label": "#4 Pioneer 11 · 17.8 bn km"
+            "label": "#4 Pioneer 11",
+            "value": 17.8,
+            "display": "17.8 bn km"
           },
           {
-            "at": 21.45,
-            "label": "#2 Voyager 2 & #3 Pioneer 10"
+            "label": "#3 Pioneer 10",
+            "value": 21.2,
+            "display": "21.2 bn km"
+          },
+          {
+            "label": "#2 Voyager 2",
+            "value": 21.7,
+            "display": "21.7 bn km"
+          },
+          {
+            "label": "#1 Voyager 1",
+            "value": 25.9,
+            "display": "25.9 bn km"
           }
-        ]
+        ],
+        "note": "Drawn to scale · JPL Horizons, 24 Nov 2026"
       }
     },
     {

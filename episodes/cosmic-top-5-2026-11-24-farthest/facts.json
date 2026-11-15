@@ -160,6 +160,52 @@
         "publisher": "NASA Science",
         "accessed": "2026-11-15"
       }
+    },
+    {
+      "id": "photos",
+      "statement": "PIA19952: New Horizons' enhanced colour view of Pluto, 14 July 2015 (blue, red and infrared). 9139575: Atlas-Centaur launch of Pioneer 11 on 5 April 1973. ARC-1972-AC72-2135: Pioneer 10 being readied at Cape Kennedy, showing the plaque. PIA00046: Neptune photographed by Voyager 2's narrow-angle camera, 16-17 August 1989.",
+      "values": [
+        14,
+        2015,
+        5,
+        1973,
+        10,
+        11,
+        2,
+        1989
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov",
+        "title": "NASA Image and Video Library captions (PIA19952, 9139575, ARC-1972-AC72-2135, PIA00046)",
+        "publisher": "NASA",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "light-times",
+      "statement": "Light from Earth reaches New Horizons in 9.26 h (about 9 h 16 min), Pioneer 11 in 16.49 h (about 16 h 30 min) and Voyager 1 in 24.01 h (about 24 h, one light-day).",
+      "values": [
+        9,
+        16,
+        24,
+        30,
+        9.26,
+        16.5,
+        16.49,
+        24.01
+      ],
+      "source": {
+        "type": "computed",
+        "method": "light time = distance (AU) x 499.004784 s",
+        "inputs": {
+          "from": "JPL Horizons distances from Earth, 2026-11-24",
+          "au_light_s": 499.004784,
+          "NH_AU": 66.806,
+          "P11_AU": 118.991,
+          "V1_AU": 173.213
+        }
+      }
     }
   ]
 }

@@ -4,6 +4,12 @@ import { Scene } from '../src/core/schemas';
 import { sceneTexts } from '../src/planning/factcheck/factcheck';
 
 describe('formatClock', () => {
+  it('prints hours with minutes', () => {
+    expect(formatClock(24, 'h')).toBe('24 h');
+    expect(formatClock(9.26, 'h')).toBe('9 h 16 min');
+    expect(formatClock(16.999, 'h')).toBe('17 h');
+  });
+
   it('prints minutes with seconds, rounding 59.9 s up to the next minute', () => {
     expect(formatClock(8.3333, 'min')).toBe('8 min 20 s');
     expect(formatClock(43, 'min')).toBe('43 min');

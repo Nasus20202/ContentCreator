@@ -1,7 +1,7 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "49a471676000c11b",
+  "narrationHash": "54d138e2f184d999",
   "timing": "estimated-proportional",
   "scenes": [
     {
@@ -578,7 +578,7 @@
     {
       "sceneId": "orbit",
       "audioFile": "voice/orbit.wav",
-      "duration": 8.864,
+      "duration": 5.253,
       "sentences": [
         {
           "text": "And 42 minutes is exactly half of one orbit, for a satellite skimming the surface.",
@@ -661,71 +661,98 @@
               "end": 4.973
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "sceneId": "real",
+      "audioFile": "voice/real.wav",
+      "duration": 5.631,
+      "sentences": [
         {
-          "text": "Falling through the planet and flying around it take the same time.",
-          "start": 5.253,
-          "end": 8.584,
+          "text": "One catch: Earth's dense core pulls harder, so through the real planet it's about 38 minutes.",
+          "start": 0.15,
+          "end": 5.351,
           "words": [
             {
-              "w": "Falling",
-              "start": 5.253,
-              "end": 5.618
+              "w": "One",
+              "start": 0.15,
+              "end": 0.374
+            },
+            {
+              "w": "catch:",
+              "start": 0.374,
+              "end": 0.823
+            },
+            {
+              "w": "Earth's",
+              "start": 0.823,
+              "end": 1.226
+            },
+            {
+              "w": "dense",
+              "start": 1.226,
+              "end": 1.54
+            },
+            {
+              "w": "core",
+              "start": 1.54,
+              "end": 1.809
+            },
+            {
+              "w": "pulls",
+              "start": 1.809,
+              "end": 2.123
+            },
+            {
+              "w": "harder,",
+              "start": 2.123,
+              "end": 2.616
+            },
+            {
+              "w": "so",
+              "start": 2.616,
+              "end": 2.795
             },
             {
               "w": "through",
-              "start": 5.618,
-              "end": 5.984
+              "start": 2.795,
+              "end": 3.199
             },
             {
               "w": "the",
-              "start": 5.984,
-              "end": 6.187
+              "start": 3.199,
+              "end": 3.423
+            },
+            {
+              "w": "real",
+              "start": 3.423,
+              "end": 3.692
             },
             {
               "w": "planet",
-              "start": 6.187,
-              "end": 6.512
+              "start": 3.692,
+              "end": 4.051
             },
             {
-              "w": "and",
-              "start": 6.512,
-              "end": 6.715
+              "w": "it's",
+              "start": 4.051,
+              "end": 4.32
             },
             {
-              "w": "flying",
-              "start": 6.715,
-              "end": 7.04
+              "w": "about",
+              "start": 4.32,
+              "end": 4.633
             },
             {
-              "w": "around",
-              "start": 7.04,
-              "end": 7.365
+              "w": "38",
+              "start": 4.633,
+              "end": 4.813
             },
             {
-              "w": "it",
-              "start": 7.365,
-              "end": 7.527
-            },
-            {
-              "w": "take",
-              "start": 7.527,
-              "end": 7.771
-            },
-            {
-              "w": "the",
-              "start": 7.771,
-              "end": 7.974
-            },
-            {
-              "w": "same",
-              "start": 7.974,
-              "end": 8.218
-            },
-            {
-              "w": "time.",
-              "start": 8.218,
-              "end": 8.584
+              "w": "minutes.",
+              "start": 4.813,
+              "end": 5.351
             }
           ]
         }
@@ -734,59 +761,37 @@
     {
       "sceneId": "outro",
       "audioFile": "voice/outro.wav",
-      "duration": 2.815,
+      "duration": 1.952,
       "sentences": [
         {
-          "text": "Physics is weird.",
+          "text": "Follow for more weird physics.",
           "start": 0.15,
-          "end": 1.166,
-          "words": [
-            {
-              "w": "Physics",
-              "start": 0.15,
-              "end": 0.547
-            },
-            {
-              "w": "is",
-              "start": 0.547,
-              "end": 0.724
-            },
-            {
-              "w": "weird.",
-              "start": 0.724,
-              "end": 1.166
-            }
-          ]
-        },
-        {
-          "text": "Follow for more of it.",
-          "start": 1.446,
-          "end": 2.535,
+          "end": 1.672,
           "words": [
             {
               "w": "Follow",
-              "start": 1.446,
-              "end": 1.736
+              "start": 0.15,
+              "end": 0.47
             },
             {
               "w": "for",
-              "start": 1.736,
-              "end": 1.918
+              "start": 0.47,
+              "end": 0.671
             },
             {
               "w": "more",
-              "start": 1.918,
-              "end": 2.135
+              "start": 0.671,
+              "end": 0.911
             },
             {
-              "w": "of",
-              "start": 2.135,
-              "end": 2.281
+              "w": "weird",
+              "start": 0.911,
+              "end": 1.191
             },
             {
-              "w": "it.",
-              "start": 2.281,
-              "end": 2.535
+              "w": "physics.",
+              "start": 1.191,
+              "end": 1.672
             }
           ]
         }

@@ -47,6 +47,86 @@
       },
       "aiGenerated": false,
       "addedAt": "2026-11-15T01:02:08.850Z"
+    },
+    {
+      "id": "pluto-nh",
+      "kind": "image",
+      "file": "assets/pluto-nh.jpg",
+      "sha256": "cdb283f8284d4cf4093cc10d031cac61010e0d4658ad8a8c00cba543d7d9fca4",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA19956/PIA19956~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA19956",
+        "title": "Pluto in Extended Color",
+        "credit": "NASA / JPL / Johns Hopkins University Applied Physics Laboratory / Southwest Research Institute",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:22:22.437Z"
+    },
+    {
+      "id": "p11-launch",
+      "kind": "image",
+      "file": "assets/p11-launch.jpg",
+      "sha256": "9dd75f2b2155322623c6a816cf3e364ec33150d9a37e72c3b8a0ce7e6fc19144",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/9139575/9139575~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/9139575",
+        "title": "Launch Vehicles",
+        "credit": "NASA / MSFC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:22:24.808Z"
+    },
+    {
+      "id": "p10-plaque",
+      "kind": "image",
+      "file": "assets/p10-plaque.jpg",
+      "sha256": "67897a98e4a32472d657f22e02863b3ed994e71372c305b60fa590cd7580d655",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/ARC-1972-AC72-2135/ARC-1972-AC72-2135~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/ARC-1972-AC72-2135",
+        "title": "ARC-1972-AC72-2135",
+        "credit": "NASA / ARC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:22:27.221Z"
+    },
+    {
+      "id": "neptune-v2",
+      "kind": "image",
+      "file": "assets/neptune-v2.jpg",
+      "sha256": "a1cac100aa0b367b9f223809b9a3006a307fb4dedf034a56b3167aecc5c48ee5",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA00046/PIA00046~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA00046",
+        "title": "Neptune Full Disk",
+        "credit": "NASA / JPL",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:22:29.589Z"
+    },
+    {
+      "id": "pluto-color",
+      "kind": "image",
+      "file": "assets/pluto-color.jpg",
+      "sha256": "7c1cf034b74a50ff6c693b62d389f4d635206595a80dbe02b75148c94923630f",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA19952/PIA19952~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA19952",
+        "title": "The Rich Color Variations of Pluto",
+        "credit": "NASA / JPL / Johns Hopkins University Applied Physics Laboratory / Southwest Research Institute",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:22:44.424Z"
     }
   ]
 }

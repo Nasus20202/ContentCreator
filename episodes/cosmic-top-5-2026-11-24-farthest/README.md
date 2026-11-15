@@ -22,32 +22,37 @@ _None recorded yet._
 > These are the five farthest things humans have ever built.
 > Ranked by distance from Earth, this week.
 
-**n5** (`factCard`) — facts: `dist-nh`, `nh-pluto`
+**n5** (`image`) — facts: `dist-nh`, `nh-pluto`, `photos`
 
-> Number five: New Horizons, the probe that flew past Pluto. About ten billion kilometres away.
+> Number five: New Horizons, the probe that took this photo of Pluto.
+> It's about ten billion kilometres away.
 
-**n4** (`factCard`) — facts: `dist-p11`
+**n4** (`image`) — facts: `dist-p11`, `photos`
 
-> Number four: Pioneer 11, at 17.8 billion kilometres.
+> Number four: Pioneer 11, launched in 1973, now 17.8 billion kilometres out.
 
-**n3** (`factCard`) — facts: `dist-p10`, `p10-overtaken`
+**n3** (`image`) — facts: `dist-p10`, `p10-overtaken`, `photos`
 
 > Number three: Pioneer 10, at 21.2 billion kilometres.
-> Launched in 1972, it was the farthest of all, until Voyager 1 overtook it in 1998.
+> It was the farthest of all, until Voyager 1 overtook it in 1998.
 
-**n2** (`image`) — facts: `dist-v2`
+**n2** (`image`) — facts: `dist-v2`, `photos`
 
-> Number two: Voyager 2, at 21.7 billion kilometres.
+> Number two: Voyager 2, the probe that photographed Neptune, at 21.7 billion kilometres.
 
 **n1** (`image`) — facts: `dist-v1`, `v1-light-day`
 
-> And number one: Voyager 1.
-> 25.9 billion kilometres, so far that its signals now take a full day to reach us.
+> And number one: Voyager 1, at 25.9 billion kilometres.
 
-**scale** (`scale`) — facts: `dist-v1`, `dist-v2`, `dist-p10`, `dist-p11`, `dist-nh`
+**race** (`journey`) — facts: `light-times`, `dist-nh`, `dist-v1`
 
-> Here they are, to scale.
-> Even number five is about ten billion kilometres from home.
+> Now race a beam of light out there.
+> It passes New Horizons after about nine hours, and reaches Voyager 1 only after a full day.
+
+**compare** (`compare`) — facts: `dist-v1`, `dist-v2`, `dist-p10`, `dist-p11`, `dist-nh`
+
+> Here are all five, to scale.
+> Voyager 1, out in front.
 
 **outro** (`outro`) — facts: `dist-nh`
 
@@ -70,7 +75,7 @@ NASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/
 NASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/
 NASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/
 
-Images: NASA / JPL / MDSCC / INTA, Francisco "Paco" Moreno (Deep Space Network, Madrid), NASA / JPL (Voyager 2 launch), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.
+Images: NASA / JPL / MDSCC / INTA, Francisco "Paco" Moreno (Deep Space Network, Madrid), NASA / JHUAPL / SwRI (Pluto by New Horizons), NASA / MSFC (Pioneer 11 launch), NASA / ARC (Pioneer 10), NASA / JPL (Neptune by Voyager 2), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.
 
 #space #astronomy #science #top5 #voyager #nasa
 
@@ -86,6 +91,8 @@ Images: NASA / JPL / MDSCC / INTA, Francisco "Paco" Moreno (Deep Space Network, 
 | p10-overtaken | Pioneer 10 (launched 1972) was the most remote human-made object through most of its mission; on 17 February 1998 Voyager 1 equalled its distance from the Sun (69.4 AU) and then pulled ahead. Pioneer 10's last, very weak signal was received on 23 January 2003. | [NASA Science](https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/) |
 | v1-light-day | Voyager 1 reached one light-day from Earth on 18 November 2026 and is the most distant human-made object; it launched in 1977. | [NASA Science](https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/) |
 | nh-pluto | New Horizons was the first spacecraft to explore Pluto up close, flying by it on July 14, 2015. | [NASA Science](https://science.nasa.gov/mission/new-horizons/) |
+| photos | PIA19952: New Horizons' enhanced colour view of Pluto, 14 July 2015 (blue, red and infrared). 9139575: Atlas-Centaur launch of Pioneer 11 on 5 April 1973. ARC-1972-AC72-2135: Pioneer 10 being readied at Cape Kennedy, showing the plaque. PIA00046: Neptune photographed by Voyager 2's narrow-angle camera, 16-17 August 1989. | [NASA](https://images.nasa.gov) |
+| light-times | Light from Earth reaches New Horizons in 9.26 h (about 9 h 16 min), Pioneer 11 in 16.49 h (about 16 h 30 min) and Voyager 1 in 24.01 h (about 24 h, one light-day). | computed (light time = distance (AU) x 499.004784 s) |
 
 ## Assets
 
@@ -94,10 +101,15 @@ Images: NASA / JPL / MDSCC / INTA, Francisco "Paco" Moreno (Deep Space Network, 
 | dsn-madrid | [Six Deep Space Network Antennas in Madrid Arrayed For the First Time](https://images.nasa.gov/details/PIA26147) | NASA / JPL / MDSCC / INTA, Francisco "Paco" Moreno | NASA media usage guidelines (not copyrighted unless noted) | no |
 | voyager1-launch | [Voyager 1 Launch](https://images.nasa.gov/details/PIA21747) | NASA / JPL / JPL-Caltech / KSC | NASA media usage guidelines (not copyrighted unless noted) | no |
 | voyager2-launch | [Voyager 2 Launch](https://images.nasa.gov/details/PIA01480) | NASA / JPL | NASA media usage guidelines (not copyrighted unless noted) | no |
+| pluto-nh | [Pluto in Extended Color](https://images.nasa.gov/details/PIA19956) | NASA / JPL / Johns Hopkins University Applied Physics Laboratory / Southwest Research Institute | NASA media usage guidelines (not copyrighted unless noted) | no |
+| p11-launch | [Launch Vehicles](https://images.nasa.gov/details/9139575) | NASA / MSFC | NASA media usage guidelines (not copyrighted unless noted) | no |
+| p10-plaque | [ARC-1972-AC72-2135](https://images.nasa.gov/details/ARC-1972-AC72-2135) | NASA / ARC | NASA media usage guidelines (not copyrighted unless noted) | no |
+| neptune-v2 | [Neptune Full Disk](https://images.nasa.gov/details/PIA00046) | NASA / JPL | NASA media usage guidelines (not copyrighted unless noted) | no |
+| pluto-color | [The Rich Color Variations of Pluto](https://images.nasa.gov/details/PIA19952) | NASA / JPL / Johns Hopkins University Applied Physics Laboratory / Southwest Research Institute | NASA media usage guidelines (not copyrighted unless noted) | no |
 
 ## Render
 
-51.4 s, 1080×1920@30, sha256 `5ea44f18d4a4d232…`, rendered 2026-11-15T01:06:58.259Z in 67 s.
+58.1 s, 1080×1920@30, sha256 `e1db6da20d5726bf…`, rendered 2026-11-15T01:31:07.643Z in 88 s.
 
 ## QA
 
@@ -106,13 +118,13 @@ Images: NASA / JPL / MDSCC / INTA, Francisco "Paco" Moreno (Deep Space Network, 
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 51.40 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 51.40 s vs timeline 51.33 s |
-| loudness | ✅ | -14.3 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.1 dBFS |
+| duration | ✅ | 58.10 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 58.10 s vs timeline 58.07 s |
+| loudness | ✅ | -14.4 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T01:07:43.108Z): **pass** — 21 frames. Hook: title over the DSN Madrid photo. #5–#3 fact cards in magenta: 10 / 17.8 / 21.2 bn km, labels readable, no title collision after the fix. #2 and #1: launch photos with rank chips. Scale: linear bar, three markers (#2/#3 merged because 21.2 and 21.7 overlap), #1 at the far end. Outro clean.
+Visual review by **claude** (2026-11-15T01:31:58.534Z): **pass** — Rebuilt per user feedback. 24 frames, 58.1 s. A photo per rank with magenta rank chips: Pluto by New Horizons, Pioneer 11 launch, Pioneer 10 with its plaque, Neptune by Voyager 2, Voyager 1 launch. Light race: Earth → New Horizons ('9 h 16 min' badge) → Voyager 1, hours clock to 24 h, labels spaced and unclipped. Compare: five linear bars (new compact layout), labels and values readable, note line. Outro clean.
 
 ## Event log
 
@@ -162,3 +174,42 @@ Visual review by **claude** (2026-11-15T01:07:43.108Z): **pass** — 21 frames. 
 | 2026-11-15 01:07:12 | pipeline | qa | qa.automated | 910e1db |
 | 2026-11-15 01:07:43 | claude | qa | qa.review | 910e1db |
 | 2026-11-15 01:07:43 | claude | qa-passed | stage.advance | 910e1db |
+| 2026-11-15 01:22:22 | claude | qa-passed | asset.add | 1e0af98 |
+| 2026-11-15 01:22:24 | claude | qa-passed | asset.add | 1e0af98 |
+| 2026-11-15 01:22:27 | claude | qa-passed | asset.add | 1e0af98 |
+| 2026-11-15 01:22:29 | claude | qa-passed | asset.add | 1e0af98 |
+| 2026-11-15 01:22:44 | claude | qa-passed | asset.add | 1e0af98 |
+| 2026-11-15 01:22:45 | claude | researched | fact.add | 1e0af98 |
+| 2026-11-15 01:22:45 | claude | researched | fact.add | 1e0af98 |
+| 2026-11-15 01:23:02 | claude | planned | plan.check | 1e0af98 |
+| 2026-11-15 01:23:02 | claude | planned | stage.regress | 1e0af98 |
+| 2026-11-15 01:23:03 | pipeline | factcheck | factcheck.automated | 1e0af98 |
+| 2026-11-15 01:23:14 | claude | planned | plan.check | 1e0af98 |
+| 2026-11-15 01:23:14 | claude | planned | stage.advance | 1e0af98 |
+| 2026-11-15 01:23:14 | pipeline | factcheck | factcheck.automated | 1e0af98 |
+| 2026-11-15 01:23:15 | claude | factcheck | factcheck.review | 1e0af98 |
+| 2026-11-15 01:23:15 | claude | factchecked | stage.advance | 1e0af98 |
+| 2026-11-15 01:23:39 | claude | planned | plan.check | 1e0af98 |
+| 2026-11-15 01:23:39 | claude | planned | stage.regress | 1e0af98 |
+| 2026-11-15 01:23:39 | pipeline | factcheck | factcheck.automated | 1e0af98 |
+| 2026-11-15 01:23:40 | claude | factcheck | factcheck.review | 1e0af98 |
+| 2026-11-15 01:23:40 | claude | factchecked | stage.advance | 1e0af98 |
+| 2026-11-15 01:24:48 | pipeline | voiced | stage.advance | 1e0af98 |
+| 2026-11-15 01:24:48 | pipeline | voiced | voice.synthesize | 1e0af98 |
+| 2026-11-15 01:26:16 | pipeline | rendered | stage.advance | 1e0af98 |
+| 2026-11-15 01:26:16 | pipeline | rendered | render.video | 1e0af98 |
+| 2026-11-15 01:26:37 | pipeline | qa | qa.automated | 1e0af98 |
+| 2026-11-15 01:27:38 | pipeline | qa | qa.automated | 1e0af98 |
+| 2026-11-15 01:27:50 | claude | planned | plan.check | 1e0af98 |
+| 2026-11-15 01:27:50 | claude | planned | stage.regress | 1e0af98 |
+| 2026-11-15 01:27:51 | pipeline | factcheck | factcheck.automated | 1e0af98 |
+| 2026-11-15 01:27:53 | claude | factcheck | factcheck.review | 1e0af98 |
+| 2026-11-15 01:27:53 | claude | factchecked | stage.advance | 1e0af98 |
+| 2026-11-15 01:29:32 | pipeline | voiced | stage.advance | 1e0af98 |
+| 2026-11-15 01:29:32 | pipeline | voiced | voice.synthesize | 1e0af98 |
+| 2026-11-15 01:31:07 | pipeline | rendered | stage.advance | 1e0af98 |
+| 2026-11-15 01:31:07 | pipeline | rendered | render.video | 1e0af98 |
+| 2026-11-15 01:31:22 | pipeline | qa | qa.automated | 1e0af98 |
+| 2026-11-15 01:31:49 | pipeline | qa | qa.automated | 1e0af98 |
+| 2026-11-15 01:31:58 | claude | qa | qa.review | 1e0af98 |
+| 2026-11-15 01:31:58 | claude | qa-passed | stage.advance | 1e0af98 |

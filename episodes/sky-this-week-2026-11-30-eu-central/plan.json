@@ -1,0 +1,269 @@
+{
+  "episodeId": "sky-this-week-2026-11-30-eu-central",
+  "series": "sky-this-week",
+  "title": "Sky This Week · Nov 30 – Dec 6",
+  "badge": "Sky this week · Nov 30–Dec 6",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "post": {
+    "title": "The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6",
+    "description": "Before dawn on Mon 30 Nov, look high in the south-east: the Moon, Jupiter and Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) happens in daylight that morning, and to Mars (3.7°) that evening. All week before sunrise, Venus (magnitude -4.8) shines low in the south-east, 23° up around 06:40 mid-week.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#astronomy",
+      "#stargazing",
+      "#nightsky",
+      "#space",
+      "#moon",
+      "#jupiter",
+      "#venus"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "skyView",
+      "narration": [
+        "This Monday, the Moon drops in on Jupiter and Mars.",
+        "Catch them together before dawn."
+      ],
+      "factIds": [
+        "episode-window",
+        "moon-jupiter-2026-11-30-view",
+        "moon-mars-2026-11-30-view"
+      ],
+      "title": {
+        "kicker": "Sky this week",
+        "title": "Nov 30 – Dec 6",
+        "from": 0.1,
+        "to": 2.8
+      },
+      "params": {
+        "time": "2026-11-30T02:20:00.000Z",
+        "bodies": [
+          "Moon",
+          "Jupiter",
+          "Mars"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "azAlt": [
+                140,
+                30
+              ]
+            },
+            "fov": 90
+          },
+          {
+            "at": {
+              "sentence": 1,
+              "edge": "end"
+            },
+            "target": {
+              "body": "Moon"
+            },
+            "fov": 30
+          }
+        ],
+        "twilight": 0.1
+      }
+    },
+    {
+      "id": "group",
+      "template": "skyView",
+      "narration": [
+        "Early on Monday, November thirtieth, look high in the south-east.",
+        "The bright Moon sits near Jupiter, with orange Mars close by.",
+        "Their closest moment, under two degrees from Jupiter, comes later, in daylight. So go out before dawn."
+      ],
+      "factIds": [
+        "moon-jupiter-2026-11-30-view",
+        "moon-jupiter-2026-11-30-sep",
+        "moon-mars-2026-11-30-view",
+        "moon-jupiter-2026-11-30-illum",
+        "moon-mars-2026-11-30-sep"
+      ],
+      "chips": [
+        {
+          "text": "MON NOV 30 · BEFORE DAWN",
+          "from": 0.2,
+          "to": {
+            "sentence": 2,
+            "offset": -0.2
+          }
+        },
+        {
+          "text": "HIGH IN THE SOUTH-EAST",
+          "from": {
+            "sentence": 2
+          }
+        }
+      ],
+      "params": {
+        "time": "2026-11-30T02:20:00.000Z",
+        "bodies": [
+          "Moon",
+          "Jupiter",
+          "Mars"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "body": "Moon"
+            },
+            "fov": 30
+          },
+          {
+            "at": {
+              "sentence": 1
+            },
+            "target": {
+              "body": "Moon"
+            },
+            "fov": 22
+          }
+        ],
+        "labels": [
+          {
+            "body": "Moon",
+            "text": "Moon",
+            "side": "right",
+            "from": {
+              "sentence": 1
+            }
+          },
+          {
+            "body": "Jupiter",
+            "text": "Jupiter",
+            "side": "left",
+            "from": {
+              "sentence": 1,
+              "offset": 0.6
+            }
+          },
+          {
+            "body": "Mars",
+            "text": "Mars",
+            "side": "right",
+            "from": {
+              "sentence": 1,
+              "offset": 1.4
+            }
+          }
+        ],
+        "twilight": 0.1
+      }
+    },
+    {
+      "id": "venus",
+      "template": "skyView",
+      "narration": [
+        "And every morning before sunrise, Venus blazes low in the south-east.",
+        "At magnitude minus 4.8, you can't miss it."
+      ],
+      "factIds": [
+        "visible-venus-2026-12-03"
+      ],
+      "chips": [
+        {
+          "text": "MID-WEEK · 06:40 · LOW SOUTH-EAST",
+          "from": 0.2
+        }
+      ],
+      "params": {
+        "time": "2026-12-03T05:40:00.000Z",
+        "bodies": [
+          "Venus"
+        ],
+        "camera": [
+          {
+            "at": 0,
+            "target": {
+              "azAlt": [
+                130,
+                25
+              ]
+            },
+            "fov": 80
+          },
+          {
+            "at": {
+              "sentence": 1
+            },
+            "target": {
+              "body": "Venus"
+            },
+            "fov": 40
+          }
+        ],
+        "labels": [
+          {
+            "body": "Venus",
+            "text": "Venus",
+            "side": "right",
+            "from": 0.8
+          }
+        ],
+        "twilight": 0.5
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Positions calculated for central Europe.",
+        "Follow, so you don't miss next week's sky.",
+        "Clear skies."
+      ],
+      "factIds": [
+        "episode-location"
+      ],
+      "params": {
+        "kicker": "Next week's sky",
+        "cta": "Follow\nso you don't\nmiss it",
+        "footnote": "50°N 15°E",
+        "sky": {
+          "time": "2026-11-30T02:20:00.000Z",
+          "bodies": [],
+          "camera": [
+            {
+              "at": 0,
+              "target": {
+                "azAlt": [
+                  140,
+                  35
+                ]
+              },
+              "fov": 100
+            },
+            {
+              "at": 2.5,
+              "target": {
+                "azAlt": [
+                  150,
+                  42
+                ]
+              },
+              "fov": 112
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

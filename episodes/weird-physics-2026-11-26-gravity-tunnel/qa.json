@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T01:12:40.194Z",
-  "videoSha256": "2bd773dc8d661de3628c72bb592e7cf0a038ed99e920db030e08c7c3f68d3eef",
+  "checkedAt": "2026-11-15T01:22:40.380Z",
+  "videoSha256": "e8e6d6bc82394c760d5640c09219f09a1a76f87d0c5e0916c395c84928f6e15e",
   "automated": [
     {
       "name": "resolution",
@@ -20,12 +20,12 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "45.20 s (limit 60 s)"
+      "detail": "46.70 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 45.20 s vs timeline 45.17 s"
+      "detail": "video 46.70 s vs timeline 46.63 s"
     },
     {
       "name": "loudness",
@@ -117,33 +117,33 @@
     {
       "file": "qa/03-orbit-1.jpg",
       "sceneId": "orbit",
-      "tSec": 37.22
+      "tSec": 36.8
     },
     {
-      "file": "qa/03-orbit-2.jpg",
-      "sceneId": "orbit",
-      "tSec": 40.4
+      "file": "qa/04-real-0.jpg",
+      "sceneId": "real",
+      "tSec": 37.65
     },
     {
-      "file": "qa/04-outro-0.jpg",
+      "file": "qa/04-real-1.jpg",
+      "sceneId": "real",
+      "tSec": 42.7
+    },
+    {
+      "file": "qa/05-outro-0.jpg",
       "sceneId": "outro",
-      "tSec": 41.25
+      "tSec": 43.55
     },
     {
-      "file": "qa/04-outro-1.jpg",
+      "file": "qa/05-outro-1.jpg",
       "sceneId": "outro",
-      "tSec": 42.55
-    },
-    {
-      "file": "qa/04-outro-2.jpg",
-      "sceneId": "outro",
-      "tSec": 45.07
+      "tSec": 46.53
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T01:13:00.467Z",
+    "at": "2026-11-15T01:23:51.196Z",
     "verdict": "pass",
-    "notes": "19 frames. Hook card '42 min' in acid green, no title collision after the fix. Journey: the Blue Marble backdrop, three stops (centre labelled 'top speed ≈ 28,000 km/h'), the ship accelerates then brakes, the clock runs to '42 min' with an arrival badge. Weird part: the Blue Marble with the 'ANY STRAIGHT TUNNEL: 42 MIN' chip. '84 min' orbit card. Outro footnote states the idealisation."
+    "notes": "Re-checked after adding the real-Earth beat: the '38 min' card with the Klotz (2015) source line is clean; earlier scenes unchanged (hook '42 min' card, journey with clock to 42 min, the 'any straight tunnel' chip, '84 min' card); outro states the idealisation."
   }
 }

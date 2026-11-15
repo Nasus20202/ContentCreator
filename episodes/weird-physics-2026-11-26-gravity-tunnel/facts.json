@@ -95,6 +95,37 @@
         "publisher": "NASA Image and Video Library",
         "accessed": "2026-11-15"
       }
+    },
+    {
+      "id": "real-earth",
+      "statement": "Using Earth's real density profile (denser core), the time to fall along the diameter is found numerically to be 38 minutes, compared to 42 minutes for a planet of uniform density.",
+      "values": [
+        38,
+        42
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://pubs.aip.org/aapt/ajp/article-abstract/83/3/231/1057885",
+        "title": "The gravity tunnel in a non-uniform Earth (Am. J. Phys. 83, 231)",
+        "publisher": "American Journal of Physics (A. R. Klotz, 2015)",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "klotz-ref",
+      "statement": "Citation: A. R. Klotz, 'The gravity tunnel in a non-uniform Earth', American Journal of Physics 83, 231 (2015).",
+      "values": [
+        83,
+        231,
+        2015
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://pubs.aip.org/aapt/ajp/article-abstract/83/3/231/1057885",
+        "title": "The gravity tunnel in a non-uniform Earth",
+        "publisher": "American Journal of Physics",
+        "accessed": "2026-11-15"
+      }
     }
   ]
 }

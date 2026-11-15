@@ -2,7 +2,7 @@
  * How the `journey` template prints a running clock. Shared by the fact-check (which checks the
  * start and end readings) and the Remotion bundle (which draws them), so it must stay browser-safe.
  */
-export type ClockUnit = 'min' | 's' | 'years';
+export type ClockUnit = 'min' | 's' | 'h' | 'years';
 
 export function formatClock(value: number, unit: ClockUnit, decimals = 0): string {
   if (unit === 'min') {
@@ -15,6 +15,15 @@ export function formatClock(value: number, unit: ClockUnit, decimals = 0): strin
     return s === 0 ? `${m} min` : `${m} min ${s} s`;
   }
   if (unit === 's') return `${Math.round(value)} s`;
+  if (unit === 'h') {
+    let h = Math.floor(value);
+    let m = Math.round((value - h) * 60);
+    if (m === 60) {
+      h += 1;
+      m = 0;
+    }
+    return m === 0 ? `${h} h` : `${h} h ${m} min`;
+  }
   if (value >= 1e9) return `${(value / 1e9).toFixed(1).replace(/\.0$/, '')} billion yrs`;
   if (value >= 1e6) {
     const millions = value / 1e6;

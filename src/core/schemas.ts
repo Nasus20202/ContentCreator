@@ -218,7 +218,7 @@ export const CompareParams = z.object({
   bars: z
     .array(z.object({ label: z.string().max(40), value: z.number().min(1), display: z.string().max(20) }))
     .min(2)
-    .max(3),
+    .max(5),
   note: z.string().max(80).optional(),
 });
 export type CompareParams = z.infer<typeof CompareParams>;
@@ -243,7 +243,7 @@ export const JourneyClock = z.object({
   label: z.string().max(20),
   from: z.number().min(0).default(0),
   to: z.number().min(0),
-  unit: z.enum(['min', 's', 'years']),
+  unit: z.enum(['min', 's', 'h', 'years']),
   /** Decimal places for years below a million (4.24 light-years at nearly light speed → "4.24 yrs"). */
   decimals: z.number().int().min(0).max(2).default(0),
 });

@@ -1,0 +1,36 @@
+{
+  "assets": [
+    {
+      "id": "iss",
+      "kind": "image",
+      "file": "assets/iss.jpg",
+      "sha256": "cbee386cf7da22cb6205ce595f1c59768c07d3ae58309af2dc793c8d591e21c1",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/iss056e201248/iss056e201248~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/iss056e201248",
+        "title": "iss056e201248",
+        "credit": "NASA / JSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:30:26.995Z"
+    },
+    {
+      "id": "floating",
+      "kind": "image",
+      "file": "assets/floating.jpg",
+      "sha256": "819dd58fe97a3628e6c519077860064117e34b6fd4e51ab84145267a49ab27ae",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/iss062e004933/iss062e004933~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/iss062e004933",
+        "title": "iss062e004933",
+        "credit": "NASA / JSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:30:30.349Z"
+    }
+  ]
+}

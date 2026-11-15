@@ -1,0 +1,20 @@
+{
+  "id": "one-shot-2026-11-28-earth-smiled",
+  "series": "one-shot",
+  "createdAt": "2026-11-15T01:26:16.332Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "485217ac3628d70e",
+    "factcheckedPlan": "485217ac3628d70e",
+    "narration": "5c7e94f82d7a5c00",
+    "video": "8e9a80451234f04391bb83d61b2e56215baad8f7e73fba216ad8f34d91017b98"
+  },
+  "approvals": []
+}

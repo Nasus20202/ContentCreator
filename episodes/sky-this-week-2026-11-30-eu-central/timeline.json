@@ -1,0 +1,541 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "909d111e5b928373",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 5.196,
+      "sentences": [
+        {
+          "text": "This Monday, the Moon drops in on Jupiter and Mars.",
+          "start": 0.15,
+          "end": 3.076,
+          "words": [
+            {
+              "w": "This",
+              "start": 0.15,
+              "end": 0.416
+            },
+            {
+              "w": "Monday,",
+              "start": 0.416,
+              "end": 0.904
+            },
+            {
+              "w": "the",
+              "start": 0.904,
+              "end": 1.125
+            },
+            {
+              "w": "Moon",
+              "start": 1.125,
+              "end": 1.391
+            },
+            {
+              "w": "drops",
+              "start": 1.391,
+              "end": 1.702
+            },
+            {
+              "w": "in",
+              "start": 1.702,
+              "end": 1.879
+            },
+            {
+              "w": "on",
+              "start": 1.879,
+              "end": 2.056
+            },
+            {
+              "w": "Jupiter",
+              "start": 2.056,
+              "end": 2.455
+            },
+            {
+              "w": "and",
+              "start": 2.455,
+              "end": 2.677
+            },
+            {
+              "w": "Mars.",
+              "start": 2.677,
+              "end": 3.076
+            }
+          ]
+        },
+        {
+          "text": "Catch them together before dawn.",
+          "start": 3.356,
+          "end": 4.916,
+          "words": [
+            {
+              "w": "Catch",
+              "start": 3.356,
+              "end": 3.629
+            },
+            {
+              "w": "them",
+              "start": 3.629,
+              "end": 3.863
+            },
+            {
+              "w": "together",
+              "start": 3.863,
+              "end": 4.253
+            },
+            {
+              "w": "before",
+              "start": 4.253,
+              "end": 4.565
+            },
+            {
+              "w": "dawn.",
+              "start": 4.565,
+              "end": 4.916
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "group",
+      "audioFile": "voice/group.wav",
+      "duration": 13.382,
+      "sentences": [
+        {
+          "text": "Early on Monday, November thirtieth, look high in the south-east.",
+          "start": 0.15,
+          "end": 3.374,
+          "words": [
+            {
+              "w": "Early",
+              "start": 0.15,
+              "end": 0.429
+            },
+            {
+              "w": "on",
+              "start": 0.429,
+              "end": 0.588
+            },
+            {
+              "w": "Monday,",
+              "start": 0.588,
+              "end": 1.026
+            },
+            {
+              "w": "November",
+              "start": 1.026,
+              "end": 1.424
+            },
+            {
+              "w": "thirtieth,",
+              "start": 1.424,
+              "end": 1.981
+            },
+            {
+              "w": "look",
+              "start": 1.981,
+              "end": 2.22
+            },
+            {
+              "w": "high",
+              "start": 2.22,
+              "end": 2.459
+            },
+            {
+              "w": "in",
+              "start": 2.459,
+              "end": 2.618
+            },
+            {
+              "w": "the",
+              "start": 2.618,
+              "end": 2.817
+            },
+            {
+              "w": "south-east.",
+              "start": 2.817,
+              "end": 3.374
+            }
+          ]
+        },
+        {
+          "text": "The bright Moon sits near Jupiter, with orange Mars close by.",
+          "start": 3.654,
+          "end": 6.965,
+          "words": [
+            {
+              "w": "The",
+              "start": 3.654,
+              "end": 3.869
+            },
+            {
+              "w": "bright",
+              "start": 3.869,
+              "end": 4.213
+            },
+            {
+              "w": "Moon",
+              "start": 4.213,
+              "end": 4.471
+            },
+            {
+              "w": "sits",
+              "start": 4.471,
+              "end": 4.729
+            },
+            {
+              "w": "near",
+              "start": 4.729,
+              "end": 4.987
+            },
+            {
+              "w": "Jupiter,",
+              "start": 4.987,
+              "end": 5.503
+            },
+            {
+              "w": "with",
+              "start": 5.503,
+              "end": 5.761
+            },
+            {
+              "w": "orange",
+              "start": 5.761,
+              "end": 6.105
+            },
+            {
+              "w": "Mars",
+              "start": 6.105,
+              "end": 6.363
+            },
+            {
+              "w": "close",
+              "start": 6.363,
+              "end": 6.664
+            },
+            {
+              "w": "by.",
+              "start": 6.664,
+              "end": 6.965
+            }
+          ]
+        },
+        {
+          "text": "Their closest moment, under two degrees from Jupiter, comes later, in daylight. So go out before dawn.",
+          "start": 7.245,
+          "end": 13.102,
+          "words": [
+            {
+              "w": "Their",
+              "start": 7.245,
+              "end": 7.561
+            },
+            {
+              "w": "closest",
+              "start": 7.561,
+              "end": 7.966
+            },
+            {
+              "w": "moment,",
+              "start": 7.966,
+              "end": 8.462
+            },
+            {
+              "w": "under",
+              "start": 8.462,
+              "end": 8.777
+            },
+            {
+              "w": "two",
+              "start": 8.777,
+              "end": 9.002
+            },
+            {
+              "w": "degrees",
+              "start": 9.002,
+              "end": 9.408
+            },
+            {
+              "w": "from",
+              "start": 9.408,
+              "end": 9.678
+            },
+            {
+              "w": "Jupiter,",
+              "start": 9.678,
+              "end": 10.219
+            },
+            {
+              "w": "comes",
+              "start": 10.219,
+              "end": 10.534
+            },
+            {
+              "w": "later,",
+              "start": 10.534,
+              "end": 10.984
+            },
+            {
+              "w": "in",
+              "start": 10.984,
+              "end": 11.165
+            },
+            {
+              "w": "daylight.",
+              "start": 11.165,
+              "end": 11.75
+            },
+            {
+              "w": "So",
+              "start": 11.75,
+              "end": 11.93
+            },
+            {
+              "w": "go",
+              "start": 11.93,
+              "end": 12.111
+            },
+            {
+              "w": "out",
+              "start": 12.111,
+              "end": 12.336
+            },
+            {
+              "w": "before",
+              "start": 12.336,
+              "end": 12.696
+            },
+            {
+              "w": "dawn.",
+              "start": 12.696,
+              "end": 13.102
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "venus",
+      "audioFile": "voice/venus.wav",
+      "duration": 7.595,
+      "sentences": [
+        {
+          "text": "And every morning before sunrise, Venus blazes low in the south-east.",
+          "start": 0.15,
+          "end": 4.126,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.387
+            },
+            {
+              "w": "every",
+              "start": 0.387,
+              "end": 0.718
+            },
+            {
+              "w": "morning",
+              "start": 0.718,
+              "end": 1.144
+            },
+            {
+              "w": "before",
+              "start": 1.144,
+              "end": 1.523
+            },
+            {
+              "w": "sunrise,",
+              "start": 1.523,
+              "end": 2.091
+            },
+            {
+              "w": "Venus",
+              "start": 2.091,
+              "end": 2.422
+            },
+            {
+              "w": "blazes",
+              "start": 2.422,
+              "end": 2.801
+            },
+            {
+              "w": "low",
+              "start": 2.801,
+              "end": 3.037
+            },
+            {
+              "w": "in",
+              "start": 3.037,
+              "end": 3.227
+            },
+            {
+              "w": "the",
+              "start": 3.227,
+              "end": 3.463
+            },
+            {
+              "w": "south-east.",
+              "start": 3.463,
+              "end": 4.126
+            }
+          ]
+        },
+        {
+          "text": "At magnitude minus 4.8, you can't miss it.",
+          "start": 4.406,
+          "end": 7.315,
+          "words": [
+            {
+              "w": "At",
+              "start": 4.406,
+              "end": 4.622
+            },
+            {
+              "w": "magnitude",
+              "start": 4.622,
+              "end": 5.214
+            },
+            {
+              "w": "minus",
+              "start": 5.214,
+              "end": 5.591
+            },
+            {
+              "w": "4.8,",
+              "start": 5.591,
+              "end": 5.969
+            },
+            {
+              "w": "you",
+              "start": 5.969,
+              "end": 6.238
+            },
+            {
+              "w": "can't",
+              "start": 6.238,
+              "end": 6.615
+            },
+            {
+              "w": "miss",
+              "start": 6.615,
+              "end": 6.938
+            },
+            {
+              "w": "it.",
+              "start": 6.938,
+              "end": 7.315
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 6.056,
+      "sentences": [
+        {
+          "text": "Positions calculated for central Europe.",
+          "start": 0.15,
+          "end": 2.331,
+          "words": [
+            {
+              "w": "Positions",
+              "start": 0.15,
+              "end": 0.65
+            },
+            {
+              "w": "calculated",
+              "start": 0.65,
+              "end": 1.195
+            },
+            {
+              "w": "for",
+              "start": 1.195,
+              "end": 1.422
+            },
+            {
+              "w": "central",
+              "start": 1.422,
+              "end": 1.831
+            },
+            {
+              "w": "Europe.",
+              "start": 1.831,
+              "end": 2.331
+            }
+          ]
+        },
+        {
+          "text": "Follow, so you don't miss next week's sky.",
+          "start": 2.611,
+          "end": 4.669,
+          "words": [
+            {
+              "w": "Follow,",
+              "start": 2.611,
+              "end": 3.022
+            },
+            {
+              "w": "so",
+              "start": 3.022,
+              "end": 3.172
+            },
+            {
+              "w": "you",
+              "start": 3.172,
+              "end": 3.359
+            },
+            {
+              "w": "don't",
+              "start": 3.359,
+              "end": 3.621
+            },
+            {
+              "w": "miss",
+              "start": 3.621,
+              "end": 3.846
+            },
+            {
+              "w": "next",
+              "start": 3.846,
+              "end": 4.07
+            },
+            {
+              "w": "week's",
+              "start": 4.07,
+              "end": 4.37
+            },
+            {
+              "w": "sky.",
+              "start": 4.37,
+              "end": 4.669
+            }
+          ]
+        },
+        {
+          "text": "Clear skies.",
+          "start": 4.949,
+          "end": 5.776,
+          "words": [
+            {
+              "w": "Clear",
+              "start": 4.949,
+              "end": 5.29
+            },
+            {
+              "w": "skies.",
+              "start": 5.29,
+              "end": 5.776
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

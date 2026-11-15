@@ -1,0 +1,53 @@
+{
+  "facts": [
+    {
+      "id": "smiled",
+      "statement": "On July 19, 2013, Cassini slipped into Saturn's shadow and imaged the planet, its rings and, in the background, Earth, with the Sun eclipsed by Saturn so the rings are backlit. It was the first time Earth's inhabitants knew in advance their photo would be taken from such a distance. The mosaic uses 141 wide-angle images out of 323 taken in just over four hours.",
+      "values": [
+        19,
+        2013,
+        141,
+        323,
+        4,
+        1
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov/details/PIA17172",
+        "title": "The Day the Earth Smiled (PIA17172)",
+        "publisher": "NASA / JPL-Caltech / SSI",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "earth-dot",
+      "statement": "In this Cassini wide-angle image from July 19, 2013, Earth, 898 million miles (1.44 billion kilometers) away, appears as a blue dot at center right; the Moon is a fainter protrusion off its right side. It was only the third time Earth had been imaged from the outer solar system.",
+      "values": [
+        898,
+        1.44,
+        19,
+        2013,
+        3
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov/details/PIA17171",
+        "title": "The Day the Earth Smiled: Sneak Preview (PIA17171)",
+        "publisher": "NASA / JPL-Caltech / SSI",
+        "accessed": "2026-11-15"
+      }
+    },
+    {
+      "id": "celebrate",
+      "statement": "Knowing in advance that Earth was being imaged allowed people around the world to join together in social events to celebrate the occasion; Cassini's cameras could image toward the Sun's direction because Saturn eclipsed the Sun's potentially damaging rays.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov/details/PIA17171",
+        "title": "The Day the Earth Smiled: Sneak Preview (PIA17171)",
+        "publisher": "NASA / JPL-Caltech / SSI",
+        "accessed": "2026-11-15"
+      }
+    }
+  ]
+}

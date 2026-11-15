@@ -1,0 +1,585 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "ce3feaaee8350590",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 5.859,
+      "sentences": [
+        {
+          "text": "Astronauts don't float because there's no gravity.",
+          "start": 0.15,
+          "end": 2.691,
+          "words": [
+            {
+              "w": "Astronauts",
+              "start": 0.15,
+              "end": 0.658
+            },
+            {
+              "w": "don't",
+              "start": 0.658,
+              "end": 0.955
+            },
+            {
+              "w": "float",
+              "start": 0.955,
+              "end": 1.251
+            },
+            {
+              "w": "because",
+              "start": 1.251,
+              "end": 1.632
+            },
+            {
+              "w": "there's",
+              "start": 1.632,
+              "end": 2.013
+            },
+            {
+              "w": "no",
+              "start": 2.013,
+              "end": 2.183
+            },
+            {
+              "w": "gravity.",
+              "start": 2.183,
+              "end": 2.691
+            }
+          ]
+        },
+        {
+          "text": "Up there, gravity is almost as strong as down here.",
+          "start": 2.971,
+          "end": 5.579,
+          "words": [
+            {
+              "w": "Up",
+              "start": 2.971,
+              "end": 3.129
+            },
+            {
+              "w": "there,",
+              "start": 3.129,
+              "end": 3.524
+            },
+            {
+              "w": "gravity",
+              "start": 3.524,
+              "end": 3.88
+            },
+            {
+              "w": "is",
+              "start": 3.88,
+              "end": 4.038
+            },
+            {
+              "w": "almost",
+              "start": 4.038,
+              "end": 4.354
+            },
+            {
+              "w": "as",
+              "start": 4.354,
+              "end": 4.512
+            },
+            {
+              "w": "strong",
+              "start": 4.512,
+              "end": 4.828
+            },
+            {
+              "w": "as",
+              "start": 4.828,
+              "end": 4.986
+            },
+            {
+              "w": "down",
+              "start": 4.986,
+              "end": 5.223
+            },
+            {
+              "w": "here.",
+              "start": 5.223,
+              "end": 5.579
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "number",
+      "audioFile": "voice/number.wav",
+      "duration": 8.488,
+      "sentences": [
+        {
+          "text": "The Space Station flies about 400 kilometres up.",
+          "start": 0.15,
+          "end": 3.262,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.414
+            },
+            {
+              "w": "Space",
+              "start": 0.414,
+              "end": 0.783
+            },
+            {
+              "w": "Station",
+              "start": 0.783,
+              "end": 1.258
+            },
+            {
+              "w": "flies",
+              "start": 1.258,
+              "end": 1.627
+            },
+            {
+              "w": "about",
+              "start": 1.627,
+              "end": 1.996
+            },
+            {
+              "w": "400",
+              "start": 1.996,
+              "end": 2.26
+            },
+            {
+              "w": "kilometres",
+              "start": 2.26,
+              "end": 2.893
+            },
+            {
+              "w": "up.",
+              "start": 2.893,
+              "end": 3.262
+            }
+          ]
+        },
+        {
+          "text": "At that height, Earth's gravity is still about 90 percent as strong as on the ground.",
+          "start": 3.542,
+          "end": 8.208,
+          "words": [
+            {
+              "w": "At",
+              "start": 3.542,
+              "end": 3.718
+            },
+            {
+              "w": "that",
+              "start": 3.718,
+              "end": 3.982
+            },
+            {
+              "w": "height,",
+              "start": 3.982,
+              "end": 4.466
+            },
+            {
+              "w": "Earth's",
+              "start": 4.466,
+              "end": 4.862
+            },
+            {
+              "w": "gravity",
+              "start": 4.862,
+              "end": 5.259
+            },
+            {
+              "w": "is",
+              "start": 5.259,
+              "end": 5.435
+            },
+            {
+              "w": "still",
+              "start": 5.435,
+              "end": 5.743
+            },
+            {
+              "w": "about",
+              "start": 5.743,
+              "end": 6.051
+            },
+            {
+              "w": "90",
+              "start": 6.051,
+              "end": 6.227
+            },
+            {
+              "w": "percent",
+              "start": 6.227,
+              "end": 6.623
+            },
+            {
+              "w": "as",
+              "start": 6.623,
+              "end": 6.799
+            },
+            {
+              "w": "strong",
+              "start": 6.799,
+              "end": 7.151
+            },
+            {
+              "w": "as",
+              "start": 7.151,
+              "end": 7.327
+            },
+            {
+              "w": "on",
+              "start": 7.327,
+              "end": 7.504
+            },
+            {
+              "w": "the",
+              "start": 7.504,
+              "end": 7.724
+            },
+            {
+              "w": "ground.",
+              "start": 7.724,
+              "end": 8.208
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "why",
+      "audioFile": "voice/why.wav",
+      "duration": 7.484,
+      "sentences": [
+        {
+          "text": "So why do they float?",
+          "start": 0.15,
+          "end": 1.305,
+          "words": [
+            {
+              "w": "So",
+              "start": 0.15,
+              "end": 0.309
+            },
+            {
+              "w": "why",
+              "start": 0.309,
+              "end": 0.508
+            },
+            {
+              "w": "do",
+              "start": 0.508,
+              "end": 0.668
+            },
+            {
+              "w": "they",
+              "start": 0.668,
+              "end": 0.907
+            },
+            {
+              "w": "float?",
+              "start": 0.907,
+              "end": 1.305
+            }
+          ]
+        },
+        {
+          "text": "Because they're falling.",
+          "start": 1.585,
+          "end": 2.642,
+          "words": [
+            {
+              "w": "Because",
+              "start": 1.585,
+              "end": 1.902
+            },
+            {
+              "w": "they're",
+              "start": 1.902,
+              "end": 2.22
+            },
+            {
+              "w": "falling.",
+              "start": 2.22,
+              "end": 2.642
+            }
+          ]
+        },
+        {
+          "text": "The station, the crew, everything inside, is falling toward Earth, all together.",
+          "start": 2.922,
+          "end": 7.204,
+          "words": [
+            {
+              "w": "The",
+              "start": 2.922,
+              "end": 3.13
+            },
+            {
+              "w": "station,",
+              "start": 3.13,
+              "end": 3.629
+            },
+            {
+              "w": "the",
+              "start": 3.629,
+              "end": 3.837
+            },
+            {
+              "w": "crew,",
+              "start": 3.837,
+              "end": 4.211
+            },
+            {
+              "w": "everything",
+              "start": 4.211,
+              "end": 4.71
+            },
+            {
+              "w": "inside,",
+              "start": 4.71,
+              "end": 5.167
+            },
+            {
+              "w": "is",
+              "start": 5.167,
+              "end": 5.333
+            },
+            {
+              "w": "falling",
+              "start": 5.333,
+              "end": 5.707
+            },
+            {
+              "w": "toward",
+              "start": 5.707,
+              "end": 6.04
+            },
+            {
+              "w": "Earth,",
+              "start": 6.04,
+              "end": 6.456
+            },
+            {
+              "w": "all",
+              "start": 6.456,
+              "end": 6.664
+            },
+            {
+              "w": "together.",
+              "start": 6.664,
+              "end": 7.204
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "around",
+      "audioFile": "voice/around.wav",
+      "duration": 7.469,
+      "sentences": [
+        {
+          "text": "But it's also racing sideways, at about 28,000 kilometres an hour.",
+          "start": 0.15,
+          "end": 4.352,
+          "words": [
+            {
+              "w": "But",
+              "start": 0.15,
+              "end": 0.409
+            },
+            {
+              "w": "it's",
+              "start": 0.409,
+              "end": 0.721
+            },
+            {
+              "w": "also",
+              "start": 0.721,
+              "end": 1.032
+            },
+            {
+              "w": "racing",
+              "start": 1.032,
+              "end": 1.447
+            },
+            {
+              "w": "sideways,",
+              "start": 1.447,
+              "end": 2.122
+            },
+            {
+              "w": "at",
+              "start": 2.122,
+              "end": 2.329
+            },
+            {
+              "w": "about",
+              "start": 2.329,
+              "end": 2.692
+            },
+            {
+              "w": "28,000",
+              "start": 2.692,
+              "end": 3.055
+            },
+            {
+              "w": "kilometres",
+              "start": 3.055,
+              "end": 3.678
+            },
+            {
+              "w": "an",
+              "start": 3.678,
+              "end": 3.885
+            },
+            {
+              "w": "hour.",
+              "start": 3.885,
+              "end": 4.352
+            }
+          ]
+        },
+        {
+          "text": "So it keeps falling around the Earth, and never hits it.",
+          "start": 4.632,
+          "end": 7.189,
+          "words": [
+            {
+              "w": "So",
+              "start": 4.632,
+              "end": 4.774
+            },
+            {
+              "w": "it",
+              "start": 4.774,
+              "end": 4.916
+            },
+            {
+              "w": "keeps",
+              "start": 4.916,
+              "end": 5.165
+            },
+            {
+              "w": "falling",
+              "start": 5.165,
+              "end": 5.485
+            },
+            {
+              "w": "around",
+              "start": 5.485,
+              "end": 5.769
+            },
+            {
+              "w": "the",
+              "start": 5.769,
+              "end": 5.946
+            },
+            {
+              "w": "Earth,",
+              "start": 5.946,
+              "end": 6.301
+            },
+            {
+              "w": "and",
+              "start": 6.301,
+              "end": 6.479
+            },
+            {
+              "w": "never",
+              "start": 6.479,
+              "end": 6.727
+            },
+            {
+              "w": "hits",
+              "start": 6.727,
+              "end": 6.94
+            },
+            {
+              "w": "it.",
+              "start": 6.94,
+              "end": 7.189
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.798,
+      "sentences": [
+        {
+          "text": "Not weightless. Falling.",
+          "start": 0.15,
+          "end": 1.463,
+          "words": [
+            {
+              "w": "Not",
+              "start": 0.15,
+              "end": 0.355
+            },
+            {
+              "w": "weightless.",
+              "start": 0.355,
+              "end": 0.971
+            },
+            {
+              "w": "Falling.",
+              "start": 0.971,
+              "end": 1.463
+            }
+          ]
+        },
+        {
+          "text": "Follow to fix one more space myth.",
+          "start": 1.743,
+          "end": 3.518,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 1.743,
+              "end": 2.066
+            },
+            {
+              "w": "to",
+              "start": 2.066,
+              "end": 2.227
+            },
+            {
+              "w": "fix",
+              "start": 2.227,
+              "end": 2.429
+            },
+            {
+              "w": "one",
+              "start": 2.429,
+              "end": 2.631
+            },
+            {
+              "w": "more",
+              "start": 2.631,
+              "end": 2.873
+            },
+            {
+              "w": "space",
+              "start": 2.873,
+              "end": 3.155
+            },
+            {
+              "w": "myth.",
+              "start": 3.155,
+              "end": 3.518
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

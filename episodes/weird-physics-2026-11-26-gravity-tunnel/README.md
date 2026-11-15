@@ -39,18 +39,22 @@ _None recorded yet._
 **orbit** (`factCard`) — facts: `orbit-match`, `tunnel-time`
 
 > And 42 minutes is exactly half of one orbit, for a satellite skimming the surface.
-> Falling through the planet and flying around it take the same time.
+
+**real** (`factCard`) — facts: `real-earth`, `klotz-ref`
+
+> One catch: Earth's dense core pulls harder, so through the real planet it's about 38 minutes.
 
 **outro** (`outro`) — facts: —
 
-> Physics is weird.
-> Follow for more of it.
+> Follow for more weird physics.
 
 ### Post copy
 
 **Jump into a tunnel through Earth: 42 minutes to the other side 🕳️🌍**
 
-In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface.
+In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface. With Earth's real density (a dense core), a 2015 study found the drop through the centre takes about 38 minutes instead.
+
+Am. J. Phys. 83, 231 (2015): https://pubs.aip.org/aapt/ajp/article-abstract/83/3/231/1057885
 
 Computed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html
 
@@ -67,6 +71,8 @@ Image: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.
 | tunnel-speed | Falling through a tunnel through the centre, your top speed, reached at Earth's centre, is sqrt(GM/R) = 7.91 km/s, about 28,000 km/h. | computed (v_max = sqrt(GM/R)) |
 | orbit-match | A satellite orbiting just above the surface (no air) would take 2*pi*sqrt(R^3/GM) = 84.3 minutes per orbit, so it travels halfway round in the same ~42 minutes as the tunnel drop. | computed (circular orbit period at R: 2*pi*sqrt(R^3/GM)) |
 | photo-apollo17 | The 'Blue Marble' photo of Earth was taken by the Apollo 17 crew in December 1972. | [NASA Image and Video Library](https://images.nasa.gov/details/as17-148-22727) |
+| real-earth | Using Earth's real density profile (denser core), the time to fall along the diameter is found numerically to be 38 minutes, compared to 42 minutes for a planet of uniform density. | [American Journal of Physics (A. R. Klotz, 2015)](https://pubs.aip.org/aapt/ajp/article-abstract/83/3/231/1057885) |
+| klotz-ref | Citation: A. R. Klotz, 'The gravity tunnel in a non-uniform Earth', American Journal of Physics 83, 231 (2015). | [American Journal of Physics](https://pubs.aip.org/aapt/ajp/article-abstract/83/3/231/1057885) |
 
 ## Assets
 
@@ -76,7 +82,7 @@ Image: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.
 
 ## Render
 
-45.2 s, 1080×1920@30, sha256 `2bd773dc8d661de3…`, rendered 2026-11-15T01:12:39.504Z in 45 s.
+46.7 s, 1080×1920@30, sha256 `e8e6d6bc82394c76…`, rendered 2026-11-15T01:22:39.663Z in 50 s.
 
 ## QA
 
@@ -85,13 +91,13 @@ Image: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 45.20 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 45.20 s vs timeline 45.17 s |
+| duration | ✅ | 46.70 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 46.70 s vs timeline 46.63 s |
 | loudness | ✅ | -14.3 LUFS (target -18…-11) |
 | true-peak | ✅ | -1.4 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T01:13:00.467Z): **pass** — 19 frames. Hook card '42 min' in acid green, no title collision after the fix. Journey: the Blue Marble backdrop, three stops (centre labelled 'top speed ≈ 28,000 km/h'), the ship accelerates then brakes, the clock runs to '42 min' with an arrival badge. Weird part: the Blue Marble with the 'ANY STRAIGHT TUNNEL: 42 MIN' chip. '84 min' orbit card. Outro footnote states the idealisation.
+Visual review by **claude** (2026-11-15T01:23:51.196Z): **pass** — Re-checked after adding the real-Earth beat: the '38 min' card with the Klotz (2015) source line is clean; earlier scenes unchanged (hook '42 min' card, journey with clock to 42 min, the 'any straight tunnel' chip, '84 min' card); outro states the idealisation.
 
 ## Event log
 
@@ -130,3 +136,22 @@ Visual review by **claude** (2026-11-15T01:13:00.467Z): **pass** — 19 frames. 
 | 2026-11-15 01:12:48 | pipeline | qa | qa.automated | d30457f |
 | 2026-11-15 01:13:00 | claude | qa | qa.review | d30457f |
 | 2026-11-15 01:13:00 | claude | qa-passed | stage.advance | d30457f |
+| 2026-11-15 01:20:33 | claude | researched | fact.add | 1e0af98 |
+| 2026-11-15 01:20:34 | claude | planned | plan.check | 1e0af98 |
+| 2026-11-15 01:20:37 | claude | planned | plan.check | 1e0af98 |
+| 2026-11-15 01:20:45 | claude | planned | plan.check | 1e0af98 |
+| 2026-11-15 01:20:45 | claude | planned | stage.regress | 1e0af98 |
+| 2026-11-15 01:20:45 | pipeline | factcheck | factcheck.automated | 1e0af98 |
+| 2026-11-15 01:20:55 | claude | researched | fact.add | 1e0af98 |
+| 2026-11-15 01:20:56 | claude | planned | plan.check | 1e0af98 |
+| 2026-11-15 01:20:56 | claude | planned | stage.advance | 1e0af98 |
+| 2026-11-15 01:20:57 | pipeline | factcheck | factcheck.automated | 1e0af98 |
+| 2026-11-15 01:20:57 | claude | factcheck | factcheck.review | 1e0af98 |
+| 2026-11-15 01:20:57 | claude | factchecked | stage.advance | 1e0af98 |
+| 2026-11-15 01:21:48 | pipeline | voiced | stage.advance | 1e0af98 |
+| 2026-11-15 01:21:48 | pipeline | voiced | voice.synthesize | 1e0af98 |
+| 2026-11-15 01:22:39 | pipeline | rendered | stage.advance | 1e0af98 |
+| 2026-11-15 01:22:39 | pipeline | rendered | render.video | 1e0af98 |
+| 2026-11-15 01:22:48 | pipeline | qa | qa.automated | 1e0af98 |
+| 2026-11-15 01:23:51 | claude | qa | qa.review | 1e0af98 |
+| 2026-11-15 01:23:51 | claude | qa-passed | stage.advance | 1e0af98 |

@@ -1,0 +1,156 @@
+{
+  "episodeId": "one-shot-2026-11-28-earth-smiled",
+  "series": "one-shot",
+  "title": "One Shot · The Day the Earth Smiled",
+  "badge": "One Shot · Cassini at Saturn",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.15
+  },
+  "post": {
+    "title": "Find Earth in this photo of Saturn 🪐🔵",
+    "description": "On 19 July 2013, NASA's Cassini slipped into Saturn's shadow, so the Sun was hidden behind the planet and the rings lit up from behind. Then it looked back. Under the rings, 1.44 billion km away, is a tiny blue dot: Earth, with the Moon a faint bump beside it. It was the first time people on Earth knew in advance that their picture would be taken from that far away.\n\nSources:\nNASA, The Day the Earth Smiled (PIA17172): https://images.nasa.gov/details/PIA17172\nNASA, The Day the Earth Smiled: Sneak Preview (PIA17171): https://images.nasa.gov/details/PIA17171\n\nImages: NASA / JPL-Caltech / Space Science Institute (Cassini). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#space",
+      "#astronomy",
+      "#nasa",
+      "#saturn",
+      "#cassini",
+      "#oneshot"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "image",
+      "narration": [
+        "This is Saturn, with the Sun hidden right behind it.",
+        "And somewhere in this photo is Earth."
+      ],
+      "factIds": [
+        "smiled"
+      ],
+      "title": {
+        "kicker": "One Shot",
+        "title": "Find the Earth",
+        "from": 0.1,
+        "to": 2.8
+      },
+      "params": {
+        "assetId": "smiled",
+        "zoom": [
+          1.0,
+          1.1
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "how",
+      "template": "image",
+      "narration": [
+        "In July 2013, NASA's Cassini slipped into Saturn's shadow.",
+        "With the Sun blocked, it could look back toward home without being blinded, and the rings lit up from behind."
+      ],
+      "factIds": [
+        "smiled",
+        "celebrate"
+      ],
+      "chips": [
+        {
+          "text": "CASSINI · 19 JULY 2013",
+          "from": 0.3
+        }
+      ],
+      "params": {
+        "assetId": "smiled",
+        "zoom": [
+          1.1,
+          1.5
+        ],
+        "focus": [
+          0.62,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "find",
+      "template": "image",
+      "narration": [
+        "Now look under the rings.",
+        "That blue dot is Earth, 1.44 billion kilometres away.",
+        "The faint bump beside it is the Moon."
+      ],
+      "factIds": [
+        "earth-dot"
+      ],
+      "params": {
+        "assetId": "smiled-earth",
+        "zoom": [
+          1.0,
+          2.6
+        ],
+        "focus": [
+          0.728,
+          0.526
+        ],
+        "fit": "cover",
+        "marker": {
+          "label": "Earth",
+          "from": {
+            "sentence": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "smile",
+      "template": "factCard",
+      "narration": [
+        "And for the first time, people on Earth knew in advance that their photo was being taken from that far away.",
+        "Around the world, they went out to celebrate. NASA called it the Day the Earth Smiled."
+      ],
+      "factIds": [
+        "smiled",
+        "earth-dot",
+        "celebrate"
+      ],
+      "params": {
+        "value": "1.44 bn km",
+        "label": "the farthest group photo you might be in",
+        "sourceLine": "NASA / JPL-Caltech / SSI"
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "One photo, one detail.",
+        "Follow for the next one."
+      ],
+      "factIds": [],
+      "params": {
+        "kicker": "One Shot",
+        "cta": "FOLLOW\nFOR ONE PHOTO\nA WEEK",
+        "footnote": "Photos: NASA / JPL-Caltech / SSI (Cassini)"
+      }
+    }
+  ]
+}

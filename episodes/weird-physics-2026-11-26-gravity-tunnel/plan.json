@@ -20,7 +20,7 @@
   },
   "post": {
     "title": "Jump into a tunnel through Earth: 42 minutes to the other side 🕳️🌍",
-    "description": "In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface.\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.",
+    "description": "In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface. With Earth's real density (a dense core), a 2015 study found the drop through the centre takes about 38 minutes instead.\n\nAm. J. Phys. 83, 231 (2015): https://pubs.aip.org/aapt/ajp/article-abstract/83/3/231/1057885\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.",
     "hashtags": [
       "#physics",
       "#science",
@@ -144,8 +144,7 @@
       "id": "orbit",
       "template": "factCard",
       "narration": [
-        "And 42 minutes is exactly half of one orbit, for a satellite skimming the surface.",
-        "Falling through the planet and flying around it take the same time."
+        "And 42 minutes is exactly half of one orbit, for a satellite skimming the surface."
       ],
       "factIds": [
         "orbit-match",
@@ -158,11 +157,27 @@
       }
     },
     {
+      "id": "real",
+      "template": "factCard",
+      "narration": [
+        "One catch: Earth's dense core pulls harder, so through the real planet it's about 38 minutes."
+      ],
+      "factIds": [
+        "real-earth",
+        "klotz-ref"
+      ],
+      "chips": [],
+      "params": {
+        "value": "38 min",
+        "label": "with Earth's real, denser core",
+        "sourceLine": "Klotz, Am. J. Phys. 83, 231 (2015)"
+      }
+    },
+    {
       "id": "outro",
       "template": "outro",
       "narration": [
-        "Physics is weird.",
-        "Follow for more of it."
+        "Follow for more weird physics."
       ],
       "factIds": [],
       "params": {

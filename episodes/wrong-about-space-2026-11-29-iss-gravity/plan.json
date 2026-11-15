@@ -1,0 +1,164 @@
+{
+  "episodeId": "wrong-about-space-2026-11-29-iss-gravity",
+  "series": "wrong-about-space",
+  "title": "Wrong About Space · There is gravity on the Space Station",
+  "badge": "Wrong About Space · Gravity",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "post": {
+    "title": "Astronauts don't float because there's no gravity 🧑‍🚀",
+    "description": "At the International Space Station's altitude (200–250 miles, about 320–400 km), Earth's gravity is still about 90% as strong as on the ground. Astronauts float because they're in free fall: the station, the crew and everything aboard are constantly falling toward Earth while racing sideways at 17,500 mph (about 28,000 km/h), so they keep falling around it instead.\n\nSources:\nNASA, What Is Microgravity? (Grades 5-8): https://www.nasa.gov/learning-resources/for-kids-and-students/what-is-microgravity-grades-5-8/\nNASA Glenn, What is Microgravity?: https://www.nasa.gov/centers-and-facilities/glenn/what-is-microgravity/\n\nImages: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floating water sphere, 2020). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#space",
+      "#science",
+      "#physics",
+      "#iss",
+      "#mythbusting",
+      "#wrongaboutspace"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "template": "image",
+      "narration": [
+        "Astronauts don't float because there's no gravity.",
+        "Up there, gravity is almost as strong as down here."
+      ],
+      "factIds": [
+        "myth",
+        "iss-gravity",
+        "photos"
+      ],
+      "title": {
+        "kicker": "Myth",
+        "title": "No gravity in space",
+        "from": 0.1,
+        "to": 2.4
+      },
+      "chips": [
+        {
+          "text": "WRONG",
+          "from": 1.3
+        }
+      ],
+      "params": {
+        "assetId": "floating",
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "focus": [
+          0.49,
+          0.42
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "number",
+      "template": "factCard",
+      "narration": [
+        "The Space Station flies about 400 kilometres up.",
+        "At that height, Earth's gravity is still about 90 percent as strong as on the ground."
+      ],
+      "factIds": [
+        "iss-gravity"
+      ],
+      "params": {
+        "value": "≈ 90 %",
+        "label": "of ground-level gravity, at the Space Station",
+        "sourceLine": "NASA"
+      }
+    },
+    {
+      "id": "why",
+      "template": "image",
+      "narration": [
+        "So why do they float?",
+        "Because they're falling.",
+        "The station, the crew, everything inside, is falling toward Earth, all together."
+      ],
+      "factIds": [
+        "free-fall",
+        "photos"
+      ],
+      "chips": [
+        {
+          "text": "FACT: THEY'RE IN FREE FALL",
+          "from": {
+            "sentence": 1
+          }
+        }
+      ],
+      "params": {
+        "assetId": "iss",
+        "zoom": [
+          1.0,
+          1.2
+        ],
+        "focus": [
+          0.5,
+          0.42
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "around",
+      "template": "image",
+      "narration": [
+        "But it's also racing sideways, at about 28,000 kilometres an hour.",
+        "So it keeps falling around the Earth, and never hits it."
+      ],
+      "factIds": [
+        "free-fall"
+      ],
+      "chips": [
+        {
+          "text": "≈ 28,000 KM/H SIDEWAYS",
+          "from": 0.3
+        }
+      ],
+      "params": {
+        "assetId": "iss",
+        "zoom": [
+          1.25,
+          1.05
+        ],
+        "focus": [
+          0.5,
+          0.6
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "outro",
+      "template": "outro",
+      "narration": [
+        "Not weightless. Falling.",
+        "Follow to fix one more space myth."
+      ],
+      "factIds": [],
+      "params": {
+        "kicker": "Wrong About Space",
+        "cta": "FOLLOW\nFOR ONE MYTH\nA WEEK",
+        "footnote": "Source: NASA · photos: NASA / JSC"
+      }
+    }
+  ]
+}

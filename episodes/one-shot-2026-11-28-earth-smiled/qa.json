@@ -1,0 +1,134 @@
+{
+  "checkedAt": "2026-11-15T01:30:17.175Z",
+  "videoSha256": "8e9a80451234f04391bb83d61b2e56215baad8f7e73fba216ad8f34d91017b98",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "40.70 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 40.70 s vs timeline 40.67 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14.4 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.5 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 3.73
+    },
+    {
+      "file": "qa/00-hook-2.jpg",
+      "sceneId": "hook",
+      "tSec": 5.27
+    },
+    {
+      "file": "qa/01-how-0.jpg",
+      "sceneId": "how",
+      "tSec": 6.12
+    },
+    {
+      "file": "qa/01-how-1.jpg",
+      "sceneId": "how",
+      "tSec": 10.39
+    },
+    {
+      "file": "qa/01-how-2.jpg",
+      "sceneId": "how",
+      "tSec": 15.93
+    },
+    {
+      "file": "qa/02-find-0.jpg",
+      "sceneId": "find",
+      "tSec": 16.78
+    },
+    {
+      "file": "qa/02-find-1.jpg",
+      "sceneId": "find",
+      "tSec": 18.24
+    },
+    {
+      "file": "qa/02-find-2.jpg",
+      "sceneId": "find",
+      "tSec": 22.43
+    },
+    {
+      "file": "qa/02-find-3.jpg",
+      "sceneId": "find",
+      "tSec": 24.07
+    },
+    {
+      "file": "qa/03-smile-0.jpg",
+      "sceneId": "smile",
+      "tSec": 24.92
+    },
+    {
+      "file": "qa/03-smile-1.jpg",
+      "sceneId": "smile",
+      "tSec": 30.91
+    },
+    {
+      "file": "qa/03-smile-2.jpg",
+      "sceneId": "smile",
+      "tSec": 35.33
+    },
+    {
+      "file": "qa/04-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 36.18
+    },
+    {
+      "file": "qa/04-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 37.95
+    },
+    {
+      "file": "qa/04-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 40.57
+    }
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-15T01:31:29.253Z",
+    "verdict": "pass",
+    "notes": "16 frames. Hook: 'Find the Earth' over the backlit Saturn mosaic. How: zoom across the rings, 'CASSINI · 19 JULY 2013' chip. Find: PIA17171 zoom, Earth marker on the blue dot, legible under the rings. '1.44 bn km' card. Outro clean. Gold One Shot accent."
+  }
+}

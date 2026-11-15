@@ -1,0 +1,36 @@
+{
+  "assets": [
+    {
+      "id": "smiled",
+      "kind": "image",
+      "file": "assets/smiled.jpg",
+      "sha256": "c625643f23f1fa259f1487aaccca36dbe1d52de2753c97eb4f13441dbfa2d987",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA17172/PIA17172~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA17172",
+        "title": "The Day the Earth Smiled",
+        "credit": "NASA / JPL / JPL-Caltech / SSI",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:26:18.575Z"
+    },
+    {
+      "id": "smiled-earth",
+      "kind": "image",
+      "file": "assets/smiled-earth.jpg",
+      "sha256": "ad000e91763deaea2419c6f2127949181b7ed459d8b1ee61eadbe9f6775e8ffa",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA17171/PIA17171~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA17171",
+        "title": "The Day the Earth Smiled: Sneak Preview",
+        "credit": "NASA / JPL / JPL-Caltech / Space Science Institute",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-15T01:26:21.030Z"
+    }
+  ]
+}
