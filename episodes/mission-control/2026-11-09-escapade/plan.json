@@ -1,0 +1,179 @@
+{
+  "episodeId": "mission-control-2026-11-09-escapade",
+  "series": "mission-control",
+  "title": "Mission Control · ESCAPADE slingshots to Mars",
+  "badge": "Mission Control · ESCAPADE",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.06
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.15
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": [
+        "Two NASA spacecraft just slingshotted past Earth, on their way to Mars.",
+        "The mission is called ESCAPADE."
+      ],
+      "factIds": [
+        "flybys"
+      ],
+      "chips": [],
+      "title": {
+        "kicker": "Mission Control",
+        "title": "Next stop: Mars",
+        "from": 0.1,
+        "to": 3
+      },
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "launch",
+        "zoom": [
+          1,
+          1.15
+        ],
+        "focus": [
+          0.45,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "wait",
+      "narration": [
+        "They launched a year ago, when Mars was on the far side of the Sun.",
+        "So instead of heading straight there, they waited in space, looping around a point about 1.6 million kilometres from Earth."
+      ],
+      "factIds": [
+        "loiter",
+        "launch-photo"
+      ],
+      "chips": [
+        {
+          "text": "LAUNCHED 13 NOV 2025",
+          "from": 0.3
+        }
+      ],
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "twins",
+        "zoom": [
+          1,
+          1.15
+        ],
+        "focus": [
+          0.24,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "slingshot",
+      "narration": [
+        "This month they came back.",
+        "On the 7th and 9th of November, each one swept past Earth, the second as low as about 1,000 kilometres, and fired its engine for about nine minutes."
+      ],
+      "factIds": [
+        "flybys",
+        "low-km"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "factCard",
+      "params": {
+        "value": "≈ 1,000 km",
+        "label": "above Earth at closest, then a 9-minute engine burn",
+        "sourceLine": "NASA Science"
+      }
+    },
+    {
+      "id": "mars",
+      "narration": [
+        "Now they're cruising for 10 months, due at Mars on the 7th and 9th of September, 2027.",
+        "There they'll fly in formation, to study how the solar wind strips away Mars's atmosphere."
+      ],
+      "factIds": [
+        "arrival"
+      ],
+      "chips": [
+        {
+          "text": "MARS ARRIVAL: 7 & 9 SEPT 2027",
+          "from": 0.3
+        }
+      ],
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "mars",
+        "zoom": [
+          1.35,
+          1.5
+        ],
+        "focus": [
+          0.55,
+          0.42
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "first",
+      "narration": [
+        "It will be the first science mission to choreograph two orbiters around Mars."
+      ],
+      "factIds": [
+        "first-two"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "factCard",
+      "params": {
+        "value": "2 orbiters",
+        "label": "the first science mission to fly two in formation at Mars",
+        "sourceLine": "NASA / UC Berkeley"
+      }
+    },
+    {
+      "id": "outro",
+      "narration": [
+        "Follow for what's happening in space, every week.",
+        "Clear skies."
+      ],
+      "factIds": [],
+      "chips": [],
+      "captions": true,
+      "template": "outro",
+      "params": {
+        "kicker": "Mission Control",
+        "cta": "FOLLOW\nFOR SPACE\nNEWS, VERIFIED",
+        "footnote": "Source: NASA Science"
+      }
+    }
+  ],
+  "post": {
+    "title": "Two NASA probes just slingshotted past Earth toward Mars 🔴",
+    "description": "NASA's twin ESCAPADE spacecraft launched in November 2025, when Mars was on the far side of the Sun. Instead of waiting on the ground, they spent a year looping around a point about 1.6 million km from Earth, then came back. On 7 and 9 November 2026 each one swept past Earth (the second at about 1,000 km) and fired its engine for about 9 minutes to head for Mars. Arrival is planned for 7 and 9 September 2027, when they'll fly in formation to study how the solar wind strips Mars's atmosphere.\n\nSource:\nNASA Science, NASA's ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars: https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/\n\nImages: NASA / KSC / Blue Origin (launch, 13 Nov 2025), NASA / KSC / Kim Shiflett (the ESCAPADE spacecraft), NASA / JPL / USGS (Mars, Viking). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#space",
+      "#nasa",
+      "#mars",
+      "#spaceexploration",
+      "#escapade",
+      "#missioncontrol"
+    ]
+  }
+}

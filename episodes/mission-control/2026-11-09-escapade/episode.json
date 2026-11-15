@@ -1,0 +1,28 @@
+{
+  "id": "mission-control-2026-11-09-escapade",
+  "series": "mission-control",
+  "createdAt": "2026-11-15T01:04:55.034Z",
+  "stage": "published",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "8df81d759e819e51",
+    "factcheckedPlan": "8df81d759e819e51",
+    "narration": "0caa611c60414024",
+    "video": "0679ca40c9cee95ad3e10b3d431ca310cc1e65497805c64030dcc0ca70d03fdc"
+  },
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-15T02:39:34.441Z",
+      "videoSha256": "0679ca40c9cee95ad3e10b3d431ca310cc1e65497805c64030dcc0ca70d03fdc",
+      "note": "Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render."
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "episodeId": "sky-school-twin-paradox",
+  "series": "sky-school",
+  "title": "Sky School · The twin paradox, and a trip to the galaxy",
+  "badge": "Sky School · Twin paradox",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": [
+        "Fly to the centre of our galaxy and back, and you age forty years.",
+        "Earth ages fifty-two thousand.",
+        "Do the same to Andromeda, and the gap is far bigger."
+      ],
+      "factIds": [
+        "paradox",
+        "gravity-1g",
+        "trip-times"
+      ],
+      "chips": [],
+      "title": {
+        "kicker": "Twin paradox",
+        "title": "Your clock vs Earth's",
+        "from": 0.1,
+        "to": 3
+      },
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "andromeda",
+        "zoom": [
+          1,
+          1.1
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "paradox",
+      "narration": [
+        "This is the twin paradox.",
+        "Only the traveller accelerates and turns around, so only the traveller comes home younger."
+      ],
+      "factIds": [
+        "paradox",
+        "lorentz-peak"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "factCard",
+      "params": {
+        "value": "13,400",
+        "label": "clock-slowdown factor at the midpoint",
+        "sourceLine": "Lorentz factor · Wikipedia"
+      }
+    },
+    {
+      "id": "centre",
+      "narration": [
+        "The centre of the Milky Way, home to a black hole, is about 26,000 light-years away.",
+        "At one g, the trip there takes about twenty years on board."
+      ],
+      "factIds": [
+        "centre-distance",
+        "trip-times"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "journey",
+      "params": {
+        "traveller": "ship",
+        "stops": [
+          {
+            "name": "Earth",
+            "at": 0,
+            "kind": "earth",
+            "sub": "home"
+          },
+          {
+            "name": "Galactic centre",
+            "at": 26000,
+            "kind": "blackhole",
+            "sub": "26,000 light-years"
+          }
+        ],
+        "path": [
+          0,
+          1
+        ],
+        "start": {
+          "sentence": 1,
+          "edge": "start",
+          "offset": 0
+        },
+        "travel": 3.6,
+        "clocks": [
+          {
+            "label": "On board",
+            "from": 0,
+            "to": 20,
+            "unit": "years",
+            "decimals": 0
+          },
+          {
+            "label": "On Earth",
+            "from": 0,
+            "to": 26000,
+            "unit": "years",
+            "decimals": 0
+          }
+        ],
+        "backdrop": {
+          "assetId": "galactic-centre-spitzer",
+          "label": "Milky Way centre in infrared (Spitzer)"
+        }
+      }
+    },
+    {
+      "id": "centre-earth",
+      "narration": [
+        "Round trip, you spend about forty years.",
+        "On Earth, about fifty-two thousand years pass."
+      ],
+      "factIds": [
+        "trip-times"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "journey",
+      "params": {
+        "traveller": "ship",
+        "stops": [
+          {
+            "name": "Earth",
+            "at": 0,
+            "kind": "earth",
+            "sub": "home"
+          },
+          {
+            "name": "Galactic centre",
+            "at": 26000,
+            "kind": "blackhole",
+            "sub": "26,000 light-years"
+          }
+        ],
+        "path": [
+          1,
+          0
+        ],
+        "start": 0.3,
+        "travel": 3.8,
+        "clocks": [
+          {
+            "label": "On board",
+            "from": 20,
+            "to": 40,
+            "unit": "years",
+            "decimals": 0
+          },
+          {
+            "label": "On Earth",
+            "from": 26000,
+            "to": 52000,
+            "unit": "years",
+            "decimals": 0
+          }
+        ],
+        "backdrop": {
+          "assetId": "galactic-centre-spitzer",
+          "label": "Milky Way centre in infrared (Spitzer)"
+        }
+      }
+    },
+    {
+      "id": "centre-compare",
+      "narration": [
+        "Here are both clocks for the centre, drawn to scale."
+      ],
+      "factIds": [
+        "trip-times"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "compare",
+      "params": {
+        "heading": "Round trip to the centre",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "You, on board",
+            "value": 40,
+            "display": "40 years"
+          },
+          {
+            "label": "On Earth",
+            "value": 52000,
+            "display": "52,000 years"
+          }
+        ],
+        "note": "Drawn to scale."
+      }
+    },
+    {
+      "id": "andromeda",
+      "narration": [
+        "Andromeda, our largest galactic neighbour, is about two and a half million light-years away.",
+        "Round trip at one g, you would spend about fifty-seven years on board."
+      ],
+      "factIds": [
+        "andromeda-distance",
+        "trip-times"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "journey",
+      "params": {
+        "traveller": "ship",
+        "stops": [
+          {
+            "name": "Earth",
+            "at": 0,
+            "kind": "earth",
+            "sub": "home"
+          },
+          {
+            "name": "Andromeda",
+            "at": 2.5,
+            "kind": "galaxy",
+            "sub": "2.5 million light-years"
+          }
+        ],
+        "path": [
+          0,
+          1,
+          0
+        ],
+        "start": {
+          "sentence": 1,
+          "edge": "start",
+          "offset": 0
+        },
+        "travel": 4.2,
+        "clocks": [
+          {
+            "label": "On board",
+            "from": 0,
+            "to": 57,
+            "unit": "years",
+            "decimals": 0
+          },
+          {
+            "label": "On Earth",
+            "from": 0,
+            "to": 5000000,
+            "unit": "years",
+            "decimals": 0
+          }
+        ],
+        "backdrop": {
+          "assetId": "andromeda-galex",
+          "label": "Andromeda galaxy in ultraviolet (GALEX)"
+        }
+      }
+    },
+    {
+      "id": "andromeda-earth",
+      "narration": [
+        "On Earth, about five million years go by."
+      ],
+      "factIds": [
+        "trip-times"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "factCard",
+      "params": {
+        "value": "5 million yrs",
+        "label": "on Earth, round trip · you: 57 years",
+        "sourceLine": "1 g, accelerate and brake · computed"
+      }
+    },
+    {
+      "id": "outro",
+      "narration": [
+        "Follow for more sky, explained.",
+        "Clear skies."
+      ],
+      "factIds": [],
+      "chips": [],
+      "captions": true,
+      "template": "outro",
+      "params": {
+        "kicker": "Sky School",
+        "cta": "FOLLOW\nFOR MORE\nSKY, EXPLAINED",
+        "footnote": "Constant-gravity profile · not yet achievable"
+      }
+    }
+  ],
+  "post": {
+    "title": "The twin paradox, and how long a ride to the galaxy takes 🚀",
+    "description": "At a constant 1 g (accelerating at Earth's gravity to the midpoint, then braking), the trip to the centre of the Milky Way takes about 20 years on board one way and about 40 years round trip. On Earth, the round trip takes about 52,000 years. A round trip to Andromeda takes about 57 years on board and about 5 million years on Earth. The travelling twin comes back younger. No ship can do this yet: these are computed times for an idealised profile.\n\nSources:\nNASA, Sagittarius A*: https://www.nasa.gov/image-article/supermassive-black-hole-sagittarius/\nNASA Science, Andromeda: https://science.nasa.gov/galaxies/andromeda/\nWikipedia, Twin paradox: https://en.wikipedia.org/wiki/Twin_paradox\nWikipedia, Lorentz factor: https://en.wikipedia.org/wiki/Lorentz_factor\nNIST, standard acceleration of gravity: https://physics.nist.gov/cgi-bin/cuu/Value?gn\n\nImage: NASA / JPL / Caltech, Andromeda galaxy. Narration uses a synthetic voice.",
+    "hashtags": [
+      "#astronomy",
+      "#science",
+      "#skyschool",
+      "#relativity",
+      "#andromeda",
+      "#space"
+    ]
+  }
+}

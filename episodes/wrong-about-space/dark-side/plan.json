@@ -1,0 +1,169 @@
+{
+  "episodeId": "wrong-about-space-dark-side",
+  "series": "wrong-about-space",
+  "title": "Wrong About Space · The Moon has no dark side",
+  "badge": "Wrong About Space · Moon",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.05
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": [
+        "The Moon has no dark side.",
+        "And there is a photo that proves it."
+      ],
+      "factIds": [
+        "no-dark-side",
+        "dscovr-photo"
+      ],
+      "chips": [
+        {
+          "text": "WRONG",
+          "from": 1.2
+        }
+      ],
+      "title": {
+        "kicker": "Myth",
+        "title": "The dark side of the Moon",
+        "from": 0.1,
+        "to": 2.4
+      },
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "full-moon",
+        "zoom": [
+          1,
+          1.15
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "why",
+      "narration": [
+        "We always see the same face of the Moon, because it is tidally locked to Earth.",
+        "The half we never see is the far side.",
+        "Far, not dark."
+      ],
+      "factIds": [
+        "tidal-lock"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "full-moon",
+        "zoom": [
+          1.15,
+          1.4
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "fact",
+      "narration": [
+        "The far side gets just as much sunlight as the near side.",
+        "When our side is dark at new moon, the far side is in full daylight."
+      ],
+      "factIds": [
+        "no-dark-side"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "factCard",
+      "params": {
+        "value": "Same sunlight",
+        "label": "on the far side as on the near side",
+        "sourceLine": "NASA Science"
+      }
+    },
+    {
+      "id": "proof",
+      "narration": [
+        "Here it is.",
+        "In 2015, NASA's DSCOVR spacecraft watched the far side cross in front of Earth, fully lit by the Sun.",
+        "It was about 1.6 million kilometres away."
+      ],
+      "factIds": [
+        "dscovr-photo"
+      ],
+      "chips": [
+        {
+          "text": "FACT: THE FAR SIDE IS SUNLIT",
+          "from": {
+            "sentence": 1,
+            "edge": "start",
+            "offset": 0
+          }
+        }
+      ],
+      "captions": true,
+      "template": "image",
+      "params": {
+        "assetId": "dscovr-transit",
+        "zoom": [
+          1,
+          1.08
+        ],
+        "focus": [
+          0.31,
+          0.55
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "outro",
+      "narration": [
+        "Far side, not dark side.",
+        "Follow to fix one more space myth."
+      ],
+      "factIds": [
+        "no-dark-side"
+      ],
+      "chips": [],
+      "captions": true,
+      "template": "outro",
+      "params": {
+        "kicker": "Wrong About Space",
+        "cta": "FOLLOW\nFOR ONE MYTH\nA WEEK",
+        "footnote": "Sources: NASA Science · DSCOVR EPIC (NASA / NOAA)"
+      }
+    }
+  ],
+  "post": {
+    "title": "The Moon has no dark side. Here's the photo that proves it 🌗",
+    "description": "The 'dark side of the Moon' is really the far side: the half we never see from Earth, because the Moon is tidally locked. It gets as much sunlight as the near side. At new moon, when our side is dark, the far side is in full daylight. NASA's DSCOVR spacecraft photographed exactly that in July 2015, from about 1.6 million km away.\n\nSources:\nNASA Science, Top Moon Questions: https://science.nasa.gov/moon/top-moon-questions/\nNASA Science, Moon Facts: https://science.nasa.gov/moon/facts/\nNASA, From a Million Miles Away, NASA Camera Shows Moon Crossing Face of Earth: https://www.nasa.gov/solar-system/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth/\n\nImages: NASA / GSFC / NOAA (DSCOVR EPIC), NASA / GSFC (full Moon), NASA / JSC (Artemis II). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#space",
+      "#astronomy",
+      "#science",
+      "#moon",
+      "#mythbusting",
+      "#wrongaboutspace"
+    ]
+  }
+}

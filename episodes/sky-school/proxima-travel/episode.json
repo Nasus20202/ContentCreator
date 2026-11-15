@@ -1,0 +1,27 @@
+{
+  "id": "sky-school-proxima-travel",
+  "series": "sky-school",
+  "createdAt": "2026-11-12T15:21:33.081Z",
+  "stage": "published",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "5f17ec2c12486164",
+    "factcheckedPlan": "5f17ec2c12486164",
+    "narration": "f78ac64bfdc61550",
+    "video": "cc07ba4e5f222879137198c4cb505c006cb0386d4328c8a52359b77e5a889b7a"
+  },
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-12T19:13:32.177Z",
+      "videoSha256": "cc07ba4e5f222879137198c4cb505c006cb0386d4328c8a52359b77e5a889b7a"
+    }
+  ]
+}

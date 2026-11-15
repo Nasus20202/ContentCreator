@@ -1,0 +1,20 @@
+{
+  "id": "mission-control-2026-11-14-starship-catch",
+  "series": "mission-control",
+  "createdAt": "2026-11-15T02:04:35.033Z",
+  "stage": "qa-passed",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "hashes": {
+    "plan": "71af0b61b9aa756b",
+    "factcheckedPlan": "71af0b61b9aa756b",
+    "narration": "89b12131f2131726",
+    "video": "986f8688c322ecb112882f2797a8081ee02a52e2d85dc6868beb5e57d389bfc6"
+  },
+  "approvals": []
+}

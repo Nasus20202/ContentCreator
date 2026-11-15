@@ -1,0 +1,13 @@
+{
+  "renderedAt": "2026-11-12T18:25:38.546Z",
+  "planHash": "d2b38e4bb92f426e",
+  "timelineHash": "b74f3d3cca824c50",
+  "videoFile": "build/video.mp4",
+  "videoSha256": "8aa6228213aba7dd72d30990d496a0b1c01c1d4888c313afd63ad3fec8851e6e",
+  "renderSeconds": 54.367,
+  "durationSec": 45.9,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "remotionVersion": "4.0.543"
+}
