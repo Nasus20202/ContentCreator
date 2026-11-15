@@ -39,20 +39,19 @@ const Template: React.FC<{ scene: Scene }> = ({ scene }) => {
 };
 
 const SceneOverlays: React.FC<{ scene: Scene }> = ({ scene }) => {
-  const { win, timeline } = useSceneTime();
+  const { win, timeline, inCover } = useSceneTime();
   return (
     <>
       {scene.title && (
         <TitleOverlay
           kicker={scene.title.kicker}
           title={scene.title.title}
-          opacity={win(scene.title.from, scene.title.to)}
+          // The cover moment shows the title at full strength from frame 0.
+          opacity={inCover ? 1 : win(scene.title.from, scene.title.to)}
         />
       )}
-      {scene.chips.map((c, i) => (
-        <Chip key={i} text={c.text} opacity={win(c.from, c.to)} />
-      ))}
-      {scene.captions && <Captions sentences={timeline.sentences} />}
+      {!inCover && scene.chips.map((c, i) => <Chip key={i} text={c.text} opacity={win(c.from, c.to)} />)}
+      {scene.captions && !inCover && <Captions sentences={timeline.sentences} />}
     </>
   );
 };
@@ -67,10 +66,11 @@ const SceneShell: React.FC<{ scene: Scene; props: RenderProps; index: number; fr
   const frame = useCurrentFrame();
   const timeline = props.timeline.scenes[index];
   return (
-    <SceneContext.Provider value={{ timeline, props, durationSec: frames / fps }}>
+    <SceneContext.Provider value={{ timeline, props, durationSec: frames / fps, first: index === 0 }}>
       <AbsoluteFill
         style={{
-          opacity: interpolate(frame, [0, 10], [0, 1], { extrapolateRight: 'clamp' }),
+          // The opening scene starts fully visible: frame 0 is the cover, not black.
+          opacity: index === 0 ? 1 : interpolate(frame, [0, 10], [0, 1], { extrapolateRight: 'clamp' }),
           // Each scene settles in from a slight zoom, so cuts feel like camera moves, not slides.
           transform: `scale(${interpolate(frame, [0, 14], [1.05, 1], { extrapolateRight: 'clamp' })})`,
         }}

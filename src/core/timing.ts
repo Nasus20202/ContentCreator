@@ -45,3 +45,12 @@ export function windowOpacity(t: number, from: number, to: number | undefined, f
   const fout = to === undefined ? 1 : Math.min(1, Math.max(0, (to - t) / fade));
   return Math.min(fin, fout);
 }
+
+/**
+ * The cover moment: the first COVER_SEC of every video show only the opening image and its title
+ * (no fade from black, no captions, no credit), so the frame platforms use as the cover is clean.
+ * Buffer's `thumbnailOffset` (Instagram, TikTok) points at `post.coverAt`, default DEFAULT_COVER_AT;
+ * YouTube picks its own frame for Shorts, and frame 0 is now the same clean cover.
+ */
+export const COVER_SEC = 0.6;
+export const DEFAULT_COVER_AT = 0.3;

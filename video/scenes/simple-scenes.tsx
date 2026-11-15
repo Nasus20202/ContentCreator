@@ -113,7 +113,7 @@ export const FactCardScene: React.FC<{ sceneId: string; params: FactCardParams }
 
 export const ImageScene: React.FC<{ params: ImageParams }> = ({ params }) => {
   const accent = useAccent();
-  const { t, at, durationSec, props, fps } = useSceneTime();
+  const { t, at, durationSec, props, fps, inCover } = useSceneTime();
   const asset = props.assets[params.assetId];
   if (!asset) throw new Error(`Asset ${params.assetId} missing`);
   const k = ease(Math.min(1, t / Math.max(1, durationSec)));
@@ -183,7 +183,7 @@ export const ImageScene: React.FC<{ params: ImageParams }> = ({ params }) => {
           color={accent.hex}
         />
       )}
-      <Credit text={asset.credit} />
+      {!inCover && <Credit text={asset.credit} />}
     </AbsoluteFill>
   );
 };

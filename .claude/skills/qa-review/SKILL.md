@@ -15,6 +15,7 @@ description: Visually review a rendered episode via the frames extracted by `cc 
 - **Composition**: subject is visible and reasonably centred at the moment it is named; zoomed shots have a scale reference; the ground/horizon renders cleanly (no artefacts, wedges, or empty black regions).
 - **Pacing**: each chip appears while the matching sentence is spoken; scene ends are not frozen too long.
 - **Credits**: every `image` scene shows its credit line.
+- **Cover** (`cover.jpg`, `cover-grid.jpg` = the 3:4 crop Instagram/TikTok profile grids show): the opening image and the title read clearly inside the crop, no captions or credit, nothing cut off; it should not look like the neighbouring episodes in the queue (different image or colour). Fix with the hook's image/title or `post.coverAt`.
 
 ## Then
 
