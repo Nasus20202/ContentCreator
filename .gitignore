@@ -14,3 +14,4 @@ infra/postiz/backups/
 
 # generated piano samples (scripts/prepare-piano.ts, fetched on first render)
 assets/audio/piano/
+/build/

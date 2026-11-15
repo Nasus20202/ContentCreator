@@ -10,7 +10,7 @@ Read before working: `docs/quality-bar.md` (non-negotiable), the series file in 
 2. **Record decisions.** Any editorial choice (which events, hook, angle, rejected options, rewording after review) → `cc decision <episode> …` with rationale and alternatives. Channel-level choices → `cc decision --channel …`. If it isn't recorded, it didn't happen.
 3. **Never skip gates or edit records by hand.** Don't edit `episode.json`, `*.jsonl`, `factcheck.json`, `qa.json`, `render.json`, `publish.json`, or generated READMEs. Change inputs (`plan.json`, facts via CLI) and re-run stages.
 4. **Never approve or publish on your own.** `cc approve` is the human's step (`autoApprove` is false). Real publishing (`cc publish` without `--dry-run`) only when the user explicitly asks in this conversation.
-5. **Real imagery only.** Use computed sky/orbits or `cc asset` (NASA, with credits). No AI-generated images unless the user explicitly asks; they must then be recorded with `aiGenerated: true`.
+5. **Real imagery only.** Use computed sky/orbits or real photos with recorded provenance: `cc asset` (NASA library) or other sources (ESA, SpaceX, observatories, websites) **only when the image's licence allows reuse on a monetised channel**; record source URL, credit and licence. No AI-generated images unless the user explicitly asks; they must then be recorded with `aiGenerated: true`.
 6. **Look at what you made.** After `cc qa`, open the review frames with the Read tool and check them against `qa-review` before recording a verdict.
 
 ## Pipeline at a glance
