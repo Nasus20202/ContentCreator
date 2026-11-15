@@ -1,0 +1,116 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-15T02:41:14.337Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-17T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "0679ca40c9cee95ad3e10b3d431ca310cc1e65497805c64030dcc0ca70d03fdc",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af91be476c23bf1c753ff77",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "NASA's twin ESCAPADE spacecraft launched in November 2025, when Mars was on the far side of the Sun. Instead of waiting on the ground, they spent a year looping around a point about 1.6 million km from Earth, then came back. On 7 and 9 November 2026 each one swept past Earth (the second at about 1,000 km) and fired its engine for about 9 minutes to head for Mars. Arrival is planned for 7 and 9 September 2027, when they'll fly in formation to study how the solar wind strips Mars's atmosphere.\n\nSource:\nNASA Science, NASA's ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars: https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/\n\nImages: NASA / KSC / Blue Origin (launch, 13 Nov 2025), NASA / KSC / Kim Shiflett (the ESCAPADE spacecraft), NASA / JPL / USGS (Mars, Viking). Narration uses a synthetic voice.\n\n#space #nasa #mars #spaceexploration #escapade #missioncontrol",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-17T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/mission-control-2026-11-25-escapade-0679ca40.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Two NASA probes just slingshotted past Earth toward Mars 🔴",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af91be4e86a5789a6e5f10f",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Two NASA probes just slingshotted past Earth toward Mars 🔴\n\nNASA's twin ESCAPADE spacecraft launched in November 2025, when Mars was on the far side of the Sun. Instead of waiting on the ground, they spent a year looping around a point about 1.6 million km from Earth, then came back. On 7 and 9 November 2026 each one swept past Earth (the second at about 1,000 km) and fired its engine for about 9 minutes to head for Mars. Arrival is planned for 7 and 9 September 2027, when they'll fly in formation to study how the solar wind strips Mars's atmosphere.\n\nSource:\nNASA Science, NASA's ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars: https://science.nasa.gov/science-research/heliophysics/nasas-escapade-completes-powered-earth-flybys-now-en-route-to-mars/\n\nImages: NASA / KSC / Blue Origin (launch, 13 Nov 2025), NASA / KSC / Kim Shiflett (the ESCAPADE spacecraft), NASA / JPL / USGS (Mars, Viking). Narration uses a synthetic voice.\n\n#space #nasa #mars #spaceexploration #escapade #missioncontrol",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-17T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/mission-control-2026-11-25-escapade-0679ca40.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af91be5e5a113497ac06d81",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "Two NASA probes just slingshotted past Earth toward Mars 🔴\n\nNASA's twin ESCAPADE spacecraft launched in November 2025, when Mars was on the far side of the Sun. Instead of waiting on the ground, they spent a year looping around a point about 1.6 million km from Earth, then came back. On 7 and 9 November 2026 each one swept past Earth (the second at about 1,000 km) and fired its engine for about 9 minutes to head for Mars. Arrival is planned for 7 and 9 September 2027, when they'll fly in formation to study how the solar wind strips Mars's atmosphere.\n\nSource:\nNASA Science, NASA's ESCAPADE Completes Powered Earth Flybys, Now En Route to Mars\n\nImages: NASA / KSC / Blue Origin (launch, 13 Nov 2025), NASA / KSC / Kim Shiflett (the ESCAPADE spacecraft), NASA / JPL / USGS (Mars, Viking). Narration uses a synthetic voice.\n\n#space #nasa #mars #spaceexploration #escapade #missioncontrol",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-17T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/mission-control-2026-11-25-escapade-0679ca40.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/mission-control-2026-11-25-escapade-0679ca40.mp4"
+      }
+    }
+  ]
+}

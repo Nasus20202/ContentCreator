@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | one-shot-2026-11-21-artemis-earth |
 | Series | one-shot |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-15T00:47:16.001Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -101,6 +101,18 @@ Visual review by **claude** (2026-11-15T02:39:27.525Z): **pass** — Re-render f
 
 - 2026-11-15T02:39:28.288Z — **Krzysztof Nasuta** (human) approved video `5eb72ac9cc3573e0…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
+## Publishing
+
+### 2026-11-15T02:42:40.159Z · buffer · schedule for 2026-11-20T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/one-shot-2026-11-21-artemis-earth-5eb72ac9.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c2d76c23bf1c7540fa1 |  |
+| tiktok | submitted | 6af91c2de5a113497ac082b9 |  |
+| instagram | submitted | 6af91c2e76c23bf1c7540fd2 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -137,3 +149,5 @@ Visual review by **claude** (2026-11-15T02:39:27.525Z): **pass** — Re-render f
 | 2026-11-15 02:39:27 | claude | qa | qa.review | 4049d2c |
 | 2026-11-15 02:39:27 | claude | qa-passed | stage.advance | 4049d2c |
 | 2026-11-15 02:39:28 | human | approved | stage.advance | 4049d2c |
+| 2026-11-15 02:42:54 | claude | publish | publish.submit | 3501a48 |
+| 2026-11-15 02:42:54 | claude | published | stage.advance | 3501a48 |

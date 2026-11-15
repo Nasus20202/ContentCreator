@@ -1,0 +1,116 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-15T02:43:58.965Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-24T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "dc0ec63fb81be5b060fa21fb04660e8e99c7d0aa203ed87d272afab4510aad15",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af91c8ee86a5789a6e615ff",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Ranked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JHUAPL / SwRI (Pluto by New Horizons), NASA / MSFC (Pioneer 11 launch), NASA / ARC (Pioneer 10), NASA / JPL (Neptune by Voyager 2), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.\n\n#space #astronomy #science #top5 #voyager #nasa",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-24T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/cosmic-top-5-2026-11-24-farthest-dc0ec63f.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The 5 farthest things humans have ever built 🚀",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af91c8ec5b364e0622da56f",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The 5 farthest things humans have ever built 🚀\n\nRanked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service: https://ssd.jpl.nasa.gov/horizons/\nNASA Science, Pioneer 10 Sends Last Signal: https://science.nasa.gov/missions/pioneer/pioneer-10-sends-last-signal/\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JHUAPL / SwRI (Pluto by New Horizons), NASA / MSFC (Pioneer 11 launch), NASA / ARC (Pioneer 10), NASA / JPL (Neptune by Voyager 2), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.\n\n#space #astronomy #science #top5 #voyager #nasa",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-24T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/cosmic-top-5-2026-11-24-farthest-dc0ec63f.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af91c8fb9a106584c8278c2",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The 5 farthest things humans have ever built 🚀\n\nRanked by distance from Earth on 24 November 2026, computed with NASA/JPL Horizons:\n#5 New Horizons: about 10 billion km\n#4 Pioneer 11: 17.8 billion km\n#3 Pioneer 10: 21.2 billion km (launched 1972; the farthest until Voyager 1 caught it in 1998)\n#2 Voyager 2: 21.7 billion km\n#1 Voyager 1: 25.9 billion km, a full light-day away\n\nSources:\nNASA/JPL Horizons ephemeris service\nNASA Science, Pioneer 10 Sends Last Signal\nNASA Science, Voyager 1: What Is a Light-Day\n\nImages: NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network, Madrid), NASA / JHUAPL / SwRI (Pluto by New Horizons), NASA / MSFC (Pioneer 11 launch), NASA / ARC (Pioneer 10), NASA / JPL (Neptune by Voyager 2), NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch). Narration uses a synthetic voice.\n\n#space #astronomy #science #top5 #voyager #nasa",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-24T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/cosmic-top-5-2026-11-24-farthest-dc0ec63f.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/cosmic-top-5-2026-11-24-farthest-dc0ec63f.mp4"
+      }
+    }
+  ]
+}

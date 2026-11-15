@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | mission-control-2026-11-25-escapade |
 | Series | mission-control |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-15T01:04:55.034Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -101,6 +101,18 @@ Visual review by **claude** (2026-11-15T02:39:33.673Z): **pass** — Re-render f
 
 - 2026-11-15T02:39:34.441Z — **Krzysztof Nasuta** (human) approved video `0679ca40c9cee95a…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
+## Publishing
+
+### 2026-11-15T02:41:14.337Z · buffer · schedule for 2026-11-17T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/mission-control-2026-11-25-escapade-0679ca40.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91be476c23bf1c753ff77 |  |
+| tiktok | submitted | 6af91be4e86a5789a6e5f10f |  |
+| instagram | submitted | 6af91be5e5a113497ac06d81 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -144,3 +156,5 @@ Visual review by **claude** (2026-11-15T02:39:33.673Z): **pass** — Re-render f
 | 2026-11-15 02:39:33 | claude | qa | qa.review | 4049d2c |
 | 2026-11-15 02:39:33 | claude | qa-passed | stage.advance | 4049d2c |
 | 2026-11-15 02:39:34 | human | approved | stage.advance | 4049d2c |
+| 2026-11-15 02:41:41 | claude | publish | publish.submit | 3501a48 |
+| 2026-11-15 02:41:41 | claude | published | stage.advance | 3501a48 |

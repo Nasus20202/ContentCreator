@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | one-shot-2026-11-28-earth-smiled |
 | Series | one-shot |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-15T01:26:16.332Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -95,6 +95,18 @@ Visual review by **claude** (2026-11-15T02:39:38.200Z): **pass** — Re-render f
 
 - 2026-11-15T02:39:38.947Z — **Krzysztof Nasuta** (human) approved video `99f5cbba8c48fb9c…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
+## Publishing
+
+### 2026-11-15T02:43:18.502Z · buffer · schedule for 2026-11-22T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/one-shot-2026-11-28-earth-smiled-99f5cbba.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c57e86a5789a6e60f41 |  |
+| tiktok | submitted | 6af91c58c5b364e0622d980c |  |
+| instagram | submitted | 6af91c5876c23bf1c7541471 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -127,3 +139,5 @@ Visual review by **claude** (2026-11-15T02:39:38.200Z): **pass** — Re-render f
 | 2026-11-15 02:39:38 | claude | qa | qa.review | 4049d2c |
 | 2026-11-15 02:39:38 | claude | qa-passed | stage.advance | 4049d2c |
 | 2026-11-15 02:39:38 | human | approved | stage.advance | 4049d2c |
+| 2026-11-15 02:43:36 | claude | publish | publish.submit | 3501a48 |
+| 2026-11-15 02:43:36 | claude | published | stage.advance | 3501a48 |

@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | sky-school-moon-drift-eu-central |
 | Series | sky-school |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-15T00:59:04.117Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -105,6 +105,18 @@ Visual review by **claude** (2026-11-15T02:39:30.598Z): **pass** — Re-render f
 
 - 2026-11-15T02:39:31.362Z — **Krzysztof Nasuta** (human) approved video `b561b826bb4bfb09…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
+## Publishing
+
+### 2026-11-15T02:42:13.946Z · buffer · schedule for 2026-11-19T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-school-moon-drift-eu-central-b561b826.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c1d76c23bf1c7540e45 |  |
+| tiktok | submitted | 6af91c1eb9a106584c826ab4 |  |
+| instagram | submitted | 6af91c1fc5b364e0622d8f00 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -151,3 +163,5 @@ Visual review by **claude** (2026-11-15T02:39:30.598Z): **pass** — Re-render f
 | 2026-11-15 02:39:30 | claude | qa | qa.review | 4049d2c |
 | 2026-11-15 02:39:30 | claude | qa-passed | stage.advance | 4049d2c |
 | 2026-11-15 02:39:31 | human | approved | stage.advance | 4049d2c |
+| 2026-11-15 02:42:39 | claude | publish | publish.submit | 3501a48 |
+| 2026-11-15 02:42:39 | claude | published | stage.advance | 3501a48 |

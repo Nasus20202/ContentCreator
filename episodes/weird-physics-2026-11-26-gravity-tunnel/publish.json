@@ -1,0 +1,116 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-15T02:41:42.730Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-18T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "cbd4b358d13926e75b08837af69e082aa6ebeb8a5b10ab915e3eb372666ab897",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af91c02e5a113497ac07bfe",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "In the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface. With Earth's real density (a dense core), a 2015 study found the drop through the centre takes about 38 minutes instead.\n\nAm. J. Phys. 83, 231 (2015): https://pubs.aip.org/aapt/ajp/article-abstract/83/3/231/1057885\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.\n\n#physics #science #space #weirdphysics #gravity",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/weird-physics-2026-11-26-gravity-tunnel-cbd4b358.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Jump into a tunnel through Earth: 42 minutes to the other side 🕳️🌍",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af91c03b9a106584c82614c",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Jump into a tunnel through Earth: 42 minutes to the other side 🕳️🌍\n\nIn the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface. With Earth's real density (a dense core), a 2015 study found the drop through the centre takes about 38 minutes instead.\n\nAm. J. Phys. 83, 231 (2015): https://pubs.aip.org/aapt/ajp/article-abstract/83/3/231/1057885\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²): https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.\n\n#physics #science #space #weirdphysics #gravity",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/weird-physics-2026-11-26-gravity-tunnel-cbd4b358.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6af91c04c5b364e0622d8a41",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "Jump into a tunnel through Earth: 42 minutes to the other side 🕳️🌍\n\nIn the classic physics thought experiment (a straight tunnel, no air, no heat, a uniform non-rotating Earth), you'd fall through the planet in about 42 minutes, hitting about 28,000 km/h at the centre. The weird part: any straight tunnel between two points on the surface takes the same 42 minutes, even a short one between neighbouring cities. And it's exactly half the 84-minute orbit of a satellite skimming the surface. With Earth's real density (a dense core), a 2015 study found the drop through the centre takes about 38 minutes instead.\n\nAm. J. Phys. 83, 231 (2015)\n\nComputed from NASA's Earth Fact Sheet (radius 6,371 km, GM 398,600 km³/s²)\n\nImage: NASA / JSC (Apollo 17 'Blue Marble'). Narration uses a synthetic voice.\n\n#physics #science #space #weirdphysics #gravity",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-18T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/weird-physics-2026-11-26-gravity-tunnel-cbd4b358.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/weird-physics-2026-11-26-gravity-tunnel-cbd4b358.mp4"
+      }
+    }
+  ]
+}

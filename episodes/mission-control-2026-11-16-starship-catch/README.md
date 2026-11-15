@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | mission-control-2026-11-16-starship-catch |
 | Series | mission-control |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-15T02:04:35.033Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -104,6 +104,18 @@ Visual review by **claude** (2026-11-15T02:39:26.020Z): **pass** — Re-render f
 
 - 2026-11-15T02:39:26.776Z — **Krzysztof Nasuta** (human) approved video `29354dd634bb16a1…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
+## Publishing
+
+### 2026-11-15T02:40:48.967Z · buffer · schedule for 2026-11-16T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/mission-control-2026-11-16-starship-catch-29354dd6.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91bc7e5a113497ac0604f |  |
+| tiktok | submitted | 6af91bc8e86a5789a6e5e317 |  |
+| instagram | submitted | 6af91bc9e86a5789a6e5e34d |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -147,3 +159,5 @@ Visual review by **claude** (2026-11-15T02:39:26.020Z): **pass** — Re-render f
 | 2026-11-15 02:39:26 | claude | qa | qa.review | 4049d2c |
 | 2026-11-15 02:39:26 | claude | qa-passed | stage.advance | 4049d2c |
 | 2026-11-15 02:39:26 | human | approved | stage.advance | 4049d2c |
+| 2026-11-15 02:41:13 | claude | publish | publish.submit | 3501a48 |
+| 2026-11-15 02:41:13 | claude | published | stage.advance | 3501a48 |

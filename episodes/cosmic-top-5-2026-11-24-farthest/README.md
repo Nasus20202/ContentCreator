@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | cosmic-top-5-2026-11-24-farthest |
 | Series | cosmic-top-5 |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-15T01:02:03.101Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -130,6 +130,18 @@ Visual review by **claude** (2026-11-15T02:39:32.135Z): **pass** — Re-render f
 
 - 2026-11-15T02:39:32.904Z — **Krzysztof Nasuta** (human) approved video `dc0ec63fb81be5b0…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
+## Publishing
+
+### 2026-11-15T02:43:58.965Z · buffer · schedule for 2026-11-24T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/cosmic-top-5-2026-11-24-farthest-dc0ec63f.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c8ee86a5789a6e615ff |  |
+| tiktok | submitted | 6af91c8ec5b364e0622da56f |  |
+| instagram | submitted | 6af91c8fb9a106584c8278c2 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -223,3 +235,5 @@ Visual review by **claude** (2026-11-15T02:39:32.135Z): **pass** — Re-render f
 | 2026-11-15 02:39:32 | claude | qa | qa.review | 4049d2c |
 | 2026-11-15 02:39:32 | claude | qa-passed | stage.advance | 4049d2c |
 | 2026-11-15 02:39:32 | human | approved | stage.advance | 4049d2c |
+| 2026-11-15 02:44:31 | claude | publish | publish.submit | 3501a48 |
+| 2026-11-15 02:44:31 | claude | published | stage.advance | 3501a48 |

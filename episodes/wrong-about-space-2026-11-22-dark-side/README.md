@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | wrong-about-space-2026-11-22-dark-side |
 | Series | wrong-about-space |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-15T00:48:24.040Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -98,6 +98,18 @@ Visual review by **claude** (2026-11-15T02:39:29.058Z): **pass** — Re-render f
 
 - 2026-11-15T02:39:29.815Z — **Krzysztof Nasuta** (human) approved video `5888e9f4eb8f2099…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
 
+## Publishing
+
+### 2026-11-15T02:42:55.516Z · buffer · schedule for 2026-11-21T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-about-space-2026-11-22-dark-side-5888e9f4.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c44e5a113497ac0866a |  |
+| tiktok | submitted | 6af91c44e86a5789a6e607df |  |
+| instagram | submitted | 6af91c45e86a5789a6e60808 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -148,3 +160,5 @@ Visual review by **claude** (2026-11-15T02:39:29.058Z): **pass** — Re-render f
 | 2026-11-15 02:39:29 | claude | qa | qa.review | 4049d2c |
 | 2026-11-15 02:39:29 | claude | qa-passed | stage.advance | 4049d2c |
 | 2026-11-15 02:39:29 | human | approved | stage.advance | 4049d2c |
+| 2026-11-15 02:43:17 | claude | publish | publish.submit | 3501a48 |
+| 2026-11-15 02:43:17 | claude | published | stage.advance | 3501a48 |
