@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | wrong-about-space-iss-gravity |
 | Series | wrong-about-space |
-| Stage | **rendered** |
+| Stage | **approved** |
 | Created | 2026-11-15T01:30:24.546Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -96,6 +96,12 @@ Images: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floati
 | true-peak | ✅ | -1.5 dBFS |
 | no-black-gaps | ✅ | none |
 
+Visual review by **claude** (2026-11-15T10:52:44.434Z): **pass** — Re-render with the music bed restored. Technical checks all pass (-14.1 LUFS, -1.5 dBTP, 36.1 s). Frames: hook (NASA/JSC water-drop photo) title + WRONG chip clear, credit visible; 90% number card legible, NASA source shown; ISS scenes: FACT/28,000 km/h chips above the station, captions clear of platform UI, credit on every image frame; outro CTA and sources fine. Cover: rendered before the clean-cover change, so it still has the first caption and credit (same as the previously approved version); 3:4 grid crop keeps title and drop. Audio itself not judged from stills; the owner approved after watching.
+
+## Approvals
+
+- 2026-11-15T10:52:45.226Z — **Krzysztof** (human) approved video `723d9478a52947a0…`
+
 ## Publishing
 
 ### 2026-11-15T02:43:37.712Z · buffer · schedule for 2026-11-23T17:00:00.000Z
@@ -121,6 +127,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/wrong-
 ### 2026-11-15T09:03:48.566Z · buffer · reschedule for 2026-11-22T17:00:00.000Z
 
 Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/iss-gravity-67c1ef4a.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6af91c6cb9a106584c82762d |  |
+| tiktok | submitted | 6af91c6d76c23bf1c7541740 |  |
+| instagram | submitted | 6af91c6ee86a5789a6e6137a |  |
+
+### 2026-11-15T10:52:55.871Z · buffer · reschedule for 2026-11-22T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/iss-gravity-723d9478.mp4
 
 | Platform | Status | Post id | Error |
 | --- | --- | --- | --- |
@@ -170,3 +186,8 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/w
 | 2026-11-15 08:04:11 | claude | visuals | decision.record | 0d80a88 |
 | 2026-11-15 08:41:32 | claude | rendered | episode.rename | 0d80a88 |
 | 2026-11-15 09:03:51 | claude | publish | publish.reschedule | 0d80a88 |
+| 2026-11-15 10:50:52 | pipeline | qa | qa.automated | 1749707 |
+| 2026-11-15 10:52:44 | claude | qa | qa.review | 1749707 |
+| 2026-11-15 10:52:44 | claude | qa-passed | stage.advance | 1749707 |
+| 2026-11-15 10:52:45 | human | approved | stage.advance | 1749707 |
+| 2026-11-15 10:52:58 | claude | publish | publish.reschedule | 1749707 |

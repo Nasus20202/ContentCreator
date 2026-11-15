@@ -61,3 +61,5 @@
 {"ts":"2026-11-15T08:24:33.537Z","actor":"claude","stage":"qa-passed","action":"stage.advance","details":{"from":"rendered","to":"qa-passed","hashes":{}},"gitSha":"0d80a88"}
 {"ts":"2026-11-15T08:41:14.780Z","actor":"claude","stage":"qa-passed","action":"episode.rename","details":{"from":"mission-control-2026-11-16-starship-catch","to":"mission-control-2026-11-14-starship-catch","planHash":{"from":"84e53de87e1acf5e","to":"71af0b61b9aa756b"}},"gitSha":"0d80a88"}
 {"ts":"2026-11-15T09:01:06.241Z","actor":"claude","stage":"publish","action":"publish.reschedule","details":{"from":"2026-11-15T17:00:00.000Z","to":"2026-11-15T17:00:00.000Z","targets":["youtube:submitted","tiktok:submitted","instagram:submitted"]},"gitSha":"0d80a88"}
+{"ts":"2026-11-15T10:50:37.874Z","actor":"human","stage":"approved","action":"stage.advance","details":{"from":"qa-passed","to":"approved","hashes":{}},"gitSha":"1749707"}
+{"ts":"2026-11-15T10:51:58.428Z","actor":"claude","stage":"publish","action":"publish.reschedule","details":{"from":"2026-11-15T17:00:00.000Z","to":"2026-11-15T17:00:00.000Z","targets":["youtube:submitted","tiktok:submitted","instagram:submitted"]},"gitSha":"1749707"}

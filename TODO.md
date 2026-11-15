@@ -6,15 +6,7 @@ lives in the records (`pnpm -s cc status`); this file is for what a human or the
 
 ## Needs the owner
 
-- [ ] **Approve the Starship catch re-render (real Flight 15 footage) before Sun 15 Nov 17:00 UTC.** The Buffer post
-      still points at the old photo version. Owner: watch `episodes/mission-control/2026-11-14-starship-catch/build/video.mp4`,
-      then `pnpm -s cc approve mission-control-2026-11-14-starship-catch --by "<name>"`. Agent then:
-      `pnpm -s cc publish reschedule mission-control-2026-11-14-starship-catch --replace-video`.
-      (Its posts currently carry the approved photo version, re-hosted in the assets repo.)
-- [ ] **ISS gravity re-render (music fixed): record QA and approve before Sun 22 Nov.** The QA verdict could not be
-      recorded by Claude (permission classifier). Owner: `pnpm -s cc qa wrong-about-space-iss-gravity --review pass --actor human --notes "…"`,
-      then `pnpm -s cc approve wrong-about-space-iss-gravity --by "<name>"`. Agent then:
-      `pnpm -s cc publish reschedule wrong-about-space-iss-gravity --replace-video`.
+_Nothing waiting on approval._
 
 ## Publishing queue (Buffer: 10 scheduled posts per channel; keep the next 10 days filled)
 
@@ -43,6 +35,9 @@ lives in the records (`pnpm -s cc status`); this file is for what a human or the
 
 ## Done
 
+- [x] 2026-11-15 Starship catch (footage version) and ISS gravity (music fixed) approved by the owner and swapped
+      into their Buffer posts (15 and 22 Nov); Buffer re-checked: 30 posts, 0 differences. Fixed the media-cache
+      upload (`mktree --missing`) that failed when a series folder already held videos the blobless cache lacks.
 - [x] 2026-11-15 Connect Instagram to Buffer (target live in `channel.config.json`, posting since 14 Nov).
 - [x] 2026-11-15 Episodes grouped by series (`episodes/<series>/<slug>/`), renamed to the date-only-when-bound
       convention; the 8 scheduled posts for 16–24 Nov re-pointed at re-hosted (identical) videos.

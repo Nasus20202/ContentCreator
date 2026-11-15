@@ -2,7 +2,7 @@
   "id": "mission-control-2026-11-14-starship-catch",
   "series": "mission-control",
   "createdAt": "2026-11-15T02:04:35.033Z",
-  "stage": "qa-passed",
+  "stage": "approved",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -16,5 +16,12 @@
     "narration": "89b12131f2131726",
     "video": "986f8688c322ecb112882f2797a8081ee02a52e2d85dc6868beb5e57d389bfc6"
   },
-  "approvals": []
+  "approvals": [
+    {
+      "by": "Krzysztof",
+      "actor": "human",
+      "at": "2026-11-15T10:50:37.873Z",
+      "videoSha256": "986f8688c322ecb112882f2797a8081ee02a52e2d85dc6868beb5e57d389bfc6"
+    }
+  ]
 }
