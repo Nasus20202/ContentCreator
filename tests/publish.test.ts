@@ -147,6 +147,8 @@ describe('GitBranchHost', () => {
     expect(calls.find((c) => c[1] === 'fetch')).toContain('--filter=blob:none');
     const git = calls.filter((c) => c[0] === `--git-dir=${fresh}` && c[1] !== 'config').map((c) => c[1]);
     expect(git).toEqual(['fetch', 'rev-parse', 'hash-object', 'mktree', 'mktree', 'commit-tree', 'push', 'update-ref']);
+    // sibling videos are not in the blobless cache, so mktree must not demand them
+    expect(calls.filter((c) => c[1] === 'mktree').every((c) => c.includes('--missing'))).toBe(true);
     expect(calls.find((c) => c[1] === 'commit-tree')).not.toContain('-p'); // first upload: root commit
     expect(calls.find((c) => c[1] === 'push')).toEqual([
       `--git-dir=${fresh}`,
