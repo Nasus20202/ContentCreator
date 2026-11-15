@@ -13,7 +13,19 @@ import path from 'node:path';
 import { Episode } from '../src/core/episode';
 import { ffmpeg, loudness, synthesizePad, type MusicStyle } from '../src/render/media';
 
-const STYLES: MusicStyle[] = ['orbit', 'nebula', 'meteor', 'piano', 'piano-pulse', 'piano-air'];
+const STYLES: MusicStyle[] = [
+  'orbit',
+  'nebula',
+  'meteor',
+  'pulse',
+  'telemetry',
+  'lab',
+  'acoustic',
+  'lofi',
+  'piano',
+  'piano-pulse',
+  'piano-air',
+];
 
 function arg(name: string, fallback: string): string {
   const i = process.argv.indexOf(`--${name}`);

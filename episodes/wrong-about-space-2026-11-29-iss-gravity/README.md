@@ -6,7 +6,7 @@
 | --- | --- |
 | Episode | wrong-about-space-2026-11-29-iss-gravity |
 | Series | wrong-about-space |
-| Stage | **voiced** |
+| Stage | **rendered** |
 | Created | 2026-11-15T01:30:24.546Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | — |
@@ -73,6 +73,23 @@ Images: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floati
 | iss | [iss056e201248](https://images.nasa.gov/details/iss056e201248) | NASA / JSC | NASA media usage guidelines (not copyrighted unless noted) | no |
 | floating | [iss062e004933](https://images.nasa.gov/details/iss062e004933) | NASA / JSC | NASA media usage guidelines (not copyrighted unless noted) | no |
 
+## Render
+
+36.1 s, 1080×1920@30, sha256 `aefd384ba261b7a3…`, rendered 2026-11-15T01:32:38.234Z in 40 s.
+
+## QA
+
+| Check | OK | Detail |
+| --- | --- | --- |
+| resolution | ✅ | 1080x1920 |
+| video-codec | ✅ | h264 |
+| audio-present | ✅ | aac |
+| duration | ✅ | 36.10 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 36.10 s vs timeline 36.07 s |
+| loudness | ✅ | -14.2 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.3 dBFS |
+| no-black-gaps | ✅ | none |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -95,3 +112,6 @@ Images: NASA / JSC (ISS from a departing Soyuz, 2018; Jessica Meir with a floati
 | 2026-11-15 01:31:09 | claude | factchecked | stage.advance | 1e0af98 |
 | 2026-11-15 01:31:57 | pipeline | voiced | stage.advance | 1e0af98 |
 | 2026-11-15 01:31:57 | pipeline | voiced | voice.synthesize | 1e0af98 |
+| 2026-11-15 01:32:38 | pipeline | rendered | stage.advance | 8f54726 |
+| 2026-11-15 01:32:38 | pipeline | rendered | render.video | 8f54726 |
+| 2026-11-15 01:32:45 | pipeline | qa | qa.automated | 8f54726 |

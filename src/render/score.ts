@@ -9,7 +9,7 @@
  * fades, normalises and writes the result.
  */
 
-export const SCORE_STYLES = ['orbit', 'nebula', 'meteor'] as const;
+export const SCORE_STYLES = ['orbit', 'nebula', 'meteor', 'pulse', 'telemetry', 'lab', 'acoustic', 'lofi'] as const;
 export type ScoreStyle = (typeof SCORE_STYLES)[number];
 export const isScoreStyle = (s: string): s is ScoreStyle => (SCORE_STYLES as readonly string[]).includes(s);
 
@@ -48,7 +48,18 @@ const PROGRESSIONS: Record<string, Chord[]> = {
   ],
 };
 
+/** The melodic voice: sampled piano, or one of the synthesised instruments (no samples needed). */
+export type Instrument = 'piano' | 'guitar' | 'marimba' | 'rhodes' | 'pluck' | 'saw';
+
 type Recipe = {
+  /** Defaults to piano. */
+  instrument?: Instrument;
+  /** Clap/snare on these beats of the bar (full groove only). */
+  clap?: number[];
+  clapGain?: number;
+  /** Closed hi-hat steps per beat (full groove only); off-beats are accented. */
+  hat?: number;
+  hatGain?: number;
   bpm: number;
   /** Progressions the seed picks from. */
   progressions: (keyof typeof PROGRESSIONS)[];
@@ -172,6 +183,165 @@ const RECIPE: Record<ScoreStyle, Recipe> = {
     reverb: 0.26,
     riserGain: 0.05,
   },
+  // Cosmic Top 5: electronic and punchy, a countdown energy. Synth plucks in 16ths, four-on-the-floor.
+  pulse: {
+    instrument: 'pluck',
+    bpm: 118,
+    progressions: ['spark', 'lift'],
+    barsPerChord: 1,
+    arp: [
+      [0, 2, 4, 2, 5, 2, 4, 2, 0, 3, 5, 3, 6, 3, 5, 3],
+      [0, 4, 7, 4, 2, 6, 4, 6, 0, 4, 7, 4, 3, 5, 6, 5],
+    ],
+    arpStepsPerBeat: 4,
+    arpOctave: 0,
+    arpGain: 0.16,
+    arpRing: 0.22,
+    chordGain: 0.1,
+    bassGain: 0.3,
+    subGain: 0.09,
+    padGain: 0.022,
+    kick: [0, 1, 2, 3],
+    kickHook: [0, 2],
+    kickGain: 0.4,
+    shaker: 0,
+    shakerGain: 0,
+    clap: [1, 3],
+    clapGain: 0.16,
+    hat: 2,
+    hatGain: 0.06,
+    pump: 0.45,
+    motifs: [{ at: [0, 0.5, 1.5, 2, 3], notes: [4, 3, 2, 3, 4] }],
+    motifGain: 0.15,
+    reverb: 0.22,
+    riserGain: 0.06,
+  },
+  // Mission Control: dark synthwave. Saw arpeggio over a minor progression, a steady pulse, gated feel.
+  telemetry: {
+    instrument: 'saw',
+    bpm: 100,
+    progressions: ['voyage'],
+    barsPerChord: 1,
+    arp: [
+      [0, 1, 2, 3, 4, 3, 2, 1, 0, 1, 2, 3, 4, 3, 2, 1],
+      [0, 2, 4, 6, 0, 2, 4, 6, 1, 3, 5, 7, 1, 3, 5, 7],
+    ],
+    arpStepsPerBeat: 4,
+    arpOctave: 0,
+    arpGain: 0.12,
+    arpRing: 0.18,
+    chordGain: 0.07,
+    bassGain: 0.3,
+    subGain: 0.1,
+    padGain: 0.035,
+    kick: [0, 2],
+    kickHook: [0],
+    kickGain: 0.38,
+    shaker: 0,
+    shakerGain: 0,
+    clap: [1, 3],
+    clapGain: 0.12,
+    hat: 4,
+    hatGain: 0.035,
+    pump: 0.4,
+    motifs: [{ at: [0, 1.5, 3], notes: [3, 2, 1] }],
+    motifGain: 0.12,
+    reverb: 0.36,
+    riserGain: 0.07,
+  },
+  // Weird Physics: playful marimba with a bouncy groove.
+  lab: {
+    instrument: 'marimba',
+    bpm: 112,
+    progressions: ['lift', 'spark'],
+    barsPerChord: 1,
+    arp: [
+      [0, 2, 4, 1, 3, 5, 2, 4],
+      [0, 4, 2, 5, 3, 6, 4, 7],
+    ],
+    arpStepsPerBeat: 2,
+    arpOctave: 0,
+    arpGain: 0.3,
+    arpRing: 0.6,
+    chordGain: 0.14,
+    bassGain: 0.32,
+    subGain: 0.07,
+    padGain: 0.02,
+    kick: [0, 2.5],
+    kickHook: [0],
+    kickGain: 0.3,
+    shaker: 2,
+    shakerGain: 0.05,
+    clap: [1, 3],
+    clapGain: 0.08,
+    pump: 0.2,
+    motifs: [{ at: [0, 0.5, 0.75, 1.5, 2.5], notes: [4, 5, 4, 2, 3] }],
+    motifGain: 0.22,
+    reverb: 0.2,
+    riserGain: 0.04,
+  },
+  // One Shot: intimate fingerpicked guitar, no drums. Lets the photo breathe.
+  acoustic: {
+    instrument: 'guitar',
+    bpm: 84,
+    progressions: ['heartland', 'lift'],
+    barsPerChord: 1,
+    arp: [
+      [0, 2, 1, 3, 0, 2, 1, 3],
+      [0, 3, 2, 3, 1, 3, 2, 3],
+    ],
+    arpStepsPerBeat: 2,
+    arpOctave: -12,
+    arpGain: 0.32,
+    arpRing: 2.2,
+    chordGain: 0.12,
+    bassGain: 0.3,
+    subGain: 0.03,
+    padGain: 0.018,
+    kick: [],
+    kickHook: [],
+    kickGain: 0,
+    shaker: 0,
+    shakerGain: 0,
+    pump: 0,
+    motifs: [{ at: [0, 1, 2.5], notes: [4, 5, 3] }],
+    motifGain: 0.2,
+    reverb: 0.3,
+    riserGain: 0.025,
+  },
+  // Wrong About Space: lo-fi electric piano, laid-back drums.
+  lofi: {
+    instrument: 'rhodes',
+    bpm: 84,
+    progressions: ['voyage', 'heartland'],
+    barsPerChord: 1,
+    arp: [
+      [0, 2, 3, 2, 1, 3, 2, 3],
+      [0, 3, 1, 2, 0, 3, 1, 2],
+    ],
+    arpStepsPerBeat: 2,
+    arpOctave: 0,
+    arpGain: 0.2,
+    arpRing: 1.2,
+    chordGain: 0.2,
+    bassGain: 0.3,
+    subGain: 0.08,
+    padGain: 0.02,
+    kick: [0, 1.75, 2.5],
+    kickHook: [0],
+    kickGain: 0.34,
+    shaker: 0,
+    shakerGain: 0,
+    clap: [1, 3],
+    clapGain: 0.11,
+    hat: 2,
+    hatGain: 0.04,
+    pump: 0.22,
+    motifs: [{ at: [0, 0.5, 2, 3], notes: [3, 2, 1, 2] }],
+    motifGain: 0.16,
+    reverb: 0.3,
+    riserGain: 0.04,
+  },
 };
 
 export interface PianoNote {
@@ -196,6 +366,7 @@ export interface ScoreInput {
 export function scoreNotes(style: ScoreStyle, transpose: number): number[] {
   const r = RECIPE[style];
   const out = new Set<number>();
+  if ((r.instrument ?? 'piano') !== 'piano') return [];
   for (const name of r.progressions) {
     for (const c of PROGRESSIONS[name]) {
       out.add(c.bass + transpose);
@@ -248,7 +419,15 @@ export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
   const section = (t: number): 'hook' | 'body' | 'outro' | 'end' =>
     t >= finalAt ? 'end' : t < hookEnd - 1e-3 ? 'hook' : t >= outroStart - 1e-3 ? 'outro' : 'body';
 
-  const piano = (t0: number, midi: number, gain: number, panPos: number, ring = Infinity, busL = melL, busR = melR) => {
+  const pianoNote = (
+    t0: number,
+    midi: number,
+    gain: number,
+    panPos: number,
+    ring = Infinity,
+    busL = melL,
+    busR = melR,
+  ) => {
     const note = input.piano(midi);
     const [gl, gr] = pan(panPos);
     const start = at(t0);
@@ -263,6 +442,107 @@ export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
       const s = env * gain;
       busL[i] += (note.left[idx] * (1 - fr) + note.left[idx + 1] * fr) * s * gl;
       busR[i] += (note.right[idx] * (1 - fr) + note.right[idx + 1] * fr) * s * gr;
+    }
+  };
+
+  /** Synthesised voices: computed straight into the bus, so new instruments need no samples. */
+  const synthNote = (
+    t0: number,
+    midi: number,
+    gain: number,
+    panPos: number,
+    ring = Infinity,
+    busL = melL,
+    busR = melR,
+  ) => {
+    const inst = r.instrument ?? 'piano';
+    const f = midiHz(midi);
+    const [gl, gr] = pan(panPos);
+    const s0 = at(t0);
+    const maxLen = inst === 'guitar' ? 3.5 : inst === 'rhodes' ? 2.6 : inst === 'marimba' ? 1.4 : 1.2;
+    const len = Math.min(maxLen, Number.isFinite(ring) ? ring + 0.25 : maxLen);
+    const n1 = Math.min(n, s0 + at(len));
+    const rel = (t: number) => (Number.isFinite(ring) && t > ring ? Math.max(0, 1 - (t - ring) / 0.25) : 1);
+    if (inst === 'guitar') {
+      // Karplus–Strong plucked string: a noise burst in a damped delay line.
+      const d = Math.max(2, Math.round(sr / f));
+      const buf = new Float32Array(d);
+      let lp = 0;
+      for (let k = 0; k < d; k++) {
+        lp = 0.82 * lp + 0.18 * noise();
+        buf[k] = lp;
+      }
+      let idx = 0;
+      const damp = 0.996 - Math.min(0.01, f / 200000);
+      for (let i = s0; i < n1; i++) {
+        const t = (i - s0) / sr;
+        const cur = buf[idx];
+        const next = buf[(idx + 1) % d];
+        buf[idx] = damp * 0.5 * (cur + next);
+        idx = (idx + 1) % d;
+        const v = cur * gain * 1.6 * rel(t);
+        busL[i] += v * gl;
+        busR[i] += v * gr;
+      }
+      return;
+    }
+    for (let i = s0; i < n1; i++) {
+      const t = (i - s0) / sr;
+      const ph = 2 * Math.PI * f * t;
+      let v = 0;
+      if (inst === 'marimba') {
+        // Modal bar: fundamental plus the bar's inharmonic overtone, fast decays, a soft mallet attack.
+        v =
+          Math.sin(ph) * Math.exp(-t / 0.45) +
+          0.35 * Math.sin(ph * 3.93) * Math.exp(-t / 0.08) +
+          0.12 * Math.sin(ph * 9.2) * Math.exp(-t / 0.02);
+        v *= Math.min(1, t / 0.002);
+      } else if (inst === 'rhodes') {
+        // FM electric piano: the bell index decays fast, a slow tremolo on top.
+        const idx = 1.8 * Math.exp(-t / 0.25) + 0.25;
+        v = Math.sin(ph + idx * Math.sin(ph)) * Math.exp(-t / 1.1) * Math.min(1, t / 0.003);
+        v *= 1 + 0.12 * Math.sin(2 * Math.PI * 4.5 * t);
+      } else {
+        // Band-limited sawtooth (additive), with a decaying brightness for the pluck.
+        const bright = inst === 'pluck' ? 2 + 14 * Math.exp(-t / 0.06) : 3 + 6 * Math.exp(-t / 0.15);
+        const H = Math.min(16, Math.floor(Math.min(bright, 18000 / f)));
+        for (let h = 1; h <= H; h++) v += Math.sin(ph * h) / h;
+        v *= 0.5 * (inst === 'pluck' ? Math.exp(-t / 0.16) : Math.exp(-t / 0.45)) * Math.min(1, t / 0.003);
+      }
+      v *= gain * rel(t);
+      busL[i] += v * gl;
+      busR[i] += v * gr;
+    }
+  };
+  const piano = (r.instrument ?? 'piano') === 'piano' ? pianoNote : synthNote;
+
+  const clap = (t0: number, gain: number) => {
+    const s0 = at(t0);
+    let bp1 = 0;
+    let bp2 = 0;
+    for (let i = s0; i < Math.min(n, s0 + at(0.25)); i++) {
+      const t = (i - s0) / sr;
+      // Three quick bursts then a tail: the classic hand-clap envelope.
+      const env = (t < 0.03 ? 0.6 + 0.4 * Math.abs(Math.sin(t * 320)) : 1) * Math.exp(-t / 0.06);
+      const x = noise();
+      bp1 += 0.35 * (x - bp1);
+      bp2 += 0.35 * (bp1 - bp2);
+      const v = (bp1 - bp2) * env * gain * 2.2;
+      drL[i] += v * 0.9;
+      drR[i] += v;
+    }
+  };
+  const hat = (t0: number, gain: number) => {
+    const s0 = at(t0);
+    let prev = 0;
+    for (let i = s0; i < Math.min(n, s0 + at(0.05)); i++) {
+      const t = (i - s0) / sr;
+      const x = noise();
+      const hp = x - prev;
+      prev = x;
+      const v = hp * Math.exp(-t / 0.012) * gain;
+      drL[i] += v;
+      drR[i] += v * 0.8;
     }
   };
 
@@ -409,6 +689,13 @@ export function renderScore(input: ScoreInput): [Float32Array, Float32Array] {
       const kicksHere = sec === 'hook' ? r.kickHook : r.kick;
       for (const k of kicksHere) kick(t0 + k * beat, r.kickGain * (k === 0 ? 1 : 0.8));
       for (const k of kicksHere) sub(t0 + k * beat, chord.bass - 12, beat * 0.9, r.subGain);
+      if (sec === 'body' && r.clap) for (const c of r.clap) clap(t0 + c * beat + human(b * 23 + c), r.clapGain ?? 0.1);
+      if (sec === 'body' && r.hat) {
+        for (let s = 0; s < 4 * r.hat; s++) {
+          const off = s % 2 === 1;
+          hat(t0 + (s * beat) / r.hat + human(b * 29 + s), (r.hatGain ?? 0.04) * (off ? 1 : 0.6));
+        }
+      }
       if (sec === 'body' && r.shaker > 0) {
         for (let s = 0; s < 4 * r.shaker; s++) {
           const off = s % 2 === 1;

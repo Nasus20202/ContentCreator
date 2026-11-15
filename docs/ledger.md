@@ -27,4 +27,4 @@
 | [sky-tonight-2026-12-13-eu-central](../episodes/sky-tonight-2026-12-13-eu-central/README.md) | sky-tonight | published | Tonight: the Geminids peak, and the Moon stays away 🌠 | — | — |
 | [weird-physics-2026-11-26-gravity-tunnel](../episodes/weird-physics-2026-11-26-gravity-tunnel/README.md) | weird-physics | qa-passed | Jump into a tunnel through Earth: 42 minutes to the other side 🕳️🌍 | — | — |
 | [wrong-about-space-2026-11-22-dark-side](../episodes/wrong-about-space-2026-11-22-dark-side/README.md) | wrong-about-space | qa-passed | The Moon has no dark side. Here's the photo that proves it 🌗 | — | — |
-| [wrong-about-space-2026-11-29-iss-gravity](../episodes/wrong-about-space-2026-11-29-iss-gravity/README.md) | wrong-about-space | voiced | Astronauts don't float because there's no gravity 🧑‍🚀 | — | — |
+| [wrong-about-space-2026-11-29-iss-gravity](../episodes/wrong-about-space-2026-11-29-iss-gravity/README.md) | wrong-about-space | rendered | Astronauts don't float because there's no gravity 🧑‍🚀 | — | — |

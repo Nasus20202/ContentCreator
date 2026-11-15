@@ -348,7 +348,21 @@ export const Plan = z.object({
      * Bed character; see RECIPE in src/render/media.ts. Optional rather than defaulted so adding it
      * does not change the plan hash of episodes that predate it.
      */
-    style: z.enum(['piano', 'piano-pulse', 'piano-air', 'orbit', 'nebula', 'meteor']).optional(),
+    style: z
+      .enum([
+        'piano',
+        'piano-pulse',
+        'piano-air',
+        'orbit',
+        'nebula',
+        'meteor',
+        'pulse',
+        'telemetry',
+        'lab',
+        'acoustic',
+        'lofi',
+      ])
+      .optional(),
     /** Bed variant: timing/velocity seed and transposition in semitones. Optional, same reason as style. */
     seed: z.number().int().min(0).max(999).optional(),
     transpose: z.number().int().min(-6).max(6).optional(),
