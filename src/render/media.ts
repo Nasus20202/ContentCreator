@@ -1,6 +1,5 @@
 /** ffmpeg / ffprobe wrappers. Both binaries are required on PATH (see docs/setup.md). */
 import { execFile } from 'node:child_process';
-import path from 'node:path';
 import fs from 'node:fs/promises';
 import { promisify } from 'node:util';
 import { z } from 'zod';
