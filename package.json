@@ -29,7 +29,7 @@
     "dotenv": "^18.0.10",
     "esbuild": "0.28.2",
     "kokoro-js": "^1.2.1",
-    "puppeteer-core": "25.17.0",
+    "puppeteer-core": "25.18.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "remotion": "4.0.544",
