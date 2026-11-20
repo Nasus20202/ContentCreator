@@ -13,6 +13,11 @@ concurrency:
 permissions:
   contents: read
 
+env:
+  # onnxruntime-node's postinstall downloads CUDA binaries that now return 404;
+  # CI only needs the CPU runtime.
+  ONNXRUNTIME_NODE_INSTALL_CUDA: skip
+
 jobs:
   check:
     name: Format · lint · typecheck · test
