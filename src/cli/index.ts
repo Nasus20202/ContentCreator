@@ -551,11 +551,21 @@ pub
   .option('--at <iso>', 'schedule time (ISO 8601, with --mode schedule)')
   .option('--platforms <list>', 'subset, e.g. youtube,tiktok')
   .option('--dry-run', 'build and record payloads without uploading or calling Buffer')
+  .addOption(
+    new Option('--cover-at <seconds>', 'cover frame time, overriding post.coverAt (older renders)').argParser(Number),
+  )
   .addOption(actorOpt())
   .action(
     async (
       id: string,
-      o: { mode?: 'now' | 'schedule' | 'draft'; at?: string; platforms?: string; dryRun?: boolean; actor: Actor },
+      o: {
+        mode?: 'now' | 'schedule' | 'draft';
+        at?: string;
+        platforms?: string;
+        dryRun?: boolean;
+        coverAt?: number;
+        actor: Actor;
+      },
     ) => {
       const ep = Episode.load(id);
       const config = loadConfig();
@@ -580,7 +590,12 @@ pub
             post: (input) => client.createPost(input),
           },
           buildPayload: (plan, t, media) =>
-            buildCreatePostInput(plan, t, media, { mode, date: o.at, aiDisclosure: config.publishing.aiDisclosure }),
+            buildCreatePostInput(plan, t, media, {
+              mode,
+              date: o.at,
+              aiDisclosure: config.publishing.aiDisclosure,
+              coverAt: o.coverAt,
+            }),
         },
         o.actor,
       );

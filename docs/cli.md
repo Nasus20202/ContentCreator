@@ -251,14 +251,16 @@ Options:
 Usage: cc publish episode [options] <episode>
 
 Options:
-  --mode <mode>       (choices: "now", "schedule", "draft")
-  --at <iso>          schedule time (ISO 8601, with --mode schedule)
-  --platforms <list>  subset, e.g. youtube,tiktok
-  --dry-run           build and record payloads without uploading or calling
-                      Buffer
-  --actor <actor>     who performs this step (choices: "pipeline", "claude",
-                      "human", default: "pipeline")
-  -h, --help          display help for command
+  --mode <mode>         (choices: "now", "schedule", "draft")
+  --at <iso>            schedule time (ISO 8601, with --mode schedule)
+  --platforms <list>    subset, e.g. youtube,tiktok
+  --dry-run             build and record payloads without uploading or calling
+                        Buffer
+  --cover-at <seconds>  cover frame time, overriding post.coverAt (older
+                        renders)
+  --actor <actor>       who performs this step (choices: "pipeline", "claude",
+                        "human", default: "pipeline")
+  -h, --help            display help for command
 ```
 
 ## cc publish reschedule

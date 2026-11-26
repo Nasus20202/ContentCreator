@@ -204,6 +204,15 @@ describe('replaceVideoUrl', () => {
     expect(offset(plan({ post: { ...plan().post, coverAt: 1.25 } }))).toBe(1250);
   });
 
+  it('lets a publish override the cover frame time', () => {
+    const input = buildCreatePostInput(plan(), { platform: 'instagram', channelId: 'ig' }, media, {
+      mode: 'now',
+      aiDisclosure: false,
+      coverAt: 1,
+    });
+    expect((input.assets as { video: { metadata: object } }[])[0].video.metadata).toEqual({ thumbnailOffset: 1000 });
+  });
+
   it('keeps assets without a video untouched', () => {
     expect(replaceVideoUrl({ assets: [{ image: { url: 'a.jpg' } }] }, 'x.mp4').assets).toEqual([
       { image: { url: 'a.jpg' } },
