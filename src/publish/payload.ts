@@ -10,6 +10,8 @@ export interface PostOptions {
   /** Required for mode=schedule (ISO 8601). */
   date?: string;
   aiDisclosure: boolean;
+  /** Overrides plan.post.coverAt, e.g. for an older render whose cover frame sits elsewhere. */
+  coverAt?: number;
 }
 
 /** YouTube category "Science & Technology". */
@@ -83,7 +85,7 @@ export function buildCreatePostInput(
       {
         video: {
           url: media.url,
-          metadata: { thumbnailOffset: Math.round((plan.post.coverAt ?? DEFAULT_COVER_AT) * 1000) },
+          metadata: { thumbnailOffset: Math.round((opts.coverAt ?? plan.post.coverAt ?? DEFAULT_COVER_AT) * 1000) },
         },
       },
     ],
