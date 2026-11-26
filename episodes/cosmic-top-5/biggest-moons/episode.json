@@ -1,0 +1,21 @@
+{
+  "id": "cosmic-top-5-biggest-moons",
+  "series": "cosmic-top-5",
+  "createdAt": "2026-11-26T17:28:43.524Z",
+  "stage": "published",
+  "hashes": {
+    "plan": "3c7ae53fa01a16fa",
+    "factcheckedPlan": "3c7ae53fa01a16fa",
+    "narration": "780ad6b930cb283d",
+    "video": "34c4e800cf74e89f14a0fe22af6d5bf80706f515f37ec194567e315a57e028ce"
+  },
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-26T18:30:20.154Z",
+      "videoSha256": "34c4e800cf74e89f14a0fe22af6d5bf80706f515f37ec194567e315a57e028ce",
+      "note": "Approved by the owner in the Claude Code conversation on 2026-11-26 ('i approve all, please schedule, commit and push'); entered by Claude at the owner's instruction."
+    }
+  ]
+}

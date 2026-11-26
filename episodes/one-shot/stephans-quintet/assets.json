@@ -1,0 +1,21 @@
+{
+  "assets": [
+    {
+      "id": "quintet",
+      "kind": "image",
+      "file": "assets/quintet.jpg",
+      "sha256": "4b46742b1fd15141dd3b1fe7594944e044e5e3864e70d78cb4dd5267fc7008ce",
+      "source": {
+        "provider": "web",
+        "url": "https://esawebb.org/images/weic2208a/",
+        "pageUrl": "https://esawebb.org/images/weic2208a/",
+        "title": "Stephan's Quintet (NIRCam + MIRI Imaging)",
+        "credit": "NASA, ESA, CSA, STScI",
+        "license": "CC BY 4.0",
+        "derivation": "resized from the 12654x12132 large JPEG to 4320x4142"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:30:16.091Z"
+    }
+  ]
+}

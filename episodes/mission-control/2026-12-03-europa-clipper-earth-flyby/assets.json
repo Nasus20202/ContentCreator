@@ -1,0 +1,52 @@
+{
+  "assets": [
+    {
+      "id": "launch-photo",
+      "kind": "image",
+      "file": "assets/launch-photo.jpg",
+      "sha256": "5c839d1ac0c3ae673b29f6927078b1a917543a2f889d96019429002bca7c3dec",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/KSC-20241014-PH-KLS01_0049/KSC-20241014-PH-KLS01_0049~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/KSC-20241014-PH-KLS01_0049",
+        "title": "NASA's SpaceX Europa Clipper Liftoff",
+        "credit": "NASA / KSC / Kim Shiflett",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:31:17.557Z"
+    },
+    {
+      "id": "arrays",
+      "kind": "image",
+      "file": "assets/arrays.jpg",
+      "sha256": "76df24ace153d6c032cc96dac8f89b86558f2c3e51e58a906e15590173c49495",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA26066/PIA26066~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA26066",
+        "title": "Testing Europa Clipper's Solar Arrays",
+        "credit": "NASA / JPL / Frank Michaux",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:31:19.969Z"
+    },
+    {
+      "id": "europa",
+      "kind": "image",
+      "file": "assets/europa.jpg",
+      "sha256": "f020c034750675cb0ace6c3164b18151746bfa28405e888d810312cd563d650d",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA19048/PIA19048~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA19048",
+        "title": "Europa Stunning Surface",
+        "credit": "NASA / JPL / JPL-Caltech / SETI Institute",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:31:22.237Z"
+    }
+  ]
+}

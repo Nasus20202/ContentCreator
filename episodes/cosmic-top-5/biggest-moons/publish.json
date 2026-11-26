@@ -1,0 +1,222 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-26T18:30:34.026Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-01T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "34c4e800cf74e89f14a0fe22af6d5bf80706f515f37ec194567e315a57e028ce",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Ranked by diameter:\n#5 The Moon: 3,475 km\n#4 Io: 3,643 km, the most volcanically active world in the solar system\n#3 Callisto: 4,821 km, the most heavily cratered\n#2 Titan: 5,150 km, the only moon with a thick atmosphere\n#1 Ganymede: 5,262 km, the only moon known to have its own magnetic field\nGanymede and Titan are both wider than the planet Mercury (4,879 km).\n\nSources:\nNASA NSSDCA fact sheets (diameters from listed radii): https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html\nNASA Science, Ganymede facts: https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/\nNASA Science, Titan facts: https://science.nasa.gov/saturn/moons/titan/facts/\n\nImages: NASA / JPL / USGS (Moon and Io, Galileo), NASA / JPL / DLR (Callisto, Galileo), NASA / JPL / Space Science Institute (Titan, Cassini), NASA / JPL (Ganymede, Galileo). Narration uses a synthetic voice.\n\n#space #astronomy #science #top5 #moons #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The 5 biggest moons: two are wider than a planet 🌕🪐",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The 5 biggest moons: two are wider than a planet 🌕🪐\n\nRanked by diameter:\n#5 The Moon: 3,475 km\n#4 Io: 3,643 km, the most volcanically active world in the solar system\n#3 Callisto: 4,821 km, the most heavily cratered\n#2 Titan: 5,150 km, the only moon with a thick atmosphere\n#1 Ganymede: 5,262 km, the only moon known to have its own magnetic field\nGanymede and Titan are both wider than the planet Mercury (4,879 km).\n\nSources:\nNASA NSSDCA fact sheets (diameters from listed radii): https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html\nNASA Science, Ganymede facts: https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/\nNASA Science, Titan facts: https://science.nasa.gov/saturn/moons/titan/facts/\n\nImages: NASA / JPL / USGS (Moon and Io, Galileo), NASA / JPL / DLR (Callisto, Galileo), NASA / JPL / Space Science Institute (Titan, Cassini), NASA / JPL (Ganymede, Galileo). Narration uses a synthetic voice.\n\n#space #astronomy #science #top5 #moons #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The 5 biggest moons: two are wider than a planet 🌕🪐\n\nRanked by diameter:\n#5 The Moon: 3,475 km\n#4 Io: 3,643 km, the most volcanically active world in the solar system\n#3 Callisto: 4,821 km, the most heavily cratered\n#2 Titan: 5,150 km, the only moon with a thick atmosphere\n#1 Ganymede: 5,262 km, the only moon known to have its own magnetic field\nGanymede and Titan are both wider than the planet Mercury (4,879 km).\n\nSources:\nNASA NSSDCA fact sheets (diameters from listed radii)\nNASA Science, Ganymede facts\nNASA Science, Titan facts\n\nImages: NASA / JPL / USGS (Moon and Io, Galileo), NASA / JPL / DLR (Callisto, Galileo), NASA / JPL / Space Science Institute (Titan, Cassini), NASA / JPL (Ganymede, Galileo). Narration uses a synthetic voice.\n\n#space #astronomy #science #top5 #moons #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-26T18:31:14.076Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-01T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "34c4e800cf74e89f14a0fe22af6d5bf80706f515f37ec194567e315a57e028ce",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087afdc81617797dd260d0",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Ranked by diameter:\n#5 The Moon: 3,475 km\n#4 Io: 3,643 km, the most volcanically active world in the solar system\n#3 Callisto: 4,821 km, the most heavily cratered\n#2 Titan: 5,150 km, the only moon with a thick atmosphere\n#1 Ganymede: 5,262 km, the only moon known to have its own magnetic field\nGanymede and Titan are both wider than the planet Mercury (4,879 km).\n\nSources:\nNASA NSSDCA fact sheets (diameters from listed radii): https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html\nNASA Science, Ganymede facts: https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/\nNASA Science, Titan facts: https://science.nasa.gov/saturn/moons/titan/facts/\n\nImages: NASA / JPL / USGS (Moon and Io, Galileo), NASA / JPL / DLR (Callisto, Galileo), NASA / JPL / Space Science Institute (Titan, Cassini), NASA / JPL (Ganymede, Galileo). Narration uses a synthetic voice.\n\n#space #astronomy #science #top5 #moons #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/cosmic-top-5/biggest-moons-34c4e800.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The 5 biggest moons: two are wider than a planet 🌕🪐",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087afdce64081689e239af",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The 5 biggest moons: two are wider than a planet 🌕🪐\n\nRanked by diameter:\n#5 The Moon: 3,475 km\n#4 Io: 3,643 km, the most volcanically active world in the solar system\n#3 Callisto: 4,821 km, the most heavily cratered\n#2 Titan: 5,150 km, the only moon with a thick atmosphere\n#1 Ganymede: 5,262 km, the only moon known to have its own magnetic field\nGanymede and Titan are both wider than the planet Mercury (4,879 km).\n\nSources:\nNASA NSSDCA fact sheets (diameters from listed radii): https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html\nNASA Science, Ganymede facts: https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/\nNASA Science, Titan facts: https://science.nasa.gov/saturn/moons/titan/facts/\n\nImages: NASA / JPL / USGS (Moon and Io, Galileo), NASA / JPL / DLR (Callisto, Galileo), NASA / JPL / Space Science Institute (Titan, Cassini), NASA / JPL (Ganymede, Galileo). Narration uses a synthetic voice.\n\n#space #astronomy #science #top5 #moons #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/cosmic-top-5/biggest-moons-34c4e800.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087afece64081689e239e6",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The 5 biggest moons: two are wider than a planet 🌕🪐\n\nRanked by diameter:\n#5 The Moon: 3,475 km\n#4 Io: 3,643 km, the most volcanically active world in the solar system\n#3 Callisto: 4,821 km, the most heavily cratered\n#2 Titan: 5,150 km, the only moon with a thick atmosphere\n#1 Ganymede: 5,262 km, the only moon known to have its own magnetic field\nGanymede and Titan are both wider than the planet Mercury (4,879 km).\n\nSources:\nNASA NSSDCA fact sheets (diameters from listed radii)\nNASA Science, Ganymede facts\nNASA Science, Titan facts\n\nImages: NASA / JPL / USGS (Moon and Io, Galileo), NASA / JPL / DLR (Callisto, Galileo), NASA / JPL / Space Science Institute (Titan, Cassini), NASA / JPL (Ganymede, Galileo). Narration uses a synthetic voice.\n\n#space #astronomy #science #top5 #moons #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-01T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/cosmic-top-5/biggest-moons-34c4e800.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/cosmic-top-5/biggest-moons-34c4e800.mp4"
+      }
+    }
+  ]
+}

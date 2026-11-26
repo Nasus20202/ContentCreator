@@ -1,0 +1,99 @@
+{
+  "facts": [
+    {
+      "id": "four-close",
+      "statement": "Although called a quintet, only four of the galaxies are truly close together; the fifth and leftmost galaxy, NGC 7320, is well in the foreground compared with the other four.",
+      "values": [
+        4,
+        5,
+        7320
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/",
+        "title": "NASA's Webb Sheds Light on Galaxy Evolution, Black Holes",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "distances",
+      "statement": "NGC 7320 resides 40 million light-years from Earth, while the other four galaxies are about 290 million light-years away.",
+      "values": [
+        40,
+        290,
+        4,
+        7320
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/",
+        "title": "NASA's Webb Sheds Light on Galaxy Evolution, Black Holes",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "mosaic",
+      "statement": "Webb's mosaic of Stephan's Quintet (released 12 July 2022) covers about one-fifth of the Moon's diameter, contains over 150 million pixels and is constructed from almost 1,000 separate image files.",
+      "values": [
+        150,
+        1000,
+        2022,
+        12,
+        5
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/",
+        "title": "NASA's Webb Sheds Light on Galaxy Evolution, Black Holes",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "infrared",
+      "statement": "Webb observed Stephan's Quintet in infrared light with its NIRCam and MIRI instruments; the released colours represent infrared wavelengths.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://esawebb.org/images/weic2208a/",
+        "title": "Stephan's Quintet (NIRCam + MIRI Imaging)",
+        "publisher": "ESA/Webb",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "stars",
+      "statement": "In NGC 7320, the leftmost and closest galaxy in the grouping, Webb was able to resolve individual stars and the galaxy's bright core.",
+      "values": [
+        7320
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/",
+        "title": "NASA's Webb Sheds Light on Galaxy Evolution, Black Holes",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "gap",
+      "statement": "The foreground galaxy is 290 - 40 = about 250 million light-years closer to us than the other four, and about seven times closer (290/40 = 7.25).",
+      "values": [
+        250,
+        7,
+        40,
+        290
+      ],
+      "source": {
+        "type": "computed",
+        "method": "290 - 40 and 290 / 40 (million light-years)",
+        "inputs": {
+          "near": 40,
+          "far": 290
+        }
+      }
+    }
+  ]
+}

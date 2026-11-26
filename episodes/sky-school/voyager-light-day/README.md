@@ -146,6 +146,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | tiktok | deleted | 6af8feda918fe79d2eb283cb |  |
 | instagram | deleted | 6af8fedb918fe79d2eb283fb |  |
 
+### 2026-11-26T17:24:59.779Z · buffer · schedule for 2026-11-30T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/voyager-light-day-5a31bb97.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6b086b70c81617797dcab133 |  |
+| tiktok | submitted | 6b086b733accdac92ce62eb0 |  |
+| instagram | submitted | 6b086b751fa409158282669f |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -186,3 +196,5 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-15 00:37:47 | claude | published | stage.advance | c0f6392 |
 | 2026-11-15 02:29:38 | claude | publish | publish.unschedule | 4049d2c |
 | 2026-11-15 08:41:25 | claude | published | episode.rename | 0d80a88 |
+| 2026-11-26 17:25:09 | claude | publish | publish.submit | 2178ad3 |
+| 2026-11-26 17:25:09 | claude | published | stage.advance | 2178ad3 |

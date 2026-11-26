@@ -1,0 +1,240 @@
+{
+  "checkedAt": "2026-11-26T17:33:57.268Z",
+  "planHash": "4c7fe507f41700b8",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "hook",
+        "where": "narration[0]",
+        "text": "Five galaxies in one photo.",
+        "number": 5,
+        "raw": "five",
+        "matchedFact": "four-close"
+      },
+      {
+        "sceneId": "how",
+        "where": "narration[0]",
+        "text": "NASA's Webb telescope team released this view in July 2022.",
+        "number": 2022,
+        "raw": "2022",
+        "matchedFact": "mosaic"
+      },
+      {
+        "sceneId": "how",
+        "where": "chips[0]",
+        "text": "JAMES WEBB · INFRARED · 2022",
+        "number": 2022,
+        "raw": "2022",
+        "matchedFact": "mosaic"
+      },
+      {
+        "sceneId": "find",
+        "where": "narration[1]",
+        "text": "It's about forty million light-years away.",
+        "number": 40000000,
+        "raw": "forty million",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "find",
+        "where": "narration[2]",
+        "text": "The other four are about two hundred and ninety million.",
+        "number": 4,
+        "raw": "four",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "find",
+        "where": "narration[2]",
+        "text": "The other four are about two hundred and ninety million.",
+        "number": 290000000,
+        "raw": "two hundred and ninety million",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "find",
+        "where": "chips[0]",
+        "text": "LEFT: 40 MILLION LIGHT-YEARS",
+        "number": 40,
+        "raw": "40",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "find",
+        "where": "chips[1]",
+        "text": "OTHERS: 290 MILLION",
+        "number": 290,
+        "raw": "290",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "scale",
+        "where": "narration[0]",
+        "text": "It just happens to sit in front, about seven times closer than the rest.",
+        "number": 7,
+        "raw": "seven",
+        "matchedFact": "gap"
+      },
+      {
+        "sceneId": "scale",
+        "where": "bars[0]",
+        "text": "40 million ly Left galaxy (NGC 7320)",
+        "number": 40,
+        "raw": "40",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "scale",
+        "where": "bars[0]",
+        "text": "40 million ly Left galaxy (NGC 7320)",
+        "number": 7320,
+        "raw": "7320",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "scale",
+        "where": "bars[1]",
+        "text": "290 million ly The other four",
+        "number": 290,
+        "raw": "290",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "scale",
+        "where": "bars[1]",
+        "text": "290 million ly The other four",
+        "number": 4,
+        "raw": "four",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "wide",
+        "where": "narration[0]",
+        "text": "And the whole mosaic covers a patch of sky only about a fifth as wide as the Moon.",
+        "number": 5,
+        "raw": "fifth",
+        "matchedFact": "mosaic"
+      },
+      {
+        "sceneId": "wide",
+        "where": "chips[0]",
+        "text": "150 MILLION+ PIXELS",
+        "number": 150,
+        "raw": "150",
+        "matchedFact": "mosaic"
+      },
+      {
+        "sceneId": "outro",
+        "where": "outro",
+        "text": "One Shot FOLLOW\nFOR ONE PHOTO\nA WEEK Image: NASA, ESA, CSA, STScI · CC BY 4.0",
+        "number": 4,
+        "raw": "4.0",
+        "matchedFact": "four-close"
+      },
+      {
+        "sceneId": "post",
+        "where": "title",
+        "text": "One of these 5 galaxies is an impostor 🌌🔭",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "four-close"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 5,
+        "raw": "five",
+        "matchedFact": "four-close"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 4,
+        "raw": "four",
+        "matchedFact": "four-close"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 7320,
+        "raw": "7320",
+        "matchedFact": "four-close"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 40,
+        "raw": "40",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 4,
+        "raw": "four",
+        "matchedFact": "four-close"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 290,
+        "raw": "290",
+        "matchedFact": "distances"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 2022,
+        "raw": "2022",
+        "matchedFact": "mosaic"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 150,
+        "raw": "150",
+        "matchedFact": "mosaic"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 1000,
+        "raw": "1000",
+        "matchedFact": "mosaic"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 5,
+        "raw": "fifth",
+        "matchedFact": "four-close"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.",
+        "number": 4,
+        "raw": "4.0",
+        "matchedFact": "four-close"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-26T17:33:58.307Z",
+    "verdict": "pass",
+    "notes": "Re-checked against the NASA Science and ESA/Webb pages: leftmost galaxy NGC 7320 is the foreground one (40 vs 290 million ly, ratio 7.25 as 'about seven times'), individual stars resolved in it, July 2022 release, infrared colours stated, one-fifth of the Moon's diameter. Marker focus matches the leftmost galaxy."
+  }
+}

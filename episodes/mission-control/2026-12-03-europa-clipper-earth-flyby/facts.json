@@ -1,0 +1,186 @@
+{
+  "facts": [
+    {
+      "id": "flyby",
+      "statement": "Europa Clipper comes within about 3,140 to 3,450 km of Earth on Thursday 3 December 2026, with closest approach west of Africa at 3:14 p.m. EST (21:14 Central European Time).",
+      "values": [
+        3,
+        2026,
+        3140,
+        3450
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/blogs/europa-clipper/2026/11/25/nasas-europa-clipper-zooming-by-earth-on-way-to-jupiters-icy-moon/",
+        "title": "NASA's Europa Clipper Zooming by Earth on Way to Jupiter's Icy Moon",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "about-3200",
+      "statement": "On 3 December Europa Clipper flies about 3,200 km (2,000 miles) from Earth for a gravity assist, a maneuver that changes its path and increases its speed.",
+      "values": [
+        3,
+        3200,
+        2000
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/europa-clipper/earth-flyby/",
+        "title": "Europa Clipper Earth Flyby",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "slingshot",
+      "statement": "Earth's gravity slingshots the 6,000 kg (12,800 pound) spacecraft toward Jupiter, where it begins orbiting in April 2030.",
+      "values": [
+        6000,
+        2030
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/blogs/europa-clipper/2026/11/25/nasas-europa-clipper-zooming-by-earth-on-way-to-jupiters-icy-moon/",
+        "title": "NASA's Europa Clipper Zooming by Earth on Way to Jupiter's Icy Moon",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "mars",
+      "statement": "On 1 March 2025 Europa Clipper flew 884 km above Mars for its first gravity assist.",
+      "values": [
+        1,
+        2025,
+        884
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/europa-clipper/mission-timeline/",
+        "title": "Europa Clipper Mission Timeline",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "launch",
+      "statement": "Europa Clipper launched on a SpaceX Falcon Heavy from Kennedy Space Center on 14 October 2024.",
+      "values": [
+        14,
+        2024
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/europa-clipper/mission-timeline/",
+        "title": "Europa Clipper Mission Timeline",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "goal",
+      "statement": "Europa Clipper will study Jupiter's icy moon Europa to determine whether there are places below its surface that could support life.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/europa-clipper/mission-timeline/",
+        "title": "Europa Clipper Mission Timeline",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "passes",
+      "statement": "From 2031 Europa Clipper will make nearly 50 flybys of Europa, some as low as about 25 km above the surface.",
+      "values": [
+        50,
+        25,
+        2031
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/europa-clipper/mission-timeline/",
+        "title": "Europa Clipper Mission Timeline",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "panels",
+      "statement": "Each of Europa Clipper's giant solar arrays measures about 14.2 metres long and 4.1 metres high; photographed in a Kennedy Space Center clean room on 21 August 2024.",
+      "values": [
+        14.2,
+        4.1,
+        21,
+        2024
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov/details/PIA26066",
+        "title": "Testing Europa Clipper's Solar Arrays",
+        "publisher": "NASA / JPL",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "ocean",
+      "statement": "There is strong evidence that Europa has a saltwater ocean beneath its icy surface.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/europa-clipper/earth-flyby/",
+        "title": "Europa Clipper Earth Flyby",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "local-time",
+      "statement": "Closest approach at 3:14 p.m. EST on 3 December 2026 is 20:14 UTC, which is 21:14 (9:14 p.m.) Central European Time.",
+      "values": [
+        3,
+        9,
+        14,
+        21
+      ],
+      "source": {
+        "type": "computed",
+        "method": "time zone conversion",
+        "inputs": {
+          "est": "15:14",
+          "utc": "20:14",
+          "cet": "21:14"
+        }
+      }
+    },
+    {
+      "id": "saving",
+      "statement": "The Earth flyby offers a propellant-saving boost and an opportunity to prepare for the science-gathering that lies ahead.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/mission/europa-clipper/earth-flyby/",
+        "title": "Europa Clipper Earth Flyby",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "mars-brakes",
+      "statement": "In March 2025 Europa Clipper passed 884 km above Mars, using the planet's gravity to slow down and reshape its orbit around the Sun.",
+      "values": [
+        884,
+        2025
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/blogs/europa-clipper/2026/11/25/nasas-europa-clipper-zooming-by-earth-on-way-to-jupiters-icy-moon/",
+        "title": "NASA's Europa Clipper Zooming by Earth on Way to Jupiter's Icy Moon",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    }
+  ]
+}

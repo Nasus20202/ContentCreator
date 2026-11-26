@@ -1,0 +1,21 @@
+{
+  "id": "weird-physics-equator-weight",
+  "series": "weird-physics",
+  "createdAt": "2026-11-26T17:28:45.430Z",
+  "stage": "published",
+  "hashes": {
+    "plan": "0cd1f36a2424fa39",
+    "factcheckedPlan": "0cd1f36a2424fa39",
+    "narration": "805f2b03e638a74e",
+    "video": "7432aabada873e34e3568b9519c3ba817351873a408209aeacd75ef88c369b57"
+  },
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-26T18:30:22.837Z",
+      "videoSha256": "7432aabada873e34e3568b9519c3ba817351873a408209aeacd75ef88c369b57",
+      "note": "Approved by the owner in the Claude Code conversation on 2026-11-26 ('i approve all, please schedule, commit and push'); entered by Claude at the owner's instruction."
+    }
+  ]
+}

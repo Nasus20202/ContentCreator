@@ -258,6 +258,118 @@
           }
         }
       ]
+    },
+    {
+      "at": "2026-11-26T17:24:59.779Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-30T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "5a31bb97d7aeee05199b14eaa3591a466d25cd4d89226b7b8d7f56ebd0900850",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b086b70c81617797dcab133",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "On 18 November 2026 at 10:16 UTC (11:16 CET), Voyager 1 becomes the first human-made object one light-day from Earth: about 26 billion km, the distance light travels in 24 hours. A command from Earth now takes a full day to reach it, and the reply another day to come back. It took 49 years, two months and 11 days to get there.\n\nSource:\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch), NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network antennas near Madrid), NASA / JPL-Caltech (Pale Blue Dot). Narration uses a synthetic voice.\n\n#astronomy #space #science #voyager #nasa #skyschool",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-30T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/voyager-light-day-5a31bb97.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Voyager 1 is now a whole light-day from Earth 🛰️",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b086b733accdac92ce62eb0",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Voyager 1 is now a whole light-day from Earth 🛰️\n\nOn 18 November 2026 at 10:16 UTC (11:16 CET), Voyager 1 becomes the first human-made object one light-day from Earth: about 26 billion km, the distance light travels in 24 hours. A command from Earth now takes a full day to reach it, and the reply another day to come back. It took 49 years, two months and 11 days to get there.\n\nSource:\nNASA Science, Voyager 1: What Is a Light-Day: https://science.nasa.gov/mission/voyager/voyager-1/voyager-1-what-is-a-light-day/\n\nImages: NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch), NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network antennas near Madrid), NASA / JPL-Caltech (Pale Blue Dot). Narration uses a synthetic voice.\n\n#astronomy #space #science #voyager #nasa #skyschool",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-30T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/voyager-light-day-5a31bb97.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b086b751fa409158282669f",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "Voyager 1 is now a whole light-day from Earth 🛰️\n\nOn 18 November 2026 at 10:16 UTC (11:16 CET), Voyager 1 becomes the first human-made object one light-day from Earth: about 26 billion km, the distance light travels in 24 hours. A command from Earth now takes a full day to reach it, and the reply another day to come back. It took 49 years, two months and 11 days to get there.\n\nSource:\nNASA Science, Voyager 1: What Is a Light-Day\n\nImages: NASA / JPL / JPL-Caltech / KSC (Voyager 1 launch), NASA / JPL / MDSCC / INTA, Francisco \"Paco\" Moreno (Deep Space Network antennas near Madrid), NASA / JPL-Caltech (Pale Blue Dot). Narration uses a synthetic voice.\n\n#astronomy #space #science #voyager #nasa #skyschool",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-30T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/voyager-light-day-5a31bb97.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/voyager-light-day-5a31bb97.mp4"
+      }
     }
   ]
 }

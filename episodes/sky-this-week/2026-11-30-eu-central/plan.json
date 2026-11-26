@@ -23,7 +23,7 @@
       "id": "hook",
       "narration": [
         "This Monday, the Moon drops in on Jupiter and Mars.",
-        "Catch them together before dawn."
+        "Catch them together in the early hours."
       ],
       "factIds": [
         "episode-window",
@@ -40,7 +40,7 @@
       "captions": true,
       "template": "skyView",
       "params": {
-        "time": "2026-11-30T02:20:00.000Z",
+        "time": "2026-11-30T02:00:00.000Z",
         "bodies": [
           "Moon",
           "Jupiter",
@@ -51,7 +51,7 @@
             "at": 0,
             "target": {
               "azAlt": [
-                140,
+                125,
                 30
               ]
             },
@@ -82,20 +82,21 @@
     {
       "id": "group",
       "narration": [
-        "Early on Monday, November thirtieth, look high in the south-east.",
+        "Early on Monday, November thirtieth, around three in the morning, look high in the south-east.",
         "The bright Moon sits near Jupiter, with orange Mars close by.",
-        "Their closest moment, under two degrees from Jupiter, comes later, in daylight. So go out before dawn."
+        "Their closest moment, under two degrees from Jupiter, comes later, in daylight. So go out in the dark."
       ],
       "factIds": [
         "moon-jupiter-2026-11-30-view",
         "moon-jupiter-2026-11-30-sep",
         "moon-mars-2026-11-30-view",
         "moon-jupiter-2026-11-30-illum",
-        "moon-mars-2026-11-30-sep"
+        "moon-mars-2026-11-30-sep",
+        "group-0300"
       ],
       "chips": [
         {
-          "text": "MON NOV 30 · BEFORE DAWN",
+          "text": "MON NOV 30 · AROUND 3 A.M.",
           "from": 0.2,
           "to": {
             "sentence": 2,
@@ -115,7 +116,7 @@
       "captions": true,
       "template": "skyView",
       "params": {
-        "time": "2026-11-30T02:20:00.000Z",
+        "time": "2026-11-30T02:00:00.000Z",
         "bodies": [
           "Moon",
           "Jupiter",
@@ -186,10 +187,13 @@
       "id": "venus",
       "narration": [
         "And every morning before sunrise, Venus blazes low in the south-east.",
-        "At magnitude minus 4.8, you can't miss it."
+        "It's the brightest point of light in the morning sky."
       ],
       "factIds": [
-        "visible-venus-2026-12-03"
+        "visible-venus-2026-12-03",
+        "visible-jupiter-2026-12-03",
+        "visible-mars-2026-12-03",
+        "visible-saturn-2026-12-03"
       ],
       "chips": [
         {
@@ -296,7 +300,7 @@
   ],
   "post": {
     "title": "The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6",
-    "description": "Before dawn on Mon 30 Nov, look high in the south-east: the Moon, Jupiter and Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) happens in daylight that morning, and to Mars (3.7°) that evening. All week before sunrise, Venus (magnitude -4.8) shines low in the south-east, 23° up around 06:40 mid-week.\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
+    "description": "Early on Mon 30 Nov, from about 3 a.m., look high in the south-east: the Moon, Jupiter and orange Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) comes later that morning, in daylight, and its closest pass to Mars (3.7°) that evening, so see them before sunrise. All week before sunrise, Venus is the brightest point of light in the morning sky, low in the south-east (23° up around 06:40 mid-week).\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.",
     "hashtags": [
       "#astronomy",
       "#stargazing",

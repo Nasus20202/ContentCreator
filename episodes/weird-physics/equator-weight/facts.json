@@ -1,0 +1,125 @@
+{
+  "facts": [
+    {
+      "id": "gravity",
+      "statement": "Earth's surface acceleration is 9.780 m/s2 at the equator and 9.832 m/s2 at the poles.",
+      "values": [
+        9.78,
+        9.832
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+        "title": "Earth Fact Sheet",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "radii",
+      "statement": "Earth's equatorial radius is 6,378.137 km and its polar radius 6,356.752 km; it spins once in 23.9345 hours.",
+      "values": [
+        6378,
+        6357,
+        23.9345
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+        "title": "Earth Fact Sheet",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "weight",
+      "statement": "A spring scale calibrated to read 70 kg at a pole reads about 69.6 kg at the equator, about 0.37 kg (370 grams) less, about half a percent.",
+      "values": [
+        70,
+        69.6,
+        370,
+        0.5,
+        0.37
+      ],
+      "source": {
+        "type": "computed",
+        "method": "70 * 9.780 / 9.832 at sea level",
+        "inputs": {
+          "mass_kg": 70,
+          "g_eq": 9.78,
+          "g_pole": 9.832
+        }
+      }
+    },
+    {
+      "id": "spin",
+      "statement": "The equator moves at about 1,674 km/h because of Earth's spin (about 1,670 km/h); the centrifugal effect is 0.034 m/s2, about two thirds of the 0.052 m/s2 difference.",
+      "values": [
+        1670,
+        1674,
+        0.034,
+        0.052,
+        2,
+        3
+      ],
+      "source": {
+        "type": "computed",
+        "method": "v = 2 pi R / T; a = (2 pi / T)^2 R, T = 23.9345 h, R = 6378.137 km",
+        "inputs": {
+          "v_kmh": 1674,
+          "a_ms2": 0.0339,
+          "diff_ms2": 0.052
+        }
+      }
+    },
+    {
+      "id": "bulge",
+      "statement": "Earth's equator is about 21 km farther from the centre than the poles (6,378 vs 6,357 km); this shape accounts for the remaining third of the difference.",
+      "values": [
+        21,
+        3,
+        6378,
+        6357
+      ],
+      "source": {
+        "type": "computed",
+        "method": "equatorial minus polar radius; remainder 0.052 - 0.034 m/s2",
+        "inputs": {
+          "delta_km": 21.4,
+          "remainder_ms2": 0.018
+        }
+      }
+    },
+    {
+      "id": "photo-apollo17",
+      "statement": "The Apollo 17 crew photographed the full Earth (the 'Blue Marble') on 7 December 1972.",
+      "values": [
+        17,
+        7,
+        1972
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://images.nasa.gov/details/as17-148-22727",
+        "title": "Apollo 17 Blue Marble",
+        "publisher": "NASA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "shape",
+      "statement": "Earth is slightly squashed: its spin makes it bulge, so the equator is about 21 km farther from the centre than the poles.",
+      "values": [
+        21
+      ],
+      "source": {
+        "type": "computed",
+        "method": "oblate Earth: equatorial radius exceeds polar radius; spinning planets bulge at the equator",
+        "inputs": {
+          "R_eq_km": 6378.137,
+          "R_pole_km": 6356.752
+        }
+      }
+    }
+  ]
+}

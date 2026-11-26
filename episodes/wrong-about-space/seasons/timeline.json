@@ -1,0 +1,679 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "c10c8b0924fbe202",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 3.398,
+      "sentences": [
+        {
+          "text": "Winter doesn't happen because Earth is farther from the Sun.",
+          "start": 0.15,
+          "end": 3.117,
+          "words": [
+            {
+              "w": "Winter",
+              "start": 0.15,
+              "end": 0.475
+            },
+            {
+              "w": "doesn't",
+              "start": 0.475,
+              "end": 0.841
+            },
+            {
+              "w": "happen",
+              "start": 0.841,
+              "end": 1.166
+            },
+            {
+              "w": "because",
+              "start": 1.166,
+              "end": 1.532
+            },
+            {
+              "w": "Earth",
+              "start": 1.532,
+              "end": 1.817
+            },
+            {
+              "w": "is",
+              "start": 1.817,
+              "end": 1.979
+            },
+            {
+              "w": "farther",
+              "start": 1.979,
+              "end": 2.345
+            },
+            {
+              "w": "from",
+              "start": 2.345,
+              "end": 2.589
+            },
+            {
+              "w": "the",
+              "start": 2.589,
+              "end": 2.792
+            },
+            {
+              "w": "Sun.",
+              "start": 2.792,
+              "end": 3.117
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "closest",
+      "audioFile": "voice/closest.wav",
+      "duration": 6.536,
+      "sentences": [
+        {
+          "text": "Earth is actually closest to the Sun in early January: about a hundred and forty-seven million kilometres.",
+          "start": 0.15,
+          "end": 6.256,
+          "words": [
+            {
+              "w": "Earth",
+              "start": 0.15,
+              "end": 0.487
+            },
+            {
+              "w": "is",
+              "start": 0.487,
+              "end": 0.679
+            },
+            {
+              "w": "actually",
+              "start": 0.679,
+              "end": 1.16
+            },
+            {
+              "w": "closest",
+              "start": 1.16,
+              "end": 1.592
+            },
+            {
+              "w": "to",
+              "start": 1.592,
+              "end": 1.785
+            },
+            {
+              "w": "the",
+              "start": 1.785,
+              "end": 2.025
+            },
+            {
+              "w": "Sun",
+              "start": 2.025,
+              "end": 2.265
+            },
+            {
+              "w": "in",
+              "start": 2.265,
+              "end": 2.458
+            },
+            {
+              "w": "early",
+              "start": 2.458,
+              "end": 2.794
+            },
+            {
+              "w": "January:",
+              "start": 2.794,
+              "end": 3.371
+            },
+            {
+              "w": "about",
+              "start": 3.371,
+              "end": 3.708
+            },
+            {
+              "w": "a",
+              "start": 3.708,
+              "end": 3.852
+            },
+            {
+              "w": "hundred",
+              "start": 3.852,
+              "end": 4.285
+            },
+            {
+              "w": "and",
+              "start": 4.285,
+              "end": 4.525
+            },
+            {
+              "w": "forty-seven",
+              "start": 4.525,
+              "end": 5.102
+            },
+            {
+              "w": "million",
+              "start": 5.102,
+              "end": 5.534
+            },
+            {
+              "w": "kilometres.",
+              "start": 5.534,
+              "end": 6.256
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "distance",
+      "audioFile": "voice/distance.wav",
+      "duration": 3.754,
+      "sentences": [
+        {
+          "text": "In July it's about five million kilometres farther away.",
+          "start": 0.15,
+          "end": 3.474,
+          "words": [
+            {
+              "w": "In",
+              "start": 0.15,
+              "end": 0.346
+            },
+            {
+              "w": "July",
+              "start": 0.346,
+              "end": 0.639
+            },
+            {
+              "w": "it's",
+              "start": 0.639,
+              "end": 0.932
+            },
+            {
+              "w": "about",
+              "start": 0.932,
+              "end": 1.274
+            },
+            {
+              "w": "five",
+              "start": 1.274,
+              "end": 1.568
+            },
+            {
+              "w": "million",
+              "start": 1.568,
+              "end": 2.008
+            },
+            {
+              "w": "kilometres",
+              "start": 2.008,
+              "end": 2.594
+            },
+            {
+              "w": "farther",
+              "start": 2.594,
+              "end": 3.034
+            },
+            {
+              "w": "away.",
+              "start": 3.034,
+              "end": 3.474
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "june",
+      "audioFile": "voice/june.wav",
+      "duration": 8.386,
+      "sentences": [
+        {
+          "text": "The real reason is the tilt. Earth's axis leans about twenty-three degrees.",
+          "start": 0.15,
+          "end": 4.526,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.39
+            },
+            {
+              "w": "real",
+              "start": 0.39,
+              "end": 0.679
+            },
+            {
+              "w": "reason",
+              "start": 0.679,
+              "end": 1.064
+            },
+            {
+              "w": "is",
+              "start": 1.064,
+              "end": 1.256
+            },
+            {
+              "w": "the",
+              "start": 1.256,
+              "end": 1.496
+            },
+            {
+              "w": "tilt.",
+              "start": 1.496,
+              "end": 1.929
+            },
+            {
+              "w": "Earth's",
+              "start": 1.929,
+              "end": 2.362
+            },
+            {
+              "w": "axis",
+              "start": 2.362,
+              "end": 2.65
+            },
+            {
+              "w": "leans",
+              "start": 2.65,
+              "end": 2.987
+            },
+            {
+              "w": "about",
+              "start": 2.987,
+              "end": 3.323
+            },
+            {
+              "w": "twenty-three",
+              "start": 3.323,
+              "end": 3.949
+            },
+            {
+              "w": "degrees.",
+              "start": 3.949,
+              "end": 4.526
+            }
+          ]
+        },
+        {
+          "text": "Seen from the Sun's side in June, the north leans into view.",
+          "start": 4.806,
+          "end": 8.106,
+          "words": [
+            {
+              "w": "Seen",
+              "start": 4.806,
+              "end": 5.063
+            },
+            {
+              "w": "from",
+              "start": 5.063,
+              "end": 5.32
+            },
+            {
+              "w": "the",
+              "start": 5.32,
+              "end": 5.534
+            },
+            {
+              "w": "Sun's",
+              "start": 5.534,
+              "end": 5.834
+            },
+            {
+              "w": "side",
+              "start": 5.834,
+              "end": 6.092
+            },
+            {
+              "w": "in",
+              "start": 6.092,
+              "end": 6.263
+            },
+            {
+              "w": "June,",
+              "start": 6.263,
+              "end": 6.649
+            },
+            {
+              "w": "the",
+              "start": 6.649,
+              "end": 6.863
+            },
+            {
+              "w": "north",
+              "start": 6.863,
+              "end": 7.163
+            },
+            {
+              "w": "leans",
+              "start": 7.163,
+              "end": 7.463
+            },
+            {
+              "w": "into",
+              "start": 7.463,
+              "end": 7.721
+            },
+            {
+              "w": "view.",
+              "start": 7.721,
+              "end": 8.106
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "december",
+      "audioFile": "voice/december.wav",
+      "duration": 4.302,
+      "sentences": [
+        {
+          "text": "In December the north leans away, and the same camera sees Antarctica.",
+          "start": 0.15,
+          "end": 4.022,
+          "words": [
+            {
+              "w": "In",
+              "start": 0.15,
+              "end": 0.328
+            },
+            {
+              "w": "December",
+              "start": 0.328,
+              "end": 0.773
+            },
+            {
+              "w": "the",
+              "start": 0.773,
+              "end": 0.996
+            },
+            {
+              "w": "north",
+              "start": 0.996,
+              "end": 1.307
+            },
+            {
+              "w": "leans",
+              "start": 1.307,
+              "end": 1.619
+            },
+            {
+              "w": "away,",
+              "start": 1.619,
+              "end": 2.019
+            },
+            {
+              "w": "and",
+              "start": 2.019,
+              "end": 2.242
+            },
+            {
+              "w": "the",
+              "start": 2.242,
+              "end": 2.464
+            },
+            {
+              "w": "same",
+              "start": 2.464,
+              "end": 2.731
+            },
+            {
+              "w": "camera",
+              "start": 2.731,
+              "end": 3.088
+            },
+            {
+              "w": "sees",
+              "start": 3.088,
+              "end": 3.355
+            },
+            {
+              "w": "Antarctica.",
+              "start": 3.355,
+              "end": 4.022
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "noon",
+      "audioFile": "voice/noon.wav",
+      "duration": 6.116,
+      "sentences": [
+        {
+          "text": "In central Europe, the December noon Sun climbs only seventeen degrees. In June, sixty-three.",
+          "start": 0.15,
+          "end": 5.836,
+          "words": [
+            {
+              "w": "In",
+              "start": 0.15,
+              "end": 0.348
+            },
+            {
+              "w": "central",
+              "start": 0.348,
+              "end": 0.793
+            },
+            {
+              "w": "Europe,",
+              "start": 0.793,
+              "end": 1.337
+            },
+            {
+              "w": "the",
+              "start": 1.337,
+              "end": 1.584
+            },
+            {
+              "w": "December",
+              "start": 1.584,
+              "end": 2.078
+            },
+            {
+              "w": "noon",
+              "start": 2.078,
+              "end": 2.375
+            },
+            {
+              "w": "Sun",
+              "start": 2.375,
+              "end": 2.622
+            },
+            {
+              "w": "climbs",
+              "start": 2.622,
+              "end": 3.018
+            },
+            {
+              "w": "only",
+              "start": 3.018,
+              "end": 3.315
+            },
+            {
+              "w": "seventeen",
+              "start": 3.315,
+              "end": 3.859
+            },
+            {
+              "w": "degrees.",
+              "start": 3.859,
+              "end": 4.452
+            },
+            {
+              "w": "In",
+              "start": 4.452,
+              "end": 4.65
+            },
+            {
+              "w": "June,",
+              "start": 4.65,
+              "end": 5.095
+            },
+            {
+              "w": "sixty-three.",
+              "start": 5.095,
+              "end": 5.836
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "days",
+      "audioFile": "voice/days.wav",
+      "duration": 5.392,
+      "sentences": [
+        {
+          "text": "And the day lasts about eight hours instead of sixteen.",
+          "start": 0.15,
+          "end": 2.931,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.354
+            },
+            {
+              "w": "the",
+              "start": 0.354,
+              "end": 0.559
+            },
+            {
+              "w": "day",
+              "start": 0.559,
+              "end": 0.763
+            },
+            {
+              "w": "lasts",
+              "start": 0.763,
+              "end": 1.05
+            },
+            {
+              "w": "about",
+              "start": 1.05,
+              "end": 1.336
+            },
+            {
+              "w": "eight",
+              "start": 1.336,
+              "end": 1.622
+            },
+            {
+              "w": "hours",
+              "start": 1.622,
+              "end": 1.908
+            },
+            {
+              "w": "instead",
+              "start": 1.908,
+              "end": 2.276
+            },
+            {
+              "w": "of",
+              "start": 2.276,
+              "end": 2.44
+            },
+            {
+              "w": "sixteen.",
+              "start": 2.44,
+              "end": 2.931
+            }
+          ]
+        },
+        {
+          "text": "Low Sun, short days: that's winter.",
+          "start": 3.211,
+          "end": 5.112,
+          "words": [
+            {
+              "w": "Low",
+              "start": 3.211,
+              "end": 3.409
+            },
+            {
+              "w": "Sun,",
+              "start": 3.409,
+              "end": 3.726
+            },
+            {
+              "w": "short",
+              "start": 3.726,
+              "end": 4.003
+            },
+            {
+              "w": "days:",
+              "start": 4.003,
+              "end": 4.359
+            },
+            {
+              "w": "that's",
+              "start": 4.359,
+              "end": 4.676
+            },
+            {
+              "w": "winter.",
+              "start": 4.676,
+              "end": 5.112
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 2.206,
+      "sentences": [
+        {
+          "text": "Follow to fix one more space myth.",
+          "start": 0.15,
+          "end": 1.926,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 0.15,
+              "end": 0.473
+            },
+            {
+              "w": "to",
+              "start": 0.473,
+              "end": 0.634
+            },
+            {
+              "w": "fix",
+              "start": 0.634,
+              "end": 0.836
+            },
+            {
+              "w": "one",
+              "start": 0.836,
+              "end": 1.038
+            },
+            {
+              "w": "more",
+              "start": 1.038,
+              "end": 1.28
+            },
+            {
+              "w": "space",
+              "start": 1.28,
+              "end": 1.563
+            },
+            {
+              "w": "myth.",
+              "start": 1.563,
+              "end": 1.926
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

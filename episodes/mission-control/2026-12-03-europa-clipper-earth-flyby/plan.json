@@ -1,0 +1,234 @@
+{
+  "episodeId": "mission-control-2026-12-03-europa-clipper-earth-flyby",
+  "series": "mission-control",
+  "title": "Mission Control · Europa Clipper Earth flyby",
+  "badge": "Mission Control · Europa Clipper",
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.07
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": [
+        "On Thursday, a spacecraft headed for Jupiter flies right past Earth."
+      ],
+      "factIds": [
+        "flyby",
+        "slingshot"
+      ],
+      "chips": [],
+      "template": "image",
+      "params": {
+        "assetId": "launch-photo",
+        "zoom": [
+          1,
+          1.12
+        ],
+        "focus": [
+          0.55,
+          0.35
+        ],
+        "fit": "cover"
+      },
+      "title": {
+        "kicker": "Mission Control",
+        "title": "It's coming back",
+        "from": 0.1,
+        "to": 2.8
+      }
+    },
+    {
+      "id": "launch",
+      "narration": [
+        "NASA's Europa Clipper launched from Florida in October 2024.",
+        "Now, on December third, it comes home, briefly."
+      ],
+      "factIds": [
+        "launch",
+        "flyby"
+      ],
+      "chips": [
+        {
+          "text": "LAUNCHED 14 OCTOBER 2024",
+          "from": 0.3,
+          "to": {
+            "sentence": 1,
+            "edge": "start",
+            "offset": -0.2
+          }
+        },
+        {
+          "text": "EARTH FLYBY · THU 3 DEC",
+          "from": {
+            "sentence": 1,
+            "edge": "start",
+            "offset": 0
+          }
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "launch-photo",
+        "zoom": [
+          1.12,
+          1.28
+        ],
+        "focus": [
+          0.55,
+          0.3
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "close",
+      "narration": [
+        "It passes about three thousand two hundred kilometres from Earth, closest west of Africa.",
+        "That's at 9:14 in the evening, Central European Time."
+      ],
+      "factIds": [
+        "about-3200",
+        "flyby",
+        "local-time"
+      ],
+      "chips": [],
+      "template": "factCard",
+      "params": {
+        "value": "≈3,200 km",
+        "label": "closest approach to Earth, 3 December",
+        "sourceLine": "NASA · 21:14 CET"
+      }
+    },
+    {
+      "id": "slingshot",
+      "narration": [
+        "Why come back? Our gravity works like a slingshot.",
+        "It changes the spacecraft's path and adds speed, saving propellant."
+      ],
+      "factIds": [
+        "about-3200",
+        "slingshot",
+        "saving"
+      ],
+      "chips": [
+        {
+          "text": "A FREE BOOST FROM EARTH",
+          "from": {
+            "sentence": 1,
+            "edge": "start",
+            "offset": 0
+          }
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "arrays",
+        "zoom": [
+          1,
+          1.15
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "cover"
+      }
+    },
+    {
+      "id": "mars",
+      "narration": [
+        "This is its second flyby.",
+        "On the first, in March 2025, it passed 884 kilometres above Mars to reshape its orbit."
+      ],
+      "factIds": [
+        "mars",
+        "mars-brakes"
+      ],
+      "chips": [],
+      "template": "factCard",
+      "params": {
+        "value": "884 km",
+        "label": "above Mars, March 2025: the first flyby",
+        "sourceLine": "NASA"
+      }
+    },
+    {
+      "id": "europa",
+      "narration": [
+        "Next stop is Jupiter, in April 2030.",
+        "Then nearly fifty flybys of Europa, an icy moon with strong evidence of a salty ocean underneath."
+      ],
+      "factIds": [
+        "slingshot",
+        "passes",
+        "ocean",
+        "goal"
+      ],
+      "chips": [
+        {
+          "text": "JUPITER · APRIL 2030",
+          "from": 0.3,
+          "to": {
+            "sentence": 1,
+            "edge": "start",
+            "offset": -0.2
+          }
+        },
+        {
+          "text": "EUROPA · NEARLY 50 FLYBYS",
+          "from": {
+            "sentence": 1,
+            "edge": "start",
+            "offset": 0
+          }
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "europa",
+        "zoom": [
+          1,
+          1.25
+        ],
+        "focus": [
+          0.5,
+          0.4
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "outro",
+      "narration": [
+        "Safe travels, Clipper.",
+        "Follow for the next mission update."
+      ],
+      "factIds": [
+        "goal"
+      ],
+      "template": "outro",
+      "params": {
+        "kicker": "Mission Control",
+        "cta": "FOLLOW\nFOR MISSION\nUPDATES",
+        "footnote": "Source: NASA · Europa Clipper"
+      }
+    }
+  ],
+  "post": {
+    "title": "A Jupiter spacecraft flies past Earth on 3 December 🛰️🌍",
+    "description": "NASA's Europa Clipper, launched on 14 October 2024, flies past Earth on Thursday 3 December 2026, about 3,200 km away, with closest approach west of Africa at 21:14 CET (3:14 p.m. EST). Earth's gravity changes its path and speeds it up, a propellant-saving boost. It is the second gravity assist, after a pass 884 km above Mars on 1 March 2025 that reshaped its orbit. It is due to begin orbiting Jupiter in April 2030 and then make nearly 50 flybys of Europa, an icy moon with strong evidence of a saltwater ocean beneath its surface.\n\nSources:\nNASA Science blog, Europa Clipper Zooming by Earth: https://science.nasa.gov/blogs/europa-clipper/2026/11/25/nasas-europa-clipper-zooming-by-earth-on-way-to-jupiters-icy-moon/\nNASA Science, Europa Clipper Earth Flyby: https://science.nasa.gov/mission/europa-clipper/earth-flyby/\nNASA Science, Mission Timeline: https://science.nasa.gov/mission/europa-clipper/mission-timeline/\n\nImages: NASA / Kim Shiflett (launch), NASA / JPL / Frank Michaux (solar array test), NASA / JPL-Caltech / SETI Institute (Europa, Galileo). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#space",
+      "#nasa",
+      "#spaceexploration",
+      "#science",
+      "#europaclipper",
+      "#jupiter"
+    ]
+  }
+}

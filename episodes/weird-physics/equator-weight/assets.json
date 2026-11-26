@@ -1,0 +1,36 @@
+{
+  "assets": [
+    {
+      "id": "earth-equator",
+      "kind": "image",
+      "file": "assets/earth-equator.jpg",
+      "sha256": "21fa46b72aa0bb2e45d477e0e726ea4ada61066a578d77f7a2381e62179900cc",
+      "source": {
+        "provider": "web",
+        "url": "https://epic.gsfc.nasa.gov/archive/natural/2025/06/21/jpg/epic_1b_20250621114029.jpg",
+        "pageUrl": "https://epic.gsfc.nasa.gov/archive/natural/2025/06/21/jpg/epic_1b_20250621114029.jpg",
+        "title": "EPIC, Earth on 21 June 2025",
+        "credit": "NASA / NOAA · DSCOVR EPIC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:30:56.459Z"
+    },
+    {
+      "id": "earth-apollo17",
+      "kind": "image",
+      "file": "assets/earth-apollo17.jpg",
+      "sha256": "36dad3314b64319ea75465c4293719eb131d943566eb462e8bac3281e02c3bd4",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/as17-148-22727/as17-148-22727~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/as17-148-22727",
+        "title": "View of the Earth seen by the Apollo 17 crew traveling toward the moon",
+        "credit": "NASA / JSC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:30:58.992Z"
+    }
+  ]
+}

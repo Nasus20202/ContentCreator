@@ -1,0 +1,733 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "805f2b03e638a74e",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 2.546,
+      "sentences": [
+        {
+          "text": "You weigh less at the equator than at the North Pole.",
+          "start": 0.15,
+          "end": 2.266,
+          "words": [
+            {
+              "w": "You",
+              "start": 0.15,
+              "end": 0.308
+            },
+            {
+              "w": "weigh",
+              "start": 0.308,
+              "end": 0.529
+            },
+            {
+              "w": "less",
+              "start": 0.529,
+              "end": 0.718
+            },
+            {
+              "w": "at",
+              "start": 0.718,
+              "end": 0.845
+            },
+            {
+              "w": "the",
+              "start": 0.845,
+              "end": 1.003
+            },
+            {
+              "w": "equator",
+              "start": 1.003,
+              "end": 1.287
+            },
+            {
+              "w": "than",
+              "start": 1.287,
+              "end": 1.476
+            },
+            {
+              "w": "at",
+              "start": 1.476,
+              "end": 1.603
+            },
+            {
+              "w": "the",
+              "start": 1.603,
+              "end": 1.76
+            },
+            {
+              "w": "North",
+              "start": 1.76,
+              "end": 1.981
+            },
+            {
+              "w": "Pole.",
+              "start": 1.981,
+              "end": 2.266
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "scale",
+      "audioFile": "voice/scale.wav",
+      "duration": 7.826,
+      "sentences": [
+        {
+          "text": "A spring scale that reads 70 kilograms at the pole reads about 69.6 at the equator.",
+          "start": 0.15,
+          "end": 5.928,
+          "words": [
+            {
+              "w": "A",
+              "start": 0.15,
+              "end": 0.322
+            },
+            {
+              "w": "spring",
+              "start": 0.322,
+              "end": 0.779
+            },
+            {
+              "w": "scale",
+              "start": 0.779,
+              "end": 1.18
+            },
+            {
+              "w": "that",
+              "start": 1.18,
+              "end": 1.523
+            },
+            {
+              "w": "reads",
+              "start": 1.523,
+              "end": 1.923
+            },
+            {
+              "w": "70",
+              "start": 1.923,
+              "end": 2.152
+            },
+            {
+              "w": "kilograms",
+              "start": 2.152,
+              "end": 2.781
+            },
+            {
+              "w": "at",
+              "start": 2.781,
+              "end": 3.01
+            },
+            {
+              "w": "the",
+              "start": 3.01,
+              "end": 3.296
+            },
+            {
+              "w": "pole",
+              "start": 3.296,
+              "end": 3.639
+            },
+            {
+              "w": "reads",
+              "start": 3.639,
+              "end": 4.04
+            },
+            {
+              "w": "about",
+              "start": 4.04,
+              "end": 4.44
+            },
+            {
+              "w": "69.6",
+              "start": 4.44,
+              "end": 4.726
+            },
+            {
+              "w": "at",
+              "start": 4.726,
+              "end": 4.955
+            },
+            {
+              "w": "the",
+              "start": 4.955,
+              "end": 5.241
+            },
+            {
+              "w": "equator.",
+              "start": 5.241,
+              "end": 5.928
+            }
+          ]
+        },
+        {
+          "text": "Same you. Same mass.",
+          "start": 6.208,
+          "end": 7.546,
+          "words": [
+            {
+              "w": "Same",
+              "start": 6.208,
+              "end": 6.485
+            },
+            {
+              "w": "you.",
+              "start": 6.485,
+              "end": 6.854
+            },
+            {
+              "w": "Same",
+              "start": 6.854,
+              "end": 7.131
+            },
+            {
+              "w": "mass.",
+              "start": 7.131,
+              "end": 7.546
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "spin",
+      "audioFile": "voice/spin.wav",
+      "duration": 10.632,
+      "sentences": [
+        {
+          "text": "The main reason is spin.",
+          "start": 0.15,
+          "end": 1.39,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.344
+            },
+            {
+              "w": "main",
+              "start": 0.344,
+              "end": 0.576
+            },
+            {
+              "w": "reason",
+              "start": 0.576,
+              "end": 0.886
+            },
+            {
+              "w": "is",
+              "start": 0.886,
+              "end": 1.041
+            },
+            {
+              "w": "spin.",
+              "start": 1.041,
+              "end": 1.39
+            }
+          ]
+        },
+        {
+          "text": "At the equator, Earth carries you around at about 1,670 kilometres an hour.",
+          "start": 1.67,
+          "end": 6.88,
+          "words": [
+            {
+              "w": "At",
+              "start": 1.67,
+              "end": 1.896
+            },
+            {
+              "w": "the",
+              "start": 1.896,
+              "end": 2.18
+            },
+            {
+              "w": "equator,",
+              "start": 2.18,
+              "end": 2.859
+            },
+            {
+              "w": "Earth",
+              "start": 2.859,
+              "end": 3.256
+            },
+            {
+              "w": "carries",
+              "start": 3.256,
+              "end": 3.765
+            },
+            {
+              "w": "you",
+              "start": 3.765,
+              "end": 4.049
+            },
+            {
+              "w": "around",
+              "start": 4.049,
+              "end": 4.502
+            },
+            {
+              "w": "at",
+              "start": 4.502,
+              "end": 4.728
+            },
+            {
+              "w": "about",
+              "start": 4.728,
+              "end": 5.125
+            },
+            {
+              "w": "1,670",
+              "start": 5.125,
+              "end": 5.464
+            },
+            {
+              "w": "kilometres",
+              "start": 5.464,
+              "end": 6.144
+            },
+            {
+              "w": "an",
+              "start": 6.144,
+              "end": 6.371
+            },
+            {
+              "w": "hour.",
+              "start": 6.371,
+              "end": 6.88
+            }
+          ]
+        },
+        {
+          "text": "Part of gravity is used up just keeping you on that circle.",
+          "start": 7.16,
+          "end": 10.352,
+          "words": [
+            {
+              "w": "Part",
+              "start": 7.16,
+              "end": 7.419
+            },
+            {
+              "w": "of",
+              "start": 7.419,
+              "end": 7.592
+            },
+            {
+              "w": "gravity",
+              "start": 7.592,
+              "end": 7.98
+            },
+            {
+              "w": "is",
+              "start": 7.98,
+              "end": 8.152
+            },
+            {
+              "w": "used",
+              "start": 8.152,
+              "end": 8.411
+            },
+            {
+              "w": "up",
+              "start": 8.411,
+              "end": 8.583
+            },
+            {
+              "w": "just",
+              "start": 8.583,
+              "end": 8.842
+            },
+            {
+              "w": "keeping",
+              "start": 8.842,
+              "end": 9.23
+            },
+            {
+              "w": "you",
+              "start": 9.23,
+              "end": 9.446
+            },
+            {
+              "w": "on",
+              "start": 9.446,
+              "end": 9.618
+            },
+            {
+              "w": "that",
+              "start": 9.618,
+              "end": 9.877
+            },
+            {
+              "w": "circle.",
+              "start": 9.877,
+              "end": 10.352
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "bulge",
+      "audioFile": "voice/bulge.wav",
+      "duration": 5.816,
+      "sentences": [
+        {
+          "text": "Spin also makes Earth bulge.",
+          "start": 0.15,
+          "end": 1.733,
+          "words": [
+            {
+              "w": "Spin",
+              "start": 0.15,
+              "end": 0.414
+            },
+            {
+              "w": "also",
+              "start": 0.414,
+              "end": 0.678
+            },
+            {
+              "w": "makes",
+              "start": 0.678,
+              "end": 0.986
+            },
+            {
+              "w": "Earth",
+              "start": 0.986,
+              "end": 1.294
+            },
+            {
+              "w": "bulge.",
+              "start": 1.294,
+              "end": 1.733
+            }
+          ]
+        },
+        {
+          "text": "At the equator you're about twenty-one kilometres farther from the centre.",
+          "start": 2.013,
+          "end": 5.536,
+          "words": [
+            {
+              "w": "At",
+              "start": 2.013,
+              "end": 2.175
+            },
+            {
+              "w": "the",
+              "start": 2.175,
+              "end": 2.378
+            },
+            {
+              "w": "equator",
+              "start": 2.378,
+              "end": 2.742
+            },
+            {
+              "w": "you're",
+              "start": 2.742,
+              "end": 3.066
+            },
+            {
+              "w": "about",
+              "start": 3.066,
+              "end": 3.349
+            },
+            {
+              "w": "twenty-one",
+              "start": 3.349,
+              "end": 3.795
+            },
+            {
+              "w": "kilometres",
+              "start": 3.795,
+              "end": 4.281
+            },
+            {
+              "w": "farther",
+              "start": 4.281,
+              "end": 4.645
+            },
+            {
+              "w": "from",
+              "start": 4.645,
+              "end": 4.888
+            },
+            {
+              "w": "the",
+              "start": 4.888,
+              "end": 5.09
+            },
+            {
+              "w": "centre.",
+              "start": 5.09,
+              "end": 5.536
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "share",
+      "audioFile": "voice/share.wav",
+      "duration": 4.309,
+      "sentences": [
+        {
+          "text": "The spin does about two thirds of the work, and the squashed shape does the rest.",
+          "start": 0.15,
+          "end": 4.029,
+          "words": [
+            {
+              "w": "The",
+              "start": 0.15,
+              "end": 0.34
+            },
+            {
+              "w": "spin",
+              "start": 0.34,
+              "end": 0.568
+            },
+            {
+              "w": "does",
+              "start": 0.568,
+              "end": 0.797
+            },
+            {
+              "w": "about",
+              "start": 0.797,
+              "end": 1.063
+            },
+            {
+              "w": "two",
+              "start": 1.063,
+              "end": 1.253
+            },
+            {
+              "w": "thirds",
+              "start": 1.253,
+              "end": 1.557
+            },
+            {
+              "w": "of",
+              "start": 1.557,
+              "end": 1.709
+            },
+            {
+              "w": "the",
+              "start": 1.709,
+              "end": 1.9
+            },
+            {
+              "w": "work,",
+              "start": 1.9,
+              "end": 2.242
+            },
+            {
+              "w": "and",
+              "start": 2.242,
+              "end": 2.432
+            },
+            {
+              "w": "the",
+              "start": 2.432,
+              "end": 2.622
+            },
+            {
+              "w": "squashed",
+              "start": 2.622,
+              "end": 3.002
+            },
+            {
+              "w": "shape",
+              "start": 3.002,
+              "end": 3.269
+            },
+            {
+              "w": "does",
+              "start": 3.269,
+              "end": 3.497
+            },
+            {
+              "w": "the",
+              "start": 3.497,
+              "end": 3.687
+            },
+            {
+              "w": "rest.",
+              "start": 3.687,
+              "end": 4.029
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "payoff",
+      "audioFile": "voice/payoff.wav",
+      "duration": 6.04,
+      "sentences": [
+        {
+          "text": "70 kilograms at the pole. 69.6 at the equator.",
+          "start": 0.15,
+          "end": 3.939,
+          "words": [
+            {
+              "w": "70",
+              "start": 0.15,
+              "end": 0.407
+            },
+            {
+              "w": "kilograms",
+              "start": 0.407,
+              "end": 1.113
+            },
+            {
+              "w": "at",
+              "start": 1.113,
+              "end": 1.37
+            },
+            {
+              "w": "the",
+              "start": 1.37,
+              "end": 1.691
+            },
+            {
+              "w": "pole.",
+              "start": 1.691,
+              "end": 2.269
+            },
+            {
+              "w": "69.6",
+              "start": 2.269,
+              "end": 2.59
+            },
+            {
+              "w": "at",
+              "start": 2.59,
+              "end": 2.847
+            },
+            {
+              "w": "the",
+              "start": 2.847,
+              "end": 3.168
+            },
+            {
+              "w": "equator.",
+              "start": 3.168,
+              "end": 3.939
+            }
+          ]
+        },
+        {
+          "text": "About half a percent, for free.",
+          "start": 4.219,
+          "end": 5.76,
+          "words": [
+            {
+              "w": "About",
+              "start": 4.219,
+              "end": 4.476
+            },
+            {
+              "w": "half",
+              "start": 4.476,
+              "end": 4.696
+            },
+            {
+              "w": "a",
+              "start": 4.696,
+              "end": 4.806
+            },
+            {
+              "w": "percent,",
+              "start": 4.806,
+              "end": 5.246
+            },
+            {
+              "w": "for",
+              "start": 5.246,
+              "end": 5.429
+            },
+            {
+              "w": "free.",
+              "start": 5.429,
+              "end": 5.76
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.593,
+      "sentences": [
+        {
+          "text": "Same you, different number.",
+          "start": 0.15,
+          "end": 1.511,
+          "words": [
+            {
+              "w": "Same",
+              "start": 0.15,
+              "end": 0.377
+            },
+            {
+              "w": "you,",
+              "start": 0.377,
+              "end": 0.679
+            },
+            {
+              "w": "different",
+              "start": 0.679,
+              "end": 1.095
+            },
+            {
+              "w": "number.",
+              "start": 1.095,
+              "end": 1.511
+            }
+          ]
+        },
+        {
+          "text": "Follow for more weird physics.",
+          "start": 1.791,
+          "end": 3.313,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 1.791,
+              "end": 2.111
+            },
+            {
+              "w": "for",
+              "start": 2.111,
+              "end": 2.311
+            },
+            {
+              "w": "more",
+              "start": 2.311,
+              "end": 2.552
+            },
+            {
+              "w": "weird",
+              "start": 2.552,
+              "end": 2.832
+            },
+            {
+              "w": "physics.",
+              "start": 2.832,
+              "end": 3.313
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

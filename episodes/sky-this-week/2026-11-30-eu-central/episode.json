@@ -2,7 +2,7 @@
   "id": "sky-this-week-2026-11-30-eu-central",
   "series": "sky-this-week",
   "createdAt": "2026-11-15T01:23:52.079Z",
-  "stage": "approved",
+  "stage": "published",
   "location": {
     "id": "eu-central",
     "label": "central Europe",
@@ -16,18 +16,18 @@
   },
   "hashes": {
     "research": "b84604c21a291f0b",
-    "plan": "ad1d65c844b30d34",
-    "factcheckedPlan": "ad1d65c844b30d34",
-    "narration": "909d111e5b928373",
-    "video": "4f97308aaab319ef4a9277f85be79e441ecc7015137489927cffb10a84e959b9"
+    "plan": "6344da89b490eb9d",
+    "factcheckedPlan": "6344da89b490eb9d",
+    "narration": "b4f91c29e1c25a2f",
+    "video": "eca0a11d50404383df74dca969b556741d8644530a16354ca01a9480dd08d5f2"
   },
   "approvals": [
     {
       "by": "Krzysztof Nasuta",
       "actor": "human",
-      "at": "2026-11-15T02:39:37.447Z",
-      "videoSha256": "4f97308aaab319ef4a9277f85be79e441ecc7015137489927cffb10a84e959b9",
-      "note": "Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render."
+      "at": "2026-11-26T18:30:17.480Z",
+      "videoSha256": "eca0a11d50404383df74dca969b556741d8644530a16354ca01a9480dd08d5f2",
+      "note": "Approved by the owner in the Claude Code conversation on 2026-11-26 ('i approve all, please schedule, commit and push'); entered by Claude at the owner's instruction."
     }
   ]
 }

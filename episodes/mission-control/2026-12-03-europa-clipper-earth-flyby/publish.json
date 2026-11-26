@@ -1,0 +1,222 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-26T18:30:35.436Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-02T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "27a6d0dd8e54d87d2e226569e7202ebd5f0b023763fc233bad4387a8e80dfb43",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "NASA's Europa Clipper, launched on 14 October 2024, flies past Earth on Thursday 3 December 2026, about 3,200 km away, with closest approach west of Africa at 21:14 CET (3:14 p.m. EST). Earth's gravity changes its path and speeds it up, a propellant-saving boost. It is the second gravity assist, after a pass 884 km above Mars on 1 March 2025 that reshaped its orbit. It is due to begin orbiting Jupiter in April 2030 and then make nearly 50 flybys of Europa, an icy moon with strong evidence of a saltwater ocean beneath its surface.\n\nSources:\nNASA Science blog, Europa Clipper Zooming by Earth: https://science.nasa.gov/blogs/europa-clipper/2026/11/25/nasas-europa-clipper-zooming-by-earth-on-way-to-jupiters-icy-moon/\nNASA Science, Europa Clipper Earth Flyby: https://science.nasa.gov/mission/europa-clipper/earth-flyby/\nNASA Science, Mission Timeline: https://science.nasa.gov/mission/europa-clipper/mission-timeline/\n\nImages: NASA / Kim Shiflett (launch), NASA / JPL / Frank Michaux (solar array test), NASA / JPL-Caltech / SETI Institute (Europa, Galileo). Narration uses a synthetic voice.\n\n#space #nasa #spaceexploration #science #europaclipper #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-02T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "A Jupiter spacecraft flies past Earth on 3 December 🛰️🌍",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "A Jupiter spacecraft flies past Earth on 3 December 🛰️🌍\n\nNASA's Europa Clipper, launched on 14 October 2024, flies past Earth on Thursday 3 December 2026, about 3,200 km away, with closest approach west of Africa at 21:14 CET (3:14 p.m. EST). Earth's gravity changes its path and speeds it up, a propellant-saving boost. It is the second gravity assist, after a pass 884 km above Mars on 1 March 2025 that reshaped its orbit. It is due to begin orbiting Jupiter in April 2030 and then make nearly 50 flybys of Europa, an icy moon with strong evidence of a saltwater ocean beneath its surface.\n\nSources:\nNASA Science blog, Europa Clipper Zooming by Earth: https://science.nasa.gov/blogs/europa-clipper/2026/11/25/nasas-europa-clipper-zooming-by-earth-on-way-to-jupiters-icy-moon/\nNASA Science, Europa Clipper Earth Flyby: https://science.nasa.gov/mission/europa-clipper/earth-flyby/\nNASA Science, Mission Timeline: https://science.nasa.gov/mission/europa-clipper/mission-timeline/\n\nImages: NASA / Kim Shiflett (launch), NASA / JPL / Frank Michaux (solar array test), NASA / JPL-Caltech / SETI Institute (Europa, Galileo). Narration uses a synthetic voice.\n\n#space #nasa #spaceexploration #science #europaclipper #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-02T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "A Jupiter spacecraft flies past Earth on 3 December 🛰️🌍\n\nNASA's Europa Clipper, launched on 14 October 2024, flies past Earth on Thursday 3 December 2026, about 3,200 km away, with closest approach west of Africa at 21:14 CET (3:14 p.m. EST). Earth's gravity changes its path and speeds it up, a propellant-saving boost. It is the second gravity assist, after a pass 884 km above Mars on 1 March 2025 that reshaped its orbit. It is due to begin orbiting Jupiter in April 2030 and then make nearly 50 flybys of Europa, an icy moon with strong evidence of a saltwater ocean beneath its surface.\n\nSources:\nNASA Science blog, Europa Clipper Zooming by Earth\nNASA Science, Europa Clipper Earth Flyby\nNASA Science, Mission Timeline\n\nImages: NASA / Kim Shiflett (launch), NASA / JPL / Frank Michaux (solar array test), NASA / JPL-Caltech / SETI Institute (Europa, Galileo). Narration uses a synthetic voice.\n\n#space #nasa #spaceexploration #science #europaclipper #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-02T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-26T18:31:28.201Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-02T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "27a6d0dd8e54d87d2e226569e7202ebd5f0b023763fc233bad4387a8e80dfb43",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087b0f3accdac92cedf1a0",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "NASA's Europa Clipper, launched on 14 October 2024, flies past Earth on Thursday 3 December 2026, about 3,200 km away, with closest approach west of Africa at 21:14 CET (3:14 p.m. EST). Earth's gravity changes its path and speeds it up, a propellant-saving boost. It is the second gravity assist, after a pass 884 km above Mars on 1 March 2025 that reshaped its orbit. It is due to begin orbiting Jupiter in April 2030 and then make nearly 50 flybys of Europa, an icy moon with strong evidence of a saltwater ocean beneath its surface.\n\nSources:\nNASA Science blog, Europa Clipper Zooming by Earth: https://science.nasa.gov/blogs/europa-clipper/2026/11/25/nasas-europa-clipper-zooming-by-earth-on-way-to-jupiters-icy-moon/\nNASA Science, Europa Clipper Earth Flyby: https://science.nasa.gov/mission/europa-clipper/earth-flyby/\nNASA Science, Mission Timeline: https://science.nasa.gov/mission/europa-clipper/mission-timeline/\n\nImages: NASA / Kim Shiflett (launch), NASA / JPL / Frank Michaux (solar array test), NASA / JPL-Caltech / SETI Institute (Europa, Galileo). Narration uses a synthetic voice.\n\n#space #nasa #spaceexploration #science #europaclipper #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-02T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-12-03-europa-clipper-earth-flyby-27a6d0dd.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "A Jupiter spacecraft flies past Earth on 3 December 🛰️🌍",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087b10f0a96d0f217e9b25",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "A Jupiter spacecraft flies past Earth on 3 December 🛰️🌍\n\nNASA's Europa Clipper, launched on 14 October 2024, flies past Earth on Thursday 3 December 2026, about 3,200 km away, with closest approach west of Africa at 21:14 CET (3:14 p.m. EST). Earth's gravity changes its path and speeds it up, a propellant-saving boost. It is the second gravity assist, after a pass 884 km above Mars on 1 March 2025 that reshaped its orbit. It is due to begin orbiting Jupiter in April 2030 and then make nearly 50 flybys of Europa, an icy moon with strong evidence of a saltwater ocean beneath its surface.\n\nSources:\nNASA Science blog, Europa Clipper Zooming by Earth: https://science.nasa.gov/blogs/europa-clipper/2026/11/25/nasas-europa-clipper-zooming-by-earth-on-way-to-jupiters-icy-moon/\nNASA Science, Europa Clipper Earth Flyby: https://science.nasa.gov/mission/europa-clipper/earth-flyby/\nNASA Science, Mission Timeline: https://science.nasa.gov/mission/europa-clipper/mission-timeline/\n\nImages: NASA / Kim Shiflett (launch), NASA / JPL / Frank Michaux (solar array test), NASA / JPL-Caltech / SETI Institute (Europa, Galileo). Narration uses a synthetic voice.\n\n#space #nasa #spaceexploration #science #europaclipper #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-02T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-12-03-europa-clipper-earth-flyby-27a6d0dd.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087b113accdac92cedf251",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "A Jupiter spacecraft flies past Earth on 3 December 🛰️🌍\n\nNASA's Europa Clipper, launched on 14 October 2024, flies past Earth on Thursday 3 December 2026, about 3,200 km away, with closest approach west of Africa at 21:14 CET (3:14 p.m. EST). Earth's gravity changes its path and speeds it up, a propellant-saving boost. It is the second gravity assist, after a pass 884 km above Mars on 1 March 2025 that reshaped its orbit. It is due to begin orbiting Jupiter in April 2030 and then make nearly 50 flybys of Europa, an icy moon with strong evidence of a saltwater ocean beneath its surface.\n\nSources:\nNASA Science blog, Europa Clipper Zooming by Earth\nNASA Science, Europa Clipper Earth Flyby\nNASA Science, Mission Timeline\n\nImages: NASA / Kim Shiflett (launch), NASA / JPL / Frank Michaux (solar array test), NASA / JPL-Caltech / SETI Institute (Europa, Galileo). Narration uses a synthetic voice.\n\n#space #nasa #spaceexploration #science #europaclipper #jupiter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-02T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-12-03-europa-clipper-earth-flyby-27a6d0dd.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/mission-control/2026-12-03-europa-clipper-earth-flyby-27a6d0dd.mp4"
+      }
+    }
+  ]
+}

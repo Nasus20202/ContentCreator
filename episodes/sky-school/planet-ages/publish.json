@@ -288,6 +288,224 @@
           }
         }
       ]
+    },
+    {
+      "at": "2026-11-26T17:25:16.926Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-05T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "68b56dc6b5150bb9282db4e4a62d63f1cdc436e8f659df4d4ef3a29b4cd34288",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/planet-ages-68b56dc6.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6b086b7fc81617797dcabe60",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "A year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods): https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #planets #saturn",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-05T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/planet-ages-68b56dc6.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "30 on Earth, barely 1 on Saturn 🪐",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6b086b809068b6e0794da6d9",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "30 on Earth, barely 1 on Saturn 🪐\n\nA year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods): https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #planets #saturn",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-05T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/planet-ages-68b56dc6.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "submitted",
+          "postId": "6b086b811fa40915828273ac",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "30 on Earth, barely 1 on Saturn 🪐\n\nA year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods)\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #planets #saturn",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-05T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/planet-ages-68b56dc6.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-26T17:51:48.174Z",
+      "actor": "claude",
+      "mode": "reschedule",
+      "scheduledFor": "2026-11-27T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "68b56dc6b5150bb9282db4e4a62d63f1cdc436e8f659df4d4ef3a29b4cd34288",
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/planet-ages-68b56dc6.mp4"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "submitted",
+          "postId": "6b086b7fc81617797dcabe60",
+          "payload": {
+            "text": "A year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods): https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #planets #saturn",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-27T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/planet-ages-68b56dc6.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "30 on Earth, barely 1 on Saturn 🪐",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            },
+            "id": "6b086b7fc81617797dcabe60"
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "submitted",
+          "postId": "6b086b809068b6e0794da6d9",
+          "payload": {
+            "text": "30 on Earth, barely 1 on Saturn 🪐\n\nA year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods): https://nssdc.gsfc.nasa.gov/planetary/factsheet/\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #planets #saturn",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-27T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/planet-ages-68b56dc6.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            },
+            "id": "6b086b809068b6e0794da6d9"
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "submitted",
+          "postId": "6b086b811fa40915828273ac",
+          "payload": {
+            "text": "30 on Earth, barely 1 on Saturn 🪐\n\nA year is one trip around the Sun, and every planet takes a different time. At 30 Earth years you would be about 124 on Mercury, 16 on Mars and just 1 on Saturn, and you would only reach your first Neptune birthday at 164.\n\nSource:\nNASA NSSDCA Planetary Fact Sheet (orbital periods)\n\nImages: NASA / JPL / Space Science Institute (Saturn, Cassini), NASA / JHUAPL / Carnegie (Mercury, MESSENGER, enhanced colour), NASA / JPL / USGS (Mars, Viking), NASA / JPL (Neptune, Voyager). Narration uses a synthetic voice.\n\n#astronomy #space #science #skyschool #planets #saturn",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-27T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/planet-ages-68b56dc6.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 1000
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            },
+            "id": "6b086b811fa40915828273ac"
+          }
+        }
+      ]
     }
   ]
 }

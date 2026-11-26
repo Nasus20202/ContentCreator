@@ -1,0 +1,100 @@
+{
+  "assets": [
+    {
+      "id": "img-moon",
+      "kind": "image",
+      "file": "assets/img-moon.jpg",
+      "sha256": "6e566e17eec57c040bbad4106e460ab69f59807caafcefa59efcbb02e4cdf125",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA00405/PIA00405~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA00405",
+        "title": "Earth Moon",
+        "credit": "NASA / JPL / USGS",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:30:40.652Z"
+    },
+    {
+      "id": "img-io",
+      "kind": "image",
+      "file": "assets/img-io.jpg",
+      "sha256": "f1a43acff908a77a9dd89ef0e23dfcce79dbee9ccb4ce209bf1111da4d72fead",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA02308/PIA02308~large.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA02308",
+        "title": "Global image of Io true color",
+        "credit": "NASA / JPL / University of Arizona",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:30:42.815Z"
+    },
+    {
+      "id": "img-callisto",
+      "kind": "image",
+      "file": "assets/img-callisto.jpg",
+      "sha256": "6b1607c5dfb7ce3f5cf1ceffe3a98e3c88607090b39367904f19bb526cfedc24",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA03456/PIA03456~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA03456",
+        "title": "Global Callisto in Color",
+        "credit": "NASA / JPL / DLR",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:30:44.847Z"
+    },
+    {
+      "id": "img-titan",
+      "kind": "image",
+      "file": "assets/img-titan.jpg",
+      "sha256": "96c7c1f99bb609655014f9586428b20168c5e5825a5db98dedfceb598fb86942",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA06230/PIA06230~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA06230",
+        "title": "Cassini View of Titan: Natural Color Composite",
+        "credit": "NASA / JPL / Space Science Institute",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:30:47.005Z"
+    },
+    {
+      "id": "img-ganymede",
+      "kind": "image",
+      "file": "assets/img-ganymede.jpg",
+      "sha256": "f55181e1a847b64a2f1cfb214180d767aa6f71f0a81eaa031474a72dbe9f5732",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA24681/PIA24681~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA24681",
+        "title": "Juno's Ganymede Close-up",
+        "credit": "NASA / JPL / JPL-Caltech / SwRI / MSSS",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:30:49.484Z"
+    },
+    {
+      "id": "img-ganymede-galileo",
+      "kind": "image",
+      "file": "assets/img-ganymede-galileo.jpg",
+      "sha256": "6382510b125173a0490b281a1168f4bbc63d9cbf2fcabcfbb892135bb1b2c093",
+      "source": {
+        "provider": "nasa-images",
+        "url": "https://images-assets.nasa.gov/image/PIA00716/PIA00716~orig.jpg",
+        "pageUrl": "https://images.nasa.gov/details/PIA00716",
+        "title": "Ganymede Color Global",
+        "credit": "NASA / JPL",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:50:21.435Z"
+    }
+  ]
+}

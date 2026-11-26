@@ -1,0 +1,184 @@
+{
+  "facts": [
+    {
+      "id": "ganymede",
+      "statement": "Ganymede's radius is 2,631.2 km, so it is about 5,262 km across.",
+      "values": [
+        2631.2,
+        5262
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html",
+        "title": "Jovian Satellite Fact Sheet",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "callisto",
+      "statement": "Callisto's radius is 2,410.3 km, so it is about 4,821 km across.",
+      "values": [
+        2410.3,
+        4821
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html",
+        "title": "Jovian Satellite Fact Sheet",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "io",
+      "statement": "Io's radius is 1,821.5 km, so it is about 3,643 km across.",
+      "values": [
+        1821.5,
+        3643
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html",
+        "title": "Jovian Satellite Fact Sheet",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "titan",
+      "statement": "Titan's mean radius is 2,575 km, so it is about 5,150 km across.",
+      "values": [
+        2575,
+        5150
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html",
+        "title": "Saturnian Satellite Fact Sheet",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "moon",
+      "statement": "The Moon's mean radius is 1,737.4 km, so it is about 3,475 km across.",
+      "values": [
+        1737.4,
+        3475
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html",
+        "title": "Moon Fact Sheet",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "mercury",
+      "statement": "Mercury's mean radius is 2,439.7 km, so the planet is about 4,879 km across.",
+      "values": [
+        2439.7,
+        4879
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html",
+        "title": "Mercury Fact Sheet",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "io-volcanic",
+      "statement": "Io is the most volcanically active world in the solar system, with hundreds of volcanoes.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/",
+        "title": "Ganymede: Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "callisto-craters",
+      "statement": "Callisto is the most heavily cratered object in our solar system.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/",
+        "title": "Ganymede: Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "ganymede-field",
+      "statement": "Ganymede is the largest moon in our solar system and the only moon known to have its own magnetic field.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/",
+        "title": "Ganymede: Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "titan-air",
+      "statement": "Titan is the only moon in the solar system with a dense atmosphere; a thick orange-coloured haze hides its surface from view.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://science.nasa.gov/saturn/moons/titan/facts/",
+        "title": "Titan: Facts",
+        "publisher": "NASA Science",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "margin",
+      "statement": "Ganymede is about 383 km wider than Mercury (5,262 vs 4,879 km), about 8 percent; Titan is also wider than Mercury.",
+      "values": [
+        383,
+        8,
+        5262,
+        4879,
+        5150
+      ],
+      "source": {
+        "type": "computed",
+        "method": "diameter differences from NSSDC radii",
+        "inputs": {
+          "ganymede_km": 5262.4,
+          "mercury_km": 4879.4,
+          "titan_km": 5150
+        }
+      }
+    },
+    {
+      "id": "ranking",
+      "statement": "Ranked by diameter, the 5 biggest moons are 1 Ganymede, 2 Titan, 3 Callisto, 4 Io, 5 the Moon; two of them are wider than Mercury.",
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "source": {
+        "type": "computed",
+        "method": "sort NSSDC mean radii, descending",
+        "inputs": {
+          "1": "Ganymede 2631.2",
+          "2": "Titan 2575",
+          "3": "Callisto 2410.3",
+          "4": "Io 1821.5",
+          "5": "Moon 1737.4"
+        }
+      }
+    }
+  ]
+}

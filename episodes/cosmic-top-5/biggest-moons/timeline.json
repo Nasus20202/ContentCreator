@@ -1,0 +1,742 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "780ad6b930cb283d",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 4.737,
+      "sentences": [
+        {
+          "text": "These are the five biggest moons in the solar system.",
+          "start": 0.15,
+          "end": 2.833,
+          "words": [
+            {
+              "w": "These",
+              "start": 0.15,
+              "end": 0.435
+            },
+            {
+              "w": "are",
+              "start": 0.435,
+              "end": 0.638
+            },
+            {
+              "w": "the",
+              "start": 0.638,
+              "end": 0.841
+            },
+            {
+              "w": "five",
+              "start": 0.841,
+              "end": 1.085
+            },
+            {
+              "w": "biggest",
+              "start": 1.085,
+              "end": 1.451
+            },
+            {
+              "w": "moons",
+              "start": 1.451,
+              "end": 1.736
+            },
+            {
+              "w": "in",
+              "start": 1.736,
+              "end": 1.898
+            },
+            {
+              "w": "the",
+              "start": 1.898,
+              "end": 2.102
+            },
+            {
+              "w": "solar",
+              "start": 2.102,
+              "end": 2.386
+            },
+            {
+              "w": "system.",
+              "start": 2.386,
+              "end": 2.833
+            }
+          ]
+        },
+        {
+          "text": "Ranked by how wide they are.",
+          "start": 3.113,
+          "end": 4.457,
+          "words": [
+            {
+              "w": "Ranked",
+              "start": 3.113,
+              "end": 3.404
+            },
+            {
+              "w": "by",
+              "start": 3.404,
+              "end": 3.549
+            },
+            {
+              "w": "how",
+              "start": 3.549,
+              "end": 3.731
+            },
+            {
+              "w": "wide",
+              "start": 3.731,
+              "end": 3.948
+            },
+            {
+              "w": "they",
+              "start": 3.948,
+              "end": 4.166
+            },
+            {
+              "w": "are.",
+              "start": 4.166,
+              "end": 4.457
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "n5",
+      "audioFile": "voice/n5.wav",
+      "duration": 4.982,
+      "sentences": [
+        {
+          "text": "Number five: our own Moon, 3,475 kilometres across.",
+          "start": 0.15,
+          "end": 4.702,
+          "words": [
+            {
+              "w": "Number",
+              "start": 0.15,
+              "end": 0.71
+            },
+            {
+              "w": "five:",
+              "start": 0.71,
+              "end": 1.34
+            },
+            {
+              "w": "our",
+              "start": 1.34,
+              "end": 1.691
+            },
+            {
+              "w": "own",
+              "start": 1.691,
+              "end": 2.041
+            },
+            {
+              "w": "Moon,",
+              "start": 2.041,
+              "end": 2.671
+            },
+            {
+              "w": "3,475",
+              "start": 2.671,
+              "end": 3.091
+            },
+            {
+              "w": "kilometres",
+              "start": 3.091,
+              "end": 3.931
+            },
+            {
+              "w": "across.",
+              "start": 3.931,
+              "end": 4.702
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "n4",
+      "audioFile": "voice/n4.wav",
+      "duration": 7.584,
+      "sentences": [
+        {
+          "text": "Number four: Io, at 3,643 kilometres.",
+          "start": 0.15,
+          "end": 4.03,
+          "words": [
+            {
+              "w": "Number",
+              "start": 0.15,
+              "end": 0.783
+            },
+            {
+              "w": "four:",
+              "start": 0.783,
+              "end": 1.496
+            },
+            {
+              "w": "Io,",
+              "start": 1.496,
+              "end": 2.05
+            },
+            {
+              "w": "at",
+              "start": 2.05,
+              "end": 2.367
+            },
+            {
+              "w": "3,643",
+              "start": 2.367,
+              "end": 2.842
+            },
+            {
+              "w": "kilometres.",
+              "start": 2.842,
+              "end": 4.03
+            }
+          ]
+        },
+        {
+          "text": "It's the most volcanically active world in the solar system.",
+          "start": 4.31,
+          "end": 7.304,
+          "words": [
+            {
+              "w": "It's",
+              "start": 4.31,
+              "end": 4.556
+            },
+            {
+              "w": "the",
+              "start": 4.556,
+              "end": 4.761
+            },
+            {
+              "w": "most",
+              "start": 4.761,
+              "end": 5.007
+            },
+            {
+              "w": "volcanically",
+              "start": 5.007,
+              "end": 5.581
+            },
+            {
+              "w": "active",
+              "start": 5.581,
+              "end": 5.909
+            },
+            {
+              "w": "world",
+              "start": 5.909,
+              "end": 6.196
+            },
+            {
+              "w": "in",
+              "start": 6.196,
+              "end": 6.36
+            },
+            {
+              "w": "the",
+              "start": 6.36,
+              "end": 6.565
+            },
+            {
+              "w": "solar",
+              "start": 6.565,
+              "end": 6.853
+            },
+            {
+              "w": "system.",
+              "start": 6.853,
+              "end": 7.304
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "n3",
+      "audioFile": "voice/n3.wav",
+      "duration": 7.536,
+      "sentences": [
+        {
+          "text": "Number three: Callisto, 4,821 kilometres.",
+          "start": 0.15,
+          "end": 3.956,
+          "words": [
+            {
+              "w": "Number",
+              "start": 0.15,
+              "end": 0.736
+            },
+            {
+              "w": "three:",
+              "start": 0.736,
+              "end": 1.467
+            },
+            {
+              "w": "Callisto,",
+              "start": 1.467,
+              "end": 2.419
+            },
+            {
+              "w": "4,821",
+              "start": 2.419,
+              "end": 2.858
+            },
+            {
+              "w": "kilometres.",
+              "start": 2.858,
+              "end": 3.956
+            }
+          ]
+        },
+        {
+          "text": "No object in the solar system is more heavily cratered.",
+          "start": 4.236,
+          "end": 7.256,
+          "words": [
+            {
+              "w": "No",
+              "start": 4.236,
+              "end": 4.414
+            },
+            {
+              "w": "object",
+              "start": 4.414,
+              "end": 4.769
+            },
+            {
+              "w": "in",
+              "start": 4.769,
+              "end": 4.947
+            },
+            {
+              "w": "the",
+              "start": 4.947,
+              "end": 5.169
+            },
+            {
+              "w": "solar",
+              "start": 5.169,
+              "end": 5.479
+            },
+            {
+              "w": "system",
+              "start": 5.479,
+              "end": 5.835
+            },
+            {
+              "w": "is",
+              "start": 5.835,
+              "end": 6.012
+            },
+            {
+              "w": "more",
+              "start": 6.012,
+              "end": 6.279
+            },
+            {
+              "w": "heavily",
+              "start": 6.279,
+              "end": 6.679
+            },
+            {
+              "w": "cratered.",
+              "start": 6.679,
+              "end": 7.256
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "n2",
+      "audioFile": "voice/n2.wav",
+      "duration": 8.936,
+      "sentences": [
+        {
+          "text": "Number two: Saturn's moon Titan, 5,150 kilometres.",
+          "start": 0.15,
+          "end": 4.648,
+          "words": [
+            {
+              "w": "Number",
+              "start": 0.15,
+              "end": 0.721
+            },
+            {
+              "w": "two:",
+              "start": 0.721,
+              "end": 1.292
+            },
+            {
+              "w": "Saturn's",
+              "start": 1.292,
+              "end": 2.006
+            },
+            {
+              "w": "moon",
+              "start": 2.006,
+              "end": 2.435
+            },
+            {
+              "w": "Titan,",
+              "start": 2.435,
+              "end": 3.149
+            },
+            {
+              "w": "5,150",
+              "start": 3.149,
+              "end": 3.577
+            },
+            {
+              "w": "kilometres.",
+              "start": 3.577,
+              "end": 4.648
+            }
+          ]
+        },
+        {
+          "text": "It's the only moon with a thick atmosphere, and its haze hides the ground.",
+          "start": 4.928,
+          "end": 8.656,
+          "words": [
+            {
+              "w": "It's",
+              "start": 4.928,
+              "end": 5.168
+            },
+            {
+              "w": "the",
+              "start": 5.168,
+              "end": 5.369
+            },
+            {
+              "w": "only",
+              "start": 5.369,
+              "end": 5.609
+            },
+            {
+              "w": "moon",
+              "start": 5.609,
+              "end": 5.85
+            },
+            {
+              "w": "with",
+              "start": 5.85,
+              "end": 6.09
+            },
+            {
+              "w": "a",
+              "start": 6.09,
+              "end": 6.211
+            },
+            {
+              "w": "thick",
+              "start": 6.211,
+              "end": 6.491
+            },
+            {
+              "w": "atmosphere,",
+              "start": 6.491,
+              "end": 7.093
+            },
+            {
+              "w": "and",
+              "start": 7.093,
+              "end": 7.293
+            },
+            {
+              "w": "its",
+              "start": 7.293,
+              "end": 7.494
+            },
+            {
+              "w": "haze",
+              "start": 7.494,
+              "end": 7.734
+            },
+            {
+              "w": "hides",
+              "start": 7.734,
+              "end": 8.015
+            },
+            {
+              "w": "the",
+              "start": 8.015,
+              "end": 8.215
+            },
+            {
+              "w": "ground.",
+              "start": 8.215,
+              "end": 8.656
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "n1",
+      "audioFile": "voice/n1.wav",
+      "duration": 8.472,
+      "sentences": [
+        {
+          "text": "And number one: Jupiter's moon Ganymede, 5,262 kilometres.",
+          "start": 0.15,
+          "end": 5.046,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.49
+            },
+            {
+              "w": "number",
+              "start": 0.49,
+              "end": 1.034
+            },
+            {
+              "w": "one:",
+              "start": 1.034,
+              "end": 1.578
+            },
+            {
+              "w": "Jupiter's",
+              "start": 1.578,
+              "end": 2.326
+            },
+            {
+              "w": "moon",
+              "start": 2.326,
+              "end": 2.734
+            },
+            {
+              "w": "Ganymede,",
+              "start": 2.734,
+              "end": 3.618
+            },
+            {
+              "w": "5,262",
+              "start": 3.618,
+              "end": 4.026
+            },
+            {
+              "w": "kilometres.",
+              "start": 4.026,
+              "end": 5.046
+            }
+          ]
+        },
+        {
+          "text": "The only moon known to make its own magnetic field.",
+          "start": 5.326,
+          "end": 8.192,
+          "words": [
+            {
+              "w": "The",
+              "start": 5.326,
+              "end": 5.55
+            },
+            {
+              "w": "only",
+              "start": 5.55,
+              "end": 5.819
+            },
+            {
+              "w": "moon",
+              "start": 5.819,
+              "end": 6.088
+            },
+            {
+              "w": "known",
+              "start": 6.088,
+              "end": 6.401
+            },
+            {
+              "w": "to",
+              "start": 6.401,
+              "end": 6.58
+            },
+            {
+              "w": "make",
+              "start": 6.58,
+              "end": 6.849
+            },
+            {
+              "w": "its",
+              "start": 6.849,
+              "end": 7.073
+            },
+            {
+              "w": "own",
+              "start": 7.073,
+              "end": 7.297
+            },
+            {
+              "w": "magnetic",
+              "start": 7.297,
+              "end": 7.744
+            },
+            {
+              "w": "field.",
+              "start": 7.744,
+              "end": 8.192
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "mercury",
+      "audioFile": "voice/mercury.wav",
+      "duration": 4.863,
+      "sentences": [
+        {
+          "text": "And here's the twist: Ganymede and Titan are both wider than the planet Mercury.",
+          "start": 0.15,
+          "end": 4.583,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.374
+            },
+            {
+              "w": "here's",
+              "start": 0.374,
+              "end": 0.732
+            },
+            {
+              "w": "the",
+              "start": 0.732,
+              "end": 0.956
+            },
+            {
+              "w": "twist:",
+              "start": 0.956,
+              "end": 1.404
+            },
+            {
+              "w": "Ganymede",
+              "start": 1.404,
+              "end": 1.851
+            },
+            {
+              "w": "and",
+              "start": 1.851,
+              "end": 2.075
+            },
+            {
+              "w": "Titan",
+              "start": 2.075,
+              "end": 2.389
+            },
+            {
+              "w": "are",
+              "start": 2.389,
+              "end": 2.613
+            },
+            {
+              "w": "both",
+              "start": 2.613,
+              "end": 2.881
+            },
+            {
+              "w": "wider",
+              "start": 2.881,
+              "end": 3.195
+            },
+            {
+              "w": "than",
+              "start": 3.195,
+              "end": 3.463
+            },
+            {
+              "w": "the",
+              "start": 3.463,
+              "end": 3.687
+            },
+            {
+              "w": "planet",
+              "start": 3.687,
+              "end": 4.045
+            },
+            {
+              "w": "Mercury.",
+              "start": 4.045,
+              "end": 4.583
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.051,
+      "sentences": [
+        {
+          "text": "That's the countdown.",
+          "start": 0.15,
+          "end": 1.183,
+          "words": [
+            {
+              "w": "That's",
+              "start": 0.15,
+              "end": 0.456
+            },
+            {
+              "w": "the",
+              "start": 0.456,
+              "end": 0.647
+            },
+            {
+              "w": "countdown.",
+              "start": 0.647,
+              "end": 1.183
+            }
+          ]
+        },
+        {
+          "text": "Follow for the next five.",
+          "start": 1.463,
+          "end": 2.771,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 1.463,
+              "end": 1.78
+            },
+            {
+              "w": "for",
+              "start": 1.78,
+              "end": 1.978
+            },
+            {
+              "w": "the",
+              "start": 1.978,
+              "end": 2.177
+            },
+            {
+              "w": "next",
+              "start": 2.177,
+              "end": 2.415
+            },
+            {
+              "w": "five.",
+              "start": 2.415,
+              "end": 2.771
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

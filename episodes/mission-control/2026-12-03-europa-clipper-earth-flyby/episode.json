@@ -1,0 +1,21 @@
+{
+  "id": "mission-control-2026-12-03-europa-clipper-earth-flyby",
+  "series": "mission-control",
+  "createdAt": "2026-11-26T17:28:47.292Z",
+  "stage": "published",
+  "hashes": {
+    "plan": "97b25cb805f7029a",
+    "factcheckedPlan": "97b25cb805f7029a",
+    "narration": "7c3ba3ab9705223a",
+    "video": "27a6d0dd8e54d87d2e226569e7202ebd5f0b023763fc233bad4387a8e80dfb43"
+  },
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-26T18:30:21.451Z",
+      "videoSha256": "27a6d0dd8e54d87d2e226569e7202ebd5f0b023763fc233bad4387a8e80dfb43",
+      "note": "Approved by the owner in the Claude Code conversation on 2026-11-26 ('i approve all, please schedule, commit and push'); entered by Claude at the owner's instruction."
+    }
+  ]
+}

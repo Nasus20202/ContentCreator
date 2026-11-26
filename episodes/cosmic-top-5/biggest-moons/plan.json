@@ -1,0 +1,270 @@
+{
+  "episodeId": "cosmic-top-5-biggest-moons",
+  "series": "cosmic-top-5",
+  "title": "Cosmic Top 5 · Biggest moons",
+  "badge": "Cosmic Top 5 · Biggest moons",
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.08
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.15
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": [
+        "These are the five biggest moons in the solar system.",
+        "Ranked by how wide they are."
+      ],
+      "factIds": [
+        "ganymede",
+        "titan",
+        "callisto",
+        "io",
+        "moon",
+        "ranking"
+      ],
+      "chips": [],
+      "template": "image",
+      "params": {
+        "assetId": "img-io",
+        "zoom": [
+          1,
+          1.1
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "contain"
+      },
+      "title": {
+        "kicker": "Cosmic Top 5",
+        "title": "The biggest moons",
+        "from": 0.1,
+        "to": 2.8
+      }
+    },
+    {
+      "id": "n5",
+      "narration": [
+        "Number five: our own Moon, 3,475 kilometres across."
+      ],
+      "factIds": [
+        "moon",
+        "ranking"
+      ],
+      "chips": [
+        {
+          "text": "#5 · THE MOON · 3,475 KM",
+          "from": 0.2
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "img-moon",
+        "zoom": [
+          1,
+          1.15
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "n4",
+      "narration": [
+        "Number four: Io, at 3,643 kilometres.",
+        "It's the most volcanically active world in the solar system."
+      ],
+      "factIds": [
+        "io",
+        "io-volcanic",
+        "ranking"
+      ],
+      "chips": [
+        {
+          "text": "#4 · IO · 3,643 KM",
+          "from": 0.2
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "img-io",
+        "zoom": [
+          1.05,
+          1.35
+        ],
+        "focus": [
+          0.4,
+          0.6
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "n3",
+      "narration": [
+        "Number three: Callisto, 4,821 kilometres.",
+        "No object in the solar system is more heavily cratered."
+      ],
+      "factIds": [
+        "callisto",
+        "callisto-craters",
+        "ranking"
+      ],
+      "chips": [
+        {
+          "text": "#3 · CALLISTO · 4,821 KM",
+          "from": 0.2
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "img-callisto",
+        "zoom": [
+          1,
+          1.25
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "n2",
+      "narration": [
+        "Number two: Saturn's moon Titan, 5,150 kilometres.",
+        "It's the only moon with a thick atmosphere, and its haze hides the ground."
+      ],
+      "factIds": [
+        "titan",
+        "titan-air",
+        "ranking"
+      ],
+      "chips": [
+        {
+          "text": "#2 · TITAN · 5,150 KM",
+          "from": 0.2
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "img-titan",
+        "zoom": [
+          1,
+          1.18
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "n1",
+      "narration": [
+        "And number one: Jupiter's moon Ganymede, 5,262 kilometres.",
+        "The only moon known to make its own magnetic field."
+      ],
+      "factIds": [
+        "ganymede",
+        "ganymede-field",
+        "ranking"
+      ],
+      "chips": [
+        {
+          "text": "#1 · GANYMEDE · 5,262 KM",
+          "from": 0.2
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "img-ganymede-galileo",
+        "zoom": [
+          1,
+          1.18
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "mercury",
+      "narration": [
+        "And here's the twist: Ganymede and Titan are both wider than the planet Mercury."
+      ],
+      "factIds": [
+        "ganymede",
+        "titan",
+        "mercury",
+        "margin",
+        "ranking"
+      ],
+      "chips": [],
+      "template": "compare",
+      "params": {
+        "heading": "Diameter",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "#1 Ganymede",
+            "value": 5262,
+            "display": "5,262 km"
+          },
+          {
+            "label": "#2 Titan",
+            "value": 5150,
+            "display": "5,150 km"
+          },
+          {
+            "label": "Planet Mercury",
+            "value": 4879,
+            "display": "4,879 km"
+          }
+        ],
+        "note": "Drawn to scale · NASA fact sheets"
+      }
+    },
+    {
+      "id": "outro",
+      "narration": [
+        "That's the countdown.",
+        "Follow for the next five."
+      ],
+      "factIds": [
+        "ganymede",
+        "ranking"
+      ],
+      "template": "outro",
+      "params": {
+        "kicker": "Cosmic Top 5",
+        "cta": "FOLLOW\nFOR THE\nNEXT FIVE",
+        "footnote": "Sizes: NASA NSSDCA fact sheets"
+      }
+    }
+  ],
+  "post": {
+    "title": "The 5 biggest moons: two are wider than a planet 🌕🪐",
+    "description": "Ranked by diameter:\n#5 The Moon: 3,475 km\n#4 Io: 3,643 km, the most volcanically active world in the solar system\n#3 Callisto: 4,821 km, the most heavily cratered\n#2 Titan: 5,150 km, the only moon with a thick atmosphere\n#1 Ganymede: 5,262 km, the only moon known to have its own magnetic field\nGanymede and Titan are both wider than the planet Mercury (4,879 km).\n\nSources:\nNASA NSSDCA fact sheets (diameters from listed radii): https://nssdc.gsfc.nasa.gov/planetary/factsheet/joviansatfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturniansatfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html\nNASA Science, Ganymede facts: https://science.nasa.gov/jupiter/jupiter-moons/ganymede/facts/\nNASA Science, Titan facts: https://science.nasa.gov/saturn/moons/titan/facts/\n\nImages: NASA / JPL / USGS (Moon and Io, Galileo), NASA / JPL / DLR (Callisto, Galileo), NASA / JPL / Space Science Institute (Titan, Cassini), NASA / JPL (Ganymede, Galileo). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#space",
+      "#astronomy",
+      "#science",
+      "#top5",
+      "#moons",
+      "#jupiter"
+    ]
+  }
+}

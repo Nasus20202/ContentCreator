@@ -163,6 +163,26 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | tiktok | deleted | 6af610700522ffa5bc4b515d |  |
 | instagram | deleted | 6af8cec2e5a113497aaade0f |  |
 
+### 2026-11-26T17:25:16.926Z · buffer · schedule for 2026-12-05T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/planet-ages-68b56dc6.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6b086b7fc81617797dcabe60 |  |
+| tiktok | submitted | 6b086b809068b6e0794da6d9 |  |
+| instagram | submitted | 6b086b811fa40915828273ac |  |
+
+### 2026-11-26T17:51:48.174Z · buffer · reschedule for 2026-11-27T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/planet-ages-68b56dc6.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6b086b7fc81617797dcabe60 |  |
+| tiktok | submitted | 6b086b809068b6e0794da6d9 |  |
+| instagram | submitted | 6b086b811fa40915828273ac |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -210,3 +230,6 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-14 21:12:34 | claude | published | stage.advance | 47c29b3 |
 | 2026-11-15 02:29:34 | claude | publish | publish.unschedule | 4049d2c |
 | 2026-11-15 08:41:23 | claude | published | episode.rename | 0d80a88 |
+| 2026-11-26 17:25:21 | claude | publish | publish.submit | 2178ad3 |
+| 2026-11-26 17:25:21 | claude | published | stage.advance | 2178ad3 |
+| 2026-11-26 17:51:50 | claude | publish | publish.reschedule | 2178ad3 |

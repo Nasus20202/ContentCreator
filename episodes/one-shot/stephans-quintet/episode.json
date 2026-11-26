@@ -1,0 +1,21 @@
+{
+  "id": "one-shot-stephans-quintet",
+  "series": "one-shot",
+  "createdAt": "2026-11-26T17:28:39.779Z",
+  "stage": "published",
+  "hashes": {
+    "plan": "4c7fe507f41700b8",
+    "factcheckedPlan": "4c7fe507f41700b8",
+    "narration": "7868b586b3ad67fc",
+    "video": "05a38b3d95aba1167b54aaca00597fe35ba70ec0198934809fb2fc3bca13cbb8"
+  },
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-26T18:30:24.245Z",
+      "videoSha256": "05a38b3d95aba1167b54aaca00597fe35ba70ec0198934809fb2fc3bca13cbb8",
+      "note": "Approved by the owner in the Claude Code conversation on 2026-11-26 ('i approve all, please schedule, commit and push'); entered by Claude at the owner's instruction."
+    }
+  ]
+}

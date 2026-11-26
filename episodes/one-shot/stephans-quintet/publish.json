@@ -1,0 +1,222 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-26T18:30:38.310Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-05T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "05a38b3d95aba1167b54aaca00597fe35ba70ec0198934809fb2fc3bca13cbb8",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.\n\n#space #astronomy #nasa #astrophotography #jameswebb #galaxies",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-05T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "One of these 5 galaxies is an impostor 🌌🔭",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "One of these 5 galaxies is an impostor 🌌🔭\n\nStephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.\n\n#space #astronomy #nasa #astrophotography #jameswebb #galaxies",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-05T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "One of these 5 galaxies is an impostor 🌌🔭\n\nStephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes\nESA/Webb, Stephan's Quintet (NIRCam + MIRI)\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.\n\n#space #astronomy #nasa #astrophotography #jameswebb #galaxies",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-05T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-26T18:32:00.662Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-05T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "05a38b3d95aba1167b54aaca00597fe35ba70ec0198934809fb2fc3bca13cbb8",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087b353accdac92cedfcaa",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Stephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.\n\n#space #astronomy #nasa #astrophotography #jameswebb #galaxies",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-05T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/one-shot/stephans-quintet-05a38b3d.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "One of these 5 galaxies is an impostor 🌌🔭",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087b369068b6e079551d85",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "One of these 5 galaxies is an impostor 🌌🔭\n\nStephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes: https://science.nasa.gov/missions/webb/nasas-webb-sheds-light-on-galaxy-evolution-black-holes/\nESA/Webb, Stephan's Quintet (NIRCam + MIRI): https://esawebb.org/images/weic2208a/\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.\n\n#space #astronomy #nasa #astrophotography #jameswebb #galaxies",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-05T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/one-shot/stephans-quintet-05a38b3d.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087b37f0a96d0f217ea682",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "One of these 5 galaxies is an impostor 🌌🔭\n\nStephan's Quintet looks like a group of five galaxies, but only four are truly close together. The leftmost one, NGC 7320, is about 40 million light-years away, while the other four are about 290 million light-years away: it simply sits in front. It is close enough that the James Webb Space Telescope can resolve individual stars in it. The mosaic, released in July 2022, has over 150 million pixels, was built from almost 1,000 image files and covers about one-fifth of the Moon's diameter. Colours represent infrared light.\n\nSources:\nNASA Science, NASA's Webb Sheds Light on Galaxy Evolution, Black Holes\nESA/Webb, Stephan's Quintet (NIRCam + MIRI)\n\nImage: NASA, ESA, CSA, STScI (CC BY 4.0, resized and cropped). Narration uses a synthetic voice.\n\n#space #astronomy #nasa #astrophotography #jameswebb #galaxies",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-05T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/one-shot/stephans-quintet-05a38b3d.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/one-shot/stephans-quintet-05a38b3d.mp4"
+      }
+    }
+  ]
+}
