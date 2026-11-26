@@ -1,0 +1,164 @@
+{
+  "checkedAt": "2026-11-26T17:45:54.225Z",
+  "videoSha256": "7432aabada873e34e3568b9519c3ba817351873a408209aeacd75ef88c369b57",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "44.30 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 44.30 s vs timeline 44.20 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14.3 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.5 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 2.7
+    },
+    {
+      "file": "qa/01-scale-0.jpg",
+      "sceneId": "scale",
+      "tSec": 3.55
+    },
+    {
+      "file": "qa/01-scale-1.jpg",
+      "sceneId": "scale",
+      "tSec": 9.61
+    },
+    {
+      "file": "qa/01-scale-2.jpg",
+      "sceneId": "scale",
+      "tSec": 10.8
+    },
+    {
+      "file": "qa/02-spin-0.jpg",
+      "sceneId": "spin",
+      "tSec": 11.65
+    },
+    {
+      "file": "qa/02-spin-1.jpg",
+      "sceneId": "spin",
+      "tSec": 13.17
+    },
+    {
+      "file": "qa/02-spin-2.jpg",
+      "sceneId": "spin",
+      "tSec": 18.66
+    },
+    {
+      "file": "qa/02-spin-3.jpg",
+      "sceneId": "spin",
+      "tSec": 21.7
+    },
+    {
+      "file": "qa/03-bulge-0.jpg",
+      "sceneId": "bulge",
+      "tSec": 22.55
+    },
+    {
+      "file": "qa/03-bulge-1.jpg",
+      "sceneId": "bulge",
+      "tSec": 24.41
+    },
+    {
+      "file": "qa/03-bulge-2.jpg",
+      "sceneId": "bulge",
+      "tSec": 27.77
+    },
+    {
+      "file": "qa/04-share-0.jpg",
+      "sceneId": "share",
+      "tSec": 28.62
+    },
+    {
+      "file": "qa/04-share-1.jpg",
+      "sceneId": "share",
+      "tSec": 32.33
+    },
+    {
+      "file": "qa/05-payoff-0.jpg",
+      "sceneId": "payoff",
+      "tSec": 33.18
+    },
+    {
+      "file": "qa/05-payoff-1.jpg",
+      "sceneId": "payoff",
+      "tSec": 37.25
+    },
+    {
+      "file": "qa/05-payoff-2.jpg",
+      "sceneId": "payoff",
+      "tSec": 38.63
+    },
+    {
+      "file": "qa/06-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 39.48
+    },
+    {
+      "file": "qa/06-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 41.12
+    },
+    {
+      "file": "qa/06-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 44.1
+    },
+    {
+      "file": "qa/cover.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
+    },
+    {
+      "file": "qa/cover-grid.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
+    }
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-26T17:49:20.954Z",
+    "verdict": "pass",
+    "notes": "Reviewed all 22 frames and the cover. Hook title overlaps the top of the globe but stays legible; both Earth photos contain-fit with credits; 1,670 km/h chip appears with its sentence; fact cards (-370 g, 21 km) and both bar scenes readable. Pole and equator bars look almost equal, which is the honest half-percent difference and is labelled with values. Motion and audio not judged from stills."
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "checkedAt": "2026-11-26T17:54:00.657Z",
+  "videoSha256": "34c4e800cf74e89f14a0fe22af6d5bf80706f515f37ec194567e315a57e028ce",
+  "automated": [
+    {
+      "name": "resolution",
+      "ok": true,
+      "detail": "1080x1920"
+    },
+    {
+      "name": "video-codec",
+      "ok": true,
+      "detail": "h264"
+    },
+    {
+      "name": "audio-present",
+      "ok": true,
+      "detail": "aac"
+    },
+    {
+      "name": "duration",
+      "ok": true,
+      "detail": "54.00 s (limit 60 s)"
+    },
+    {
+      "name": "duration-matches-timeline",
+      "ok": true,
+      "detail": "video 54.00 s vs timeline 53.90 s"
+    },
+    {
+      "name": "loudness",
+      "ok": true,
+      "detail": "-14.2 LUFS (target -18…-11)"
+    },
+    {
+      "name": "true-peak",
+      "ok": true,
+      "detail": "-1.1 dBFS"
+    },
+    {
+      "name": "no-black-gaps",
+      "ok": true,
+      "detail": "none"
+    }
+  ],
+  "frames": [
+    {
+      "file": "qa/00-hook-0.jpg",
+      "sceneId": "hook",
+      "tSec": 0.75
+    },
+    {
+      "file": "qa/00-hook-1.jpg",
+      "sceneId": "hook",
+      "tSec": 3.71
+    },
+    {
+      "file": "qa/00-hook-2.jpg",
+      "sceneId": "hook",
+      "tSec": 4.9
+    },
+    {
+      "file": "qa/01-n5-0.jpg",
+      "sceneId": "n5",
+      "tSec": 5.75
+    },
+    {
+      "file": "qa/01-n5-1.jpg",
+      "sceneId": "n5",
+      "tSec": 10.13
+    },
+    {
+      "file": "qa/02-n4-0.jpg",
+      "sceneId": "n4",
+      "tSec": 10.98
+    },
+    {
+      "file": "qa/02-n4-1.jpg",
+      "sceneId": "n4",
+      "tSec": 15.14
+    },
+    {
+      "file": "qa/02-n4-2.jpg",
+      "sceneId": "n4",
+      "tSec": 18
+    },
+    {
+      "file": "qa/03-n3-0.jpg",
+      "sceneId": "n3",
+      "tSec": 18.85
+    },
+    {
+      "file": "qa/03-n3-1.jpg",
+      "sceneId": "n3",
+      "tSec": 22.94
+    },
+    {
+      "file": "qa/03-n3-2.jpg",
+      "sceneId": "n3",
+      "tSec": 25.8
+    },
+    {
+      "file": "qa/04-n2-0.jpg",
+      "sceneId": "n2",
+      "tSec": 26.65
+    },
+    {
+      "file": "qa/04-n2-1.jpg",
+      "sceneId": "n2",
+      "tSec": 31.43
+    },
+    {
+      "file": "qa/04-n2-2.jpg",
+      "sceneId": "n2",
+      "tSec": 35
+    },
+    {
+      "file": "qa/05-n1-0.jpg",
+      "sceneId": "n1",
+      "tSec": 35.85
+    },
+    {
+      "file": "qa/05-n1-1.jpg",
+      "sceneId": "n1",
+      "tSec": 41.03
+    },
+    {
+      "file": "qa/05-n1-2.jpg",
+      "sceneId": "n1",
+      "tSec": 43.73
+    },
+    {
+      "file": "qa/06-mercury-0.jpg",
+      "sceneId": "mercury",
+      "tSec": 44.58
+    },
+    {
+      "file": "qa/06-mercury-1.jpg",
+      "sceneId": "mercury",
+      "tSec": 48.87
+    },
+    {
+      "file": "qa/07-outro-0.jpg",
+      "sceneId": "outro",
+      "tSec": 49.72
+    },
+    {
+      "file": "qa/07-outro-1.jpg",
+      "sceneId": "outro",
+      "tSec": 51.03
+    },
+    {
+      "file": "qa/07-outro-2.jpg",
+      "sceneId": "outro",
+      "tSec": 53.8
+    },
+    {
+      "file": "qa/cover.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
+    },
+    {
+      "file": "qa/cover-grid.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
+    }
+  ],
+  "visualReview": {
+    "actor": "claude",
+    "at": "2026-11-26T17:54:35.560Z",
+    "verdict": "pass",
+    "notes": "Reviewed all 22 frames of the re-render and the cover. All five moons now show as complete discs (Galileo Ganymede replaces the clipped Juno frame); rank chips match the narration; contain-fit globes with credits; diameter bars drawn to scale with Mercury for comparison; no collisions with captions. Ganymede source is 800 px so it is slightly softer than the others. Motion and audio not judged from stills."
+  }
+}

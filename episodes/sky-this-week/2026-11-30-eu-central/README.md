@@ -6,14 +6,21 @@
 | --- | --- |
 | Episode | sky-this-week-2026-11-30-eu-central |
 | Series | sky-this-week |
-| Stage | **approved** |
+| Stage | **published** |
 | Created | 2026-11-15T01:23:52.079Z |
 | Location | central Europe (50°, 15°, Europe/Warsaw) |
 | Window | 2026-11-29T23:00:00.000Z → 2026-12-06T23:00:00.000Z |
 
 ## Decisions
 
-_None recorded yet._
+### 2026-11-26 17:21 · script · claude
+
+**Reworded the approved cut before re-rendering: gave a concrete '3 a.m.' look time, replaced the spoken magnitude with plain-word brightness**
+
+series/sky-this-week.md bans magnitudes and asks for day plus time window; the video has to be re-rendered anyway (new credit and clean cover, old build files are not on this machine)
+
+Alternatives considered:
+- Re-render the old script unchanged
 
 ## Research — detected events
 
@@ -32,18 +39,18 @@ _None recorded yet._
 **hook** (`skyView`) — facts: `episode-window`, `moon-jupiter-2026-11-30-view`, `moon-mars-2026-11-30-view`
 
 > This Monday, the Moon drops in on Jupiter and Mars.
-> Catch them together before dawn.
+> Catch them together in the early hours.
 
-**group** (`skyView`) — facts: `moon-jupiter-2026-11-30-view`, `moon-jupiter-2026-11-30-sep`, `moon-mars-2026-11-30-view`, `moon-jupiter-2026-11-30-illum`, `moon-mars-2026-11-30-sep`
+**group** (`skyView`) — facts: `moon-jupiter-2026-11-30-view`, `moon-jupiter-2026-11-30-sep`, `moon-mars-2026-11-30-view`, `moon-jupiter-2026-11-30-illum`, `moon-mars-2026-11-30-sep`, `group-0300`
 
-> Early on Monday, November thirtieth, look high in the south-east.
+> Early on Monday, November thirtieth, around three in the morning, look high in the south-east.
 > The bright Moon sits near Jupiter, with orange Mars close by.
-> Their closest moment, under two degrees from Jupiter, comes later, in daylight. So go out before dawn.
+> Their closest moment, under two degrees from Jupiter, comes later, in daylight. So go out in the dark.
 
-**venus** (`skyView`) — facts: `visible-venus-2026-12-03`
+**venus** (`skyView`) — facts: `visible-venus-2026-12-03`, `visible-jupiter-2026-12-03`, `visible-mars-2026-12-03`, `visible-saturn-2026-12-03`
 
 > And every morning before sunrise, Venus blazes low in the south-east.
-> At magnitude minus 4.8, you can't miss it.
+> It's the brightest point of light in the morning sky.
 
 **outro** (`outro`) — facts: `episode-location`
 
@@ -55,7 +62,7 @@ _None recorded yet._
 
 **The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6**
 
-Before dawn on Mon 30 Nov, look high in the south-east: the Moon, Jupiter and Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) happens in daylight that morning, and to Mars (3.7°) that evening. All week before sunrise, Venus (magnitude -4.8) shines low in the south-east, 23° up around 06:40 mid-week.
+Early on Mon 30 Nov, from about 3 a.m., look high in the south-east: the Moon, Jupiter and orange Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) comes later that morning, in daylight, and its closest pass to Mars (3.7°) that evening, so see them before sunrise. All week before sunrise, Venus is the brightest point of light in the morning sky, low in the south-east (23° up around 06:40 mid-week).
 
 Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.
 
@@ -73,10 +80,14 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narr
 | moon-jupiter-2026-11-30-illum | The Moon is 60% illuminated then. | computed (astronomy-engine@2) |
 | moon-jupiter-2026-11-30-view | Best seen around Mon 30 Nov, 03:16, south-east, 45° up. | computed (astronomy-engine@2) |
 | visible-venus-2026-12-03 | Mid-week, Venus (magnitude -4.8) is best seen around 06:40, south-east, 23° up. | computed (astronomy-engine@2) |
+| visible-mars-2026-12-03 | Mid-week, Mars (magnitude 0.4) is best seen around 03:40, south-east, 46° up. | computed (astronomy-engine@2) |
+| visible-jupiter-2026-12-03 | Mid-week, Jupiter (magnitude -2.2) is best seen around 03:10, south-east, 46° up. | computed (astronomy-engine@2) |
+| visible-saturn-2026-12-03 | Mid-week, Saturn (magnitude 0.6) is best seen around 19:40, south, 41° up. | computed (astronomy-engine@2) |
+| group-0300 | At 3 a.m. on Mon 30 Nov (central Europe) the Moon, Jupiter and Mars stand together in the south-east, about 41-45 degrees up. | computed (astronomy-engine@2 topocentric horizontal coordinates) |
 
 ## Render
 
-35.0 s, 1080×1920@30, sha256 `4f97308aaab319ef…`, rendered 2026-11-15T02:37:05.731Z in 136 s.
+36.2 s, 1080×1920@30, sha256 `eca0a11d50404383…`, rendered 2026-11-26T17:30:19.867Z in 281 s.
 
 ## QA
 
@@ -85,17 +96,37 @@ Positions computed for central Europe (50°N, 15°E) with astronomy-engine. Narr
 | resolution | ✅ | 1080x1920 |
 | video-codec | ✅ | h264 |
 | audio-present | ✅ | aac |
-| duration | ✅ | 35.00 s (limit 60 s) |
-| duration-matches-timeline | ✅ | video 35.00 s vs timeline 34.90 s |
-| loudness | ✅ | -14.1 LUFS (target -18…-11) |
-| true-peak | ✅ | -1.5 dBFS |
+| duration | ✅ | 36.20 s (limit 60 s) |
+| duration-matches-timeline | ✅ | video 36.20 s vs timeline 36.13 s |
+| loudness | ✅ | -14 LUFS (target -18…-11) |
+| true-peak | ✅ | -1.3 dBFS |
 | no-black-gaps | ✅ | none |
 
-Visual review by **claude** (2026-11-15T02:39:36.709Z): **pass** — Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps.
+Visual review by **claude** (2026-11-26T17:31:35.351Z): **pass** — All 16 frames: clean cover with title; chips sequenced (3 a.m., then south-east); Moon/Jupiter/Mars labels appear as named, no overlaps, Moon phase just under last quarter shape; Venus labelled low with SE on the horizon; outro CTA and 50N 15E footnote. Motion and audio not judged from stills.
 
 ## Approvals
 
-- 2026-11-15T02:39:37.447Z — **Krzysztof Nasuta** (human) approved video `4f97308aaab319ef…`: Approved by the owner in chat on 2026-11-15 ('I approve all the videos ... build them, with new songs'); recorded by Claude on the owner's instruction after the music re-render.
+- 2026-11-26T18:30:17.480Z — **Krzysztof Nasuta** (human) approved video `eca0a11d50404383…`: Approved by the owner in the Claude Code conversation on 2026-11-26 ('i approve all, please schedule, commit and push'); entered by Claude at the owner's instruction.
+
+## Publishing
+
+### 2026-11-26T18:30:30.968Z · buffer · schedule for 2026-11-28T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+| instagram | dry-run | — |  |
+
+### 2026-11-26T18:30:47.296Z · buffer · schedule for 2026-11-28T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-this-week/2026-11-30-eu-central-eca0a11d.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6b087ae09068b6e07954fdd8 |  |
+| tiktok | submitted | 6b087ae11fa40915828a35ad |  |
+| instagram | submitted | 6b087ae21fa40915828a3611 |  |
 
 ## Event log
 
@@ -126,3 +157,26 @@ Visual review by **claude** (2026-11-15T02:39:36.709Z): **pass** — Re-render f
 | 2026-11-15 02:39:36 | claude | qa-passed | stage.advance | 4049d2c |
 | 2026-11-15 02:39:37 | human | approved | stage.advance | 4049d2c |
 | 2026-11-15 08:41:27 | claude | approved | episode.rename | 0d80a88 |
+| 2026-11-26 17:18:00 | claude | planned | plan.check | 2178ad3 |
+| 2026-11-26 17:18:01 | pipeline | factcheck | factcheck.automated | 2178ad3 |
+| 2026-11-26 17:20:56 | claude | planned | plan.check | 2178ad3 |
+| 2026-11-26 17:20:56 | claude | planned | stage.regress | 2178ad3 |
+| 2026-11-26 17:20:59 | claude | factcheck | factcheck.automated | 2178ad3 |
+| 2026-11-26 17:21:10 | claude | researched | fact.add | 2178ad3 |
+| 2026-11-26 17:21:12 | claude | planned | plan.check | 2178ad3 |
+| 2026-11-26 17:21:12 | claude | planned | stage.advance | 2178ad3 |
+| 2026-11-26 17:21:14 | claude | factcheck | factcheck.automated | 2178ad3 |
+| 2026-11-26 17:21:22 | claude | factcheck | factcheck.review | 2178ad3 |
+| 2026-11-26 17:21:22 | claude | factchecked | stage.advance | 2178ad3 |
+| 2026-11-26 17:21:24 | claude | script | decision.record | 2178ad3 |
+| 2026-11-26 17:22:34 | claude | voiced | stage.advance | 2178ad3 |
+| 2026-11-26 17:22:34 | claude | voiced | voice.synthesize | 2178ad3 |
+| 2026-11-26 17:30:19 | claude | rendered | stage.advance | 2178ad3 |
+| 2026-11-26 17:30:19 | claude | rendered | render.video | 2178ad3 |
+| 2026-11-26 17:30:29 | claude | qa | qa.automated | 2178ad3 |
+| 2026-11-26 17:31:35 | claude | qa | qa.review | 2178ad3 |
+| 2026-11-26 17:31:35 | claude | qa-passed | stage.advance | 2178ad3 |
+| 2026-11-26 18:30:17 | human | approved | stage.advance | 2178ad3 |
+| 2026-11-26 18:30:30 | claude | publish | publish.dry-run | 2178ad3 |
+| 2026-11-26 18:30:58 | claude | publish | publish.submit | 2178ad3 |
+| 2026-11-26 18:30:58 | claude | published | stage.advance | 2178ad3 |

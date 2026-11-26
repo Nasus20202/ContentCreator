@@ -182,6 +182,24 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | tiktok | deleted | 6af610a4d647bbafc5ad5021 |  |
 | instagram | deleted | 6af8cecdc5b364e062188eec |  |
 
+### 2026-11-26T17:24:41.160Z · buffer · schedule for 2026-11-26T18:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+| instagram | dry-run | — |  |
+
+### 2026-11-26T17:24:53.810Z · buffer · schedule for 2026-11-26T18:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/twin-paradox-2bae828c.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6b086b68c81617797dcaae69 |  |
+| tiktok | submitted | 6b086b693accdac92ce62978 |  |
+| instagram | submitted | 6b086b6ac81617797dcaaeb3 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -293,3 +311,6 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-14 21:12:45 | claude | published | stage.advance | 47c29b3 |
 | 2026-11-15 02:29:41 | claude | publish | publish.unschedule | 4049d2c |
 | 2026-11-15 08:41:24 | claude | published | episode.rename | 0d80a88 |
+| 2026-11-26 17:24:41 | claude | publish | publish.dry-run | 2178ad3 |
+| 2026-11-26 17:24:58 | claude | publish | publish.submit | 2178ad3 |
+| 2026-11-26 17:24:58 | claude | published | stage.advance | 2178ad3 |

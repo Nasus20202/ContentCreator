@@ -1,0 +1,768 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "7c3ba3ab9705223a",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 4.385,
+      "sentences": [
+        {
+          "text": "On Thursday, a spacecraft headed for Jupiter flies right past Earth.",
+          "start": 0.15,
+          "end": 4.105,
+          "words": [
+            {
+              "w": "On",
+              "start": 0.15,
+              "end": 0.338
+            },
+            {
+              "w": "Thursday,",
+              "start": 0.338,
+              "end": 0.95
+            },
+            {
+              "w": "a",
+              "start": 0.95,
+              "end": 1.092
+            },
+            {
+              "w": "spacecraft",
+              "start": 1.092,
+              "end": 1.657
+            },
+            {
+              "w": "headed",
+              "start": 1.657,
+              "end": 2.033
+            },
+            {
+              "w": "for",
+              "start": 2.033,
+              "end": 2.269
+            },
+            {
+              "w": "Jupiter",
+              "start": 2.269,
+              "end": 2.692
+            },
+            {
+              "w": "flies",
+              "start": 2.692,
+              "end": 3.022
+            },
+            {
+              "w": "right",
+              "start": 3.022,
+              "end": 3.351
+            },
+            {
+              "w": "past",
+              "start": 3.351,
+              "end": 3.634
+            },
+            {
+              "w": "Earth.",
+              "start": 3.634,
+              "end": 4.105
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "launch",
+      "audioFile": "voice/launch.wav",
+      "duration": 7.242,
+      "sentences": [
+        {
+          "text": "NASA's Europa Clipper launched from Florida in October 2024.",
+          "start": 0.15,
+          "end": 4.135,
+          "words": [
+            {
+              "w": "NASA's",
+              "start": 0.15,
+              "end": 0.593
+            },
+            {
+              "w": "Europa",
+              "start": 0.593,
+              "end": 1.035
+            },
+            {
+              "w": "Clipper",
+              "start": 1.035,
+              "end": 1.534
+            },
+            {
+              "w": "launched",
+              "start": 1.534,
+              "end": 2.087
+            },
+            {
+              "w": "from",
+              "start": 2.087,
+              "end": 2.419
+            },
+            {
+              "w": "Florida",
+              "start": 2.419,
+              "end": 2.917
+            },
+            {
+              "w": "in",
+              "start": 2.917,
+              "end": 3.138
+            },
+            {
+              "w": "October",
+              "start": 3.138,
+              "end": 3.636
+            },
+            {
+              "w": "2024.",
+              "start": 3.636,
+              "end": 4.135
+            }
+          ]
+        },
+        {
+          "text": "Now, on December third, it comes home, briefly.",
+          "start": 4.415,
+          "end": 6.962,
+          "words": [
+            {
+              "w": "Now,",
+              "start": 4.415,
+              "end": 4.733
+            },
+            {
+              "w": "on",
+              "start": 4.733,
+              "end": 4.892
+            },
+            {
+              "w": "December",
+              "start": 4.892,
+              "end": 5.29
+            },
+            {
+              "w": "third,",
+              "start": 5.29,
+              "end": 5.688
+            },
+            {
+              "w": "it",
+              "start": 5.688,
+              "end": 5.847
+            },
+            {
+              "w": "comes",
+              "start": 5.847,
+              "end": 6.126
+            },
+            {
+              "w": "home,",
+              "start": 6.126,
+              "end": 6.484
+            },
+            {
+              "w": "briefly.",
+              "start": 6.484,
+              "end": 6.962
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "close",
+      "audioFile": "voice/close.wav",
+      "duration": 8.773,
+      "sentences": [
+        {
+          "text": "It passes about three thousand two hundred kilometres from Earth, closest west of Africa.",
+          "start": 0.15,
+          "end": 4.969,
+          "words": [
+            {
+              "w": "It",
+              "start": 0.15,
+              "end": 0.328
+            },
+            {
+              "w": "passes",
+              "start": 0.328,
+              "end": 0.685
+            },
+            {
+              "w": "about",
+              "start": 0.685,
+              "end": 0.998
+            },
+            {
+              "w": "three",
+              "start": 0.998,
+              "end": 1.31
+            },
+            {
+              "w": "thousand",
+              "start": 1.31,
+              "end": 1.756
+            },
+            {
+              "w": "two",
+              "start": 1.756,
+              "end": 1.979
+            },
+            {
+              "w": "hundred",
+              "start": 1.979,
+              "end": 2.381
+            },
+            {
+              "w": "kilometres",
+              "start": 2.381,
+              "end": 2.916
+            },
+            {
+              "w": "from",
+              "start": 2.916,
+              "end": 3.184
+            },
+            {
+              "w": "Earth,",
+              "start": 3.184,
+              "end": 3.63
+            },
+            {
+              "w": "closest",
+              "start": 3.63,
+              "end": 4.032
+            },
+            {
+              "w": "west",
+              "start": 4.032,
+              "end": 4.299
+            },
+            {
+              "w": "of",
+              "start": 4.299,
+              "end": 4.478
+            },
+            {
+              "w": "Africa.",
+              "start": 4.478,
+              "end": 4.969
+            }
+          ]
+        },
+        {
+          "text": "That's at 9:14 in the evening, Central European Time.",
+          "start": 5.249,
+          "end": 8.493,
+          "words": [
+            {
+              "w": "That's",
+              "start": 5.249,
+              "end": 5.642
+            },
+            {
+              "w": "at",
+              "start": 5.642,
+              "end": 5.838
+            },
+            {
+              "w": "9:14",
+              "start": 5.838,
+              "end": 6.084
+            },
+            {
+              "w": "in",
+              "start": 6.084,
+              "end": 6.281
+            },
+            {
+              "w": "the",
+              "start": 6.281,
+              "end": 6.527
+            },
+            {
+              "w": "evening,",
+              "start": 6.527,
+              "end": 7.117
+            },
+            {
+              "w": "Central",
+              "start": 7.117,
+              "end": 7.559
+            },
+            {
+              "w": "European",
+              "start": 7.559,
+              "end": 8.05
+            },
+            {
+              "w": "Time.",
+              "start": 8.05,
+              "end": 8.493
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "slingshot",
+      "audioFile": "voice/slingshot.wav",
+      "duration": 7.051,
+      "sentences": [
+        {
+          "text": "Why come back? Our gravity works like a slingshot.",
+          "start": 0.15,
+          "end": 2.784,
+          "words": [
+            {
+              "w": "Why",
+              "start": 0.15,
+              "end": 0.356
+            },
+            {
+              "w": "come",
+              "start": 0.356,
+              "end": 0.603
+            },
+            {
+              "w": "back?",
+              "start": 0.603,
+              "end": 0.973
+            },
+            {
+              "w": "Our",
+              "start": 0.973,
+              "end": 1.179
+            },
+            {
+              "w": "gravity",
+              "start": 1.179,
+              "end": 1.55
+            },
+            {
+              "w": "works",
+              "start": 1.55,
+              "end": 1.838
+            },
+            {
+              "w": "like",
+              "start": 1.838,
+              "end": 2.085
+            },
+            {
+              "w": "a",
+              "start": 2.085,
+              "end": 2.208
+            },
+            {
+              "w": "slingshot.",
+              "start": 2.208,
+              "end": 2.784
+            }
+          ]
+        },
+        {
+          "text": "It changes the spacecraft's path and adds speed, saving propellant.",
+          "start": 3.064,
+          "end": 6.771,
+          "words": [
+            {
+              "w": "It",
+              "start": 3.064,
+              "end": 3.245
+            },
+            {
+              "w": "changes",
+              "start": 3.245,
+              "end": 3.652
+            },
+            {
+              "w": "the",
+              "start": 3.652,
+              "end": 3.878
+            },
+            {
+              "w": "spacecraft's",
+              "start": 3.878,
+              "end": 4.511
+            },
+            {
+              "w": "path",
+              "start": 4.511,
+              "end": 4.782
+            },
+            {
+              "w": "and",
+              "start": 4.782,
+              "end": 5.008
+            },
+            {
+              "w": "adds",
+              "start": 5.008,
+              "end": 5.28
+            },
+            {
+              "w": "speed,",
+              "start": 5.28,
+              "end": 5.732
+            },
+            {
+              "w": "saving",
+              "start": 5.732,
+              "end": 6.093
+            },
+            {
+              "w": "propellant.",
+              "start": 6.093,
+              "end": 6.771
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "mars",
+      "audioFile": "voice/mars.wav",
+      "duration": 8.884,
+      "sentences": [
+        {
+          "text": "This is its second flyby.",
+          "start": 0.15,
+          "end": 1.526,
+          "words": [
+            {
+              "w": "This",
+              "start": 0.15,
+              "end": 0.4
+            },
+            {
+              "w": "is",
+              "start": 0.4,
+              "end": 0.567
+            },
+            {
+              "w": "its",
+              "start": 0.567,
+              "end": 0.776
+            },
+            {
+              "w": "second",
+              "start": 0.776,
+              "end": 1.109
+            },
+            {
+              "w": "flyby.",
+              "start": 1.109,
+              "end": 1.526
+            }
+          ]
+        },
+        {
+          "text": "On the first, in March 2025, it passed 884 kilometres above Mars to reshape its orbit.",
+          "start": 1.806,
+          "end": 8.604,
+          "words": [
+            {
+              "w": "On",
+              "start": 1.806,
+              "end": 2.056
+            },
+            {
+              "w": "the",
+              "start": 2.056,
+              "end": 2.367
+            },
+            {
+              "w": "first,",
+              "start": 2.367,
+              "end": 2.991
+            },
+            {
+              "w": "in",
+              "start": 2.991,
+              "end": 3.241
+            },
+            {
+              "w": "March",
+              "start": 3.241,
+              "end": 3.677
+            },
+            {
+              "w": "2025,",
+              "start": 3.677,
+              "end": 4.238
+            },
+            {
+              "w": "it",
+              "start": 4.238,
+              "end": 4.488
+            },
+            {
+              "w": "passed",
+              "start": 4.488,
+              "end": 4.987
+            },
+            {
+              "w": "884",
+              "start": 4.987,
+              "end": 5.298
+            },
+            {
+              "w": "kilometres",
+              "start": 5.298,
+              "end": 6.047
+            },
+            {
+              "w": "above",
+              "start": 6.047,
+              "end": 6.483
+            },
+            {
+              "w": "Mars",
+              "start": 6.483,
+              "end": 6.858
+            },
+            {
+              "w": "to",
+              "start": 6.858,
+              "end": 7.107
+            },
+            {
+              "w": "reshape",
+              "start": 7.107,
+              "end": 7.668
+            },
+            {
+              "w": "its",
+              "start": 7.668,
+              "end": 7.98
+            },
+            {
+              "w": "orbit.",
+              "start": 7.98,
+              "end": 8.604
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "europa",
+      "audioFile": "voice/europa.wav",
+      "duration": 9.467,
+      "sentences": [
+        {
+          "text": "Next stop is Jupiter, in April 2030.",
+          "start": 0.15,
+          "end": 2.711,
+          "words": [
+            {
+              "w": "Next",
+              "start": 0.15,
+              "end": 0.47
+            },
+            {
+              "w": "stop",
+              "start": 0.47,
+              "end": 0.79
+            },
+            {
+              "w": "is",
+              "start": 0.79,
+              "end": 1.004
+            },
+            {
+              "w": "Jupiter,",
+              "start": 1.004,
+              "end": 1.644
+            },
+            {
+              "w": "in",
+              "start": 1.644,
+              "end": 1.857
+            },
+            {
+              "w": "April",
+              "start": 1.857,
+              "end": 2.231
+            },
+            {
+              "w": "2030.",
+              "start": 2.231,
+              "end": 2.711
+            }
+          ]
+        },
+        {
+          "text": "Then nearly fifty flybys of Europa, an icy moon with strong evidence of a salty ocean underneath.",
+          "start": 2.991,
+          "end": 9.187,
+          "words": [
+            {
+              "w": "Then",
+              "start": 2.991,
+              "end": 3.303
+            },
+            {
+              "w": "nearly",
+              "start": 3.303,
+              "end": 3.72
+            },
+            {
+              "w": "fifty",
+              "start": 3.72,
+              "end": 4.084
+            },
+            {
+              "w": "flybys",
+              "start": 4.084,
+              "end": 4.501
+            },
+            {
+              "w": "of",
+              "start": 4.501,
+              "end": 4.709
+            },
+            {
+              "w": "Europa,",
+              "start": 4.709,
+              "end": 5.282
+            },
+            {
+              "w": "an",
+              "start": 5.282,
+              "end": 5.49
+            },
+            {
+              "w": "icy",
+              "start": 5.49,
+              "end": 5.75
+            },
+            {
+              "w": "moon",
+              "start": 5.75,
+              "end": 6.063
+            },
+            {
+              "w": "with",
+              "start": 6.063,
+              "end": 6.375
+            },
+            {
+              "w": "strong",
+              "start": 6.375,
+              "end": 6.792
+            },
+            {
+              "w": "evidence",
+              "start": 6.792,
+              "end": 7.312
+            },
+            {
+              "w": "of",
+              "start": 7.312,
+              "end": 7.521
+            },
+            {
+              "w": "a",
+              "start": 7.521,
+              "end": 7.677
+            },
+            {
+              "w": "salty",
+              "start": 7.677,
+              "end": 8.041
+            },
+            {
+              "w": "ocean",
+              "start": 8.041,
+              "end": 8.406
+            },
+            {
+              "w": "underneath.",
+              "start": 8.406,
+              "end": 9.187
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.615,
+      "sentences": [
+        {
+          "text": "Safe travels, Clipper.",
+          "start": 0.15,
+          "end": 1.459,
+          "words": [
+            {
+              "w": "Safe",
+              "start": 0.15,
+              "end": 0.412
+            },
+            {
+              "w": "travels,",
+              "start": 0.412,
+              "end": 0.935
+            },
+            {
+              "w": "Clipper.",
+              "start": 0.935,
+              "end": 1.459
+            }
+          ]
+        },
+        {
+          "text": "Follow for the next mission update.",
+          "start": 1.739,
+          "end": 3.335,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 1.739,
+              "end": 2.029
+            },
+            {
+              "w": "for",
+              "start": 2.029,
+              "end": 2.21
+            },
+            {
+              "w": "the",
+              "start": 2.21,
+              "end": 2.392
+            },
+            {
+              "w": "next",
+              "start": 2.392,
+              "end": 2.609
+            },
+            {
+              "w": "mission",
+              "start": 2.609,
+              "end": 2.936
+            },
+            {
+              "w": "update.",
+              "start": 2.936,
+              "end": 3.335
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

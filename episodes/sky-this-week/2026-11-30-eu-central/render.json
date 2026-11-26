@@ -1,13 +1,13 @@
 {
-  "renderedAt": "2026-11-15T02:37:05.731Z",
-  "planHash": "ad1d65c844b30d34",
-  "timelineHash": "ac5f357546014712",
+  "renderedAt": "2026-11-26T17:30:19.867Z",
+  "planHash": "6344da89b490eb9d",
+  "timelineHash": "dae756009982b640",
   "videoFile": "build/video.mp4",
-  "videoSha256": "4f97308aaab319ef4a9277f85be79e441ecc7015137489927cffb10a84e959b9",
-  "renderSeconds": 136.077,
-  "durationSec": 35,
+  "videoSha256": "eca0a11d50404383df74dca969b556741d8644530a16354ca01a9480dd08d5f2",
+  "renderSeconds": 280.879,
+  "durationSec": 36.2,
   "width": 1080,
   "height": 1920,
   "fps": 30,
-  "remotionVersion": "4.0.543"
+  "remotionVersion": "4.0.546"
 }

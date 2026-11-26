@@ -1,0 +1,344 @@
+{
+  "checkedAt": "2026-11-26T17:34:00.311Z",
+  "planHash": "8fb40fecec1a10f5",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "closest",
+        "where": "narration[0]",
+        "text": "Earth is actually closest to the Sun in early January: about a hundred and forty-seven million kilometres.",
+        "number": 147000000,
+        "raw": "a hundred and forty seven million",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "closest",
+        "where": "factCard",
+        "text": "147.1M km from the Sun on 3 January 2027: closest all year",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "closest",
+        "where": "factCard",
+        "text": "147.1M km from the Sun on 3 January 2027: closest all year",
+        "number": 2027,
+        "raw": "2027",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "distance",
+        "where": "narration[0]",
+        "text": "In July it's about five million kilometres farther away.",
+        "number": 5000000,
+        "raw": "five million",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "distance",
+        "where": "heading",
+        "text": "Earth to Sun, 2027",
+        "number": 2027,
+        "raw": "2027",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "distance",
+        "where": "bars[0]",
+        "text": "147.1M km 3 January (closest)",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "distance",
+        "where": "bars[1]",
+        "text": "152.1M km 5 July (farthest)",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "distance",
+        "where": "note",
+        "text": "Drawn to scale: about 3% difference",
+        "number": 3,
+        "raw": "3%",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "june",
+        "where": "narration[0]",
+        "text": "The real reason is the tilt. Earth's axis leans about twenty-three degrees.",
+        "number": 23,
+        "raw": "twenty three",
+        "matchedFact": "tilt"
+      },
+      {
+        "sceneId": "june",
+        "where": "chips[0]",
+        "text": "REAL PHOTO · 21 JUNE 2025",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "epic"
+      },
+      {
+        "sceneId": "june",
+        "where": "chips[0]",
+        "text": "REAL PHOTO · 21 JUNE 2025",
+        "number": 2025,
+        "raw": "2025",
+        "matchedFact": "epic"
+      },
+      {
+        "sceneId": "december",
+        "where": "chips[0]",
+        "text": "REAL PHOTO · 21 DECEMBER 2025",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "epic"
+      },
+      {
+        "sceneId": "december",
+        "where": "chips[0]",
+        "text": "REAL PHOTO · 21 DECEMBER 2025",
+        "number": 2025,
+        "raw": "2025",
+        "matchedFact": "epic"
+      },
+      {
+        "sceneId": "noon",
+        "where": "narration[0]",
+        "text": "In central Europe, the December noon Sun climbs only seventeen degrees. In June, sixty-three.",
+        "number": 17,
+        "raw": "seventeen",
+        "matchedFact": "noon-height"
+      },
+      {
+        "sceneId": "noon",
+        "where": "narration[0]",
+        "text": "In central Europe, the December noon Sun climbs only seventeen degrees. In June, sixty-three.",
+        "number": 63,
+        "raw": "sixty three",
+        "matchedFact": "noon-height"
+      },
+      {
+        "sceneId": "noon",
+        "where": "bars[0]",
+        "text": "17° high 21 December",
+        "number": 17,
+        "raw": "17°",
+        "matchedFact": "noon-height"
+      },
+      {
+        "sceneId": "noon",
+        "where": "bars[0]",
+        "text": "17° high 21 December",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "noon-height"
+      },
+      {
+        "sceneId": "noon",
+        "where": "bars[1]",
+        "text": "63° high 21 June",
+        "number": 63,
+        "raw": "63°",
+        "matchedFact": "noon-height"
+      },
+      {
+        "sceneId": "noon",
+        "where": "bars[1]",
+        "text": "63° high 21 June",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "noon-height"
+      },
+      {
+        "sceneId": "days",
+        "where": "narration[0]",
+        "text": "And the day lasts about eight hours instead of sixteen.",
+        "number": 8,
+        "raw": "eight",
+        "matchedFact": "daylength"
+      },
+      {
+        "sceneId": "days",
+        "where": "narration[0]",
+        "text": "And the day lasts about eight hours instead of sixteen.",
+        "number": 16,
+        "raw": "sixteen",
+        "matchedFact": "daylength"
+      },
+      {
+        "sceneId": "days",
+        "where": "factCard",
+        "text": "8 h vs 16 h daylight: 21 December vs 21 June",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "daylength"
+      },
+      {
+        "sceneId": "days",
+        "where": "factCard",
+        "text": "8 h vs 16 h daylight: 21 December vs 21 June",
+        "number": 16,
+        "raw": "16",
+        "matchedFact": "daylength"
+      },
+      {
+        "sceneId": "days",
+        "where": "factCard",
+        "text": "8 h vs 16 h daylight: 21 December vs 21 June",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "daylength"
+      },
+      {
+        "sceneId": "days",
+        "where": "factCard",
+        "text": "8 h vs 16 h daylight: 21 December vs 21 June",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "daylength"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 147.1,
+        "raw": "147.1",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 3,
+        "raw": "3",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 2027,
+        "raw": "2027",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 152.1,
+        "raw": "152.1",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 5,
+        "raw": "5",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 3,
+        "raw": "3%",
+        "matchedFact": "apsides-2027"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 23.44,
+        "raw": "23.44°",
+        "matchedFact": "tilt"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 17,
+        "raw": "17°",
+        "matchedFact": "noon-height"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "epic"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 63,
+        "raw": "63°",
+        "matchedFact": "noon-height"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "epic"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 8,
+        "raw": "8",
+        "matchedFact": "daylength"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 16,
+        "raw": "16",
+        "matchedFact": "daylength"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "epic"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "epic"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+        "number": 2025,
+        "raw": "2025",
+        "matchedFact": "epic"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-26T17:34:01.349Z",
+    "verdict": "pass",
+    "notes": "Perihelion 3 Jan 2027 147.1M km and aphelion 5 Jul 2027 152.1M km recomputed (about 3%, 5M km); day length 8.07/16.37 h and noon altitude 16.6/63.4 deg for 50N 15E; EPIC photos are dated 21 Jun and 21 Dec 2025 as chips say (June shows north, December Antarctica, checked on the images)."
+  }
+}

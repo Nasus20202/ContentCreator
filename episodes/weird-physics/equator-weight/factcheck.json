@@ -1,0 +1,200 @@
+{
+  "checkedAt": "2026-11-26T17:34:09.952Z",
+  "planHash": "0cd1f36a2424fa39",
+  "automated": {
+    "ok": true,
+    "claims": [
+      {
+        "sceneId": "scale",
+        "where": "narration[0]",
+        "text": "A spring scale that reads 70 kilograms at the pole reads about 69.6 at the equator.",
+        "number": 70,
+        "raw": "70",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "scale",
+        "where": "narration[0]",
+        "text": "A spring scale that reads 70 kilograms at the pole reads about 69.6 at the equator.",
+        "number": 69.6,
+        "raw": "69.6",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "scale",
+        "where": "factCard",
+        "text": "−370 g on a spring scale: pole → equator, for 70 kg",
+        "number": 370,
+        "raw": "370",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "scale",
+        "where": "factCard",
+        "text": "−370 g on a spring scale: pole → equator, for 70 kg",
+        "number": 70,
+        "raw": "70",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "spin",
+        "where": "narration[1]",
+        "text": "At the equator, Earth carries you around at about 1,670 kilometres an hour.",
+        "number": 1670,
+        "raw": "1670",
+        "matchedFact": "spin"
+      },
+      {
+        "sceneId": "spin",
+        "where": "chips[0]",
+        "text": "≈ 1,670 KM/H AT THE EQUATOR",
+        "number": 1670,
+        "raw": "1670",
+        "matchedFact": "spin"
+      },
+      {
+        "sceneId": "bulge",
+        "where": "narration[1]",
+        "text": "At the equator you're about twenty-one kilometres farther from the centre.",
+        "number": 21,
+        "raw": "twenty one",
+        "matchedFact": "bulge"
+      },
+      {
+        "sceneId": "bulge",
+        "where": "factCard",
+        "text": "21 km farther from Earth's centre at the equator",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "bulge"
+      },
+      {
+        "sceneId": "share",
+        "where": "narration[0]",
+        "text": "The spin does about two thirds of the work, and the squashed shape does the rest.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "spin"
+      },
+      {
+        "sceneId": "share",
+        "where": "note",
+        "text": "Difference: 0.052 m/s², pole vs equator",
+        "number": 0.052,
+        "raw": "0.052",
+        "matchedFact": "spin"
+      },
+      {
+        "sceneId": "payoff",
+        "where": "narration[0]",
+        "text": "70 kilograms at the pole. 69.6 at the equator.",
+        "number": 70,
+        "raw": "70",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "payoff",
+        "where": "narration[0]",
+        "text": "70 kilograms at the pole. 69.6 at the equator.",
+        "number": 69.6,
+        "raw": "69.6",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "payoff",
+        "where": "bars[0]",
+        "text": "70.0 kg North Pole",
+        "number": 70,
+        "raw": "70.0",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "payoff",
+        "where": "bars[1]",
+        "text": "69.6 kg Equator",
+        "number": 69.6,
+        "raw": "69.6",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.",
+        "number": 9.78,
+        "raw": "9.780",
+        "matchedFact": "gravity"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.",
+        "number": 9.832,
+        "raw": "9.832",
+        "matchedFact": "gravity"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.",
+        "number": 70,
+        "raw": "70",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.",
+        "number": 69.6,
+        "raw": "69.6",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.",
+        "number": 370,
+        "raw": "370",
+        "matchedFact": "weight"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.",
+        "number": 2,
+        "raw": "two",
+        "matchedFact": "spin"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.",
+        "number": 1670,
+        "raw": "1670",
+        "matchedFact": "spin"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.",
+        "number": 21,
+        "raw": "21",
+        "matchedFact": "bulge"
+      },
+      {
+        "sceneId": "post",
+        "where": "description",
+        "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.",
+        "number": 17,
+        "raw": "17",
+        "matchedFact": "photo-apollo17"
+      }
+    ],
+    "problems": []
+  },
+  "review": {
+    "actor": "claude",
+    "at": "2026-11-26T17:34:11.033Z",
+    "verdict": "pass",
+    "notes": "9.780/9.832 from NSSDC; 70 kg x 9.780/9.832 = 69.63 kg (370 g, 0.53%); spin 1,674 km/h, centrifugal 0.0339 of 0.052 m/s2 (about two thirds); shape accounts for the remainder; 'mass unchanged' and spring-scale framing stated."
+  }
+}

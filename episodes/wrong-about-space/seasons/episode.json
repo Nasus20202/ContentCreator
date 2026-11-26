@@ -1,0 +1,21 @@
+{
+  "id": "wrong-about-space-seasons",
+  "series": "wrong-about-space",
+  "createdAt": "2026-11-26T17:28:41.717Z",
+  "stage": "published",
+  "hashes": {
+    "plan": "8fb40fecec1a10f5",
+    "factcheckedPlan": "8fb40fecec1a10f5",
+    "narration": "c10c8b0924fbe202",
+    "video": "fe77610e04ce65fd79b90bb33fdb759d030f08f559a0062b1ff625c07eee3280"
+  },
+  "approvals": [
+    {
+      "by": "Krzysztof Nasuta",
+      "actor": "human",
+      "at": "2026-11-26T18:30:18.817Z",
+      "videoSha256": "fe77610e04ce65fd79b90bb33fdb759d030f08f559a0062b1ff625c07eee3280",
+      "note": "Approved by the owner in the Claude Code conversation on 2026-11-26 ('i approve all, please schedule, commit and push'); entered by Claude at the owner's instruction."
+    }
+  ]
+}

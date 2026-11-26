@@ -1,0 +1,36 @@
+{
+  "assets": [
+    {
+      "id": "earth-june",
+      "kind": "image",
+      "file": "assets/earth-june.jpg",
+      "sha256": "21fa46b72aa0bb2e45d477e0e726ea4ada61066a578d77f7a2381e62179900cc",
+      "source": {
+        "provider": "web",
+        "url": "https://epic.gsfc.nasa.gov/archive/natural/2025/06/21/jpg/epic_1b_20250621114029.jpg",
+        "pageUrl": "https://epic.gsfc.nasa.gov/archive/natural/2025/06/21/jpg/epic_1b_20250621114029.jpg",
+        "title": "EPIC, Earth on 21 June 2025 11:35 UTC",
+        "credit": "NASA / NOAA · DSCOVR EPIC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:30:26.148Z"
+    },
+    {
+      "id": "earth-december",
+      "kind": "image",
+      "file": "assets/earth-december.jpg",
+      "sha256": "255d56d04feaabedc96dfb9b1c70c666d7435d6bd25b93a3977c3970fe8056cd",
+      "source": {
+        "provider": "web",
+        "url": "https://epic.gsfc.nasa.gov/archive/natural/2025/12/21/jpg/epic_1b_20251221115249.jpg",
+        "pageUrl": "https://epic.gsfc.nasa.gov/archive/natural/2025/12/21/jpg/epic_1b_20251221115249.jpg",
+        "title": "EPIC, Earth on 21 December 2025 11:48 UTC",
+        "credit": "NASA / NOAA · DSCOVR EPIC",
+        "license": "NASA media usage guidelines (not copyrighted unless noted)"
+      },
+      "aiGenerated": false,
+      "addedAt": "2026-11-26T17:30:27.298Z"
+    }
+  ]
+}

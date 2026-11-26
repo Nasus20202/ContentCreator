@@ -183,6 +183,16 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | tiktok | deleted | 6af6108f0522ffa5bc4b5d02 |  |
 | instagram | deleted | 6af8cec976c23bf1c73ef06d |  |
 
+### 2026-11-26T17:25:10.731Z · buffer · schedule for 2026-12-04T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/light-travel-8aa62282.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6b086b793accdac92ce6331a |  |
+| tiktok | submitted | 6b086b7ace64081689da7916 |  |
+| instagram | submitted | 6b086b7bc81617797dcab9d7 |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -283,3 +293,5 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-15 00:38:46 | claude | publish | publish.reschedule | c0f6392 |
 | 2026-11-15 02:29:43 | claude | publish | publish.unschedule | 4049d2c |
 | 2026-11-15 08:41:20 | claude | published | episode.rename | 0d80a88 |
+| 2026-11-26 17:25:15 | claude | publish | publish.submit | 2178ad3 |
+| 2026-11-26 17:25:15 | claude | published | stage.advance | 2178ad3 |

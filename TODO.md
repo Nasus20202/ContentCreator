@@ -10,16 +10,17 @@ _Nothing waiting on approval._
 
 ## Publishing queue (Buffer: 10 scheduled posts per channel; keep the next 10 days filled)
 
-- [ ] **Fill 25 Nov onward** as slots free up (one video a day, 17:00 UTC; weekday rotation in the series files).
-      Sky This Week Nov 30 goes on **Fri 27 Nov**.
-- [ ] **Approved, waiting for a slot:** Sky School Planet Ages, Proxima travel, Voyager light-day, Twin paradox, Light
-      travel; Geminids radiant (Mon 7 Dec), Sky This Week Dec 14 (Fri 11 Dec), Sky Tonight Geminids (Sun 13 Dec
+- Full from 27 Nov to 6 Dec on all three platforms, 17:00 UTC (state in the episode records). Planet Ages (27 Nov),
+  Voyager light-day, Light travel and Proxima travel are the original approved renders (old long credit, cover taken at
+  1.0 s).
+- [ ] **Schedule Geminids radiant on Mon 7 Dec** once a slot frees up (after the 27 Nov post, 17:00 UTC).
+- [ ] **Approved, waiting for the 10-day window:** Sky This Week Dec 14 (Fri 11 Dec), Sky Tonight Geminids (Sun 13 Dec
       15:00 UTC), Sky This Week Dec 21 (Fri 18 Dec), Sky This Week Jan 4 (Fri 1 Jan), Mars opposition (Mon 15 Feb).
-- [ ] **Re-render the approved-but-unscheduled episodes before they get a slot** (Sky School Planet Ages, Proxima,
-      Voyager light-day, Twin paradox, Light travel, Geminids, the Dec/Jan Sky This Week, Mars opposition): they still
-      have the old long credit and no clean cover. Re-render → QA → owner approval → schedule.
-- [ ] **Next production batch** (weekly): the week after 24 Nov. New episodes use `cc episode new --slug …`
-      (`--date` only for date-bound content) and get the Tone.js beds automatically.
+      Their videos are in the assets repo (cloned at `../ContentCreator-assets`), except Mars opposition, which needs a
+      re-render and new approval. Publish older renders with `--cover-at 1`.
+- [ ] **Produce videos for 8 Dec onward** (weekday rotation in the series files). There is no Sky This Week for
+      7–13 Dec (thin week, Light travel runs on 4 Dec instead).
+- [ ] **Record metrics** for the posts that have gone out (`cc metrics add`).
 
 ## Instagram
 
@@ -38,6 +39,8 @@ _Nothing waiting on approval._
 
 ## Done
 
+- [x] 2026-11-26 Refilled the empty queue (twin paradox went out the same day), added a `--cover-at` option to the
+      publish command, produced six new episodes, recorded the owner's approval and scheduled them.
 - [x] 2026-11-15 Credit line shortened to the source only (CC licences kept), small, lower left above the captions;
       the 15–24 Nov queue re-rendered in parallel (clean covers too), QA'd, owner-approved and swapped into Buffer
       (30 posts, 0 differences, hosted files hash-checked). Loudness step now re-measures and retries on true-peak

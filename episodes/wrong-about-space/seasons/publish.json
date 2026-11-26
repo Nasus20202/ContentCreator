@@ -1,0 +1,222 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-26T18:30:32.442Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-29T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "fe77610e04ce65fd79b90bb33fdb759d030f08f559a0062b1ff625c07eee3280",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.\n\n#space #astronomy #science #mythbusting #seasons #winter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-29T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Winter isn't caused by distance from the Sun 🌍☀️",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Winter isn't caused by distance from the Sun 🌍☀️\n\nEarth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.\n\n#space #astronomy #science #mythbusting #seasons #winter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-29T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "Winter isn't caused by distance from the Sun 🌍☀️\n\nEarth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?\nNASA NSSDCA Earth Fact Sheet\nNASA DSCOVR EPIC images\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.\n\n#space #astronomy #science #mythbusting #seasons #winter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-29T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-26T18:30:59.956Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-29T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "fe77610e04ce65fd79b90bb33fdb759d030f08f559a0062b1ff625c07eee3280",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087aeec81617797dd25d47",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.\n\n#space #astronomy #science #mythbusting #seasons #winter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-29T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/seasons-fe77610e.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "Winter isn't caused by distance from the Sun 🌍☀️",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087aeff0a96d0f217e8e63",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "Winter isn't caused by distance from the Sun 🌍☀️\n\nEarth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.\n\n#space #astronomy #science #mythbusting #seasons #winter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-29T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/seasons-fe77610e.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087af09068b6e0795502d4",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "Winter isn't caused by distance from the Sun 🌍☀️\n\nEarth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?\nNASA NSSDCA Earth Fact Sheet\nNASA DSCOVR EPIC images\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.\n\n#space #astronomy #science #mythbusting #seasons #winter",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-29T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/seasons-fe77610e.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/wrong-about-space/seasons-fe77610e.mp4"
+      }
+    }
+  ]
+}

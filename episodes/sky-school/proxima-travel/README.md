@@ -192,6 +192,24 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | tiktok | deleted | 6af6107fd647bbafc5ad4571 |  |
 | instagram | deleted | 6af8cec6918fe79d2ea4bed2 |  |
 
+### 2026-11-26T17:52:02.876Z · buffer · schedule for 2026-12-06T17:00:00.000Z (dry run)
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | dry-run | — |  |
+| tiktok | dry-run | — |  |
+| instagram | dry-run | — |  |
+
+### 2026-11-26T17:52:17.545Z · buffer · schedule for 2026-12-06T17:00:00.000Z
+
+Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-school/proxima-travel-cc07ba4e.mp4
+
+| Platform | Status | Post id | Error |
+| --- | --- | --- | --- |
+| youtube | submitted | 6b0871d4ce64081689dd7b52 |  |
+| tiktok | submitted | 6b0871d51fa4091582854957 |  |
+| instagram | submitted | 6b0871d6c81617797dcd965a |  |
+
 ## Event log
 
 | Time (UTC) | Actor | Stage | Action | Git |
@@ -323,3 +341,6 @@ Media: https://raw.githubusercontent.com/Nasus20202/ContentCreator/videos/sky-sc
 | 2026-11-14 21:12:38 | claude | published | stage.advance | 47c29b3 |
 | 2026-11-15 02:29:36 | claude | publish | publish.unschedule | 4049d2c |
 | 2026-11-15 08:41:23 | claude | published | episode.rename | 0d80a88 |
+| 2026-11-26 17:52:02 | claude | publish | publish.dry-run | 2178ad3 |
+| 2026-11-26 17:52:22 | claude | publish | publish.submit | 2178ad3 |
+| 2026-11-26 17:52:22 | claude | published | stage.advance | 2178ad3 |

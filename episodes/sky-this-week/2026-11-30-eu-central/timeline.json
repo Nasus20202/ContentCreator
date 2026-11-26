@@ -1,13 +1,13 @@
 {
   "engine": "kokoro-82M-v1.0-onnx-q8",
   "voice": "af_heart",
-  "narrationHash": "909d111e5b928373",
+  "narrationHash": "b4f91c29e1c25a2f",
   "timing": "estimated-proportional",
   "scenes": [
     {
       "sceneId": "hook",
       "audioFile": "voice/hook.wav",
-      "duration": 5.196,
+      "duration": 5.477,
       "sentences": [
         {
           "text": "This Monday, the Moon drops in on Jupiter and Mars.",
@@ -67,34 +67,44 @@
           ]
         },
         {
-          "text": "Catch them together before dawn.",
+          "text": "Catch them together in the early hours.",
           "start": 3.356,
-          "end": 4.916,
+          "end": 5.197,
           "words": [
             {
               "w": "Catch",
               "start": 3.356,
-              "end": 3.629
+              "end": 3.619
             },
             {
               "w": "them",
-              "start": 3.629,
-              "end": 3.863
+              "start": 3.619,
+              "end": 3.844
             },
             {
               "w": "together",
-              "start": 3.863,
-              "end": 4.253
+              "start": 3.844,
+              "end": 4.22
             },
             {
-              "w": "before",
-              "start": 4.253,
-              "end": 4.565
+              "w": "in",
+              "start": 4.22,
+              "end": 4.37
             },
             {
-              "w": "dawn.",
-              "start": 4.565,
-              "end": 4.916
+              "w": "the",
+              "start": 4.37,
+              "end": 4.558
+            },
+            {
+              "w": "early",
+              "start": 4.558,
+              "end": 4.821
+            },
+            {
+              "w": "hours.",
+              "start": 4.821,
+              "end": 5.197
             }
           ]
         }
@@ -103,216 +113,246 @@
     {
       "sceneId": "group",
       "audioFile": "voice/group.wav",
-      "duration": 13.382,
+      "duration": 14.881,
       "sentences": [
         {
-          "text": "Early on Monday, November thirtieth, look high in the south-east.",
+          "text": "Early on Monday, November thirtieth, around three in the morning, look high in the south-east.",
           "start": 0.15,
-          "end": 3.374,
+          "end": 5.008,
           "words": [
             {
               "w": "Early",
               "start": 0.15,
-              "end": 0.429
+              "end": 0.441
             },
             {
               "w": "on",
-              "start": 0.429,
-              "end": 0.588
+              "start": 0.441,
+              "end": 0.607
             },
             {
               "w": "Monday,",
-              "start": 0.588,
-              "end": 1.026
+              "start": 0.607,
+              "end": 1.063
             },
             {
               "w": "November",
-              "start": 1.026,
-              "end": 1.424
+              "start": 1.063,
+              "end": 1.479
             },
             {
               "w": "thirtieth,",
-              "start": 1.424,
-              "end": 1.981
+              "start": 1.479,
+              "end": 2.06
             },
             {
-              "w": "look",
-              "start": 1.981,
-              "end": 2.22
+              "w": "around",
+              "start": 2.06,
+              "end": 2.392
             },
             {
-              "w": "high",
-              "start": 2.22,
-              "end": 2.459
+              "w": "three",
+              "start": 2.392,
+              "end": 2.683
             },
             {
               "w": "in",
-              "start": 2.459,
-              "end": 2.618
+              "start": 2.683,
+              "end": 2.849
             },
             {
               "w": "the",
-              "start": 2.618,
-              "end": 2.817
+              "start": 2.849,
+              "end": 3.056
+            },
+            {
+              "w": "morning,",
+              "start": 3.056,
+              "end": 3.555
+            },
+            {
+              "w": "look",
+              "start": 3.555,
+              "end": 3.804
+            },
+            {
+              "w": "high",
+              "start": 3.804,
+              "end": 4.053
+            },
+            {
+              "w": "in",
+              "start": 4.053,
+              "end": 4.219
+            },
+            {
+              "w": "the",
+              "start": 4.219,
+              "end": 4.427
             },
             {
               "w": "south-east.",
-              "start": 2.817,
-              "end": 3.374
+              "start": 4.427,
+              "end": 5.008
             }
           ]
         },
         {
           "text": "The bright Moon sits near Jupiter, with orange Mars close by.",
-          "start": 3.654,
-          "end": 6.965,
+          "start": 5.288,
+          "end": 8.599,
           "words": [
             {
               "w": "The",
-              "start": 3.654,
-              "end": 3.869
-            },
-            {
-              "w": "bright",
-              "start": 3.869,
-              "end": 4.213
-            },
-            {
-              "w": "Moon",
-              "start": 4.213,
-              "end": 4.471
-            },
-            {
-              "w": "sits",
-              "start": 4.471,
-              "end": 4.729
-            },
-            {
-              "w": "near",
-              "start": 4.729,
-              "end": 4.987
-            },
-            {
-              "w": "Jupiter,",
-              "start": 4.987,
+              "start": 5.288,
               "end": 5.503
             },
             {
-              "w": "with",
+              "w": "bright",
               "start": 5.503,
-              "end": 5.761
+              "end": 5.847
             },
             {
-              "w": "orange",
-              "start": 5.761,
+              "w": "Moon",
+              "start": 5.847,
               "end": 6.105
             },
             {
-              "w": "Mars",
+              "w": "sits",
               "start": 6.105,
               "end": 6.363
             },
             {
-              "w": "close",
+              "w": "near",
               "start": 6.363,
-              "end": 6.664
+              "end": 6.621
+            },
+            {
+              "w": "Jupiter,",
+              "start": 6.621,
+              "end": 7.137
+            },
+            {
+              "w": "with",
+              "start": 7.137,
+              "end": 7.395
+            },
+            {
+              "w": "orange",
+              "start": 7.395,
+              "end": 7.739
+            },
+            {
+              "w": "Mars",
+              "start": 7.739,
+              "end": 7.997
+            },
+            {
+              "w": "close",
+              "start": 7.997,
+              "end": 8.298
             },
             {
               "w": "by.",
-              "start": 6.664,
-              "end": 6.965
+              "start": 8.298,
+              "end": 8.599
             }
           ]
         },
         {
-          "text": "Their closest moment, under two degrees from Jupiter, comes later, in daylight. So go out before dawn.",
-          "start": 7.245,
-          "end": 13.102,
+          "text": "Their closest moment, under two degrees from Jupiter, comes later, in daylight. So go out in the dark.",
+          "start": 8.879,
+          "end": 14.601,
           "words": [
             {
               "w": "Their",
-              "start": 7.245,
-              "end": 7.561
+              "start": 8.879,
+              "end": 9.185
             },
             {
               "w": "closest",
-              "start": 7.561,
-              "end": 7.966
+              "start": 9.185,
+              "end": 9.578
             },
             {
               "w": "moment,",
-              "start": 7.966,
-              "end": 8.462
+              "start": 9.578,
+              "end": 10.059
             },
             {
               "w": "under",
-              "start": 8.462,
-              "end": 8.777
+              "start": 10.059,
+              "end": 10.364
             },
             {
               "w": "two",
-              "start": 8.777,
-              "end": 9.002
+              "start": 10.364,
+              "end": 10.583
             },
             {
               "w": "degrees",
-              "start": 9.002,
-              "end": 9.408
+              "start": 10.583,
+              "end": 10.976
             },
             {
               "w": "from",
-              "start": 9.408,
-              "end": 9.678
+              "start": 10.976,
+              "end": 11.238
             },
             {
               "w": "Jupiter,",
-              "start": 9.678,
-              "end": 10.219
+              "start": 11.238,
+              "end": 11.762
             },
             {
               "w": "comes",
-              "start": 10.219,
-              "end": 10.534
+              "start": 11.762,
+              "end": 12.068
             },
             {
               "w": "later,",
-              "start": 10.534,
-              "end": 10.984
+              "start": 12.068,
+              "end": 12.504
             },
             {
               "w": "in",
-              "start": 10.984,
-              "end": 11.165
+              "start": 12.504,
+              "end": 12.679
             },
             {
               "w": "daylight.",
-              "start": 11.165,
-              "end": 11.75
+              "start": 12.679,
+              "end": 13.247
             },
             {
               "w": "So",
-              "start": 11.75,
-              "end": 11.93
+              "start": 13.247,
+              "end": 13.422
             },
             {
               "w": "go",
-              "start": 11.93,
-              "end": 12.111
+              "start": 13.422,
+              "end": 13.596
             },
             {
               "w": "out",
-              "start": 12.111,
-              "end": 12.336
+              "start": 13.596,
+              "end": 13.815
             },
             {
-              "w": "before",
-              "start": 12.336,
-              "end": 12.696
+              "w": "in",
+              "start": 13.815,
+              "end": 13.989
             },
             {
-              "w": "dawn.",
-              "start": 12.696,
-              "end": 13.102
+              "w": "the",
+              "start": 13.989,
+              "end": 14.208
+            },
+            {
+              "w": "dark.",
+              "start": 14.208,
+              "end": 14.601
             }
           ]
         }
@@ -321,114 +361,124 @@
     {
       "sceneId": "venus",
       "audioFile": "voice/venus.wav",
-      "duration": 7.595,
+      "duration": 7.08,
       "sentences": [
         {
           "text": "And every morning before sunrise, Venus blazes low in the south-east.",
           "start": 0.15,
-          "end": 4.126,
+          "end": 4.051,
           "words": [
             {
               "w": "And",
               "start": 0.15,
-              "end": 0.387
+              "end": 0.382
             },
             {
               "w": "every",
-              "start": 0.387,
-              "end": 0.718
+              "start": 0.382,
+              "end": 0.707
             },
             {
               "w": "morning",
-              "start": 0.718,
-              "end": 1.144
+              "start": 0.707,
+              "end": 1.125
             },
             {
               "w": "before",
-              "start": 1.144,
-              "end": 1.523
+              "start": 1.125,
+              "end": 1.497
             },
             {
               "w": "sunrise,",
-              "start": 1.523,
-              "end": 2.091
+              "start": 1.497,
+              "end": 2.054
             },
             {
               "w": "Venus",
-              "start": 2.091,
-              "end": 2.422
+              "start": 2.054,
+              "end": 2.379
             },
             {
               "w": "blazes",
-              "start": 2.422,
-              "end": 2.801
+              "start": 2.379,
+              "end": 2.751
             },
             {
               "w": "low",
-              "start": 2.801,
-              "end": 3.037
+              "start": 2.751,
+              "end": 2.983
             },
             {
               "w": "in",
-              "start": 3.037,
-              "end": 3.227
+              "start": 2.983,
+              "end": 3.169
             },
             {
               "w": "the",
-              "start": 3.227,
-              "end": 3.463
+              "start": 3.169,
+              "end": 3.401
             },
             {
               "w": "south-east.",
-              "start": 3.463,
-              "end": 4.126
+              "start": 3.401,
+              "end": 4.051
             }
           ]
         },
         {
-          "text": "At magnitude minus 4.8, you can't miss it.",
-          "start": 4.406,
-          "end": 7.315,
+          "text": "It's the brightest point of light in the morning sky.",
+          "start": 4.331,
+          "end": 6.8,
           "words": [
             {
-              "w": "At",
-              "start": 4.406,
-              "end": 4.622
+              "w": "It's",
+              "start": 4.331,
+              "end": 4.556
             },
             {
-              "w": "magnitude",
-              "start": 4.622,
-              "end": 5.214
+              "w": "the",
+              "start": 4.556,
+              "end": 4.743
             },
             {
-              "w": "minus",
-              "start": 5.214,
-              "end": 5.591
+              "w": "brightest",
+              "start": 4.743,
+              "end": 5.154
             },
             {
-              "w": "4.8,",
-              "start": 5.591,
-              "end": 5.969
+              "w": "point",
+              "start": 5.154,
+              "end": 5.416
             },
             {
-              "w": "you",
-              "start": 5.969,
-              "end": 6.238
+              "w": "of",
+              "start": 5.416,
+              "end": 5.566
             },
             {
-              "w": "can't",
-              "start": 6.238,
-              "end": 6.615
+              "w": "light",
+              "start": 5.566,
+              "end": 5.828
             },
             {
-              "w": "miss",
-              "start": 6.615,
-              "end": 6.938
+              "w": "in",
+              "start": 5.828,
+              "end": 5.977
             },
             {
-              "w": "it.",
-              "start": 6.938,
-              "end": 7.315
+              "w": "the",
+              "start": 5.977,
+              "end": 6.164
+            },
+            {
+              "w": "morning",
+              "start": 6.164,
+              "end": 6.501
+            },
+            {
+              "w": "sky.",
+              "start": 6.501,
+              "end": 6.8
             }
           ]
         }

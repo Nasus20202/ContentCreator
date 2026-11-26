@@ -1,0 +1,714 @@
+{
+  "engine": "kokoro-82M-v1.0-onnx-q8",
+  "voice": "af_heart",
+  "narrationHash": "7868b586b3ad67fc",
+  "timing": "estimated-proportional",
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "audioFile": "voice/hook.wav",
+      "duration": 4.589,
+      "sentences": [
+        {
+          "text": "Five galaxies in one photo.",
+          "start": 0.15,
+          "end": 1.802,
+          "words": [
+            {
+              "w": "Five",
+              "start": 0.15,
+              "end": 0.433
+            },
+            {
+              "w": "galaxies",
+              "start": 0.433,
+              "end": 0.905
+            },
+            {
+              "w": "in",
+              "start": 0.905,
+              "end": 1.094
+            },
+            {
+              "w": "one",
+              "start": 1.094,
+              "end": 1.33
+            },
+            {
+              "w": "photo.",
+              "start": 1.33,
+              "end": 1.802
+            }
+          ]
+        },
+        {
+          "text": "But one of them is not really part of the group.",
+          "start": 2.082,
+          "end": 4.309,
+          "words": [
+            {
+              "w": "But",
+              "start": 2.082,
+              "end": 2.261
+            },
+            {
+              "w": "one",
+              "start": 2.261,
+              "end": 2.441
+            },
+            {
+              "w": "of",
+              "start": 2.441,
+              "end": 2.585
+            },
+            {
+              "w": "them",
+              "start": 2.585,
+              "end": 2.8
+            },
+            {
+              "w": "is",
+              "start": 2.8,
+              "end": 2.944
+            },
+            {
+              "w": "not",
+              "start": 2.944,
+              "end": 3.123
+            },
+            {
+              "w": "really",
+              "start": 3.123,
+              "end": 3.411
+            },
+            {
+              "w": "part",
+              "start": 3.411,
+              "end": 3.627
+            },
+            {
+              "w": "of",
+              "start": 3.627,
+              "end": 3.77
+            },
+            {
+              "w": "the",
+              "start": 3.77,
+              "end": 3.95
+            },
+            {
+              "w": "group.",
+              "start": 3.95,
+              "end": 4.309
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "how",
+      "audioFile": "voice/how.wav",
+      "duration": 9.124,
+      "sentences": [
+        {
+          "text": "NASA's Webb telescope team released this view in July 2022.",
+          "start": 0.15,
+          "end": 4.315,
+          "words": [
+            {
+              "w": "NASA's",
+              "start": 0.15,
+              "end": 0.613
+            },
+            {
+              "w": "Webb",
+              "start": 0.613,
+              "end": 0.96
+            },
+            {
+              "w": "telescope",
+              "start": 0.96,
+              "end": 1.596
+            },
+            {
+              "w": "team",
+              "start": 1.596,
+              "end": 1.943
+            },
+            {
+              "w": "released",
+              "start": 1.943,
+              "end": 2.522
+            },
+            {
+              "w": "this",
+              "start": 2.522,
+              "end": 2.869
+            },
+            {
+              "w": "view",
+              "start": 2.869,
+              "end": 3.216
+            },
+            {
+              "w": "in",
+              "start": 3.216,
+              "end": 3.447
+            },
+            {
+              "w": "July",
+              "start": 3.447,
+              "end": 3.794
+            },
+            {
+              "w": "2022.",
+              "start": 3.794,
+              "end": 4.315
+            }
+          ]
+        },
+        {
+          "text": "Webb sees in infrared, so these colours stand in for light your eyes can't see.",
+          "start": 4.595,
+          "end": 8.844,
+          "words": [
+            {
+              "w": "Webb",
+              "start": 4.595,
+              "end": 4.852
+            },
+            {
+              "w": "sees",
+              "start": 4.852,
+              "end": 5.11
+            },
+            {
+              "w": "in",
+              "start": 5.11,
+              "end": 5.282
+            },
+            {
+              "w": "infrared,",
+              "start": 5.282,
+              "end": 5.84
+            },
+            {
+              "w": "so",
+              "start": 5.84,
+              "end": 6.011
+            },
+            {
+              "w": "these",
+              "start": 6.011,
+              "end": 6.312
+            },
+            {
+              "w": "colours",
+              "start": 6.312,
+              "end": 6.698
+            },
+            {
+              "w": "stand",
+              "start": 6.698,
+              "end": 6.998
+            },
+            {
+              "w": "in",
+              "start": 6.998,
+              "end": 7.17
+            },
+            {
+              "w": "for",
+              "start": 7.17,
+              "end": 7.385
+            },
+            {
+              "w": "light",
+              "start": 7.385,
+              "end": 7.685
+            },
+            {
+              "w": "your",
+              "start": 7.685,
+              "end": 7.943
+            },
+            {
+              "w": "eyes",
+              "start": 7.943,
+              "end": 8.2
+            },
+            {
+              "w": "can't",
+              "start": 8.2,
+              "end": 8.501
+            },
+            {
+              "w": "see.",
+              "start": 8.501,
+              "end": 8.844
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "find",
+      "audioFile": "voice/find.wav",
+      "duration": 7.48,
+      "sentences": [
+        {
+          "text": "Now look at the galaxy on the left.",
+          "start": 0.15,
+          "end": 1.946,
+          "words": [
+            {
+              "w": "Now",
+              "start": 0.15,
+              "end": 0.345
+            },
+            {
+              "w": "look",
+              "start": 0.345,
+              "end": 0.58
+            },
+            {
+              "w": "at",
+              "start": 0.58,
+              "end": 0.736
+            },
+            {
+              "w": "the",
+              "start": 0.736,
+              "end": 0.931
+            },
+            {
+              "w": "galaxy",
+              "start": 0.931,
+              "end": 1.243
+            },
+            {
+              "w": "on",
+              "start": 1.243,
+              "end": 1.4
+            },
+            {
+              "w": "the",
+              "start": 1.4,
+              "end": 1.595
+            },
+            {
+              "w": "left.",
+              "start": 1.595,
+              "end": 1.946
+            }
+          ]
+        },
+        {
+          "text": "It's about forty million light-years away.",
+          "start": 2.226,
+          "end": 4.2,
+          "words": [
+            {
+              "w": "It's",
+              "start": 2.226,
+              "end": 2.463
+            },
+            {
+              "w": "about",
+              "start": 2.463,
+              "end": 2.739
+            },
+            {
+              "w": "forty",
+              "start": 2.739,
+              "end": 3.016
+            },
+            {
+              "w": "million",
+              "start": 3.016,
+              "end": 3.371
+            },
+            {
+              "w": "light-years",
+              "start": 3.371,
+              "end": 3.845
+            },
+            {
+              "w": "away.",
+              "start": 3.845,
+              "end": 4.2
+            }
+          ]
+        },
+        {
+          "text": "The other four are about two hundred and ninety million.",
+          "start": 4.48,
+          "end": 7.2,
+          "words": [
+            {
+              "w": "The",
+              "start": 4.48,
+              "end": 4.678
+            },
+            {
+              "w": "other",
+              "start": 4.678,
+              "end": 4.953
+            },
+            {
+              "w": "four",
+              "start": 4.953,
+              "end": 5.19
+            },
+            {
+              "w": "are",
+              "start": 5.19,
+              "end": 5.387
+            },
+            {
+              "w": "about",
+              "start": 5.387,
+              "end": 5.663
+            },
+            {
+              "w": "two",
+              "start": 5.663,
+              "end": 5.86
+            },
+            {
+              "w": "hundred",
+              "start": 5.86,
+              "end": 6.215
+            },
+            {
+              "w": "and",
+              "start": 6.215,
+              "end": 6.412
+            },
+            {
+              "w": "ninety",
+              "start": 6.412,
+              "end": 6.727
+            },
+            {
+              "w": "million.",
+              "start": 6.727,
+              "end": 7.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "scale",
+      "audioFile": "voice/scale.wav",
+      "duration": 7.057,
+      "sentences": [
+        {
+          "text": "It just happens to sit in front, about seven times closer than the rest.",
+          "start": 0.15,
+          "end": 3.988,
+          "words": [
+            {
+              "w": "It",
+              "start": 0.15,
+              "end": 0.319
+            },
+            {
+              "w": "just",
+              "start": 0.319,
+              "end": 0.572
+            },
+            {
+              "w": "happens",
+              "start": 0.572,
+              "end": 0.951
+            },
+            {
+              "w": "to",
+              "start": 0.951,
+              "end": 1.12
+            },
+            {
+              "w": "sit",
+              "start": 1.12,
+              "end": 1.331
+            },
+            {
+              "w": "in",
+              "start": 1.331,
+              "end": 1.5
+            },
+            {
+              "w": "front,",
+              "start": 1.5,
+              "end": 1.921
+            },
+            {
+              "w": "about",
+              "start": 1.921,
+              "end": 2.217
+            },
+            {
+              "w": "seven",
+              "start": 2.217,
+              "end": 2.512
+            },
+            {
+              "w": "times",
+              "start": 2.512,
+              "end": 2.807
+            },
+            {
+              "w": "closer",
+              "start": 2.807,
+              "end": 3.144
+            },
+            {
+              "w": "than",
+              "start": 3.144,
+              "end": 3.397
+            },
+            {
+              "w": "the",
+              "start": 3.397,
+              "end": 3.608
+            },
+            {
+              "w": "rest.",
+              "start": 3.608,
+              "end": 3.988
+            }
+          ]
+        },
+        {
+          "text": "That's why Webb can pick out individual stars in it.",
+          "start": 4.268,
+          "end": 6.777,
+          "words": [
+            {
+              "w": "That's",
+              "start": 4.268,
+              "end": 4.577
+            },
+            {
+              "w": "why",
+              "start": 4.577,
+              "end": 4.77
+            },
+            {
+              "w": "Webb",
+              "start": 4.77,
+              "end": 5.001
+            },
+            {
+              "w": "can",
+              "start": 5.001,
+              "end": 5.194
+            },
+            {
+              "w": "pick",
+              "start": 5.194,
+              "end": 5.426
+            },
+            {
+              "w": "out",
+              "start": 5.426,
+              "end": 5.619
+            },
+            {
+              "w": "individual",
+              "start": 5.619,
+              "end": 6.082
+            },
+            {
+              "w": "stars",
+              "start": 6.082,
+              "end": 6.353
+            },
+            {
+              "w": "in",
+              "start": 6.353,
+              "end": 6.507
+            },
+            {
+              "w": "it.",
+              "start": 6.507,
+              "end": 6.777
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "wide",
+      "audioFile": "voice/wide.wav",
+      "duration": 4.946,
+      "sentences": [
+        {
+          "text": "And the whole mosaic covers a patch of sky only about a fifth as wide as the Moon.",
+          "start": 0.15,
+          "end": 4.666,
+          "words": [
+            {
+              "w": "And",
+              "start": 0.15,
+              "end": 0.369
+            },
+            {
+              "w": "the",
+              "start": 0.369,
+              "end": 0.588
+            },
+            {
+              "w": "whole",
+              "start": 0.588,
+              "end": 0.895
+            },
+            {
+              "w": "mosaic",
+              "start": 0.895,
+              "end": 1.246
+            },
+            {
+              "w": "covers",
+              "start": 1.246,
+              "end": 1.597
+            },
+            {
+              "w": "a",
+              "start": 1.597,
+              "end": 1.729
+            },
+            {
+              "w": "patch",
+              "start": 1.729,
+              "end": 2.035
+            },
+            {
+              "w": "of",
+              "start": 2.035,
+              "end": 2.211
+            },
+            {
+              "w": "sky",
+              "start": 2.211,
+              "end": 2.43
+            },
+            {
+              "w": "only",
+              "start": 2.43,
+              "end": 2.693
+            },
+            {
+              "w": "about",
+              "start": 2.693,
+              "end": 3
+            },
+            {
+              "w": "a",
+              "start": 3,
+              "end": 3.132
+            },
+            {
+              "w": "fifth",
+              "start": 3.132,
+              "end": 3.439
+            },
+            {
+              "w": "as",
+              "start": 3.439,
+              "end": 3.614
+            },
+            {
+              "w": "wide",
+              "start": 3.614,
+              "end": 3.877
+            },
+            {
+              "w": "as",
+              "start": 3.877,
+              "end": 4.053
+            },
+            {
+              "w": "the",
+              "start": 4.053,
+              "end": 4.272
+            },
+            {
+              "w": "Moon.",
+              "start": 4.272,
+              "end": 4.666
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sceneId": "outro",
+      "audioFile": "voice/outro.wav",
+      "duration": 3.367,
+      "sentences": [
+        {
+          "text": "One photo, one detail.",
+          "start": 0.15,
+          "end": 1.636,
+          "words": [
+            {
+              "w": "One",
+              "start": 0.15,
+              "end": 0.39
+            },
+            {
+              "w": "photo,",
+              "start": 0.39,
+              "end": 0.869
+            },
+            {
+              "w": "one",
+              "start": 0.869,
+              "end": 1.109
+            },
+            {
+              "w": "detail.",
+              "start": 1.109,
+              "end": 1.636
+            }
+          ]
+        },
+        {
+          "text": "Follow for the next one.",
+          "start": 1.916,
+          "end": 3.087,
+          "words": [
+            {
+              "w": "Follow",
+              "start": 1.916,
+              "end": 2.209
+            },
+            {
+              "w": "for",
+              "start": 2.209,
+              "end": 2.392
+            },
+            {
+              "w": "the",
+              "start": 2.392,
+              "end": 2.575
+            },
+            {
+              "w": "next",
+              "start": 2.575,
+              "end": 2.794
+            },
+            {
+              "w": "one.",
+              "start": 2.794,
+              "end": 3.087
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

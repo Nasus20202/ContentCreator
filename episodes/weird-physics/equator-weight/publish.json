@@ -1,0 +1,222 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-26T18:30:36.842Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-03T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "7432aabada873e34e3568b9519c3ba817351873a408209aeacd75ef88c369b57",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.\n\n#physics #science #space #weirdphysics #gravity",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-03T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "You weigh less at the equator ⚖️🌍",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "You weigh less at the equator ⚖️🌍\n\nEarth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.\n\n#physics #science #space #weirdphysics #gravity",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-03T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "You weigh less at the equator ⚖️🌍\n\nEarth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.\n\n#physics #science #space #weirdphysics #gravity",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-03T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-26T18:31:46.642Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-12-03T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "7432aabada873e34e3568b9519c3ba817351873a408209aeacd75ef88c369b57",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087b1df0a96d0f217e9e2e",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.\n\n#physics #science #space #weirdphysics #gravity",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-03T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/weird-physics/equator-weight-7432aaba.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "You weigh less at the equator ⚖️🌍",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087b1ec81617797dd267cf",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "You weigh less at the equator ⚖️🌍\n\nEarth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.\n\n#physics #science #space #weirdphysics #gravity",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-03T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/weird-physics/equator-weight-7432aaba.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087b1f3accdac92cedf5f4",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "You weigh less at the equator ⚖️🌍\n\nEarth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.\n\n#physics #science #space #weirdphysics #gravity",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-12-03T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/weird-physics/equator-weight-7432aaba.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/weird-physics/equator-weight-7432aaba.mp4"
+      }
+    }
+  ]
+}

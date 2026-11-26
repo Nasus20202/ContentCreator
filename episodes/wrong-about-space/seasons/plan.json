@@ -1,0 +1,238 @@
+{
+  "episodeId": "wrong-about-space-seasons",
+  "series": "wrong-about-space",
+  "title": "Wrong About Space · Seasons",
+  "badge": "Wrong About Space · Seasons",
+  "location": {
+    "id": "eu-central",
+    "label": "central Europe",
+    "lat": 50,
+    "lon": 15,
+    "timeZone": "Europe/Warsaw"
+  },
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.07
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.14
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": [
+        "Winter doesn't happen because Earth is farther from the Sun."
+      ],
+      "factIds": [
+        "tilt-seasons",
+        "apsides-2027"
+      ],
+      "chips": [
+        {
+          "text": "WRONG",
+          "from": 1.0
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "earth-june",
+        "zoom": [
+          1,
+          1.08
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "contain"
+      },
+      "title": {
+        "kicker": "Myth",
+        "title": "Winter = far from the Sun?",
+        "from": 0.1,
+        "to": 2.8
+      }
+    },
+    {
+      "id": "closest",
+      "narration": [
+        "Earth is actually closest to the Sun in early January: about a hundred and forty-seven million kilometres."
+      ],
+      "factIds": [
+        "apsides-2027"
+      ],
+      "chips": [],
+      "template": "factCard",
+      "params": {
+        "value": "147.1M km",
+        "label": "from the Sun on 3 January 2027: closest all year",
+        "sourceLine": "computed with astronomy-engine"
+      }
+    },
+    {
+      "id": "distance",
+      "narration": [
+        "In July it's about five million kilometres farther away."
+      ],
+      "factIds": [
+        "apsides-2027",
+        "apsides-diff"
+      ],
+      "chips": [],
+      "template": "compare",
+      "params": {
+        "heading": "Earth to Sun, 2027",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "3 January (closest)",
+            "value": 147.1,
+            "display": "147.1M km"
+          },
+          {
+            "label": "5 July (farthest)",
+            "value": 152.1,
+            "display": "152.1M km"
+          }
+        ],
+        "note": "Drawn to scale: about 3% difference"
+      }
+    },
+    {
+      "id": "june",
+      "narration": [
+        "The real reason is the tilt. Earth's axis leans about twenty-three degrees.",
+        "Seen from the Sun's side in June, the north leans into view."
+      ],
+      "factIds": [
+        "tilt",
+        "tilt-seasons",
+        "epic",
+        "epic-l1"
+      ],
+      "chips": [
+        {
+          "text": "REAL PHOTO · 21 JUNE 2025",
+          "from": 0.3
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "earth-june",
+        "zoom": [
+          1,
+          1.1
+        ],
+        "focus": [
+          0.5,
+          0.35
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "december",
+      "narration": [
+        "In December the north leans away, and the same camera sees Antarctica."
+      ],
+      "factIds": [
+        "tilt-seasons",
+        "epic",
+        "epic-l1"
+      ],
+      "chips": [
+        {
+          "text": "REAL PHOTO · 21 DECEMBER 2025",
+          "from": 0.3
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "earth-december",
+        "zoom": [
+          1,
+          1.1
+        ],
+        "focus": [
+          0.5,
+          0.65
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "noon",
+      "narration": [
+        "In central Europe, the December noon Sun climbs only seventeen degrees. In June, sixty-three."
+      ],
+      "factIds": [
+        "noon-height"
+      ],
+      "chips": [],
+      "template": "compare",
+      "params": {
+        "heading": "Noon Sun height, central Europe",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "21 December",
+            "value": 17,
+            "display": "17° high"
+          },
+          {
+            "label": "21 June",
+            "value": 63,
+            "display": "63° high"
+          }
+        ],
+        "note": "Computed for 50°N, 15°E"
+      }
+    },
+    {
+      "id": "days",
+      "narration": [
+        "And the day lasts about eight hours instead of sixteen.",
+        "Low Sun, short days: that's winter."
+      ],
+      "factIds": [
+        "daylength",
+        "noon-height"
+      ],
+      "chips": [],
+      "template": "factCard",
+      "params": {
+        "value": "8 h vs 16 h",
+        "label": "daylight: 21 December vs 21 June",
+        "sourceLine": "central Europe, computed"
+      }
+    },
+    {
+      "id": "outro",
+      "narration": [
+        "Follow to fix one more space myth."
+      ],
+      "factIds": [
+        "tilt-seasons"
+      ],
+      "template": "outro",
+      "params": {
+        "kicker": "Wrong About Space",
+        "cta": "FOLLOW\nFOR ONE MYTH\nA WEEK",
+        "footnote": "NASA Space Place · Photos: NASA / NOAA DSCOVR EPIC"
+      }
+    }
+  ],
+  "post": {
+    "title": "Winter isn't caused by distance from the Sun 🌍☀️",
+    "description": "Earth is closest to the Sun in early January: about 147.1 million km on 3 January 2027, compared with 152.1 million km on 5 July, only about 3% apart. Seasons come from the tilt of Earth's axis (23.44°). In central Europe the noon Sun stands about 17° high on 21 December and about 63° high on 21 June, and the day lasts about 8 hours instead of 16.\n\nSources:\nNASA Space Place, What Causes the Seasons?: https://spaceplace.nasa.gov/seasons/en/\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\nNASA DSCOVR EPIC images: https://epic.gsfc.nasa.gov/\n\nDistances, day length and Sun height computed with astronomy-engine (50°N, 15°E). Images: NASA / NOAA (DSCOVR EPIC, 21 June and 21 December 2025). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#space",
+      "#astronomy",
+      "#science",
+      "#mythbusting",
+      "#seasons",
+      "#winter"
+    ]
+  }
+}

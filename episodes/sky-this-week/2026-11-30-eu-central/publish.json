@@ -1,0 +1,222 @@
+{
+  "attempts": [
+    {
+      "at": "2026-11-26T18:30:30.968Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-28T17:00:00.000Z",
+      "dryRun": true,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "eca0a11d50404383df74dca969b556741d8644530a16354ca01a9480dd08d5f2",
+      "media": {
+        "url": "DRY-RUN"
+      },
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Early on Mon 30 Nov, from about 3 a.m., look high in the south-east: the Moon, Jupiter and orange Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) comes later that morning, in daylight, and its closest pass to Mars (3.7°) that evening, so see them before sunrise. All week before sunrise, Venus is the brightest point of light in the morning sky, low in the south-east (23° up around 06:40 mid-week).\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #moon #jupiter #venus",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-28T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6\n\nEarly on Mon 30 Nov, from about 3 a.m., look high in the south-east: the Moon, Jupiter and orange Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) comes later that morning, in daylight, and its closest pass to Mars (3.7°) that evening, so see them before sunrise. All week before sunrise, Venus is the brightest point of light in the morning sky, low in the south-east (23° up around 06:40 mid-week).\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #moon #jupiter #venus",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-28T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "status": "dry-run",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6\n\nEarly on Mon 30 Nov, from about 3 a.m., look high in the south-east: the Moon, Jupiter and orange Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) comes later that morning, in daylight, and its closest pass to Mars (3.7°) that evening, so see them before sunrise. All week before sunrise, Venus is the brightest point of light in the morning sky, low in the south-east (23° up around 06:40 mid-week).\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #moon #jupiter #venus",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-28T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "DRY-RUN",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "at": "2026-11-26T18:30:47.296Z",
+      "actor": "claude",
+      "mode": "schedule",
+      "scheduledFor": "2026-11-28T17:00:00.000Z",
+      "dryRun": false,
+      "provider": "buffer",
+      "endpoint": "https://api.buffer.com",
+      "videoSha256": "eca0a11d50404383df74dca969b556741d8644530a16354ca01a9480dd08d5f2",
+      "targets": [
+        {
+          "platform": "youtube",
+          "channelId": "6af4fe2a62b70b94b0fe97dc",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087ae09068b6e07954fdd8",
+          "payload": {
+            "channelId": "6af4fe2a62b70b94b0fe97dc",
+            "text": "Early on Mon 30 Nov, from about 3 a.m., look high in the south-east: the Moon, Jupiter and orange Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) comes later that morning, in daylight, and its closest pass to Mars (3.7°) that evening, so see them before sunrise. All week before sunrise, Venus is the brightest point of light in the morning sky, low in the south-east (23° up around 06:40 mid-week).\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #moon #jupiter #venus",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-28T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-this-week/2026-11-30-eu-central-eca0a11d.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "youtube": {
+                "title": "The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6",
+                "privacy": "public",
+                "madeForKids": false,
+                "notifySubscribers": true,
+                "categoryId": "28",
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "tiktok",
+          "channelId": "6af4fe6f62b70b94b0fe9d85",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087ae11fa40915828a35ad",
+          "payload": {
+            "channelId": "6af4fe6f62b70b94b0fe9d85",
+            "text": "The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6\n\nEarly on Mon 30 Nov, from about 3 a.m., look high in the south-east: the Moon, Jupiter and orange Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) comes later that morning, in daylight, and its closest pass to Mars (3.7°) that evening, so see them before sunrise. All week before sunrise, Venus is the brightest point of light in the morning sky, low in the south-east (23° up around 06:40 mid-week).\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #moon #jupiter #venus",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-28T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-this-week/2026-11-30-eu-central-eca0a11d.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "tiktok": {
+                "isAiGenerated": false
+              }
+            }
+          }
+        },
+        {
+          "platform": "instagram",
+          "channelId": "6af8cc5162b70b94b032fcec",
+          "enabled": true,
+          "status": "submitted",
+          "postId": "6b087ae21fa40915828a3611",
+          "payload": {
+            "channelId": "6af8cc5162b70b94b032fcec",
+            "text": "The Moon visits Jupiter and Mars on Monday 🌔 Sky This Week, Nov 30–Dec 6\n\nEarly on Mon 30 Nov, from about 3 a.m., look high in the south-east: the Moon, Jupiter and orange Mars make a tight group. The Moon's closest pass to Jupiter (1.9°) comes later that morning, in daylight, and its closest pass to Mars (3.7°) that evening, so see them before sunrise. All week before sunrise, Venus is the brightest point of light in the morning sky, low in the south-east (23° up around 06:40 mid-week).\n\nPositions computed for central Europe (50°N, 15°E) with astronomy-engine. Narration uses a synthetic voice.\n\n#astronomy #stargazing #nightsky #space #moon #jupiter #venus",
+            "schedulingType": "automatic",
+            "mode": "customScheduled",
+            "dueAt": "2026-11-28T17:00:00.000Z",
+            "aiAssisted": true,
+            "assets": [
+              {
+                "video": {
+                  "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-this-week/2026-11-30-eu-central-eca0a11d.mp4",
+                  "metadata": {
+                    "thumbnailOffset": 300
+                  }
+                }
+              }
+            ],
+            "metadata": {
+              "instagram": {
+                "type": "reel",
+                "shouldShareToFeed": true,
+                "isAiGenerated": false
+              }
+            }
+          }
+        }
+      ],
+      "media": {
+        "url": "https://raw.githubusercontent.com/Nasus20202/ContentCreator-assets/main/sky-this-week/2026-11-30-eu-central-eca0a11d.mp4"
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-11-15T02:37:06.498Z",
-  "videoSha256": "4f97308aaab319ef4a9277f85be79e441ecc7015137489927cffb10a84e959b9",
+  "checkedAt": "2026-11-26T17:30:20.990Z",
+  "videoSha256": "eca0a11d50404383df74dca969b556741d8644530a16354ca01a9480dd08d5f2",
   "automated": [
     {
       "name": "resolution",
@@ -20,22 +20,22 @@
     {
       "name": "duration",
       "ok": true,
-      "detail": "35.00 s (limit 60 s)"
+      "detail": "36.20 s (limit 60 s)"
     },
     {
       "name": "duration-matches-timeline",
       "ok": true,
-      "detail": "video 35.00 s vs timeline 34.90 s"
+      "detail": "video 36.20 s vs timeline 36.13 s"
     },
     {
       "name": "loudness",
       "ok": true,
-      "detail": "-14.1 LUFS (target -18…-11)"
+      "detail": "-14 LUFS (target -18…-11)"
     },
     {
       "name": "true-peak",
       "ok": true,
-      "detail": "-1.5 dBFS"
+      "detail": "-1.3 dBFS"
     },
     {
       "name": "no-black-gaps",
@@ -57,68 +57,78 @@
     {
       "file": "qa/00-hook-2.jpg",
       "sceneId": "hook",
-      "tSec": 5.37
+      "tSec": 5.63
     },
     {
       "file": "qa/01-group-0.jpg",
       "sceneId": "group",
-      "tSec": 6.22
+      "tSec": 6.48
     },
     {
       "file": "qa/01-group-1.jpg",
       "sceneId": "group",
-      "tSec": 9.72
+      "tSec": 11.62
     },
     {
       "file": "qa/01-group-2.jpg",
       "sceneId": "group",
-      "tSec": 13.31
+      "tSec": 15.21
     },
     {
       "file": "qa/01-group-3.jpg",
       "sceneId": "group",
-      "tSec": 19
+      "tSec": 20.77
     },
     {
       "file": "qa/02-venus-0.jpg",
       "sceneId": "venus",
-      "tSec": 19.85
+      "tSec": 21.62
     },
     {
       "file": "qa/02-venus-1.jpg",
       "sceneId": "venus",
-      "tSec": 24.11
+      "tSec": 25.8
     },
     {
       "file": "qa/02-venus-2.jpg",
       "sceneId": "venus",
-      "tSec": 26.87
+      "tSec": 28.1
     },
     {
       "file": "qa/03-outro-0.jpg",
       "sceneId": "outro",
-      "tSec": 27.72
+      "tSec": 28.95
     },
     {
       "file": "qa/03-outro-1.jpg",
       "sceneId": "outro",
-      "tSec": 30.18
+      "tSec": 31.41
     },
     {
       "file": "qa/03-outro-2.jpg",
       "sceneId": "outro",
-      "tSec": 32.52
+      "tSec": 33.75
     },
     {
       "file": "qa/03-outro-3.jpg",
       "sceneId": "outro",
-      "tSec": 34.8
+      "tSec": 36.03
+    },
+    {
+      "file": "qa/cover.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
+    },
+    {
+      "file": "qa/cover-grid.jpg",
+      "sceneId": "cover",
+      "tSec": 0.3
     }
   ],
   "visualReview": {
     "actor": "claude",
-    "at": "2026-11-15T02:39:36.709Z",
+    "at": "2026-11-26T17:31:35.351Z",
     "verdict": "pass",
-    "notes": "Re-render for the new music bed only (series songs chosen by the owner 2026-11-15). All review frames checked: picture, captions, cards, credits and outro unchanged from the previous passing review; loudness -14 LUFS, true peak -1.5 dBFS, no black gaps."
+    "notes": "All 16 frames: clean cover with title; chips sequenced (3 a.m., then south-east); Moon/Jupiter/Mars labels appear as named, no overlaps, Moon phase just under last quarter shape; Venus labelled low with SE on the horizon; outro CTA and 50N 15E footnote. Motion and audio not judged from stills."
   }
 }

@@ -1,0 +1,203 @@
+{
+  "episodeId": "weird-physics-equator-weight",
+  "series": "weird-physics",
+  "title": "Weird Physics · You weigh less at the equator",
+  "badge": "Weird Physics · Weight on Earth",
+  "voice": {
+    "id": "af_heart",
+    "speed": 1.07
+  },
+  "music": {
+    "enabled": true,
+    "volume": 0.15
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "narration": [
+        "You weigh less at the equator than at the North Pole."
+      ],
+      "factIds": [
+        "gravity",
+        "weight",
+        "photo-apollo17"
+      ],
+      "chips": [],
+      "template": "image",
+      "params": {
+        "assetId": "earth-apollo17",
+        "zoom": [
+          1,
+          1.1
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "contain"
+      },
+      "title": {
+        "kicker": "Weird Physics",
+        "title": "Lighter at the equator",
+        "from": 0.1,
+        "to": 2.8
+      }
+    },
+    {
+      "id": "scale",
+      "narration": [
+        "A spring scale that reads 70 kilograms at the pole reads about 69.6 at the equator.",
+        "Same you. Same mass."
+      ],
+      "factIds": [
+        "weight"
+      ],
+      "chips": [],
+      "template": "factCard",
+      "params": {
+        "value": "−370 g",
+        "label": "on a spring scale: pole → equator, for 70 kg",
+        "sourceLine": "computed from NASA Earth data"
+      }
+    },
+    {
+      "id": "spin",
+      "narration": [
+        "The main reason is spin.",
+        "At the equator, Earth carries you around at about 1,670 kilometres an hour.",
+        "Part of gravity is used up just keeping you on that circle."
+      ],
+      "factIds": [
+        "spin",
+        "gravity"
+      ],
+      "chips": [
+        {
+          "text": "≈ 1,670 KM/H AT THE EQUATOR",
+          "from": {
+            "sentence": 1,
+            "edge": "start",
+            "offset": 0
+          }
+        }
+      ],
+      "template": "image",
+      "params": {
+        "assetId": "earth-equator",
+        "zoom": [
+          1,
+          1.18
+        ],
+        "focus": [
+          0.5,
+          0.5
+        ],
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "bulge",
+      "narration": [
+        "Spin also makes Earth bulge.",
+        "At the equator you're about twenty-one kilometres farther from the centre."
+      ],
+      "factIds": [
+        "bulge",
+        "radii",
+        "shape"
+      ],
+      "chips": [],
+      "template": "factCard",
+      "params": {
+        "value": "21 km",
+        "label": "farther from Earth's centre at the equator",
+        "sourceLine": "NASA Earth Fact Sheet"
+      }
+    },
+    {
+      "id": "share",
+      "narration": [
+        "The spin does about two thirds of the work, and the squashed shape does the rest."
+      ],
+      "factIds": [
+        "spin",
+        "bulge"
+      ],
+      "chips": [],
+      "template": "compare",
+      "params": {
+        "heading": "Why gravity feels weaker",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "Spin",
+            "value": 34.0,
+            "display": "about ⅔"
+          },
+          {
+            "label": "Earth's shape",
+            "value": 18.0,
+            "display": "about ⅓"
+          }
+        ],
+        "note": "Difference: 0.052 m/s², pole vs equator"
+      }
+    },
+    {
+      "id": "payoff",
+      "narration": [
+        "70 kilograms at the pole. 69.6 at the equator.",
+        "About half a percent, for free."
+      ],
+      "factIds": [
+        "weight"
+      ],
+      "chips": [],
+      "template": "compare",
+      "params": {
+        "heading": "Same person, same spring scale",
+        "scale": "linear",
+        "bars": [
+          {
+            "label": "North Pole",
+            "value": 70,
+            "display": "70.0 kg"
+          },
+          {
+            "label": "Equator",
+            "value": 69.6,
+            "display": "69.6 kg"
+          }
+        ],
+        "note": "Sea level, scale calibrated at the pole"
+      }
+    },
+    {
+      "id": "outro",
+      "narration": [
+        "Same you, different number.",
+        "Follow for more weird physics."
+      ],
+      "factIds": [
+        "weight"
+      ],
+      "template": "outro",
+      "params": {
+        "kicker": "Weird Physics",
+        "cta": "FOLLOW\nFOR MORE\nWEIRD PHYSICS",
+        "footnote": "Computed from NASA Earth Fact Sheet · sea level"
+      }
+    }
+  ],
+  "post": {
+    "title": "You weigh less at the equator ⚖️🌍",
+    "description": "Earth's surface acceleration is 9.780 m/s² at the equator and 9.832 m/s² at the poles. A spring scale calibrated to read 70 kg at a pole would read about 69.6 kg at the equator, about 370 g (half a percent) less, although your mass is the same. About two thirds of the difference comes from Earth's spin (about 1,670 km/h at the equator) and the rest from Earth's squashed shape: the equator is about 21 km farther from the centre.\n\nSource:\nNASA NSSDCA Earth Fact Sheet: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html\n\nImages: NASA / JSC (Apollo 17), NASA / NOAA (DSCOVR EPIC). Narration uses a synthetic voice.",
+    "hashtags": [
+      "#physics",
+      "#science",
+      "#space",
+      "#weirdphysics",
+      "#gravity"
+    ]
+  }
+}

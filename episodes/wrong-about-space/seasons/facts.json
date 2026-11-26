@@ -1,0 +1,139 @@
+{
+  "facts": [
+    {
+      "id": "apsides-2027",
+      "statement": "Earth's closest point to the Sun (perihelion) falls on 3 January 2027 at 147.1 million km; the farthest (aphelion) on 5 July 2027 at 152.1 million km.",
+      "values": [
+        3,
+        5,
+        2027,
+        147,
+        147.1,
+        152,
+        152.1
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2 SearchPlanetApsis",
+        "inputs": {
+          "perihelion": "2027-01-03T02:07Z, 147104259 km",
+          "aphelion": "2027-07-05T05:04Z, 152100475 km"
+        }
+      }
+    },
+    {
+      "id": "apsides-diff",
+      "statement": "The difference between the farthest and closest distance is about 5 million km, around 3 percent.",
+      "values": [
+        5,
+        3,
+        3.4
+      ],
+      "source": {
+        "type": "computed",
+        "method": "152.100 - 147.104 million km; ratio 1.034",
+        "inputs": {
+          "min_mkm": 147.104,
+          "max_mkm": 152.1
+        }
+      }
+    },
+    {
+      "id": "tilt",
+      "statement": "Earth's axis is tilted 23.44 degrees relative to its orbit.",
+      "values": [
+        23.44,
+        23
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+        "title": "Earth Fact Sheet",
+        "publisher": "NASA NSSDCA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "tilt-seasons",
+      "statement": "Earth's tilted axis causes the seasons: throughout the year, different parts of Earth receive the Sun's most direct rays.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://spaceplace.nasa.gov/seasons/en/",
+        "title": "What Causes the Seasons?",
+        "publisher": "NASA Space Place",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "daylength",
+      "statement": "In central Europe (50N, 15E) the day lasts about 8 hours on 21 December 2026 and about 16 hours on 21 June 2027.",
+      "values": [
+        8,
+        16,
+        21,
+        50,
+        15,
+        2026,
+        2027
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2 SearchRiseSet",
+        "inputs": {
+          "lat": 50,
+          "lon": 15,
+          "dec_21_hours": 8.07,
+          "jun_21_hours": 16.37
+        }
+      }
+    },
+    {
+      "id": "noon-height",
+      "statement": "At local noon in central Europe the Sun stands about 17 degrees high on 21 December and about 63 degrees high on 21 June.",
+      "values": [
+        17,
+        63,
+        21,
+        50
+      ],
+      "source": {
+        "type": "computed",
+        "method": "astronomy-engine@2 SearchHourAngle",
+        "inputs": {
+          "lat": 50,
+          "lon": 15,
+          "dec_21_alt": 16.6,
+          "jun_21_alt": 63.4
+        }
+      }
+    },
+    {
+      "id": "epic",
+      "statement": "NASA's EPIC camera on the DSCOVR spacecraft photographed the sunlit Earth on 21 June 2025 and on 21 December 2025.",
+      "values": [
+        21,
+        2025
+      ],
+      "source": {
+        "type": "url",
+        "url": "https://epic.gsfc.nasa.gov/",
+        "title": "DSCOVR: EPIC daily images",
+        "publisher": "NASA",
+        "accessed": "2026-11-26"
+      }
+    },
+    {
+      "id": "epic-l1",
+      "statement": "EPIC on DSCOVR looks at the sunlit face of Earth from near the L1 point, between Earth and the Sun.",
+      "values": [],
+      "source": {
+        "type": "url",
+        "url": "https://epic.gsfc.nasa.gov/about/epic",
+        "title": "About EPIC",
+        "publisher": "NASA",
+        "accessed": "2026-11-26"
+      }
+    }
+  ]
+}
