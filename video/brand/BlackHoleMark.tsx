@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import type React from 'react';
+import { useEffect, useRef } from 'react';
 
 /**
  * Channel mark: a black hole seen almost edge-on — shadow, thin photon ring,
