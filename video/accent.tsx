@@ -1,4 +1,5 @@
-import React, { createContext, useContext } from 'react';
+import type React from 'react';
+import { createContext, useContext } from 'react';
 import { theme } from './theme';
 
 /** Series accent (hex + "r,g,b"), supplied once per render from the plan's series. */

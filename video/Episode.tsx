@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame } from 'remotion';
 import type { RenderProps, Scene } from '../src/core/schemas';
 import { sceneStarts } from '../src/core/timing';

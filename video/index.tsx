@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 import { AbsoluteFill, Composition, registerRoot, Still } from 'remotion';
 import type { RenderProps } from '../src/core/schemas';
 import { totalFrames } from '../src/core/timing';

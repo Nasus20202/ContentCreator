@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 import { AbsoluteFill, Img, staticFile } from 'remotion';
 import type { LapsParams } from '../../src/core/schemas';
 import { useAccent } from '../accent';
