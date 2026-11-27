@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 import type { SkySnapshot, SkyTarget, SkyViewParams } from '../../src/core/schemas';
 import { useSceneTime } from '../scene-context';
 import { SkyCanvas, type SkyOverlay } from '../sky/SkyCanvas';

@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import type React from 'react';
+import { useEffect, useRef } from 'react';
 import { useCurrentFrame, useVideoConfig } from 'remotion';
 import type { SkySnapshot, Vec3 } from '../../src/core/schemas';
 import { useAccent } from '../accent';

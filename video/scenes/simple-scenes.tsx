@@ -1,4 +1,4 @@
-import React from 'react';
+import type React from 'react';
 import { AbsoluteFill, Img, OffthreadVideo, staticFile } from 'remotion';
 import type { FactCardParams, ImageParams, OutroParams } from '../../src/core/schemas';
 import { Credit, Starfield } from '../components/overlays';

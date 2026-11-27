@@ -1,4 +1,5 @@
-import React, { useMemo } from 'react';
+import type React from 'react';
+import { useMemo } from 'react';
 import { Img, interpolate, random, useCurrentFrame, useVideoConfig } from 'remotion';
 import markPng from '../brand/mark.png';
 import type { Sentence } from '../../src/core/schemas';
